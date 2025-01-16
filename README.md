@@ -22,6 +22,7 @@ choco install mysql --version=8.4
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip3 install -r requirements.txt
 ```
 
 
