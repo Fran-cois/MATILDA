@@ -1,0 +1,31 @@
+# Requirements / progress 
+- [X] Clean code and architecture
+  - [X] Simplify the matilda and sota code 
+  - [X] Implement tests for the matilda and sota code 
+  - [X] Change all the helps functions into classes 
+  - [X] Clean up the database utils into separate classes 
+- [ ] Implement the 0 to hero studies 
+  - [ ] Main study 
+    - [X] Download the databases
+      - [X] Download the databases from the original sources (changed yesterday...)
+      - [ ] Download the databases from Our repository ? 
+    - [ ] Convert the databases (.db/ and other formats)
+      - [ ] Solve conversion issues
+        - [X] conversion with regexes  (fails on most)
+        - [X] conversion with mysqltosqlite3 (fails on most)
+        - [ ] Manual conversion and release the .dbs
+    - [ ] Execute all the algorithms on the target databases (remove the timeout ones and the ones that are not working)
+      - [ ] Run on Docker + docker config for oracle / mysql (solve the sqlite issue)
+      - [X] launch multiple runs at the same time 
+    - [X] Gather execution time and number of results from logs + convert time to human format
+    - [X] Gather the results from the results files and compute compatibility and correctness
+      - [ ] WIP: Adapt to the new rule class / tests 
+    - [ ] Gather the results from the results files and compute coverage
+      - [ ] WIP: Adapt to the new rule class / tests 
+    - [ ] Compile both files (coverage and stats) and output the latex table
+      -  [ ] WIP: requires the previous steps to be done
+      -  [X] Cleanup / convert to classes 
+  - [ ] Ablation studies 
+    - [ ] Having all the main study steps OK 
+    - [ ] adding parameters to matilda and running on selected databases (or not)
+  
