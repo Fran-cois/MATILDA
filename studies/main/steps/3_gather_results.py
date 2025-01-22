@@ -1,18 +1,19 @@
 import sys
 import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
 # Add the root directory of the project to the PYTHONPATH
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+#sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 
 import logging
 import colorama
 from colorama import Fore, Style
 from pathlib import Path
 import yaml
-from studies.utils.rule_processors.LogProcessor import LogProcessor
-from studies.utils.SpiderRuleProcessor import SpiderRuleProcessor
-from studies.utils.AMIERuleProcessor import AMIERuleProcessor
-from studies.utils.ILPRuleProcessor import ILPRuleProcessor
+from utils.rule_processors.LogProcessor import LogProcessor
+from utils.rule_processors.SpiderRuleProcessor import SpiderRuleProcessor
+from utils.rule_processors.AMIERuleProcessor import AMIERuleProcessor
+from utils.rule_processors.ILPRuleProcessor import ILPRuleProcessor
 
 # Initialize colorama
 colorama.init(autoreset=True)

@@ -1,11 +1,13 @@
 # call the rulecompatibility checker
-
+import sys
 import os
 import logging
 from pathlib import Path
 import colorama
 from colorama import Fore, Style
-from studies.utils.generate_reports.LaTeXTableGenerator import LaTeXTableGenerator
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+from utils.generate_reports.LaTeXTableGenerator import LaTeXTableGenerator
 
 # Initialize colorama
 colorama.init(autoreset=True)

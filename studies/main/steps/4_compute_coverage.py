@@ -4,9 +4,8 @@ from pathlib import Path
 import colorama
 from colorama import Fore, Style
 import sys 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from utils.rule_processors.RuleCoverageCalculator import RuleCoverageCalculator
-
 # Initialize colorama
 colorama.init(autoreset=True)
 
