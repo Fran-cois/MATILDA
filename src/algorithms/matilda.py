@@ -77,6 +77,10 @@ class MATILDA(BaseAlgorithm):
                 )
 
                 if not res:
+                    debug = True
+                    if debug:
+                        print("removed")
+                        a = instantiate_tgd(candidate_rule, (body, head), mapper)
                     continue
 
                 tgd = instantiate_tgd(candidate_rule, (body, head), mapper)

@@ -5,9 +5,7 @@ psutil
 sqlalchemy
 pyyaml
 
-cffi==1.15.1
 clingo==5.6.2
-pycparser==2.21
 git+https://github.com/yuce/pyswip@master#egg=pyswip
 tqdm==4.66.1
 mysql-connector-python

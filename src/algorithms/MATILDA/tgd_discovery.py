@@ -3,6 +3,8 @@ from collections.abc import Callable, Iterator
 from itertools import chain, combinations
 from statistics import mean
 import logging
+from collections import Counter, defaultdict
+
 from textwrap import indent
 from utils.rules import Rule
 import json
@@ -369,7 +371,27 @@ def split_pruning(
         return False, 0, 0  # invalid split, should not happen
     if len(body) == 0 or len(head) == 0:
         return False, 0, 0  # we prune empty body or head
+    pairs_count = Counter((attr.i, attr.j) for jia in candidate_rule for attr in jia)
 
+    table_indexed = defaultdict(list)
+    for i, j in head | body:  # Union of both frozensets
+        table_indexed[i].append(j)
+    for i in table_indexed:
+        if len(table_indexed[i]) > 1:
+            if pairs_count[(i, table_indexed[i][0])] == 1:
+                return False, 0, 0
+            #return False, 0, 0
+
+
+    # for each table indexed , if the number of element is greater than 1, we prune if there is two tables with the same
+
+
+    # Filter out rules where the same table is repeated with the same variables
+    #body_tables={attr.i for attr in body}
+
+    #body_tables=
+    #if len(body_tables) < len(body) or len(head_tables) < len(head):
+    #    return False, 0, 0
     total_tuple_test = prediction(candidate_rule, mapper, db_inspector, body, head, threshold=0)
     if total_tuple_test is False:
         return False, 0, 0  # prune if the prediction is 0
@@ -381,27 +403,6 @@ def split_pruning(
 
     if confidence == 0 and support == 0:
         return False, 0, 0
-
-    # if confidence > 1:
-        # tgd_str = instantiate_tgd(candidate_rule, (body, head), mapper)
-        # logging.info(f"TGD: {tgd_str}, Support: {support}, Confidence: {confidence}")
-        # logger.info(f"TGD: {tgd_str}, Support: {support}, Confidence: {confidence}")
-        # print("candidate_rule", candidate_rule)
-        # raise
-    # if support > 1:
-    #     tgd_str = instantiate_tgd(candidate_rule, (body, head), mapper)
-        # logging.info(f"TGD: {tgd_str}, Support: {support}, Confidence: {confidence}")
-        # print(f"TGD: {tgd_str}, Support: {support}, Confidence: {confidence}")
-        # print("candidate_rule", candidate_rule)
-
-        # raise
-
-    # Add assertions to ensure support and confidence are less than 1
-    # assert confidence <= 1, f"Confidence value should be less than 1 but got {confidence}"
-
-    # Instantiate the TGD and log it with support and confidence
-    # tgd_str = instantiate_tgd(candidate_rule, (body, head), mapper)
-    # logging.info(f"TGD: {tgd_str}, Support: {support}, Confidence: {confidence}")
 
     return mean([support, confidence]) > SPLIT_PRUNING_MEAN_THRESHOLD, support, confidence
 

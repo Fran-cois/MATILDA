@@ -1,170 +1,89 @@
-import json
 import logging
-import os
-import sys
-import glob
-from typing import Dict, List, Union
-from collections import defaultdict, deque
+import yaml
+from pathlib import Path
+import colorama
+from colorama import Fore, Style
+from studies.utils.rule_processors.RuleComparer import RuleComparer
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/utils')))
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
-from rules import RuleIO
+# Initialize colorama
+colorama.init(autoreset=True)
 
-# Set up logging configuration
-logging.basicConfig(
-    level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s'
-)
+class ColoredFormatter(logging.Formatter):
+    def format(self, record):
+        if record.levelno == logging.INFO:
+            record.msg = f"{Fore.GREEN}{record.msg}{Style.RESET_ALL}"
+        elif record.levelno == logging.ERROR:
+            record.msg = f"{Fore.RED}{record.msg}{Style.RESET_ALL}"
+        elif record.levelno == logging.WARNING:
+            record.msg = f"{Fore.YELLOW}{record.msg}{Style.RESET_ALL}"
+        return super().format(record)
 
-class RuleCompatibilityChecker:
-    def __init__(
-        self,
-        results_dir="results",
-        compatible_dir="matilda",
-        compatibility_sep="_",
-        debug="",
-    ):
-        self.results_dir = results_dir
-        self.compatible_dir = compatible_dir
-        self.compatibility_sep = compatibility_sep
-        self.debug = debug
-        self.compatibility_files = {}
-        self.load_compatibility_files()
+class RuleCoverageCalculator:
+    def __init__(self, rules_dir: Path, coverage_output_dir: Path, report_dir: Path):
+        self.rules_dir = rules_dir
+        self.coverage_output_dir = coverage_output_dir
+        self.report_dir = report_dir
+        self.logger = logging.getLogger("RuleCoverageCalculator")
+        self.logger.handlers = []
+        handler = logging.StreamHandler()
+        handler.setFormatter(ColoredFormatter('%(asctime)s - %(levelname)s - %(message)s'))
+        self.logger.addHandler(handler)
+        self.logger.setLevel(logging.INFO)
+        self.successes = []
+        self.failures = []
 
-    def load_compatibility_files(self):
-        pattern = os.path.join(self.debug + self.results_dir, "*/matilda/compatibility_*.json")
-        for filepath in glob.glob(pattern):
-            database_name = os.path.basename(filepath).split(self.compatibility_sep)[-1].split('.')[0]
-            with open(filepath, 'r') as file:
-                self.compatibility_files[database_name] = json.load(file)
-        logging.info(f"Loaded {len(self.compatibility_files)} compatibility files.")
+    def compare_rule_sets(self, filepath1: str, filepath2: str):
+        """Compare two sets of rules using RuleComparer."""
+        comparer = RuleComparer()
+        result = comparer.compare_rule_sets(filepath1, filepath2)
+        self.logger.info(f"Comparison result: {result}")
+        return result
 
-    def is_rule_compatible(self, rule, compatibility_dict: Dict[str, List[str]]) -> bool:
-        def clean_up_relation(relation):
-            return relation.split("___sep___")[0]
-            #return relation.split("___sep___")[0].replace("_", "") + "___sep___" + relation.split("___sep___")[1]
+    def calculate_coverage(self):
+        """Calculate the coverage of the rules."""
+        reference_rules_path = str(self.rules_dir / "reference_rules.json")
+        database_name = self.rules_dir.name
 
-        if isinstance(rule, dict):
-            body = rule.get("body", [])
-            head = rule.get("head", [])
-        else:
-            body = rule.body
-            head = rule.head
+        amie_results = self.compare_rule_sets(
+            str(self.rules_dir / f"results/amie_{database_name}_results.json"),
+            reference_rules_path
+        )
+        spider_results = self.compare_rule_sets(
+            str(self.rules_dir / f"results/spider_{database_name}_results.json"),
+            reference_rules_path
+        )
+        ilp_results = self.compare_rule_sets(
+            str(self.rules_dir / f"results/ilp_{database_name}_results.json"),
+            reference_rules_path
+        )
 
-        indexes = {}
-        for predicate in body:
-            if predicate.variable2 not in indexes:
-                indexes[predicate.variable2] = []
-            indexes[predicate.variable2].append(clean_up_relation(predicate.relation))
+        # Log the results
+        self.logger.info(f"AMIE Coverage: {amie_results}")
+        self.logger.info(f"Spider Coverage: {spider_results}")
+        self.logger.info(f"ILP Coverage: {ilp_results}")
 
-        for predicate in head:
-            if predicate.variable2 not in indexes:
-                indexes[predicate.variable2] = []
-            indexes[predicate.variable2].append(clean_up_relation(predicate.relation))
-
-        compatibility_dict = {
-            clean_up_relation(k): [clean_up_relation(rel) for rel in v]
-            for k, v in compatibility_dict.items()
-        }
-
-        for variable, relations in indexes.items():
-            for sub_relation in relations:
-                if sub_relation not in compatibility_dict:
-                    return False
-                for other_relation in relations:
-                    if other_relation != sub_relation and other_relation not in compatibility_dict[sub_relation]:
-                        return False
-        return True
-
-    def check_rule_compatibility(self, filepath: str, compatibility_dict: Dict[str, List[str]]) -> List[Dict[str, Union[Dict, bool]]]:
+    def generate_report(self):
+        """Generate a Markdown report summarizing the coverage calculations."""
+        report_path = self.report_dir / "4_step_compute_coverage_report.md"
         try:
-            with open(filepath, 'r') as file:
-                data = json.load(file)
+            with open(report_path, "w") as report:
+                report.write("# Rapport de Calcul de la Couverture des Règles\n\n")
+
+                report.write("## Succès\n")
+                for s in self.successes:
+                    report.write(f"- {s}\n")
+
+                report.write("\n## Échecs\n")
+                for f in self.failures:
+                    report.write(f"- {f}\n")
+
+            self.logger.info(f"Report generated at {report_path}")
+            self.successes.append("Coverage report generated successfully.")
         except Exception as e:
-            logging.error(f"Error reading JSON file {filepath}: {e}")
-            return []
+            self.failures.append(f"Report generation failed: {e}")
+            self.logger.error(f"Report generation failed: {e}")
 
-        results = []
-        for rule_dict in data:
-            rule = RuleIO.rule_from_dict(rule_dict)
-            try:
-                compatible = self.is_rule_compatible(rule, compatibility_dict)
-                rule_dict["compatible"] = compatible
-                results.append(rule_dict)
-            except Exception as e:
-                logging.error(f"Error processing rule: {e}. Rule data: {rule_dict}")
-                rule_dict["compatible"] = False
-                results.append(rule_dict)
-        return results
-
-    def save_compatibility_results(self, filepath: str, results: List[Dict[str, Union[Dict, bool]]]):
-        try:
-            with open(filepath, 'w') as file:
-                json.dump(results, file, indent=4)
-            logging.info(f"Compatibility results written to {filepath}")
-        except Exception as e:
-            logging.error(f"Error writing compatibility results to {filepath}: {e}")
-    def process_matilda_results(self):
-        input_pattern = os.path.join(self.debug + self.results_dir, "*/matilda/matilda_*_results.json")
-        for input_filepath in glob.glob(input_pattern):
-            database_name = os.path.basename(input_filepath).split(self.compatibility_sep)[-2].split('_')[0]
-            if database_name in self.compatibility_files:
-                compatibility_dict = self.compatibility_files[database_name]
-                results = self.check_rule_compatibility(input_filepath, compatibility_dict)
-                self.save_compatibility_results(input_filepath, results)
-            else:
-                logging.warning(f"No matching compatibility file for {input_filepath}")
-    def process_amie3_results(self):
-        input_pattern = os.path.join(self.debug + self.results_dir, "*/amie3/amie3_*_results.json")
-        for input_filepath in glob.glob(input_pattern):
-            database_name = os.path.basename(input_filepath).split(self.compatibility_sep)[-2].split('_')[0]
-            if database_name in self.compatibility_files:
-                compatibility_dict = self.compatibility_files[database_name]
-                results = self.check_rule_compatibility(input_filepath, compatibility_dict)
-                self.save_compatibility_results(input_filepath, results)
-            else:
-                logging.warning(f"No matching compatibility file for {input_filepath}")
-    def process_spider_results(self):
-        input_pattern = os.path.join(self.debug + self.results_dir, "*/spider/spider_*_results.json")
-        for input_filepath in glob.glob(input_pattern):
-            database_name = os.path.basename(input_filepath).split(self.compatibility_sep)[-2].split('_')[0]
-            if database_name in self.compatibility_files:
-                compatibility_dict = self.compatibility_files[database_name]
-                results = self.check_rule_compatibility(input_filepath, compatibility_dict)
-                self.save_compatibility_results(input_filepath, results)
-            else:
-                logging.warning(f"No matching compatibility file for {input_filepath}")
-    def process_ilp_results(self):
-        input_pattern = os.path.join(self.debug + self.results_dir, "*/ilp/ilp_*_results.json")
-        for input_filepath in glob.glob(input_pattern):
-            database_name = os.path.basename(input_filepath).split(self.compatibility_sep)[-2].split('_')[0]
-            if database_name in self.compatibility_files:
-                compatibility_dict = self.compatibility_files[database_name]
-                results = self.check_rule_compatibility(input_filepath, compatibility_dict)
-                self.save_compatibility_results(input_filepath, results)
-            else:
-                logging.warning(f"No matching compatibility file for {input_filepath}")
-    def process_files(self):
-        self.process_ilp_results()
-        self.process_spider_results()
-        self.process_amie3_results()
-        self.process_matilda_results()
-
-        # input_pattern = os.path.join(self.debug + self.results_dir, "*/matilda/matilda_*_results.json")
-        # for input_filepath in glob.glob(input_pattern):
-        #     database_name = os.path.basename(input_filepath).split(self.compatibility_sep)[-2].split('_')[0]
-        #     if database_name in self.compatibility_files:
-        #         compatibility_dict = self.compatibility_files[database_name]
-        #         results = self.check_rule_compatibility(input_filepath, compatibility_dict)
-        #         self.save_compatibility_results(input_filepath, results)
-        #     else:
-        #         logging.warning(f"No matching compatibility file for {input_filepath}")
-
-if __name__ == "__main__":
-    results_dir="../main/data/results/"
-    checker = RuleCompatibilityChecker(
-        results_dir=results_dir,
-        compatible_dir=results_dir,
-        compatibility_sep="_",
-        debug=""
-    )
-    checker.process_files()
+    def main(self):
+        """Main method to execute the coverage calculation."""
+        self.calculate_coverage()
+        self.generate_report()

@@ -1,9 +1,9 @@
-
 import logging
 import yaml
 from pathlib import Path
 import colorama
 from colorama import Fore, Style
+from .RuleComparer import RuleComparer
 
 # Initialize colorama
 colorama.init(autoreset=True)
@@ -32,56 +32,78 @@ class RuleCoverageCalculator:
         self.successes = []
         self.failures = []
 
-    def calculate_coverage(self):
+    def compare_rule_sets(self, filepath1: str, filepath2: str):
+        """Compare two sets of rules using RuleComparer."""
+        comparer = RuleComparer()
+        result = comparer.compare_rule_sets(filepath1, filepath2)
+        self.logger.info(f"Comparison result: {result}")
+        return result
+
+    def calculate_coverage(self, database):
         """Calculate the coverage of the rules."""
-        try:
-            self.logger.info(f"Calculating rule coverage from {self.rules_dir} and saving to {self.coverage_output_dir}")
-            # Exemple de calcul de couverture des règles
-            coverage_data = {}
-            for rule_file in self.rules_dir.glob("filtered_*_rules.yaml"):
-                with open(rule_file, "r") as file:
-                    rules = yaml.safe_load(file)
-                coverage = self._compute_rule_coverage(rules)
-                coverage_data[rule_file.stem] = coverage
-                self.logger.info(f"Coverage calculated for {rule_file.name}: {coverage}%")
-            
-            # Sauvegarder les données de couverture
-            coverage_output_file = self.coverage_output_dir / "rule_coverage.yaml"
-            with open(coverage_output_file, "w") as file:
-                yaml.dump(coverage_data, file, default_flow_style=False, sort_keys=False)
-            
-            self.successes.append("Rule coverage calculated successfully.")
-            self.logger.info("Rule coverage calculated successfully.")
-        except Exception as e:
-            self.failures.append(f"RuleCoverageCalculator failed: {e}")
-            self.logger.error(f"RuleCoverageCalculator failed: {e}")
+        results_path = self.rules_dir / database
+        reference_rules_path = str(results_path / "matilda" / f"matilda_{database}_results.json")
 
-    def _compute_rule_coverage(self, rules: list) -> float:
-        """Compute the coverage percentage of the given rules."""
-        pass 
-        # if not rules:
-        #     return 0.0
-        # total_rules = len(rules)
-        # # Supposons que chaque règle a un attribut 'coverage' entre 0 et 100
-        # covered_rules = sum(rule.get("coverage", 0) > 50 for rule in rules)
-        # coverage_percentage = (covered_rules / total_rules) * 100
-        # return round(coverage_percentage, 2)
+        amie_results = self.compare_rule_sets(
+            str(results_path / "amie" / f"amie_{database}_results.json"),
+            reference_rules_path
+        )
+        spider_results = self.compare_rule_sets(
+            str(results_path / "spider" / f"spider_{database}_results.json"),
+            reference_rules_path
+        )
+        ilp_results = self.compare_rule_sets(
+            str(results_path / "popper" / f"popper_{database}_results.json"),
+            reference_rules_path
+        )
 
-    def generate_report(self):
+        # Log the results
+        self.logger.info(f"Database: {database}")
+        self.logger.info(f"AMIE Coverage: {amie_results}")
+        self.logger.info(f"Spider Coverage: {spider_results}")
+        self.logger.info(f"ILP Coverage: {ilp_results}")
+
+        return {
+            "database": database,
+            "amie": amie_results,
+            "spider": spider_results,
+            "ilp": ilp_results
+        }
+
+    def generate_report(self, coverage_results):
         """Generate a Markdown report summarizing the coverage calculations."""
         report_path = self.report_dir / "4_step_compute_coverage_report.md"
         try:
             with open(report_path, "w") as report:
                 report.write("# Rapport de Calcul de la Couverture des Règles\n\n")
-                
+
+                for result in coverage_results:
+                    report.write(f"## Database: {result['database']}\n")
+                    report.write(f"- AMIE Coverage: {result['amie'].get('coverage_all', 0)}\n")
+                    report.write(f"- Spider Coverage: {result['spider'].get('coverage_all', 0)}\n")
+                    report.write(f"- ILP Coverage: {result['ilp'].get('coverage_all', 0)}\n\n")
+
+                    # Report errors if any
+                    if result['amie'].get('coverage_all', 0) == 0:
+                        report.write(f"  - AMIE Errors: {result['amie']}\n")
+                    if result['spider'].get('coverage_all', 0) == 0:
+                        report.write(f"  - Spider Errors: {result['spider']}\n")
+                    if result['ilp'].get('coverage_all', 0) == 0:
+                        report.write(f"  - ILP Errors: {result['ilp']}\n")
+
+                report.write("## Bases de données sans couverture complète\n")
+                for result in coverage_results:
+                    if result['amie'].get('coverage_all', 0) < 1.0 or result['spider'].get('coverage_all', 0) < 1.0 or result['ilp'].get('coverage_all', 0) < 1.0:
+                        report.write(f"- {result['database']}\n")
+
                 report.write("## Succès\n")
                 for s in self.successes:
                     report.write(f"- {s}\n")
-                
+
                 report.write("\n## Échecs\n")
                 for f in self.failures:
                     report.write(f"- {f}\n")
-            
+
             self.logger.info(f"Report generated at {report_path}")
             self.successes.append("Coverage report generated successfully.")
         except Exception as e:
@@ -90,5 +112,10 @@ class RuleCoverageCalculator:
 
     def main(self):
         """Main method to execute the coverage calculation."""
-        self.calculate_coverage()
-        self.generate_report()
+        # get all databases in rules_dir
+        databases = [f.name for f in self.rules_dir.iterdir() if f.is_dir()]
+        coverage_results = []
+        for database in databases:
+            result = self.calculate_coverage(database)
+            coverage_results.append(result)
+        self.generate_report(coverage_results)

@@ -3,10 +3,16 @@
 import json
 import logging
 from typing import Dict, Any, List, Optional, Union, Tuple
-from rule_definitions import (
+import sys
+import os 
+import sys 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../src/utils/')))
+
+from rules import (
     Rule, HornRule, TGDRule, InclusionDependency, FunctionalDependency, DenialConstraint
 )
-from rule_io import RuleIO, is_equivalent_to_tgd, is_equivalent_to_horn
+
+from rules import RuleIO#, is_equivalent_to_tgd, is_equivalent_to_horn
 
 class RuleComparer:
     """
@@ -199,17 +205,17 @@ class RuleComparer:
             return self._compare_same_type(r1, r2)
         if isinstance(r1, TGDRule) and isinstance(r2, HornRule):
             return self._compare_same_type(r1, r2)
+        #"TODOOOO"
+        # # InclusionDependency <-> TGDRule/Horn
+        # if isinstance(r1, InclusionDependency) and isinstance(r2, TGDRule):
+        #     return is_equivalent_to_tgd(r1, r2)
+        # if isinstance(r1, InclusionDependency) and isinstance(r2, HornRule):
+        #     return is_equivalent_to_horn(r1, r2)
 
-        # InclusionDependency <-> TGDRule/Horn
-        if isinstance(r1, InclusionDependency) and isinstance(r2, TGDRule):
-            return is_equivalent_to_tgd(r1, r2)
-        if isinstance(r1, InclusionDependency) and isinstance(r2, HornRule):
-            return is_equivalent_to_horn(r1, r2)
-
-        if isinstance(r2, InclusionDependency) and isinstance(r1, TGDRule):
-            return is_equivalent_to_tgd(r2, r1)
-        if isinstance(r2, InclusionDependency) and isinstance(r1, HornRule):
-            return is_equivalent_to_horn(r2, r1)
+        # if isinstance(r2, InclusionDependency) and isinstance(r1, TGDRule):
+        #     return is_equivalent_to_tgd(r2, r1)
+        # if isinstance(r2, InclusionDependency) and isinstance(r1, HornRule):
+        #     return is_equivalent_to_horn(r2, r1)
 
         # else no known cross-compare => false
         return False

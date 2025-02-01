@@ -1,1 +1,0 @@
-:- dynamic krk/8.

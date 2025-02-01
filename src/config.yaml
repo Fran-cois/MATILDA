@@ -13,7 +13,7 @@ results:
   output_dir: "results"  # Directory for saving results
 
 algorithm:
-  name: "SPIDER"  # Default algorithm
+  name: "MATILDA"  # Default algorithm
 
 mlflow:
   use: false  # Set to true to log experiments to mlflow

@@ -9,8 +9,9 @@ from dataclasses import asdict, dataclass
 from typing import Dict, List, NamedTuple, Tuple, Union, Optional
 import re
 from collections import Counter
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src/utils')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../src/utils')))
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+#sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 
 from rules import Rule, RuleIO
 

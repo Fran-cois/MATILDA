@@ -91,6 +91,7 @@ class ConfigGenerator:
     def generate_configs(self, data: dict):
         """Generate configuration files for each database and each algorithm."""
         algorithms = ["popper", "spider", "amie3", "matilda"]  # List of algorithms
+        algorithms = ["matilda"]
         for db_name, db_details in data.items():
             for algo in algorithms:
                 config = self._create_config(db_name, algo)

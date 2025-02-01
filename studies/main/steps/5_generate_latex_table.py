@@ -6,12 +6,12 @@ from pathlib import Path
 import colorama
 from colorama import Fore, Style
 import sys
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from utils.generate_reports.LaTeXTableGenerator import LaTeXTableGenerator
 
 # Initialize colorama
 colorama.init(autoreset=True)
-
 class ColoredFormatter(logging.Formatter):
     def format(self, record):
         if record.levelno == logging.INFO:

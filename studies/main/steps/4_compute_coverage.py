@@ -63,7 +63,6 @@ class CoverageExecutor:
                 report_dir=self.report_dir
             )
             calculator.main()
-            # Accumuler les succès et échecs
             self.successes.extend(calculator.successes)
             self.failures.extend(calculator.failures)
         except Exception as e:
