@@ -1,28 +1,39 @@
 # MATILDA
 
+## Installation
 
-## INSTALLATION 
-# Download databases requirements 
-on macos  
+### Download database requirements
+#### macOS
 ```bash
 brew install mysql-client@8.4
 ```
 
-on linux
+#### Linux
 ```bash
 sudo apt-get install mysql-client-8.4
 ```
 
-on windows
+#### Windows
 ```powershell
 choco install mysql --version=8.4
 ```
 
-# Setup Python3 virtual environment
+### Set up Python3 virtual environment
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip3 install -r requirements.txt
+```
+
+### Run the application
+1. Activate the virtual environment:
+```bash
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+2. Start the application:
+```bash
+cd src 
+python main.py
 ```
 
 
