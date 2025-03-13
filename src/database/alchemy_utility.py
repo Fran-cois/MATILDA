@@ -3,12 +3,13 @@ import hashlib
 import logging
 import os
 import time
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Optional, Union
 import sys
 sys.path.append("../../")
 sys.path.append("../")
 
 import psutil
+import pandas as pd
 from sqlalchemy import (
     MetaData,
     alias,
@@ -16,7 +17,9 @@ from sqlalchemy import (
     create_engine,
     func,
     select,
-    text
+    text,
+    Table, 
+    Column
 )
 from sqlalchemy.engine.url import make_url
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
@@ -32,7 +35,6 @@ from src.database.query_utility import QueryUtility
 import colorama   # Added colorama
 colorama.init(autoreset=True)
 
-import logging
 from colorama import Fore, Style
 
 class ColorFormatter(logging.Formatter):
@@ -73,6 +75,7 @@ class AlchemyUtility:
         setup_loggers()
         self.logger_query_time = logging.getLogger("query_time")
         self.logger_query_results = logging.getLogger("query_results")
+        self.logger = logging.getLogger("alchemy_utility")  # Ajout du logger manquant
         
         self._setup_logging_handlers()  # Configure log handlers
 
@@ -138,6 +141,13 @@ class AlchemyUtility:
         handler_results.setFormatter(formatter)
         self.logger_query_results.addHandler(handler_results)
         self.logger_query_results.setLevel(logging.DEBUG)
+        
+        # Formatter for general logger
+        handler_general = logging.StreamHandler()
+        handler_general.setFormatter(formatter)
+        self.logger.addHandler(handler_general)
+        self.logger.setLevel(logging.DEBUG)
+
     def _setup_sqlite(self, create_index: bool):
         """Configure SQLite PRAGMAs and optionally create indexes."""
         self.db_manager.conn.execute(text("PRAGMA temp_store = MEMORY;"))
@@ -212,14 +222,84 @@ class AlchemyUtility:
        flag: str=""
     ) -> int:
         return self.query_utility.get_join_row_count(join_conditions,disjoint_semantics,distinct,count_over)
+    
+
+    def get_row_count(self, table_name: str) -> int:
+        """
+        Obtient le nombre de lignes dans une table.
+        
+        :param table_name: Nom de la table
+        :return: Nombre de lignes
+        """
+        return self.query_utility.get_row_count(table_name)
+    
+    def get_join_content_custom(self, join_conditions: List[Dict[str, Any]], 
+                               where_clause: Optional[str] = None, 
+                               limit: Optional[int] = None,
+                               flag: str = "") -> pd.DataFrame:
+        """
+        Exécute une requête JOIN personnalisée et retourne les résultats.
+        
+        :param join_conditions: Liste de dictionnaires décrivant les conditions de jointure
+            Chaque dictionnaire doit contenir:
+            - 'table1': Première table
+            - 'column1': Colonne de la première table
+            - 'table2': Deuxième table
+            - 'column2': Colonne de la deuxième table
+            - 'type': Type de jointure ('inner', 'left', 'right', 'full')
+        :param where_clause: Condition WHERE optionnelle (chaîne SQL)
+        :param limit: Nombre maximum de lignes à retourner
+        :param flag: Indicateur optionnel pour le traitement spécifique
+        :return: DataFrame pandas avec les résultats de la jointure
+        """
+        return self.query_utility.get_join_content_custom(join_conditions, where_clause, limit, flag)
+    
+    def execute_query(self, query: str) -> pd.DataFrame:
+        """
+        Exécute une requête SQL arbitraire et retourne les résultats.
+        
+        :param query: Requête SQL à exécuter
+        :return: DataFrame pandas avec les résultats de la requête
+        """
+        try:
+            self.logger.debug(f"Executing query: {query}")
+            df = pd.read_sql_query(query, self.engine)
+            return df
+        except Exception as e:
+            self.logger.error(f"Error executing query: {e}")
+            return pd.DataFrame()
+    
+    def count_distinct_values(self, table_name: str, column_name: str) -> int:
+        """
+        Compte le nombre de valeurs distinctes dans une colonne.
+        
+        :param table_name: Nom de la table
+        :param column_name: Nom de la colonne
+        :return: Nombre de valeurs distinctes
+        """
+        return self.query_utility.count_distinct_values(table_name, column_name)
+    
+    def get_correlation_matrix(self, table_name: str) -> pd.DataFrame:
+        """
+        Calcule la matrice de corrélation entre les colonnes numériques d'une table.
+        
+        :param table_name: Nom de la table
+        :return: DataFrame pandas contenant la matrice de corrélation
+        """
+        return self.query_utility.get_correlation_matrix(table_name)
+
     def get_table_names(self) -> List[str]:
         return self.query_utility._get_table_names()
+    
     def get_attribute_names(self, table_name: str) -> List[str]:
         return self.query_utility._get_attribute_names(table_name)
+    
     def get_attribute_domain(self, table_name: str, attribute_name: str) -> str:
         return self.query_utility._get_attribute_domain(table_name, attribute_name)
+    
     def get_attribute_is_key(self, table_name: str, attribute_name: str) -> bool:
         return self.query_utility._get_attribute_is_key(table_name, attribute_name)
+    
     def are_foreign_keys(self, table: str, column: str, other_table: str, other_column: str) -> bool:
         """
         Check if the specified column in a table is a foreign key referencing another table and column.
@@ -242,13 +322,34 @@ class AlchemyUtility:
                     return False
         self.logger_query_time.error(f"Foreign key '{column}' does not exist in table '{table}'.")
         return False
+
+    def get_engine(self):
+        """
+        Retourne le moteur SQLAlchemy pour permettre l'accès direct au moteur de la base de données.
+        Cette méthode est utilisée par RuleDiscoveryCore et d'autres composants qui ont besoin
+        d'un accès direct au moteur SQLAlchemy.
+        
+        :return: SQLAlchemy engine instance
+        """
+        self.logger.debug("Returning SQLAlchemy engine")
+        return self.db_manager.engine
+
+    def get_metadata(self):
+        """
+        Retourne les métadonnées SQLAlchemy pour permettre l'accès direct au schéma de la base de données.
+        Cette méthode est utilisée par RuleDiscoveryCore et d'autres composants qui ont besoin
+        d'accéder aux informations sur les tables, colonnes et relations.
+        
+        :return: SQLAlchemy MetaData instance
+        """
+        self.logger.debug("Returning SQLAlchemy metadata")
+        return self.db_manager.metadata
+
     def close(self):
         """Close database connection."""
         self.db_manager.close()
-
     def __enter__(self):
         return self
-
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.close()
 
@@ -256,7 +357,6 @@ class AlchemyUtility:
         self.async_engine = create_async_engine(self.db_url)
         self.async_session = sessionmaker(bind=self.async_engine, class_=AsyncSession, expire_on_commit=False)()
         return self
-
     async def __aexit__(self, exc_type, exc_value, traceback):
         await self.async_session.close()
         await self.async_engine.dispose()

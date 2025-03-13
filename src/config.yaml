@@ -14,6 +14,14 @@ results:
 
 algorithm:
   name: "MATILDA"  # Default algorithm
+  search_algorithm: "dfs"  # Default search algorithm
+  dependency_type: "fd"  # Mine both EGDs and TGDs by default
+  compatibility_mode: "fd"
+  # min_support: 0 #.01  # Réduit à 1%
+  # min_confidence: 0 #.01  # Réduit à 1%
+  max_table: 2  # Maximum number of tables in a rule
+  max_vars: 6  # Maximum number of variables in a rule
+  filter_redundant: true  # Filter redundant rules
 
 mlflow:
   use: false  # Set to true to log experiments to mlflow

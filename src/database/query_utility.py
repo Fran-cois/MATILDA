@@ -21,6 +21,9 @@ import colorama   # Ajout de colorama
 colorama.init(autoreset=True)
 from colorama import Fore, Style
 
+import pandas as pd  # Ajout pour pd.DataFrame
+from typing import Optional  # Ajout pour le type Optional
+
 class ColorFormatter(logging.Formatter):
     COLOR_MAP = {
         logging.DEBUG: Fore.CYAN,
@@ -93,12 +96,12 @@ class QueryUtility:
         end = time.time()
 
         execution_time = end - start
-        self.logger_query_time.info(
-            f"Execution Time: {execution_time:.4f} seconds for Threshold Query: {str(query)}"
-        )
-        self.logger_query_results.info(
-            f"Threshold Query: {str(query)}; Result: {result}; Execution Time: {execution_time:.4f}"
-        )
+        # self.logger_query_time.info(
+        #     f"Execution Time: {execution_time:.4f} seconds for Threshold Query: {str(query)}"
+        # )
+        # self.logger_query_results.info(
+        #     f"Threshold Query: {str(query)}; Result: {result}; Execution Time: {execution_time:.4f}"
+        # )
 
         return int(result) if result is not None else 0
 
@@ -126,12 +129,12 @@ class QueryUtility:
         end = time.time()
 
         execution_time_sqlite = end - start
-        self.logger_query_time.info(
-            f"Execution Time: {execution_time_sqlite:.4f} seconds for Query: {str(query)}"
-        )
-        self.logger_query_results.info(
-            f"Query: {str(query)}; Result: {result_sqlite}"
-        )
+        # self.logger_query_time.info(
+        #     f"Execution Time: {execution_time_sqlite:.4f} seconds for Query: {str(query)}"
+        # )
+        # self.logger_query_results.info(
+        #     f"Query: {str(query)}; Result: {result_sqlite}"
+        # )
 
         return result_sqlite if result_sqlite is not None else 0
 
@@ -423,3 +426,231 @@ class QueryUtility:
                     foreign_keys_info[table_name] = {}
                 foreign_keys_info[table_name][local_column] = (ref_table, reference_column)
         return foreign_keys_info
+
+    def get_row_count(self, table_name: str) -> int:
+        """
+        Obtient le nombre de lignes dans une table.
+        
+        :param table_name: Nom de la table
+        :return: Nombre de lignes
+        """
+        try:
+            # Construire la requête COUNT
+            query = f"SELECT COUNT(*) FROM {table_name}"
+            
+            # Exécuter la requête
+            with self.engine.connect() as connection:
+                result = connection.execute(text(query))
+                count = result.scalar()
+                
+            return count
+        except Exception as e:
+            self.logger_query_time.warning(f"Couldn't get row count for {table_name}: {e}")
+            # Approche alternative: charger la table et compter les lignes
+            try:
+                table = self.metadata.tables.get(table_name)
+                if table is not None:
+                    df = pd.read_sql_table(table_name, self.engine)
+                    return len(df)
+                else:
+                    self.logger_query_time.error(f"Table {table_name} not found in metadata")
+                    return 0
+            except Exception as e2:
+                self.logger_query_time.error(f"Failed to get row count for {table_name}: {e2}")
+                return 0
+
+    def get_join_content_custom(self, join_conditions: List[Dict[str, Any]], 
+                               where_clause: Optional[str] = None, 
+                               limit: Optional[int] = None,
+                               flag: str = "") -> pd.DataFrame:
+        """
+        Exécute une requête JOIN personnalisée et retourne les résultats.
+        
+        :param join_conditions: Liste de dictionnaires ou de tuples décrivant les conditions de jointure
+          Format dict: {'table1': str, 'column1': str, 'table2': str, 'column2': str, 'type': str}
+          Format tuple: (table_name1, occurrence1, attribute_name1, table_name2, occurrence2, attribute_name2)
+        :param where_clause: Condition WHERE optionnelle (chaîne SQL ou liste de tuples)
+        :param limit: Nombre maximum de lignes à retourner
+        :param flag: Indicateur optionnel pour le traitement spécifique
+        :return: DataFrame pandas avec les résultats de la jointure
+        """
+        try:
+            # Construire la requête JOIN dynamiquement
+            if not join_conditions:
+                return pd.DataFrame()
+            
+            # Détecter le format des conditions de jointure (dict ou tuple)
+            first_element = join_conditions[0]
+            is_tuple_format = isinstance(first_element, tuple)
+            
+            # Log pour debug
+            #self.logger_query_time.debug(f"Join conditions format: {'tuple' if is_tuple_format else 'dict'}")
+            
+            if is_tuple_format:
+                # Format tuple: (table_name1, occurrence1, attribute_name1, table_name2, occurrence2, attribute_name2)
+                # Extraire le nom de base de la table (sans occurrence)
+                first_condition = join_conditions[0]
+                base_table = first_condition[0]  # table_name1 (ex: "mcv")
+                
+                # Construire la chaîne SQL de base avec la première table
+                query = f"SELECT * FROM {base_table}"
+                
+                # Pour les tables avec occurrence, on extrait la liste des tables uniques
+                table_aliases = set()
+                for condition in join_conditions:
+                    table1 = condition[0]
+                    table2 = condition[3]
+                    table_aliases.add(f"{table1}_{condition[1]}")  # ex: "mcv_0"
+                    table_aliases.add(f"{table2}_{condition[4]}")  # ex: "mcv_1"
+                
+                # Construire la clause WHERE pour les conditions de jointure
+                join_where_clauses = []
+                for condition in join_conditions:
+                    table1 = condition[0]
+                    attribute1 = condition[2]
+                    table2 = condition[3]
+                    attribute2 = condition[5]
+                    join_where_clauses.append(f"{base_table}.{attribute1} = {base_table}.{attribute2}")
+                
+                # Ajouter WHERE pour les conditions de jointure
+                if join_where_clauses:
+                    query += " WHERE " + " AND ".join(join_where_clauses)
+                
+                # Gérer la clause WHERE supplémentaire
+                if where_clause:
+                    if isinstance(where_clause, (list, tuple)):
+                        where_conditions = []
+                        for col_name, val in where_clause:
+                            # Extraire la partie colonne des chaînes comme "mcv_0.arg1"
+                            if '.' in col_name:
+                                base_col = col_name.split('.')[1]  # Obtenir "arg1" de "mcv_0.arg1"
+                            else:
+                                base_col = col_name
+                                
+                            # Formater avec la table de base
+                            if isinstance(val, str):
+                                where_conditions.append(f"{base_table}.{base_col} = '{val}'")
+                            else:
+                                where_conditions.append(f"{base_table}.{base_col} = {val}")
+                        
+                        where_str = " AND ".join(where_conditions)
+                        if "WHERE" in query:
+                            query += f" AND {where_str}"
+                        else:
+                            query += f" WHERE {where_str}"
+                    else:
+                        # Remplacer les alias de table par le nom de base dans where_clause
+                        modified_where = where_clause
+                        for alias in table_aliases:
+                            # Remplace "mcv_0." par "mcv."
+                            modified_where = modified_where.replace(f"{alias}.", f"{base_table}.")
+                            
+                        if "WHERE" in query:
+                            query += f" AND {modified_where}"
+                        else:
+                            query += f" WHERE {modified_where}"
+            else:
+                # ...existing code for dict format...
+                first_condition = join_conditions[0]
+                first_table = first_condition['table1']
+                
+                # Construire la chaîne SQL de base avec la première table
+                query = f"SELECT * FROM {first_table}"
+                
+                # Ajouter les JOINs
+                tables_used = set([first_table])
+                for condition in join_conditions:
+                    table1 = condition['table1']
+                    column1 = condition['column1']
+                    table2 = condition['table2']
+                    column2 = condition['column2']
+                    join_type = condition.get('type', 'inner').upper()
+                    
+                    # Vérifier si table2 est déjà dans la requête
+                    if table2 not in tables_used:
+                        query += f" {join_type} JOIN {table2} ON {table1}.{column1} = {table2}.{column2}"
+                        tables_used.add(table2)
+                    else:
+                        # Si la table est déjà présente, ajouter simplement la condition
+                        query += f" AND {table1}.{column1} = {table2}.{column2}"
+            
+                # Ajouter WHERE si spécifié
+                if where_clause:
+                    # Si where_clause est une liste ou un tuple, on la formate
+                    if isinstance(where_clause, (list, tuple)):
+                        where_conditions = []
+                        for col, val in where_clause:
+                            # Gérer les valeurs numériques et les chaînes
+                            if isinstance(val, str):
+                                where_conditions.append(f"{col} = '{val}'")
+                            else:
+                                where_conditions.append(f"{col} = {val}")
+                        
+                        where_str = " AND ".join(where_conditions)
+                        if "WHERE" in query:
+                            query += f" AND {where_str}"
+                        else:
+                            query += f" WHERE {where_str}"
+                    else:
+                        # where_clause est une chaîne
+                        if "WHERE" in query:
+                            query += f" AND {where_clause}"
+                        else:
+                            query += f" WHERE {where_clause}"
+            
+            # Ajouter LIMIT si spécifié
+            if limit:
+                query += f" LIMIT {limit}"
+            
+            # Exécuter la requête
+            #self.logger_query_time.debug(f"Executing custom join query: {query}")
+            df = pd.read_sql_query(query, self.engine)
+            return df
+            
+        except Exception as e:
+            self.logger_query_time.error(f"Error executing custom join: {e}")
+            return pd.DataFrame()
+
+    def count_distinct_values(self, table_name: str, column_name: str) -> int:
+        """
+        Compte le nombre de valeurs distinctes dans une colonne.
+        
+        :param table_name: Nom de la table
+        :param column_name: Nom de la colonne
+        :return: Nombre de valeurs distinctes
+        """
+        try:
+            query = f"SELECT COUNT(DISTINCT {column_name}) FROM {table_name}"
+            
+            with self.engine.connect() as connection:
+                result = connection.execute(text(query))
+                count = result.scalar()
+                
+            return count
+        except Exception as e:
+            self.logger_query_time.error(f"Error counting distinct values: {e}")
+            return 0
+    
+    def get_correlation_matrix(self, table_name: str) -> pd.DataFrame:
+        """
+        Calcule la matrice de corrélation entre les colonnes numériques d'une table.
+        
+        :param table_name: Nom de la table
+        :return: DataFrame pandas contenant la matrice de corrélation
+        """
+        try:
+            # Charger la table en tant que DataFrame
+            df = pd.read_sql_table(table_name, self.engine)
+            
+            # Sélectionner uniquement les colonnes numériques
+            numeric_columns = df.select_dtypes(include=['number']).columns
+            if len(numeric_columns) > 1:
+                # Calculer la matrice de corrélation
+                correlation_matrix = df[numeric_columns].corr()
+                return correlation_matrix
+            else:
+                self.logger_query_time.warning(f"Table {table_name} has less than 2 numeric columns")
+                return pd.DataFrame()
+        except Exception as e:
+            self.logger_query_time.error(f"Error computing correlation matrix: {e}")
+            return pd.DataFrame()

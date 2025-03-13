@@ -1,6 +1,7 @@
 from database.alchemy_utility import AlchemyUtility
 # import networkx as nx
 # import numpy as np
+from algorithms.MATILDA.compatibility_checker import CompatibilityChecker
 
 
 class Attribute:
@@ -30,194 +31,81 @@ class Attribute:
             user_defined_rules: dict[tuple[tuple[str, str, str, str], bool]] = None,
             database_constraints: bool = True,
             db_inspector: AlchemyUtility = None,
-
     ):
         """
         Determine if two attributes are compatible. Use to generate a list of JoinableIndexedAttributes.
 
-        :param attr2: Second attribute
+        :param other_attribute: Second attribute
+        :param threshold_jaccard: Threshold for Jaccard similarity
+        :param threshold_overlap: Threshold for value overlap
         :param domain_overlap: Flag indicating if domain overlap should be considered
         :param value_overlap: Flag indicating if value overlap should be considered
         :param user_defined_rules: User specified compatibility rules
-        :param database_constraints:  Use Database constraints like foreign keys
+        :param database_constraints: Use Database constraints like foreign keys
+        :param db_inspector: Database inspector utility
         :return: Boolean indicating compatibility
         """
-        # return True
-
-        # return True if they are fk keys else return false
-        # fk_found = False
-        return db_inspector.are_foreign_keys(self.table, self.name, other_attribute.table, other_attribute.name)# or self.table == other_attribute.table
-        # for fk in foreign_keys:
-        # return True
-        # if threshold_overlap <0 :
-        #     return True
-        #if self.table == other_attribute.table: return True
-
-        if not isinstance(other_attribute, Attribute):
-            return NotImplemented
-        cdt1 = self.has_common_elements_above_threshold(db_inspector, self.table, self.name,
-                                                        other_attribute.table,
-                                                        other_attribute.name, threshold_overlap)
-        if cdt1: return True
-        # return True
-        # Database constraints (e.g., foreign key relationships)
-        # fk_found = False
-
-        # remove primary keys that are not foreign keys
-        # if self.is_key and other_attribute.is_key and not fk_found:
-        #     return False
-
-        # # Domain overlap (assuming domain information is available)
-        if (
-                domain_overlap
-                and self.domain
-                and other_attribute.domain
-                and self.domain != other_attribute.domain
-        ):
+        # Check if attributes are from the same table
+        if self.table == other_attribute.table:
+            return True
+            
+        # Check if db_inspector is provided
+        if db_inspector is None:
             return False
-        # Value overlap (requires database query, not implemented here)
+            
+        # Create a CompatibilityChecker instance
+        checker = CompatibilityChecker(
+            engine=db_inspector.engine,
+            metadata=db_inspector.metadata
+        )
+        
+        # Determine the compatibility mode based on parameters
+        mode = CompatibilityChecker.MODE_HYBRID
+        
+        if database_constraints and not value_overlap:
+            # Only use foreign keys
+            mode = CompatibilityChecker.MODE_FK
+        elif database_constraints and value_overlap:
+            # Use both foreign keys and overlap
+            mode = CompatibilityChecker.MODE_HYBRID
+        elif not database_constraints and value_overlap:
+            # Only check value overlap
+            mode = CompatibilityChecker.MODE_OVERLAP
+        
+        # Check if the domain constraint is satisfied
+        if domain_overlap and self.domain and other_attribute.domain and self.domain != other_attribute.domain:
+            return False
+        
+        # First check using compatibility mode
+        if checker.is_compatible(
+            table1=self.table,
+            column1=self.name,
+            table2=other_attribute.table,
+            column2=other_attribute.name,
+            mode=mode,
+            sample_size=threshold_overlap
+        ):
+            return True
+            
+        # If not compatible by mode but value_overlap is requested, try specific overlap checks
         if value_overlap:
-
-            basic_numerical_data_types = [
-                "INT",
-                "INTEGER",
-                "SMALLINT",
-                "BIGINT",
-                "DECIMAL",
-                "NUMERIC",
-                "FLOAT",
-            ]
-            if (
-                    self.domain in basic_numerical_data_types
-                    or other_attribute.domain in basic_numerical_data_types
+            # Check for common elements above threshold
+            if checker.check_common_elements_above_threshold(
+                self.table, self.name, 
+                other_attribute.table, other_attribute.name,
+                threshold_overlap
             ):
-
-                return False
-            # if self.is_key or other_attribute.is_key:
-            #     return False
-            # return True # DEBUG
-            cdt1 = self.has_common_elements_above_threshold(db_inspector, self.table, self.name,
-                                                            other_attribute.table,
-                                                            other_attribute.name, threshold_overlap)
-            if cdt1 : return True
-            # if cdt1 is False: return False
-            # cdt2 = self.has_common_elements_above_threshold_percentage(db_inspector, self.table, self.name,
-            #                                                            other_attribute.table, other_attribute.name,
-            #                                                            threshold_jaccard)
-            # if cdt2: return True
+                return True
+                
+            # Check for Jaccard similarity
+            if checker.check_jaccard_similarity_above_threshold(
+                self.table, self.name,
+                other_attribute.table, other_attribute.name,
+                threshold_jaccard
+            ):
+                return True
+                
         return False
-    # def get_compatible_dict_if_support(self,db_inspector:AlchemyUtility):
-    #     # Dictionary to store the dataframes
-    #     import os
-    #     directory = db_inspector.database_path_tsv.split("/tsv")[0] + "/csv"
-    #     tables = {}
-    #     # Read all CSV files in the directory
-    #     for file_name in os.listdir(directory):
-    #         if file_name.endswith('.csv'):
-    #             table_name = file_name[:-4]  # Remove the .csv extension
-    #             file_path = os.path.join(directory, file_name)
-    #             tables[table_name] = pd.read_csv(file_path)
-    #     # List to store the pairs of tables and attributes
-    #     common_pairs = []
-    #     # Compare each pair of tables
-    #     table_names = list(tables.keys())
-    #     for i in range(len(table_names)):
-    #         for j in range(i + 1, len(table_names)):
-    #             table1 = table_names[i]
-    #             table2 = table_names[j]
-    #             df1 = tables[table1]
-    #             df2 = tables[table2]
-    #             # Compare each pair of columns
-    #             for col1 in df1.columns:
-    #                 for col2 in df2.columns:
-    #                     # Convert columns to the same data type
-    #                     df1[col1] = df1[col1].astype(str)
-    #                     df2[col2] = df2[col2].astype(str)
-    #                     # Check for common non-null values
-    #                     common_values = pd.merge(df1[[col1]].dropna(), df2[[col2]].dropna(), left_on=col1,
-    #                                              right_on=col2)
-    #                     if not common_values.empty:
-    #                         common_pairs.append(((table1, col1), (table2, col2)))
-    #     return common_pairs
-    # def has_common_elements_above_threshold_percentage(self, db_inspector: AlchemyUtility, table1: str, col1: str, table2: str,
-    #                                         col2: str, threshold: int) -> bool:
-    #     import os
-    #     directory = db_inspector.database_path_tsv.split("/tsv")[0] + "/csv"
-    #
-    #     # Read the two CSV files
-    #     table1_path = os.path.join(directory, table1 + '.csv')
-    #     table2_path = os.path.join(directory, table2 + '.csv')
-    #
-    #     df1 = pd.read_csv(table1_path)
-    #     df2 = pd.read_csv(table2_path)
-    #
-    #     # Convert columns to sets (drop NaN and convert to string)
-    #     set1 = set(df1[col1].dropna().astype(str))
-    #     set2 = set(df2[col2].dropna().astype(str))
-    #     max_len = max(len(set1), len(set2))
-    #     # if max_len == 0: max_len = 1 # Avoid division by zero
-    #     # Find common elements
-    #     common_values = set1.intersection(set2)
-    #     union_values = set1.union(set2)
-    #     # Check if the number of common elements is above the threshold
-    #     return len(common_values)/len(union_values) > threshold
-
-    def has_common_elements_above_threshold_percentage(self, db_inspector: AlchemyUtility, table1: str, col1: str,
-                                                       table2: str,
-                                                       col2: str, threshold: int) -> bool:
-        # Fetch data directly from the database using db_inspector
-        df1_values = db_inspector.get_attribute_values(table1, col1)
-        df2_values = db_inspector.get_attribute_values(table2, col2)
-
-        # Convert lists to sets (drop None and convert to string)
-        set1 = set(filter(None, map(str, df1_values)))
-        set2 = set(filter(None, map(str, df2_values)))
-        # max_len = max(len(set1), len(set2))
-
-        # Find common elements and union of the sets
-        common_values = set1.intersection(set2)
-        union_values = set1.union(set2)
-        if union_values == 0: return False # union_values = 1  # Avoid division by zero
-        # Check if the ratio of common elements to the union is above the threshold
-        return len(common_values) / len(union_values) > threshold
-
-    def has_common_elements_above_threshold(self, db_inspector: AlchemyUtility, table1: str, col1: str, table2: str,
-                                            col2: str, threshold: int) -> bool:
-        # Fetch data directly from the database using db_inspector
-        df1_values = db_inspector.get_attribute_values(table1, col1)
-        df2_values = db_inspector.get_attribute_values(table2, col2)
-
-        # Convert lists to sets (drop None and convert to string)
-        set1 = set(filter(None, map(str, df1_values)))
-        set2 = set(filter(None, map(str, df2_values)))
-
-        # Find common elements
-        common_values = set1.intersection(set2)
-
-        # Check if the number of common elements is above the threshold
-        return len(common_values) > threshold
-
-    # def has_common_elements_above_threshold(self, db_inspector: AlchemyUtility, table1: str, col1: str, table2: str,
-    #                                         col2: str, threshold: int) -> bool:
-    #     import os
-    #     directory = db_inspector.database_path_tsv.split("/tsv")[0] + "/csv"
-    #
-    #     # Read the two CSV files
-    #     table1_path = os.path.join(directory, table1 + '.csv')
-    #     table2_path = os.path.join(directory, table2 + '.csv')
-    #
-    #     df1 = pd.read_csv(table1_path)
-    #     df2 = pd.read_csv(table2_path)
-    #
-    #     # Convert columns to sets (drop NaN and convert to string)
-    #     set1 = set(df1[col1].dropna().astype(str))
-    #     set2 = set(df2[col2].dropna().astype(str))
-    #
-    #     # Find common elements
-    #     common_values = set1.intersection(set2)
-    #
-    #     # Check if the number of common elements is above the threshold
-    #     return len(common_values) > threshold
 
     @classmethod
     def generate_attributes(cls, db_inspector: AlchemyUtility) -> list["Attribute"]:
@@ -346,6 +234,7 @@ class AttributeMapper:
             table_occurrence,
             self.attribute_name_to_index[attribute.table][attribute.name],
         )
+
 
 
 class JoinableIndexedAttributes:

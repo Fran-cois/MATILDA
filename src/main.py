@@ -19,6 +19,10 @@ from algorithms.base_algorithm import BaseAlgorithm
 from algorithms.amie3 import Amie3
 from algorithms.ilp import ILP
 from algorithms.spider import Spider
+from algorithms.tane import Tane
+from algorithms.fastfds import FastFDs
+from algorithms.fdep import FDep
+from algorithms.dfd import DFD
 from algorithms.matilda import MATILDA
 
 from database.alchemy_utility import AlchemyUtility
@@ -82,6 +86,7 @@ class DatabaseProcessor:
         results_dir: Path,
         logger: logging.Logger,
         use_mlflow: bool = False,
+        config: dict = None
     ):
         self.algorithm_name = algorithm_name
         self.database_name = database_name
@@ -89,7 +94,13 @@ class DatabaseProcessor:
         self.results_dir = results_dir
         self.logger = logger
         self.use_mlflow = use_mlflow
-
+        self.search_algorithm = config.get("algorithm", {}).get("search_algorithm", "dfs")
+        # Ajout des nouveaux paramètres
+        self.discovery_mode = config.get("algorithm", {}).get("discovery_mode", "both")
+        self.compatibility_mode = config.get("algorithm", {}).get("compatibility_mode", "fk")
+        self.max_vars = config.get("algorithm", {}).get("max_vars", 6)
+        self.max_table = config.get("algorithm", {}).get("max_table", 3)
+        self.dependency_type= config.get("algorithm", {}).get("dependency_type", "all")
     def discover_rules(self) -> int:
         """Runs the rule discovery algorithm synchronously."""
         algorithm_map = {
@@ -97,16 +108,37 @@ class DatabaseProcessor:
             "ILP": ILP,
             "AMIE3": Amie3,
             "SPIDER": Spider,
+            "TANE": Tane,
+            "FASTFDS": FastFDs,
+            "FDEP": FDep,
+            "DFD": DFD,
             "MATILDA": MATILDA,
         }
-        selected_algorithm = algorithm_map.get(self.algorithm_name.upper(), Amie3)
+        selected_algorithm = algorithm_map.get(self.algorithm_name.upper(), MATILDA)
 
         db_file_path = self.database_path / self.database_name
         db_uri = f"sqlite:///{db_file_path}"
         try:
             self.logger.info(f"Using database URI: {db_uri}")
+            settings = {
+                "search_algorithm": self.search_algorithm,
+                "discovery_mode": self.discovery_mode,
+                "compatibility_mode": self.compatibility_mode,
+                "dependency_type": self.dependency_type,
+                "max_table": self.max_table,
+                "max_vars": self.max_vars,
+            }
+            self.logger.info(f"Algorithm settings: {settings}")
+            
             with AlchemyUtility(db_uri, database_path=str(self.database_path), create_index=False) as db_util:
-                algo: BaseAlgorithm = selected_algorithm(db_util)
+                algo: BaseAlgorithm = selected_algorithm(db_util, settings=settings)
+                
+                # Vérifier si c'est MATILDA et si compatibility_mode est correctement configuré
+                if self.algorithm_name.upper() == "MATILDA" and hasattr(algo, 'set_compatibility_mode'):
+                    #if isinstance(algo, MATILDA) and self.compatibility_mode in algo.get_available_compatibility_modes():
+                    algo.set_compatibility_mode(self.compatibility_mode)
+                    self.logger.info(f"Set compatibility mode for MATILDA: {self.compatibility_mode}")
+                
                 rules = []
 
                 self.logger.debug("Starting rule discovery...")
@@ -121,11 +153,16 @@ class DatabaseProcessor:
                 number_of_rules = RuleIO.save_rules_to_json(rules, result_path)
 
                 self.logger.info(f"Discovered {number_of_rules} rules.")
-                if self.algorithm_name.upper() == "SPIDER":
-                    self.generate_report(number_of_rules, result_path,[])
+                # Ajouter DFD à la condition pour éviter de trier par accuracy
+                if self.algorithm_name.upper() in ["SPIDER", "TANE", "FASTFDS", "FDEP", "DFD"]:
+                    self.generate_report(number_of_rules, result_path, [])
                 else:
-                    top_rules = sorted(rules,key=lambda x:-x.accuracy)[:5]
-                    self.generate_report(number_of_rules, result_path,top_rules)
+                    try:
+                        top_rules = sorted(rules, key=lambda x:-x.accuracy)[:5]
+                    except Exception as e:
+                        self.logger.error(f"An error occurred during sorting: {e}", exc_info=True)
+                        top_rules = rules[:5]
+                    self.generate_report(number_of_rules, result_path, top_rules)
 
                 if self.use_mlflow:
                     mlflow.log_param("algorithm", self.algorithm_name)
@@ -166,6 +203,9 @@ class DatabaseProcessor:
 ## Summary
 - **Algorithm:** {self.algorithm_name}
 - **Database:** {self.database_name.name}
+- **Search Algorithm:** {self.search_algorithm}
+- **Discovery Mode:** {self.discovery_mode}
+- **Compatibility Type:** {self.compatibility_mode}
 - **Number of Rules Discovered:** {number_of_rules}
 - **Results Path:** {result_path}
 
@@ -178,6 +218,8 @@ Below are the top-5 best rules discovered based on their scores:
 
         # Add top-5 rules to the report
         for idx, rule in enumerate(top_rules, start=1):
+            if rule.display is None:
+                continue
             rule_desc = rule.display.replace('\n', ' ').replace('|', '\\|')  # Escape pipes for markdown tables
             report_content += f"| {idx} | {rule_desc} | {rule.accuracy:.3f} | {rule.confidence:.3f} |\n"
 
@@ -198,6 +240,9 @@ The rule discovery process was completed successfully. The discovered rules have
 
         if self.use_mlflow:
             mlflow.log_artifact(str(report_path))
+            mlflow.log_param("discovery_mode", self.discovery_mode)
+            mlflow.log_param("compatibility_mode", self.compatibility_mode)
+            mlflow.log_param("search_algorithm", self.search_algorithm)
             self.logger.info("Logged report as MLflow artifact.")
 
 
@@ -227,7 +272,6 @@ def main() -> None:
     log_dir = Path(config.get("logging", {}).get("log_dir", "data/logs/"))
     results_dir = Path(config.get("results", {}).get("output_dir", "data/results/"))
     algorithm_name = config.get("algorithm", {}).get("name", "MATILDA")
-
     # Initialize directories
     initialize_directories(results_dir, log_dir)
 
@@ -262,6 +306,7 @@ def main() -> None:
         results_dir=results_dir,
         logger=logger,
         use_mlflow=use_mlflow,
+        config=config
     )
 
     logger.info("Starting rule discovery process.")

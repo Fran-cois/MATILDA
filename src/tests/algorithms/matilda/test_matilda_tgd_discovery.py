@@ -9,7 +9,7 @@ from algorithms.MATILDA.constraint_graph import (
 )
 from database.alchemy_utility import AlchemyUtility
 from algorithms.MATILDA.candidate_rule_chains import CandidateRuleChains
-from algorithms.MATILDA.tgd_discovery import *
+from algorithms.MATILDA.rule_types.tgd_discovery import *
 
 @pytest.fixture
 def mock_db_inspector():

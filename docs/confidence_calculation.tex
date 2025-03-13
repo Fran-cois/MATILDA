@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\title{Calcul de la Confiance pour les Dépendances Génératrices d'Égalité (EGDs)}
+\author{MATILDA Project}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Les dépendances génératrices d'égalité (EGDs) sont des contraintes d'intégrité qui expriment que certaines valeurs d'attributs doivent être égales dans certaines conditions. La confiance d'une EGD quantifie dans quelle mesure cette contrainte est respectée dans les données.
+
+\section{Définition formelle}
+
+Pour une EGD de la forme $\phi : \forall \bar{x} \ (R_1(\bar{x_1}) \wedge R_2(\bar{x_2}) \wedge \ldots \wedge R_n(\bar{x_n}) \Rightarrow x_i = x_j)$, où:
+\begin{itemize}
+    \item $\bar{x}$ est l'ensemble complet des variables
+    \item $R_1, R_2, \ldots, R_n$ sont des relations (prédicats)
+    \item $\bar{x_1}, \bar{x_2}, \ldots, \bar{x_n}$ sont des tuples de variables apparaissant dans les relations respectives
+    \item $x_i$ et $x_j$ sont des variables spécifiques qui doivent être égales selon la contrainte
+\end{itemize}
+
+\section{Calcul de la confiance}
+
+La confiance d'une EGD est définie comme le rapport entre le nombre de tuples satisfaisant à la fois le corps et la contrainte d'égalité, divisé par le nombre de tuples satisfaisant uniquement le corps:
+
+\begin{equation}
+\text{confiance}(\phi) = \frac{|\text{sat}(\text{corps}(\phi) \wedge x_i = x_j)|}{|\text{sat}(\text{corps}(\phi))|}
+\end{equation}
+
+où:
+\begin{itemize}
+    \item $\text{corps}(\phi)$ représente la conjonction de prédicats $R_1(\bar{x_1}) \wedge R_2(\bar{x_2}) \wedge \ldots \wedge R_n(\bar{x_n})$
+    \item $\text{sat}(E)$ désigne l'ensemble des tuples satisfaisant l'expression $E$
+    \item $|S|$ est la cardinalité de l'ensemble $S$
+\end{itemize}
+
+\subsection{Algorithme de calcul}
+
+\begin{algorithm}
+\caption{Calcul de la confiance d'une EGD}
+\begin{algorithmic}
+\STATE \textbf{Entrée:} Une EGD $\phi$, une base de données $DB$
+\STATE \textbf{Sortie:} La confiance de $\phi$
+
+\STATE $\text{body\_condition} \gets$ conditions de jointure représentant $\text{corps}(\phi)$
+\STATE $\text{total\_body\_tuples} \gets$ nombre de tuples dans $DB$ satisfaisant $\text{body\_condition}$
+
+\IF{$\text{total\_body\_tuples} = 0$}
+    \RETURN $0.0$
+\ENDIF
+
+\STATE $\text{equality\_condition} \gets \text{body\_condition} \cup \{(x_i = x_j)\}$
+\STATE $\text{tuples\_satisfying\_both} \gets$ nombre de tuples dans $DB$ satisfaisant $\text{equality\_condition}$
+
+\STATE $\text{confidence} \gets \min(1.0, \text{tuples\_satisfying\_both} / \text{total\_body\_tuples})$
+\RETURN $\text{confidence}$
+\end{algorithmic}
+\end{algorithm}
+
+\section{Exemple}
+
+Considérons une base de données avec deux relations:
+\begin{itemize}
+    \item $\text{Personne}(\text{id}, \text{nom}, \text{adresse})$
+    \item $\text{Client}(\text{id}, \text{nom}, \text{téléphone})$
+\end{itemize}
+
+Et une EGD:
+$\phi: \forall x, y, z, w \ (\text{Personne}(x, y, z) \wedge \text{Client}(x, w, t) \Rightarrow y = w)$
+
+La confiance de cette EGD serait:
+\begin{equation}
+\text{confiance}(\phi) = \frac{|\{(x,y,z,w,t) \mid \text{Personne}(x,y,z) \wedge \text{Client}(x,w,t) \wedge y = w\}|}{|\{(x,y,z,w,t) \mid \text{Personne}(x,y,z) \wedge \text{Client}(x,w,t)\}|}
+\end{equation}
+
+\section{Propriétés importantes}
+
+\subsection{Bornes de la confiance}
+La confiance est toujours comprise entre 0 et 1 (ou entre 0\% et 100\%).
+\begin{equation}
+0 \leq \text{confiance}(\phi) \leq 1
+\end{equation}
+
+\subsection{Interprétation}
+
+\begin{itemize}
+    \item $\text{confiance}(\phi) = 1$: La contrainte d'égalité est toujours respectée.
+    \item $\text{confiance}(\phi) = 0$: La contrainte d'égalité n'est jamais respectée.
+    \item $0 < \text{confiance}(\phi) < 1$: La contrainte d'égalité est partiellement respectée.
+\end{itemize}
+
+\section{Implémentation dans MATILDA}
+
+Dans l'implémentation de MATILDA, le calcul de la confiance se fait par la fonction \texttt{calculate\_confidence} qui:
+
+\begin{enumerate}
+    \item Extrait les attributs de la contrainte d'égalité $(eq\_attr1, eq\_attr2)$.
+    \item Construit les conditions de jointure pour le corps de la règle.
+    \item Calcule le nombre de tuples satisfaisant uniquement le corps.
+    \item Ajoute la condition d'égalité et calcule le nombre de tuples satisfaisant à la fois le corps et la contrainte d'égalité.
+    \item Divise le second nombre par le premier pour obtenir la confiance.
+    \item Assure que la valeur résultante est bornée entre 0 et 1.
+\end{enumerate}
+
+\end{document}
