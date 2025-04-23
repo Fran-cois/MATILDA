@@ -4,7 +4,7 @@ monitor:
 
 database:
   path: "../../data/db/"  # Path to database files
-  name: "Bupa.db"
+  name: "ibench.db"
 
 logging:
   log_dir: "logs"  # Directory for logs
@@ -15,8 +15,8 @@ results:
 algorithm:
   name: "MATILDA"  # Default algorithm
   search_algorithm: "dfs"  # Default search algorithm
-  dependency_type: "fd"  # Mine both EGDs and TGDs by default
-  compatibility_mode: "fd"
+  dependency_type: "tgd"  # Mine both EGDs and TGDs by default
+  compatibility_mode: "fk"
   # min_support: 0 #.01  # Réduit à 1%
   # min_confidence: 0 #.01  # Réduit à 1%
   max_table: 2  # Maximum number of tables in a rule

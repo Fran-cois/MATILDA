@@ -1140,22 +1140,30 @@ def instantiate_tgd_object(candidate_rule, split, mapper, support=1.0, confidenc
         body_attributes = []
         head_attributes = []
         
+        # Obtenir l'assignation des variables pour chaque attribut
+        cr_chains = CandidateRuleChains(candidate_rule).cr_chains
+        variable_assignment = assign_variables(cr_chains, split)
+        
         # Parcourir chaque JoinableIndexedAttributes du candidat
         for jia in candidate_rule:
-            # Accéder aux attributs via l'interface indexable de JoinableIndexedAttributes
-
-            
             for attr in jia:  # Parcourir les deux attributs
                 table_occurrence = (attr.i, attr.j)
                 attribute = mapper.indexed_attribute_to_attribute(attr)
                 if attribute:
+                    # Utiliser la variable assignée à cet attribut
+                    variable = variable_assignment.get(attr, f"auto_var_{len(variable_assignment)}")
                     if table_occurrence in body:
-                        body_attributes.append((attribute.table, attribute.name, attr.variable))
+                        body_attributes.append((attribute.table, attribute.name, variable))
                     if table_occurrence in head:
-                        head_attributes.append((attribute.table, attribute.name, attr.variable))
+                        head_attributes.append((attribute.table, attribute.name, variable))
+        
+        # Générer la représentation textuelle de la TGD (pour display)
+        tgd_string = instantiate_tgd(candidate_rule, split, mapper)
         
         # Créer un objet TGDRule avec les attributs extraits
-        return TGDRule(body=body_attributes, head=head_attributes, support=support, confidence=confidence)
+        return TGDRule(body=body_attributes, head=head_attributes, 
+                      accuracy=support, confidence=confidence, 
+                      display=tgd_string)  # Ajout du paramètre display requis
                 
     except Exception as e:
         import logging

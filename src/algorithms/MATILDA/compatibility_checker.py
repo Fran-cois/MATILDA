@@ -113,7 +113,7 @@ class CompatibilityChecker:
         #     return self._cache[cache_key]
         
         start_time = time.time()
-        mode= self.MODE_FD
+        mode= self.MODE_OVERLAP
         if mode== self.MODE_ALL_COMPATIBLE:
             return True
         # Mode combiné pour l'analyse EGD

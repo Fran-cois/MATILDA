@@ -10,7 +10,6 @@ from typing import Any
 
 from textwrap import indent
 
-from nltk import accuracy
 from utils.rules import Rule
 import json
 import re
