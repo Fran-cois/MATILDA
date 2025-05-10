@@ -65,7 +65,9 @@ class FDep(BaseAlgorithm):
                                     table_dependant=table_name,
                                     columns_dependant=determinant,
                                     table_referenced=table_name,
-                                    columns_referenced=dependant
+                                    columns_referenced=dependant,
+                                        table=table_name
+
                                 )
                             except TypeError:
                                 # Version simplifiée avec des arguments de base
@@ -114,7 +116,7 @@ class FDep(BaseAlgorithm):
             for dep in deps:
                 determinant = tuple(dep)
                 results.append((determinant, (target_col,)))
-                logging.info(f"Dépendance trouvée: {determinant} -> {target_col}")
+                #logging.info(f"Dépendance trouvée: {determinant} -> {target_col}")
         
         return results
     

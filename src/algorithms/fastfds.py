@@ -62,7 +62,8 @@ class FastFDs(BaseAlgorithm):
                                     table_dependant=table_name,
                                     columns_dependant=determinant,
                                     table_referenced=table_name,
-                                    columns_referenced=dependant
+                                    columns_referenced=dependant,
+                                    table=table_name,
                                 )
                             except TypeError:
                                 # Version simplifiée avec des arguments de base
@@ -114,7 +115,7 @@ class FastFDs(BaseAlgorithm):
                 if determinant:  # Éviter les déterminants vides
                     determinant_tuple = tuple(determinant)
                     results.append((determinant_tuple, (target_col,)))
-                    logging.info(f"Dépendance trouvée: {determinant_tuple} -> {target_col}")
+                    #logging.info(f"Dépendance trouvée: {determinant_tuple} -> {target_col}")
         
         return results
         

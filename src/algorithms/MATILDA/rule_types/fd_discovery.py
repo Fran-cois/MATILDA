@@ -53,7 +53,7 @@ def init(
     :return: A tuple containing the constraint graph, attribute mapper, and list of compatible indexed attributes
     """
     # FOR FD: 
-    max_nb_occurrence = 1 
+    #max_nb_occurrence = 3
     compatibility_mode= CompatibilityChecker.MODE_FD
 
     # Input validation
@@ -168,20 +168,7 @@ def init(
             for table_occurrence2 in range(max_nb_occurrence):
                 for attr1, attr2 in compatible_attributes:
                     try:
-                        if (
-                            max_nb_occurrence_per_table_and_column.get(attr1.table, {}).get(
-                                attr1.name, max_nb_occurrence
-                            )
-                            < table_occurrence1
-                        ):
-                            continue
-                        if (
-                            max_nb_occurrence_per_table_and_column.get(attr2.table, {}).get(
-                                attr2.name, max_nb_occurrence
-                            )
-                            < table_occurrence2
-                        ):
-                            continue
+
                         jia = JoinableIndexedAttributes(
                             mapper.attribute_to_indexed(attr1, table_occurrence1),
                             mapper.attribute_to_indexed(attr2, table_occurrence2),
@@ -249,55 +236,36 @@ def init(
 def split_candidate_rule(
     candidate_rule: CandidateRule,
 ) -> set[
-    tuple[set[TableOccurrence], list[tuple[IndexedAttribute, IndexedAttribute]]]
-]:  # where the tuple is a list of equality constraints
+    tuple[frozenset[JoinableIndexedAttributes], frozenset[JoinableIndexedAttributes]]
+]:  
     """
-    Split a path into a set of table occurrence pairs and equality constraints.
-    Pour les FDs, nous voulons uniquement les splits qui correspondent au modèle X → Y
-    où X détermine fonctionnellement Y.
+    Génère toutes les partitions possibles (powerset) d'une règle candidate pour former des FDs.
+    Pour chaque sous-ensemble possible de la règle candidate, crée un split où ce sous-ensemble
+    est le corps et le reste est la tête.
 
-    :param candidate_rule: A list of tuples of JoinableIndexedAttributes (representing the candidate_rule)
-    :return: A set of (body, equality_constraints) pairs where equality_constraints is a list
+    :param candidate_rule: Une liste de JoinableIndexedAttributes (représentant le candidat)
+    :return: Un ensemble de tuples (body, head) où body et head sont des sous-ensembles de candidate_rule
     """
     if candidate_rule is None or len(candidate_rule) == 0:
         return set()
     
     valid_splits = set()
     
-    # Extraire tous les attributs et leurs occurrences de table
-    all_attrs = {}  # {(table_index, table_occurrence): set(IndexedAttribute)}
-    table_to_attrs = {}  # {(table_index, table_occurrence): set(IndexedAttribute)}
+    # Convertir candidate_rule en frozenset pour permettre les opérations d'ensemble
+    candidate_set = frozenset(candidate_rule)
     
-    for jia in candidate_rule:
-        attr1, attr2 = jia
-        all_attrs[(attr1.i, attr1.j)] = all_attrs.get((attr1.i, attr1.j), set())
-        all_attrs[(attr1.i, attr1.j)].add(attr1)
-        all_attrs[(attr2.i, attr2.j)] = all_attrs.get((attr2.i, attr2.j), set())
-        all_attrs[(attr2.i, attr2.j)].add(attr2)
-        
-        table_to_attrs[(attr1.i, attr1.j)] = table_to_attrs.get((attr1.i, attr1.j), set())
-        table_to_attrs[(attr1.i, attr1.j)].add(attr1)
-        table_to_attrs[(attr2.i, attr2.j)] = table_to_attrs.get((attr2.i, attr2.j), set())
-        table_to_attrs[(attr2.i, attr2.j)].add(attr2)
-    
-    # Pour chaque table, essayer de créer des FDs
-    for table_occurrence, attributes in table_to_attrs.items():
-        if len(attributes) < 2:
-            continue  # Besoin d'au moins 2 attributs pour une FD
+    # Générer tous les sous-ensembles possibles pour le corps (body)
+    for r in range(len(candidate_rule) + 1):
+        for body_items in combinations(candidate_rule, r):
+            # Convertir en frozenset pour l'unicité et l'immuabilité
+            body = frozenset(body_items)
+            # La tête est le complément du corps par rapport à l'ensemble complet
+            head = candidate_set - body
             
-        attributes_list = list(attributes)
-        
-        # Pour chaque paire d'attributs possible, créer une FD
-        for i, attr1 in enumerate(attributes_list):
-            for attr2 in attributes_list[i+1:]:
-                # FD: attr1 → attr2
-                body_set = {table_occurrence}
-                eq_constraint = [(attr1, attr2)]
-                valid_splits.add((frozenset(body_set), tuple(eq_constraint)))
-                
-                # FD: attr2 → attr1
-                eq_constraint = [(attr2, attr1)]
-                valid_splits.add((frozenset(body_set), tuple(eq_constraint)))
+            # Ajouter le split à l'ensemble des splits valides
+            # Ne pas ajouter le split si le body ou le head est vide
+            if body and head:
+                valid_splits.add((body, head))
     
     return valid_splits
 
@@ -460,12 +428,13 @@ def path_pruning(
     if len(path) == 0:
         return False
     
+
     return prediction(path, mapper, db_inspector, threshold=0)
 
 def split_pruning(
     candidate_rule: CandidateRule,
-    body: set[TableOccurrence],
-    equality_constraint,
+    body: set[JoinableIndexedAttributes],
+    head: set[JoinableIndexedAttributes],
     db_inspector: AlchemyUtility,
     mapper: AttributeMapper,
 ) -> tuple[bool, float, float]:
@@ -484,46 +453,48 @@ def split_pruning(
     if len(body) == 0:
         return False, 0, 0  # split invalide
     
-    pairs_count = Counter((attr.i, attr.j) for jia in candidate_rule for attr in jia)
+    # check that the FD is not trivial
+    if len(candidate_rule) == 1:
+        # Si la règle candidate n'a qu'un seul attribut, elle est triviale
+        return False, 0, 0
+    if body == head:
+        # Si le corps et la tête sont identiques, la règle candidate est triviale
+        return False, 0, 0 
+    for element in head: 
+        if element in body:
+            # Si un élément de la tête est également dans le corps, la règle candidate est triviale
+            return False, 0, 0
+    # TODO: check the FD metrics 
+    # compute the support and confidence
+    total_tuples = prediction(candidate_rule, mapper, db_inspector, body, head)
+    support = calculate_support(
+        candidate_rule,
+        body,
+        head,
+        db_inspector=db_inspector,
+        mapper=mapper,
+        total_tuples=total_tuples,
+    )
+    confidence = calculate_confidence(
+        candidate_rule,
+        body,
+        head,
+        db_inspector=db_inspector,
+        mapper=mapper,
+        total_tuples=total_tuples,
 
-    # Gérer différents formats pour equality_constraint
-    if isinstance(equality_constraint, tuple) and len(equality_constraint) == 2:
-        # Cas simple: une seule contrainte d'égalité sous forme de tuple (attr1, attr2)
-        if isinstance(equality_constraint[0], IndexedAttribute) and isinstance(equality_constraint[1], IndexedAttribute):
-            eq_attr1, eq_attr2 = equality_constraint
-            
-            # Vérifier que les attributs de la contrainte d'égalité sont différents
-            if eq_attr1 == eq_attr2:
-                return False, 0, 0  # contrainte d'égalité triviale
-            
-            # S'assurer qu'au moins un des attributs de la contrainte d'égalité est dans le corps
-            if (eq_attr1.i, eq_attr1.j) not in body and (eq_attr2.i, eq_attr2.j) not in body:
-                return False, 0, 0  # aucun des attributs d'égalité n'est dans le corps
-            
-            # Vérifier si la règle aurait un support non nul
-            total_tuple_test = prediction(candidate_rule, mapper, db_inspector, body, equality_constraint, threshold=0)
-            if total_tuple_test is False:
-                return False, 0, 0  # élaguer si la prédiction est 0
+    )
+    if support < 0.01 or confidence < 0.01:
+        logger.info(
+            f"Candidate rule {candidate_rule} is pruned due to low support ({support}) or confidence ({confidence})."
+        )
+        # Si le support ou la confiance est inférieur à 0.01, élaguer la règle candidate
+        return False, support, confidence
+    else: 
+        # Si le support et la confiance sont suffisants, ne pas élaguer
+        return True, support, confidence
+    return False , 0, 0 # debug 
 
-            # Calculer le support et la confiance
-            total_tuples = prediction(candidate_rule, mapper, db_inspector, body, equality_constraint)
-            
-            support = calculate_support(candidate_rule, body, equality_constraint, db_inspector, mapper, total_tuples)
-            confidence = calculate_confidence(candidate_rule, body, equality_constraint, db_inspector, mapper, total_tuples)
-
-            if confidence == 0 and support == 0:
-                return False, 0, 0
-                
-            return mean([support, confidence]) > SPLIT_PRUNING_MEAN_THRESHOLD, support, confidence
-            
-    elif isinstance(equality_constraint, tuple) and len(equality_constraint) > 0:
-        # Cas complexe: plusieurs contraintes d'égalité sous forme de tuple de tuples
-        # Pour simplifier, nous utilisons seulement la première contrainte pour l'élagage
-        if isinstance(equality_constraint[0], tuple) and len(equality_constraint[0]) == 2:
-            return split_pruning(candidate_rule, body, equality_constraint[0], db_inspector, mapper)
-    
-    # Si le format n'est pas reconnu ou si la contrainte est vide
-    return False, 0, 0
 
 def extract_table_occurrences(
     candidate_rule: CandidateRule,
@@ -542,207 +513,176 @@ def extract_table_occurrences(
 def calculate_support(
     candidate_rule: CandidateRule,
     body: set[TableOccurrence],
-    equality_constraint,
+    head: set[TableOccurrence],
     db_inspector: AlchemyUtility,
     mapper: AttributeMapper,
     total_tuples: int = None,
 ) -> float:
     """
-    Calcule le support d'une règle candidate fd.
-    Le support est défini comme la proportion de tuples satisfaisant à la fois le corps et 
-    la contrainte d'égalité par rapport à la population totale de tuples pertinents.
-    
-    :param candidate_rule: La règle candidate pour laquelle calculer le support.
-    :param body: La partie corps de la règle candidate pour laquelle calculer le support.
-    :param equality_constraint: Contrainte d'égalité - peut être un tuple (attr1, attr2) ou un tuple de tuples.
-    :param db_inspector: Une instance fournissant des fonctionnalités d'inspection de la base de données.
-    :param mapper: Une instance d'AttributeMapper pour la correspondance des attributs.
-    :param total_tuples: Le nombre total de tuples satisfaisant la règle (si déjà calculé).
-    :return: La valeur du support sous forme de nombre décimal.
+    Calculate the support of a candidate rule.
+    :param candidate_rule: The candidate rule for which to calculate support.
+    :param body: The body part of the candidate rule for which to calculate support.
+    :param db_inspector: An instance of a class that provides database inspection functionalities.
+    :param mapper: An instance of AttributeMapper for mapping indexed attributes to actual database attributes.
+    :return: The support value as a float.
     """
-    # Si total_tuples n'est pas fourni, le calculer
-    if total_tuples is None:
-        # Calculer le nombre de tuples satisfaisant à la fois le corps et la contrainte d'égalité
-        equality_constraint_copy = equality_constraint
-        if isinstance(equality_constraint, tuple) and len(equality_constraint) > 0 and isinstance(equality_constraint[0], tuple):
-            # Si c'est un tuple de tuples, prendre seulement le premier tuple
-            equality_constraint_copy = equality_constraint[0]
-            
-        total_tuples = prediction(candidate_rule, mapper, db_inspector, body, equality_constraint_copy)
-    
-    # Calculer le nombre total de tuples dans les relations concernées
-    tables_in_rule = set()
-    for jia in candidate_rule:
+    # cr_chains = CandidateRuleChains(candidate_rule).cr_chains
+
+    # x_chains = CandidateRuleChains(candidate_rule).get_x_chains(
+    #     body, head, mapper, select_body=True
+    # )
+
+
+    if total_tuples == 0:
+       return 0
+
+    support_condition: list[tuple[str, int, str, str, int, str]] = []
+    # First, add the constraints from the body
+    for jia in body:
         attr1, attr2 = jia
-        tables_in_rule.add((attr1.i, mapper.index_to_table_name[attr1.i]))
-        # Correction de l'erreur : utiliser la syntaxe d'accès par clé au lieu d'appel de fonction
-        tables_in_rule.add((attr2.i, mapper.index_to_table_name[attr2.i]))
-    
-    # Calculer le produit cartésien total
-    total_population = 1
-    for _, table_name in tables_in_rule:
-        try:
-            row_count = db_inspector.get_row_count(table_name)
-            # Éviter les multiplications par zéro simplement en ignorant les tables vides
-            if row_count > 0:
-                total_population *= row_count
-        except Exception as e:
-            logging.warning(f"Couldn't get row count for {table_name}: {e}")
-            # Estimer une valeur raisonnable sans utiliser max()
-            if total_population > 0:  # Si déjà des lignes comptées
-                # Utiliser une valeur typique basée sur les autres tables
-                total_population *= 100
-    
-    # Si aucun tuple satisfait la règle ou pas de population, le support est 0
-    if total_tuples == 0 or total_population == 0:
-        return 0.0
-    
-    # Support = # tuples satisfaisant la règle / # tuples dans la population
-    # Ne pas limiter à 1.0 pour permettre la détection d'erreurs
-    support = total_tuples / total_population
+
+        support_condition.append(
+            (
+                mapper.indexed_attribute_to_attribute(attr2).table,
+                attr2.j,
+                mapper.indexed_attribute_to_attribute(attr2).name,
+                mapper.indexed_attribute_to_attribute(attr1).table,
+                attr1.j,
+                mapper.indexed_attribute_to_attribute(attr1).name,
+            )
+        )
+    # # add other constraints for each respective chain in the cr_chains
+    # for jia in candidate_rule:
+    #     for attr11 in jia:
+    #         for chain in cr_chains:
+    #             if attr11 in chain:
+    #                 for attr22 in chain:
+    #                     if (
+    #                             attr11 != attr22
+    #                             and attr22 not in jia
+    #                             and (attr11.i, attr11.j) in body
+    #                             and (attr22.i, attr22.j) in body
+    #                     ):
+    #                         support_condition.append(
+    #                             (
+    #                                 mapper.indexed_attribute_to_attribute(attr22).table,
+    #                                 attr22.j,
+    #                                 mapper.indexed_attribute_to_attribute(attr22).name,
+    #                                 mapper.indexed_attribute_to_attribute(attr11).table,
+    #                                 attr11.j,
+    #                                 mapper.indexed_attribute_to_attribute(attr11).name,
+    #                             )
+    #                         )
+    support_condition = list(set(support_condition))
+    is_body_tuples_emtpy = db_inspector.check_threshold(
+        support_condition,  flag="support", disjoint_semantics=True, threshold=0
+    )
+    if not(bool( is_body_tuples_emtpy)):
+        return 0 
+    total_tuples_satisfying_body = db_inspector.get_join_row_count(
+        support_condition, flag="support", disjoint_semantics=True
+    )
+    # logger.info(
+        # f"Candidate Rule: {candidate_rule}, Body: {body}, Head: {head}, is_body_tuples_emtpy: {bool(is_body_tuples_emtpy)}        , total_tuples_satisfying_body: {total_tuples_satisfying_body}"
+    # )
+    # raise ValueError(
+    #     f"Candidate Rule: {candidate_rule}, Body: {body}, Head: {head}, is_body_tuples_emtpy: {is_body_tuples_emtpy}        , total_tuples_satisfying_body: {total_tuples_satisfying_body}"
+    # )
+
+    # if not  bool(is_body_tuples_emtpy):
+    #     return 0
+    # total_tuples_satisfying_body = db_inspector.get_join_row_count(
+    #     support_condition, flag="support", disjoint_semantics=True
+    # )
+    # raise ValueError(    f"iam here {support_condition} {body} {head}")
+    if total_tuples_satisfying_body == 0 :
+        return 0
+    support = total_tuples / total_tuples_satisfying_body
     return support
+
 
 def calculate_confidence(
     candidate_rule: CandidateRule,
     body: set[TableOccurrence],
-    equality_constraint,  # Modifié pour accepter les deux formats
+    head: set[TableOccurrence],
     db_inspector: AlchemyUtility,
     mapper: AttributeMapper,
     total_tuples: int = None,
+
 ) -> float:
     """
-    Calcule la confiance d'une règle candidate fd.
-    La confiance est définie comme la proportion de tuples satisfaisant la contrainte d'égalité
-    parmi ceux qui satisfont le corps de la règle.
-    
-    :param candidate_rule: La règle candidate pour laquelle calculer la confiance.
-    :param body: La partie corps de la règle candidate.
-    :param equality_constraint: Contrainte d'égalité - peut être un tuple (attr1, attr2) ou un tuple de tuples.
-    :param db_inspector: Une instance fournissant des fonctionnalités d'inspection de la base de données.
-    :param mapper: Une instance d'AttributeMapper pour la correspondance des attributs.
-    :param total_tuples: Le nombre total de tuples satisfaisant la règle (si déjà calculé).
-    :return: La valeur de la confiance sous forme de nombre décimal.
+    Calculate the confidence of a candidate rule.
+
+    :param candidate_rule: The candidate rule for which to calculate confidence.
+    :param head: The head part of the candidate rule for which to calculate confidence.
+    :param db_inspector: An instance of a class that provides database inspection functionalities.
+    :param mapper: An instance of AttributeMapper for mapping indexed attributes to actual database attributes.
+    :return: The confidence value as a float.
     """
-    # Normaliser le format de la contrainte d'égalité
-    if isinstance(equality_constraint, tuple) and len(equality_constraint) == 2:
-        if isinstance(equality_constraint[0], IndexedAttribute):
-            # Format simple (attr1, attr2)
-            eq_attr1, eq_attr2 = equality_constraint
-        else:
-            # Format non reconnu
-            return 0
-    elif isinstance(equality_constraint, tuple) and len(equality_constraint) > 0:
-        # Format multiple (tuple de tuples)
-        if isinstance(equality_constraint[0], tuple) and len(equality_constraint[0]) == 2:
-            # Utiliser seulement la première contrainte
-            eq_attr1, eq_attr2 = equality_constraint[0]
-        else:
-            # Format non reconnu
-            return 0
-        
-    # Le calcul correct de la confiance pour une fd doit mesurer:
-    # 1. Le nombre de tuples satisfaisant le corps (dénominateur)
-    # 2. Parmi ces tuples, combien satisfont également la condition d'égalité (numérateur)
-    
-    # Construction des conditions de jointure pour le corps de la règle
-    body_conditions = []
-    for jia in candidate_rule:
+    # total_tuples = prediction(candidate_rule, mapper, db_inspector, body, head)
+    # x_chains = CandidateRuleChains(candidate_rule).get_x_chains(
+        # body, head, mapper, select_head=True
+    # )
+    # cr_chains = CandidateRuleChains(candidate_rule).cr_chains
+
+    #confidence_conditions: list[tuple[str, int, str, str, int, str]] = []
+    # add constraints in head
+    head_conditions = []
+    for jia in head:
         attr1, attr2 = jia
-        if (attr1.i, attr1.j) in body or (attr2.i, attr2.j) in body:
-            attr1_obj = mapper.indexed_attribute_to_attribute(attr1)
-            attr2_obj = mapper.indexed_attribute_to_attribute(attr2)
-            body_conditions.append(
-                (
-                    attr1_obj.table,
-                    attr1.j,
-                    attr1_obj.name,
-                    attr2_obj.table,
-                    attr2.j,
-                    attr2_obj.name,
-                )
-            )
-    
-    # Vérifier s'il y a des tuples qui satisfont le corps
-    if not body_conditions or not db_inspector.check_threshold(
-        body_conditions, 
-        flag="fd_confidence_body",
-        disjoint_semantics=APPLY_DISJOINT, 
-        threshold=0
-    ):
-        return 0
-    
-    # Nombre de tuples qui satisfont le corps de la règle
-    body_tuples_count = db_inspector.get_join_row_count(
-        body_conditions, 
-        flag="fd_confidence_body",
-        disjoint_semantics=APPLY_DISJOINT
-    )
-    
-    if body_tuples_count == 0:
-        return 0
-    
-    # Pour calculer les tuples qui satisfont le corps ET l'égalité, nous devons compter
-    # les tuples où les deux côtés de la contrainte d'égalité sont effectivement égaux
-    
-    # Récupérer les attributs pour la contrainte d'égalité
-    attr1_obj = mapper.indexed_attribute_to_attribute(eq_attr1)
-    attr2_obj = mapper.indexed_attribute_to_attribute(eq_attr2)
-    
-    # On récupère les deux valeurs pour les vérifier, sans imposer leur égalité
-    query_attrs = [
-        (f"{attr1_obj.table}_{eq_attr1.j}.{attr1_obj.name}", f"val1"),
-        (f"{attr2_obj.table}_{eq_attr2.j}.{attr2_obj.name}", f"val2")
-    ]
-    
-    # Compter les tuples où les valeurs sont égales
-    try:
-        # Obtenir d'abord tous les tuples qui satisfont le corps
-        body_tuples = db_inspector.get_join_content_custom(
-            body_conditions,
-            query_attrs,
-            flag="fd_confidence_full"
-        )
-        
-        # Parmi ces tuples, compter ceux où val1 == val2
-        equal_tuples = sum(1 for row in body_tuples if row[0] == row[1])
-        
-        if equal_tuples == 0:
-            return 0
-            
-        # Calculer la confiance comme le rapport entre les tuples égaux et tous les tuples du corps
-        # Ne pas limiter la valeur pour permettre de détecter les erreurs potentielles
-        confidence = equal_tuples / body_tuples_count
-        return confidence
-        
-    except Exception as e:
-        logging.error(f"Error computing confidence: {e}")
-        
-        # Si la méthode ci-dessus échoue, essayer une approche alternative
-        extended_conditions = body_conditions.copy()
-        extended_conditions.append(
+
+        head_conditions.append(
             (
-                attr1_obj.table,
-                eq_attr1.j,
-                attr1_obj.name,
-                attr2_obj.table,
-                eq_attr2.j,
-                attr2_obj.name,
+                mapper.indexed_attribute_to_attribute(attr2).table,
+                attr2.j,
+                mapper.indexed_attribute_to_attribute(attr2).name,
+                mapper.indexed_attribute_to_attribute(attr1).table,
+                attr1.j,
+                mapper.indexed_attribute_to_attribute(attr1).name,
             )
         )
-        
-        # Compter les tuples qui satisfont à la fois le corps et la contrainte d'égalité
-        equal_tuples = db_inspector.get_join_row_count(
-            extended_conditions, 
-            flag="fd_confidence_fallback",
-            disjoint_semantics=APPLY_DISJOINT
-        )
-        
-        # Calculer la confiance, sans limitation pour détecter les anomalies
-        if equal_tuples == 0:
-            return 0
-            
-        confidence = equal_tuples / body_tuples_count
-        return confidence
+    # for jia in candidate_rule:
+    #     for attr11 in jia:
+    #         for chain in cr_chains:
+    #             if attr11 in chain:
+    #                 for attr22 in chain:
+    #                     if (
+    #                             attr11 != attr22
+    #                             and attr22 not in jia
+    #                             and (attr11.i, attr11.j) in head
+    #                             and (attr22.i, attr22.j) in head
+    #                     ):
+    #                         head_conditions.append(
+    #                             (
+    #                                 mapper.indexed_attribute_to_attribute(attr22).table,
+    #                                 attr22.j,
+    #                                 mapper.indexed_attribute_to_attribute(attr22).name,
+    #                                 mapper.indexed_attribute_to_attribute(attr11).table,
+    #                                 attr11.j,
+    #                                 mapper.indexed_attribute_to_attribute(attr11).name,
+    #                             )
+    #                         )
+    is_head_tuples_emtpy = db_inspector.check_threshold(
+        head_conditions, flag="head", disjoint_semantics=APPLY_DISJOINT, threshold=0
+    )
+    if not bool(is_head_tuples_emtpy):
+        return 0
+    # logger.info(
+    #     f"Candidate Rule: {candidate_rule}, Body: {body}, Head: {head}, is_body_tuples_emtpy: {is_body_tuples_emtpy}"
+    # )
+    # if not  bool(is_body_tuples_emtpy):
+    #     return 0
+
+    total_tuples_satisfying_head = db_inspector.get_join_row_count(
+        head_conditions, flag="head", disjoint_semantics=APPLY_DISJOINT
+    )
+    if total_tuples_satisfying_head == 0:
+        return 0
+    support = total_tuples / total_tuples_satisfying_head
+    # logger.info(
+    #     f"Candidate Rule: {candidate_rule}, Body: {body}, Head: {head}, Support: {support}"
+    # )
+    return support
 
 def validate_perfect_rule(
     candidate_rule: CandidateRule,
@@ -854,63 +794,54 @@ def instantiate_fd_object(candidate_rule, split, mapper, support=1.0, confidence
             return None
         
         # Extraire le corps et les contraintes d'égalité
-        body, equality_constraints = split
-        
+        body, head = split
+        #logger.info(f"Body: {body}, Head: {head}")
         # Informations de table et colonnes
         table_name = None
+        table_names = set()  # Pour stocker tous les noms de tables rencontrés
         determinant_cols = []
         dependent_cols = []
         
         # Obtenir les attributs du corps (déterminants)
         for jia in candidate_rule:
-            for attr in jia:
-                if (attr.i, attr.j) in body:
-                    attribute = mapper.indexed_attribute_to_attribute(attr)
-                    if attribute:
-                        # Enregistrer la table si pas encore définie
-                        if table_name is None:
-                            table_name = attribute.table
-                            
+            attr1, attr2 = jia
+            attr = attr1 
+            attribute = mapper.indexed_attribute_to_attribute(attr)
+
+            if jia in body:
+
+                if attribute:
+                    # Collecter les noms de tables
+                    table_names.add(attribute.table)
                         # Ajouter le nom de la colonne comme déterminant
-                        if attribute.name not in determinant_cols:
-                            determinant_cols.append(attribute.name)
+                    determinant_cols.append(attribute.name)
+            else :
+                if attribute:
+                    # Collecter les noms de tables
+                    table_names.add(attribute.table)
+                        # Ajouter le nom de la colonne comme déterminant
+                    dependent_cols.append(attribute.name)
+                    
         
-        # Obtenir les attributs dépendants
-        if isinstance(equality_constraints, tuple):
-            # Gérer le cas où equality_constraints est un tuple de tuples
-            if equality_constraints and isinstance(equality_constraints[0], tuple):
-                for eq_attr1, eq_attr2 in equality_constraints:
-                    # Pour les FDs, le deuxième attribut est généralement l'attribut dépendant
-                    attr = mapper.indexed_attribute_to_attribute(eq_attr2)
-                    if attr:
-                        if table_name is None:
-                            table_name = attr.table
-                        if attr.name not in dependent_cols:
-                            dependent_cols.append(attr.name)
-            # Gérer le cas où equality_constraints est un tuple simple (eq_attr1, eq_attr2)
-            elif len(equality_constraints) == 2 and isinstance(equality_constraints[0], IndexedAttribute):
-                _, eq_attr2 = equality_constraints  # Le second est l'attribut dépendant
-                attr = mapper.indexed_attribute_to_attribute(eq_attr2)
-                if attr:
-                    if table_name is None:
-                        table_name = attr.table
-                    dependent_cols.append(attr.name)
+
+
+        table_name = table_names.pop() if len(table_names) >= 1 else None  # Prendre le dernier nom de table si unique
         
         # Créer l'objet FD avec les déterminants et les dépendants
-        if table_name and determinant_cols and dependent_cols:
+        if table_name:# and determinant_cols and dependent_cols:
             # Utiliser confidence comme valeur pour accuracy pour éviter les None
-            accuracy = confidence  # Dans le contexte des FDs, la précision est souvent égale à la confiance
+            accuracy = confidence  
             
             # Créer un représentation formatée pour l'affichage
             display_str = f"{table_name}: {', '.join(determinant_cols)} → {', '.join(dependent_cols)}"
             
             return FunctionalDependency(
-                table=table_name,
+                table=table_name,  # Utiliser uniquement la table principale identifiée
                 determinant=tuple(determinant_cols),
                 dependent=tuple(dependent_cols),
                 support=support,
                 confidence=confidence,
-                accuracy=accuracy,  # Initialiser accuracy avec la valeur de confidence
+                accuracy=accuracy,
                 converted_from_egd=True,  # Indique que cette FD a été découverte via notre algorithme
                 display=display_str  # Ajouter la représentation formatée
             )

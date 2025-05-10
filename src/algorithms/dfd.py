@@ -96,7 +96,8 @@ class DFD(BaseAlgorithm):
                                         table_dependant=table_name,
                                         columns_dependant=det_tuple,
                                         table_referenced=table_name,
-                                        columns_referenced=(target_col,)
+                                        columns_referenced=(target_col,),
+                                        table=table_name
                                     )
                                 except TypeError:
                                     # Version simplifiée
@@ -206,7 +207,7 @@ class DFD(BaseAlgorithm):
                     if is_minimal:
                         minimal_deps.add(current)
                         results.append((current, conf))
-                        logging.info(f"Dépendance trouvée: {sorted(current)} -> {target} (conf: {conf:.3f})")
+                        #logging.info(f"Dépendance trouvée: {sorted(current)} -> {target} (conf: {conf:.3f})")
                         continue  # Pas besoin d'explorer les sur-ensembles
             
             # Si on n'a pas atteint la taille maximale, ajouter des candidats fils

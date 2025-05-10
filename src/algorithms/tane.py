@@ -141,7 +141,8 @@ class Tane(BaseAlgorithm):
                             table_dependant=table_name,
                             columns_dependant=(col1,),
                             table_referenced=table_name,
-                            columns_referenced=(col2,)
+                            columns_referenced=(col2,),
+                            table=table_name
                         )
                     except TypeError:
                         # Version simplifiée avec des arguments de base

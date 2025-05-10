@@ -468,8 +468,9 @@ class MATILDA(BaseAlgorithm):
                 resume_checkpoint=kwargs.get('resume_checkpoint', None),
                 rule_type="egd"
             ):
+
                 # Log pour déboguer le type de règle
-                self.logger.debug(f"Found rule: {type(rule).__name__} - {rule}")
+                self.logger.debug(f"Found rule: {type(rule).__name__} - {rule} - Candidate: {getattr(rule, 'candidate', 'Not available')}")
 
                 # Verify if this is an EGD rule
                 if not isinstance(rule, EGDRule):
@@ -637,8 +638,7 @@ class MATILDA(BaseAlgorithm):
                 rule_type="fd"  # Spécifier qu'on cherche des FDs
             ):
                 # Log pour déboguer le type de règle
-                self.logger.debug(f"Found rule: {type(rule).__name__} - {rule}")
-
+                #self.logger.info(f"Found rule: {type(rule).__name__} - {rule} - Candidate: {getattr(rule, 'candidate', 'Not available')}")
                 # Verify if this is a FD rule
 
                     

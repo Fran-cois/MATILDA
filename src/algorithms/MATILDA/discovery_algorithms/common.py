@@ -72,6 +72,35 @@ def next_node_test(
     if not has_consecutive_occurrences(table_occurrences):
         return False
     
+
+    # FOR FDS only : 
+
+    # Vérifier que chaque jia contient le même i et k mais j différent
+    for jia in candidate_rule:
+        attr1, attr2 = jia
+        # Les attributs doivent avoir le même i (index de table) 
+        # mais des j (occurrence de table) différents
+        if attr1.i != attr2.i or attr1.k != attr2.k or attr1.j == attr2.j:
+            # logger.warning(f"Invalid path: {path}. Attributes have the same i and k but different j.")
+            return False  # Invalider le chemin si la condition n'est pas satisfaite
+    
+    for jia in candidate_rule:
+        # Vérifier que le nœud suivant n'est pas déjà présent dans la règle candidate
+        if next_node == jia:
+            # logger.warning(f"Invalid path: {path}. Next node is already in the candidate rule.")
+            return False
+        attr1, attr2 = next_node
+        current_attr1, current_attr2 = jia
+        if attr1.k == current_attr1.k or current_attr2.k == attr2.k:
+            # logger.warning(f"Invalid path: {path}. Next node has the same i and k as an existing node.")
+            #raise ValueError("Invalid path: {}. Next node has the same i and k as an existing node.".format(next_node))
+
+            return False
+        # Vérifier que le nœud suivant n'a pas le même i et k que le jia existant
+        
+    # if len(candidate_rule) > 1:
+        # Si la règle candidate est vide, on peut ajouter le nœud
+        # return False 
     return True
 
 def extract_table_occurrences(rule: CandidateRule) -> Set[TableOccurrence]:

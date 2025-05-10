@@ -135,8 +135,10 @@ class CompatibilityChecker:
         #     return result
         
         # Modes existants
+        return table1 == table2 and column1 == column2
+
         if mode == self.MODE_ONE_TABLE:
-            return table1 == table2
+            return table1 == table2 
         if mode == self.MODE_FD:
             return table1 == table2 and column1 != column2
         if mode == self.MODE_FK:

@@ -388,21 +388,27 @@ class RuleDiscoveryCore:
                 max_vars=max_vars,
                 **algorithm_params
             ):
+                # Logging de chaque règle candidate
+                #logger.info(f"Generated candidate rule: {candidate_rule}")
+                
                 rules_processed += 1
                 
                 # Prise de mesures mémoire périodiques
-                if self.track_memory and rules_processed % memory_snapshot_interval == 0:
-                    current, peak = tracemalloc.get_traced_memory()
-                    self.stats['memory_usage'].append({
-                        'timestamp': time.time(),
-                        'phase': f'processing_rule_{rules_processed}',
-                        'current_bytes': current,
-                        'peak_bytes': peak,
-                        'rules_processed': rules_processed
-                    })
+                # if self.track_memory and rules_processed % memory_snapshot_interval == 0:
+                #     current, peak = tracemalloc.get_traced_memory()
+                #     self.stats['memory_usage'].append({
+                #         'timestamp': time.time(),
+                #         'phase': f'processing_rule_{rules_processed}',
+                #         'current_bytes': current,
+                #         'peak_bytes': peak,
+                #         'rules_processed': rules_processed
+                #     })
                 
+                logger.debug(f"Candidate rule: {candidate_rule} ")
+
                 # Pour chaque candidat, trouver les différentes façons de le diviser en corps/tête
                 splits = split_candidate_rule_fn(candidate_rule)
+                logger.debug(f"Candidate rule: {candidate_rule} - Splits: {splits}")
                 for split in splits:
                     body, head = split
                     
@@ -410,14 +416,15 @@ class RuleDiscoveryCore:
                     valid, support, confidence = split_pruning_fn(
                         candidate_rule, body, head, self.db_inspector, self.mapper
                     )
-                    
-                    # Si la division est valide et satisfait nos seuils
-                    if True:  # valid :# and support >= self.min_support and confidence >= self.min_confidence:
-                        # Si la fonction d'instanciation d'objet est disponible, l'utiliser
-                        if instantiate_object_fn:
-                            try:
+                    #logger.info(f"Found rule: {body} - {head} - Candidate: {candidate_rule}")
 
+                    # Si la division est valide et satisfait nos seuils
+                    if valid: #True :#valid and support >= self.min_support and confidence >= self.min_confidence:
+                        # Si la fonction d'instanciation d'objet est disponible, l'utiliser
+                        if  instantiate_object_fn:
+                            try:
                                 rule = instantiate_object_fn(candidate_rule, split, self.mapper, support, confidence)
+                                #logger.info(f"Found rule: {type(rule).__name__} - {rule} - Candidate: {candidate_rule}")
 
                                 if rule:
                                     rules_discovered += 1
@@ -588,4 +595,5 @@ class RuleDiscoveryCore:
         self.jia_list = None
         gc.collect()
         
+
         logger.info("RuleDiscoveryCore resources cleaned up")

@@ -75,8 +75,8 @@ def dfs(
     candidate_rule.append(start_node)
     
     # Appliquer la fonction d'élagage pour déterminer si on continue
-    #if not pruning_prediction(candidate_rule, mapper, db_inspector):
-    #    return
+    if not pruning_prediction(candidate_rule, mapper, db_inspector):
+       return
         
     # Produire la règle candidate actuelle si elle contient au moins deux nœuds
     if len(candidate_rule) >= 1:
@@ -92,7 +92,7 @@ def dfs(
     
     # Explorer chaque voisin valide
     for next_node in big_neighbours:
-        if next_node_test(candidate_rule, next_node, visited, max_table, max_vars) or True:
+        if next_node_test(candidate_rule, next_node, visited, max_table, max_vars) :
             # Récursion pour explorer ce chemin
             yield from dfs(
                 graph,
