@@ -1,0 +1,19 @@
+# Règles communes sauvegardées: 8
+# Date: 2025-04-28 07:26:46
+
+1. tricepts: arg1 → arg2 [conf=1.00, supp=77.42] <=> tricepts: arg1 → arg2
+
+2. numPreg: arg1 → arg2 [conf=1.00, supp=80.11] <=> numPreg: arg1 → arg2
+
+3. plasma: arg1 → arg2 [conf=1.00, supp=7.33] <=> plasma: arg1 → arg2
+
+4. age: arg1 → arg2 [conf=1.00, supp=30.54] <=> age: arg1 → arg2
+
+5. pedigree: arg1 → arg2 [conf=1.00, supp=0.97] <=> pedigree: arg1 → arg2
+
+6. bmi: arg1 → arg2 [conf=1.00, supp=3.89] <=> bmi: arg1 → arg2
+
+7. pima: arg1 → arg2 [conf=1.00, supp=418.04] <=> pima: arg1 → arg2
+
+8. diastolic: arg1 → arg2 [conf=1.00, supp=32.73] <=> diastolic: arg1 → arg2
+

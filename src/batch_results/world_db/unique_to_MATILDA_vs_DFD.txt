@@ -1,0 +1,583 @@
+# FDs sauvegardées: 145
+# Date: 2025-04-28 06:49:45
+
+1. [FunctionalDependency] Country: LifeExpectancy → Population
+   Support: 0.12903225806451613
+   Confiance: 0.12903225806451613
+
+2. [FunctionalDependency] Country: GovernmentForm → Population
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] Country: Continent → Population
+   Support: 1.0
+   Confiance: 1.0
+
+4. [FunctionalDependency] Country: Region → Population
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] Country: IndepYear → Population
+   Support: 0.08064516129032258
+   Confiance: 0.08064516129032258
+
+6. [FunctionalDependency] City: District → Population
+   Support: 12.507967639127237
+   Confiance: 12.507967639127237
+
+7. [FunctionalDependency] City: District → ID
+   Support: 12.507967639127237
+   Confiance: 12.507967639127237
+
+8. [FunctionalDependency] City: District → Name
+   Support: 12.507967639127237
+   Confiance: 12.507967639127237
+
+9. [FunctionalDependency] City: CountryCode → District
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] Country: IndepYear → Population
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+11. [FunctionalDependency] Country: IndepYear → LifeExpectancy
+   Support: 3.945945945945946
+   Confiance: 3.945945945945946
+
+12. [FunctionalDependency] Country: LifeExpectancy → IndepYear
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] Country: IndepYear → GNP
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+14. [FunctionalDependency] Country: IndepYear → GNPOld
+   Support: 4.52808988764045
+   Confiance: 4.52808988764045
+
+15. [FunctionalDependency] Country: IndepYear → LocalName
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+16. [FunctionalDependency] Country: IndepYear → GovernmentForm
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+17. [FunctionalDependency] Country: GovernmentForm → IndepYear
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] Country: IndepYear → GovernmentForm
+   Support: 0.03808215757273068
+   Confiance: 0.03808215757273068
+
+19. [FunctionalDependency] Country: GovernmentForm → IndepYear
+   Support: 0.6963470319634704
+   Confiance: 0.6963470319634704
+
+20. [FunctionalDependency] Country: IndepYear → HeadOfState
+   Support: 3.680672268907563
+   Confiance: 3.680672268907563
+
+21. [FunctionalDependency] Country: IndepYear → Capital
+   Support: 3.7758620689655173
+   Confiance: 3.7758620689655173
+
+22. [FunctionalDependency] Country: IndepYear → Code2
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+23. [FunctionalDependency] Country: IndepYear → Code
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+24. [FunctionalDependency] Country: IndepYear → Name
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+25. [FunctionalDependency] Country: Continent → IndepYear
+   Support: 1.0
+   Confiance: 1.0
+
+26. [FunctionalDependency] Country: IndepYear → Continent
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+27. [FunctionalDependency] Country: IndepYear → Region
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+28. [FunctionalDependency] Country: Region → IndepYear
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] Country: IndepYear → SurfaceArea
+   Support: 3.6652719665271967
+   Confiance: 3.6652719665271967
+
+30. [FunctionalDependency] Country: Region → SurfaceArea
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+31. [FunctionalDependency] Country: IndepYear → Region
+   Support: 0.8086592178770949
+   Confiance: 0.8086592178770949
+
+32. [FunctionalDependency] Country: Region → IndepYear
+   Support: 12.0625
+   Confiance: 12.0625
+
+33. [FunctionalDependency] Country: IndepYear → Region
+   Support: 0.07402234636871509
+   Confiance: 0.07402234636871509
+
+34. [FunctionalDependency] Country: Region → IndepYear
+   Support: 0.2420091324200913
+   Confiance: 0.2420091324200913
+
+35. [FunctionalDependency] Country: Region → Population
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+36. [FunctionalDependency] Country: LifeExpectancy → Region
+   Support: 0.9581005586592178
+   Confiance: 0.9581005586592178
+
+37. [FunctionalDependency] Country: Region → LifeExpectancy
+   Support: 12.36036036036036
+   Confiance: 12.36036036036036
+
+38. [FunctionalDependency] Country: Region → GNP
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+39. [FunctionalDependency] Country: Region → GNP
+   Support: 0.08273381294964029
+   Confiance: 0.08273381294964029
+
+40. [FunctionalDependency] Country: Region → GNPOld
+   Support: 12.168539325842696
+   Confiance: 12.168539325842696
+
+41. [FunctionalDependency] Country: Region → LocalName
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+42. [FunctionalDependency] Country: GovernmentForm → Region
+   Support: 1.0
+   Confiance: 1.0
+
+43. [FunctionalDependency] Country: Region → GovernmentForm
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+44. [FunctionalDependency] Country: Region → GovernmentForm
+   Support: 0.069546759895118
+   Confiance: 0.069546759895118
+
+45. [FunctionalDependency] Country: GovernmentForm → Region
+   Support: 0.3889664804469274
+   Confiance: 0.3889664804469274
+
+46. [FunctionalDependency] Country: Region → HeadOfState
+   Support: 11.974789915966387
+   Confiance: 11.974789915966387
+
+47. [FunctionalDependency] Country: Region → HeadOfState
+   Support: 0.16374269005847952
+   Confiance: 0.16374269005847952
+
+48. [FunctionalDependency] Country: Region → Capital
+   Support: 12.176724137931034
+   Confiance: 12.176724137931034
+
+49. [FunctionalDependency] Country: Region → Code2
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+50. [FunctionalDependency] Country: Region → Code
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+51. [FunctionalDependency] Country: Region → Name
+   Support: 11.98326359832636
+   Confiance: 11.98326359832636
+
+52. [FunctionalDependency] Country: Continent → Region
+   Support: 1.0
+   Confiance: 1.0
+
+53. [FunctionalDependency] Country: Continent → Region
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+54. [FunctionalDependency] Country: Continent → Region
+   Support: 1.0
+   Confiance: 1.0
+
+55. [FunctionalDependency] Country: Continent → SurfaceArea
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+56. [FunctionalDependency] Country: Continent → IndepYear
+   Support: 45.145833333333336
+   Confiance: 45.145833333333336
+
+57. [FunctionalDependency] Country: IndepYear → Continent
+   Support: 0.8484729835552075
+   Confiance: 0.8484729835552075
+
+58. [FunctionalDependency] Country: IndepYear → Continent
+   Support: 0.05462020360219264
+   Confiance: 0.05462020360219264
+
+59. [FunctionalDependency] Country: Continent → IndepYear
+   Support: 0.636986301369863
+   Confiance: 0.636986301369863
+
+60. [FunctionalDependency] Country: Continent → Population
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+61. [FunctionalDependency] Country: LifeExpectancy → Continent
+   Support: 0.9612372748629601
+   Confiance: 0.9612372748629601
+
+62. [FunctionalDependency] Country: Continent → LifeExpectancy
+   Support: 44.234234234234236
+   Confiance: 44.234234234234236
+
+63. [FunctionalDependency] Country: Continent → GNP
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+64. [FunctionalDependency] Country: Continent → GNP
+   Support: 0.19424460431654678
+   Confiance: 0.19424460431654678
+
+65. [FunctionalDependency] Country: Continent → GNPOld
+   Support: 45.20224719101124
+   Confiance: 45.20224719101124
+
+66. [FunctionalDependency] Country: Continent → LocalName
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+67. [FunctionalDependency] Country: GovernmentForm → Continent
+   Support: 1.0
+   Confiance: 1.0
+
+68. [FunctionalDependency] Country: Continent → GovernmentForm
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+69. [FunctionalDependency] Country: GovernmentForm → Continent
+   Support: 0.3709866875489428
+   Confiance: 0.3709866875489428
+
+70. [FunctionalDependency] Country: Continent → GovernmentForm
+   Support: 0.23660881508303158
+   Confiance: 0.23660881508303158
+
+71. [FunctionalDependency] Country: Continent → HeadOfState
+   Support: 42.73529411764706
+   Confiance: 42.73529411764706
+
+72. [FunctionalDependency] Country: Continent → HeadOfState
+   Support: 0.3084795321637427
+   Confiance: 0.3084795321637427
+
+73. [FunctionalDependency] Country: Continent → Capital
+   Support: 43.58620689655172
+   Confiance: 43.58620689655172
+
+74. [FunctionalDependency] Country: Continent → Code2
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+75. [FunctionalDependency] Country: Continent → Code
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+76. [FunctionalDependency] Country: Continent → Name
+   Support: 42.74476987447699
+   Confiance: 42.74476987447699
+
+77. [FunctionalDependency] Country: GovernmentForm → HeadOfState
+   Support: 66.79411764705883
+   Confiance: 66.79411764705883
+
+78. [FunctionalDependency] Country: GovernmentForm → HeadOfState
+   Support: 0.27485380116959063
+   Confiance: 0.27485380116959063
+
+79. [FunctionalDependency] Country: GovernmentForm → Capital
+   Support: 68.91810344827586
+   Confiance: 68.91810344827586
+
+80. [FunctionalDependency] Country: GovernmentForm → Code2
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+81. [FunctionalDependency] Country: GovernmentForm → Code
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+82. [FunctionalDependency] Country: GovernmentForm → Name
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+83. [FunctionalDependency] Country: Continent → GovernmentForm
+   Support: 1.0
+   Confiance: 1.0
+
+84. [FunctionalDependency] Country: GovernmentForm → Continent
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+85. [FunctionalDependency] Country: Region → GovernmentForm
+   Support: 1.0
+   Confiance: 1.0
+
+86. [FunctionalDependency] Country: GovernmentForm → Region
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+87. [FunctionalDependency] Country: GovernmentForm → SurfaceArea
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+88. [FunctionalDependency] Country: GovernmentForm → IndepYear
+   Support: 82.42708333333333
+   Confiance: 82.42708333333333
+
+89. [FunctionalDependency] Country: IndepYear → GovernmentForm
+   Support: 0.9880134848295667
+   Confiance: 0.9880134848295667
+
+90. [FunctionalDependency] Country: GovernmentForm → Population
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+91. [FunctionalDependency] Country: GovernmentForm → LifeExpectancy
+   Support: 71.84684684684684
+   Confiance: 71.84684684684684
+
+92. [FunctionalDependency] Country: LifeExpectancy → GovernmentForm
+   Support: 0.9957547758771382
+   Confiance: 0.9957547758771382
+
+93. [FunctionalDependency] Country: GovernmentForm → GNP
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+94. [FunctionalDependency] Country: GovernmentForm → GNPOld
+   Support: 80.50561797752809
+   Confiance: 80.50561797752809
+
+95. [FunctionalDependency] Country: GovernmentForm → LocalName
+   Support: 67.02092050209205
+   Confiance: 67.02092050209205
+
+96. [FunctionalDependency] Country: GovernmentForm → GNP
+   Support: 1.0
+   Confiance: 1.0
+
+97. [FunctionalDependency] Country: Continent → GNP
+   Support: 1.0
+   Confiance: 1.0
+
+98. [FunctionalDependency] Country: Region → GNP
+   Support: 1.0
+   Confiance: 1.0
+
+99. [FunctionalDependency] Country: LifeExpectancy → GNP
+   Support: 0.3381294964028777
+   Confiance: 0.3381294964028777
+
+100. [FunctionalDependency] CountryLanguage: Percentage → IsOfficial
+   Support: 1.0
+   Confiance: 1.0
+
+101. [FunctionalDependency] CountryLanguage: IsOfficial → Percentage
+   Support: 612.7378048780488
+   Confiance: 612.7378048780488
+
+102. [FunctionalDependency] CountryLanguage: Percentage → IsOfficial
+   Support: 0.010598174924618614
+   Confiance: 0.010598174924618614
+
+103. [FunctionalDependency] CountryLanguage: IsOfficial → Percentage
+   Support: 0.7309540150995195
+   Confiance: 0.7309540150995195
+
+104. [FunctionalDependency] CountryLanguage: CountryCode → IsOfficial
+   Support: 1.0
+   Confiance: 1.0
+
+105. [FunctionalDependency] CountryLanguage: IsOfficial → CountryCode
+   Support: 612.7378048780488
+   Confiance: 612.7378048780488
+
+106. [FunctionalDependency] CountryLanguage: Language → IsOfficial
+   Support: 1.0
+   Confiance: 1.0
+
+107. [FunctionalDependency] CountryLanguage: IsOfficial → Language
+   Support: 612.7378048780488
+   Confiance: 612.7378048780488
+
+108. [FunctionalDependency] Country: Continent → HeadOfState
+   Support: 1.0
+   Confiance: 1.0
+
+109. [FunctionalDependency] Country: Region → HeadOfState
+   Support: 1.0
+   Confiance: 1.0
+
+110. [FunctionalDependency] Country: IndepYear → HeadOfState
+   Support: 0.4159356725146199
+   Confiance: 0.4159356725146199
+
+111. [FunctionalDependency] Country: LifeExpectancy → HeadOfState
+   Support: 0.7288011695906432
+   Confiance: 0.7288011695906432
+
+112. [FunctionalDependency] Country: GovernmentForm → HeadOfState
+   Support: 1.0
+   Confiance: 1.0
+
+113. [FunctionalDependency] City: CountryCode → District
+   Support: 149.4336847266487
+   Confiance: 149.4336847266487
+
+114. [FunctionalDependency] City: CountryCode → District
+   Support: 0.9758918071344571
+   Confiance: 0.9758918071344571
+
+115. [FunctionalDependency] City: CountryCode → Population
+   Support: 149.4336847266487
+   Confiance: 149.4336847266487
+
+116. [FunctionalDependency] City: CountryCode → ID
+   Support: 149.4336847266487
+   Confiance: 149.4336847266487
+
+117. [FunctionalDependency] City: CountryCode → Name
+   Support: 149.4336847266487
+   Confiance: 149.4336847266487
+
+118. [FunctionalDependency] City: CountryCode → Name
+   Support: 1.0
+   Confiance: 1.0
+
+119. [FunctionalDependency] City: District → Name
+   Support: 1.0
+   Confiance: 1.0
+
+120. [FunctionalDependency] CountryLanguage: CountryCode → Percentage
+   Support: 1.0
+   Confiance: 1.0
+
+121. [FunctionalDependency] CountryLanguage: Percentage → CountryCode
+   Support: 8.884146341463415
+   Confiance: 8.884146341463415
+
+122. [FunctionalDependency] CountryLanguage: Language → Percentage
+   Support: 1.0
+   Confiance: 1.0
+
+123. [FunctionalDependency] CountryLanguage: Percentage → Language
+   Support: 8.884146341463415
+   Confiance: 8.884146341463415
+
+124. [FunctionalDependency] CountryLanguage: IsOfficial → Percentage
+   Support: 1.0
+   Confiance: 1.0
+
+125. [FunctionalDependency] CountryLanguage: Percentage → IsOfficial
+   Support: 8.884146341463415
+   Confiance: 8.884146341463415
+
+126. [FunctionalDependency] City: CountryCode → Population
+   Support: 1.0
+   Confiance: 1.0
+
+127. [FunctionalDependency] City: District → Population
+   Support: 1.0
+   Confiance: 1.0
+
+128. [FunctionalDependency] Country: LifeExpectancy → GNP
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+129. [FunctionalDependency] Country: LifeExpectancy → GNPOld
+   Support: 0.7191011235955056
+   Confiance: 0.7191011235955056
+
+130. [FunctionalDependency] Country: LifeExpectancy → LocalName
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+131. [FunctionalDependency] Country: LifeExpectancy → GovernmentForm
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+132. [FunctionalDependency] Country: GovernmentForm → LifeExpectancy
+   Support: 1.0
+   Confiance: 1.0
+
+133. [FunctionalDependency] Country: LifeExpectancy → HeadOfState
+   Support: 0.6890756302521008
+   Confiance: 0.6890756302521008
+
+134. [FunctionalDependency] Country: LifeExpectancy → Capital
+   Support: 0.7068965517241379
+   Confiance: 0.7068965517241379
+
+135. [FunctionalDependency] Country: LifeExpectancy → Code2
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+136. [FunctionalDependency] Country: LifeExpectancy → Code
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+137. [FunctionalDependency] Country: LifeExpectancy → Name
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+138. [FunctionalDependency] Country: Continent → LifeExpectancy
+   Support: 1.0
+   Confiance: 1.0
+
+139. [FunctionalDependency] Country: LifeExpectancy → Continent
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+140. [FunctionalDependency] Country: LifeExpectancy → Region
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+141. [FunctionalDependency] Country: Region → LifeExpectancy
+   Support: 1.0
+   Confiance: 1.0
+
+142. [FunctionalDependency] Country: LifeExpectancy → SurfaceArea
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+
+143. [FunctionalDependency] Country: IndepYear → LifeExpectancy
+   Support: 0.8719512195121951
+   Confiance: 0.8719512195121951
+
+144. [FunctionalDependency] Country: LifeExpectancy → IndepYear
+   Support: 0.7447916666666666
+   Confiance: 0.7447916666666666
+
+145. [FunctionalDependency] Country: LifeExpectancy → Population
+   Support: 0.6861924686192469
+   Confiance: 0.6861924686192469
+

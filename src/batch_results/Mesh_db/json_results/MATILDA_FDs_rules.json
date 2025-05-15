@@ -1,0 +1,290 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_yz",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0606060606060606,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_yz",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.0606060606060606,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_yz",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9542857142857143,
+        "support": 0.9329608938547486,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_yz",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9329608938547486,
+        "support": 0.9542857142857143,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_yz",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.084848484848485,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_yz",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.084848484848485,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test_Neg",
+        "determinant": [
+            "num"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 12.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test_Neg",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test_Neg",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.019415190916044007,
+        "support": 0.08333333333333333,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test_Neg",
+        "determinant": [
+            "num"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.08333333333333333,
+        "support": 0.019415190916044007,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test_Neg",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 51.50606060606061,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test_Neg",
+        "determinant": [
+            "num"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 51.50606060606061,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh",
+        "determinant": [
+            "num"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 37.91031390134529,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 37.91031390134529,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test",
+        "determinant": [
+            "num"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.072727272727272,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 12.072727272727272,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

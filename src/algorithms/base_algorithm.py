@@ -5,8 +5,8 @@ Classe de base pour tous les algorithmes de découverte de règles.
 from abc import ABC, abstractmethod
 from typing import Generator, Optional, Dict, Any
 
-from utils.rules import Rule
-from database.alchemy_utility import AlchemyUtility
+from src.utils.rules import Rule
+from src.database.alchemy_utility import AlchemyUtility
 
 class BaseAlgorithm(ABC):
     """

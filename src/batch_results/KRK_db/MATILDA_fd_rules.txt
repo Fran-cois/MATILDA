@@ -1,0 +1,563 @@
+# FDs sauvegardées: 140
+# Date: 2025-04-27 17:32:07
+
+1. [FunctionalDependency] krk: white_rook_file → white_rook_rank
+   Support: 125.808
+   Confiance: 125.808
+
+2. [FunctionalDependency] krk: white_rook_rank → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] krk: white_rook_file → white_rook_rank
+   Support: 0.12298830287373842
+   Confiance: 0.12298830287373842
+
+4. [FunctionalDependency] krk: white_rook_rank → white_rook_file
+   Support: 0.12185234643265928
+   Confiance: 0.12185234643265928
+
+5. [FunctionalDependency] krk: white_rook_file → black_king_file
+   Support: 125.808
+   Confiance: 125.808
+
+6. [FunctionalDependency] krk: black_king_file → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] krk: black_king_file → white_rook_file
+   Support: 0.1250158972402391
+   Confiance: 0.1250158972402391
+
+8. [FunctionalDependency] krk: white_rook_file → black_king_file
+   Support: 0.12579984642948555
+   Confiance: 0.12579984642948555
+
+9. [FunctionalDependency] krk: black_king_rank → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] krk: white_rook_file → black_king_rank
+   Support: 125.808
+   Confiance: 125.808
+
+11. [FunctionalDependency] krk: white_rook_file → black_king_rank
+   Support: 0.1254423467998911
+   Confiance: 0.1254423467998911
+
+12. [FunctionalDependency] krk: black_king_rank → white_rook_file
+   Support: 0.12453898003306627
+   Confiance: 0.12453898003306627
+
+13. [FunctionalDependency] krk: white_rook_file → class
+   Support: 125.808
+   Confiance: 125.808
+
+14. [FunctionalDependency] krk: class → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+15. [FunctionalDependency] krk: white_rook_file → class
+   Support: 0.12713142707240294
+   Confiance: 0.12713142707240294
+
+16. [FunctionalDependency] krk: class → white_rook_file
+   Support: 0.5547024036627242
+   Confiance: 0.5547024036627242
+
+17. [FunctionalDependency] krk: id → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] krk: white_rook_file → id
+   Support: 125.808
+   Confiance: 125.808
+
+19. [FunctionalDependency] krk: white_rook_file → white_king_file
+   Support: 125.808
+   Confiance: 125.808
+
+20. [FunctionalDependency] krk: white_king_file → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+21. [FunctionalDependency] krk: white_king_rank → white_rook_file
+   Support: 1.0
+   Confiance: 1.0
+
+22. [FunctionalDependency] krk: white_rook_file → white_king_rank
+   Support: 125.808
+   Confiance: 125.808
+
+23. [FunctionalDependency] krk: black_king_rank → class
+   Support: 124.902
+   Confiance: 124.902
+
+24. [FunctionalDependency] krk: class → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+25. [FunctionalDependency] krk: black_king_rank → class
+   Support: 0.1244425498426023
+   Confiance: 0.1244425498426023
+
+26. [FunctionalDependency] krk: class → black_king_rank
+   Support: 0.546908776480761
+   Confiance: 0.546908776480761
+
+27. [FunctionalDependency] krk: id → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+28. [FunctionalDependency] krk: black_king_rank → id
+   Support: 124.902
+   Confiance: 124.902
+
+29. [FunctionalDependency] krk: white_king_file → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+30. [FunctionalDependency] krk: black_king_rank → white_king_file
+   Support: 124.902
+   Confiance: 124.902
+
+31. [FunctionalDependency] krk: black_king_rank → white_king_rank
+   Support: 124.902
+   Confiance: 124.902
+
+32. [FunctionalDependency] krk: white_king_rank → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+33. [FunctionalDependency] krk: black_king_rank → white_rook_file
+   Support: 124.902
+   Confiance: 124.902
+
+34. [FunctionalDependency] krk: white_rook_file → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+35. [FunctionalDependency] krk: black_king_rank → white_rook_rank
+   Support: 124.902
+   Confiance: 124.902
+
+36. [FunctionalDependency] krk: white_rook_rank → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+37. [FunctionalDependency] krk: black_king_rank → black_king_file
+   Support: 124.902
+   Confiance: 124.902
+
+38. [FunctionalDependency] krk: black_king_file → black_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+39. [FunctionalDependency] krk: black_king_rank → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+40. [FunctionalDependency] krk: black_king_file → black_king_rank
+   Support: 125.024
+   Confiance: 125.024
+
+41. [FunctionalDependency] krk: black_king_file → black_king_rank
+   Support: 0.12211173560071095
+   Confiance: 0.12211173560071095
+
+42. [FunctionalDependency] krk: black_king_rank → black_king_file
+   Support: 0.12199257742513438
+   Confiance: 0.12199257742513438
+
+43. [FunctionalDependency] krk: black_king_file → class
+   Support: 125.024
+   Confiance: 125.024
+
+44. [FunctionalDependency] krk: class → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+45. [FunctionalDependency] krk: class → black_king_file
+   Support: 0.5490465830560533
+   Confiance: 0.5490465830560533
+
+46. [FunctionalDependency] krk: black_king_file → class
+   Support: 0.12505100851113443
+   Confiance: 0.12505100851113443
+
+47. [FunctionalDependency] krk: id → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+48. [FunctionalDependency] krk: black_king_file → id
+   Support: 125.024
+   Confiance: 125.024
+
+49. [FunctionalDependency] krk: black_king_file → white_king_file
+   Support: 125.024
+   Confiance: 125.024
+
+50. [FunctionalDependency] krk: white_king_file → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+51. [FunctionalDependency] krk: white_king_rank → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+52. [FunctionalDependency] krk: black_king_file → white_king_rank
+   Support: 125.024
+   Confiance: 125.024
+
+53. [FunctionalDependency] krk: black_king_file → white_rook_file
+   Support: 125.024
+   Confiance: 125.024
+
+54. [FunctionalDependency] krk: white_rook_file → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+55. [FunctionalDependency] krk: white_rook_rank → black_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+56. [FunctionalDependency] krk: black_king_file → white_rook_rank
+   Support: 125.024
+   Confiance: 125.024
+
+57. [FunctionalDependency] krk: class → id
+   Support: 548.928
+   Confiance: 548.928
+
+58. [FunctionalDependency] krk: id → class
+   Support: 1.0
+   Confiance: 1.0
+
+59. [FunctionalDependency] krk: class → white_king_file
+   Support: 548.928
+   Confiance: 548.928
+
+60. [FunctionalDependency] krk: white_king_file → class
+   Support: 1.0
+   Confiance: 1.0
+
+61. [FunctionalDependency] krk: class → white_king_rank
+   Support: 548.928
+   Confiance: 548.928
+
+62. [FunctionalDependency] krk: white_king_rank → class
+   Support: 1.0
+   Confiance: 1.0
+
+63. [FunctionalDependency] krk: white_rook_file → class
+   Support: 1.0
+   Confiance: 1.0
+
+64. [FunctionalDependency] krk: class → white_rook_file
+   Support: 548.928
+   Confiance: 548.928
+
+65. [FunctionalDependency] krk: class → white_rook_rank
+   Support: 548.928
+   Confiance: 548.928
+
+66. [FunctionalDependency] krk: white_rook_rank → class
+   Support: 1.0
+   Confiance: 1.0
+
+67. [FunctionalDependency] krk: black_king_file → class
+   Support: 1.0
+   Confiance: 1.0
+
+68. [FunctionalDependency] krk: class → black_king_file
+   Support: 548.928
+   Confiance: 548.928
+
+69. [FunctionalDependency] krk: black_king_rank → class
+   Support: 1.0
+   Confiance: 1.0
+
+70. [FunctionalDependency] krk: class → black_king_rank
+   Support: 548.928
+   Confiance: 548.928
+
+71. [FunctionalDependency] krk: white_king_rank → white_rook_file
+   Support: 124.82
+   Confiance: 124.82
+
+72. [FunctionalDependency] krk: white_rook_file → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+73. [FunctionalDependency] krk: white_king_rank → white_rook_file
+   Support: 0.12480923311713087
+   Confiance: 0.12480923311713087
+
+74. [FunctionalDependency] krk: white_rook_file → white_king_rank
+   Support: 0.12579714789296587
+   Confiance: 0.12579714789296587
+
+75. [FunctionalDependency] krk: white_rook_rank → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+76. [FunctionalDependency] krk: white_king_rank → white_rook_rank
+   Support: 124.82
+   Confiance: 124.82
+
+77. [FunctionalDependency] krk: white_rook_rank → white_king_rank
+   Support: 0.12606954013779842
+   Confiance: 0.12606954013779842
+
+78. [FunctionalDependency] krk: white_king_rank → white_rook_rank
+   Support: 0.12624552733340821
+   Confiance: 0.12624552733340821
+
+79. [FunctionalDependency] krk: white_king_rank → black_king_file
+   Support: 124.82
+   Confiance: 124.82
+
+80. [FunctionalDependency] krk: black_king_file → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+81. [FunctionalDependency] krk: white_king_rank → black_king_file
+   Support: 0.12655170207320193
+   Confiance: 0.12655170207320193
+
+82. [FunctionalDependency] krk: black_king_file → white_king_rank
+   Support: 0.12675853228649256
+   Confiance: 0.12675853228649256
+
+83. [FunctionalDependency] krk: white_king_rank → black_king_rank
+   Support: 124.82
+   Confiance: 124.82
+
+84. [FunctionalDependency] krk: black_king_rank → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] krk: black_king_rank → white_king_rank
+   Support: 0.12389040217913797
+   Confiance: 0.12389040217913797
+
+86. [FunctionalDependency] krk: white_king_rank → black_king_rank
+   Support: 0.12380906630798547
+   Confiance: 0.12380906630798547
+
+87. [FunctionalDependency] krk: class → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+88. [FunctionalDependency] krk: white_king_rank → class
+   Support: 124.82
+   Confiance: 124.82
+
+89. [FunctionalDependency] krk: white_king_rank → class
+   Support: 0.12660312463565349
+   Confiance: 0.12660312463565349
+
+90. [FunctionalDependency] krk: class → white_king_rank
+   Support: 0.5567697484377504
+   Confiance: 0.5567697484377504
+
+91. [FunctionalDependency] krk: white_king_rank → id
+   Support: 124.82
+   Confiance: 124.82
+
+92. [FunctionalDependency] krk: id → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] krk: white_king_file → white_king_rank
+   Support: 1.0
+   Confiance: 1.0
+
+94. [FunctionalDependency] krk: white_king_rank → white_king_file
+   Support: 124.82
+   Confiance: 124.82
+
+95. [FunctionalDependency] krk: white_king_file → white_king_rank
+   Support: 125.54
+   Confiance: 125.54
+
+96. [FunctionalDependency] krk: white_king_rank → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+97. [FunctionalDependency] krk: white_king_file → white_king_rank
+   Support: 0.12565294023393686
+   Confiance: 0.12565294023393686
+
+98. [FunctionalDependency] krk: white_king_rank → white_king_file
+   Support: 0.12493229249641548
+   Confiance: 0.12493229249641548
+
+99. [FunctionalDependency] krk: white_king_file → white_rook_file
+   Support: 125.54
+   Confiance: 125.54
+
+100. [FunctionalDependency] krk: white_rook_file → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+101. [FunctionalDependency] krk: white_king_file → white_rook_file
+   Support: 0.12566768409004198
+   Confiance: 0.12566768409004198
+
+102. [FunctionalDependency] krk: white_rook_file → white_king_file
+   Support: 0.1259359566671977
+   Confiance: 0.1259359566671977
+
+103. [FunctionalDependency] krk: white_king_file → white_rook_rank
+   Support: 125.54
+   Confiance: 125.54
+
+104. [FunctionalDependency] krk: white_rook_rank → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+105. [FunctionalDependency] krk: white_rook_rank → white_king_file
+   Support: 0.12649354787318784
+   Confiance: 0.12649354787318784
+
+106. [FunctionalDependency] krk: white_king_file → white_rook_rank
+   Support: 0.12740079906294627
+   Confiance: 0.12740079906294627
+
+107. [FunctionalDependency] krk: black_king_file → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+108. [FunctionalDependency] krk: white_king_file → black_king_file
+   Support: 125.54
+   Confiance: 125.54
+
+109. [FunctionalDependency] krk: white_king_file → black_king_file
+   Support: 0.12551190171487075
+   Confiance: 0.12551190171487075
+
+110. [FunctionalDependency] krk: black_king_file → white_king_file
+   Support: 0.1249960172056715
+   Confiance: 0.1249960172056715
+
+111. [FunctionalDependency] krk: white_king_file → black_king_rank
+   Support: 125.54
+   Confiance: 125.54
+
+112. [FunctionalDependency] krk: black_king_rank → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+113. [FunctionalDependency] krk: white_king_file → black_king_rank
+   Support: 0.12665930089189925
+   Confiance: 0.12665930089189925
+
+114. [FunctionalDependency] krk: black_king_rank → white_king_file
+   Support: 0.12601561255376773
+   Confiance: 0.12601561255376773
+
+115. [FunctionalDependency] krk: white_king_file → class
+   Support: 125.54
+   Confiance: 125.54
+
+116. [FunctionalDependency] krk: class → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+117. [FunctionalDependency] krk: class → white_king_file
+   Support: 0.5497371355743189
+   Confiance: 0.5497371355743189
+
+118. [FunctionalDependency] krk: white_king_file → class
+   Support: 0.1257250495511251
+   Confiance: 0.1257250495511251
+
+119. [FunctionalDependency] krk: white_king_file → id
+   Support: 125.54
+   Confiance: 125.54
+
+120. [FunctionalDependency] krk: id → white_king_file
+   Support: 1.0
+   Confiance: 1.0
+
+121. [FunctionalDependency] krk: black_king_file → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+
+122. [FunctionalDependency] krk: white_rook_rank → black_king_file
+   Support: 124.646
+   Confiance: 124.646
+
+123. [FunctionalDependency] krk: white_rook_rank → black_king_file
+   Support: 0.12565587407217815
+   Confiance: 0.12565587407217815
+
+124. [FunctionalDependency] krk: black_king_file → white_rook_rank
+   Support: 0.12603693660446383
+   Confiance: 0.12603693660446383
+
+125. [FunctionalDependency] krk: white_rook_rank → black_king_rank
+   Support: 124.646
+   Confiance: 124.646
+
+126. [FunctionalDependency] krk: black_king_rank → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+
+127. [FunctionalDependency] krk: black_king_rank → white_rook_rank
+   Support: 0.12679107231680117
+   Confiance: 0.12679107231680117
+
+128. [FunctionalDependency] krk: white_rook_rank → black_king_rank
+   Support: 0.12653120046116156
+   Confiance: 0.12653120046116156
+
+129. [FunctionalDependency] krk: white_rook_rank → class
+   Support: 124.646
+   Confiance: 124.646
+
+130. [FunctionalDependency] krk: class → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+
+131. [FunctionalDependency] krk: class → white_rook_rank
+   Support: 0.5487059352085105
+   Confiance: 0.5487059352085105
+
+132. [FunctionalDependency] krk: white_rook_rank → class
+   Support: 0.1245955753760056
+   Confiance: 0.1245955753760056
+
+133. [FunctionalDependency] krk: white_rook_rank → id
+   Support: 124.646
+   Confiance: 124.646
+
+134. [FunctionalDependency] krk: id → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+
+135. [FunctionalDependency] krk: white_rook_rank → white_king_file
+   Support: 124.646
+   Confiance: 124.646
+
+136. [FunctionalDependency] krk: white_king_file → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+
+137. [FunctionalDependency] krk: white_rook_rank → white_king_rank
+   Support: 124.646
+   Confiance: 124.646
+
+138. [FunctionalDependency] krk: white_king_rank → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+
+139. [FunctionalDependency] krk: white_rook_rank → white_rook_file
+   Support: 124.646
+   Confiance: 124.646
+
+140. [FunctionalDependency] krk: white_rook_file → white_rook_rank
+   Support: 1.0
+   Confiance: 1.0
+

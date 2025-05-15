@@ -1,0 +1,19 @@
+# FDs sauvegardées: 4
+# Date: 2025-04-27 22:23:49
+
+1. [FunctionalDependency] target: target → name1
+   Support: 745.8020351526364
+   Confiance: 745.8020351526364
+
+2. [FunctionalDependency] target: name1 → target
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] target: target → name2
+   Support: 745.8020351526364
+   Confiance: 745.8020351526364
+
+4. [FunctionalDependency] target: name2 → target
+   Support: 1.0
+   Confiance: 1.0
+

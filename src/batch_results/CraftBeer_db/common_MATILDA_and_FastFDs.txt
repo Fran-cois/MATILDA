@@ -1,0 +1,9 @@
+# Règles communes sauvegardées: 3
+# Date: 2025-04-27 22:58:16
+
+1. breweries: id → state [conf=1.00, supp=20.03] <=> breweries: id → state
+
+2. breweries: id → city [conf=1.00, supp=1.75] <=> breweries: id → city
+
+3. breweries: id → name [conf=1.00, supp=0.03] <=> breweries: id → name
+

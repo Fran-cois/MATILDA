@@ -1,0 +1,156 @@
+2025-04-28 13:20:30,892 [INFO] - Connexion à la base de données: sqlite:///../../data/db2/mutagenesis.db
+2025-04-28 13:20:30,901 [INFO] - Exécution de MATILDA pour découvrir les FDs
+2025-04-28 13:20:31,476 [INFO] - Using compatibility type: only_one_table (Mode: only_one_table)
+2025-04-28 13:20:31,486 [INFO] - Starting rule discovery with dependency type: fd
+2025-04-28 13:20:31,497 [INFO] - Parameters: max_table=2, max_vars=2, min_support=0.0, min_confidence=0.0
+2025-04-28 13:20:31,508 [INFO] - === Beginning FD Discovery Phase ===
+2025-04-28 13:20:31,519 [INFO] - Starting FD discovery with parameters: {'nb_occurrence': 2, 'max_table': 2, 'max_vars': 2, 'min_support': 0.0, 'min_confidence': 0.0, 'compatibility_mode': 'only_one_table'}
+2025-04-28 13:20:31,530 [INFO] - Initializing RuleDiscoveryCore for fd rules...
+2025-04-28 13:20:31,547 [INFO] - Attributs compatibles exportés vers results/compatibility_fd_mutagenesis.json
+2025-04-28 13:20:31,570 [INFO] - Métriques exportées dans results
+2025-04-28 13:20:31,580 [DEBUG] - [36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36mReturning SQLAlchemy engine[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m
+2025-04-28 13:20:31,642 [DEBUG] - [36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36mReturning SQLAlchemy metadata[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m
+2025-04-28 13:20:31,703 [INFO] - Initialization completed in 0.16 seconds
+2025-04-28 13:20:31,714 [INFO] - Starting sequential FD discovery using core
+2025-04-28 13:20:34,650 [INFO] - MATILDA: 4 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:37,929 [INFO] - MATILDA: 8 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:41,281 [INFO] - MATILDA: 11 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:41,414 [INFO] - Candidate rule [JIA((i=2, j=0, k=4), (i=2, j=1, k=4)), JIA((i=2, j=0, k=5), (i=2, j=1, k=5))] is pruned due to low support (0.5454545454545454) or confidence (0.0006183654539833041).
+2025-04-28 13:20:41,434 [INFO] - Candidate rule [JIA((i=2, j=0, k=4), (i=2, j=1, k=4)), JIA((i=2, j=0, k=5), (i=2, j=1, k=5))] is pruned due to low support (0.0006183654539833041) or confidence (0.5454545454545454).
+2025-04-28 13:20:45,315 [INFO] - MATILDA: 31 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:50,655 [INFO] - MATILDA: 33 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:53,044 [INFO] - Candidate rule [JIA((i=2, j=0, k=2), (i=2, j=1, k=2)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.0005401188261417512) or confidence (0.8181818181818182).
+2025-04-28 13:20:53,065 [INFO] - Candidate rule [JIA((i=2, j=0, k=2), (i=2, j=1, k=2)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.8181818181818182) or confidence (0.0005401188261417512).
+2025-04-28 13:20:55,381 [INFO] - MATILDA: 49 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:58,660 [INFO] - MATILDA: 51 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:01,993 [INFO] - MATILDA: 53 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:05,117 [INFO] - MATILDA: 56 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:09,813 [INFO] - MATILDA: 59 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:17,142 [INFO] - MATILDA: 61 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:18,101 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=2), (i=0, j=1, k=2))] is pruned due to low support (0.35725284878349245) or confidence (0.005374309042228634).
+2025-04-28 13:21:19,004 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=2), (i=0, j=1, k=2))] is pruned due to low support (0.005374309042228634) or confidence (0.35725284878349245).
+2025-04-28 13:21:19,629 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=3), (i=0, j=1, k=3))] is pruned due to low support (0.22457653218355406) or confidence (0.005409816606326785).
+2025-04-28 13:21:20,153 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=3), (i=0, j=1, k=3))] is pruned due to low support (0.005409816606326785) or confidence (0.22457653218355406).
+2025-04-28 13:21:20,217 [INFO] - MATILDA: 65 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:21,419 [INFO] - Candidate rule [JIA((i=2, j=0, k=1), (i=2, j=1, k=1)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.0006800408024481469) or confidence (0.5454545454545454).
+2025-04-28 13:21:21,439 [INFO] - Candidate rule [JIA((i=2, j=0, k=1), (i=2, j=1, k=1)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.5454545454545454) or confidence (0.0006800408024481469).
+2025-04-28 13:21:21,586 [INFO] - Discovery completed in 49.86 seconds
+2025-04-28 13:21:21,597 [INFO] - Processed 112 candidate rules
+2025-04-28 13:21:21,609 [INFO] - Discovered 138 valid rules
+2025-04-28 13:21:21,620 [INFO] - Core FD discovery found 138 rules, yielded 138 after filtering
+2025-04-28 13:21:21,631 [INFO] - Completed FD discovery in 50.10 seconds
+2025-04-28 13:21:21,642 [INFO] - === FD Discovery Phase Complete: Processed 138 FDs ===
+2025-04-28 13:21:21,655 [INFO] - HTML report generated successfully at results/matilda_report.html
+2025-04-28 13:21:21,668 [INFO] - Saved discovery statistics to results/matilda_stats.json
+2025-04-28 13:21:21,679 [INFO] - Generated HTML report at results/matilda_report.html
+2025-04-28 13:21:21,690 [INFO] - Exported rules to results/matilda_rules.json
+2025-04-28 13:21:21,703 [INFO] - MATILDA FD terminé en 50.79 secondes, 106 règles découvertes
+2025-04-28 13:21:21,717 [INFO] - Exécution séquentielle des algorithmes
+2025-04-28 13:21:21,726 [INFO] - Démarrage de l'algorithme TANE
+2025-04-28 13:21:22,319 [INFO] - TANE: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 13:21:22,331 [INFO] - Lancement de l'algorithme TANE (version Python)
+2025-04-28 13:21:22,342 [INFO] - Fichiers CSV trouvés: 3
+2025-04-28 13:21:22,354 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/bond.csv (table: bond)
+2025-04-28 13:21:22,370 [INFO] - Table bond: 5243 lignes, 3 colonnes
+2025-04-28 13:21:23,939 [INFO] - Découvert 0 dépendances fonctionnelles pour bond
+2025-04-28 13:21:23,951 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/molecule.csv (table: molecule)
+2025-04-28 13:21:23,965 [INFO] - Table molecule: 188 lignes, 6 colonnes
+2025-04-28 13:21:23,986 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.ind1
+2025-04-28 13:21:24,006 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.inda
+2025-04-28 13:21:24,028 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.logp
+2025-04-28 13:21:24,050 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.lumo
+2025-04-28 13:21:24,071 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.mutagenic
+2025-04-28 13:21:24,206 [INFO] - Dépendance fonctionnelle découverte: molecule.logp -> molecule.inda
+2025-04-28 13:21:24,328 [INFO] - Découvert 6 dépendances fonctionnelles pour molecule
+2025-04-28 13:21:24,340 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/atom.csv (table: atom)
+2025-04-28 13:21:24,357 [INFO] - Table atom: 4893 lignes, 5 colonnes
+2025-04-28 13:21:24,617 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.molecule_id
+2025-04-28 13:21:24,878 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.element
+2025-04-28 13:21:25,145 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.type
+2025-04-28 13:21:25,406 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.charge
+2025-04-28 13:21:28,125 [INFO] - Dépendance fonctionnelle découverte: atom.type -> atom.element
+2025-04-28 13:21:29,367 [INFO] - Découvert 5 dépendances fonctionnelles pour atom
+2025-04-28 13:21:29,379 [INFO] - TANE: Découverte terminée avec 11 règles.
+2025-04-28 13:21:29,395 [INFO] - TANE terminé en 7.66 secondes, 11 règles découvertes
+2025-04-28 13:21:29,407 [INFO] - Démarrage de l'algorithme FastFDs
+2025-04-28 13:21:29,988 [INFO] - FastFDs: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 13:21:30,000 [INFO] - Lancement de l'algorithme FastFDs
+2025-04-28 13:21:30,012 [INFO] - Fichiers CSV trouvés: 3
+2025-04-28 13:21:30,023 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/bond.csv (table: bond)
+2025-04-28 13:21:30,039 [INFO] - Table bond: 5243 lignes, 3 colonnes
+2025-04-28 13:21:30,051 [INFO] - Exécution de FastFDs sur bond avec 3 colonnes
+2025-04-28 13:21:30,080 [INFO] - Recherche des déterminants pour atom1_id
+2025-04-28 13:21:30,635 [INFO] - Dépendance trouvée: ('atom2_id',) -> atom1_id
+2025-04-28 13:21:30,647 [INFO] - Recherche des déterminants pour atom2_id
+2025-04-28 13:21:30,762 [INFO] - Dépendance trouvée: ('atom1_id',) -> atom2_id
+2025-04-28 13:21:30,774 [INFO] - Recherche des déterminants pour type
+2025-04-28 13:30:17,068 [ERROR] - Erreur lors de l'analyse de ../../data/db2/mutagenesis/csv/bond.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 13:30:17,432 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/molecule.csv (table: molecule)
+2025-04-28 13:30:17,449 [INFO] - Table molecule: 188 lignes, 6 colonnes
+2025-04-28 13:30:17,461 [INFO] - Exécution de FastFDs sur molecule avec 6 colonnes
+2025-04-28 13:30:17,474 [INFO] - Recherche des déterminants pour molecule_id
+2025-04-28 13:30:17,486 [INFO] - Recherche des déterminants pour ind1
+2025-04-28 13:30:22,642 [INFO] - Dépendance trouvée: ('molecule_id',) -> ind1
+2025-04-28 13:30:22,654 [INFO] - Recherche des déterminants pour inda
+2025-04-28 13:30:32,264 [INFO] - Dépendance trouvée: ('molecule_id',) -> inda
+2025-04-28 13:30:32,276 [INFO] - Recherche des déterminants pour logp
+2025-04-28 13:30:32,409 [INFO] - Dépendance trouvée: ('lumo',) -> logp
+2025-04-28 13:30:32,422 [INFO] - Recherche des déterminants pour lumo
+2025-04-28 13:30:32,441 [INFO] - Dépendance trouvée: ('logp',) -> lumo
+2025-04-28 13:30:32,452 [INFO] - Recherche des déterminants pour mutagenic
+2025-04-28 13:30:38,086 [INFO] - Dépendance trouvée: ('molecule_id',) -> mutagenic
+2025-04-28 13:30:38,099 [INFO] - FastFDs: 1 règles découvertes jusqu'à présent...
+2025-04-28 13:30:38,111 [INFO] - Dépendance: molecule.('molecule_id',) -> molecule.('ind1',)
+2025-04-28 13:30:38,122 [INFO] - Dépendance: molecule.('molecule_id',) -> molecule.('inda',)
+2025-04-28 13:30:38,134 [INFO] - Dépendance: molecule.('lumo',) -> molecule.('logp',)
+2025-04-28 13:30:38,146 [INFO] - Dépendance: molecule.('logp',) -> molecule.('lumo',)
+2025-04-28 13:30:38,158 [INFO] - Dépendance: molecule.('molecule_id',) -> molecule.('mutagenic',)
+2025-04-28 13:30:38,170 [INFO] - Découvert 5 dépendances pour molecule
+2025-04-28 13:30:38,181 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/atom.csv (table: atom)
+2025-04-28 13:30:38,200 [INFO] - Table atom: 4893 lignes, 5 colonnes
+2025-04-28 13:30:38,211 [INFO] - Exécution de FastFDs sur atom avec 5 colonnes
+2025-04-28 13:30:38,245 [INFO] - Recherche des déterminants pour atom_id
+2025-04-28 13:30:38,257 [INFO] - Recherche des déterminants pour molecule_id
+2025-04-28 13:31:08,234 [INFO] - Dépendance trouvée: ('atom_id',) -> molecule_id
+2025-04-28 13:31:08,247 [INFO] - Recherche des déterminants pour element
+2025-04-28 14:04:29,815 [INFO] - Dépendance trouvée: ('atom_id',) -> element
+2025-04-28 14:04:29,839 [INFO] - Recherche des déterminants pour type
+2025-04-28 14:33:08,710 [INFO] - Dépendance trouvée: ('atom_id',) -> type
+2025-04-28 14:33:08,734 [INFO] - Recherche des déterminants pour charge
+2025-04-28 14:33:56,571 [INFO] - Dépendance trouvée: ('atom_id',) -> charge
+2025-04-28 14:33:56,604 [INFO] - FastFDs: 6 règles découvertes jusqu'à présent...
+2025-04-28 14:33:56,614 [INFO] - Dépendance: atom.('atom_id',) -> atom.('molecule_id',)
+2025-04-28 14:33:56,625 [INFO] - Dépendance: atom.('atom_id',) -> atom.('element',)
+2025-04-28 14:33:56,635 [INFO] - Dépendance: atom.('atom_id',) -> atom.('type',)
+2025-04-28 14:33:56,646 [INFO] - Dépendance: atom.('atom_id',) -> atom.('charge',)
+2025-04-28 14:33:56,658 [INFO] - Découvert 4 dépendances pour atom
+2025-04-28 14:33:56,670 [INFO] - FastFDs: Découverte terminée avec 9 règles.
+2025-04-28 14:33:56,690 [INFO] - FastFDs terminé en 4347.27 secondes, 9 règles découvertes
+2025-04-28 14:33:56,701 [INFO] - Démarrage de l'algorithme FDep
+2025-04-28 14:33:57,300 [INFO] - FDep: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 14:33:57,313 [INFO] - Lancement de l'algorithme FDep
+2025-04-28 14:33:57,325 [INFO] - Fichiers CSV trouvés: 3
+2025-04-28 14:33:57,337 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/bond.csv (table: bond)
+2025-04-28 14:33:57,360 [INFO] - Table bond: 5243 lignes, 3 colonnes
+2025-04-28 14:33:57,370 [INFO] - Exécution de FDep sur bond avec 3 colonnes et max_lhs_size=3
+2025-04-28 14:33:57,381 [INFO] - Calcul des agree sets pour 5243 tuples
+2025-04-28 14:38:57,312 [ERROR] - Erreur lors de l'analyse de ../../data/db2/mutagenesis/csv/bond.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 14:38:57,796 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/molecule.csv (table: molecule)
+2025-04-28 14:38:57,818 [INFO] - Table molecule: 188 lignes, 6 colonnes
+2025-04-28 14:38:57,831 [INFO] - Exécution de FDep sur molecule avec 6 colonnes et max_lhs_size=3
+2025-04-28 14:38:57,845 [INFO] - Calcul des agree sets pour 188 tuples
+2025-04-28 14:39:10,541 [INFO] - Dépendance trouvée: ('lumo', 'logp') -> molecule_id
+2025-04-28 14:39:10,869 [INFO] - Dépendance trouvée: ('molecule_id',) -> ind1
+2025-04-28 14:39:10,880 [INFO] - Dépendance trouvée: ('lumo', 'logp') -> ind1
+2025-04-28 14:39:10,924 [INFO] - Dépendance trouvée: ('molecule_id',) -> inda
+2025-04-28 14:39:10,936 [INFO] - Dépendance trouvée: ('logp',) -> inda
+2025-04-28 14:39:11,403 [INFO] - Dépendance trouvée: ('molecule_id',) -> logp
+2025-04-28 14:39:11,816 [INFO] - Dépendance trouvée: ('molecule_id',) -> lumo
+2025-04-28 14:39:12,153 [INFO] - Dépendance trouvée: ('molecule_id',) -> mutagenic
+2025-04-28 14:39:12,166 [INFO] - Dépendance trouvée: ('lumo', 'logp') -> mutagenic
+2025-04-28 14:39:12,184 [INFO] - FDep: 1 règles découvertes jusqu'à présent...
+2025-04-28 14:39:12,195 [INFO] - Découvert 9 dépendances pour molecule
+2025-04-28 14:39:12,207 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/atom.csv (table: atom)
+2025-04-28 14:39:12,223 [INFO] - Table atom: 4893 lignes, 5 colonnes
+2025-04-28 14:39:12,234 [INFO] - Exécution de FDep sur atom avec 5 colonnes et max_lhs_size=3
+2025-04-28 14:39:12,246 [INFO] - Calcul des agree sets pour 4893 tuples

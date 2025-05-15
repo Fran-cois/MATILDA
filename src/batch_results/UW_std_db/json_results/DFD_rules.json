@@ -1,0 +1,1076 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "course_id"
+        ],
+        "dependent": [
+            "courseLevel"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "student"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "inPhase",
+            "p_id"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "inPhase",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "student"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id"
+        ],
+        "dependent": [
+            "professor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "professor"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "inPhase",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "inPhase",
+            "p_id"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "professor"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "professor"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id"
+        ],
+        "dependent": [
+            "student"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "professor",
+            "student",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor",
+            "student"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "student",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "student",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "professor",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "professor",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id"
+        ],
+        "dependent": [
+            "hasPosition"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor",
+            "student"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "student",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "yearsInProgram"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id"
+        ],
+        "dependent": [
+            "inPhase"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor",
+            "student"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "student"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id",
+            "professor"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "inPhase",
+            "p_id"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "hasPosition",
+            "p_id"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "person",
+        "determinant": [
+            "p_id"
+        ],
+        "dependent": [
+            "yearsInProgram"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

@@ -1,0 +1,776 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "Customers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "ContactTitle"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Customers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "City"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Customers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Customers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "PostalCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Customers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "Country"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Customers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "Fax"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "SupplierID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "CategoryID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "QuantityPerUnit"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "UnitPrice"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "QuantityPerUnit"
+        ],
+        "dependent": [
+            "UnitsInStock"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "UnitsOnOrder"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "ReorderLevel"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Products",
+        "determinant": [
+            "ProductID"
+        ],
+        "dependent": [
+            "Discontinued"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "CustomerID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "EmployeeID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "OrderDate"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "RequiredDate"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShippedDate"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipVia"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "ShippedDate"
+        ],
+        "dependent": [
+            "Freight"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipAddress"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipCity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipRegion"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipPostalCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Orders",
+        "determinant": [
+            "OrderID"
+        ],
+        "dependent": [
+            "ShipCountry"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Suppliers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "ContactTitle"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Suppliers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Suppliers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "Country"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Suppliers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "Fax"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Suppliers",
+        "determinant": [
+            "ContactName"
+        ],
+        "dependent": [
+            "HomePage"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Territories",
+        "determinant": [
+            "TerritoryID"
+        ],
+        "dependent": [
+            "TerritoryDescription"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Territories",
+        "determinant": [
+            "TerritoryID"
+        ],
+        "dependent": [
+            "RegionID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EmployeeTerritories",
+        "determinant": [
+            "TerritoryID"
+        ],
+        "dependent": [
+            "EmployeeID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "productid"
+        ],
+        "dependent": [
+            "orderid"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "orderid"
+        ],
+        "dependent": [
+            "productid"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "orderid"
+        ],
+        "dependent": [
+            "unitprice"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "productid"
+        ],
+        "dependent": [
+            "unitprice"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "orderid"
+        ],
+        "dependent": [
+            "quantity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "productid"
+        ],
+        "dependent": [
+            "quantity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "orderid"
+        ],
+        "dependent": [
+            "discount"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "order_details",
+        "determinant": [
+            "productid"
+        ],
+        "dependent": [
+            "discount"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

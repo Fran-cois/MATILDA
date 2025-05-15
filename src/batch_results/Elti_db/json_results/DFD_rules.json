@@ -1,0 +1,146 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "father",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "wife",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "wife",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "husband",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "husband",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "target",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "is_elti"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "target",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "is_elti"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mother",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

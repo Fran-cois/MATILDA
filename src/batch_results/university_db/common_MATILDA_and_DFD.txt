@@ -1,0 +1,19 @@
+# Règles communes sauvegardées: 8
+# Date: 2025-04-27 18:19:33
+
+1. RA: student_id → salary [conf=1.00, supp=6.40] <=> RA: student_id → salary
+
+2. RA: student_id → capability [conf=1.00, supp=3.36] <=> RA: student_id → capability
+
+3. course: course_id → diff [conf=1.00, supp=4.00] <=> course: course_id → diff
+
+4. student: student_id → ranking [conf=1.00, supp=6.63] <=> student: student_id → ranking
+
+5. prof: prof_id → teachingability [conf=1.00, supp=2.00] <=> prof: prof_id → teachingability
+
+6. student: student_id → intelligence [conf=1.00, supp=11.79] <=> student: student_id → intelligence
+
+7. course: course_id → rating [conf=1.00, supp=4.80] <=> course: course_id → rating
+
+8. prof: prof_id → popularity [conf=1.00, supp=2.33] <=> prof: prof_id → popularity
+

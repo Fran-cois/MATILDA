@@ -1,0 +1,2900 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_PIVOT_ALL",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_GROUPS",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_AAA",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col19"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col19"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col7"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col7"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col8"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col8"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col9"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col9"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col10"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col10"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col11"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col19"
+        ],
+        "dependent": [
+            "col11"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col12"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col19"
+        ],
+        "dependent": [
+            "col12"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col13"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col13"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col14"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col14"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col15"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col15"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col16"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col16"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col17"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col19"
+        ],
+        "dependent": [
+            "col17"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col18"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col19"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col21"
+        ],
+        "dependent": [
+            "col19"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col20"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col21"
+        ],
+        "dependent": [
+            "col20"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col21"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col20"
+        ],
+        "dependent": [
+            "col21"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col22"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col20"
+        ],
+        "dependent": [
+            "col22"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col23"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col23"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col24"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col24"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col25"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col25"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col26"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col27"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col27"
+        ],
+        "dependent": [
+            "col28"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "EXPERMENTS_THRESHOLDS",
+        "determinant": [
+            "col18"
+        ],
+        "dependent": [
+            "col28"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_CCC",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE_NON_INCLUDED_BBB",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_DE",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col4"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col5"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

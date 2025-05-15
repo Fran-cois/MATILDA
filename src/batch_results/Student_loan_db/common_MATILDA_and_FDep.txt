@@ -1,0 +1,5 @@
+# Règles communes sauvegardées: 1
+# Date: 2025-04-28 09:59:09
+
+1. no_payment_due: name → bool [conf=1.00, supp=539.90] <=> no_payment_due: name → bool
+

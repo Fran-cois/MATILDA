@@ -1,0 +1,128 @@
+# Rapport d'Analyse des Algorithmes de Découverte de Dépendances Fonctionnelles
+# Date: 2025-04-30 13:47:17
+# Base de données: lod.db
+
+## Résumé des performances
+
+Meilleur algorithme en termes de vitesse: MATILDA_FDs
+Meilleur algorithme en termes d'efficacité: MATILDA_FDs
+Algorithme découvrant le plus de règles: MATILDA_FDs
+
+## Statistiques globales
+
+### Nombre de FDs découvertes par algorithme
+| Algorithme | Nombre de FDs |
+|------------|---------------|
+| MATILDA_FDs | 3480 |
+| TANE | 501 |
+| DFD | 317 |
+| FastFDs | 161 |
+| FDep | 23 |
+
+### Temps d'exécution par algorithme
+| Algorithme | Temps (s) | FDs/s | Temps/FD (ms) |
+|------------|-----------|-------|---------------|
+| TANE | 55.46 | 9.03 | 110.70 |
+| MATILDA_FDs | 190.54 | 18.26 | 54.75 |
+| DFD | 302.20 | 1.05 | 953.33 |
+| FDep | 311.55 | 0.07 | 13545.77 |
+| FastFDs | 60027.87 | 0.00 | 372843.89 |
+
+## Comparaisons détaillées entre algorithmes
+
+### MATILDA_vs_TANE
+- Total FDs ensemble 1: 3480
+- Total FDs ensemble 2: 501
+- FDs communes: 1479 (42.5% de l'ensemble 1, 295.2% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 2001 (57.5% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 0 (0.0% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.5911
+
+### MATILDA_vs_FastFDs
+- Total FDs ensemble 1: 3480
+- Total FDs ensemble 2: 161
+- FDs communes: 448 (12.9% de l'ensemble 1, 278.3% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 3032 (87.1% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 0 (0.0% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.1403
+
+### MATILDA_vs_FDep
+- Total FDs ensemble 1: 3480
+- Total FDs ensemble 2: 23
+- FDs communes: 69 (2.0% de l'ensemble 1, 300.0% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 3411 (98.0% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 0 (0.0% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.0201
+
+### MATILDA_vs_DFD
+- Total FDs ensemble 1: 3480
+- Total FDs ensemble 2: 317
+- FDs communes: 735 (21.1% de l'ensemble 1, 231.9% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 2745 (78.9% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 72 (22.7% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.2400
+
+### TANE_vs_FastFDs
+- Total FDs ensemble 1: 501
+- Total FDs ensemble 2: 161
+- FDs communes: 97 (19.4% de l'ensemble 1, 60.2% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 404 (80.6% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 64 (39.8% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.1717
+
+### TANE_vs_FDep
+- Total FDs ensemble 1: 501
+- Total FDs ensemble 2: 23
+- FDs communes: 23 (4.6% de l'ensemble 1, 100.0% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 478 (95.4% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 0 (0.0% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.0459
+
+### TANE_vs_DFD
+- Total FDs ensemble 1: 501
+- Total FDs ensemble 2: 317
+- FDs communes: 238 (47.5% de l'ensemble 1, 75.1% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 263 (52.5% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 79 (24.9% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.4103
+
+### FastFDs_vs_FDep
+- Total FDs ensemble 1: 161
+- Total FDs ensemble 2: 23
+- FDs communes: 11 (6.8% de l'ensemble 1, 47.8% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 150 (93.2% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 12 (52.2% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.0636
+
+### FastFDs_vs_DFD
+- Total FDs ensemble 1: 161
+- Total FDs ensemble 2: 317
+- FDs communes: 84 (52.2% de l'ensemble 1, 26.5% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 77 (47.8% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 233 (73.5% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.2132
+
+### FDep_vs_DFD
+- Total FDs ensemble 1: 23
+- Total FDs ensemble 2: 317
+- FDs communes: 23 (100.0% de l'ensemble 1, 7.3% de l'ensemble 2)
+- FDs uniques à l'ensemble 1: 0 (0.0% de l'ensemble 1)
+- FDs uniques à l'ensemble 2: 294 (92.7% de l'ensemble 2)
+- Coefficient de Jaccard (similarité): 0.0726
+
+## Analyse et recommandations
+
+### Recommandations
+
+1. Pour les applications nécessitant une exécution rapide, privilégiez l'algorithme MATILDA_FDs.
+2. Pour les bases de données volumineuses où l'efficacité est cruciale, MATILDA_FDs est recommandé.
+3. Pour une découverte plus exhaustive des dépendances, MATILDA_FDs offre le meilleur résultat.
+
+### Notes supplémentaires
+
+- Les résultats peuvent varier selon la structure et la taille de la base de données.
+- Un grand nombre de règles n'est pas nécessairement synonyme de qualité ; vérifiez la pertinence des dépendances découvertes.
+- Pour les bases de données de production, envisagez d'exécuter plusieurs algorithmes et de combiner leurs résultats.
+
+---
+Rapport généré automatiquement par le Comparateur d'Algorithmes FD.

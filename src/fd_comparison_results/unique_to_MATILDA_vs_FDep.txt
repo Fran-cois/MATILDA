@@ -1,0 +1,1991 @@
+# FDs sauvegardées: 497
+# Date: 2025-04-27 15:43:21
+
+1. [FunctionalDependency] sgot: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+2. [FunctionalDependency] alkphos: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+3. [FunctionalDependency] alkphos: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+4. [FunctionalDependency] alkphos: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+5. [FunctionalDependency] alkphos: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+6. [FunctionalDependency] alkphos: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+7. [FunctionalDependency] alkphos: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+8. [FunctionalDependency] alkphos: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+9. [FunctionalDependency] alkphos: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+10. [FunctionalDependency] alkphos: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+11. [FunctionalDependency] alkphos: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+12. [FunctionalDependency] alkphos: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+13. [FunctionalDependency] alkphos: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+14. [FunctionalDependency] alkphos: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+15. [FunctionalDependency] alkphos: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+16. [FunctionalDependency] alkphos: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+17. [FunctionalDependency] alkphos: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+18. [FunctionalDependency] alkphos: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+19. [FunctionalDependency] drinks: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+20. [FunctionalDependency] drinks: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+21. [FunctionalDependency] drinks: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+22. [FunctionalDependency] drinks: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+23. [FunctionalDependency] drinks: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+24. [FunctionalDependency] drinks: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+25. [FunctionalDependency] drinks: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+26. [FunctionalDependency] drinks: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+27. [FunctionalDependency] drinks: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+28. [FunctionalDependency] drinks: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+29. [FunctionalDependency] drinks: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+30. [FunctionalDependency] drinks: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+31. [FunctionalDependency] drinks: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+32. [FunctionalDependency] drinks: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+33. [FunctionalDependency] drinks: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+34. [FunctionalDependency] drinks: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+35. [FunctionalDependency] drinks: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+36. [FunctionalDependency] sgpt: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+37. [FunctionalDependency] sgpt: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+38. [FunctionalDependency] sgpt: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+39. [FunctionalDependency] sgpt: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+40. [FunctionalDependency] sgpt: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+41. [FunctionalDependency] sgpt: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+42. [FunctionalDependency] sgpt: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+43. [FunctionalDependency] sgpt: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+44. [FunctionalDependency] sgpt: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+45. [FunctionalDependency] sgpt: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+46. [FunctionalDependency] sgpt: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+47. [FunctionalDependency] sgpt: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+48. [FunctionalDependency] sgpt: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+49. [FunctionalDependency] sgpt: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+50. [FunctionalDependency] sgpt: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+51. [FunctionalDependency] sgpt: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+52. [FunctionalDependency] sgpt: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+53. [FunctionalDependency] sgpt: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+54. [FunctionalDependency] sgpt: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+55. [FunctionalDependency] sgpt: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+56. [FunctionalDependency] sgpt: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+57. [FunctionalDependency] sgpt: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+58. [FunctionalDependency] sgpt: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+59. [FunctionalDependency] sgpt: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+60. [FunctionalDependency] sgpt: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+61. [FunctionalDependency] sgpt: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+62. [FunctionalDependency] sgpt: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+63. [FunctionalDependency] sgpt: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+64. [FunctionalDependency] sgpt: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+65. [FunctionalDependency] sgpt: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+66. [FunctionalDependency] sgpt: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+67. [FunctionalDependency] sgpt: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+68. [FunctionalDependency] sgpt: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+69. [FunctionalDependency] sgpt: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+70. [FunctionalDependency] sgpt: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+71. [FunctionalDependency] sgpt: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+72. [FunctionalDependency] sgpt: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+73. [FunctionalDependency] sgpt: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+74. [FunctionalDependency] sgpt: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+75. [FunctionalDependency] sgpt: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+76. [FunctionalDependency] sgpt: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+77. [FunctionalDependency] sgpt: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+78. [FunctionalDependency] sgpt: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+79. [FunctionalDependency] sgpt: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+80. [FunctionalDependency] sgpt: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+81. [FunctionalDependency] sgpt: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+82. [FunctionalDependency] sgpt: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+83. [FunctionalDependency] sgpt: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+84. [FunctionalDependency] sgpt: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+85. [FunctionalDependency] sgpt: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+86. [FunctionalDependency] sgpt: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+87. [FunctionalDependency] sgpt: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+88. [FunctionalDependency] sgpt: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+89. [FunctionalDependency] sgpt: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+90. [FunctionalDependency] sgpt: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+91. [FunctionalDependency] sgpt: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+92. [FunctionalDependency] sgpt: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+93. [FunctionalDependency] sgpt: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+94. [FunctionalDependency] sgpt: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+95. [FunctionalDependency] sgpt: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+96. [FunctionalDependency] bupa: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+97. [FunctionalDependency] sgpt: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+98. [FunctionalDependency] sgpt: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+99. [FunctionalDependency] sgpt: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+100. [FunctionalDependency] alkphos: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+101. [FunctionalDependency] drinks: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+102. [FunctionalDependency] bupa: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+103. [FunctionalDependency] bupa: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+104. [FunctionalDependency] bupa: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+105. [FunctionalDependency] bupa: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+106. [FunctionalDependency] bupa: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+107. [FunctionalDependency] bupa: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+108. [FunctionalDependency] bupa: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+109. [FunctionalDependency] bupa: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+110. [FunctionalDependency] bupa: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+111. [FunctionalDependency] bupa: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+112. [FunctionalDependency] bupa: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+113. [FunctionalDependency] bupa: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+114. [FunctionalDependency] bupa: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+115. [FunctionalDependency] bupa: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+116. [FunctionalDependency] bupa: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+117. [FunctionalDependency] bupa: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+118. [FunctionalDependency] bupa: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+119. [FunctionalDependency] gammagt: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+120. [FunctionalDependency] gammagt: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+121. [FunctionalDependency] gammagt: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+122. [FunctionalDependency] gammagt: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+123. [FunctionalDependency] gammagt: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+124. [FunctionalDependency] gammagt: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+125. [FunctionalDependency] gammagt: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+126. [FunctionalDependency] gammagt: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+127. [FunctionalDependency] gammagt: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+128. [FunctionalDependency] gammagt: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+129. [FunctionalDependency] gammagt: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+130. [FunctionalDependency] gammagt: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+131. [FunctionalDependency] gammagt: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+132. [FunctionalDependency] gammagt: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+133. [FunctionalDependency] gammagt: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+134. [FunctionalDependency] gammagt: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+135. [FunctionalDependency] gammagt: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+136. [FunctionalDependency] sgot: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+137. [FunctionalDependency] sgot: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+138. [FunctionalDependency] sgot: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+139. [FunctionalDependency] sgot: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+140. [FunctionalDependency] sgot: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+141. [FunctionalDependency] sgot: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+142. [FunctionalDependency] sgot: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+143. [FunctionalDependency] mcv: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+144. [FunctionalDependency] mcv: arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+145. [FunctionalDependency] mcv: arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+146. [FunctionalDependency] mcv: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+147. [FunctionalDependency] mcv: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+148. [FunctionalDependency] mcv: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+149. [FunctionalDependency] mcv: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+150. [FunctionalDependency] mcv: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+151. [FunctionalDependency] mcv: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+152. [FunctionalDependency] mcv: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+153. [FunctionalDependency] mcv: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+154. [FunctionalDependency] mcv: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+155. [FunctionalDependency] mcv: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+156. [FunctionalDependency] mcv: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+157. [FunctionalDependency] mcv: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+158. [FunctionalDependency] mcv: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+159. [FunctionalDependency] mcv: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+160. [FunctionalDependency] mcv: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+161. [FunctionalDependency] mcv: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+162. [FunctionalDependency] mcv: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+163. [FunctionalDependency] mcv: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+164. [FunctionalDependency] mcv: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+165. [FunctionalDependency] mcv: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+166. [FunctionalDependency] mcv: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+167. [FunctionalDependency] mcv: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+168. [FunctionalDependency] mcv: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+169. [FunctionalDependency] mcv: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+170. [FunctionalDependency] mcv: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+171. [FunctionalDependency] mcv: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+172. [FunctionalDependency] mcv: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+173. [FunctionalDependency] mcv: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+174. [FunctionalDependency] mcv: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+175. [FunctionalDependency] mcv: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+176. [FunctionalDependency] mcv: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+177. [FunctionalDependency] mcv: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+178. [FunctionalDependency] mcv: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+179. [FunctionalDependency] mcv: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+180. [FunctionalDependency] mcv: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+181. [FunctionalDependency] mcv: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+182. [FunctionalDependency] mcv: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+183. [FunctionalDependency] mcv: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+184. [FunctionalDependency] mcv: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+185. [FunctionalDependency] mcv: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+186. [FunctionalDependency] mcv: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+187. [FunctionalDependency] mcv: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+188. [FunctionalDependency] mcv: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+189. [FunctionalDependency] mcv: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+190. [FunctionalDependency] mcv: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+191. [FunctionalDependency] mcv: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+192. [FunctionalDependency] mcv: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+193. [FunctionalDependency] mcv: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+194. [FunctionalDependency] mcv: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+195. [FunctionalDependency] mcv: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+196. [FunctionalDependency] mcv: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+197. [FunctionalDependency] mcv: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+198. [FunctionalDependency] mcv: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+199. [FunctionalDependency] mcv: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+200. [FunctionalDependency] mcv: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+201. [FunctionalDependency] mcv: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+202. [FunctionalDependency] mcv: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+203. [FunctionalDependency] gammagt: arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+204. [FunctionalDependency] alkphos: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+205. [FunctionalDependency] alkphos: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+206. [FunctionalDependency] alkphos: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+207. [FunctionalDependency] alkphos: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+208. [FunctionalDependency] alkphos: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+209. [FunctionalDependency] alkphos: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+210. [FunctionalDependency] alkphos: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+211. [FunctionalDependency] alkphos: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+212. [FunctionalDependency] alkphos: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+213. [FunctionalDependency] alkphos: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+214. [FunctionalDependency] alkphos: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+215. [FunctionalDependency] alkphos: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+216. [FunctionalDependency] alkphos: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+217. [FunctionalDependency] alkphos: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+218. [FunctionalDependency] alkphos: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+219. [FunctionalDependency] alkphos: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+220. [FunctionalDependency] alkphos: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+221. [FunctionalDependency] alkphos: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+222. [FunctionalDependency] alkphos: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+223. [FunctionalDependency] alkphos: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+224. [FunctionalDependency] alkphos: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+225. [FunctionalDependency] alkphos: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+226. [FunctionalDependency] alkphos: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+227. [FunctionalDependency] alkphos: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+228. [FunctionalDependency] alkphos: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+229. [FunctionalDependency] alkphos: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+230. [FunctionalDependency] alkphos: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+231. [FunctionalDependency] alkphos: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+232. [FunctionalDependency] alkphos: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+233. [FunctionalDependency] alkphos: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+234. [FunctionalDependency] alkphos: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+235. [FunctionalDependency] alkphos: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+236. [FunctionalDependency] alkphos: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+237. [FunctionalDependency] alkphos: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+238. [FunctionalDependency] alkphos: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+239. [FunctionalDependency] alkphos: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+240. [FunctionalDependency] alkphos: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+241. [FunctionalDependency] alkphos: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+242. [FunctionalDependency] alkphos: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+243. [FunctionalDependency] alkphos: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+244. [FunctionalDependency] alkphos: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+245. [FunctionalDependency] alkphos: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+246. [FunctionalDependency] alkphos: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+247. [FunctionalDependency] alkphos: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+248. [FunctionalDependency] alkphos: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+249. [FunctionalDependency] alkphos: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+250. [FunctionalDependency] alkphos: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+251. [FunctionalDependency] alkphos: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+252. [FunctionalDependency] alkphos: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+253. [FunctionalDependency] alkphos: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+254. [FunctionalDependency] alkphos: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+255. [FunctionalDependency] alkphos: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+256. [FunctionalDependency] alkphos: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+257. [FunctionalDependency] mcv: arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+258. [FunctionalDependency] mcv: arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+259. [FunctionalDependency] mcv: arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+260. [FunctionalDependency] drinks: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+261. [FunctionalDependency] drinks: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+262. [FunctionalDependency] drinks: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+263. [FunctionalDependency] drinks: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+264. [FunctionalDependency] drinks: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+265. [FunctionalDependency] drinks: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+266. [FunctionalDependency] drinks: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+267. [FunctionalDependency] drinks: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+268. [FunctionalDependency] drinks: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+269. [FunctionalDependency] drinks: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+270. [FunctionalDependency] drinks: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+271. [FunctionalDependency] drinks: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+272. [FunctionalDependency] drinks: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+273. [FunctionalDependency] drinks: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+274. [FunctionalDependency] drinks: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+275. [FunctionalDependency] drinks: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+276. [FunctionalDependency] drinks: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+277. [FunctionalDependency] drinks: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+278. [FunctionalDependency] drinks: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+279. [FunctionalDependency] drinks: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+280. [FunctionalDependency] drinks: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+281. [FunctionalDependency] drinks: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+282. [FunctionalDependency] drinks: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+283. [FunctionalDependency] drinks: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+284. [FunctionalDependency] drinks: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+285. [FunctionalDependency] drinks: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+286. [FunctionalDependency] drinks: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+287. [FunctionalDependency] drinks: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+288. [FunctionalDependency] drinks: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+289. [FunctionalDependency] drinks: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+290. [FunctionalDependency] drinks: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+291. [FunctionalDependency] drinks: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+292. [FunctionalDependency] drinks: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+293. [FunctionalDependency] drinks: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+294. [FunctionalDependency] drinks: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+295. [FunctionalDependency] drinks: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+296. [FunctionalDependency] drinks: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+297. [FunctionalDependency] drinks: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+298. [FunctionalDependency] drinks: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+299. [FunctionalDependency] drinks: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+300. [FunctionalDependency] drinks: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+301. [FunctionalDependency] drinks: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+302. [FunctionalDependency] drinks: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+303. [FunctionalDependency] drinks: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+304. [FunctionalDependency] drinks: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+305. [FunctionalDependency] drinks: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+306. [FunctionalDependency] drinks: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+307. [FunctionalDependency] drinks: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+308. [FunctionalDependency] drinks: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+309. [FunctionalDependency] drinks: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+310. [FunctionalDependency] drinks: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+311. [FunctionalDependency] drinks: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+312. [FunctionalDependency] drinks: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+313. [FunctionalDependency] sgpt: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+314. [FunctionalDependency] sgpt: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+315. [FunctionalDependency] sgpt: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+316. [FunctionalDependency] sgpt: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+317. [FunctionalDependency] sgpt: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+318. [FunctionalDependency] sgpt: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+319. [FunctionalDependency] sgpt: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+320. [FunctionalDependency] sgpt: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+321. [FunctionalDependency] bupa: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+322. [FunctionalDependency] bupa: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+323. [FunctionalDependency] bupa: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+324. [FunctionalDependency] bupa: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+325. [FunctionalDependency] bupa: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+326. [FunctionalDependency] bupa: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+327. [FunctionalDependency] bupa: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+328. [FunctionalDependency] bupa: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+329. [FunctionalDependency] bupa: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+330. [FunctionalDependency] bupa: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+331. [FunctionalDependency] bupa: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+332. [FunctionalDependency] bupa: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+333. [FunctionalDependency] bupa: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+334. [FunctionalDependency] bupa: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+335. [FunctionalDependency] bupa: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+336. [FunctionalDependency] bupa: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+337. [FunctionalDependency] bupa: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+338. [FunctionalDependency] bupa: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+339. [FunctionalDependency] bupa: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+340. [FunctionalDependency] bupa: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+341. [FunctionalDependency] bupa: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+342. [FunctionalDependency] bupa: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+343. [FunctionalDependency] bupa: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+344. [FunctionalDependency] bupa: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+345. [FunctionalDependency] bupa: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+346. [FunctionalDependency] bupa: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+347. [FunctionalDependency] bupa: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+348. [FunctionalDependency] bupa: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+349. [FunctionalDependency] bupa: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+350. [FunctionalDependency] bupa: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+351. [FunctionalDependency] bupa: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+352. [FunctionalDependency] bupa: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+353. [FunctionalDependency] bupa: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+354. [FunctionalDependency] bupa: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+355. [FunctionalDependency] bupa: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+356. [FunctionalDependency] bupa: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+357. [FunctionalDependency] bupa: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+358. [FunctionalDependency] bupa: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+359. [FunctionalDependency] bupa: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+360. [FunctionalDependency] bupa: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+361. [FunctionalDependency] bupa: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+362. [FunctionalDependency] bupa: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+363. [FunctionalDependency] bupa: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+364. [FunctionalDependency] bupa: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+365. [FunctionalDependency] bupa: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+366. [FunctionalDependency] bupa: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+367. [FunctionalDependency] bupa: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+368. [FunctionalDependency] bupa: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+369. [FunctionalDependency] bupa: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+370. [FunctionalDependency] bupa: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+371. [FunctionalDependency] bupa: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+372. [FunctionalDependency] bupa: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+373. [FunctionalDependency] bupa: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+374. [FunctionalDependency] sgot: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+375. [FunctionalDependency] sgot: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+376. [FunctionalDependency] sgot: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+377. [FunctionalDependency] sgot: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+378. [FunctionalDependency] sgot: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+379. [FunctionalDependency] sgot: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+380. [FunctionalDependency] sgot: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+381. [FunctionalDependency] sgot: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+382. [FunctionalDependency] sgot: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+383. [FunctionalDependency] sgot: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+384. [FunctionalDependency] sgot: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+385. [FunctionalDependency] sgot: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+386. [FunctionalDependency] sgot: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+387. [FunctionalDependency] sgot: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+388. [FunctionalDependency] sgot: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+389. [FunctionalDependency] sgot: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+390. [FunctionalDependency] sgot: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+391. [FunctionalDependency] sgot: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+392. [FunctionalDependency] sgot: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+393. [FunctionalDependency] sgot: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+394. [FunctionalDependency] sgot: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+395. [FunctionalDependency] sgot: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+396. [FunctionalDependency] sgot: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+397. [FunctionalDependency] sgot: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+398. [FunctionalDependency] sgot: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+399. [FunctionalDependency] sgot: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+400. [FunctionalDependency] sgot: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+401. [FunctionalDependency] sgot: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+402. [FunctionalDependency] sgot: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+403. [FunctionalDependency] sgot: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+404. [FunctionalDependency] sgot: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+405. [FunctionalDependency] sgot: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+406. [FunctionalDependency] sgot: arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+407. [FunctionalDependency] sgot: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+408. [FunctionalDependency] sgot: arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+409. [FunctionalDependency] sgot: arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+410. [FunctionalDependency] sgot: arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+411. [FunctionalDependency] sgot: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+412. [FunctionalDependency] sgot: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+413. [FunctionalDependency] sgot: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+414. [FunctionalDependency] sgot: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+415. [FunctionalDependency] sgot: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+416. [FunctionalDependency] sgot: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+417. [FunctionalDependency] sgot: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+418. [FunctionalDependency] sgot: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+419. [FunctionalDependency] sgot: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+420. [FunctionalDependency] sgot: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+421. [FunctionalDependency] sgot: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+422. [FunctionalDependency] sgot: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+423. [FunctionalDependency] sgot: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+424. [FunctionalDependency] sgot: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+425. [FunctionalDependency] sgot: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+426. [FunctionalDependency] sgot: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+427. [FunctionalDependency] sgot: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+428. [FunctionalDependency] sgot: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+429. [FunctionalDependency] sgot: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+430. [FunctionalDependency] sgot: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+431. [FunctionalDependency] sgot: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+432. [FunctionalDependency] sgot: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+433. [FunctionalDependency] sgot: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+434. [FunctionalDependency] sgot: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+435. [FunctionalDependency] sgot: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+436. [FunctionalDependency] sgot: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+437. [FunctionalDependency] gammagt: arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+438. [FunctionalDependency] gammagt: arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+439. [FunctionalDependency] gammagt: arg1, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+440. [FunctionalDependency] gammagt: arg1, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+441. [FunctionalDependency] gammagt: arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+442. [FunctionalDependency] gammagt: arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+443. [FunctionalDependency] gammagt: arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+444. [FunctionalDependency] gammagt: arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+445. [FunctionalDependency] gammagt: arg1, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+446. [FunctionalDependency] gammagt: arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+447. [FunctionalDependency] gammagt: arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+448. [FunctionalDependency] gammagt: arg1 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+449. [FunctionalDependency] gammagt: arg1, arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+450. [FunctionalDependency] gammagt: arg2, arg2 → arg1, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+451. [FunctionalDependency] gammagt: arg1, arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+452. [FunctionalDependency] gammagt: arg1, arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+453. [FunctionalDependency] gammagt: arg2, arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+454. [FunctionalDependency] gammagt: arg2, arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+455. [FunctionalDependency] gammagt: arg1, arg2, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+456. [FunctionalDependency] gammagt: arg2, arg2, arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+457. [FunctionalDependency] gammagt: arg1, arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+458. [FunctionalDependency] gammagt: arg1 → arg2, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+459. [FunctionalDependency] gammagt: arg2 → arg1, arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+460. [FunctionalDependency] gammagt: arg2, arg2, arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+461. [FunctionalDependency] gammagt: arg1 → arg1, arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+462. [FunctionalDependency] gammagt: arg2 → arg1, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+463. [FunctionalDependency] gammagt: arg1, arg1 → arg2, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+464. [FunctionalDependency] gammagt: arg1, arg1, arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+465. [FunctionalDependency] gammagt: arg2, arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+466. [FunctionalDependency] gammagt: arg1, arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+467. [FunctionalDependency] gammagt: arg1, arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+468. [FunctionalDependency] gammagt: arg1, arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+469. [FunctionalDependency] gammagt: arg1, arg2, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+470. [FunctionalDependency] gammagt: arg2, arg1 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+471. [FunctionalDependency] gammagt: arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+472. [FunctionalDependency] gammagt: arg2 → arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+473. [FunctionalDependency] gammagt: arg2, arg2, arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+474. [FunctionalDependency] gammagt: arg1 → arg2, arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+475. [FunctionalDependency] gammagt: arg2, arg1 → arg1
+   Support: 0
+   Confiance: 0
+
+476. [FunctionalDependency] gammagt: arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+477. [FunctionalDependency] gammagt: arg1 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+478. [FunctionalDependency] gammagt: arg1, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+479. [FunctionalDependency] gammagt: arg2 → arg1, arg1
+   Support: 0
+   Confiance: 0
+
+480. [FunctionalDependency] gammagt: arg1 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+481. [FunctionalDependency] gammagt: arg1, arg2 → arg1, arg2
+   Support: 0
+   Confiance: 0
+
+482. [FunctionalDependency] gammagt: arg2 → arg1, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+483. [FunctionalDependency] gammagt: arg2, arg1, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+484. [FunctionalDependency] gammagt: arg1, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+485. [FunctionalDependency] gammagt: arg1 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+486. [FunctionalDependency] gammagt: arg2, arg1, arg2, arg2 → arg1
+   Support: 0
+   Confiance: 0
+
+487. [FunctionalDependency] gammagt: arg1 → arg2, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+488. [FunctionalDependency] gammagt: arg2 → arg1, arg1, arg2, arg2
+   Support: 0
+   Confiance: 0
+
+489. [FunctionalDependency] gammagt: arg1, arg1, arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+490. [FunctionalDependency] mcv: arg2, arg2, arg1 → arg2
+   Support: 0
+   Confiance: 0
+
+491. [FunctionalDependency] mcv: arg2 → arg2, arg1, arg2
+   Support: 0
+   Confiance: 0
+
+492. [FunctionalDependency] mcv: arg2, arg1 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+493. [FunctionalDependency] mcv: arg2, arg1, arg2 → arg2
+   Support: 0
+   Confiance: 0
+
+494. [FunctionalDependency] mcv: arg2, arg2 → arg2, arg1
+   Support: 0
+   Confiance: 0
+
+495. [FunctionalDependency] mcv: arg2 → arg2, arg2, arg1
+   Support: 0
+   Confiance: 0
+
+496. [FunctionalDependency] mcv: arg2 → arg2, arg2
+   Support: 0
+   Confiance: 0
+
+497. [FunctionalDependency] mcv: arg2, arg2 → arg2
+   Support: 0
+   Confiance: 0
+

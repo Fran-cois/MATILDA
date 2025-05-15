@@ -1,0 +1,15 @@
+# Règles communes sauvegardées: 6
+# Date: 2025-04-27 18:19:27
+
+1. person: p_id → yearsInProgram [conf=1.00, supp=77.53] <=> person: p_id → yearsInProgram
+
+2. person: p_id → inPhase [conf=1.00, supp=91.18] <=> person: p_id → inPhase
+
+3. person: p_id → student [conf=1.00, supp=180.65] <=> person: p_id → student
+
+4. person: p_id → hasPosition [conf=1.00, supp=188.68] <=> person: p_id → hasPosition
+
+5. course: course_id → courseLevel [conf=1.00, supp=63.79] <=> course: course_id → courseLevel
+
+6. person: p_id → professor [conf=1.00, supp=180.65] <=> person: p_id → professor
+

@@ -1,0 +1,67 @@
+# Règles communes sauvegardées: 32
+# Date: 2025-04-28 05:40:33
+
+1. game: game_id → site [conf=1.00, supp=294.00] <=> game: game_id → site
+
+2. game: game_id → w7 [conf=1.00, supp=9.32] <=> game: game_id → w7
+
+3. game: game_id → b5 [conf=1.00, supp=10.37] <=> game: game_id → b5
+
+4. game: b5 → round [conf=10.37, supp=1.00] <=> game: b5 → round
+
+5. game: game_id → event [conf=1.00, supp=294.00] <=> game: game_id → event
+
+6. game: game_id → w3 [conf=1.00, supp=27.42] <=> game: game_id → w3
+
+7. game: game_id → opening_id [conf=1.00, supp=12.02] <=> game: game_id → opening_id
+
+8. game: game_id → b3 [conf=1.00, supp=19.34] <=> game: game_id → b3
+
+9. game: game_id → w4 [conf=1.00, supp=16.42] <=> game: game_id → w4
+
+10. game: game_id → w8 [conf=1.00, supp=5.61] <=> game: game_id → w8
+
+11. game: game_id → b2 [conf=1.00, supp=35.80] <=> game: game_id → b2
+
+12. game: game_id → game_result [conf=1.00, supp=102.43] <=> game: game_id → game_result
+
+13. game: game_id → w6 [conf=1.00, supp=7.89] <=> game: game_id → w6
+
+14. game: game_id → black [conf=1.00, supp=2.21] <=> game: game_id → black
+
+15. game: game_id → whiteElo [conf=1.00, supp=3.18] <=> game: game_id → whiteElo
+
+16. game: game_id → b7 [conf=1.00, supp=9.43] <=> game: game_id → b7
+
+17. game: game_id → white [conf=1.00, supp=2.33] <=> game: game_id → white
+
+18. game: game_id → b6 [conf=1.00, supp=8.73] <=> game: game_id → b6
+
+19. game: game_id → b9 [conf=1.00, supp=4.64] <=> game: game_id → b9
+
+20. game: game_id → b1 [conf=1.00, supp=53.06] <=> game: game_id → b1
+
+21. game: game_id → b4 [conf=1.00, supp=12.66] <=> game: game_id → b4
+
+22. game: game_id → event_date [conf=1.00, supp=189.35] <=> game: game_id → event_date
+
+23. game: game_id → b10 [conf=1.00, supp=4.09] <=> game: game_id → b10
+
+24. game: game_id → w5 [conf=1.00, supp=11.74] <=> game: game_id → w5
+
+25. game: game_id → w9 [conf=1.00, supp=6.37] <=> game: game_id → w9
+
+26. game: game_id → w1 [conf=1.00, supp=108.04] <=> game: game_id → w1
+
+27. game: game_id → b8 [conf=1.00, supp=6.65] <=> game: game_id → b8
+
+28. game: game_id → w10 [conf=1.00, supp=3.14] <=> game: game_id → w10
+
+29. game: game_id → ECO [conf=1.00, supp=2.42] <=> game: game_id → ECO
+
+30. game: game_id → w2 [conf=1.00, supp=77.53] <=> game: game_id → w2
+
+31. game: game_id → opening [conf=1.00, supp=30.61] <=> game: game_id → opening
+
+32. game: game_id → BlackElo [conf=1.00, supp=3.21] <=> game: game_id → BlackElo
+

@@ -1,0 +1,5 @@
+# Règles communes sauvegardées: 1
+# Date: 2025-04-27 21:55:41
+
+1. utube_states: id → class [conf=1.00, supp=538.06] <=> utube_states: id → class
+

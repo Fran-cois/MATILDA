@@ -1,0 +1,185 @@
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/bupa.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-23_TANE_bupa --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/sgot.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-23_TANE_sgot --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/drinks.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-23_TANE_drinks --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/bupa_type.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-23_TANE_bupa_type --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/mcv.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-23_TANE_mcv --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/sgpt.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-23_TANE_sgpt --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/bupa_name.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-24_TANE_bupa_name --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/gammagt.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-24_TANE_gammagt --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/TANE-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.tane.TANEFile --files ../../data/db/Bupa/csv/alkphos.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-24_TANE_alkphos --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.tane.TANEFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/FASTFDS-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.fastfds.FastFDsFile --files ../../data/db/Bupa/csv/bupa.csv ../../data/db/Bupa/csv/sgot.csv ../../data/db/Bupa/csv/drinks.csv ../../data/db/Bupa/csv/bupa_type.csv ../../data/db/Bupa/csv/mcv.csv ../../data/db/Bupa/csv/sgpt.csv ../../data/db/Bupa/csv/bupa_name.csv ../../data/db/Bupa/csv/gammagt.csv ../../data/db/Bupa/csv/alkphos.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-24_FASTFDS --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.fastfds.FastFDsFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/FDEP-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.fdep.FDEPFile --files ../../data/db/Bupa/csv/bupa.csv ../../data/db/Bupa/csv/sgot.csv ../../data/db/Bupa/csv/drinks.csv ../../data/db/Bupa/csv/bupa_type.csv ../../data/db/Bupa/csv/mcv.csv ../../data/db/Bupa/csv/sgpt.csv ../../data/db/Bupa/csv/bupa_name.csv ../../data/db/Bupa/csv/gammagt.csv ../../data/db/Bupa/csv/alkphos.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-24_FDEP --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.fdep.FDEPFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/DFD-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.dfd.DFDFile --files ../../data/db/Bupa/csv/bupa.csv ../../data/db/Bupa/csv/sgot.csv ../../data/db/Bupa/csv/drinks.csv ../../data/db/Bupa/csv/bupa_type.csv ../../data/db/Bupa/csv/mcv.csv ../../data/db/Bupa/csv/sgpt.csv ../../data/db/Bupa/csv/bupa_name.csv ../../data/db/Bupa/csv/gammagt.csv ../../data/db/Bupa/csv/alkphos.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-25_DFD --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.dfd.DFDFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/AIDFD-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.aidfd.AIDFDFile --files ../../data/db/Bupa/csv/bupa.csv ../../data/db/Bupa/csv/sgot.csv ../../data/db/Bupa/csv/drinks.csv ../../data/db/Bupa/csv/bupa_type.csv ../../data/db/Bupa/csv/mcv.csv ../../data/db/Bupa/csv/sgpt.csv ../../data/db/Bupa/csv/bupa_name.csv ../../data/db/Bupa/csv/gammagt.csv ../../data/db/Bupa/csv/alkphos.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-25_AIDFD --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.aidfd.AIDFDFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+Executing command: java -cp /Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/metanome-cli-1.2-SNAPSHOT.jar:/Users/famat/PycharmProjects/MATILDA_ALL/MATILDA/src/algorithms/bins/metanome/PYRO-1.2-SNAPSHOT.jar de.metanome.cli.App --algorithm de.metanome.algorithms.pyro.PYROFile --files ../../data/db/Bupa/csv/bupa.csv ../../data/db/Bupa/csv/sgot.csv ../../data/db/Bupa/csv/drinks.csv ../../data/db/Bupa/csv/bupa_type.csv ../../data/db/Bupa/csv/mcv.csv ../../data/db/Bupa/csv/sgpt.csv ../../data/db/Bupa/csv/bupa_name.csv ../../data/db/Bupa/csv/gammagt.csv ../../data/db/Bupa/csv/alkphos.csv --table-key INPUT_FILES --separator "," --output file:2025-05-10_23-32-25_PYRO --header
+Command failed with return code 3: (metanome-cli) ERROR    Could not initialize algorithm.: java.lang.ClassNotFoundException: de.metanome.algorithms.pyro.PYROFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:462)
+	at java.base/java.lang.Class.forName(Class.java:453)
+	at de.metanome.cli.App.createAlgorithm(App.java:232)
+	at de.metanome.cli.App.configureAlgorithm(App.java:217)
+	at de.metanome.cli.App.run(App.java:91)
+	at de.metanome.cli.App.main(App.java:65)
+
+
+Exécution terminée. Résultats sauvegardés dans: fd_comparison_results
+Rapport HTML généré: fd_comparison_results/fd_comparison_report.html

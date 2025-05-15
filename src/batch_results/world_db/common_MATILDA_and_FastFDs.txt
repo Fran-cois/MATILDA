@@ -1,0 +1,39 @@
+# Règles communes sauvegardées: 18
+# Date: 2025-04-28 06:49:44
+
+1. Country: SurfaceArea → Population [conf=1.00, supp=0.26] <=> Country: SurfaceArea → Population
+
+2. City: ID → District [conf=1.00, supp=12.51] <=> City: ID → District
+
+3. Country: SurfaceArea → IndepYear [conf=1.00, supp=3.67] <=> Country: SurfaceArea → IndepYear
+
+4. Country: Code2 → Region [conf=1.00, supp=11.98] <=> Country: Code2 → Region
+
+5. Country: Code2 → Continent [conf=1.00, supp=42.74] <=> Country: Code2 → Continent
+
+6. Country: SurfaceArea → GovernmentForm [conf=1.00, supp=67.02] <=> Country: SurfaceArea → GovernmentForm
+
+7. Country: SurfaceArea → GNP [conf=1.00, supp=2.33] <=> Country: SurfaceArea → GNP
+
+8. CountryLanguage: CountryCode → IsOfficial [conf=1.00, supp=612.74] <=> CountryLanguage: CountryCode → IsOfficial
+
+9. CountryLanguage: Language → IsOfficial [conf=1.00, supp=612.74] <=> CountryLanguage: Language → IsOfficial
+
+10. Country: Code2 → HeadOfState [conf=1.00, supp=5.72] <=> Country: Code2 → HeadOfState
+
+11. City: ID → CountryCode [conf=1.00, supp=149.43] <=> City: ID → CountryCode
+
+12. City: Name → Population [conf=0.04, supp=1.00] <=> City: Name → Population
+
+13. City: Population → Name [conf=1.00, supp=0.04] <=> City: Population → Name
+
+14. CountryLanguage: CountryCode → Percentage [conf=1.00, supp=8.88] <=> CountryLanguage: CountryCode → Percentage
+
+15. CountryLanguage: Language → Percentage [conf=1.00, supp=8.88] <=> CountryLanguage: Language → Percentage
+
+16. City: Population → Name [conf=0.14, supp=1.00] <=> City: Population → Name
+
+17. City: Name → Population [conf=1.00, supp=0.14] <=> City: Name → Population
+
+18. Country: SurfaceArea → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: SurfaceArea → LifeExpectancy
+

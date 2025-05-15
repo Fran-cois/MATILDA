@@ -1,0 +1,87 @@
+# Règles communes sauvegardées: 42
+# Date: 2025-04-27 21:25:04
+
+1. Game: Team2Id → Date [conf=1.00, supp=8.07] <=> Game: Team2Id → Date
+
+2. Game: URL → Team2Id [conf=1.00, supp=0.47] <=> Game: URL → Team2Id
+
+3. Game: Team2Id → Date [conf=0.47, supp=1.00] <=> Game: Team2Id → Date
+
+4. joined_drafted_all_players_original: fg_per → 3p [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → 3p
+
+5. joined_drafted_all_players_original: fg_per → 3p [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → 3p
+
+6. joined_drafted_all_players_original: fg_per → age [conf=1.00, supp=1.67] <=> joined_drafted_all_players_original: fg_per → age
+
+7. joined_drafted_all_players_original: fg_per → age [conf=0.60, supp=1.00] <=> joined_drafted_all_players_original: fg_per → age
+
+8. joined_drafted_all_players_original: fg_per → 3p_per [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → 3p_per
+
+9. joined_drafted_all_players_original: fg_per → orb [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → orb
+
+10. joined_drafted_all_players_original: fg_per → orb [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → orb
+
+11. joined_drafted_all_players_original: fg_per → height [conf=1.00, supp=1.67] <=> joined_drafted_all_players_original: fg_per → height
+
+12. joined_drafted_all_players_original: fg_per → raw_data [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → raw_data
+
+13. joined_drafted_all_players_original: fg_per → amature_honor [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → amature_honor
+
+14. joined_drafted_all_players_original: fg_per → season [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → season
+
+15. joined_drafted_all_players_original: fg_per → weight [conf=1.00, supp=1.67] <=> joined_drafted_all_players_original: fg_per → weight
+
+16. Game: URL → ResultOfTeam1 [conf=1.00, supp=14.00] <=> Game: URL → ResultOfTeam1
+
+17. joined_drafted_all_players_original: fg_per → 3p_per [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → 3p_per
+
+18. joined_drafted_all_players_original: fg_per → 3p_per [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → 3p_per
+
+19. joined_drafted_all_players_original: fg_per → ast_per [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → ast_per
+
+20. joined_drafted_all_players_original: fg_per → ast_per [conf=0.60, supp=1.00] <=> joined_drafted_all_players_original: fg_per → ast_per
+
+21. joined_drafted_all_players_original: fg_per → season [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → season
+
+22. joined_drafted_all_players_original: fg_per → season [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → season
+
+23. joined_drafted_all_players_original: fg_per → weight [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → weight
+
+24. joined_drafted_all_players_original: fg_per → weight [conf=0.60, supp=1.00] <=> joined_drafted_all_players_original: fg_per → weight
+
+25. joined_drafted_all_players_original: fg_per → height [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → height
+
+26. joined_drafted_all_players_original: fg_per → height [conf=0.60, supp=1.00] <=> joined_drafted_all_players_original: fg_per → height
+
+27. joined_drafted_all_players_original: fg_per → shoots [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → shoots
+
+28. joined_drafted_all_players_original: fg_per → shoots [conf=0.60, supp=1.00] <=> joined_drafted_all_players_original: fg_per → shoots
+
+29. joined_drafted_all_players_original: fg_per → draft_year [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → draft_year
+
+30. joined_drafted_all_players_original: fg_per → draft_year [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → draft_year
+
+31. joined_drafted_all_players_original: fg_per → amature_honor [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → amature_honor
+
+32. joined_drafted_all_players_original: fg_per → amature_honor [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → amature_honor
+
+33. joined_drafted_all_players_original: fg_per → raw_data [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → raw_data
+
+34. joined_drafted_all_players_original: fg_per → raw_data [conf=0.33, supp=1.00] <=> joined_drafted_all_players_original: fg_per → raw_data
+
+35. joined_drafted_all_players_original: fg_per → age [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → age
+
+36. joined_drafted_all_players_original: fg_per → draft_g [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → draft_g
+
+37. joined_drafted_all_players_original: fg_per → 3p [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → 3p
+
+38. joined_drafted_all_players_original: fg_per → 3pa [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → 3pa
+
+39. joined_drafted_all_players_original: fg_per → orb [conf=1.00, supp=1.00] <=> joined_drafted_all_players_original: fg_per → orb
+
+40. joined_drafted_all_players_original: fg_per → draft_g [conf=1.00, supp=1.67] <=> joined_drafted_all_players_original: fg_per → draft_g
+
+41. joined_drafted_all_players_original: fg_per → draft_g [conf=0.60, supp=1.00] <=> joined_drafted_all_players_original: fg_per → draft_g
+
+42. joined_drafted_all_players_original: fg_per → draft_year [conf=1.00, supp=3.00] <=> joined_drafted_all_players_original: fg_per → draft_year
+

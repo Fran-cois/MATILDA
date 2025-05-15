@@ -1,0 +1,95 @@
+# FDs sauvegardées: 23
+# Date: 2025-04-30 13:41:02
+
+1. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+2. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+3. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+4. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+5. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+6. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+7. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+8. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+9. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+10. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+11. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+12. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+13. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+14. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+15. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+16. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+17. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+18. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+19. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+20. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+21. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+22. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+23. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+

@@ -1,0 +1,758 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "molecule",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "activity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "h_doner",
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "pi_doner",
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "polarisable",
+            "sigma"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "polarisable"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "sigma"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "flex",
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "h_acceptor",
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "polarisable",
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "polarisable"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "flex",
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "h_acceptor",
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id",
+            "polarisable",
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "h_doner",
+            "molecule_id"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "pi_doner",
+            "molecule_id"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size",
+            "molecule_id",
+            "polarisable"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position",
+            "molecule_id"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar",
+            "molecule_id"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

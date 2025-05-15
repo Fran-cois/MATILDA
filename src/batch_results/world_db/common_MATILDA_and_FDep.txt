@@ -1,0 +1,87 @@
+# Règles communes sauvegardées: 42
+# Date: 2025-04-28 06:49:44
+
+1. Country: LocalName → Population [conf=1.00, supp=0.26] <=> Country: LocalName → Population
+
+2. Country: Capital → Population [conf=0.32, supp=0.09] <=> Country: Capital → Population
+
+3. Country: Code2 → Population [conf=1.00, supp=0.26] <=> Country: Code2 → Population
+
+4. Country: Code → Population [conf=1.00, supp=0.26] <=> Country: Code → Population
+
+5. Country: Name → Population [conf=1.00, supp=0.26] <=> Country: Name → Population
+
+6. Country: LocalName → IndepYear [conf=1.00, supp=3.67] <=> Country: LocalName → IndepYear
+
+7. Country: Capital → IndepYear [conf=1.00, supp=3.78] <=> Country: Capital → IndepYear
+
+8. Country: Code2 → IndepYear [conf=1.00, supp=3.67] <=> Country: Code2 → IndepYear
+
+9. Country: Code → IndepYear [conf=1.00, supp=3.67] <=> Country: Code → IndepYear
+
+10. Country: Name → IndepYear [conf=1.00, supp=3.67] <=> Country: Name → IndepYear
+
+11. Country: SurfaceArea → Region [conf=1.00, supp=11.98] <=> Country: SurfaceArea → Region
+
+12. Country: LocalName → Region [conf=1.00, supp=11.98] <=> Country: LocalName → Region
+
+13. Country: Code2 → Region [conf=1.00, supp=11.98] <=> Country: Code2 → Region
+
+14. Country: Code → Region [conf=1.00, supp=11.98] <=> Country: Code → Region
+
+15. Country: Name → Region [conf=1.00, supp=11.98] <=> Country: Name → Region
+
+16. Country: Region → Continent [conf=11.98, supp=1.00] <=> Country: Region → Continent
+
+17. Country: Region → Continent [conf=1.00, supp=42.74] <=> Country: Region → Continent
+
+18. Country: Region → Continent [conf=0.28, supp=1.00] <=> Country: Region → Continent
+
+19. Country: SurfaceArea → Continent [conf=1.00, supp=42.74] <=> Country: SurfaceArea → Continent
+
+20. Country: LocalName → Continent [conf=1.00, supp=42.74] <=> Country: LocalName → Continent
+
+21. Country: Code2 → Continent [conf=1.00, supp=42.74] <=> Country: Code2 → Continent
+
+22. Country: Code → Continent [conf=1.00, supp=42.74] <=> Country: Code → Continent
+
+23. Country: Name → Continent [conf=1.00, supp=42.74] <=> Country: Name → Continent
+
+24. Country: Code2 → GovernmentForm [conf=1.00, supp=67.02] <=> Country: Code2 → GovernmentForm
+
+25. Country: Code → GovernmentForm [conf=1.00, supp=67.02] <=> Country: Code → GovernmentForm
+
+26. Country: Name → GovernmentForm [conf=1.00, supp=67.02] <=> Country: Name → GovernmentForm
+
+27. Country: LocalName → GovernmentForm [conf=1.00, supp=67.02] <=> Country: LocalName → GovernmentForm
+
+28. Country: LocalName → GNP [conf=1.00, supp=2.33] <=> Country: LocalName → GNP
+
+29. Country: Capital → GNP [conf=0.71, supp=1.70] <=> Country: Capital → GNP
+
+30. Country: Code2 → GNP [conf=1.00, supp=2.33] <=> Country: Code2 → GNP
+
+31. Country: Code → GNP [conf=1.00, supp=2.33] <=> Country: Code → GNP
+
+32. Country: Name → GNP [conf=1.00, supp=2.33] <=> Country: Name → GNP
+
+33. Country: Code2 → HeadOfState [conf=1.00, supp=5.72] <=> Country: Code2 → HeadOfState
+
+34. Country: Code → HeadOfState [conf=1.00, supp=5.72] <=> Country: Code → HeadOfState
+
+35. Country: Name → HeadOfState [conf=1.00, supp=5.72] <=> Country: Name → HeadOfState
+
+36. Country: SurfaceArea → HeadOfState [conf=1.00, supp=5.72] <=> Country: SurfaceArea → HeadOfState
+
+37. Country: LocalName → HeadOfState [conf=1.00, supp=5.72] <=> Country: LocalName → HeadOfState
+
+38. Country: LocalName → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: LocalName → LifeExpectancy
+
+39. Country: Capital → LifeExpectancy [conf=1.00, supp=0.71] <=> Country: Capital → LifeExpectancy
+
+40. Country: Code2 → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: Code2 → LifeExpectancy
+
+41. Country: Code → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: Code → LifeExpectancy
+
+42. Country: Name → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: Name → LifeExpectancy
+

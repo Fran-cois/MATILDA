@@ -1,0 +1,45 @@
+# Règles communes sauvegardées: 21
+# Date: 2025-04-27 18:19:27
+
+1. person: p_id → yearsInProgram [conf=1.00, supp=77.53] <=> person: p_id → yearsInProgram
+
+2. person: yearsInProgram → professor [conf=77.53, supp=1.00] <=> person: yearsInProgram → professor
+
+3. person: yearsInProgram → student [conf=77.53, supp=1.00] <=> person: yearsInProgram → student
+
+4. person: yearsInProgram → hasPosition [conf=77.53, supp=1.00] <=> person: yearsInProgram → hasPosition
+
+5. person: p_id → inPhase [conf=1.00, supp=91.18] <=> person: p_id → inPhase
+
+6. person: yearsInProgram → student [conf=1.00, supp=180.65] <=> person: yearsInProgram → student
+
+7. person: yearsInProgram → student [conf=0.24, supp=0.56] <=> person: yearsInProgram → student
+
+8. person: p_id → student [conf=1.00, supp=180.65] <=> person: p_id → student
+
+9. person: professor → student [conf=1.00, supp=180.65] <=> person: professor → student
+
+10. person: student → professor [conf=180.65, supp=1.00] <=> person: student → professor
+
+11. person: yearsInProgram → hasPosition [conf=1.00, supp=188.68] <=> person: yearsInProgram → hasPosition
+
+12. person: yearsInProgram → hasPosition [conf=0.22, supp=0.54] <=> person: yearsInProgram → hasPosition
+
+13. person: p_id → hasPosition [conf=1.00, supp=188.68] <=> person: p_id → hasPosition
+
+14. course: course_id → courseLevel [conf=1.00, supp=63.79] <=> course: course_id → courseLevel
+
+15. person: professor → student [conf=180.65, supp=1.00] <=> person: professor → student
+
+16. person: student → professor [conf=1.00, supp=180.65] <=> person: student → professor
+
+17. person: student → professor [conf=1.00, supp=1.00] <=> person: student → professor
+
+18. person: professor → student [conf=1.00, supp=1.00] <=> person: professor → student
+
+19. person: yearsInProgram → professor [conf=1.00, supp=180.65] <=> person: yearsInProgram → professor
+
+20. person: yearsInProgram → professor [conf=0.24, supp=0.56] <=> person: yearsInProgram → professor
+
+21. person: p_id → professor [conf=1.00, supp=180.65] <=> person: p_id → professor
+

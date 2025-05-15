@@ -1,0 +1,291 @@
+# FDs sauvegardées: 72
+# Date: 2025-04-30 13:47:10
+
+1. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+2. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+3. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+4. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+5. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+6. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+7. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+8. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+9. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+10. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+11. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+12. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+13. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+14. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+15. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+16. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+17. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+18. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+19. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+20. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+21. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+22. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+23. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+24. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+25. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+26. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+27. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+28. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+29. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+30. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+31. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+32. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+33. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+34. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+35. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+36. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+37. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+38. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+39. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+40. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+41. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+42. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+43. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+44. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+45. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+46. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+47. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+48. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+49. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+50. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+51. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+52. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+53. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+54. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+55. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+56. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+57. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+58. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+59. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+60. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+61. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+62. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+63. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+64. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+65. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+66. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+67. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+68. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+69. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+70. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+71. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+72. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+

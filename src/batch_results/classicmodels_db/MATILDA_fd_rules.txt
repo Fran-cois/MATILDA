@@ -1,0 +1,2547 @@
+# FDs sauvegardées: 636
+# Date: 2025-04-28 07:04:06
+
+1. [FunctionalDependency] orders: status → comments
+   Support: 234.8625
+   Confiance: 234.8625
+
+2. [FunctionalDependency] orders: comments → status
+   Support: 0.20512904493646011
+   Confiance: 0.20512904493646011
+
+3. [FunctionalDependency] orders: status → customerNumber
+   Support: 280.96932515337426
+   Confiance: 280.96932515337426
+
+4. [FunctionalDependency] orders: customerNumber → status
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] orders: customerNumber → status
+   Support: 0.013450369011747237
+   Confiance: 0.013450369011747237
+
+6. [FunctionalDependency] orders: status → customerNumber
+   Support: 0.7979274611398963
+   Confiance: 0.7979274611398963
+
+7. [FunctionalDependency] orders: orderNumber → status
+   Support: 1.0
+   Confiance: 1.0
+
+8. [FunctionalDependency] orders: status → orderNumber
+   Support: 280.96932515337426
+   Confiance: 280.96932515337426
+
+9. [FunctionalDependency] orders: orderDate → status
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] orders: status → orderDate
+   Support: 280.96932515337426
+   Confiance: 280.96932515337426
+
+11. [FunctionalDependency] orders: status → requiredDate
+   Support: 280.96932515337426
+   Confiance: 280.96932515337426
+
+12. [FunctionalDependency] orders: requiredDate → status
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] orders: shippedDate → status
+   Support: 0.9993231145464867
+   Confiance: 0.9993231145464867
+
+14. [FunctionalDependency] orders: status → shippedDate
+   Support: 293.37820512820514
+   Confiance: 293.37820512820514
+
+15. [FunctionalDependency] orderdetails: priceEach → quantityOrdered
+   Support: 1.0
+   Confiance: 1.0
+
+16. [FunctionalDependency] orderdetails: quantityOrdered → priceEach
+   Support: 90.40253671562083
+   Confiance: 90.40253671562083
+
+17. [FunctionalDependency] orderdetails: orderLineNumber → quantityOrdered
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] orderdetails: quantityOrdered → orderLineNumber
+   Support: 90.40253671562083
+   Confiance: 90.40253671562083
+
+19. [FunctionalDependency] orderdetails: orderLineNumber → quantityOrdered
+   Support: 0.07379101038966793
+   Confiance: 0.07379101038966793
+
+20. [FunctionalDependency] orderdetails: quantityOrdered → orderLineNumber
+   Support: 0.030124349988695457
+   Confiance: 0.030124349988695457
+
+21. [FunctionalDependency] orderdetails: quantityOrdered → orderNumber
+   Support: 90.40253671562083
+   Confiance: 90.40253671562083
+
+22. [FunctionalDependency] orderdetails: orderNumber → quantityOrdered
+   Support: 1.0
+   Confiance: 1.0
+
+23. [FunctionalDependency] orderdetails: quantityOrdered → productCode
+   Support: 90.40253671562083
+   Confiance: 90.40253671562083
+
+24. [FunctionalDependency] orderdetails: productCode → quantityOrdered
+   Support: 1.0
+   Confiance: 1.0
+
+25. [FunctionalDependency] customers: contactFirstName → phone
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+26. [FunctionalDependency] customers: phone → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+27. [FunctionalDependency] customers: contactFirstName → addressLine1
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+28. [FunctionalDependency] customers: addressLine1 → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] customers: addressLine2 → contactFirstName
+   Support: 0.10714285714285714
+   Confiance: 0.10714285714285714
+
+30. [FunctionalDependency] customers: contactFirstName → addressLine2
+   Support: 0.13636363636363635
+   Confiance: 0.13636363636363635
+
+31. [FunctionalDependency] customers: contactFirstName → city
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+32. [FunctionalDependency] customers: city → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+33. [FunctionalDependency] customers: contactFirstName → city
+   Support: 0.024390243902439025
+   Confiance: 0.024390243902439025
+
+34. [FunctionalDependency] customers: city → contactFirstName
+   Support: 0.07142857142857142
+   Confiance: 0.07142857142857142
+
+35. [FunctionalDependency] customers: state → contactFirstName
+   Support: 0.8214285714285714
+   Confiance: 0.8214285714285714
+
+36. [FunctionalDependency] customers: contactFirstName → state
+   Support: 0.46938775510204084
+   Confiance: 0.46938775510204084
+
+37. [FunctionalDependency] customers: contactFirstName → state
+   Support: 0.03389830508474576
+   Confiance: 0.03389830508474576
+
+38. [FunctionalDependency] customers: state → contactFirstName
+   Support: 0.2857142857142857
+   Confiance: 0.2857142857142857
+
+39. [FunctionalDependency] customers: contactFirstName → postalCode
+   Support: 0.22608695652173913
+   Confiance: 0.22608695652173913
+
+40. [FunctionalDependency] customers: postalCode → contactFirstName
+   Support: 0.9285714285714286
+   Confiance: 0.9285714285714286
+
+41. [FunctionalDependency] customers: contactFirstName → postalCode
+   Support: 0.05714285714285714
+   Confiance: 0.05714285714285714
+
+42. [FunctionalDependency] customers: postalCode → contactFirstName
+   Support: 0.14285714285714285
+   Confiance: 0.14285714285714285
+
+43. [FunctionalDependency] customers: contactFirstName → country
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+44. [FunctionalDependency] customers: country → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+45. [FunctionalDependency] customers: country → contactFirstName
+   Support: 0.7857142857142857
+   Confiance: 0.7857142857142857
+
+46. [FunctionalDependency] customers: contactFirstName → country
+   Support: 0.012987012987012988
+   Confiance: 0.012987012987012988
+
+47. [FunctionalDependency] customers: contactFirstName → salesRepEmployeeNumber
+   Support: 0.26
+   Confiance: 0.26
+
+48. [FunctionalDependency] customers: salesRepEmployeeNumber → contactFirstName
+   Support: 0.9285714285714286
+   Confiance: 0.9285714285714286
+
+49. [FunctionalDependency] customers: contactFirstName → creditLimit
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+50. [FunctionalDependency] customers: creditLimit → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+51. [FunctionalDependency] customers: customerNumber → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+52. [FunctionalDependency] customers: contactFirstName → customerNumber
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+53. [FunctionalDependency] customers: contactFirstName → customerName
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+54. [FunctionalDependency] customers: customerName → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+55. [FunctionalDependency] customers: contactLastName → contactFirstName
+   Support: 1.0
+   Confiance: 1.0
+
+56. [FunctionalDependency] customers: contactFirstName → contactLastName
+   Support: 0.22950819672131148
+   Confiance: 0.22950819672131148
+
+57. [FunctionalDependency] employees: officeCode → reportsTo
+   Support: 2.9545454545454546
+   Confiance: 2.9545454545454546
+
+58. [FunctionalDependency] employees: reportsTo → officeCode
+   Support: 0.9285714285714286
+   Confiance: 0.9285714285714286
+
+59. [FunctionalDependency] employees: officeCode → reportsTo
+   Support: 0.35
+   Confiance: 0.35
+
+60. [FunctionalDependency] employees: reportsTo → officeCode
+   Support: 0.4
+   Confiance: 0.4
+
+61. [FunctionalDependency] employees: officeCode → jobTitle
+   Support: 3.0434782608695654
+   Confiance: 3.0434782608695654
+
+62. [FunctionalDependency] employees: jobTitle → officeCode
+   Support: 1.0
+   Confiance: 1.0
+
+63. [FunctionalDependency] employees: officeCode → jobTitle
+   Support: 0.10294117647058823
+   Confiance: 0.10294117647058823
+
+64. [FunctionalDependency] employees: jobTitle → officeCode
+   Support: 0.4
+   Confiance: 0.4
+
+65. [FunctionalDependency] employees: officeCode → employeeNumber
+   Support: 3.0434782608695654
+   Confiance: 3.0434782608695654
+
+66. [FunctionalDependency] employees: employeeNumber → officeCode
+   Support: 1.0
+   Confiance: 1.0
+
+67. [FunctionalDependency] employees: officeCode → lastName
+   Support: 3.0434782608695654
+   Confiance: 3.0434782608695654
+
+68. [FunctionalDependency] employees: lastName → officeCode
+   Support: 1.0
+   Confiance: 1.0
+
+69. [FunctionalDependency] employees: firstName → officeCode
+   Support: 1.0
+   Confiance: 1.0
+
+70. [FunctionalDependency] employees: officeCode → firstName
+   Support: 3.0434782608695654
+   Confiance: 3.0434782608695654
+
+71. [FunctionalDependency] employees: officeCode → extension
+   Support: 3.0434782608695654
+   Confiance: 3.0434782608695654
+
+72. [FunctionalDependency] employees: extension → officeCode
+   Support: 1.0
+   Confiance: 1.0
+
+73. [FunctionalDependency] employees: email → officeCode
+   Support: 1.0
+   Confiance: 1.0
+
+74. [FunctionalDependency] employees: officeCode → email
+   Support: 3.0434782608695654
+   Confiance: 3.0434782608695654
+
+75. [FunctionalDependency] orders: shippedDate → status
+   Support: 0.50920245398773
+   Confiance: 0.50920245398773
+
+76. [FunctionalDependency] orders: status → shippedDate
+   Support: 1.0
+   Confiance: 1.0
+
+77. [FunctionalDependency] orders: shippedDate → comments
+   Support: 0.4125
+   Confiance: 0.4125
+
+78. [FunctionalDependency] orders: comments → shippedDate
+   Support: 0.19879518072289157
+   Confiance: 0.19879518072289157
+
+79. [FunctionalDependency] orders: shippedDate → customerNumber
+   Support: 0.50920245398773
+   Confiance: 0.50920245398773
+
+80. [FunctionalDependency] orders: customerNumber → shippedDate
+   Support: 1.0
+   Confiance: 1.0
+
+81. [FunctionalDependency] orders: shippedDate → orderNumber
+   Support: 0.50920245398773
+   Confiance: 0.50920245398773
+
+82. [FunctionalDependency] orders: orderNumber → shippedDate
+   Support: 1.0
+   Confiance: 1.0
+
+83. [FunctionalDependency] orders: shippedDate → orderDate
+   Support: 0.50920245398773
+   Confiance: 0.50920245398773
+
+84. [FunctionalDependency] orders: orderDate → shippedDate
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] orders: requiredDate → shippedDate
+   Support: 1.0
+   Confiance: 1.0
+
+86. [FunctionalDependency] orders: shippedDate → requiredDate
+   Support: 0.50920245398773
+   Confiance: 0.50920245398773
+
+87. [FunctionalDependency] employees: firstName → extension
+   Support: 0.17391304347826086
+   Confiance: 0.17391304347826086
+
+88. [FunctionalDependency] employees: extension → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+89. [FunctionalDependency] employees: firstName → email
+   Support: 0.17391304347826086
+   Confiance: 0.17391304347826086
+
+90. [FunctionalDependency] employees: email → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+91. [FunctionalDependency] employees: firstName → officeCode
+   Support: 0.17391304347826086
+   Confiance: 0.17391304347826086
+
+92. [FunctionalDependency] employees: officeCode → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] employees: officeCode → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+94. [FunctionalDependency] employees: firstName → officeCode
+   Support: 0.05714285714285714
+   Confiance: 0.05714285714285714
+
+95. [FunctionalDependency] employees: reportsTo → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+96. [FunctionalDependency] employees: firstName → reportsTo
+   Support: 0.18181818181818182
+   Confiance: 0.18181818181818182
+
+97. [FunctionalDependency] employees: reportsTo → firstName
+   Support: 0.5
+   Confiance: 0.5
+
+98. [FunctionalDependency] employees: firstName → reportsTo
+   Support: 0.025
+   Confiance: 0.025
+
+99. [FunctionalDependency] employees: jobTitle → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+100. [FunctionalDependency] employees: firstName → jobTitle
+   Support: 0.17391304347826086
+   Confiance: 0.17391304347826086
+
+101. [FunctionalDependency] employees: employeeNumber → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+102. [FunctionalDependency] employees: firstName → employeeNumber
+   Support: 0.17391304347826086
+   Confiance: 0.17391304347826086
+
+103. [FunctionalDependency] employees: lastName → firstName
+   Support: 1.0
+   Confiance: 1.0
+
+104. [FunctionalDependency] employees: firstName → lastName
+   Support: 0.17391304347826086
+   Confiance: 0.17391304347826086
+
+105. [FunctionalDependency] orders: orderNumber → customerNumber
+   Support: 1.0
+   Confiance: 1.0
+
+106. [FunctionalDependency] orders: customerNumber → orderNumber
+   Support: 4.736196319018405
+   Confiance: 4.736196319018405
+
+107. [FunctionalDependency] orders: orderDate → customerNumber
+   Support: 1.0
+   Confiance: 1.0
+
+108. [FunctionalDependency] orders: customerNumber → orderDate
+   Support: 4.736196319018405
+   Confiance: 4.736196319018405
+
+109. [FunctionalDependency] orders: requiredDate → customerNumber
+   Support: 1.0
+   Confiance: 1.0
+
+110. [FunctionalDependency] orders: customerNumber → requiredDate
+   Support: 4.736196319018405
+   Confiance: 4.736196319018405
+
+111. [FunctionalDependency] orders: shippedDate → customerNumber
+   Support: 0.939119170984456
+   Confiance: 0.939119170984456
+
+112. [FunctionalDependency] orders: customerNumber → shippedDate
+   Support: 4.647435897435898
+   Confiance: 4.647435897435898
+
+113. [FunctionalDependency] orders: customerNumber → status
+   Support: 4.736196319018405
+   Confiance: 4.736196319018405
+
+114. [FunctionalDependency] orders: status → customerNumber
+   Support: 1.0
+   Confiance: 1.0
+
+115. [FunctionalDependency] orders: comments → customerNumber
+   Support: 0.2506476683937824
+   Confiance: 0.2506476683937824
+
+116. [FunctionalDependency] orders: customerNumber → comments
+   Support: 4.8375
+   Confiance: 4.8375
+
+117. [FunctionalDependency] products: productScale → productVendor
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+118. [FunctionalDependency] products: productVendor → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+119. [FunctionalDependency] products: productScale → productVendor
+   Support: 0.2222222222222222
+   Confiance: 0.2222222222222222
+
+120. [FunctionalDependency] products: productVendor → productScale
+   Support: 0.06824925816023739
+   Confiance: 0.06824925816023739
+
+121. [FunctionalDependency] products: productDescription → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+122. [FunctionalDependency] products: productScale → productDescription
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+123. [FunctionalDependency] products: productScale → quantityInStock
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+124. [FunctionalDependency] products: quantityInStock → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+125. [FunctionalDependency] products: buyPrice → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+126. [FunctionalDependency] products: productScale → buyPrice
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+127. [FunctionalDependency] products: MSRP → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+128. [FunctionalDependency] products: productScale → MSRP
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+129. [FunctionalDependency] products: productScale → productCode
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+130. [FunctionalDependency] products: productCode → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+131. [FunctionalDependency] products: productScale → productName
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+132. [FunctionalDependency] products: productName → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+133. [FunctionalDependency] products: productLine → productScale
+   Support: 1.0
+   Confiance: 1.0
+
+134. [FunctionalDependency] products: productScale → productLine
+   Support: 24.509090909090908
+   Confiance: 24.509090909090908
+
+135. [FunctionalDependency] customers: contactLastName → contactFirstName
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+136. [FunctionalDependency] customers: contactFirstName → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+137. [FunctionalDependency] customers: phone → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+138. [FunctionalDependency] customers: contactLastName → phone
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+139. [FunctionalDependency] customers: contactLastName → addressLine1
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+140. [FunctionalDependency] customers: addressLine1 → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+141. [FunctionalDependency] customers: contactLastName → addressLine2
+   Support: 0.3181818181818182
+   Confiance: 0.3181818181818182
+
+142. [FunctionalDependency] customers: addressLine2 → contactLastName
+   Support: 0.18421052631578946
+   Confiance: 0.18421052631578946
+
+143. [FunctionalDependency] customers: city → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+144. [FunctionalDependency] customers: contactLastName → city
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+145. [FunctionalDependency] customers: state → contactLastName
+   Support: 0.9473684210526315
+   Confiance: 0.9473684210526315
+
+146. [FunctionalDependency] customers: contactLastName → state
+   Support: 0.7346938775510204
+   Confiance: 0.7346938775510204
+
+147. [FunctionalDependency] customers: state → contactLastName
+   Support: 0.15789473684210525
+   Confiance: 0.15789473684210525
+
+148. [FunctionalDependency] customers: contactLastName → state
+   Support: 0.025423728813559324
+   Confiance: 0.025423728813559324
+
+149. [FunctionalDependency] customers: postalCode → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+150. [FunctionalDependency] customers: contactLastName → postalCode
+   Support: 0.33043478260869563
+   Confiance: 0.33043478260869563
+
+151. [FunctionalDependency] customers: contactLastName → country
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+152. [FunctionalDependency] customers: country → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+153. [FunctionalDependency] customers: country → contactLastName
+   Support: 0.8947368421052632
+   Confiance: 0.8947368421052632
+
+154. [FunctionalDependency] customers: contactLastName → country
+   Support: 0.020070838252656435
+   Confiance: 0.020070838252656435
+
+155. [FunctionalDependency] customers: salesRepEmployeeNumber → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+156. [FunctionalDependency] customers: contactLastName → salesRepEmployeeNumber
+   Support: 0.38
+   Confiance: 0.38
+
+157. [FunctionalDependency] customers: contactLastName → creditLimit
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+158. [FunctionalDependency] customers: creditLimit → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+159. [FunctionalDependency] customers: contactLastName → customerNumber
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+160. [FunctionalDependency] customers: customerNumber → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+161. [FunctionalDependency] customers: customerName → contactLastName
+   Support: 1.0
+   Confiance: 1.0
+
+162. [FunctionalDependency] customers: contactLastName → customerName
+   Support: 0.3114754098360656
+   Confiance: 0.3114754098360656
+
+163. [FunctionalDependency] orders: orderDate → requiredDate
+   Support: 0.4294478527607362
+   Confiance: 0.4294478527607362
+
+164. [FunctionalDependency] orders: requiredDate → orderDate
+   Support: 1.0
+   Confiance: 1.0
+
+165. [FunctionalDependency] orders: requiredDate → orderDate
+   Support: 0.2
+   Confiance: 0.2
+
+166. [FunctionalDependency] orders: orderDate → requiredDate
+   Support: 0.17073170731707318
+   Confiance: 0.17073170731707318
+
+167. [FunctionalDependency] orders: shippedDate → orderDate
+   Support: 0.9428571428571428
+   Confiance: 0.9428571428571428
+
+168. [FunctionalDependency] orders: orderDate → shippedDate
+   Support: 0.4230769230769231
+   Confiance: 0.4230769230769231
+
+169. [FunctionalDependency] orders: orderDate → shippedDate
+   Support: 0.18072289156626506
+   Confiance: 0.18072289156626506
+
+170. [FunctionalDependency] orders: shippedDate → orderDate
+   Support: 0.21428571428571427
+   Confiance: 0.21428571428571427
+
+171. [FunctionalDependency] orders: orderDate → status
+   Support: 0.4294478527607362
+   Confiance: 0.4294478527607362
+
+172. [FunctionalDependency] orders: status → orderDate
+   Support: 1.0
+   Confiance: 1.0
+
+173. [FunctionalDependency] orders: orderDate → comments
+   Support: 0.3625
+   Confiance: 0.3625
+
+174. [FunctionalDependency] orders: comments → orderDate
+   Support: 0.20714285714285716
+   Confiance: 0.20714285714285716
+
+175. [FunctionalDependency] orders: orderDate → customerNumber
+   Support: 0.4294478527607362
+   Confiance: 0.4294478527607362
+
+176. [FunctionalDependency] orders: customerNumber → orderDate
+   Support: 1.0
+   Confiance: 1.0
+
+177. [FunctionalDependency] orders: orderDate → orderNumber
+   Support: 0.4294478527607362
+   Confiance: 0.4294478527607362
+
+178. [FunctionalDependency] orders: orderNumber → orderDate
+   Support: 1.0
+   Confiance: 1.0
+
+179. [FunctionalDependency] orderdetails: orderNumber → orderLineNumber
+   Support: 1.0
+   Confiance: 1.0
+
+180. [FunctionalDependency] orderdetails: orderLineNumber → orderNumber
+   Support: 221.4452603471295
+   Confiance: 221.4452603471295
+
+181. [FunctionalDependency] orderdetails: productCode → orderLineNumber
+   Support: 1.0
+   Confiance: 1.0
+
+182. [FunctionalDependency] orderdetails: orderLineNumber → productCode
+   Support: 221.4452603471295
+   Confiance: 221.4452603471295
+
+183. [FunctionalDependency] orderdetails: orderLineNumber → quantityOrdered
+   Support: 221.4452603471295
+   Confiance: 221.4452603471295
+
+184. [FunctionalDependency] orderdetails: quantityOrdered → orderLineNumber
+   Support: 1.0
+   Confiance: 1.0
+
+185. [FunctionalDependency] orderdetails: priceEach → orderLineNumber
+   Support: 1.0
+   Confiance: 1.0
+
+186. [FunctionalDependency] orderdetails: orderLineNumber → priceEach
+   Support: 221.4452603471295
+   Confiance: 221.4452603471295
+
+187. [FunctionalDependency] products: quantityInStock → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+188. [FunctionalDependency] products: productDescription → quantityInStock
+   Support: 0.4
+   Confiance: 0.4
+
+189. [FunctionalDependency] products: buyPrice → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+190. [FunctionalDependency] products: productDescription → buyPrice
+   Support: 0.4
+   Confiance: 0.4
+
+191. [FunctionalDependency] products: productDescription → MSRP
+   Support: 0.4
+   Confiance: 0.4
+
+192. [FunctionalDependency] products: MSRP → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+193. [FunctionalDependency] products: productCode → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+194. [FunctionalDependency] products: productDescription → productCode
+   Support: 0.4
+   Confiance: 0.4
+
+195. [FunctionalDependency] products: productDescription → productName
+   Support: 0.4
+   Confiance: 0.4
+
+196. [FunctionalDependency] products: productName → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+197. [FunctionalDependency] products: productDescription → productLine
+   Support: 0.4
+   Confiance: 0.4
+
+198. [FunctionalDependency] products: productLine → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+199. [FunctionalDependency] products: productScale → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+200. [FunctionalDependency] products: productDescription → productScale
+   Support: 0.4
+   Confiance: 0.4
+
+201. [FunctionalDependency] products: productVendor → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+202. [FunctionalDependency] products: productDescription → productVendor
+   Support: 0.4
+   Confiance: 0.4
+
+203. [FunctionalDependency] customers: postalCode → state
+   Support: 1.0
+   Confiance: 1.0
+
+204. [FunctionalDependency] customers: state → postalCode
+   Support: 2.0521739130434784
+   Confiance: 2.0521739130434784
+
+205. [FunctionalDependency] customers: postalCode → state
+   Support: 0.23728813559322035
+   Confiance: 0.23728813559322035
+
+206. [FunctionalDependency] customers: state → postalCode
+   Support: 0.8
+   Confiance: 0.8
+
+207. [FunctionalDependency] customers: country → state
+   Support: 1.0
+   Confiance: 1.0
+
+208. [FunctionalDependency] customers: state → country
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+209. [FunctionalDependency] customers: state → country
+   Support: 0.13931523022432113
+   Confiance: 0.13931523022432113
+
+210. [FunctionalDependency] customers: country → state
+   Support: 1.0
+   Confiance: 1.0
+
+211. [FunctionalDependency] customers: salesRepEmployeeNumber → state
+   Support: 1.0
+   Confiance: 1.0
+
+212. [FunctionalDependency] customers: state → salesRepEmployeeNumber
+   Support: 2.36
+   Confiance: 2.36
+
+213. [FunctionalDependency] customers: salesRepEmployeeNumber → state
+   Support: 0.4491525423728814
+   Confiance: 0.4491525423728814
+
+214. [FunctionalDependency] customers: state → salesRepEmployeeNumber
+   Support: 0.17725752508361203
+   Confiance: 0.17725752508361203
+
+215. [FunctionalDependency] customers: creditLimit → state
+   Support: 1.0
+   Confiance: 1.0
+
+216. [FunctionalDependency] customers: state → creditLimit
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+217. [FunctionalDependency] customers: customerNumber → state
+   Support: 1.0
+   Confiance: 1.0
+
+218. [FunctionalDependency] customers: state → customerNumber
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+219. [FunctionalDependency] customers: customerName → state
+   Support: 1.0
+   Confiance: 1.0
+
+220. [FunctionalDependency] customers: state → customerName
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+221. [FunctionalDependency] customers: contactLastName → state
+   Support: 1.0
+   Confiance: 1.0
+
+222. [FunctionalDependency] customers: state → contactLastName
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+223. [FunctionalDependency] customers: state → contactFirstName
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+224. [FunctionalDependency] customers: contactFirstName → state
+   Support: 1.0
+   Confiance: 1.0
+
+225. [FunctionalDependency] customers: state → phone
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+226. [FunctionalDependency] customers: phone → state
+   Support: 1.0
+   Confiance: 1.0
+
+227. [FunctionalDependency] customers: state → addressLine1
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+228. [FunctionalDependency] customers: addressLine1 → state
+   Support: 1.0
+   Confiance: 1.0
+
+229. [FunctionalDependency] customers: state → addressLine2
+   Support: 1.1818181818181819
+   Confiance: 1.1818181818181819
+
+230. [FunctionalDependency] customers: addressLine2 → state
+   Support: 0.11016949152542373
+   Confiance: 0.11016949152542373
+
+231. [FunctionalDependency] customers: state → city
+   Support: 1.9344262295081966
+   Confiance: 1.9344262295081966
+
+232. [FunctionalDependency] customers: city → state
+   Support: 1.0
+   Confiance: 1.0
+
+233. [FunctionalDependency] customers: state → city
+   Support: 0.4878048780487805
+   Confiance: 0.4878048780487805
+
+234. [FunctionalDependency] customers: city → state
+   Support: 0.8163265306122449
+   Confiance: 0.8163265306122449
+
+235. [FunctionalDependency] customers: state → city
+   Support: 0.4634146341463415
+   Confiance: 0.4634146341463415
+
+236. [FunctionalDependency] customers: city → state
+   Support: 0.16101694915254236
+   Confiance: 0.16101694915254236
+
+237. [FunctionalDependency] customers: city → postalCode
+   Support: 0.6956521739130435
+   Confiance: 0.6956521739130435
+
+238. [FunctionalDependency] customers: postalCode → city
+   Support: 0.975609756097561
+   Confiance: 0.975609756097561
+
+239. [FunctionalDependency] customers: city → postalCode
+   Support: 0.6857142857142857
+   Confiance: 0.6857142857142857
+
+240. [FunctionalDependency] customers: postalCode → city
+   Support: 0.5853658536585366
+   Confiance: 0.5853658536585366
+
+241. [FunctionalDependency] customers: country → city
+   Support: 1.0
+   Confiance: 1.0
+
+242. [FunctionalDependency] customers: city → country
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+243. [FunctionalDependency] customers: city → country
+   Support: 0.048406139315230225
+   Confiance: 0.048406139315230225
+
+244. [FunctionalDependency] customers: country → city
+   Support: 1.0
+   Confiance: 1.0
+
+245. [FunctionalDependency] customers: city → salesRepEmployeeNumber
+   Support: 0.69
+   Confiance: 0.69
+
+246. [FunctionalDependency] customers: salesRepEmployeeNumber → city
+   Support: 0.8414634146341463
+   Confiance: 0.8414634146341463
+
+247. [FunctionalDependency] customers: city → salesRepEmployeeNumber
+   Support: 0.05351170568561873
+   Confiance: 0.05351170568561873
+
+248. [FunctionalDependency] customers: salesRepEmployeeNumber → city
+   Support: 0.3902439024390244
+   Confiance: 0.3902439024390244
+
+249. [FunctionalDependency] customers: creditLimit → city
+   Support: 1.0
+   Confiance: 1.0
+
+250. [FunctionalDependency] customers: city → creditLimit
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+251. [FunctionalDependency] customers: city → customerNumber
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+252. [FunctionalDependency] customers: customerNumber → city
+   Support: 1.0
+   Confiance: 1.0
+
+253. [FunctionalDependency] customers: city → customerName
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+254. [FunctionalDependency] customers: customerName → city
+   Support: 1.0
+   Confiance: 1.0
+
+255. [FunctionalDependency] customers: city → contactLastName
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+256. [FunctionalDependency] customers: contactLastName → city
+   Support: 1.0
+   Confiance: 1.0
+
+257. [FunctionalDependency] customers: contactFirstName → city
+   Support: 1.0
+   Confiance: 1.0
+
+258. [FunctionalDependency] customers: city → contactFirstName
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+259. [FunctionalDependency] customers: city → phone
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+260. [FunctionalDependency] customers: phone → city
+   Support: 1.0
+   Confiance: 1.0
+
+261. [FunctionalDependency] customers: addressLine1 → city
+   Support: 1.0
+   Confiance: 1.0
+
+262. [FunctionalDependency] customers: city → addressLine1
+   Support: 0.6721311475409836
+   Confiance: 0.6721311475409836
+
+263. [FunctionalDependency] customers: addressLine2 → city
+   Support: 0.34146341463414637
+   Confiance: 0.34146341463414637
+
+264. [FunctionalDependency] customers: city → addressLine2
+   Support: 1.2727272727272727
+   Confiance: 1.2727272727272727
+
+265. [FunctionalDependency] orderdetails: orderLineNumber → priceEach
+   Support: 1.0
+   Confiance: 1.0
+
+266. [FunctionalDependency] orderdetails: priceEach → orderLineNumber
+   Support: 0.24699599465954605
+   Confiance: 0.24699599465954605
+
+267. [FunctionalDependency] orderdetails: orderNumber → priceEach
+   Support: 1.0
+   Confiance: 1.0
+
+268. [FunctionalDependency] orderdetails: priceEach → orderNumber
+   Support: 0.24699599465954605
+   Confiance: 0.24699599465954605
+
+269. [FunctionalDependency] orderdetails: priceEach → productCode
+   Support: 0.24699599465954605
+   Confiance: 0.24699599465954605
+
+270. [FunctionalDependency] orderdetails: productCode → priceEach
+   Support: 1.0
+   Confiance: 1.0
+
+271. [FunctionalDependency] orderdetails: priceEach → quantityOrdered
+   Support: 0.24699599465954605
+   Confiance: 0.24699599465954605
+
+272. [FunctionalDependency] orderdetails: quantityOrdered → priceEach
+   Support: 1.0
+   Confiance: 1.0
+
+273. [FunctionalDependency] customers: country → salesRepEmployeeNumber
+   Support: 15.55
+   Confiance: 15.55
+
+274. [FunctionalDependency] customers: salesRepEmployeeNumber → country
+   Support: 0.9179456906729634
+   Confiance: 0.9179456906729634
+
+275. [FunctionalDependency] customers: salesRepEmployeeNumber → country
+   Support: 0.20306965761511217
+   Confiance: 0.20306965761511217
+
+276. [FunctionalDependency] customers: country → salesRepEmployeeNumber
+   Support: 0.5752508361204013
+   Confiance: 0.5752508361204013
+
+277. [FunctionalDependency] customers: country → creditLimit
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+278. [FunctionalDependency] customers: creditLimit → country
+   Support: 1.0
+   Confiance: 1.0
+
+279. [FunctionalDependency] customers: creditLimit → country
+   Support: 0.05785123966942149
+   Confiance: 0.05785123966942149
+
+280. [FunctionalDependency] customers: country → creditLimit
+   Support: 0.17314487632508835
+   Confiance: 0.17314487632508835
+
+281. [FunctionalDependency] customers: country → customerNumber
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+282. [FunctionalDependency] customers: customerNumber → country
+   Support: 1.0
+   Confiance: 1.0
+
+283. [FunctionalDependency] customers: country → customerName
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+284. [FunctionalDependency] customers: customerName → country
+   Support: 1.0
+   Confiance: 1.0
+
+285. [FunctionalDependency] customers: country → contactLastName
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+286. [FunctionalDependency] customers: contactLastName → country
+   Support: 1.0
+   Confiance: 1.0
+
+287. [FunctionalDependency] customers: country → contactFirstName
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+288. [FunctionalDependency] customers: contactFirstName → country
+   Support: 1.0
+   Confiance: 1.0
+
+289. [FunctionalDependency] customers: phone → country
+   Support: 1.0
+   Confiance: 1.0
+
+290. [FunctionalDependency] customers: country → phone
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+291. [FunctionalDependency] customers: country → addressLine1
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+292. [FunctionalDependency] customers: addressLine1 → country
+   Support: 1.0
+   Confiance: 1.0
+
+293. [FunctionalDependency] customers: country → addressLine2
+   Support: 9.863636363636363
+   Confiance: 9.863636363636363
+
+294. [FunctionalDependency] customers: addressLine2 → country
+   Support: 0.128099173553719
+   Confiance: 0.128099173553719
+
+295. [FunctionalDependency] customers: country → city
+   Support: 13.885245901639344
+   Confiance: 13.885245901639344
+
+296. [FunctionalDependency] customers: city → country
+   Support: 1.0
+   Confiance: 1.0
+
+297. [FunctionalDependency] customers: country → state
+   Support: 26.387755102040817
+   Confiance: 26.387755102040817
+
+298. [FunctionalDependency] customers: state → country
+   Support: 0.7632821723730815
+   Confiance: 0.7632821723730815
+
+299. [FunctionalDependency] customers: country → postalCode
+   Support: 14.591304347826087
+   Confiance: 14.591304347826087
+
+300. [FunctionalDependency] customers: postalCode → country
+   Support: 0.9905548996458088
+   Confiance: 0.9905548996458088
+
+301. [FunctionalDependency] employees: employeeNumber → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+302. [FunctionalDependency] employees: jobTitle → employeeNumber
+   Support: 11.826086956521738
+   Confiance: 11.826086956521738
+
+303. [FunctionalDependency] employees: lastName → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+304. [FunctionalDependency] employees: jobTitle → lastName
+   Support: 11.826086956521738
+   Confiance: 11.826086956521738
+
+305. [FunctionalDependency] employees: firstName → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+306. [FunctionalDependency] employees: jobTitle → firstName
+   Support: 11.826086956521738
+   Confiance: 11.826086956521738
+
+307. [FunctionalDependency] employees: jobTitle → extension
+   Support: 11.826086956521738
+   Confiance: 11.826086956521738
+
+308. [FunctionalDependency] employees: extension → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+309. [FunctionalDependency] employees: jobTitle → email
+   Support: 11.826086956521738
+   Confiance: 11.826086956521738
+
+310. [FunctionalDependency] employees: email → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+311. [FunctionalDependency] employees: officeCode → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+312. [FunctionalDependency] employees: jobTitle → officeCode
+   Support: 11.826086956521738
+   Confiance: 11.826086956521738
+
+313. [FunctionalDependency] employees: jobTitle → reportsTo
+   Support: 12.363636363636363
+   Confiance: 12.363636363636363
+
+314. [FunctionalDependency] employees: reportsTo → jobTitle
+   Support: 1.0
+   Confiance: 1.0
+
+315. [FunctionalDependency] employees: jobTitle → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+316. [FunctionalDependency] employees: reportsTo → jobTitle
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+317. [FunctionalDependency] employees: reportsTo → jobTitle
+   Support: 0.2426470588235294
+   Confiance: 0.2426470588235294
+
+318. [FunctionalDependency] employees: jobTitle → reportsTo
+   Support: 0.825
+   Confiance: 0.825
+
+319. [FunctionalDependency] employees: reportsTo → employeeNumber
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+320. [FunctionalDependency] employees: employeeNumber → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+321. [FunctionalDependency] employees: lastName → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+322. [FunctionalDependency] employees: reportsTo → lastName
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+323. [FunctionalDependency] employees: reportsTo → firstName
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+324. [FunctionalDependency] employees: firstName → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+325. [FunctionalDependency] employees: reportsTo → extension
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+326. [FunctionalDependency] employees: extension → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+327. [FunctionalDependency] employees: reportsTo → email
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+328. [FunctionalDependency] employees: email → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+329. [FunctionalDependency] employees: officeCode → reportsTo
+   Support: 1.0
+   Confiance: 1.0
+
+330. [FunctionalDependency] employees: reportsTo → officeCode
+   Support: 3.4782608695652173
+   Confiance: 3.4782608695652173
+
+331. [FunctionalDependency] customers: addressLine2 → city
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+332. [FunctionalDependency] customers: city → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+333. [FunctionalDependency] customers: addressLine2 → state
+   Support: 0.04081632653061224
+   Confiance: 0.04081632653061224
+
+334. [FunctionalDependency] customers: state → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+335. [FunctionalDependency] customers: postalCode → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+336. [FunctionalDependency] customers: addressLine2 → postalCode
+   Support: 0.017391304347826087
+   Confiance: 0.017391304347826087
+
+337. [FunctionalDependency] customers: country → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+338. [FunctionalDependency] customers: addressLine2 → country
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+339. [FunctionalDependency] customers: salesRepEmployeeNumber → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+340. [FunctionalDependency] customers: addressLine2 → salesRepEmployeeNumber
+   Support: 0.02
+   Confiance: 0.02
+
+341. [FunctionalDependency] customers: creditLimit → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+342. [FunctionalDependency] customers: addressLine2 → creditLimit
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+343. [FunctionalDependency] customers: customerNumber → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+344. [FunctionalDependency] customers: addressLine2 → customerNumber
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+345. [FunctionalDependency] customers: customerName → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+346. [FunctionalDependency] customers: addressLine2 → customerName
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+347. [FunctionalDependency] customers: addressLine2 → contactLastName
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+348. [FunctionalDependency] customers: contactLastName → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+349. [FunctionalDependency] customers: addressLine2 → contactFirstName
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+350. [FunctionalDependency] customers: contactFirstName → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+351. [FunctionalDependency] customers: addressLine2 → phone
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+352. [FunctionalDependency] customers: phone → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+353. [FunctionalDependency] customers: addressLine2 → addressLine1
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+354. [FunctionalDependency] customers: addressLine1 → addressLine2
+   Support: 1.0
+   Confiance: 1.0
+
+355. [FunctionalDependency] products: productScale → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+356. [FunctionalDependency] products: productLine → productScale
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+357. [FunctionalDependency] products: productLine → productScale
+   Support: 0.29821958456973297
+   Confiance: 0.29821958456973297
+
+358. [FunctionalDependency] products: productScale → productLine
+   Support: 0.33032046014790467
+   Confiance: 0.33032046014790467
+
+359. [FunctionalDependency] products: productVendor → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+360. [FunctionalDependency] products: productLine → productVendor
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+361. [FunctionalDependency] products: productLine → productVendor
+   Support: 0.18840579710144928
+   Confiance: 0.18840579710144928
+
+362. [FunctionalDependency] products: productVendor → productLine
+   Support: 0.06409202958093672
+   Confiance: 0.06409202958093672
+
+363. [FunctionalDependency] products: productDescription → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+364. [FunctionalDependency] products: productLine → productDescription
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+365. [FunctionalDependency] products: productDescription → productLine
+   Support: 0.018077239112571898
+   Confiance: 0.018077239112571898
+
+366. [FunctionalDependency] products: productLine → productDescription
+   Support: 1.0
+   Confiance: 1.0
+
+367. [FunctionalDependency] products: productLine → quantityInStock
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+368. [FunctionalDependency] products: quantityInStock → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+369. [FunctionalDependency] products: productLine → buyPrice
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+370. [FunctionalDependency] products: buyPrice → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+371. [FunctionalDependency] products: productLine → MSRP
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+372. [FunctionalDependency] products: MSRP → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+373. [FunctionalDependency] products: productLine → productCode
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+374. [FunctionalDependency] products: productCode → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+375. [FunctionalDependency] products: productLine → productName
+   Support: 22.12727272727273
+   Confiance: 22.12727272727273
+
+376. [FunctionalDependency] products: productName → productLine
+   Support: 1.0
+   Confiance: 1.0
+
+377. [FunctionalDependency] employees: extension → email
+   Support: 0.34782608695652173
+   Confiance: 0.34782608695652173
+
+378. [FunctionalDependency] employees: email → extension
+   Support: 1.0
+   Confiance: 1.0
+
+379. [FunctionalDependency] employees: officeCode → extension
+   Support: 1.0
+   Confiance: 1.0
+
+380. [FunctionalDependency] employees: extension → officeCode
+   Support: 0.34782608695652173
+   Confiance: 0.34782608695652173
+
+381. [FunctionalDependency] employees: reportsTo → extension
+   Support: 1.0
+   Confiance: 1.0
+
+382. [FunctionalDependency] employees: extension → reportsTo
+   Support: 0.36363636363636365
+   Confiance: 0.36363636363636365
+
+383. [FunctionalDependency] employees: jobTitle → extension
+   Support: 1.0
+   Confiance: 1.0
+
+384. [FunctionalDependency] employees: extension → jobTitle
+   Support: 0.34782608695652173
+   Confiance: 0.34782608695652173
+
+385. [FunctionalDependency] employees: jobTitle → extension
+   Support: 1.0
+   Confiance: 1.0
+
+386. [FunctionalDependency] employees: extension → jobTitle
+   Support: 0.029411764705882353
+   Confiance: 0.029411764705882353
+
+387. [FunctionalDependency] employees: employeeNumber → extension
+   Support: 1.0
+   Confiance: 1.0
+
+388. [FunctionalDependency] employees: extension → employeeNumber
+   Support: 0.34782608695652173
+   Confiance: 0.34782608695652173
+
+389. [FunctionalDependency] employees: lastName → extension
+   Support: 1.0
+   Confiance: 1.0
+
+390. [FunctionalDependency] employees: extension → lastName
+   Support: 0.34782608695652173
+   Confiance: 0.34782608695652173
+
+391. [FunctionalDependency] employees: extension → firstName
+   Support: 0.34782608695652173
+   Confiance: 0.34782608695652173
+
+392. [FunctionalDependency] employees: firstName → extension
+   Support: 1.0
+   Confiance: 1.0
+
+393. [FunctionalDependency] products: productCode → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+394. [FunctionalDependency] products: MSRP → productCode
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+395. [FunctionalDependency] products: productName → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+396. [FunctionalDependency] products: MSRP → productName
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+397. [FunctionalDependency] products: MSRP → productLine
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+398. [FunctionalDependency] products: productLine → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+399. [FunctionalDependency] products: productScale → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+400. [FunctionalDependency] products: MSRP → productScale
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+401. [FunctionalDependency] products: productVendor → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+402. [FunctionalDependency] products: MSRP → productVendor
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+403. [FunctionalDependency] products: MSRP → productDescription
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+404. [FunctionalDependency] products: productDescription → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+405. [FunctionalDependency] products: quantityInStock → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+406. [FunctionalDependency] products: MSRP → quantityInStock
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+407. [FunctionalDependency] products: MSRP → buyPrice
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+408. [FunctionalDependency] products: buyPrice → MSRP
+   Support: 1.0
+   Confiance: 1.0
+
+409. [FunctionalDependency] orders: shippedDate → requiredDate
+   Support: 0.9512195121951219
+   Confiance: 0.9512195121951219
+
+410. [FunctionalDependency] orders: requiredDate → shippedDate
+   Support: 0.5
+   Confiance: 0.5
+
+411. [FunctionalDependency] orders: requiredDate → shippedDate
+   Support: 0.1566265060240964
+   Confiance: 0.1566265060240964
+
+412. [FunctionalDependency] orders: shippedDate → requiredDate
+   Support: 0.15853658536585366
+   Confiance: 0.15853658536585366
+
+413. [FunctionalDependency] orders: status → requiredDate
+   Support: 1.0
+   Confiance: 1.0
+
+414. [FunctionalDependency] orders: requiredDate → status
+   Support: 0.5030674846625767
+   Confiance: 0.5030674846625767
+
+415. [FunctionalDependency] orders: comments → requiredDate
+   Support: 0.25609756097560976
+   Confiance: 0.25609756097560976
+
+416. [FunctionalDependency] orders: requiredDate → comments
+   Support: 0.525
+   Confiance: 0.525
+
+417. [FunctionalDependency] orders: customerNumber → requiredDate
+   Support: 1.0
+   Confiance: 1.0
+
+418. [FunctionalDependency] orders: requiredDate → customerNumber
+   Support: 0.5030674846625767
+   Confiance: 0.5030674846625767
+
+419. [FunctionalDependency] orders: requiredDate → orderNumber
+   Support: 0.5030674846625767
+   Confiance: 0.5030674846625767
+
+420. [FunctionalDependency] orders: orderNumber → requiredDate
+   Support: 1.0
+   Confiance: 1.0
+
+421. [FunctionalDependency] orders: requiredDate → orderDate
+   Support: 0.5030674846625767
+   Confiance: 0.5030674846625767
+
+422. [FunctionalDependency] orders: orderDate → requiredDate
+   Support: 1.0
+   Confiance: 1.0
+
+423. [FunctionalDependency] offices: territory → officeCode
+   Support: 1.1428571428571428
+   Confiance: 1.1428571428571428
+
+424. [FunctionalDependency] offices: officeCode → territory
+   Support: 1.0
+   Confiance: 1.0
+
+425. [FunctionalDependency] offices: territory → city
+   Support: 1.1428571428571428
+   Confiance: 1.1428571428571428
+
+426. [FunctionalDependency] offices: city → territory
+   Support: 1.0
+   Confiance: 1.0
+
+427. [FunctionalDependency] offices: territory → phone
+   Support: 1.1428571428571428
+   Confiance: 1.1428571428571428
+
+428. [FunctionalDependency] offices: phone → territory
+   Support: 1.0
+   Confiance: 1.0
+
+429. [FunctionalDependency] offices: addressLine1 → territory
+   Support: 1.0
+   Confiance: 1.0
+
+430. [FunctionalDependency] offices: territory → addressLine1
+   Support: 1.1428571428571428
+   Confiance: 1.1428571428571428
+
+431. [FunctionalDependency] offices: territory → addressLine2
+   Support: 1.4
+   Confiance: 1.4
+
+432. [FunctionalDependency] offices: addressLine2 → territory
+   Support: 0.875
+   Confiance: 0.875
+
+433. [FunctionalDependency] offices: state → territory
+   Support: 0.75
+   Confiance: 0.75
+
+434. [FunctionalDependency] offices: territory → state
+   Support: 1.5
+   Confiance: 1.5
+
+435. [FunctionalDependency] offices: territory → country
+   Support: 1.1428571428571428
+   Confiance: 1.1428571428571428
+
+436. [FunctionalDependency] offices: country → territory
+   Support: 1.0
+   Confiance: 1.0
+
+437. [FunctionalDependency] offices: postalCode → territory
+   Support: 1.0
+   Confiance: 1.0
+
+438. [FunctionalDependency] offices: territory → postalCode
+   Support: 1.1428571428571428
+   Confiance: 1.1428571428571428
+
+439. [FunctionalDependency] customers: addressLine1 → phone
+   Support: 1.0
+   Confiance: 1.0
+
+440. [FunctionalDependency] customers: phone → addressLine1
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+441. [FunctionalDependency] customers: phone → city
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+442. [FunctionalDependency] customers: city → phone
+   Support: 1.0
+   Confiance: 1.0
+
+443. [FunctionalDependency] customers: phone → state
+   Support: 0.04081632653061224
+   Confiance: 0.04081632653061224
+
+444. [FunctionalDependency] customers: state → phone
+   Support: 1.0
+   Confiance: 1.0
+
+445. [FunctionalDependency] customers: phone → postalCode
+   Support: 0.017391304347826087
+   Confiance: 0.017391304347826087
+
+446. [FunctionalDependency] customers: postalCode → phone
+   Support: 1.0
+   Confiance: 1.0
+
+447. [FunctionalDependency] customers: country → phone
+   Support: 1.0
+   Confiance: 1.0
+
+448. [FunctionalDependency] customers: phone → country
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+449. [FunctionalDependency] customers: phone → salesRepEmployeeNumber
+   Support: 0.02
+   Confiance: 0.02
+
+450. [FunctionalDependency] customers: salesRepEmployeeNumber → phone
+   Support: 1.0
+   Confiance: 1.0
+
+451. [FunctionalDependency] customers: phone → creditLimit
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+452. [FunctionalDependency] customers: creditLimit → phone
+   Support: 1.0
+   Confiance: 1.0
+
+453. [FunctionalDependency] customers: phone → customerNumber
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+454. [FunctionalDependency] customers: customerNumber → phone
+   Support: 1.0
+   Confiance: 1.0
+
+455. [FunctionalDependency] customers: phone → customerName
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+456. [FunctionalDependency] customers: customerName → phone
+   Support: 1.0
+   Confiance: 1.0
+
+457. [FunctionalDependency] customers: phone → contactLastName
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+458. [FunctionalDependency] customers: contactLastName → phone
+   Support: 1.0
+   Confiance: 1.0
+
+459. [FunctionalDependency] customers: phone → contactFirstName
+   Support: 0.01639344262295082
+   Confiance: 0.01639344262295082
+
+460. [FunctionalDependency] customers: contactFirstName → phone
+   Support: 1.0
+   Confiance: 1.0
+
+461. [FunctionalDependency] products: buyPrice → MSRP
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+462. [FunctionalDependency] products: MSRP → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+463. [FunctionalDependency] products: productCode → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+464. [FunctionalDependency] products: buyPrice → productCode
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+465. [FunctionalDependency] products: buyPrice → productName
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+466. [FunctionalDependency] products: productName → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+467. [FunctionalDependency] products: buyPrice → productLine
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+468. [FunctionalDependency] products: productLine → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+469. [FunctionalDependency] products: productScale → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+470. [FunctionalDependency] products: buyPrice → productScale
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+471. [FunctionalDependency] products: productVendor → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+472. [FunctionalDependency] products: buyPrice → productVendor
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+473. [FunctionalDependency] products: buyPrice → productDescription
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+474. [FunctionalDependency] products: productDescription → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+475. [FunctionalDependency] products: quantityInStock → buyPrice
+   Support: 1.0
+   Confiance: 1.0
+
+476. [FunctionalDependency] products: buyPrice → quantityInStock
+   Support: 0.03636363636363636
+   Confiance: 0.03636363636363636
+
+477. [FunctionalDependency] payments: paymentDate → amount
+   Support: 0.32967032967032966
+   Confiance: 0.32967032967032966
+
+478. [FunctionalDependency] payments: amount → paymentDate
+   Support: 1.0
+   Confiance: 1.0
+
+479. [FunctionalDependency] payments: paymentDate → customerNumber
+   Support: 0.32967032967032966
+   Confiance: 0.32967032967032966
+
+480. [FunctionalDependency] payments: customerNumber → paymentDate
+   Support: 1.0
+   Confiance: 1.0
+
+481. [FunctionalDependency] payments: checkNumber → paymentDate
+   Support: 1.0
+   Confiance: 1.0
+
+482. [FunctionalDependency] payments: paymentDate → checkNumber
+   Support: 0.32967032967032966
+   Confiance: 0.32967032967032966
+
+483. [FunctionalDependency] orders: customerNumber → comments
+   Support: 1.0
+   Confiance: 1.0
+
+484. [FunctionalDependency] orders: comments → customerNumber
+   Support: 0.5214723926380368
+   Confiance: 0.5214723926380368
+
+485. [FunctionalDependency] orders: orderNumber → comments
+   Support: 1.0
+   Confiance: 1.0
+
+486. [FunctionalDependency] orders: comments → orderNumber
+   Support: 0.5214723926380368
+   Confiance: 0.5214723926380368
+
+487. [FunctionalDependency] orders: orderDate → comments
+   Support: 1.0
+   Confiance: 1.0
+
+488. [FunctionalDependency] orders: comments → orderDate
+   Support: 0.5214723926380368
+   Confiance: 0.5214723926380368
+
+489. [FunctionalDependency] orders: requiredDate → comments
+   Support: 1.0
+   Confiance: 1.0
+
+490. [FunctionalDependency] orders: comments → requiredDate
+   Support: 0.5214723926380368
+   Confiance: 0.5214723926380368
+
+491. [FunctionalDependency] orders: comments → shippedDate
+   Support: 0.5256410256410257
+   Confiance: 0.5256410256410257
+
+492. [FunctionalDependency] orders: shippedDate → comments
+   Support: 0.9647058823529412
+   Confiance: 0.9647058823529412
+
+493. [FunctionalDependency] orders: comments → status
+   Support: 0.5214723926380368
+   Confiance: 0.5214723926380368
+
+494. [FunctionalDependency] orders: status → comments
+   Support: 1.0
+   Confiance: 1.0
+
+495. [FunctionalDependency] customers: country → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+496. [FunctionalDependency] customers: postalCode → country
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+497. [FunctionalDependency] customers: country → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+498. [FunctionalDependency] customers: postalCode → country
+   Support: 0.04132231404958678
+   Confiance: 0.04132231404958678
+
+499. [FunctionalDependency] customers: salesRepEmployeeNumber → postalCode
+   Support: 0.9571428571428572
+   Confiance: 0.9571428571428572
+
+500. [FunctionalDependency] customers: postalCode → salesRepEmployeeNumber
+   Support: 0.67
+   Confiance: 0.67
+
+501. [FunctionalDependency] customers: postalCode → salesRepEmployeeNumber
+   Support: 0.06688963210702341
+   Confiance: 0.06688963210702341
+
+502. [FunctionalDependency] customers: salesRepEmployeeNumber → postalCode
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+503. [FunctionalDependency] customers: creditLimit → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+504. [FunctionalDependency] customers: postalCode → creditLimit
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+505. [FunctionalDependency] customers: postalCode → customerNumber
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+506. [FunctionalDependency] customers: customerNumber → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+507. [FunctionalDependency] customers: customerName → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+508. [FunctionalDependency] customers: postalCode → customerName
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+509. [FunctionalDependency] customers: postalCode → contactLastName
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+510. [FunctionalDependency] customers: contactLastName → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+511. [FunctionalDependency] customers: postalCode → contactFirstName
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+512. [FunctionalDependency] customers: contactFirstName → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+513. [FunctionalDependency] customers: postalCode → phone
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+514. [FunctionalDependency] customers: phone → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+515. [FunctionalDependency] customers: postalCode → addressLine1
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+516. [FunctionalDependency] customers: addressLine1 → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+517. [FunctionalDependency] customers: postalCode → addressLine2
+   Support: 0.8636363636363636
+   Confiance: 0.8636363636363636
+
+518. [FunctionalDependency] customers: addressLine2 → postalCode
+   Support: 0.2714285714285714
+   Confiance: 0.2714285714285714
+
+519. [FunctionalDependency] customers: city → postalCode
+   Support: 1.0
+   Confiance: 1.0
+
+520. [FunctionalDependency] customers: postalCode → city
+   Support: 0.5737704918032787
+   Confiance: 0.5737704918032787
+
+521. [FunctionalDependency] customers: state → postalCode
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+522. [FunctionalDependency] customers: postalCode → state
+   Support: 1.2244897959183674
+   Confiance: 1.2244897959183674
+
+523. [FunctionalDependency] products: productDescription → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+524. [FunctionalDependency] products: productVendor → productDescription
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+525. [FunctionalDependency] products: productVendor → quantityInStock
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+526. [FunctionalDependency] products: quantityInStock → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+527. [FunctionalDependency] products: productVendor → buyPrice
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+528. [FunctionalDependency] products: buyPrice → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+529. [FunctionalDependency] products: productVendor → MSRP
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+530. [FunctionalDependency] products: MSRP → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+531. [FunctionalDependency] products: productCode → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+532. [FunctionalDependency] products: productVendor → productCode
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+533. [FunctionalDependency] products: productVendor → productName
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+534. [FunctionalDependency] products: productName → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+535. [FunctionalDependency] products: productLine → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+536. [FunctionalDependency] products: productVendor → productLine
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+537. [FunctionalDependency] products: productVendor → productScale
+   Support: 7.527272727272727
+   Confiance: 7.527272727272727
+
+538. [FunctionalDependency] products: productScale → productVendor
+   Support: 1.0
+   Confiance: 1.0
+
+539. [FunctionalDependency] customers: customerNumber → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+540. [FunctionalDependency] customers: creditLimit → customerNumber
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+541. [FunctionalDependency] customers: customerName → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+542. [FunctionalDependency] customers: creditLimit → customerName
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+543. [FunctionalDependency] customers: creditLimit → contactLastName
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+544. [FunctionalDependency] customers: contactLastName → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+545. [FunctionalDependency] customers: contactFirstName → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+546. [FunctionalDependency] customers: creditLimit → contactFirstName
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+547. [FunctionalDependency] customers: phone → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+548. [FunctionalDependency] customers: creditLimit → phone
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+549. [FunctionalDependency] customers: addressLine1 → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+550. [FunctionalDependency] customers: creditLimit → addressLine1
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+551. [FunctionalDependency] customers: addressLine2 → creditLimit
+   Support: 0.0812720848056537
+   Confiance: 0.0812720848056537
+
+552. [FunctionalDependency] customers: creditLimit → addressLine2
+   Support: 2.090909090909091
+   Confiance: 2.090909090909091
+
+553. [FunctionalDependency] customers: city → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+554. [FunctionalDependency] customers: creditLimit → city
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+555. [FunctionalDependency] customers: state → creditLimit
+   Support: 0.13604240282685512
+   Confiance: 0.13604240282685512
+
+556. [FunctionalDependency] customers: creditLimit → state
+   Support: 1.5714285714285714
+   Confiance: 1.5714285714285714
+
+557. [FunctionalDependency] customers: postalCode → creditLimit
+   Support: 0.9593639575971732
+   Confiance: 0.9593639575971732
+
+558. [FunctionalDependency] customers: creditLimit → postalCode
+   Support: 4.721739130434782
+   Confiance: 4.721739130434782
+
+559. [FunctionalDependency] customers: creditLimit → country
+   Support: 4.639344262295082
+   Confiance: 4.639344262295082
+
+560. [FunctionalDependency] customers: country → creditLimit
+   Support: 1.0
+   Confiance: 1.0
+
+561. [FunctionalDependency] customers: creditLimit → salesRepEmployeeNumber
+   Support: 0.6
+   Confiance: 0.6
+
+562. [FunctionalDependency] customers: salesRepEmployeeNumber → creditLimit
+   Support: 0.10600706713780919
+   Confiance: 0.10600706713780919
+
+563. [FunctionalDependency] employees: lastName → firstName
+   Support: 0.43478260869565216
+   Confiance: 0.43478260869565216
+
+564. [FunctionalDependency] employees: firstName → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+565. [FunctionalDependency] employees: lastName → extension
+   Support: 0.43478260869565216
+   Confiance: 0.43478260869565216
+
+566. [FunctionalDependency] employees: extension → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+567. [FunctionalDependency] employees: email → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+568. [FunctionalDependency] employees: lastName → email
+   Support: 0.43478260869565216
+   Confiance: 0.43478260869565216
+
+569. [FunctionalDependency] employees: lastName → email
+   Support: 1.0
+   Confiance: 1.0
+
+570. [FunctionalDependency] employees: email → lastName
+   Support: 0.2
+   Confiance: 0.2
+
+571. [FunctionalDependency] employees: officeCode → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+572. [FunctionalDependency] employees: lastName → officeCode
+   Support: 0.43478260869565216
+   Confiance: 0.43478260869565216
+
+573. [FunctionalDependency] employees: lastName → officeCode
+   Support: 0.02857142857142857
+   Confiance: 0.02857142857142857
+
+574. [FunctionalDependency] employees: officeCode → lastName
+   Support: 0.2
+   Confiance: 0.2
+
+575. [FunctionalDependency] employees: lastName → reportsTo
+   Support: 0.45454545454545453
+   Confiance: 0.45454545454545453
+
+576. [FunctionalDependency] employees: reportsTo → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+577. [FunctionalDependency] employees: lastName → jobTitle
+   Support: 0.43478260869565216
+   Confiance: 0.43478260869565216
+
+578. [FunctionalDependency] employees: jobTitle → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+579. [FunctionalDependency] employees: lastName → employeeNumber
+   Support: 0.43478260869565216
+   Confiance: 0.43478260869565216
+
+580. [FunctionalDependency] employees: employeeNumber → lastName
+   Support: 1.0
+   Confiance: 1.0
+
+581. [FunctionalDependency] employees: officeCode → email
+   Support: 1.0
+   Confiance: 1.0
+
+582. [FunctionalDependency] employees: email → officeCode
+   Support: 0.08695652173913043
+   Confiance: 0.08695652173913043
+
+583. [FunctionalDependency] employees: email → reportsTo
+   Support: 0.09090909090909091
+   Confiance: 0.09090909090909091
+
+584. [FunctionalDependency] employees: reportsTo → email
+   Support: 1.0
+   Confiance: 1.0
+
+585. [FunctionalDependency] employees: jobTitle → email
+   Support: 1.0
+   Confiance: 1.0
+
+586. [FunctionalDependency] employees: email → jobTitle
+   Support: 0.08695652173913043
+   Confiance: 0.08695652173913043
+
+587. [FunctionalDependency] employees: email → employeeNumber
+   Support: 0.08695652173913043
+   Confiance: 0.08695652173913043
+
+588. [FunctionalDependency] employees: employeeNumber → email
+   Support: 1.0
+   Confiance: 1.0
+
+589. [FunctionalDependency] employees: email → lastName
+   Support: 0.08695652173913043
+   Confiance: 0.08695652173913043
+
+590. [FunctionalDependency] employees: lastName → email
+   Support: 1.0
+   Confiance: 1.0
+
+591. [FunctionalDependency] employees: firstName → email
+   Support: 1.0
+   Confiance: 1.0
+
+592. [FunctionalDependency] employees: email → firstName
+   Support: 0.08695652173913043
+   Confiance: 0.08695652173913043
+
+593. [FunctionalDependency] employees: extension → email
+   Support: 1.0
+   Confiance: 1.0
+
+594. [FunctionalDependency] employees: email → extension
+   Support: 0.08695652173913043
+   Confiance: 0.08695652173913043
+
+595. [FunctionalDependency] offices: postalCode → country
+   Support: 1.0
+   Confiance: 1.0
+
+596. [FunctionalDependency] offices: country → postalCode
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+597. [FunctionalDependency] offices: territory → country
+   Support: 1.0
+   Confiance: 1.0
+
+598. [FunctionalDependency] offices: country → territory
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+599. [FunctionalDependency] offices: country → territory
+   Support: 0.75
+   Confiance: 0.75
+
+600. [FunctionalDependency] offices: territory → country
+   Support: 1.0
+   Confiance: 1.0
+
+601. [FunctionalDependency] offices: country → officeCode
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+602. [FunctionalDependency] offices: officeCode → country
+   Support: 1.0
+   Confiance: 1.0
+
+603. [FunctionalDependency] offices: country → city
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+604. [FunctionalDependency] offices: city → country
+   Support: 1.0
+   Confiance: 1.0
+
+605. [FunctionalDependency] offices: phone → country
+   Support: 1.0
+   Confiance: 1.0
+
+606. [FunctionalDependency] offices: country → phone
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+607. [FunctionalDependency] offices: country → addressLine1
+   Support: 0.8571428571428571
+   Confiance: 0.8571428571428571
+
+608. [FunctionalDependency] offices: addressLine1 → country
+   Support: 1.0
+   Confiance: 1.0
+
+609. [FunctionalDependency] offices: country → addressLine2
+   Support: 1.2
+   Confiance: 1.2
+
+610. [FunctionalDependency] offices: addressLine2 → country
+   Support: 1.0
+   Confiance: 1.0
+
+611. [FunctionalDependency] offices: state → country
+   Support: 1.0
+   Confiance: 1.0
+
+612. [FunctionalDependency] offices: country → state
+   Support: 1.5
+   Confiance: 1.5
+
+613. [FunctionalDependency] customers: creditLimit → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+614. [FunctionalDependency] customers: salesRepEmployeeNumber → creditLimit
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+615. [FunctionalDependency] customers: customerNumber → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+616. [FunctionalDependency] customers: salesRepEmployeeNumber → customerNumber
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+617. [FunctionalDependency] customers: customerName → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+618. [FunctionalDependency] customers: salesRepEmployeeNumber → customerName
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+619. [FunctionalDependency] customers: contactLastName → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+620. [FunctionalDependency] customers: salesRepEmployeeNumber → contactLastName
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+621. [FunctionalDependency] customers: contactFirstName → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+622. [FunctionalDependency] customers: salesRepEmployeeNumber → contactFirstName
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+623. [FunctionalDependency] customers: phone → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+624. [FunctionalDependency] customers: salesRepEmployeeNumber → phone
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+625. [FunctionalDependency] customers: salesRepEmployeeNumber → addressLine1
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+626. [FunctionalDependency] customers: addressLine1 → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+627. [FunctionalDependency] customers: addressLine2 → salesRepEmployeeNumber
+   Support: 0.19732441471571907
+   Confiance: 0.19732441471571907
+
+628. [FunctionalDependency] customers: salesRepEmployeeNumber → addressLine2
+   Support: 5.363636363636363
+   Confiance: 5.363636363636363
+
+629. [FunctionalDependency] customers: salesRepEmployeeNumber → city
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+
+630. [FunctionalDependency] customers: city → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+631. [FunctionalDependency] customers: state → salesRepEmployeeNumber
+   Support: 0.4230769230769231
+   Confiance: 0.4230769230769231
+
+632. [FunctionalDependency] customers: salesRepEmployeeNumber → state
+   Support: 5.163265306122449
+   Confiance: 5.163265306122449
+
+633. [FunctionalDependency] customers: postalCode → salesRepEmployeeNumber
+   Support: 0.9515050167224081
+   Confiance: 0.9515050167224081
+
+634. [FunctionalDependency] customers: salesRepEmployeeNumber → postalCode
+   Support: 4.947826086956522
+   Confiance: 4.947826086956522
+
+635. [FunctionalDependency] customers: country → salesRepEmployeeNumber
+   Support: 1.0
+   Confiance: 1.0
+
+636. [FunctionalDependency] customers: salesRepEmployeeNumber → country
+   Support: 4.901639344262295
+   Confiance: 4.901639344262295
+

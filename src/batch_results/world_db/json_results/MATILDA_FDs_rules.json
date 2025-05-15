@@ -1,0 +1,5330 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12903225806451613,
+        "support": 0.036036036036036036,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.036036036036036036,
+        "support": 0.12903225806451613,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8709677419354839,
+        "support": 0.09712230215827339,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.09712230215827339,
+        "support": 0.8709677419354839,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.011235955056179775,
+        "support": 0.03225806451612903,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03225806451612903,
+        "support": 0.011235955056179775,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2605042016806723,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2605042016806723,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.014619883040935672,
+        "support": 0.3225806451612903,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3225806451612903,
+        "support": 0.014619883040935672,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.08620689655172414,
+        "support": 0.3225806451612903,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3225806451612903,
+        "support": 0.08620689655172414,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2594142259414226,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2594142259414226,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.08064516129032258,
+        "support": 0.026041666666666668,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.026041666666666668,
+        "support": 0.08064516129032258,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.507967639127237,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 12.507967639127237,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "ID"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 12.507967639127237,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.507967639127237,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.507967639127237,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 12.507967639127237,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 12.507967639127237,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.507967639127237,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.945945945945946,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.945945945945946,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.52808988764045,
+        "support": 0.9200913242009132,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9200913242009132,
+        "support": 4.52808988764045,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03808215757273068,
+        "support": 0.6963470319634704,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6963470319634704,
+        "support": 0.03808215757273068,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.680672268907563,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.680672268907563,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.7758620689655173,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.7758620689655173,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.6652719665271967,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.6652719665271967,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8086592178770949,
+        "support": 12.0625,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.0625,
+        "support": 0.8086592178770949,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.07402234636871509,
+        "support": 0.2420091324200913,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2420091324200913,
+        "support": 0.07402234636871509,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9581005586592178,
+        "support": 12.36036036036036,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.36036036036036,
+        "support": 0.9581005586592178,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.01606145251396648,
+        "support": 0.08273381294964029,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.08273381294964029,
+        "support": 0.01606145251396648,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7562849162011173,
+        "support": 12.168539325842696,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.168539325842696,
+        "support": 0.7562849162011173,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.069546759895118,
+        "support": 0.3889664804469274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3889664804469274,
+        "support": 0.069546759895118,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.974789915966387,
+        "support": 0.9951117318435754,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9951117318435754,
+        "support": 11.974789915966387,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.0782122905027933,
+        "support": 0.16374269005847952,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.16374269005847952,
+        "support": 0.0782122905027933,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9863826815642458,
+        "support": 12.176724137931034,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 12.176724137931034,
+        "support": 0.9863826815642458,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.98326359832636,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.98326359832636,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.2803445575567737,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2803445575567737,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.145833333333336,
+        "support": 0.8484729835552075,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8484729835552075,
+        "support": 45.145833333333336,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.05462020360219264,
+        "support": 0.636986301369863,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.636986301369863,
+        "support": 0.05462020360219264,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9612372748629601,
+        "support": 44.234234234234236,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 44.234234234234236,
+        "support": 0.9612372748629601,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.19424460431654678,
+        "support": 0.010571652310101801,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.010571652310101801,
+        "support": 0.19424460431654678,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.20224719101124,
+        "support": 0.7875880971025842,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7875880971025842,
+        "support": 45.20224719101124,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3709866875489428,
+        "support": 0.23660881508303158,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.23660881508303158,
+        "support": 0.3709866875489428,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.73529411764706,
+        "support": 0.9955951448707909,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9955951448707909,
+        "support": 42.73529411764706,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3084795321637427,
+        "support": 0.04130775254502741,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.04130775254502741,
+        "support": 0.3084795321637427,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.58620689655172,
+        "support": 0.9898198903680501,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9898198903680501,
+        "support": 43.58620689655172,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 42.74476987447699,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 42.74476987447699,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 66.79411764705883,
+        "support": 0.9924459982519666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9924459982519666,
+        "support": 66.79411764705883,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.27485380116959063,
+        "support": 0.02347359220876514,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.02347359220876514,
+        "support": 0.27485380116959063,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 68.91810344827586,
+        "support": 0.9981895367711324,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9981895367711324,
+        "support": 68.91810344827586,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 82.42708333333333,
+        "support": 0.9880134848295667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9880134848295667,
+        "support": 82.42708333333333,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 71.84684684684684,
+        "support": 0.9957547758771382,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9957547758771382,
+        "support": 71.84684684684684,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 80.50561797752809,
+        "support": 0.8946185541266075,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8946185541266075,
+        "support": 80.50561797752809,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.02092050209205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.02092050209205,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3361344537815127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3361344537815127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.24100719424460432,
+        "support": 0.097953216374269,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.097953216374269,
+        "support": 0.24100719424460432,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.7025862068965518,
+        "support": 0.710431654676259,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.710431654676259,
+        "support": 1.7025862068965518,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3263598326359833,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3263598326359833,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3381294964028777,
+        "support": 0.8468468468468469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8468468468468469,
+        "support": 0.3381294964028777,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Percentage"
+        ],
+        "dependent": [
+            "IsOfficial"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 612.7378048780488,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "IsOfficial"
+        ],
+        "dependent": [
+            "Percentage"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 612.7378048780488,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Percentage"
+        ],
+        "dependent": [
+            "IsOfficial"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.010598174924618614,
+        "support": 0.7309540150995195,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "IsOfficial"
+        ],
+        "dependent": [
+            "Percentage"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7309540150995195,
+        "support": 0.010598174924618614,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "IsOfficial"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 612.7378048780488,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "IsOfficial"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 612.7378048780488,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Language"
+        ],
+        "dependent": [
+            "IsOfficial"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 612.7378048780488,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "IsOfficial"
+        ],
+        "dependent": [
+            "Language"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 612.7378048780488,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.375,
+        "support": 0.9115497076023392,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9115497076023392,
+        "support": 5.375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4159356725146199,
+        "support": 2.9635416666666665,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.9635416666666665,
+        "support": 0.4159356725146199,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.490990990990991,
+        "support": 0.7288011695906432,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7288011695906432,
+        "support": 4.490990990990991,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.40058479532163743,
+        "support": 3.0786516853932584,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.0786516853932584,
+        "support": 0.40058479532163743,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.7238493723849375,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.7238493723849375,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 149.4336847266487,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 149.4336847266487,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9758918071344571,
+        "support": 0.08168454900416708,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.08168454900416708,
+        "support": 0.9758918071344571,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 149.4336847266487,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 149.4336847266487,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 149.4336847266487,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "ID"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 149.4336847266487,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 149.4336847266487,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 149.4336847266487,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.04461877911252758,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.04461877911252758,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.04461877911252758,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.04461877911252758,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.04461877911252758,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.04461877911252758,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.04461877911252758,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "ID"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.04461877911252758,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "Percentage"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.884146341463415,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Percentage"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.884146341463415,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Language"
+        ],
+        "dependent": [
+            "Percentage"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.884146341463415,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Percentage"
+        ],
+        "dependent": [
+            "Language"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.884146341463415,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "IsOfficial"
+        ],
+        "dependent": [
+            "Percentage"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.884146341463415,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "CountryLanguage",
+        "determinant": [
+            "Percentage"
+        ],
+        "dependent": [
+            "IsOfficial"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.884146341463415,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.14072076489335622,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "ID"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.14072076489335622,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.14072076489335622,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.14072076489335622,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "CountryCode"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.14072076489335622,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "CountryCode"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.14072076489335622,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "District"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.14072076489335622,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "City",
+        "determinant": [
+            "District"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.14072076489335622,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNP"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "GNP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GNPOld"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7804878048780488,
+        "support": 0.7191011235955056,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "GNPOld"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7191011235955056,
+        "support": 0.7804878048780488,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LocalName"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "LocalName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "GovernmentForm"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "GovernmentForm"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "HeadOfState"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6890756302521008,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "HeadOfState"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6890756302521008,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Capital"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7068965517241379,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Capital"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.7068965517241379,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code2"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Code2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Code"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Code"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Name"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Continent"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Continent"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Region"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Region"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "SurfaceArea"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "SurfaceArea"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "IndepYear"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8719512195121951,
+        "support": 0.7447916666666666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "IndepYear"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7447916666666666,
+        "support": 0.8719512195121951,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "LifeExpectancy"
+        ],
+        "dependent": [
+            "Population"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6861924686192469,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Country",
+        "determinant": [
+            "Population"
+        ],
+        "dependent": [
+            "LifeExpectancy"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6861924686192469,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

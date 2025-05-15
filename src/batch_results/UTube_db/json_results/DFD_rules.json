@@ -1,0 +1,217 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_states",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction",
+            "id_states",
+            "value1"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "name"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction",
+            "id_states",
+            "name"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction",
+            "id_states",
+            "value1"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "name",
+            "value1"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "name"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "name",
+            "value2"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "name",
+            "value1"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "name"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states",
+            "value1",
+            "value2"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

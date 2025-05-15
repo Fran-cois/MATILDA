@@ -1,0 +1,578 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 63.76599634369287,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 63.76599634369287,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03890692695087504,
+        "support": 0.3328985091743119,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3328985091743119,
+        "support": 0.03890692695087504,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 63.76599634369287,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "id_states"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 63.76599634369287,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 63.76599634369287,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 63.76599634369287,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 63.76599634369287,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 63.76599634369287,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 304.3263274336283,
+        "support": 0.42591721033059515,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.42591721033059515,
+        "support": 304.3263274336283,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.24747706422018348,
+        "support": 0.053455039741394525,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.053455039741394525,
+        "support": 0.24747706422018348,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 295.2129798903108,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 295.2129798903108,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3340258791254726,
+        "support": 0.1807346796540713,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1807346796540713,
+        "support": 0.3340258791254726,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "id_states"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 295.2129798903108,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 295.2129798903108,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 295.2129798903108,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 295.2129798903108,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_states",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 538.0585009140768,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_states",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 538.0585009140768,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "id_states"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 545.5996343692871,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "id_states"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 545.5996343692871,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 545.5996343692871,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 545.5996343692871,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "value1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 545.5996343692871,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value1"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 545.5996343692871,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "value2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 545.9280973451328,
+        "support": 0.4134114387001873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "utube_attributes",
+        "determinant": [
+            "value2"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4134114387001873,
+        "support": 545.9280973451328,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

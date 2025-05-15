@@ -1,0 +1,13 @@
+# Règles communes sauvegardées: 5
+# Date: 2025-04-28 09:59:09
+
+1. no_payment_due: name → bool [conf=1.00, supp=539.90] <=> no_payment_due: name → bool
+
+2. longest_absense_from_school: name → month [conf=1.00, supp=99.76] <=> longest_absense_from_school: name → month
+
+3. enlist: name → organ [conf=1.00, supp=62.78] <=> enlist: name → organ
+
+4. enlist: name → organ [conf=1.15, supp=1.00] <=> enlist: name → organ
+
+5. enlist: name → organ [conf=0.02, supp=0.89] <=> enlist: name → organ
+

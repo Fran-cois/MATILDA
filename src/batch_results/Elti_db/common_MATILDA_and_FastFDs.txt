@@ -1,0 +1,7 @@
+# Règles communes sauvegardées: 2
+# Date: 2025-04-28 06:31:16
+
+1. target: name1 → is_elti [conf=1.00, supp=1012.41] <=> target: name1 → is_elti
+
+2. target: name2 → is_elti [conf=1.00, supp=1012.41] <=> target: name2 → is_elti
+

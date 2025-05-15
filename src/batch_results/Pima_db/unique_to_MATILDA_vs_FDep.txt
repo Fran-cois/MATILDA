@@ -1,0 +1,43 @@
+# FDs sauvegardées: 10
+# Date: 2025-04-28 07:26:46
+
+1. [FunctionalDependency] tricepts: arg2 → arg1
+   Support: 77.42447916666667
+   Confiance: 77.42447916666667
+
+2. [FunctionalDependency] serum: arg2 → arg1
+   Support: 182.9296875
+   Confiance: 182.9296875
+
+3. [FunctionalDependency] serum: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+4. [FunctionalDependency] numPreg: arg2 → arg1
+   Support: 80.10677083333333
+   Confiance: 80.10677083333333
+
+5. [FunctionalDependency] plasma: arg2 → arg1
+   Support: 7.328125
+   Confiance: 7.328125
+
+6. [FunctionalDependency] age: arg2 → arg1
+   Support: 30.544270833333332
+   Confiance: 30.544270833333332
+
+7. [FunctionalDependency] pedigree: arg2 → arg1
+   Support: 0.96875
+   Confiance: 0.96875
+
+8. [FunctionalDependency] bmi: arg2 → arg1
+   Support: 3.8880208333333335
+   Confiance: 3.8880208333333335
+
+9. [FunctionalDependency] pima: arg2 → arg1
+   Support: 418.0416666666667
+   Confiance: 418.0416666666667
+
+10. [FunctionalDependency] diastolic: arg2 → arg1
+   Support: 32.729166666666664
+   Confiance: 32.729166666666664
+

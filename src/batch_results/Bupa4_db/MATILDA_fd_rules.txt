@@ -1,0 +1,59 @@
+# FDs sauvegardées: 14
+# Date: 2025-04-27 22:15:34
+
+1. [FunctionalDependency] sgpt: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+2. [FunctionalDependency] sgpt: arg2 → arg1
+   Support: 8.689855072463768
+   Confiance: 8.689855072463768
+
+3. [FunctionalDependency] sgot: arg2 → arg1
+   Support: 14.428985507246377
+   Confiance: 14.428985507246377
+
+4. [FunctionalDependency] sgot: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] mcv: arg2 → arg1
+   Support: 23.327536231884057
+   Confiance: 23.327536231884057
+
+6. [FunctionalDependency] mcv: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] alkphos: arg2 → arg1
+   Support: 5.6521739130434785
+   Confiance: 5.6521739130434785
+
+8. [FunctionalDependency] alkphos: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] drinks: arg2 → arg1
+   Support: 53.18840579710145
+   Confiance: 53.18840579710145
+
+10. [FunctionalDependency] drinks: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+11. [FunctionalDependency] bupa: arg2 → arg1
+   Support: 175.8840579710145
+   Confiance: 175.8840579710145
+
+12. [FunctionalDependency] bupa: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] gammagt: arg2 → arg1
+   Support: 6.115942028985507
+   Confiance: 6.115942028985507
+
+14. [FunctionalDependency] gammagt: arg1 → arg2
+   Support: 1.0
+   Confiance: 1.0
+

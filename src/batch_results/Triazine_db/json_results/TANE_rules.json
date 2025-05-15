@@ -1,0 +1,56 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "molecule",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "activity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

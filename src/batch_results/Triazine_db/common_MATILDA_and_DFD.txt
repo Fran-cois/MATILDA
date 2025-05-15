@@ -1,0 +1,5 @@
+# Règles communes sauvegardées: 1
+# Date: 2025-04-27 22:14:05
+
+1. molecule: molecule_id → activity [conf=1.00, supp=1.53] <=> molecule: molecule_id → activity
+

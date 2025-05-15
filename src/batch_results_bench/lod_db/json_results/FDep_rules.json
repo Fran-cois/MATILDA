@@ -1,0 +1,416 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col4"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PERSON_EN_SHREDDED",
+        "determinant": [
+            "col5"
+        ],
+        "dependent": [
+            "col6"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

@@ -1,0 +1,195 @@
+# Règles communes sauvegardées: 96
+# Date: 2025-04-28 07:16:04
+
+1. orders: orderNumber → status [conf=1.00, supp=280.97] <=> orders: orderNumber → status
+
+2. customers: addressLine1 → contactFirstName [conf=1.00, supp=0.23] <=> customers: addressLine1 → contactFirstName
+
+3. customers: customerNumber → contactFirstName [conf=1.00, supp=0.23] <=> customers: customerNumber → contactFirstName
+
+4. customers: customerName → contactFirstName [conf=1.00, supp=0.23] <=> customers: customerName → contactFirstName
+
+5. employees: employeeNumber → officeCode [conf=1.00, supp=3.04] <=> employees: employeeNumber → officeCode
+
+6. employees: firstName → officeCode [conf=1.00, supp=3.04] <=> employees: firstName → officeCode
+
+7. orders: orderNumber → shippedDate [conf=1.00, supp=0.51] <=> orders: orderNumber → shippedDate
+
+8. employees: firstName → officeCode [conf=0.17, supp=1.00] <=> employees: firstName → officeCode
+
+9. employees: firstName → officeCode [conf=0.06, supp=1.00] <=> employees: firstName → officeCode
+
+10. employees: employeeNumber → firstName [conf=1.00, supp=0.17] <=> employees: employeeNumber → firstName
+
+11. orders: orderNumber → customerNumber [conf=1.00, supp=4.74] <=> orders: orderNumber → customerNumber
+
+12. products: quantityInStock → productScale [conf=1.00, supp=24.51] <=> products: quantityInStock → productScale
+
+13. products: productCode → productScale [conf=1.00, supp=24.51] <=> products: productCode → productScale
+
+14. products: productName → productScale [conf=1.00, supp=24.51] <=> products: productName → productScale
+
+15. customers: addressLine1 → contactLastName [conf=1.00, supp=0.31] <=> customers: addressLine1 → contactLastName
+
+16. customers: customerNumber → contactLastName [conf=1.00, supp=0.31] <=> customers: customerNumber → contactLastName
+
+17. customers: customerName → contactLastName [conf=1.00, supp=0.31] <=> customers: customerName → contactLastName
+
+18. orders: orderNumber → orderDate [conf=1.00, supp=0.43] <=> orders: orderNumber → orderDate
+
+19. products: quantityInStock → productDescription [conf=1.00, supp=0.40] <=> products: quantityInStock → productDescription
+
+20. products: productCode → productDescription [conf=1.00, supp=0.40] <=> products: productCode → productDescription
+
+21. products: productName → productDescription [conf=1.00, supp=0.40] <=> products: productName → productDescription
+
+22. products: productDescription → productLine [conf=0.40, supp=1.00] <=> products: productDescription → productLine
+
+23. customers: customerNumber → state [conf=1.00, supp=1.93] <=> customers: customerNumber → state
+
+24. customers: customerName → state [conf=1.00, supp=1.93] <=> customers: customerName → state
+
+25. customers: phone → state [conf=1.00, supp=1.93] <=> customers: phone → state
+
+26. customers: addressLine1 → state [conf=1.00, supp=1.93] <=> customers: addressLine1 → state
+
+27. customers: city → country [conf=0.67, supp=1.00] <=> customers: city → country
+
+28. customers: city → country [conf=0.05, supp=1.00] <=> customers: city → country
+
+29. customers: customerNumber → city [conf=1.00, supp=0.67] <=> customers: customerNumber → city
+
+30. customers: customerName → city [conf=1.00, supp=0.67] <=> customers: customerName → city
+
+31. customers: addressLine1 → city [conf=1.00, supp=0.67] <=> customers: addressLine1 → city
+
+32. customers: customerNumber → country [conf=1.00, supp=13.89] <=> customers: customerNumber → country
+
+33. customers: customerName → country [conf=1.00, supp=13.89] <=> customers: customerName → country
+
+34. customers: phone → country [conf=1.00, supp=13.89] <=> customers: phone → country
+
+35. customers: addressLine1 → country [conf=1.00, supp=13.89] <=> customers: addressLine1 → country
+
+36. customers: city → country [conf=1.00, supp=13.89] <=> customers: city → country
+
+37. employees: employeeNumber → jobTitle [conf=1.00, supp=11.83] <=> employees: employeeNumber → jobTitle
+
+38. employees: extension → jobTitle [conf=1.00, supp=11.83] <=> employees: extension → jobTitle
+
+39. employees: employeeNumber → reportsTo [conf=1.00, supp=3.48] <=> employees: employeeNumber → reportsTo
+
+40. customers: customerNumber → addressLine2 [conf=1.00, supp=0.02] <=> customers: customerNumber → addressLine2
+
+41. customers: customerName → addressLine2 [conf=1.00, supp=0.02] <=> customers: customerName → addressLine2
+
+42. customers: phone → addressLine2 [conf=1.00, supp=0.02] <=> customers: phone → addressLine2
+
+43. customers: addressLine1 → addressLine2 [conf=1.00, supp=0.02] <=> customers: addressLine1 → addressLine2
+
+44. products: productDescription → productLine [conf=1.00, supp=22.13] <=> products: productDescription → productLine
+
+45. products: productDescription → productLine [conf=0.02, supp=1.00] <=> products: productDescription → productLine
+
+46. products: quantityInStock → productLine [conf=1.00, supp=22.13] <=> products: quantityInStock → productLine
+
+47. products: productCode → productLine [conf=1.00, supp=22.13] <=> products: productCode → productLine
+
+48. products: productName → productLine [conf=1.00, supp=22.13] <=> products: productName → productLine
+
+49. employees: extension → jobTitle [conf=0.35, supp=1.00] <=> employees: extension → jobTitle
+
+50. employees: extension → jobTitle [conf=0.03, supp=1.00] <=> employees: extension → jobTitle
+
+51. employees: employeeNumber → extension [conf=1.00, supp=0.35] <=> employees: employeeNumber → extension
+
+52. products: productCode → MSRP [conf=1.00, supp=0.04] <=> products: productCode → MSRP
+
+53. products: productName → MSRP [conf=1.00, supp=0.04] <=> products: productName → MSRP
+
+54. products: quantityInStock → MSRP [conf=1.00, supp=0.04] <=> products: quantityInStock → MSRP
+
+55. orders: orderNumber → requiredDate [conf=1.00, supp=0.50] <=> orders: orderNumber → requiredDate
+
+56. offices: officeCode → territory [conf=1.00, supp=1.14] <=> offices: officeCode → territory
+
+57. offices: city → territory [conf=1.00, supp=1.14] <=> offices: city → territory
+
+58. offices: phone → territory [conf=1.00, supp=1.14] <=> offices: phone → territory
+
+59. offices: addressLine1 → territory [conf=1.00, supp=1.14] <=> offices: addressLine1 → territory
+
+60. offices: country → territory [conf=1.00, supp=1.14] <=> offices: country → territory
+
+61. offices: postalCode → territory [conf=1.00, supp=1.14] <=> offices: postalCode → territory
+
+62. customers: addressLine1 → phone [conf=1.00, supp=0.02] <=> customers: addressLine1 → phone
+
+63. customers: phone → state [conf=0.04, supp=1.00] <=> customers: phone → state
+
+64. customers: phone → country [conf=0.02, supp=1.00] <=> customers: phone → country
+
+65. customers: customerNumber → phone [conf=1.00, supp=0.02] <=> customers: customerNumber → phone
+
+66. customers: customerName → phone [conf=1.00, supp=0.02] <=> customers: customerName → phone
+
+67. products: productCode → buyPrice [conf=1.00, supp=0.04] <=> products: productCode → buyPrice
+
+68. products: productName → buyPrice [conf=1.00, supp=0.04] <=> products: productName → buyPrice
+
+69. products: quantityInStock → buyPrice [conf=1.00, supp=0.04] <=> products: quantityInStock → buyPrice
+
+70. payments: amount → paymentDate [conf=1.00, supp=0.33] <=> payments: amount → paymentDate
+
+71. payments: checkNumber → paymentDate [conf=1.00, supp=0.33] <=> payments: checkNumber → paymentDate
+
+72. orders: orderNumber → comments [conf=1.00, supp=0.52] <=> orders: orderNumber → comments
+
+73. customers: customerNumber → postalCode [conf=1.00, supp=0.57] <=> customers: customerNumber → postalCode
+
+74. customers: customerName → postalCode [conf=1.00, supp=0.57] <=> customers: customerName → postalCode
+
+75. customers: addressLine1 → postalCode [conf=1.00, supp=0.57] <=> customers: addressLine1 → postalCode
+
+76. products: quantityInStock → productVendor [conf=1.00, supp=7.53] <=> products: quantityInStock → productVendor
+
+77. products: productCode → productVendor [conf=1.00, supp=7.53] <=> products: productCode → productVendor
+
+78. products: productName → productVendor [conf=1.00, supp=7.53] <=> products: productName → productVendor
+
+79. customers: customerNumber → creditLimit [conf=1.00, supp=4.64] <=> customers: customerNumber → creditLimit
+
+80. customers: customerName → creditLimit [conf=1.00, supp=4.64] <=> customers: customerName → creditLimit
+
+81. customers: addressLine1 → creditLimit [conf=1.00, supp=4.64] <=> customers: addressLine1 → creditLimit
+
+82. employees: email → lastName [conf=1.00, supp=0.43] <=> employees: email → lastName
+
+83. employees: email → lastName [conf=0.20, supp=1.00] <=> employees: email → lastName
+
+84. employees: employeeNumber → lastName [conf=1.00, supp=0.43] <=> employees: employeeNumber → lastName
+
+85. employees: employeeNumber → email [conf=1.00, supp=0.09] <=> employees: employeeNumber → email
+
+86. employees: email → lastName [conf=0.09, supp=1.00] <=> employees: email → lastName
+
+87. offices: postalCode → country [conf=1.00, supp=0.86] <=> offices: postalCode → country
+
+88. offices: country → territory [conf=0.86, supp=1.00] <=> offices: country → territory
+
+89. offices: country → territory [conf=0.75, supp=1.00] <=> offices: country → territory
+
+90. offices: officeCode → country [conf=1.00, supp=0.86] <=> offices: officeCode → country
+
+91. offices: city → country [conf=1.00, supp=0.86] <=> offices: city → country
+
+92. offices: phone → country [conf=1.00, supp=0.86] <=> offices: phone → country
+
+93. offices: addressLine1 → country [conf=1.00, supp=0.86] <=> offices: addressLine1 → country
+
+94. customers: customerNumber → salesRepEmployeeNumber [conf=1.00, supp=4.90] <=> customers: customerNumber → salesRepEmployeeNumber
+
+95. customers: customerName → salesRepEmployeeNumber [conf=1.00, supp=4.90] <=> customers: customerName → salesRepEmployeeNumber
+
+96. customers: addressLine1 → salesRepEmployeeNumber [conf=1.00, supp=4.90] <=> customers: addressLine1 → salesRepEmployeeNumber
+

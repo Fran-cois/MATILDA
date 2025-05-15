@@ -1,0 +1,96 @@
+{
+  "tgd_rules": [],
+  "egd_rules": [],
+  "fd_rules": [
+    {
+      "display": "sgpt: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "display": "sgpt: arg2 \u2192 arg1",
+      "support": 8.689855072463768,
+      "confidence": 8.689855072463768
+    },
+    {
+      "display": "sgot: arg2 \u2192 arg1",
+      "support": 14.428985507246377,
+      "confidence": 14.428985507246377
+    },
+    {
+      "display": "sgot: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "display": "mcv: arg2 \u2192 arg1",
+      "support": 23.327536231884057,
+      "confidence": 23.327536231884057
+    },
+    {
+      "display": "mcv: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "display": "alkphos: arg2 \u2192 arg1",
+      "support": 5.6521739130434785,
+      "confidence": 5.6521739130434785
+    },
+    {
+      "display": "alkphos: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "display": "drinks: arg2 \u2192 arg1",
+      "support": 53.18840579710145,
+      "confidence": 53.18840579710145
+    },
+    {
+      "display": "drinks: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "display": "bupa: arg2 \u2192 arg1",
+      "support": 175.8840579710145,
+      "confidence": 175.8840579710145
+    },
+    {
+      "display": "bupa: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "display": "gammagt: arg2 \u2192 arg1",
+      "support": 6.115942028985507,
+      "confidence": 6.115942028985507
+    },
+    {
+      "display": "gammagt: arg1 \u2192 arg2",
+      "support": 1.0,
+      "confidence": 1.0
+    }
+  ],
+  "horn_rules": [],
+  "keys_rules": [],
+  "stats": {
+    "tgd_count": 0,
+    "egd_count": 0,
+    "fd_count": 14,
+    "horn_count": 0,
+    "keys_count": 0,
+    "export_date": "2025-04-27 17:13:22",
+    "tgd_avg_support": 0,
+    "tgd_avg_confidence": 0,
+    "egd_avg_support": 0,
+    "egd_avg_confidence": 0,
+    "fd_avg_support": 21.02049689440994,
+    "fd_avg_confidence": 21.02049689440994,
+    "horn_avg_support": 0,
+    "horn_avg_confidence": 0,
+    "keys_avg_support": 0,
+    "keys_avg_confidence": 0
+  }
+}

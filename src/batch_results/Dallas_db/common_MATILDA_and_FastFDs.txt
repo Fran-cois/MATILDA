@@ -1,0 +1,127 @@
+# Règles communes sauvegardées: 62
+# Date: 2025-04-28 07:00:52
+
+1. incidents: summary_text → subject_statuses [conf=0.99, supp=69.14] <=> incidents: summary_text → subject_statuses
+
+2. officers: full_name → case_number [conf=1.15, supp=1.00] <=> officers: full_name → case_number
+
+3. officers: case_number → full_name [conf=1.00, supp=1.15] <=> officers: case_number → full_name
+
+4. officers: full_name → race [conf=1.15, supp=0.99] <=> officers: full_name → race
+
+5. officers: full_name → gender [conf=1.15, supp=1.00] <=> officers: full_name → gender
+
+6. officers: gender → last_name [conf=333.95, supp=1.00] <=> officers: gender → last_name
+
+7. officers: full_name → gender [conf=1.00, supp=333.95] <=> officers: full_name → gender
+
+8. officers: case_number → gender [conf=1.00, supp=333.95] <=> officers: case_number → gender
+
+9. incidents: summary_text → subjects [conf=0.88, supp=0.40] <=> incidents: summary_text → subjects
+
+10. incidents: summary_text → date [conf=1.00, supp=0.06] <=> incidents: summary_text → date
+
+11. subjects: first_name → full_name [conf=1.71, supp=1.00] <=> subjects: first_name → full_name
+
+12. subjects: first_name → full_name [conf=0.44, supp=0.54] <=> subjects: first_name → full_name
+
+13. subjects: first_name → case_number [conf=1.71, supp=1.00] <=> subjects: first_name → case_number
+
+14. subjects: case_number → first_name [conf=1.00, supp=1.71] <=> subjects: case_number → first_name
+
+15. subjects: first_name → race [conf=1.71, supp=1.00] <=> subjects: first_name → race
+
+16. subjects: gender → first_name [conf=1.00, supp=1.71] <=> subjects: gender → first_name
+
+17. subjects: first_name → last_name [conf=1.71, supp=1.00] <=> subjects: first_name → last_name
+
+18. incidents: summary_text → officer_count [conf=0.99, supp=112.44] <=> incidents: summary_text → officer_count
+
+19. incidents: summary_text → officers [conf=1.00, supp=0.07] <=> incidents: summary_text → officers
+
+20. subjects: last_name → gender [conf=1.00, supp=207.57] <=> subjects: last_name → gender
+
+21. subjects: last_name → gender [conf=0.01, supp=0.92] <=> subjects: last_name → gender
+
+22. subjects: gender → first_name [conf=207.93, supp=0.92] <=> subjects: gender → first_name
+
+23. subjects: case_number → gender [conf=1.00, supp=207.57] <=> subjects: case_number → gender
+
+24. incidents: summary_text → subject_count [conf=0.99, supp=200.41] <=> incidents: summary_text → subject_count
+
+25. officers: last_name → first_name [conf=1.40, supp=0.99] <=> officers: last_name → first_name
+
+26. officers: last_name → first_name [conf=0.25, supp=0.82] <=> officers: last_name → first_name
+
+27. officers: case_number → last_name [conf=1.00, supp=1.40] <=> officers: case_number → last_name
+
+28. officers: gender → last_name [conf=1.00, supp=1.40] <=> officers: gender → last_name
+
+29. officers: case_number → race [conf=3.56, supp=0.99] <=> officers: case_number → race
+
+30. officers: case_number → race [conf=0.02, supp=0.65] <=> officers: case_number → race
+
+31. officers: case_number → gender [conf=3.54, supp=1.00] <=> officers: case_number → gender
+
+32. officers: case_number → last_name [conf=3.54, supp=1.00] <=> officers: case_number → last_name
+
+33. officers: case_number → last_name [conf=0.72, supp=0.28] <=> officers: case_number → last_name
+
+34. officers: case_number → first_name [conf=3.56, supp=1.00] <=> officers: case_number → first_name
+
+35. officers: case_number → first_name [conf=0.22, supp=0.29] <=> officers: case_number → first_name
+
+36. officers: case_number → full_name [conf=3.54, supp=1.00] <=> officers: case_number → full_name
+
+37. officers: full_name → case_number [conf=1.00, supp=3.54] <=> officers: full_name → case_number
+
+38. officers: case_number → full_name [conf=0.87, supp=0.28] <=> officers: case_number → full_name
+
+39. officers: full_name → case_number [conf=0.28, supp=0.87] <=> officers: full_name → case_number
+
+40. incidents: summary_text → longitude [conf=1.00, supp=0.02] <=> incidents: summary_text → longitude
+
+41. incidents: summary_text → subject_weapon [conf=0.98, supp=55.17] <=> incidents: summary_text → subject_weapon
+
+42. subjects: first_name → full_name [conf=0.44, supp=1.00] <=> subjects: first_name → full_name
+
+43. incidents: summary_text → latitude [conf=1.00, supp=0.04] <=> incidents: summary_text → latitude
+
+44. incidents: summary_text → grand_jury_disposition [conf=1.00, supp=61.31] <=> incidents: summary_text → grand_jury_disposition
+
+45. incidents: grand_jury_disposition → summary_text [conf=61.31, supp=1.00] <=> incidents: grand_jury_disposition → summary_text
+
+46. subjects: first_name → last_name [conf=0.53, supp=1.42] <=> subjects: first_name → last_name
+
+47. subjects: first_name → last_name [conf=0.37, supp=0.54] <=> subjects: first_name → last_name
+
+48. subjects: last_name → gender [conf=2.46, supp=1.00] <=> subjects: last_name → gender
+
+49. officers: full_name → race [conf=1.00, supp=145.56] <=> officers: full_name → race
+
+50. officers: case_number → race [conf=1.00, supp=145.56] <=> officers: case_number → race
+
+51. officers: case_number → first_name [conf=1.00, supp=4.61] <=> officers: case_number → first_name
+
+52. officers: last_name → first_name [conf=1.00, supp=4.61] <=> officers: last_name → first_name
+
+53. subjects: first_name → race [conf=0.92, supp=84.80] <=> subjects: first_name → race
+
+54. subjects: first_name → race [conf=0.02, supp=0.75] <=> subjects: first_name → race
+
+55. subjects: case_number → race [conf=1.00, supp=84.99] <=> subjects: case_number → race
+
+56. subjects: case_number → race [conf=1.07, supp=1.00] <=> subjects: case_number → race
+
+57. subjects: case_number → race [conf=0.01, supp=1.00] <=> subjects: case_number → race
+
+58. subjects: case_number → gender [conf=1.07, supp=1.00] <=> subjects: case_number → gender
+
+59. subjects: case_number → first_name [conf=1.07, supp=0.92] <=> subjects: case_number → first_name
+
+60. subjects: first_name → case_number [conf=0.92, supp=1.07] <=> subjects: first_name → case_number
+
+61. subjects: case_number → first_name [conf=0.54, supp=0.86] <=> subjects: case_number → first_name
+
+62. subjects: first_name → case_number [conf=0.86, supp=0.54] <=> subjects: first_name → case_number
+

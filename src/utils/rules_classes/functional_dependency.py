@@ -66,246 +66,69 @@ class FDAlgorithmSettings:
     n_jobs: int = 0
 
 
-@dataclass(frozen=True)
 class FunctionalDependency(Rule):
     """
-    Représente une dépendance fonctionnelle entre colonnes d'une table.
-    
-    Une dépendance fonctionnelle (FD) exprime que les valeurs d'un ensemble d'attributs (le déterminant)
-    déterminent de façon unique les valeurs d'un autre ensemble d'attributs (le dépendant).
-    Format : table: determinant → dependent
+    Représente une dépendance fonctionnelle (FD) de la forme X → Y où X est un ensemble d'attributs
+    et Y est un attribut déterminé par X.
     """
-    table: str
-    determinant: Tuple[str, ...]  # Colonnes déterminantes (partie gauche)
-    dependent: Tuple[str, ...]    # Colonnes dépendantes (partie droite)
     
-    # Métadonnées de validation
-    correct: Optional[bool] = None      # Règle validée comme correcte
-    compatible: Optional[bool] = None   # Règle compatible avec le schéma
-    
-    # Métriques de qualité
-    confidence: Optional[float] = None  # Confiance de la règle (0.0-1.0)
-    support: Optional[float] = None     # Support de la règle (nb tuples ou %)
-    coverage: Optional[float] = None    # Couverture des données
-    accuracy: Optional[float] = None    # Précision de la règle
-    # Statistiques de violation
-    n_violations: Optional[int] = None  # Nombre de violations constatées
-    violation_examples: Optional[List[Dict[str, Any]]] = None  # Exemples de violations
-    
-    # Attributs pour le suivi de conversion depuis EGD
-    converted_from_egd: Optional[bool] = None
-    original_egd: Optional[str] = None
-    
-    # Paramètres de l'algorithme et de compatibilité
-    algorithm_settings: Optional[FDAlgorithmSettings] = None
-    compatibility_settings: Optional[FDCompatibilitySettings] = None
-    
-    # Alias possibles pour la même dépendance (noms alternatifs des colonnes)
-    aliases: Optional[Set[str]] = None
-    display: Optional[str] = None
-
-    
-    def export_to_json(self, filepath: str) -> None:
+    def __init__(self, table, lhs, rhs, support=0.0, confidence=1.0):
         """
-        Exporte cette dépendance fonctionnelle au format JSON dans le fichier spécifié.
+        Initialise une dépendance fonctionnelle.
         
-        Args:
-            filepath: Chemin du fichier où la règle sera enregistrée
+        :param table: Nom de la table contenant les attributs
+        :param lhs: Liste des attributs du côté gauche (déterminants)
+        :param rhs: Attribut du côté droit (déterminé)
+        :param support: Support de la règle (ratio des tuples qui satisfont la FD)
+        :param confidence: Confiance de la règle (toujours 1.0 pour une FD valide)
         """
-        with open(filepath, "w") as f:
-            json.dump(self.to_dict(), f, indent=4)
-    
-    def to_dict(self) -> Dict:
-        """
-        Convertit cette dépendance fonctionnelle en dictionnaire pour sérialisation.
+        super().__init__()
+        self.table = table
+        self.lhs = lhs if isinstance(lhs, list) else [lhs]
+        self.rhs = rhs
+        self.support = support
+        self.confidence = confidence
         
-        Returns:
-            Un dictionnaire représentant cette dépendance fonctionnelle
-        """
-        # Conversion de base avec asdict
-        fd_dict = {
-            "type": "FunctionalDependency",
+        # Une FD est considérée comme un type de règle EGD
+        self.rule_type = "fd"
+        
+        # Pour compatibilité avec l'interface Rule
+        self.body = [f"{table}({', '.join(self.lhs)})"]
+        self.head = [f"{table}({self.rhs})"]
+        self.accuracy = support
+        
+        # Créer une représentation textuelle
+        self._generate_display()
+    
+    def _generate_display(self):
+        """Génère une représentation textuelle de la FD."""
+        lhs_str = ', '.join(self.lhs)
+        self.display = f"{self.table}: {lhs_str} → {self.rhs}"
+        
+    def __str__(self):
+        return self.display
+        
+    def __repr__(self):
+        return f"FD({self.display}, support={self.support:.2f}, confidence={self.confidence:.2f})"
+        
+    def export_to_json(self, filepath):
+        """Exporte la dépendance fonctionnelle au format JSON."""
+        import json
+        data = {
             "table": self.table,
-            "determinant": list(self.determinant),
-            "dependent": list(self.dependent),
-            "correct": self.correct,
-            "compatible": self.compatible,
-            "confidence": self.confidence,
+            "lhs": self.lhs,
+            "rhs": self.rhs,
             "support": self.support,
-            "coverage": self.coverage,
-            "n_violations": self.n_violations,
-            "converted_from_egd": self.converted_from_egd,
-            "original_egd": self.original_egd
+            "confidence": self.confidence,
+            "display": self.display
         }
-        
-        # Ajout des exemples de violation s'ils existent
-        if self.violation_examples:
-            fd_dict["violation_examples"] = self.violation_examples
-            
-        # Ajout des paramètres d'algorithme s'ils existent
-        if self.algorithm_settings:
-            fd_dict["algorithm_settings"] = asdict(self.algorithm_settings)
-            
-        # Ajout des paramètres de compatibilité s'ils existent
-        if self.compatibility_settings:
-            fd_dict["compatibility_settings"] = asdict(self.compatibility_settings)
-            
-        # Ajout des alias s'ils existent
-        if self.aliases:
-            fd_dict["aliases"] = list(self.aliases)
-            
-        return fd_dict
-    
-    @classmethod
-    def from_dict(cls, d: Dict) -> 'FunctionalDependency':
-        """
-        Crée une instance de FunctionalDependency à partir d'un dictionnaire.
-        
-        Args:
-            d: Dictionnaire contenant les propriétés de la règle
-            
-        Returns:
-            Une instance de FunctionalDependency
-            
-        Raises:
-            ValueError: Si le dictionnaire ne contient pas les champs requis
-        """
-        # Vérifier les champs obligatoires
-        if "table" not in d or "determinant" not in d or "dependent" not in d:
-            raise ValueError("Missing required fields in FunctionalDependency dictionary.")
-        
-        # Extraction des paramètres d'algorithme
-        algorithm_settings = None
-        if "algorithm_settings" in d:
-            algorithm_settings = FDAlgorithmSettings(**d["algorithm_settings"])
-        
-        # Extraction des paramètres de compatibilité
-        compatibility_settings = None
-        if "compatibility_settings" in d:
-            compatibility_settings = FDCompatibilitySettings(**d["compatibility_settings"])
-        
-        # Conversion des aliases en set s'ils existent
-        aliases = set(d.get("aliases", [])) if d.get("aliases") else None
-        
-        return cls(
-            table=d["table"],
-            determinant=tuple(d["determinant"]),
-            dependent=tuple(d["dependent"]),
-            correct=d.get("correct"),
-            compatible=d.get("compatible"),
-            confidence=d.get("confidence"),
-            support=d.get("support"),
-            coverage=d.get("coverage"),
-            n_violations=d.get("n_violations"),
-            violation_examples=d.get("violation_examples"),
-            converted_from_egd=d.get("converted_from_egd"),
-            original_egd=d.get("original_egd"),
-            algorithm_settings=algorithm_settings,
-            compatibility_settings=compatibility_settings,
-            aliases=aliases
-        )
+        with open(filepath, 'w') as f:
+            json.dump(data, f, indent=2)
             
     def __eq__(self, other):
-        """
-        Compare cette dépendance fonctionnelle avec une autre.
-        
-        Deux FDs sont égales si elles ont la même table, le même déterminant 
-        (indépendamment de l'ordre) et le même dépendant (indépendamment de l'ordre).
-        
-        Args:
-            other: L'autre FD à comparer
-            
-        Returns:
-            True si les FDs sont équivalentes, False sinon
-        """
+        """Vérifie si deux dépendances fonctionnelles sont égales."""
         if not isinstance(other, FunctionalDependency):
-            return NotImplemented
-            
-        # Comparer la table
-        if self.table != other.table:
             return False
-            
-        # Comparer les déterminants (ensembles)
-        if set(self.determinant) != set(other.determinant):
-            return False
-            
-        # Comparer les dépendants (ensembles)
-        if set(self.dependent) != set(other.dependent):
-            return False
-            
-        return True
-    
-    def __hash__(self):
-        """
-        Calcule un hash cohérent avec la méthode __eq__.
-        
-        Cela permet d'utiliser des FDs comme clés de dictionnaires et dans des ensembles.
-        
-        Returns:
-            Valeur de hash
-        """
-        # Utiliser un tuple contenant la table et les versions triées des déterminants et dépendants
-        return hash((self.table, tuple(sorted(self.determinant)), tuple(sorted(self.dependent))))
-    
-    def to_display_string(self) -> str:
-        """
-        Retourne une représentation lisible de la dépendance fonctionnelle.
-        
-        Returns:
-            Une chaîne formatée représentant la dépendance
-        """
-        lhs = ", ".join(self.determinant)
-        rhs = ", ".join(self.dependent)
-        
-        # Ajouter les métriques si disponibles
-        metrics = []
-        if self.confidence is not None:
-            metrics.append(f"conf={self.confidence:.2f}")
-        if self.support is not None:
-            metrics.append(f"supp={self.support:.2f}")
-        
-        metrics_str = f" [{', '.join(metrics)}]" if metrics else ""
-        
-        return f"{self.table}: {lhs} → {rhs}{metrics_str}"
-    
-    def __str__(self) -> str:
-        return self.to_display_string()
-    
-    def is_minimal(self, all_fds: List['FunctionalDependency']) -> bool:
-        """
-        Vérifie si cette dépendance fonctionnelle est minimale.
-        Une FD est minimale si:
-        1. Aucun sous-ensemble de son déterminant ne détermine ses dépendants
-        2. On ne peut pas réduire les dépendants sans changer la sémantique
-        
-        Args:
-            all_fds: Liste de toutes les FDs pour vérifier la minimalité
-            
-        Returns:
-            True si la FD est minimale, False sinon
-        """
-        # Vérifier si un sous-ensemble du déterminant suffit
-        if len(self.determinant) > 1:
-            for i in range(len(self.determinant)):
-                # Créer un sous-ensemble en omettant l'élément i
-                sub_determinant = tuple(col for j, col in enumerate(self.determinant) if j != i)
-                
-                # Vérifier si une FD avec ce sous-ensemble existe déjà
-                for fd in all_fds:
-                    if (fd.table == self.table and 
-                        set(fd.determinant) == set(sub_determinant) and 
-                        set(fd.dependent).issuperset(set(self.dependent))):
-                        return False
-        
-        # Vérifier si on peut réduire les dépendants
-        if len(self.dependent) > 1:
-            # Pour chaque dépendant, vérifier s'il est déterminé indépendamment
-            for dep in self.dependent:
-                for fd in all_fds:
-                    if (fd.table == self.table and 
-                        set(fd.determinant) == set(self.determinant) and 
-                        len(fd.dependent) == 1 and dep in fd.dependent):
-                        # Nous avons trouvé une FD plus spécifique
-                        return False
-        
-        return True
+        return (self.table == other.table and 
+                set(self.lhs) == set(other.lhs) and 
+                self.rhs == other.rhs)

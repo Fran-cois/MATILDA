@@ -1,0 +1,899 @@
+# Règles communes sauvegardées: 448
+# Date: 2025-04-30 13:46:50
+
+1. PERSON_DE_NON_INCLUDED_AAA: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col5
+
+2. PERSON_DE_NON_INCLUDED_AAA: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col4
+
+3. PERSON_DE_NON_INCLUDED_AAA: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col4
+
+4. PERSON_DE_NON_INCLUDED_AAA: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col5
+
+5. PERSON_DE_NON_INCLUDED_AAA: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col6
+
+6. PERSON_DE_NON_INCLUDED_AAA: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col6
+
+7. PERSON_DE_NON_INCLUDED_AAA: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col0
+
+8. PERSON_DE_NON_INCLUDED_AAA: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col1
+
+9. PERSON_DE_NON_INCLUDED_AAA: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col2
+
+10. PERSON_DE_NON_INCLUDED_AAA: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col3
+
+11. PERSON_DE_NON_INCLUDED: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col2
+
+12. PERSON_DE_NON_INCLUDED: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col2
+
+13. PERSON_DE_NON_INCLUDED: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col2
+
+14. PERSON_DE_NON_INCLUDED: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col2
+
+15. PERSON_EN: col0 → col1 [conf=8.38, supp=1.00] <=> PERSON_EN: col0 → col1
+
+16. PERSON_EN: col0 → col1 [conf=0.21, supp=0.15] <=> PERSON_EN: col0 → col1
+
+17. PERSON_EN: col0 → col2 [conf=8.38, supp=1.00] <=> PERSON_EN: col0 → col2
+
+18. PERSON_EN: col2 → col0 [conf=1.00, supp=8.38] <=> PERSON_EN: col2 → col0
+
+19. PERSON_EN: col2 → col0 [conf=0.12, supp=0.60] <=> PERSON_EN: col2 → col0
+
+20. PERSON_EN: col0 → col2 [conf=0.60, supp=0.12] <=> PERSON_EN: col0 → col2
+
+21. PERSON_DE_PIVOT_ALL: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col2
+
+22. PERSON_DE_PIVOT_ALL: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col2
+
+23. PERSON_DE_PIVOT_ALL: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col2
+
+24. PERSON_DE_PIVOT_ALL: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col2
+
+25. EXPERMENTS_THRESHOLDS: col18 → col3 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col3
+
+26. EXPERMENTS_THRESHOLDS: col27 → col3 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col3
+
+27. PERSON_DE_NON_INCLUDED_AAA: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col3
+
+28. PERSON_DE_NON_INCLUDED_AAA: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col3
+
+29. PERSON_DE_NON_INCLUDED_AAA: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col3
+
+30. PERSON_DE_NON_INCLUDED_AAA: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col3
+
+31. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3
+
+32. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3
+
+33. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3
+
+34. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3
+
+35. PERSON_DE_PIVOT_ALL: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col0
+
+36. PERSON_DE_PIVOT_ALL: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col0
+
+37. PERSON_DE_PIVOT_ALL: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col0
+
+38. PERSON_DE_PIVOT_ALL: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col0
+
+39. PERSON_DE_NON_INCLUDED_CCC: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col2
+
+40. PERSON_DE_NON_INCLUDED_CCC: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col2
+
+41. PERSON_DE_NON_INCLUDED_CCC: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col2
+
+42. PERSON_DE_NON_INCLUDED_CCC: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col2
+
+43. PERSON_DE_PIVOT_ALL: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col6
+
+44. PERSON_DE_PIVOT_ALL: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col6
+
+45. PERSON_EN_SHREDDED: col4 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col4 → col6
+
+46. PERSON_EN_SHREDDED: col5 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col5 → col6
+
+47. EXPERMENTS_THRESHOLDS: col18 → col5 [conf=1.00, supp=105.19] <=> EXPERMENTS_THRESHOLDS: col18 → col5
+
+48. EXPERMENTS_THRESHOLDS: col18 → col5 [conf=0.01, supp=0.64] <=> EXPERMENTS_THRESHOLDS: col18 → col5
+
+49. EXPERMENTS_THRESHOLDS: col19 → col5 [conf=1.00, supp=105.19] <=> EXPERMENTS_THRESHOLDS: col19 → col5
+
+50. EXPERMENTS_THRESHOLDS: col19 → col5 [conf=0.05, supp=0.17] <=> EXPERMENTS_THRESHOLDS: col19 → col5
+
+51. PERSON_DE_NON_INCLUDED_AAA: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col6
+
+52. PERSON_DE_NON_INCLUDED_AAA: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col6
+
+53. EXPERMENTS_THRESHOLDS: col27 → col25 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col25
+
+54. EXPERMENTS_THRESHOLDS: col18 → col25 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col25
+
+55. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3
+
+56. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3
+
+57. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3
+
+58. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3
+
+59. EXPERMENTS_THRESHOLDS: col18 → col22 [conf=1.00, supp=13.30] <=> EXPERMENTS_THRESHOLDS: col18 → col22
+
+60. EXPERMENTS_THRESHOLDS: col20 → col22 [conf=1.00, supp=13.30] <=> EXPERMENTS_THRESHOLDS: col20 → col22
+
+61. EXPERMENTS_THRESHOLDS: col18 → col2 [conf=1.00, supp=216.73] <=> EXPERMENTS_THRESHOLDS: col18 → col2
+
+62. EXPERMENTS_THRESHOLDS: col27 → col2 [conf=1.00, supp=216.73] <=> EXPERMENTS_THRESHOLDS: col27 → col2
+
+63. EXPERMENTS_THRESHOLDS: col18 → col17 [conf=1.00, supp=26.85] <=> EXPERMENTS_THRESHOLDS: col18 → col17
+
+64. EXPERMENTS_THRESHOLDS: col18 → col17 [conf=0.04, supp=0.60] <=> EXPERMENTS_THRESHOLDS: col18 → col17
+
+65. EXPERMENTS_THRESHOLDS: col19 → col17 [conf=1.00, supp=26.85] <=> EXPERMENTS_THRESHOLDS: col19 → col17
+
+66. EXPERMENTS_THRESHOLDS: col19 → col17 [conf=0.08, supp=0.06] <=> EXPERMENTS_THRESHOLDS: col19 → col17
+
+67. EXPERMENTS_THRESHOLDS: col18 → col1 [conf=1.00, supp=334.76] <=> EXPERMENTS_THRESHOLDS: col18 → col1
+
+68. EXPERMENTS_THRESHOLDS: col27 → col1 [conf=1.00, supp=334.76] <=> EXPERMENTS_THRESHOLDS: col27 → col1
+
+69. PERSON_DE_NON_INCLUDED_AAA: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col1
+
+70. PERSON_DE_NON_INCLUDED_AAA: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col1
+
+71. PERSON_DE_NON_INCLUDED_AAA: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col1
+
+72. PERSON_DE_NON_INCLUDED_AAA: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col1
+
+73. PERSON_DE_NON_INCLUDED: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col5
+
+74. PERSON_DE_NON_INCLUDED: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED: col5 → col4
+
+75. PERSON_DE_NON_INCLUDED: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED: col5 → col4
+
+76. PERSON_DE_NON_INCLUDED: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED: col4 → col5
+
+77. PERSON_DE_NON_INCLUDED: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col6
+
+78. PERSON_DE_NON_INCLUDED: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col6
+
+79. PERSON_DE_NON_INCLUDED: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col0
+
+80. PERSON_DE_NON_INCLUDED: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col1
+
+81. PERSON_DE_NON_INCLUDED: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col2
+
+82. PERSON_DE_NON_INCLUDED: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col3
+
+83. PERSON_EN: col2 → col0 [conf=1.65, supp=1.00] <=> PERSON_EN: col2 → col0
+
+84. PERSON_EN: col0 → col2 [conf=1.00, supp=1.65] <=> PERSON_EN: col0 → col2
+
+85. PERSON_EN: col2 → col1 [conf=1.65, supp=1.00] <=> PERSON_EN: col2 → col1
+
+86. PERSON_DE_NON_INCLUDED_CCC: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col0
+
+87. PERSON_DE_NON_INCLUDED_CCC: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col0
+
+88. PERSON_DE_NON_INCLUDED_CCC: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col0
+
+89. PERSON_DE_NON_INCLUDED_CCC: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col0
+
+90. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6
+
+91. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6
+
+92. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0
+
+93. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1
+
+94. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2
+
+95. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3
+
+96. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col5
+
+97. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col4
+
+98. PERSON_EN_SHREDDED: col5 → col6 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col6
+
+99. PERSON_EN_SHREDDED: col5 → col6 [conf=0.46, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col6
+
+100. PERSON_EN_SHREDDED: col5 → col0 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col0
+
+101. PERSON_EN_SHREDDED: col5 → col1 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col1
+
+102. PERSON_EN_SHREDDED: col5 → col2 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col2
+
+103. PERSON_EN_SHREDDED: col5 → col3 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col3
+
+104. PERSON_EN_SHREDDED: col5 → col4 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col4
+
+105. PERSON_EN_SHREDDED: col4 → col5 [conf=1.00, supp=2.11] <=> PERSON_EN_SHREDDED: col4 → col5
+
+106. EXPERMENTS_THRESHOLDS: col18 → col21 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col21
+
+107. EXPERMENTS_THRESHOLDS: col18 → col21 [conf=0.14, supp=0.60] <=> EXPERMENTS_THRESHOLDS: col18 → col21
+
+108. EXPERMENTS_THRESHOLDS: col18 → col22 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col22
+
+109. EXPERMENTS_THRESHOLDS: col18 → col22 [conf=0.08, supp=0.60] <=> EXPERMENTS_THRESHOLDS: col18 → col22
+
+110. EXPERMENTS_THRESHOLDS: col18 → col23 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col23
+
+111. EXPERMENTS_THRESHOLDS: col18 → col24 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col24
+
+112. EXPERMENTS_THRESHOLDS: col18 → col25 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col25
+
+113. EXPERMENTS_THRESHOLDS: col27 → col18 [conf=1.00, supp=1.68] <=> EXPERMENTS_THRESHOLDS: col27 → col18
+
+114. EXPERMENTS_THRESHOLDS: col18 → col27 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col27
+
+115. EXPERMENTS_THRESHOLDS: col27 → col18 [conf=0.59, supp=0.84] <=> EXPERMENTS_THRESHOLDS: col27 → col18
+
+116. EXPERMENTS_THRESHOLDS: col18 → col27 [conf=0.84, supp=0.59] <=> EXPERMENTS_THRESHOLDS: col18 → col27
+
+117. EXPERMENTS_THRESHOLDS: col18 → col28 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col28
+
+118. EXPERMENTS_THRESHOLDS: col18 → col0 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col0
+
+119. EXPERMENTS_THRESHOLDS: col18 → col1 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col1
+
+120. EXPERMENTS_THRESHOLDS: col18 → col2 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col2
+
+121. EXPERMENTS_THRESHOLDS: col18 → col3 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col3
+
+122. EXPERMENTS_THRESHOLDS: col18 → col4 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col4
+
+123. EXPERMENTS_THRESHOLDS: col18 → col5 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col5
+
+124. EXPERMENTS_THRESHOLDS: col18 → col6 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col6
+
+125. EXPERMENTS_THRESHOLDS: col18 → col7 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col7
+
+126. EXPERMENTS_THRESHOLDS: col18 → col8 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col8
+
+127. EXPERMENTS_THRESHOLDS: col18 → col9 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col9
+
+128. EXPERMENTS_THRESHOLDS: col18 → col10 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col10
+
+129. EXPERMENTS_THRESHOLDS: col18 → col11 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col11
+
+130. EXPERMENTS_THRESHOLDS: col18 → col12 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col12
+
+131. EXPERMENTS_THRESHOLDS: col18 → col13 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col13
+
+132. EXPERMENTS_THRESHOLDS: col18 → col14 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col14
+
+133. EXPERMENTS_THRESHOLDS: col18 → col15 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col15
+
+134. EXPERMENTS_THRESHOLDS: col18 → col16 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col16
+
+135. EXPERMENTS_THRESHOLDS: col18 → col17 [conf=1.68, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col18 → col17
+
+136. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col5
+
+137. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col4
+
+138. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col5
+
+139. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col4
+
+140. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6
+
+141. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6
+
+142. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0
+
+143. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1
+
+144. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2
+
+145. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3
+
+146. PERSON_EN_SHREDDED: col5 → col4 [conf=1.00, supp=1.98] <=> PERSON_EN_SHREDDED: col5 → col4
+
+147. PERSON_EN_SHREDDED: col4 → col5 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col5
+
+148. PERSON_EN_SHREDDED: col5 → col4 [conf=0.50, supp=0.47] <=> PERSON_EN_SHREDDED: col5 → col4
+
+149. PERSON_EN_SHREDDED: col4 → col5 [conf=0.47, supp=0.50] <=> PERSON_EN_SHREDDED: col4 → col5
+
+150. PERSON_EN_SHREDDED: col4 → col6 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col6
+
+151. PERSON_EN_SHREDDED: col4 → col6 [conf=0.44, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col6
+
+152. PERSON_EN_SHREDDED: col4 → col0 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col0
+
+153. PERSON_EN_SHREDDED: col4 → col1 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col1
+
+154. PERSON_EN_SHREDDED: col4 → col2 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col2
+
+155. PERSON_EN_SHREDDED: col4 → col3 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col3
+
+156. EXPERMENTS_THRESHOLDS: col21 → col19 [conf=1.00, supp=33.02] <=> EXPERMENTS_THRESHOLDS: col21 → col19
+
+157. EXPERMENTS_THRESHOLDS: col21 → col19 [conf=0.04, supp=0.17] <=> EXPERMENTS_THRESHOLDS: col21 → col19
+
+158. EXPERMENTS_THRESHOLDS: col27 → col19 [conf=1.00, supp=33.02] <=> EXPERMENTS_THRESHOLDS: col27 → col19
+
+159. EXPERMENTS_THRESHOLDS: col27 → col19 [conf=0.03, supp=0.85] <=> EXPERMENTS_THRESHOLDS: col27 → col19
+
+160. EXPERMENTS_THRESHOLDS: col19 → col5 [conf=33.02, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col19 → col5
+
+161. EXPERMENTS_THRESHOLDS: col19 → col6 [conf=33.02, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col19 → col6
+
+162. EXPERMENTS_THRESHOLDS: col19 → col11 [conf=33.02, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col19 → col11
+
+163. EXPERMENTS_THRESHOLDS: col19 → col12 [conf=33.02, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col19 → col12
+
+164. EXPERMENTS_THRESHOLDS: col19 → col17 [conf=33.02, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col19 → col17
+
+165. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1
+
+166. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1
+
+167. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1
+
+168. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1
+
+169. EXPERMENTS_THRESHOLDS: col18 → col0 [conf=1.00, supp=316.86] <=> EXPERMENTS_THRESHOLDS: col18 → col0
+
+170. EXPERMENTS_THRESHOLDS: col27 → col0 [conf=1.00, supp=316.86] <=> EXPERMENTS_THRESHOLDS: col27 → col0
+
+171. EXPERMENTS_THRESHOLDS: col27 → col28 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col28
+
+172. EXPERMENTS_THRESHOLDS: col27 → col0 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col0
+
+173. EXPERMENTS_THRESHOLDS: col27 → col1 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col1
+
+174. EXPERMENTS_THRESHOLDS: col27 → col2 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col2
+
+175. EXPERMENTS_THRESHOLDS: col27 → col3 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col3
+
+176. EXPERMENTS_THRESHOLDS: col27 → col4 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col4
+
+177. EXPERMENTS_THRESHOLDS: col27 → col7 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col7
+
+178. EXPERMENTS_THRESHOLDS: col27 → col8 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col8
+
+179. EXPERMENTS_THRESHOLDS: col27 → col9 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col9
+
+180. EXPERMENTS_THRESHOLDS: col27 → col10 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col10
+
+181. EXPERMENTS_THRESHOLDS: col27 → col13 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col13
+
+182. EXPERMENTS_THRESHOLDS: col27 → col14 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col14
+
+183. EXPERMENTS_THRESHOLDS: col27 → col15 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col15
+
+184. EXPERMENTS_THRESHOLDS: col27 → col16 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col16
+
+185. EXPERMENTS_THRESHOLDS: col27 → col18 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col18
+
+186. EXPERMENTS_THRESHOLDS: col18 → col27 [conf=1.00, supp=1.19] <=> EXPERMENTS_THRESHOLDS: col18 → col27
+
+187. EXPERMENTS_THRESHOLDS: col27 → col19 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col19
+
+188. EXPERMENTS_THRESHOLDS: col27 → col20 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col20
+
+189. EXPERMENTS_THRESHOLDS: col27 → col23 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col23
+
+190. EXPERMENTS_THRESHOLDS: col27 → col24 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col24
+
+191. EXPERMENTS_THRESHOLDS: col27 → col25 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col25
+
+192. EXPERMENTS_THRESHOLDS: col27 → col26 [conf=1.19, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col27 → col26
+
+193. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6
+
+194. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6
+
+195. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6
+
+196. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6
+
+197. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0
+
+198. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1
+
+199. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2
+
+200. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3
+
+201. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col5
+
+202. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col4
+
+203. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1
+
+204. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1
+
+205. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1
+
+206. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1
+
+207. EXPERMENTS_THRESHOLDS: col18 → col16 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col16
+
+208. EXPERMENTS_THRESHOLDS: col27 → col16 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col16
+
+209. PERSON_EN_SHREDDED: col4 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col3
+
+210. PERSON_EN_SHREDDED: col4 → col3 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col3
+
+211. PERSON_EN_SHREDDED: col5 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col3
+
+212. PERSON_EN_SHREDDED: col5 → col3 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col3
+
+213. PERSON_DE_NON_INCLUDED_AAA: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col0
+
+214. PERSON_DE_NON_INCLUDED_AAA: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col0
+
+215. PERSON_DE_NON_INCLUDED_AAA: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col0
+
+216. PERSON_DE_NON_INCLUDED_AAA: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col0
+
+217. EXPERMENTS_THRESHOLDS: col18 → col8 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col8
+
+218. EXPERMENTS_THRESHOLDS: col27 → col8 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col8
+
+219. EXPERMENTS_THRESHOLDS: col27 → col23 [conf=1.00, supp=157.18] <=> EXPERMENTS_THRESHOLDS: col27 → col23
+
+220. EXPERMENTS_THRESHOLDS: col18 → col23 [conf=1.00, supp=157.18] <=> EXPERMENTS_THRESHOLDS: col18 → col23
+
+221. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6
+
+222. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6
+
+223. EXPERMENTS_THRESHOLDS: col18 → col7 [conf=1.00, supp=515.82] <=> EXPERMENTS_THRESHOLDS: col18 → col7
+
+224. EXPERMENTS_THRESHOLDS: col27 → col7 [conf=1.00, supp=515.82] <=> EXPERMENTS_THRESHOLDS: col27 → col7
+
+225. PERSON_DE: col0 → col2 [conf=1.00, supp=5.95] <=> PERSON_DE: col0 → col2
+
+226. PERSON_DE: col2 → col0 [conf=5.95, supp=1.00] <=> PERSON_DE: col2 → col0
+
+227. PERSON_DE: col1 → col2 [conf=1.00, supp=5.95] <=> PERSON_DE: col1 → col2
+
+228. PERSON_DE: col2 → col1 [conf=5.95, supp=1.00] <=> PERSON_DE: col2 → col1
+
+229. PERSON_DE_NON_INCLUDED: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col3
+
+230. PERSON_DE_NON_INCLUDED: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col3
+
+231. PERSON_DE_NON_INCLUDED: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col3
+
+232. PERSON_DE_NON_INCLUDED: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col3
+
+233. PERSON_DE_NON_INCLUDED_BBB: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col4
+
+234. PERSON_DE_NON_INCLUDED_BBB: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col5
+
+235. PERSON_DE_NON_INCLUDED_BBB: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col5
+
+236. PERSON_DE_NON_INCLUDED_BBB: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col4
+
+237. PERSON_DE_NON_INCLUDED_BBB: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col6
+
+238. PERSON_DE_NON_INCLUDED_BBB: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col6
+
+239. PERSON_DE_NON_INCLUDED_BBB: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col0
+
+240. PERSON_DE_NON_INCLUDED_BBB: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col1
+
+241. PERSON_DE_NON_INCLUDED_BBB: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col2
+
+242. PERSON_DE_NON_INCLUDED_BBB: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col3
+
+243. PERSON_DE_PIVOT_ALL: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col3
+
+244. PERSON_DE_PIVOT_ALL: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col3
+
+245. PERSON_DE_PIVOT_ALL: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col3
+
+246. PERSON_DE_PIVOT_ALL: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col3
+
+247. PERSON_DE_NON_INCLUDED_CCC: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col6
+
+248. PERSON_DE_NON_INCLUDED_CCC: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col6
+
+249. PERSON_DE_NON_INCLUDED_CCC: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col0
+
+250. PERSON_DE_NON_INCLUDED_CCC: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col1
+
+251. PERSON_DE_NON_INCLUDED_CCC: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col2
+
+252. PERSON_DE_NON_INCLUDED_CCC: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col3
+
+253. PERSON_DE_NON_INCLUDED_CCC: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col5
+
+254. PERSON_DE_NON_INCLUDED_CCC: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col4
+
+255. PERSON_DE_NON_INCLUDED_BBB: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col6
+
+256. PERSON_DE_NON_INCLUDED_BBB: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col6
+
+257. EXPERMENTS_THRESHOLDS: col18 → col10 [conf=1.00, supp=318.94] <=> EXPERMENTS_THRESHOLDS: col18 → col10
+
+258. EXPERMENTS_THRESHOLDS: col27 → col10 [conf=1.00, supp=318.94] <=> EXPERMENTS_THRESHOLDS: col27 → col10
+
+259. PERSON_DE_NON_INCLUDED: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col0
+
+260. PERSON_DE_NON_INCLUDED: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col0
+
+261. PERSON_DE_NON_INCLUDED: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col0
+
+262. PERSON_DE_NON_INCLUDED: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col0
+
+263. EXPERMENTS_THRESHOLDS: col27 → col26 [conf=1.00, supp=8.00] <=> EXPERMENTS_THRESHOLDS: col27 → col26
+
+264. EXPERMENTS_THRESHOLDS: col27 → col26 [conf=0.13, supp=0.84] <=> EXPERMENTS_THRESHOLDS: col27 → col26
+
+265. PERSON_DE_NON_INCLUDED_CCC: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col3
+
+266. PERSON_DE_NON_INCLUDED_CCC: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col3
+
+267. PERSON_DE_NON_INCLUDED_CCC: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col3
+
+268. PERSON_DE_NON_INCLUDED_CCC: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col3
+
+269. PERSON_DE_PIVOT_ALL: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col6
+
+270. PERSON_DE_PIVOT_ALL: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col6
+
+271. PERSON_DE_PIVOT_ALL: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col0
+
+272. PERSON_DE_PIVOT_ALL: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col1
+
+273. PERSON_DE_PIVOT_ALL: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col2
+
+274. PERSON_DE_PIVOT_ALL: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col3
+
+275. PERSON_DE_PIVOT_ALL: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_PIVOT_ALL: col4 → col5
+
+276. PERSON_DE_PIVOT_ALL: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col4
+
+277. EXPERMENTS_THRESHOLDS: col18 → col6 [conf=1.00, supp=118.94] <=> EXPERMENTS_THRESHOLDS: col18 → col6
+
+278. EXPERMENTS_THRESHOLDS: col19 → col6 [conf=1.00, supp=118.94] <=> EXPERMENTS_THRESHOLDS: col19 → col6
+
+279. EXPERMENTS_THRESHOLDS: col19 → col6 [conf=0.05, supp=0.18] <=> EXPERMENTS_THRESHOLDS: col19 → col6
+
+280. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2
+
+281. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2
+
+282. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2
+
+283. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2
+
+284. PERSON_DE_NON_INCLUDED: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col1
+
+285. PERSON_DE_NON_INCLUDED: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col1
+
+286. PERSON_DE_NON_INCLUDED: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col1
+
+287. PERSON_DE_NON_INCLUDED: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col1
+
+288. PERSON_DE_NON_INCLUDED_BBB: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col0
+
+289. PERSON_DE_NON_INCLUDED_BBB: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col0
+
+290. PERSON_DE_NON_INCLUDED_BBB: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col0
+
+291. PERSON_DE_NON_INCLUDED_BBB: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col0
+
+292. PERSON_DE_NON_INCLUDED_AAA: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col2
+
+293. PERSON_DE_NON_INCLUDED_AAA: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col2
+
+294. PERSON_DE_NON_INCLUDED_AAA: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col2
+
+295. PERSON_DE_NON_INCLUDED_AAA: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col2
+
+296. EXPERMENTS_THRESHOLDS: col27 → col24 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col24
+
+297. EXPERMENTS_THRESHOLDS: col18 → col24 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col24
+
+298. PERSON_DE_PIVOT_ALL: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col1
+
+299. PERSON_DE_PIVOT_ALL: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col1
+
+300. PERSON_DE_PIVOT_ALL: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col1
+
+301. PERSON_DE_PIVOT_ALL: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col1
+
+302. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2
+
+303. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2
+
+304. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2
+
+305. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2
+
+306. PERSON_DE_NON_INCLUDED_BBB: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col6
+
+307. PERSON_DE_NON_INCLUDED_BBB: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col6
+
+308. PERSON_DE_NON_INCLUDED_BBB: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col0
+
+309. PERSON_DE_NON_INCLUDED_BBB: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col1
+
+310. PERSON_DE_NON_INCLUDED_BBB: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col2
+
+311. PERSON_DE_NON_INCLUDED_BBB: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col3
+
+312. PERSON_DE_NON_INCLUDED_BBB: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col4
+
+313. PERSON_DE_NON_INCLUDED_BBB: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col5
+
+314. EXPERMENTS_THRESHOLDS: col18 → col14 [conf=1.00, supp=515.82] <=> EXPERMENTS_THRESHOLDS: col18 → col14
+
+315. EXPERMENTS_THRESHOLDS: col27 → col14 [conf=1.00, supp=515.82] <=> EXPERMENTS_THRESHOLDS: col27 → col14
+
+316. PERSON_DE_PIVOT_ALL: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_PIVOT_ALL: col5 → col4
+
+317. PERSON_DE_PIVOT_ALL: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col5
+
+318. PERSON_DE_PIVOT_ALL: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_PIVOT_ALL: col4 → col5
+
+319. PERSON_DE_PIVOT_ALL: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_PIVOT_ALL: col5 → col4
+
+320. PERSON_DE_PIVOT_ALL: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col6
+
+321. PERSON_DE_PIVOT_ALL: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col6
+
+322. PERSON_DE_PIVOT_ALL: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col0
+
+323. PERSON_DE_PIVOT_ALL: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col1
+
+324. PERSON_DE_PIVOT_ALL: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col2
+
+325. PERSON_DE_PIVOT_ALL: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col3
+
+326. EXPERMENTS_THRESHOLDS: col21 → col20 [conf=1.00, supp=13.96] <=> EXPERMENTS_THRESHOLDS: col21 → col20
+
+327. EXPERMENTS_THRESHOLDS: col20 → col21 [conf=13.96, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col20 → col21
+
+328. EXPERMENTS_THRESHOLDS: col21 → col20 [conf=0.09, supp=0.18] <=> EXPERMENTS_THRESHOLDS: col21 → col20
+
+329. EXPERMENTS_THRESHOLDS: col20 → col21 [conf=0.18, supp=0.09] <=> EXPERMENTS_THRESHOLDS: col20 → col21
+
+330. EXPERMENTS_THRESHOLDS: col20 → col22 [conf=13.96, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col20 → col22
+
+331. EXPERMENTS_THRESHOLDS: col20 → col22 [conf=0.11, supp=0.10] <=> EXPERMENTS_THRESHOLDS: col20 → col22
+
+332. EXPERMENTS_THRESHOLDS: col27 → col20 [conf=1.00, supp=13.96] <=> EXPERMENTS_THRESHOLDS: col27 → col20
+
+333. EXPERMENTS_THRESHOLDS: col27 → col20 [conf=0.07, supp=0.85] <=> EXPERMENTS_THRESHOLDS: col27 → col20
+
+334. PERSON_EN: col2 → col1 [conf=1.00, supp=6.08] <=> PERSON_EN: col2 → col1
+
+335. PERSON_EN: col2 → col1 [conf=0.27, supp=1.00] <=> PERSON_EN: col2 → col1
+
+336. PERSON_EN: col0 → col1 [conf=1.00, supp=6.08] <=> PERSON_EN: col0 → col1
+
+337. EXPERMENTS_THRESHOLDS: col18 → col4 [conf=1.00, supp=318.94] <=> EXPERMENTS_THRESHOLDS: col18 → col4
+
+338. EXPERMENTS_THRESHOLDS: col27 → col4 [conf=1.00, supp=318.94] <=> EXPERMENTS_THRESHOLDS: col27 → col4
+
+339. PERSON_EN_SHREDDED: col4 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col4 → col2
+
+340. PERSON_EN_SHREDDED: col4 → col2 [conf=0.37, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col2
+
+341. PERSON_EN_SHREDDED: col5 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col5 → col2
+
+342. PERSON_EN_SHREDDED: col5 → col2 [conf=0.40, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col2
+
+343. PERSON_DE_NON_INCLUDED_BBB: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col1
+
+344. PERSON_DE_NON_INCLUDED_BBB: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col1
+
+345. PERSON_DE_NON_INCLUDED_BBB: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col1
+
+346. PERSON_DE_NON_INCLUDED_BBB: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col1
+
+347. EXPERMENTS_THRESHOLDS: col18 → col21 [conf=1.00, supp=7.44] <=> EXPERMENTS_THRESHOLDS: col18 → col21
+
+348. EXPERMENTS_THRESHOLDS: col21 → col19 [conf=7.44, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col21 → col19
+
+349. EXPERMENTS_THRESHOLDS: col21 → col20 [conf=7.44, supp=1.00] <=> EXPERMENTS_THRESHOLDS: col21 → col20
+
+350. EXPERMENTS_THRESHOLDS: col20 → col21 [conf=1.00, supp=7.44] <=> EXPERMENTS_THRESHOLDS: col20 → col21
+
+351. PERSON_DE_NON_INCLUDED_BBB: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col2
+
+352. PERSON_DE_NON_INCLUDED_BBB: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col2
+
+353. PERSON_DE_NON_INCLUDED_BBB: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col2
+
+354. PERSON_DE_NON_INCLUDED_BBB: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col2
+
+355. EXPERMENTS_THRESHOLDS: col18 → col13 [conf=1.00, supp=127.76] <=> EXPERMENTS_THRESHOLDS: col18 → col13
+
+356. EXPERMENTS_THRESHOLDS: col27 → col13 [conf=1.00, supp=127.76] <=> EXPERMENTS_THRESHOLDS: col27 → col13
+
+357. EXPERMENTS_THRESHOLDS: col18 → col28 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS: col18 → col28
+
+358. EXPERMENTS_THRESHOLDS: col27 → col28 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS: col27 → col28
+
+359. PERSON_DE_NON_INCLUDED_BBB: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col3
+
+360. PERSON_DE_NON_INCLUDED_BBB: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col3
+
+361. PERSON_DE_NON_INCLUDED_BBB: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col3
+
+362. PERSON_DE_NON_INCLUDED_BBB: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col3
+
+363. PERSON_DE_NON_INCLUDED_AAA: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col6
+
+364. PERSON_DE_NON_INCLUDED_AAA: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col6
+
+365. PERSON_DE_NON_INCLUDED_AAA: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col0
+
+366. PERSON_DE_NON_INCLUDED_AAA: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col1
+
+367. PERSON_DE_NON_INCLUDED_AAA: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col2
+
+368. PERSON_DE_NON_INCLUDED_AAA: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col3
+
+369. PERSON_DE_NON_INCLUDED_AAA: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col4
+
+370. PERSON_DE_NON_INCLUDED_AAA: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col5
+
+371. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0
+
+372. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0
+
+373. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0
+
+374. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0
+
+375. PERSON_DE_NON_INCLUDED: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col6
+
+376. PERSON_DE_NON_INCLUDED: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col6
+
+377. PERSON_DE_NON_INCLUDED_CCC: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col1
+
+378. PERSON_DE_NON_INCLUDED_CCC: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col1
+
+379. PERSON_DE_NON_INCLUDED_CCC: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col1
+
+380. PERSON_DE_NON_INCLUDED_CCC: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col1
+
+381. PERSON_DE_NON_INCLUDED_CCC: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col4
+
+382. PERSON_DE_NON_INCLUDED_CCC: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col5
+
+383. PERSON_DE_NON_INCLUDED_CCC: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col4
+
+384. PERSON_DE_NON_INCLUDED_CCC: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col5
+
+385. PERSON_DE_NON_INCLUDED_CCC: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col6
+
+386. PERSON_DE_NON_INCLUDED_CCC: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col6
+
+387. PERSON_DE_NON_INCLUDED_CCC: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col0
+
+388. PERSON_DE_NON_INCLUDED_CCC: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col1
+
+389. PERSON_DE_NON_INCLUDED_CCC: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col2
+
+390. PERSON_DE_NON_INCLUDED_CCC: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col3
+
+391. EXPERMENTS_THRESHOLDS: col18 → col9 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col9
+
+392. EXPERMENTS_THRESHOLDS: col27 → col9 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col9
+
+393. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0
+
+394. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0
+
+395. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0
+
+396. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0
+
+397. PERSON_EN_SHREDDED: col4 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col0
+
+398. PERSON_EN_SHREDDED: col4 → col0 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col0
+
+399. PERSON_EN_SHREDDED: col5 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col0
+
+400. PERSON_EN_SHREDDED: col5 → col0 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col0
+
+401. EXPERMENTS_THRESHOLDS: col18 → col15 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col18 → col15
+
+402. EXPERMENTS_THRESHOLDS: col27 → col15 [conf=1.00, supp=769.00] <=> EXPERMENTS_THRESHOLDS: col27 → col15
+
+403. PERSON_DE_NON_INCLUDED: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col6
+
+404. PERSON_DE_NON_INCLUDED: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col6
+
+405. PERSON_DE_NON_INCLUDED: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col0
+
+406. PERSON_DE_NON_INCLUDED: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col1
+
+407. PERSON_DE_NON_INCLUDED: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col2
+
+408. PERSON_DE_NON_INCLUDED: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col3
+
+409. PERSON_DE_NON_INCLUDED: col5 → col4 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col4
+
+410. PERSON_DE_NON_INCLUDED: col4 → col5 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED: col4 → col5
+
+411. PERSON_EN_SHREDDED: col4 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col1
+
+412. PERSON_EN_SHREDDED: col4 → col1 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col1
+
+413. PERSON_EN_SHREDDED: col5 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col1
+
+414. PERSON_EN_SHREDDED: col5 → col1 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col1
+
+415. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col4 [conf=1.00, supp=2.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col4
+
+416. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col5 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col5
+
+417. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col4 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col4
+
+418. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col5 [conf=0.50, supp=0.50] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col5
+
+419. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6
+
+420. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6
+
+421. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0
+
+422. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1
+
+423. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2
+
+424. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3
+
+425. PERSON_DE_NON_INCLUDED_CCC: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col6
+
+426. PERSON_DE_NON_INCLUDED_CCC: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col6
+
+427. EXPERMENTS_THRESHOLDS: col18 → col12 [conf=1.00, supp=105.19] <=> EXPERMENTS_THRESHOLDS: col18 → col12
+
+428. EXPERMENTS_THRESHOLDS: col18 → col12 [conf=0.01, supp=0.64] <=> EXPERMENTS_THRESHOLDS: col18 → col12
+
+429. EXPERMENTS_THRESHOLDS: col19 → col12 [conf=1.00, supp=105.19] <=> EXPERMENTS_THRESHOLDS: col19 → col12
+
+430. EXPERMENTS_THRESHOLDS: col19 → col12 [conf=0.05, supp=0.17] <=> EXPERMENTS_THRESHOLDS: col19 → col12
+
+431. EXPERMENTS_THRESHOLDS: col18 → col11 [conf=1.00, supp=105.19] <=> EXPERMENTS_THRESHOLDS: col18 → col11
+
+432. EXPERMENTS_THRESHOLDS: col18 → col11 [conf=0.01, supp=0.64] <=> EXPERMENTS_THRESHOLDS: col18 → col11
+
+433. EXPERMENTS_THRESHOLDS: col19 → col11 [conf=1.00, supp=105.19] <=> EXPERMENTS_THRESHOLDS: col19 → col11
+
+434. EXPERMENTS_THRESHOLDS: col19 → col11 [conf=0.05, supp=0.17] <=> EXPERMENTS_THRESHOLDS: col19 → col11
+
+435. PERSON_DE: col1 → col2 [conf=36.40, supp=1.00] <=> PERSON_DE: col1 → col2
+
+436. PERSON_DE: col2 → col1 [conf=1.00, supp=36.40] <=> PERSON_DE: col2 → col1
+
+437. PERSON_DE: col2 → col1 [conf=0.16, supp=0.98] <=> PERSON_DE: col2 → col1
+
+438. PERSON_DE: col1 → col2 [conf=0.98, supp=0.16] <=> PERSON_DE: col1 → col2
+
+439. PERSON_DE: col1 → col0 [conf=36.40, supp=1.00] <=> PERSON_DE: col1 → col0
+
+440. PERSON_DE: col0 → col1 [conf=1.00, supp=36.40] <=> PERSON_DE: col0 → col1
+
+441. PERSON_DE: col0 → col1 [conf=8.23, supp=1.00] <=> PERSON_DE: col0 → col1
+
+442. PERSON_DE: col1 → col0 [conf=1.00, supp=8.23] <=> PERSON_DE: col1 → col0
+
+443. PERSON_DE: col0 → col1 [conf=0.03, supp=0.14] <=> PERSON_DE: col0 → col1
+
+444. PERSON_DE: col1 → col0 [conf=0.14, supp=0.03] <=> PERSON_DE: col1 → col0
+
+445. PERSON_DE: col0 → col2 [conf=8.23, supp=1.00] <=> PERSON_DE: col0 → col2
+
+446. PERSON_DE: col2 → col0 [conf=1.00, supp=8.23] <=> PERSON_DE: col2 → col0
+
+447. PERSON_DE: col0 → col2 [conf=0.17, supp=0.12] <=> PERSON_DE: col0 → col2
+
+448. PERSON_DE: col2 → col0 [conf=0.12, supp=0.17] <=> PERSON_DE: col2 → col0
+

@@ -1,0 +1,2522 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12298830287373842,
+        "support": 0.12185234643265928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12185234643265928,
+        "support": 0.12298830287373842,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1250158972402391,
+        "support": 0.12579984642948555,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12579984642948555,
+        "support": 0.1250158972402391,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1254423467998911,
+        "support": 0.12453898003306627,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12453898003306627,
+        "support": 0.1254423467998911,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12713142707240294,
+        "support": 0.5547024036627242,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5547024036627242,
+        "support": 0.12713142707240294,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.808,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1244425498426023,
+        "support": 0.546908776480761,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.546908776480761,
+        "support": 0.1244425498426023,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.902,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.902,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12211173560071095,
+        "support": 0.12199257742513438,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12199257742513438,
+        "support": 0.12211173560071095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5490465830560533,
+        "support": 0.12505100851113443,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12505100851113443,
+        "support": 0.5490465830560533,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.024,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.024,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 548.928,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 548.928,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12480923311713087,
+        "support": 0.12579714789296587,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12579714789296587,
+        "support": 0.12480923311713087,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12606954013779842,
+        "support": 0.12624552733340821,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12624552733340821,
+        "support": 0.12606954013779842,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12655170207320193,
+        "support": 0.12675853228649256,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12675853228649256,
+        "support": 0.12655170207320193,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12389040217913797,
+        "support": 0.12380906630798547,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12380906630798547,
+        "support": 0.12389040217913797,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12660312463565349,
+        "support": 0.5567697484377504,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5567697484377504,
+        "support": 0.12660312463565349,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.82,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.82,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12565294023393686,
+        "support": 0.12493229249641548,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12493229249641548,
+        "support": 0.12565294023393686,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12566768409004198,
+        "support": 0.1259359566671977,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1259359566671977,
+        "support": 0.12566768409004198,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12649354787318784,
+        "support": 0.12740079906294627,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12740079906294627,
+        "support": 0.12649354787318784,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12551190171487075,
+        "support": 0.1249960172056715,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1249960172056715,
+        "support": 0.12551190171487075,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12665930089189925,
+        "support": 0.12601561255376773,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12601561255376773,
+        "support": 0.12665930089189925,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5497371355743189,
+        "support": 0.1257250495511251,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1257250495511251,
+        "support": 0.5497371355743189,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 125.54,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 125.54,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "black_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12565587407217815,
+        "support": 0.12603693660446383,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12603693660446383,
+        "support": 0.12565587407217815,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "black_king_rank"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12679107231680117,
+        "support": 0.12653120046116156,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "black_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.12653120046116156,
+        "support": 0.12679107231680117,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5487059352085105,
+        "support": 0.1245955753760056,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1245955753760056,
+        "support": 0.5487059352085105,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_king_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_king_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_king_rank"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_rank"
+        ],
+        "dependent": [
+            "white_rook_file"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 124.646,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "krk",
+        "determinant": [
+            "white_rook_file"
+        ],
+        "dependent": [
+            "white_rook_rank"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 124.646,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

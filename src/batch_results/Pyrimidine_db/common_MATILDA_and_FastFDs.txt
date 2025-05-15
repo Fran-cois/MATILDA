@@ -1,0 +1,41 @@
+# Règles communes sauvegardées: 19
+# Date: 2025-04-27 17:32:01
+
+1. position: molecule_id → pi_doner [conf=1.00, supp=121.43] <=> position: molecule_id → pi_doner
+
+2. position: position → pi_doner [conf=1.00, supp=121.43] <=> position: position → pi_doner
+
+3. position: molecule_id → pi_acceptor [conf=1.00, supp=43.02] <=> position: molecule_id → pi_acceptor
+
+4. position: position → pi_acceptor [conf=1.00, supp=43.02] <=> position: position → pi_acceptor
+
+5. position: molecule_id → h_acceptor [conf=1.00, supp=67.18] <=> position: molecule_id → h_acceptor
+
+6. position: position → h_acceptor [conf=1.00, supp=67.18] <=> position: position → h_acceptor
+
+7. position: molecule_id → size [conf=1.00, supp=32.27] <=> position: molecule_id → size
+
+8. position: position → size [conf=1.00, supp=32.27] <=> position: position → size
+
+9. position: molecule_id → flex [conf=1.00, supp=100.12] <=> position: molecule_id → flex
+
+10. position: position → flex [conf=1.00, supp=100.12] <=> position: position → flex
+
+11. position: molecule_id → polarisable [conf=1.00, supp=41.42] <=> position: molecule_id → polarisable
+
+12. position: position → polarisable [conf=1.00, supp=41.42] <=> position: position → polarisable
+
+13. position: molecule_id → sigma [conf=1.00, supp=46.66] <=> position: molecule_id → sigma
+
+14. position: position → sigma [conf=1.00, supp=46.66] <=> position: position → sigma
+
+15. molecule: molecule_id → activity [conf=1.00, supp=0.38] <=> molecule: molecule_id → activity
+
+16. position: molecule_id → h_doner [conf=1.00, supp=121.43] <=> position: molecule_id → h_doner
+
+17. position: position → h_doner [conf=1.00, supp=121.43] <=> position: position → h_doner
+
+18. position: molecule_id → polar [conf=1.00, supp=0.61] <=> position: molecule_id → polar
+
+19. position: position → polar [conf=1.00, supp=0.61] <=> position: position → polar
+

@@ -1,0 +1,1473 @@
+# Règles communes sauvegardées: 735
+# Date: 2025-04-30 13:47:10
+
+1. PERSON_DE_NON_INCLUDED_AAA: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col6
+
+2. PERSON_DE_NON_INCLUDED_AAA: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col6
+
+3. PERSON_DE_NON_INCLUDED_AAA: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col0
+
+4. PERSON_DE_NON_INCLUDED_AAA: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col1
+
+5. PERSON_DE_NON_INCLUDED_AAA: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col2
+
+6. PERSON_DE_NON_INCLUDED_AAA: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col3
+
+7. PERSON_DE_NON_INCLUDED: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col3 → col2
+
+8. PERSON_DE_NON_INCLUDED: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col3
+
+9. PERSON_DE_NON_INCLUDED: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col2
+
+10. PERSON_DE_NON_INCLUDED: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col3
+
+11. PERSON_DE_NON_INCLUDED: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col2
+
+12. PERSON_DE_NON_INCLUDED: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col2
+
+13. PERSON_DE_NON_INCLUDED: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col2
+
+14. PERSON_DE_NON_INCLUDED: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col2
+
+15. PERSON_DE_NON_INCLUDED: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col6 → col2
+
+16. PERSON_DE_NON_INCLUDED: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col6
+
+17. PERSON_DE_NON_INCLUDED: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col2
+
+18. PERSON_DE_NON_INCLUDED: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col6
+
+19. PERSON_DE_NON_INCLUDED: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col0
+
+20. PERSON_DE_NON_INCLUDED: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col0 → col2
+
+21. PERSON_DE_NON_INCLUDED: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col1
+
+22. PERSON_DE_NON_INCLUDED: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col1 → col2
+
+23. PERSON_EN: col2 → col0 [conf=1.00, supp=8.38] <=> PERSON_EN: col2 → col0
+
+24. PERSON_EN: col2 → col0 [conf=0.12, supp=0.60] <=> PERSON_EN: col2 → col0
+
+25. PERSON_DE_PIVOT_ALL: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col3 → col2
+
+26. PERSON_DE_PIVOT_ALL: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col3
+
+27. PERSON_DE_PIVOT_ALL: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col3
+
+28. PERSON_DE_PIVOT_ALL: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col2
+
+29. PERSON_DE_PIVOT_ALL: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col2
+
+30. PERSON_DE_PIVOT_ALL: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col2
+
+31. PERSON_DE_PIVOT_ALL: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col2
+
+32. PERSON_DE_PIVOT_ALL: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col2
+
+33. PERSON_DE_PIVOT_ALL: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col6
+
+34. PERSON_DE_PIVOT_ALL: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col6 → col2
+
+35. PERSON_DE_PIVOT_ALL: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col6
+
+36. PERSON_DE_PIVOT_ALL: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col2
+
+37. PERSON_DE_PIVOT_ALL: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col0
+
+38. PERSON_DE_PIVOT_ALL: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col0 → col2
+
+39. PERSON_DE_PIVOT_ALL: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col1 → col2
+
+40. PERSON_DE_PIVOT_ALL: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col1
+
+41. EXPERMENTS_THRESHOLDS_PLI: col0 → col5 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS_PLI: col0 → col5
+
+42. EXPERMENTS_THRESHOLDS_PLI: col1 → col5 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS_PLI: col1 → col5
+
+43. EXPERMENTS_THRESHOLDS_PLI: col2 → col5 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS_PLI: col2 → col5
+
+44. EXPERMENTS_THRESHOLDS_PLI: col3 → col5 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS_PLI: col3 → col5
+
+45. EXPERMENTS_THRESHOLDS_PLI: col4 → col5 [conf=1.00, supp=771.00] <=> EXPERMENTS_THRESHOLDS_PLI: col4 → col5
+
+46. PERSON_DE_NON_INCLUDED_AAA: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col3
+
+47. PERSON_DE_NON_INCLUDED_AAA: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col3
+
+48. PERSON_DE_NON_INCLUDED_AAA: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col3
+
+49. PERSON_DE_NON_INCLUDED_AAA: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col3
+
+50. PERSON_DE_NON_INCLUDED_AAA: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col6
+
+51. PERSON_DE_NON_INCLUDED_AAA: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col3
+
+52. PERSON_DE_NON_INCLUDED_AAA: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col6
+
+53. PERSON_DE_NON_INCLUDED_AAA: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col3
+
+54. PERSON_DE_NON_INCLUDED_AAA: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col0
+
+55. PERSON_DE_NON_INCLUDED_AAA: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col3
+
+56. PERSON_DE_NON_INCLUDED_AAA: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col1
+
+57. PERSON_DE_NON_INCLUDED_AAA: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col3
+
+58. PERSON_DE_NON_INCLUDED_AAA: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col3
+
+59. PERSON_DE_NON_INCLUDED_AAA: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col2
+
+60. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3
+
+61. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3
+
+62. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3
+
+63. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3
+
+64. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col3
+
+65. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col6
+
+66. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col3
+
+67. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col6
+
+68. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col3
+
+69. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col0
+
+70. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col1
+
+71. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col3
+
+72. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col3
+
+73. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col2
+
+74. PERSON_DE_PIVOT_ALL: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col1 → col0
+
+75. PERSON_DE_PIVOT_ALL: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col1
+
+76. PERSON_DE_PIVOT_ALL: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col0
+
+77. PERSON_DE_PIVOT_ALL: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col1
+
+78. PERSON_DE_PIVOT_ALL: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col2 → col0
+
+79. PERSON_DE_PIVOT_ALL: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col2
+
+80. PERSON_DE_PIVOT_ALL: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col0
+
+81. PERSON_DE_PIVOT_ALL: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col2
+
+82. PERSON_DE_PIVOT_ALL: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col3 → col0
+
+83. PERSON_DE_PIVOT_ALL: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col3
+
+84. PERSON_DE_PIVOT_ALL: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col3
+
+85. PERSON_DE_PIVOT_ALL: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col0
+
+86. PERSON_DE_PIVOT_ALL: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col0
+
+87. PERSON_DE_PIVOT_ALL: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col0
+
+88. PERSON_DE_PIVOT_ALL: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col0
+
+89. PERSON_DE_PIVOT_ALL: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col0
+
+90. PERSON_DE_PIVOT_ALL: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col6 → col0
+
+91. PERSON_DE_PIVOT_ALL: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col6
+
+92. PERSON_DE_PIVOT_ALL: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col0
+
+93. PERSON_DE_PIVOT_ALL: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col0 → col6
+
+94. PERSON_DE_NON_INCLUDED_CCC: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col2
+
+95. PERSON_DE_NON_INCLUDED_CCC: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col3
+
+96. PERSON_DE_NON_INCLUDED_CCC: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col2
+
+97. PERSON_DE_NON_INCLUDED_CCC: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col3
+
+98. PERSON_DE_NON_INCLUDED_CCC: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col2
+
+99. PERSON_DE_NON_INCLUDED_CCC: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col2
+
+100. PERSON_DE_NON_INCLUDED_CCC: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col2
+
+101. PERSON_DE_NON_INCLUDED_CCC: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col2
+
+102. PERSON_DE_NON_INCLUDED_CCC: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col6
+
+103. PERSON_DE_NON_INCLUDED_CCC: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col2
+
+104. PERSON_DE_NON_INCLUDED_CCC: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col2
+
+105. PERSON_DE_NON_INCLUDED_CCC: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col6
+
+106. PERSON_DE_NON_INCLUDED_CCC: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col2
+
+107. PERSON_DE_NON_INCLUDED_CCC: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col0
+
+108. PERSON_DE_NON_INCLUDED_CCC: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col2
+
+109. PERSON_DE_NON_INCLUDED_CCC: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col1
+
+110. PERSON_DE_PIVOT_ALL: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col0 → col6
+
+111. PERSON_DE_PIVOT_ALL: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col0
+
+112. PERSON_DE_PIVOT_ALL: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col1 → col6
+
+113. PERSON_DE_PIVOT_ALL: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col1
+
+114. PERSON_DE_PIVOT_ALL: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col2
+
+115. PERSON_DE_PIVOT_ALL: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col2 → col6
+
+116. PERSON_DE_PIVOT_ALL: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col3
+
+117. PERSON_DE_PIVOT_ALL: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col3 → col6
+
+118. PERSON_DE_PIVOT_ALL: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col6
+
+119. PERSON_DE_PIVOT_ALL: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col6
+
+120. EXPERMENTS_THRESHOLDS_PLI: col2 → col5 [conf=771.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col2 → col5
+
+121. EXPERMENTS_THRESHOLDS_PLI: col2 → col5 [conf=1.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col2 → col5
+
+122. PERSON_EN_SHREDDED: col6 → col0 [conf=4.56, supp=1.00] <=> PERSON_EN_SHREDDED: col6 → col0
+
+123. PERSON_EN_SHREDDED: col0 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col0 → col6
+
+124. PERSON_EN_SHREDDED: col6 → col1 [conf=4.56, supp=1.00] <=> PERSON_EN_SHREDDED: col6 → col1
+
+125. PERSON_EN_SHREDDED: col1 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col1 → col6
+
+126. PERSON_EN_SHREDDED: col6 → col2 [conf=4.56, supp=1.00] <=> PERSON_EN_SHREDDED: col6 → col2
+
+127. PERSON_EN_SHREDDED: col3 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col3 → col6
+
+128. PERSON_EN_SHREDDED: col6 → col3 [conf=4.56, supp=1.00] <=> PERSON_EN_SHREDDED: col6 → col3
+
+129. PERSON_EN_SHREDDED: col4 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col4 → col6
+
+130. PERSON_EN_SHREDDED: col5 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col5 → col6
+
+131. PERSON_DE_NON_INCLUDED_AAA: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col6
+
+132. PERSON_DE_NON_INCLUDED_AAA: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col0
+
+133. PERSON_DE_NON_INCLUDED_AAA: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col6
+
+134. PERSON_DE_NON_INCLUDED_AAA: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col1
+
+135. PERSON_DE_NON_INCLUDED_AAA: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col6
+
+136. PERSON_DE_NON_INCLUDED_AAA: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col2
+
+137. PERSON_DE_NON_INCLUDED_AAA: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col6
+
+138. PERSON_DE_NON_INCLUDED_AAA: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col3
+
+139. PERSON_DE_NON_INCLUDED_AAA: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col6
+
+140. PERSON_DE_NON_INCLUDED_AAA: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col6
+
+141. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3
+
+142. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3
+
+143. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3
+
+144. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3
+
+145. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col6
+
+146. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col3
+
+147. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col6
+
+148. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col3
+
+149. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col0
+
+150. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col3
+
+151. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col1
+
+152. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col3
+
+153. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col3
+
+154. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col2
+
+155. PERSON_DE_NON_INCLUDED_AAA: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col2
+
+156. PERSON_DE_NON_INCLUDED_AAA: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col1
+
+157. PERSON_DE_NON_INCLUDED_AAA: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col1
+
+158. PERSON_DE_NON_INCLUDED_AAA: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col2
+
+159. PERSON_DE_NON_INCLUDED_AAA: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col1
+
+160. PERSON_DE_NON_INCLUDED_AAA: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col3
+
+161. PERSON_DE_NON_INCLUDED_AAA: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col3
+
+162. PERSON_DE_NON_INCLUDED_AAA: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col1
+
+163. PERSON_DE_NON_INCLUDED_AAA: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col1
+
+164. PERSON_DE_NON_INCLUDED_AAA: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col1
+
+165. PERSON_DE_NON_INCLUDED_AAA: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col1
+
+166. PERSON_DE_NON_INCLUDED_AAA: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col1
+
+167. PERSON_DE_NON_INCLUDED_AAA: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col6
+
+168. PERSON_DE_NON_INCLUDED_AAA: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col1
+
+169. PERSON_DE_NON_INCLUDED_AAA: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col6
+
+170. PERSON_DE_NON_INCLUDED_AAA: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col1
+
+171. PERSON_DE_NON_INCLUDED_AAA: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col0
+
+172. PERSON_DE_NON_INCLUDED_AAA: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col1
+
+173. PERSON_DE_NON_INCLUDED: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col6
+
+174. PERSON_DE_NON_INCLUDED: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col6
+
+175. PERSON_DE_NON_INCLUDED: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col0
+
+176. PERSON_DE_NON_INCLUDED: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col1
+
+177. PERSON_DE_NON_INCLUDED: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col2
+
+178. PERSON_DE_NON_INCLUDED: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col3
+
+179. PERSON_EN: col2 → col0 [conf=1.65, supp=1.00] <=> PERSON_EN: col2 → col0
+
+180. PERSON_EN: col2 → col1 [conf=1.65, supp=1.00] <=> PERSON_EN: col2 → col1
+
+181. PERSON_DE_NON_INCLUDED_CCC: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col1
+
+182. PERSON_DE_NON_INCLUDED_CCC: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col0
+
+183. PERSON_DE_NON_INCLUDED_CCC: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col1
+
+184. PERSON_DE_NON_INCLUDED_CCC: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col0
+
+185. PERSON_DE_NON_INCLUDED_CCC: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col2
+
+186. PERSON_DE_NON_INCLUDED_CCC: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col0
+
+187. PERSON_DE_NON_INCLUDED_CCC: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col2
+
+188. PERSON_DE_NON_INCLUDED_CCC: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col0
+
+189. PERSON_DE_NON_INCLUDED_CCC: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col0
+
+190. PERSON_DE_NON_INCLUDED_CCC: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col3
+
+191. PERSON_DE_NON_INCLUDED_CCC: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col0
+
+192. PERSON_DE_NON_INCLUDED_CCC: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col3
+
+193. PERSON_DE_NON_INCLUDED_CCC: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col0
+
+194. PERSON_DE_NON_INCLUDED_CCC: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col0
+
+195. PERSON_DE_NON_INCLUDED_CCC: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col0
+
+196. PERSON_DE_NON_INCLUDED_CCC: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col0
+
+197. PERSON_DE_NON_INCLUDED_CCC: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col6
+
+198. PERSON_DE_NON_INCLUDED_CCC: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col0
+
+199. PERSON_DE_NON_INCLUDED_CCC: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col0
+
+200. PERSON_DE_NON_INCLUDED_CCC: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col6
+
+201. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6
+
+202. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6
+
+203. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0
+
+204. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1
+
+205. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2
+
+206. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col3
+
+207. PERSON_EN_SHREDDED: col5 → col6 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col6
+
+208. PERSON_EN_SHREDDED: col5 → col6 [conf=0.46, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col6
+
+209. PERSON_EN_SHREDDED: col5 → col0 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col0
+
+210. PERSON_EN_SHREDDED: col5 → col1 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col1
+
+211. PERSON_EN_SHREDDED: col5 → col2 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col2
+
+212. PERSON_EN_SHREDDED: col5 → col3 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col3
+
+213. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6
+
+214. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6
+
+215. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0
+
+216. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1
+
+217. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2
+
+218. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col3
+
+219. PERSON_EN_SHREDDED: col4 → col6 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col6
+
+220. PERSON_EN_SHREDDED: col4 → col6 [conf=0.44, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col6
+
+221. PERSON_EN_SHREDDED: col4 → col0 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col0
+
+222. PERSON_EN_SHREDDED: col4 → col1 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col1
+
+223. PERSON_EN_SHREDDED: col4 → col2 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col2
+
+224. PERSON_EN_SHREDDED: col4 → col3 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col3
+
+225. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col2
+
+226. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col1
+
+227. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col2
+
+228. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col1
+
+229. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col1
+
+230. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col3
+
+231. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col3
+
+232. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col1
+
+233. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1
+
+234. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col1
+
+235. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1
+
+236. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1
+
+237. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col6
+
+238. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col1
+
+239. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col6
+
+240. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col1
+
+241. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col1
+
+242. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col0
+
+243. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col0
+
+244. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col6
+
+245. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col1
+
+246. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col6
+
+247. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col6
+
+248. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col2
+
+249. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col6
+
+250. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col3
+
+251. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col6
+
+252. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6
+
+253. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6
+
+254. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col6
+
+255. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0
+
+256. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col1
+
+257. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2
+
+258. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col3
+
+259. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col1
+
+260. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col2
+
+261. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col2
+
+262. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col1
+
+263. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col1
+
+264. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col3
+
+265. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col3
+
+266. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col1
+
+267. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1
+
+268. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1
+
+269. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1
+
+270. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col1
+
+271. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col6
+
+272. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col1
+
+273. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col6
+
+274. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col1
+
+275. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col0
+
+276. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col1
+
+277. PERSON_EN_SHREDDED: col4 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col3
+
+278. PERSON_EN_SHREDDED: col4 → col3 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col3
+
+279. PERSON_EN_SHREDDED: col5 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col3
+
+280. PERSON_EN_SHREDDED: col5 → col3 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col3
+
+281. PERSON_EN_SHREDDED: col3 → col6 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col6
+
+282. PERSON_EN_SHREDDED: col6 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col6 → col3
+
+283. PERSON_EN_SHREDDED: col6 → col3 [conf=1.00, supp=0.97] <=> PERSON_EN_SHREDDED: col6 → col3
+
+284. PERSON_EN_SHREDDED: col3 → col6 [conf=0.97, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col6
+
+285. PERSON_EN_SHREDDED: col3 → col0 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col0
+
+286. PERSON_EN_SHREDDED: col0 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col0 → col3
+
+287. PERSON_EN_SHREDDED: col3 → col1 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col1
+
+288. PERSON_EN_SHREDDED: col1 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col1 → col3
+
+289. PERSON_EN_SHREDDED: col3 → col2 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col2
+
+290. PERSON_DE_NON_INCLUDED_AAA: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col0
+
+291. PERSON_DE_NON_INCLUDED_AAA: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col1
+
+292. PERSON_DE_NON_INCLUDED_AAA: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col0
+
+293. PERSON_DE_NON_INCLUDED_AAA: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col1
+
+294. PERSON_DE_NON_INCLUDED_AAA: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col0
+
+295. PERSON_DE_NON_INCLUDED_AAA: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col2
+
+296. PERSON_DE_NON_INCLUDED_AAA: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col0
+
+297. PERSON_DE_NON_INCLUDED_AAA: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col2
+
+298. PERSON_DE_NON_INCLUDED_AAA: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col3
+
+299. PERSON_DE_NON_INCLUDED_AAA: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col0
+
+300. PERSON_DE_NON_INCLUDED_AAA: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col0
+
+301. PERSON_DE_NON_INCLUDED_AAA: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col3
+
+302. PERSON_DE_NON_INCLUDED_AAA: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col0
+
+303. PERSON_DE_NON_INCLUDED_AAA: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col0
+
+304. PERSON_DE_NON_INCLUDED_AAA: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col0
+
+305. PERSON_DE_NON_INCLUDED_AAA: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col0
+
+306. PERSON_DE_NON_INCLUDED_AAA: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col6
+
+307. PERSON_DE_NON_INCLUDED_AAA: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col0
+
+308. PERSON_DE_NON_INCLUDED_AAA: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col0
+
+309. PERSON_DE_NON_INCLUDED_AAA: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col6
+
+310. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col0
+
+311. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col6
+
+312. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col1
+
+313. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col6
+
+314. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col6
+
+315. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col2
+
+316. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col3
+
+317. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col6
+
+318. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6
+
+319. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col6
+
+320. PERSON_DE: col2 → col0 [conf=5.95, supp=1.00] <=> PERSON_DE: col2 → col0
+
+321. PERSON_DE: col2 → col1 [conf=5.95, supp=1.00] <=> PERSON_DE: col2 → col1
+
+322. PERSON_DE_NON_INCLUDED: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col3
+
+323. PERSON_DE_NON_INCLUDED: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col3
+
+324. PERSON_DE_NON_INCLUDED: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col3
+
+325. PERSON_DE_NON_INCLUDED: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col3
+
+326. PERSON_DE_NON_INCLUDED: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col6 → col3
+
+327. PERSON_DE_NON_INCLUDED: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col6
+
+328. PERSON_DE_NON_INCLUDED: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col6
+
+329. PERSON_DE_NON_INCLUDED: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col3
+
+330. PERSON_DE_NON_INCLUDED: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col0 → col3
+
+331. PERSON_DE_NON_INCLUDED: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col0
+
+332. PERSON_DE_NON_INCLUDED: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col1
+
+333. PERSON_DE_NON_INCLUDED: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col1 → col3
+
+334. PERSON_DE_NON_INCLUDED: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col2
+
+335. PERSON_DE_NON_INCLUDED: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col2 → col3
+
+336. PERSON_DE_NON_INCLUDED_BBB: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col6
+
+337. PERSON_DE_NON_INCLUDED_BBB: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col6
+
+338. PERSON_DE_NON_INCLUDED_BBB: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col0
+
+339. PERSON_DE_NON_INCLUDED_BBB: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col1
+
+340. PERSON_DE_NON_INCLUDED_BBB: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col2
+
+341. PERSON_DE_NON_INCLUDED_BBB: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col3
+
+342. PERSON_DE_PIVOT_ALL: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col3
+
+343. PERSON_DE_PIVOT_ALL: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col3
+
+344. PERSON_DE_PIVOT_ALL: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col3
+
+345. PERSON_DE_PIVOT_ALL: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col3
+
+346. PERSON_DE_PIVOT_ALL: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col6
+
+347. PERSON_DE_PIVOT_ALL: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col6 → col3
+
+348. PERSON_DE_PIVOT_ALL: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col3
+
+349. PERSON_DE_PIVOT_ALL: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col6
+
+350. PERSON_DE_PIVOT_ALL: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col0 → col3
+
+351. PERSON_DE_PIVOT_ALL: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col0
+
+352. PERSON_DE_PIVOT_ALL: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col1 → col3
+
+353. PERSON_DE_PIVOT_ALL: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col1
+
+354. PERSON_DE_PIVOT_ALL: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col2
+
+355. PERSON_DE_PIVOT_ALL: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col2 → col3
+
+356. PERSON_DE_NON_INCLUDED_CCC: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col6
+
+357. PERSON_DE_NON_INCLUDED_CCC: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col6
+
+358. PERSON_DE_NON_INCLUDED_CCC: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col0
+
+359. PERSON_DE_NON_INCLUDED_CCC: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col1
+
+360. PERSON_DE_NON_INCLUDED_CCC: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col2
+
+361. PERSON_DE_NON_INCLUDED_CCC: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col3
+
+362. PERSON_DE_NON_INCLUDED_BBB: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col6
+
+363. PERSON_DE_NON_INCLUDED_BBB: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col0
+
+364. PERSON_DE_NON_INCLUDED_BBB: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col6
+
+365. PERSON_DE_NON_INCLUDED_BBB: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col1
+
+366. PERSON_DE_NON_INCLUDED_BBB: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col2
+
+367. PERSON_DE_NON_INCLUDED_BBB: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col6
+
+368. PERSON_DE_NON_INCLUDED_BBB: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col3
+
+369. PERSON_DE_NON_INCLUDED_BBB: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col6
+
+370. PERSON_DE_NON_INCLUDED_BBB: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col6
+
+371. PERSON_DE_NON_INCLUDED_BBB: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col6
+
+372. PERSON_DE_NON_INCLUDED: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col1
+
+373. PERSON_DE_NON_INCLUDED: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col1 → col0
+
+374. PERSON_DE_NON_INCLUDED: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col0
+
+375. PERSON_DE_NON_INCLUDED: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col1
+
+376. PERSON_DE_NON_INCLUDED: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col2 → col0
+
+377. PERSON_DE_NON_INCLUDED: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col2
+
+378. PERSON_DE_NON_INCLUDED: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col2
+
+379. PERSON_DE_NON_INCLUDED: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col0
+
+380. PERSON_DE_NON_INCLUDED: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col3
+
+381. PERSON_DE_NON_INCLUDED: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col3 → col0
+
+382. PERSON_DE_NON_INCLUDED: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col3
+
+383. PERSON_DE_NON_INCLUDED: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col0
+
+384. PERSON_DE_NON_INCLUDED: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col0
+
+385. PERSON_DE_NON_INCLUDED: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col0
+
+386. PERSON_DE_NON_INCLUDED: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col0
+
+387. PERSON_DE_NON_INCLUDED: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col0
+
+388. PERSON_DE_NON_INCLUDED: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col6 → col0
+
+389. PERSON_DE_NON_INCLUDED: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col6
+
+390. PERSON_DE_NON_INCLUDED: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col0 → col6
+
+391. PERSON_DE_NON_INCLUDED: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col0
+
+392. PERSON_DE_NON_INCLUDED_CCC: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col3
+
+393. PERSON_DE_NON_INCLUDED_CCC: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col3
+
+394. PERSON_DE_NON_INCLUDED_CCC: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col3
+
+395. PERSON_DE_NON_INCLUDED_CCC: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col3
+
+396. PERSON_DE_NON_INCLUDED_CCC: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col6
+
+397. PERSON_DE_NON_INCLUDED_CCC: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col3
+
+398. PERSON_DE_NON_INCLUDED_CCC: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col6
+
+399. PERSON_DE_NON_INCLUDED_CCC: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col3
+
+400. PERSON_DE_NON_INCLUDED_CCC: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col3
+
+401. PERSON_DE_NON_INCLUDED_CCC: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col0
+
+402. PERSON_DE_NON_INCLUDED_CCC: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col3
+
+403. PERSON_DE_NON_INCLUDED_CCC: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col1
+
+404. PERSON_DE_NON_INCLUDED_CCC: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col2
+
+405. PERSON_DE_NON_INCLUDED_CCC: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col3
+
+406. PERSON_DE_PIVOT_ALL: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col6
+
+407. PERSON_DE_PIVOT_ALL: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col6
+
+408. PERSON_DE_PIVOT_ALL: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col0
+
+409. PERSON_DE_PIVOT_ALL: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col1
+
+410. PERSON_DE_PIVOT_ALL: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col2
+
+411. PERSON_DE_PIVOT_ALL: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col3
+
+412. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col2
+
+413. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col3
+
+414. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col3
+
+415. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col2
+
+416. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2
+
+417. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2
+
+418. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2
+
+419. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col2
+
+420. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col6
+
+421. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col2
+
+422. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col2
+
+423. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col6
+
+424. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col0
+
+425. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col2
+
+426. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col1
+
+427. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col2
+
+428. EXPERMENTS_THRESHOLDS_PLI: col3 → col5 [conf=771.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col3 → col5
+
+429. EXPERMENTS_THRESHOLDS_PLI: col3 → col5 [conf=1.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col3 → col5
+
+430. PERSON_DE_NON_INCLUDED: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col2
+
+431. PERSON_DE_NON_INCLUDED: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col2 → col1
+
+432. PERSON_DE_NON_INCLUDED: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col2
+
+433. PERSON_DE_NON_INCLUDED: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col2 → col1
+
+434. PERSON_DE_NON_INCLUDED: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col3 → col1
+
+435. PERSON_DE_NON_INCLUDED: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col3
+
+436. PERSON_DE_NON_INCLUDED: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col3 → col1
+
+437. PERSON_DE_NON_INCLUDED: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col3
+
+438. PERSON_DE_NON_INCLUDED: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col1
+
+439. PERSON_DE_NON_INCLUDED: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col4 → col1
+
+440. PERSON_DE_NON_INCLUDED: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col1
+
+441. PERSON_DE_NON_INCLUDED: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col1
+
+442. PERSON_DE_NON_INCLUDED: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col6
+
+443. PERSON_DE_NON_INCLUDED: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col6 → col1
+
+444. PERSON_DE_NON_INCLUDED: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col6
+
+445. PERSON_DE_NON_INCLUDED: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col1
+
+446. PERSON_DE_NON_INCLUDED: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col1 → col0
+
+447. PERSON_DE_NON_INCLUDED: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col0 → col1
+
+448. EXPERMENTS_THRESHOLDS_PLI: col0 → col5 [conf=771.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col0 → col5
+
+449. EXPERMENTS_THRESHOLDS_PLI: col0 → col5 [conf=1.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col0 → col5
+
+450. PERSON_DE_NON_INCLUDED_BBB: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col1
+
+451. PERSON_DE_NON_INCLUDED_BBB: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col0
+
+452. PERSON_DE_NON_INCLUDED_BBB: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col1
+
+453. PERSON_DE_NON_INCLUDED_BBB: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col0
+
+454. PERSON_DE_NON_INCLUDED_BBB: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col2
+
+455. PERSON_DE_NON_INCLUDED_BBB: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col0
+
+456. PERSON_DE_NON_INCLUDED_BBB: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col0
+
+457. PERSON_DE_NON_INCLUDED_BBB: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col2
+
+458. PERSON_DE_NON_INCLUDED_BBB: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col0
+
+459. PERSON_DE_NON_INCLUDED_BBB: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col3
+
+460. PERSON_DE_NON_INCLUDED_BBB: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col3
+
+461. PERSON_DE_NON_INCLUDED_BBB: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col0
+
+462. PERSON_DE_NON_INCLUDED_BBB: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col0
+
+463. PERSON_DE_NON_INCLUDED_BBB: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col0
+
+464. PERSON_DE_NON_INCLUDED_BBB: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col0
+
+465. PERSON_DE_NON_INCLUDED_BBB: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col0
+
+466. PERSON_DE_NON_INCLUDED_BBB: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col0
+
+467. PERSON_DE_NON_INCLUDED_BBB: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col6
+
+468. PERSON_DE_NON_INCLUDED_BBB: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col0
+
+469. PERSON_DE_NON_INCLUDED_BBB: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col6
+
+470. PERSON_DE_NON_INCLUDED_AAA: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col2
+
+471. PERSON_DE_NON_INCLUDED_AAA: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col3
+
+472. PERSON_DE_NON_INCLUDED_AAA: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col3
+
+473. PERSON_DE_NON_INCLUDED_AAA: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col3 → col2
+
+474. PERSON_DE_NON_INCLUDED_AAA: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col2
+
+475. PERSON_DE_NON_INCLUDED_AAA: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col4 → col2
+
+476. PERSON_DE_NON_INCLUDED_AAA: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col2
+
+477. PERSON_DE_NON_INCLUDED_AAA: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col2
+
+478. PERSON_DE_NON_INCLUDED_AAA: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col2
+
+479. PERSON_DE_NON_INCLUDED_AAA: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col6
+
+480. PERSON_DE_NON_INCLUDED_AAA: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col6
+
+481. PERSON_DE_NON_INCLUDED_AAA: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col6 → col2
+
+482. PERSON_DE_NON_INCLUDED_AAA: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col0
+
+483. PERSON_DE_NON_INCLUDED_AAA: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col0 → col2
+
+484. PERSON_DE_NON_INCLUDED_AAA: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col2 → col1
+
+485. PERSON_DE_NON_INCLUDED_AAA: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_AAA: col1 → col2
+
+486. PERSON_DE_PIVOT_ALL: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col2
+
+487. PERSON_DE_PIVOT_ALL: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col2 → col1
+
+488. PERSON_DE_PIVOT_ALL: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col2 → col1
+
+489. PERSON_DE_PIVOT_ALL: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col2
+
+490. PERSON_DE_PIVOT_ALL: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col3 → col1
+
+491. PERSON_DE_PIVOT_ALL: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col3
+
+492. PERSON_DE_PIVOT_ALL: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col3
+
+493. PERSON_DE_PIVOT_ALL: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col3 → col1
+
+494. PERSON_DE_PIVOT_ALL: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col4 → col1
+
+495. PERSON_DE_PIVOT_ALL: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col1
+
+496. PERSON_DE_PIVOT_ALL: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col5 → col1
+
+497. PERSON_DE_PIVOT_ALL: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col5 → col1
+
+498. PERSON_DE_PIVOT_ALL: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col6 → col1
+
+499. PERSON_DE_PIVOT_ALL: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col6
+
+500. PERSON_DE_PIVOT_ALL: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col6
+
+501. PERSON_DE_PIVOT_ALL: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col6 → col1
+
+502. PERSON_DE_PIVOT_ALL: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col1 → col0
+
+503. PERSON_DE_PIVOT_ALL: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_PIVOT_ALL: col0 → col1
+
+504. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col2
+
+505. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col3
+
+506. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col3
+
+507. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col2
+
+508. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2
+
+509. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col2
+
+510. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2
+
+511. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col2
+
+512. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col2
+
+513. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col6
+
+514. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col6
+
+515. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col2
+
+516. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col0
+
+517. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col2
+
+518. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col1
+
+519. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col2
+
+520. PERSON_DE_NON_INCLUDED_BBB: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col6
+
+521. PERSON_DE_NON_INCLUDED_BBB: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col6
+
+522. PERSON_DE_NON_INCLUDED_BBB: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col0
+
+523. PERSON_DE_NON_INCLUDED_BBB: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col1
+
+524. PERSON_DE_NON_INCLUDED_BBB: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col2
+
+525. PERSON_DE_NON_INCLUDED_BBB: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col3
+
+526. PERSON_DE_PIVOT_ALL: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col6
+
+527. PERSON_DE_PIVOT_ALL: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col6
+
+528. PERSON_DE_PIVOT_ALL: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col0
+
+529. PERSON_DE_PIVOT_ALL: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col1
+
+530. PERSON_DE_PIVOT_ALL: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col2
+
+531. PERSON_DE_PIVOT_ALL: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_PIVOT_ALL: col4 → col3
+
+532. PERSON_EN: col2 → col1 [conf=1.00, supp=6.08] <=> PERSON_EN: col2 → col1
+
+533. PERSON_EN: col2 → col1 [conf=0.27, supp=1.00] <=> PERSON_EN: col2 → col1
+
+534. PERSON_EN_SHREDDED: col3 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col3 → col2
+
+535. PERSON_EN_SHREDDED: col3 → col2 [conf=0.83, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col2
+
+536. PERSON_EN_SHREDDED: col4 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col4 → col2
+
+537. PERSON_EN_SHREDDED: col4 → col2 [conf=0.37, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col2
+
+538. PERSON_EN_SHREDDED: col5 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col5 → col2
+
+539. PERSON_EN_SHREDDED: col5 → col2 [conf=0.40, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col2
+
+540. PERSON_EN_SHREDDED: col6 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col6 → col2
+
+541. PERSON_EN_SHREDDED: col6 → col2 [conf=0.85, supp=1.00] <=> PERSON_EN_SHREDDED: col6 → col2
+
+542. PERSON_EN_SHREDDED: col0 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col0 → col2
+
+543. PERSON_EN_SHREDDED: col1 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col1 → col2
+
+544. PERSON_DE_NON_INCLUDED_BBB: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col2
+
+545. PERSON_DE_NON_INCLUDED_BBB: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col1
+
+546. PERSON_DE_NON_INCLUDED_BBB: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col2
+
+547. PERSON_DE_NON_INCLUDED_BBB: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col1
+
+548. PERSON_DE_NON_INCLUDED_BBB: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col3
+
+549. PERSON_DE_NON_INCLUDED_BBB: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col1
+
+550. PERSON_DE_NON_INCLUDED_BBB: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col3
+
+551. PERSON_DE_NON_INCLUDED_BBB: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col1
+
+552. PERSON_DE_NON_INCLUDED_BBB: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col1
+
+553. PERSON_DE_NON_INCLUDED_BBB: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col1
+
+554. PERSON_DE_NON_INCLUDED_BBB: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col1
+
+555. PERSON_DE_NON_INCLUDED_BBB: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col1
+
+556. PERSON_DE_NON_INCLUDED_BBB: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col6
+
+557. PERSON_DE_NON_INCLUDED_BBB: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col1
+
+558. PERSON_DE_NON_INCLUDED_BBB: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col1
+
+559. PERSON_DE_NON_INCLUDED_BBB: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col6
+
+560. PERSON_DE_NON_INCLUDED_BBB: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col0
+
+561. PERSON_DE_NON_INCLUDED_BBB: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col1
+
+562. PERSON_DE_NON_INCLUDED_BBB: col2 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col3
+
+563. PERSON_DE_NON_INCLUDED_BBB: col3 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col2
+
+564. PERSON_DE_NON_INCLUDED_BBB: col3 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col2
+
+565. PERSON_DE_NON_INCLUDED_BBB: col2 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col3
+
+566. PERSON_DE_NON_INCLUDED_BBB: col4 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col2
+
+567. PERSON_DE_NON_INCLUDED_BBB: col4 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col2
+
+568. PERSON_DE_NON_INCLUDED_BBB: col5 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col2
+
+569. PERSON_DE_NON_INCLUDED_BBB: col5 → col2 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col2
+
+570. PERSON_DE_NON_INCLUDED_BBB: col2 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col6
+
+571. PERSON_DE_NON_INCLUDED_BBB: col6 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col2
+
+572. PERSON_DE_NON_INCLUDED_BBB: col2 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col6
+
+573. PERSON_DE_NON_INCLUDED_BBB: col6 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col2
+
+574. PERSON_DE_NON_INCLUDED_BBB: col2 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col0
+
+575. PERSON_DE_NON_INCLUDED_BBB: col0 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col2
+
+576. PERSON_DE_NON_INCLUDED_BBB: col1 → col2 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col2
+
+577. PERSON_DE_NON_INCLUDED_BBB: col2 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col1
+
+578. PERSON_DE_NON_INCLUDED_BBB: col4 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col3
+
+579. PERSON_DE_NON_INCLUDED_BBB: col4 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col4 → col3
+
+580. PERSON_DE_NON_INCLUDED_BBB: col5 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col3
+
+581. PERSON_DE_NON_INCLUDED_BBB: col5 → col3 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col5 → col3
+
+582. PERSON_DE_NON_INCLUDED_BBB: col3 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col6
+
+583. PERSON_DE_NON_INCLUDED_BBB: col6 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col3
+
+584. PERSON_DE_NON_INCLUDED_BBB: col6 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col6 → col3
+
+585. PERSON_DE_NON_INCLUDED_BBB: col3 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col6
+
+586. PERSON_DE_NON_INCLUDED_BBB: col0 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col0 → col3
+
+587. PERSON_DE_NON_INCLUDED_BBB: col3 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col0
+
+588. PERSON_DE_NON_INCLUDED_BBB: col1 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col1 → col3
+
+589. PERSON_DE_NON_INCLUDED_BBB: col3 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col1
+
+590. PERSON_DE_NON_INCLUDED_BBB: col2 → col3 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_BBB: col2 → col3
+
+591. PERSON_DE_NON_INCLUDED_BBB: col3 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_BBB: col3 → col2
+
+592. PERSON_DE_NON_INCLUDED_AAA: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col6
+
+593. PERSON_DE_NON_INCLUDED_AAA: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col6
+
+594. PERSON_DE_NON_INCLUDED_AAA: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col0
+
+595. PERSON_DE_NON_INCLUDED_AAA: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col1
+
+596. PERSON_DE_NON_INCLUDED_AAA: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col2
+
+597. PERSON_DE_NON_INCLUDED_AAA: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_AAA: col5 → col3
+
+598. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col1
+
+599. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col0
+
+600. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col1 → col0
+
+601. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col1
+
+602. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col0
+
+603. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col2
+
+604. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col2 → col0
+
+605. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col2
+
+606. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col0
+
+607. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col3
+
+608. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col3
+
+609. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col3 → col0
+
+610. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0
+
+611. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col4 → col0
+
+612. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0
+
+613. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col5 → col0
+
+614. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col0
+
+615. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col6
+
+616. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col6 → col0
+
+617. PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS_AAA: col0 → col6
+
+618. PERSON_DE_NON_INCLUDED: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col0
+
+619. PERSON_DE_NON_INCLUDED: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col0 → col6
+
+620. PERSON_DE_NON_INCLUDED: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col1
+
+621. PERSON_DE_NON_INCLUDED: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col1 → col6
+
+622. PERSON_DE_NON_INCLUDED: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col2 → col6
+
+623. PERSON_DE_NON_INCLUDED: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col2
+
+624. PERSON_DE_NON_INCLUDED: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col6 → col3
+
+625. PERSON_DE_NON_INCLUDED: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col3 → col6
+
+626. PERSON_DE_NON_INCLUDED: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col4 → col6
+
+627. PERSON_DE_NON_INCLUDED: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED: col5 → col6
+
+628. PERSON_DE_NON_INCLUDED_CCC: col1 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col2
+
+629. PERSON_DE_NON_INCLUDED_CCC: col2 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col1
+
+630. PERSON_DE_NON_INCLUDED_CCC: col1 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col2
+
+631. PERSON_DE_NON_INCLUDED_CCC: col2 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col1
+
+632. PERSON_DE_NON_INCLUDED_CCC: col1 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col3
+
+633. PERSON_DE_NON_INCLUDED_CCC: col3 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col1
+
+634. PERSON_DE_NON_INCLUDED_CCC: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col1
+
+635. PERSON_DE_NON_INCLUDED_CCC: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col3
+
+636. PERSON_DE_NON_INCLUDED_CCC: col4 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col1
+
+637. PERSON_DE_NON_INCLUDED_CCC: col4 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col1
+
+638. PERSON_DE_NON_INCLUDED_CCC: col5 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col1
+
+639. PERSON_DE_NON_INCLUDED_CCC: col5 → col1 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col1
+
+640. PERSON_DE_NON_INCLUDED_CCC: col6 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col1
+
+641. PERSON_DE_NON_INCLUDED_CCC: col1 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col6
+
+642. PERSON_DE_NON_INCLUDED_CCC: col1 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col6
+
+643. PERSON_DE_NON_INCLUDED_CCC: col6 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col1
+
+644. PERSON_DE_NON_INCLUDED_CCC: col1 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col0
+
+645. PERSON_DE_NON_INCLUDED_CCC: col0 → col1 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col1
+
+646. PERSON_DE_NON_INCLUDED_CCC: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col6
+
+647. PERSON_DE_NON_INCLUDED_CCC: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col6
+
+648. PERSON_DE_NON_INCLUDED_CCC: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col0
+
+649. PERSON_DE_NON_INCLUDED_CCC: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col1
+
+650. PERSON_DE_NON_INCLUDED_CCC: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col2
+
+651. PERSON_DE_NON_INCLUDED_CCC: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col3
+
+652. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col0
+
+653. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col1
+
+654. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col1
+
+655. PERSON_DE_NON_INCLUDED_GROUPS: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col1 → col0
+
+656. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col0
+
+657. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col2
+
+658. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col2 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col2
+
+659. PERSON_DE_NON_INCLUDED_GROUPS: col2 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col2 → col0
+
+660. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col3
+
+661. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col0
+
+662. PERSON_DE_NON_INCLUDED_GROUPS: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col3 → col0
+
+663. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col3
+
+664. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0
+
+665. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0
+
+666. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0
+
+667. PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col5 → col0
+
+668. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col0 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col0
+
+669. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col6 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col6
+
+670. PERSON_DE_NON_INCLUDED_GROUPS: col6 → col0 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col6 → col0
+
+671. PERSON_DE_NON_INCLUDED_GROUPS: col0 → col6 [conf=1.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col0 → col6
+
+672. PERSON_EN_SHREDDED: col1 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col1 → col0
+
+673. PERSON_EN_SHREDDED: col0 → col1 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col1
+
+674. PERSON_EN_SHREDDED: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col1
+
+675. PERSON_EN_SHREDDED: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col0
+
+676. PERSON_EN_SHREDDED: col0 → col2 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col2
+
+677. PERSON_EN_SHREDDED: col0 → col2 [conf=0.83, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col2
+
+678. PERSON_EN_SHREDDED: col0 → col3 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col3
+
+679. PERSON_EN_SHREDDED: col3 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col3 → col0
+
+680. PERSON_EN_SHREDDED: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col3
+
+681. PERSON_EN_SHREDDED: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col0
+
+682. PERSON_EN_SHREDDED: col4 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col0
+
+683. PERSON_EN_SHREDDED: col4 → col0 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col0
+
+684. PERSON_EN_SHREDDED: col5 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col0
+
+685. PERSON_EN_SHREDDED: col5 → col0 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col0
+
+686. PERSON_EN_SHREDDED: col0 → col6 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col6
+
+687. PERSON_EN_SHREDDED: col6 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col6 → col0
+
+688. PERSON_EN_SHREDDED: col0 → col6 [conf=0.97, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col6
+
+689. PERSON_EN_SHREDDED: col6 → col0 [conf=1.00, supp=0.97] <=> PERSON_EN_SHREDDED: col6 → col0
+
+690. PERSON_DE_NON_INCLUDED: col5 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col6
+
+691. PERSON_DE_NON_INCLUDED: col5 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col6
+
+692. PERSON_DE_NON_INCLUDED: col5 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col0
+
+693. PERSON_DE_NON_INCLUDED: col5 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col1
+
+694. PERSON_DE_NON_INCLUDED: col5 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col2
+
+695. PERSON_DE_NON_INCLUDED: col5 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED: col5 → col3
+
+696. PERSON_EN_SHREDDED: col1 → col2 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col2
+
+697. PERSON_EN_SHREDDED: col1 → col2 [conf=0.83, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col2
+
+698. PERSON_EN_SHREDDED: col3 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col3 → col1
+
+699. PERSON_EN_SHREDDED: col1 → col3 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col3
+
+700. PERSON_EN_SHREDDED: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col1
+
+701. PERSON_EN_SHREDDED: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col3
+
+702. PERSON_EN_SHREDDED: col4 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col1
+
+703. PERSON_EN_SHREDDED: col4 → col1 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col1
+
+704. PERSON_EN_SHREDDED: col5 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col1
+
+705. PERSON_EN_SHREDDED: col5 → col1 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col1
+
+706. PERSON_EN_SHREDDED: col6 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col6 → col1
+
+707. PERSON_EN_SHREDDED: col1 → col6 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col6
+
+708. PERSON_EN_SHREDDED: col1 → col6 [conf=0.97, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col6
+
+709. PERSON_EN_SHREDDED: col6 → col1 [conf=1.00, supp=0.97] <=> PERSON_EN_SHREDDED: col6 → col1
+
+710. PERSON_EN_SHREDDED: col1 → col0 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col0
+
+711. PERSON_EN_SHREDDED: col0 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col0 → col1
+
+712. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6
+
+713. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6 [conf=0.50, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col6
+
+714. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col0
+
+715. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col1
+
+716. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col2
+
+717. PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3 [conf=2.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_GROUPS: col4 → col3
+
+718. PERSON_DE_NON_INCLUDED_CCC: col0 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col0 → col6
+
+719. PERSON_DE_NON_INCLUDED_CCC: col6 → col0 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col0
+
+720. PERSON_DE_NON_INCLUDED_CCC: col6 → col1 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col1
+
+721. PERSON_DE_NON_INCLUDED_CCC: col1 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col1 → col6
+
+722. PERSON_DE_NON_INCLUDED_CCC: col6 → col2 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col2
+
+723. PERSON_DE_NON_INCLUDED_CCC: col2 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col2 → col6
+
+724. PERSON_DE_NON_INCLUDED_CCC: col6 → col3 [conf=4.00, supp=1.00] <=> PERSON_DE_NON_INCLUDED_CCC: col6 → col3
+
+725. PERSON_DE_NON_INCLUDED_CCC: col3 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col3 → col6
+
+726. PERSON_DE_NON_INCLUDED_CCC: col4 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col4 → col6
+
+727. PERSON_DE_NON_INCLUDED_CCC: col5 → col6 [conf=1.00, supp=4.00] <=> PERSON_DE_NON_INCLUDED_CCC: col5 → col6
+
+728. EXPERMENTS_THRESHOLDS_PLI: col1 → col5 [conf=771.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col1 → col5
+
+729. EXPERMENTS_THRESHOLDS_PLI: col1 → col5 [conf=1.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col1 → col5
+
+730. EXPERMENTS_THRESHOLDS_PLI: col4 → col5 [conf=771.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col4 → col5
+
+731. EXPERMENTS_THRESHOLDS_PLI: col4 → col5 [conf=1.00, supp=1.00] <=> EXPERMENTS_THRESHOLDS_PLI: col4 → col5
+
+732. PERSON_DE: col2 → col1 [conf=1.00, supp=36.40] <=> PERSON_DE: col2 → col1
+
+733. PERSON_DE: col2 → col1 [conf=0.16, supp=0.98] <=> PERSON_DE: col2 → col1
+
+734. PERSON_DE: col2 → col0 [conf=1.00, supp=8.23] <=> PERSON_DE: col2 → col0
+
+735. PERSON_DE: col2 → col0 [conf=0.12, supp=0.17] <=> PERSON_DE: col2 → col0
+

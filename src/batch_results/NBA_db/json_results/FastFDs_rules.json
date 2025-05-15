@@ -1,0 +1,596 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "Player",
+        "determinant": [
+            "PlayerId"
+        ],
+        "dependent": [
+            "PlayerName"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "age"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "draft_g"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "c_3p"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "c_3pa"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "orb"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "c_3p_per"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "ast_per"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "season"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "weight"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "height"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "shoots"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "draft_year"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "amature_honor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_ori",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "raw_data"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "age"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "draft_g"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "3p"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "3pa"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "orb"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "3p_per"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "ast_per"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "season"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "weight"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "height"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "shoots"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "draft_year"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "amature_honor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "joined_drafted_all_players_original",
+        "determinant": [
+            "fg_per"
+        ],
+        "dependent": [
+            "raw_data"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Game",
+        "determinant": [
+            "URL"
+        ],
+        "dependent": [
+            "Team1Id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Game",
+        "determinant": [
+            "URL"
+        ],
+        "dependent": [
+            "Team2Id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Game",
+        "determinant": [
+            "URL"
+        ],
+        "dependent": [
+            "ResultOfTeam1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "Game",
+        "determinant": [
+            "Team2Id"
+        ],
+        "dependent": [
+            "Date"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

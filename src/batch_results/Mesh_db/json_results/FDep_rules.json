@@ -1,0 +1,92 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh_test",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mesh",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_zx",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "neighbour_xy",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "opposite",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

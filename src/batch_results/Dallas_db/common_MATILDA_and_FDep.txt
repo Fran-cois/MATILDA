@@ -1,0 +1,41 @@
+# Règles communes sauvegardées: 19
+# Date: 2025-04-28 07:00:52
+
+1. officers: full_name → race [conf=1.15, supp=0.99] <=> officers: full_name → race
+
+2. officers: full_name → gender [conf=1.15, supp=1.00] <=> officers: full_name → gender
+
+3. officers: full_name → last_name [conf=1.15, supp=1.00] <=> officers: full_name → last_name
+
+4. officers: full_name → first_name [conf=1.15, supp=0.99] <=> officers: full_name → first_name
+
+5. officers: full_name → gender [conf=1.00, supp=333.95] <=> officers: full_name → gender
+
+6. subjects: full_name → first_name [conf=1.00, supp=1.71] <=> subjects: full_name → first_name
+
+7. subjects: full_name → first_name [conf=0.54, supp=0.44] <=> subjects: full_name → first_name
+
+8. officers: full_name → last_name [conf=1.00, supp=1.40] <=> officers: full_name → last_name
+
+9. officers: full_name → last_name [conf=0.82, supp=1.00] <=> officers: full_name → last_name
+
+10. subjects: full_name → last_name [conf=2.08, supp=1.00] <=> subjects: full_name → last_name
+
+11. subjects: full_name → first_name [conf=1.00, supp=0.44] <=> subjects: full_name → first_name
+
+12. subjects: full_name → last_name [conf=1.00, supp=2.46] <=> subjects: full_name → last_name
+
+13. subjects: full_name → last_name [conf=0.84, supp=1.00] <=> subjects: full_name → last_name
+
+14. officers: full_name → race [conf=1.00, supp=145.56] <=> officers: full_name → race
+
+15. officers: full_name → first_name [conf=1.00, supp=4.61] <=> officers: full_name → first_name
+
+16. officers: full_name → first_name [conf=0.25, supp=0.99] <=> officers: full_name → first_name
+
+17. subjects: case_number → race [conf=1.00, supp=84.99] <=> subjects: case_number → race
+
+18. subjects: case_number → race [conf=1.07, supp=1.00] <=> subjects: case_number → race
+
+19. subjects: case_number → race [conf=0.01, supp=1.00] <=> subjects: case_number → race
+

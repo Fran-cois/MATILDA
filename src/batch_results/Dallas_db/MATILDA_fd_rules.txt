@@ -1,0 +1,1787 @@
+# FDs sauvegardées: 446
+# Date: 2025-04-28 06:49:58
+
+1. [FunctionalDependency] incidents: subject_statuses → subject_weapon
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+2. [FunctionalDependency] incidents: subject_weapon → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] incidents: subject_statuses → subject_weapon
+   Support: 0.33344338065368107
+   Confiance: 0.33344338065368107
+
+4. [FunctionalDependency] incidents: subject_weapon → subject_statuses
+   Support: 0.26666666666666666
+   Confiance: 0.26666666666666666
+
+5. [FunctionalDependency] incidents: subject_statuses → subjects
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+6. [FunctionalDependency] incidents: subjects → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] incidents: subject_count → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+8. [FunctionalDependency] incidents: subject_statuses → subject_count
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+9. [FunctionalDependency] incidents: subject_statuses → subject_count
+   Support: 0.32534839238546315
+   Confiance: 0.32534839238546315
+
+10. [FunctionalDependency] incidents: subject_count → subject_statuses
+   Support: 0.9431023102310231
+   Confiance: 0.9431023102310231
+
+11. [FunctionalDependency] incidents: subject_statuses → officers
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+12. [FunctionalDependency] incidents: officers → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] incidents: officer_count → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+14. [FunctionalDependency] incidents: subject_statuses → officer_count
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+15. [FunctionalDependency] incidents: subject_statuses → officer_count
+   Support: 0.3412233609891004
+   Confiance: 0.3412233609891004
+
+16. [FunctionalDependency] incidents: officer_count → subject_statuses
+   Support: 0.5537953795379538
+   Confiance: 0.5537953795379538
+
+17. [FunctionalDependency] incidents: subject_statuses → grand_jury_disposition
+   Support: 62.17910447761194
+   Confiance: 62.17910447761194
+
+18. [FunctionalDependency] incidents: grand_jury_disposition → subject_statuses
+   Support: 0.54996699669967
+   Confiance: 0.54996699669967
+
+19. [FunctionalDependency] incidents: subject_statuses → grand_jury_disposition
+   Support: 0.46307204349796105
+   Confiance: 0.46307204349796105
+
+20. [FunctionalDependency] incidents: grand_jury_disposition → subject_statuses
+   Support: 0.4047524752475248
+   Confiance: 0.4047524752475248
+
+21. [FunctionalDependency] incidents: subject_statuses → summary_url
+   Support: 69.13888888888889
+   Confiance: 69.13888888888889
+
+22. [FunctionalDependency] incidents: summary_url → subject_statuses
+   Support: 0.9857425742574257
+   Confiance: 0.9857425742574257
+
+23. [FunctionalDependency] incidents: subject_statuses → summary_text
+   Support: 69.13888888888889
+   Confiance: 69.13888888888889
+
+24. [FunctionalDependency] incidents: summary_text → subject_statuses
+   Support: 0.9857425742574257
+   Confiance: 0.9857425742574257
+
+25. [FunctionalDependency] incidents: latitude → subject_statuses
+   Support: 0.9725412541254126
+   Confiance: 0.9725412541254126
+
+26. [FunctionalDependency] incidents: subject_statuses → latitude
+   Support: 69.5
+   Confiance: 69.5
+
+27. [FunctionalDependency] incidents: longitude → subject_statuses
+   Support: 0.9725412541254126
+   Confiance: 0.9725412541254126
+
+28. [FunctionalDependency] incidents: subject_statuses → longitude
+   Support: 69.5
+   Confiance: 69.5
+
+29. [FunctionalDependency] incidents: case_number → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+30. [FunctionalDependency] incidents: subject_statuses → case_number
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+31. [FunctionalDependency] incidents: subject_statuses → date
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+32. [FunctionalDependency] incidents: date → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+33. [FunctionalDependency] incidents: location → subject_statuses
+   Support: 1.0
+   Confiance: 1.0
+
+34. [FunctionalDependency] incidents: subject_statuses → location
+   Support: 69.17808219178082
+   Confiance: 69.17808219178082
+
+35. [FunctionalDependency] officers: full_name → case_number
+   Support: 1.1513513513513514
+   Confiance: 1.1513513513513514
+
+36. [FunctionalDependency] officers: case_number → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+37. [FunctionalDependency] officers: full_name → race
+   Support: 1.1475409836065573
+   Confiance: 1.1475409836065573
+
+38. [FunctionalDependency] officers: race → full_name
+   Support: 0.9859154929577465
+   Confiance: 0.9859154929577465
+
+39. [FunctionalDependency] officers: gender → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+40. [FunctionalDependency] officers: full_name → gender
+   Support: 1.1513513513513514
+   Confiance: 1.1513513513513514
+
+41. [FunctionalDependency] officers: full_name → last_name
+   Support: 1.1513513513513514
+   Confiance: 1.1513513513513514
+
+42. [FunctionalDependency] officers: last_name → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+43. [FunctionalDependency] officers: first_name → full_name
+   Support: 0.9929577464788732
+   Confiance: 0.9929577464788732
+
+44. [FunctionalDependency] officers: full_name → first_name
+   Support: 1.1525885558583107
+   Confiance: 1.1525885558583107
+
+45. [FunctionalDependency] officers: gender → last_name
+   Support: 333.9513513513514
+   Confiance: 333.9513513513514
+
+46. [FunctionalDependency] officers: last_name → gender
+   Support: 1.0
+   Confiance: 1.0
+
+47. [FunctionalDependency] officers: gender → first_name
+   Support: 334.716621253406
+   Confiance: 334.716621253406
+
+48. [FunctionalDependency] officers: first_name → gender
+   Support: 0.9941648726954889
+   Confiance: 0.9941648726954889
+
+49. [FunctionalDependency] officers: first_name → gender
+   Support: 0.01381492691927939
+   Confiance: 0.01381492691927939
+
+50. [FunctionalDependency] officers: gender → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+51. [FunctionalDependency] officers: gender → full_name
+   Support: 333.9513513513514
+   Confiance: 333.9513513513514
+
+52. [FunctionalDependency] officers: full_name → gender
+   Support: 1.0
+   Confiance: 1.0
+
+53. [FunctionalDependency] officers: case_number → gender
+   Support: 1.0
+   Confiance: 1.0
+
+54. [FunctionalDependency] officers: gender → case_number
+   Support: 333.9513513513514
+   Confiance: 333.9513513513514
+
+55. [FunctionalDependency] officers: race → gender
+   Support: 0.9913241935222803
+   Confiance: 0.9913241935222803
+
+56. [FunctionalDependency] officers: gender → race
+   Support: 334.672131147541
+   Confiance: 334.672131147541
+
+57. [FunctionalDependency] incidents: subject_count → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+58. [FunctionalDependency] incidents: subjects → subject_count
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+59. [FunctionalDependency] incidents: subjects → officers
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+60. [FunctionalDependency] incidents: officers → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+61. [FunctionalDependency] incidents: officer_count → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+62. [FunctionalDependency] incidents: subjects → officer_count
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+63. [FunctionalDependency] incidents: grand_jury_disposition → subjects
+   Support: 0.061224489795918366
+   Confiance: 0.061224489795918366
+
+64. [FunctionalDependency] incidents: subjects → grand_jury_disposition
+   Support: 0.04477611940298507
+   Confiance: 0.04477611940298507
+
+65. [FunctionalDependency] incidents: subjects → summary_url
+   Support: 0.39814814814814814
+   Confiance: 0.39814814814814814
+
+66. [FunctionalDependency] incidents: summary_url → subjects
+   Support: 0.8775510204081632
+   Confiance: 0.8775510204081632
+
+67. [FunctionalDependency] incidents: subjects → summary_text
+   Support: 0.39814814814814814
+   Confiance: 0.39814814814814814
+
+68. [FunctionalDependency] incidents: summary_text → subjects
+   Support: 0.8775510204081632
+   Confiance: 0.8775510204081632
+
+69. [FunctionalDependency] incidents: latitude → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+70. [FunctionalDependency] incidents: subjects → latitude
+   Support: 0.46226415094339623
+   Confiance: 0.46226415094339623
+
+71. [FunctionalDependency] incidents: longitude → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+72. [FunctionalDependency] incidents: subjects → longitude
+   Support: 0.46226415094339623
+   Confiance: 0.46226415094339623
+
+73. [FunctionalDependency] incidents: case_number → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+74. [FunctionalDependency] incidents: subjects → case_number
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+75. [FunctionalDependency] incidents: subjects → date
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+76. [FunctionalDependency] incidents: date → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+77. [FunctionalDependency] incidents: location → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+78. [FunctionalDependency] incidents: subjects → location
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+79. [FunctionalDependency] incidents: subjects → subject_statuses
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+80. [FunctionalDependency] incidents: subject_statuses → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+81. [FunctionalDependency] incidents: subject_weapon → subjects
+   Support: 1.0
+   Confiance: 1.0
+
+82. [FunctionalDependency] incidents: subjects → subject_weapon
+   Support: 0.4474885844748858
+   Confiance: 0.4474885844748858
+
+83. [FunctionalDependency] incidents: date → location
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+84. [FunctionalDependency] incidents: location → date
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] incidents: date → subject_statuses
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+86. [FunctionalDependency] incidents: subject_statuses → date
+   Support: 1.0
+   Confiance: 1.0
+
+87. [FunctionalDependency] incidents: date → subject_weapon
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+88. [FunctionalDependency] incidents: subject_weapon → date
+   Support: 1.0
+   Confiance: 1.0
+
+89. [FunctionalDependency] incidents: subjects → date
+   Support: 1.0
+   Confiance: 1.0
+
+90. [FunctionalDependency] incidents: date → subjects
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+91. [FunctionalDependency] incidents: date → subject_count
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+92. [FunctionalDependency] incidents: subject_count → date
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] incidents: date → officers
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+94. [FunctionalDependency] incidents: officers → date
+   Support: 1.0
+   Confiance: 1.0
+
+95. [FunctionalDependency] incidents: date → officer_count
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+96. [FunctionalDependency] incidents: officer_count → date
+   Support: 1.0
+   Confiance: 1.0
+
+97. [FunctionalDependency] incidents: grand_jury_disposition → date
+   Support: 0.75
+   Confiance: 0.75
+
+98. [FunctionalDependency] incidents: date → grand_jury_disposition
+   Support: 0.06716417910447761
+   Confiance: 0.06716417910447761
+
+99. [FunctionalDependency] incidents: date → summary_url
+   Support: 0.05555555555555555
+   Confiance: 0.05555555555555555
+
+100. [FunctionalDependency] incidents: summary_url → date
+   Support: 1.0
+   Confiance: 1.0
+
+101. [FunctionalDependency] incidents: date → summary_text
+   Support: 0.05555555555555555
+   Confiance: 0.05555555555555555
+
+102. [FunctionalDependency] incidents: summary_text → date
+   Support: 1.0
+   Confiance: 1.0
+
+103. [FunctionalDependency] incidents: date → latitude
+   Support: 0.05660377358490566
+   Confiance: 0.05660377358490566
+
+104. [FunctionalDependency] incidents: latitude → date
+   Support: 1.0
+   Confiance: 1.0
+
+105. [FunctionalDependency] incidents: date → longitude
+   Support: 0.05660377358490566
+   Confiance: 0.05660377358490566
+
+106. [FunctionalDependency] incidents: longitude → date
+   Support: 1.0
+   Confiance: 1.0
+
+107. [FunctionalDependency] incidents: date → case_number
+   Support: 0.0547945205479452
+   Confiance: 0.0547945205479452
+
+108. [FunctionalDependency] incidents: case_number → date
+   Support: 1.0
+   Confiance: 1.0
+
+109. [FunctionalDependency] subjects: first_name → full_name
+   Support: 1.7085201793721974
+   Confiance: 1.7085201793721974
+
+110. [FunctionalDependency] subjects: full_name → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+111. [FunctionalDependency] subjects: first_name → full_name
+   Support: 0.4427645788336933
+   Confiance: 0.4427645788336933
+
+112. [FunctionalDependency] subjects: full_name → first_name
+   Support: 0.5380577427821522
+   Confiance: 0.5380577427821522
+
+113. [FunctionalDependency] subjects: first_name → case_number
+   Support: 1.7085201793721974
+   Confiance: 1.7085201793721974
+
+114. [FunctionalDependency] subjects: case_number → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+115. [FunctionalDependency] subjects: race → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+116. [FunctionalDependency] subjects: first_name → race
+   Support: 1.7085201793721974
+   Confiance: 1.7085201793721974
+
+117. [FunctionalDependency] subjects: gender → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+118. [FunctionalDependency] subjects: first_name → gender
+   Support: 1.7085201793721974
+   Confiance: 1.7085201793721974
+
+119. [FunctionalDependency] subjects: first_name → last_name
+   Support: 1.7085201793721974
+   Confiance: 1.7085201793721974
+
+120. [FunctionalDependency] subjects: last_name → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+121. [FunctionalDependency] incidents: grand_jury_disposition → officer_count
+   Support: 0.546160728810802
+   Confiance: 0.546160728810802
+
+122. [FunctionalDependency] incidents: officer_count → grand_jury_disposition
+   Support: 100.21641791044776
+   Confiance: 100.21641791044776
+
+123. [FunctionalDependency] incidents: grand_jury_disposition → officer_count
+   Support: 0.223767691556857
+   Confiance: 0.223767691556857
+
+124. [FunctionalDependency] incidents: officer_count → grand_jury_disposition
+   Support: 0.4154961486180335
+   Confiance: 0.4154961486180335
+
+125. [FunctionalDependency] incidents: summary_url → officer_count
+   Support: 0.9877989263055149
+   Confiance: 0.9877989263055149
+
+126. [FunctionalDependency] incidents: officer_count → summary_url
+   Support: 112.44444444444444
+   Confiance: 112.44444444444444
+
+127. [FunctionalDependency] incidents: summary_text → officer_count
+   Support: 0.9877989263055149
+   Confiance: 0.9877989263055149
+
+128. [FunctionalDependency] incidents: officer_count → summary_text
+   Support: 112.44444444444444
+   Confiance: 112.44444444444444
+
+129. [FunctionalDependency] incidents: latitude → officer_count
+   Support: 0.970473401659346
+   Confiance: 0.970473401659346
+
+130. [FunctionalDependency] incidents: officer_count → latitude
+   Support: 112.55660377358491
+   Confiance: 112.55660377358491
+
+131. [FunctionalDependency] incidents: longitude → officer_count
+   Support: 0.970473401659346
+   Confiance: 0.970473401659346
+
+132. [FunctionalDependency] incidents: officer_count → longitude
+   Support: 112.55660377358491
+   Confiance: 112.55660377358491
+
+133. [FunctionalDependency] incidents: case_number → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+134. [FunctionalDependency] incidents: officer_count → case_number
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+135. [FunctionalDependency] incidents: date → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+136. [FunctionalDependency] incidents: officer_count → date
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+137. [FunctionalDependency] incidents: location → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+138. [FunctionalDependency] incidents: officer_count → location
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+139. [FunctionalDependency] incidents: officer_count → subject_statuses
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+140. [FunctionalDependency] incidents: subject_statuses → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+141. [FunctionalDependency] incidents: officer_count → subject_weapon
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+142. [FunctionalDependency] incidents: subject_weapon → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+143. [FunctionalDependency] incidents: officer_count → subjects
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+144. [FunctionalDependency] incidents: subjects → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+145. [FunctionalDependency] incidents: officer_count → subject_count
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+146. [FunctionalDependency] incidents: subject_count → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+147. [FunctionalDependency] incidents: officer_count → officers
+   Support: 112.27397260273973
+   Confiance: 112.27397260273973
+
+148. [FunctionalDependency] incidents: officers → officer_count
+   Support: 1.0
+   Confiance: 1.0
+
+149. [FunctionalDependency] incidents: officer_count → officers
+   Support: 1.0
+   Confiance: 1.0
+
+150. [FunctionalDependency] incidents: officers → officer_count
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+151. [FunctionalDependency] incidents: officers → grand_jury_disposition
+   Support: 0.04477611940298507
+   Confiance: 0.04477611940298507
+
+152. [FunctionalDependency] incidents: grand_jury_disposition → officers
+   Support: 0.375
+   Confiance: 0.375
+
+153. [FunctionalDependency] incidents: officers → summary_url
+   Support: 0.07407407407407407
+   Confiance: 0.07407407407407407
+
+154. [FunctionalDependency] incidents: summary_url → officers
+   Support: 1.0
+   Confiance: 1.0
+
+155. [FunctionalDependency] incidents: summary_text → officers
+   Support: 1.0
+   Confiance: 1.0
+
+156. [FunctionalDependency] incidents: officers → summary_text
+   Support: 0.07407407407407407
+   Confiance: 0.07407407407407407
+
+157. [FunctionalDependency] incidents: officers → latitude
+   Support: 0.07075471698113207
+   Confiance: 0.07075471698113207
+
+158. [FunctionalDependency] incidents: latitude → officers
+   Support: 0.9375
+   Confiance: 0.9375
+
+159. [FunctionalDependency] incidents: officers → longitude
+   Support: 0.07075471698113207
+   Confiance: 0.07075471698113207
+
+160. [FunctionalDependency] incidents: longitude → officers
+   Support: 0.9375
+   Confiance: 0.9375
+
+161. [FunctionalDependency] incidents: officers → case_number
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+162. [FunctionalDependency] incidents: case_number → officers
+   Support: 1.0
+   Confiance: 1.0
+
+163. [FunctionalDependency] incidents: officers → date
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+164. [FunctionalDependency] incidents: date → officers
+   Support: 1.0
+   Confiance: 1.0
+
+165. [FunctionalDependency] incidents: officers → location
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+166. [FunctionalDependency] incidents: location → officers
+   Support: 1.0
+   Confiance: 1.0
+
+167. [FunctionalDependency] incidents: subject_statuses → officers
+   Support: 1.0
+   Confiance: 1.0
+
+168. [FunctionalDependency] incidents: officers → subject_statuses
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+169. [FunctionalDependency] incidents: officers → subject_weapon
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+170. [FunctionalDependency] incidents: subject_weapon → officers
+   Support: 1.0
+   Confiance: 1.0
+
+171. [FunctionalDependency] incidents: subjects → officers
+   Support: 1.0
+   Confiance: 1.0
+
+172. [FunctionalDependency] incidents: officers → subjects
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+173. [FunctionalDependency] incidents: subject_count → officers
+   Support: 1.0
+   Confiance: 1.0
+
+174. [FunctionalDependency] incidents: officers → subject_count
+   Support: 0.0730593607305936
+   Confiance: 0.0730593607305936
+
+175. [FunctionalDependency] subjects: last_name → gender
+   Support: 1.0
+   Confiance: 1.0
+
+176. [FunctionalDependency] subjects: gender → last_name
+   Support: 207.57399103139014
+   Confiance: 207.57399103139014
+
+177. [FunctionalDependency] subjects: last_name → gender
+   Support: 0.010909719371772991
+   Confiance: 0.010909719371772991
+
+178. [FunctionalDependency] subjects: gender → last_name
+   Support: 0.9198542805100182
+   Confiance: 0.9198542805100182
+
+179. [FunctionalDependency] subjects: gender → first_name
+   Support: 207.93170731707318
+   Confiance: 207.93170731707318
+
+180. [FunctionalDependency] subjects: first_name → gender
+   Support: 0.9208667285964268
+   Confiance: 0.9208667285964268
+
+181. [FunctionalDependency] subjects: full_name → gender
+   Support: 1.0
+   Confiance: 1.0
+
+182. [FunctionalDependency] subjects: gender → full_name
+   Support: 207.57399103139014
+   Confiance: 207.57399103139014
+
+183. [FunctionalDependency] subjects: case_number → gender
+   Support: 1.0
+   Confiance: 1.0
+
+184. [FunctionalDependency] subjects: gender → case_number
+   Support: 207.57399103139014
+   Confiance: 207.57399103139014
+
+185. [FunctionalDependency] subjects: race → gender
+   Support: 1.0
+   Confiance: 1.0
+
+186. [FunctionalDependency] subjects: gender → race
+   Support: 207.57399103139014
+   Confiance: 207.57399103139014
+
+187. [FunctionalDependency] incidents: subject_count → officers
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+188. [FunctionalDependency] incidents: officers → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+189. [FunctionalDependency] incidents: subject_count → officer_count
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+190. [FunctionalDependency] incidents: officer_count → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+191. [FunctionalDependency] incidents: officer_count → subject_count
+   Support: 0.5109754986792968
+   Confiance: 0.5109754986792968
+
+192. [FunctionalDependency] incidents: subject_count → officer_count
+   Support: 0.9126403123474865
+   Confiance: 0.9126403123474865
+
+193. [FunctionalDependency] incidents: grand_jury_disposition → subject_count
+   Support: 0.6049048182894617
+   Confiance: 0.6049048182894617
+
+194. [FunctionalDependency] incidents: subject_count → grand_jury_disposition
+   Support: 198.2462686567164
+   Confiance: 198.2462686567164
+
+195. [FunctionalDependency] incidents: grand_jury_disposition → subject_count
+   Support: 0.2804444849257674
+   Confiance: 0.2804444849257674
+
+196. [FunctionalDependency] incidents: subject_count → grand_jury_disposition
+   Support: 0.9300709862558526
+   Confiance: 0.9300709862558526
+
+197. [FunctionalDependency] incidents: summary_url → subject_count
+   Support: 0.9857227434192549
+   Confiance: 0.9857227434192549
+
+198. [FunctionalDependency] incidents: subject_count → summary_url
+   Support: 200.41203703703704
+   Confiance: 200.41203703703704
+
+199. [FunctionalDependency] incidents: summary_text → subject_count
+   Support: 0.9857227434192549
+   Confiance: 0.9857227434192549
+
+200. [FunctionalDependency] incidents: subject_count → summary_text
+   Support: 200.41203703703704
+   Confiance: 200.41203703703704
+
+201. [FunctionalDependency] incidents: subject_count → latitude
+   Support: 201.23584905660377
+   Confiance: 201.23584905660377
+
+202. [FunctionalDependency] incidents: latitude → subject_count
+   Support: 0.9714454868385098
+   Confiance: 0.9714454868385098
+
+203. [FunctionalDependency] incidents: subject_count → longitude
+   Support: 201.23584905660377
+   Confiance: 201.23584905660377
+
+204. [FunctionalDependency] incidents: longitude → subject_count
+   Support: 0.9714454868385098
+   Confiance: 0.9714454868385098
+
+205. [FunctionalDependency] incidents: case_number → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+206. [FunctionalDependency] incidents: subject_count → case_number
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+207. [FunctionalDependency] incidents: date → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+208. [FunctionalDependency] incidents: subject_count → date
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+209. [FunctionalDependency] incidents: subject_count → location
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+210. [FunctionalDependency] incidents: location → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+211. [FunctionalDependency] incidents: subject_count → subject_statuses
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+212. [FunctionalDependency] incidents: subject_statuses → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+213. [FunctionalDependency] incidents: subject_count → subject_weapon
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+214. [FunctionalDependency] incidents: subject_weapon → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+215. [FunctionalDependency] incidents: subject_count → subjects
+   Support: 200.5296803652968
+   Confiance: 200.5296803652968
+
+216. [FunctionalDependency] incidents: subjects → subject_count
+   Support: 1.0
+   Confiance: 1.0
+
+217. [FunctionalDependency] officers: last_name → first_name
+   Support: 1.4032697547683923
+   Confiance: 1.4032697547683923
+
+218. [FunctionalDependency] officers: first_name → last_name
+   Support: 0.9942084942084942
+   Confiance: 0.9942084942084942
+
+219. [FunctionalDependency] officers: last_name → first_name
+   Support: 0.2478031634446397
+   Confiance: 0.2478031634446397
+
+220. [FunctionalDependency] officers: first_name → last_name
+   Support: 0.8166023166023166
+   Confiance: 0.8166023166023166
+
+221. [FunctionalDependency] officers: full_name → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+222. [FunctionalDependency] officers: last_name → full_name
+   Support: 1.4
+   Confiance: 1.4
+
+223. [FunctionalDependency] officers: full_name → last_name
+   Support: 0.8223938223938224
+   Confiance: 0.8223938223938224
+
+224. [FunctionalDependency] officers: last_name → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+225. [FunctionalDependency] officers: case_number → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+226. [FunctionalDependency] officers: last_name → case_number
+   Support: 1.4
+   Confiance: 1.4
+
+227. [FunctionalDependency] officers: race → last_name
+   Support: 0.9806949806949807
+   Confiance: 0.9806949806949807
+
+228. [FunctionalDependency] officers: last_name → race
+   Support: 1.3879781420765027
+   Confiance: 1.3879781420765027
+
+229. [FunctionalDependency] officers: last_name → gender
+   Support: 1.4
+   Confiance: 1.4
+
+230. [FunctionalDependency] officers: gender → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+231. [FunctionalDependency] officers: race → case_number
+   Support: 0.9946564885496183
+   Confiance: 0.9946564885496183
+
+232. [FunctionalDependency] officers: case_number → race
+   Support: 3.560109289617486
+   Confiance: 3.560109289617486
+
+233. [FunctionalDependency] officers: race → case_number
+   Support: 0.6473282442748092
+   Confiance: 0.6473282442748092
+
+234. [FunctionalDependency] officers: case_number → race
+   Support: 0.015745107504920346
+   Confiance: 0.015745107504920346
+
+235. [FunctionalDependency] officers: case_number → gender
+   Support: 3.5405405405405403
+   Confiance: 3.5405405405405403
+
+236. [FunctionalDependency] officers: gender → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+237. [FunctionalDependency] officers: last_name → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+238. [FunctionalDependency] officers: case_number → last_name
+   Support: 3.5405405405405403
+   Confiance: 3.5405405405405403
+
+239. [FunctionalDependency] officers: case_number → last_name
+   Support: 0.7181467181467182
+   Confiance: 0.7181467181467182
+
+240. [FunctionalDependency] officers: last_name → case_number
+   Support: 0.28396946564885495
+   Confiance: 0.28396946564885495
+
+241. [FunctionalDependency] officers: case_number → first_name
+   Support: 3.555858310626703
+   Confiance: 3.555858310626703
+
+242. [FunctionalDependency] officers: first_name → case_number
+   Support: 0.9961832061068703
+   Confiance: 0.9961832061068703
+
+243. [FunctionalDependency] officers: first_name → case_number
+   Support: 0.2877862595419847
+   Confiance: 0.2877862595419847
+
+244. [FunctionalDependency] officers: case_number → first_name
+   Support: 0.22085530169888692
+   Confiance: 0.22085530169888692
+
+245. [FunctionalDependency] officers: case_number → full_name
+   Support: 3.5405405405405403
+   Confiance: 3.5405405405405403
+
+246. [FunctionalDependency] officers: full_name → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+247. [FunctionalDependency] officers: case_number → full_name
+   Support: 0.8685446009389671
+   Confiance: 0.8685446009389671
+
+248. [FunctionalDependency] officers: full_name → case_number
+   Support: 0.2824427480916031
+   Confiance: 0.2824427480916031
+
+249. [FunctionalDependency] incidents: case_number → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+250. [FunctionalDependency] incidents: longitude → case_number
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+251. [FunctionalDependency] incidents: date → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+252. [FunctionalDependency] incidents: longitude → date
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+253. [FunctionalDependency] incidents: location → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+254. [FunctionalDependency] incidents: longitude → location
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+255. [FunctionalDependency] incidents: subject_statuses → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+256. [FunctionalDependency] incidents: longitude → subject_statuses
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+257. [FunctionalDependency] incidents: subject_weapon → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+258. [FunctionalDependency] incidents: longitude → subject_weapon
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+259. [FunctionalDependency] incidents: longitude → subjects
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+260. [FunctionalDependency] incidents: subjects → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+261. [FunctionalDependency] incidents: subject_count → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+262. [FunctionalDependency] incidents: longitude → subject_count
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+263. [FunctionalDependency] incidents: longitude → officers
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+264. [FunctionalDependency] incidents: officers → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+265. [FunctionalDependency] incidents: officer_count → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+266. [FunctionalDependency] incidents: longitude → officer_count
+   Support: 0.0182648401826484
+   Confiance: 0.0182648401826484
+
+267. [FunctionalDependency] incidents: summary_url → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+268. [FunctionalDependency] incidents: longitude → summary_url
+   Support: 0.018518518518518517
+   Confiance: 0.018518518518518517
+
+269. [FunctionalDependency] incidents: longitude → summary_text
+   Support: 0.018518518518518517
+   Confiance: 0.018518518518518517
+
+270. [FunctionalDependency] incidents: summary_text → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+271. [FunctionalDependency] incidents: latitude → longitude
+   Support: 1.0
+   Confiance: 1.0
+
+272. [FunctionalDependency] incidents: longitude → latitude
+   Support: 0.018867924528301886
+   Confiance: 0.018867924528301886
+
+273. [FunctionalDependency] incidents: subjects → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+274. [FunctionalDependency] incidents: subject_weapon → subjects
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+275. [FunctionalDependency] incidents: subject_weapon → subject_count
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+276. [FunctionalDependency] incidents: subject_count → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+277. [FunctionalDependency] incidents: subject_count → subject_weapon
+   Support: 0.9265434136678772
+   Confiance: 0.9265434136678772
+
+278. [FunctionalDependency] incidents: subject_weapon → subject_count
+   Support: 0.25562437380453595
+   Confiance: 0.25562437380453595
+
+279. [FunctionalDependency] incidents: subject_weapon → officers
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+280. [FunctionalDependency] incidents: officers → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+281. [FunctionalDependency] incidents: subject_weapon → officer_count
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+282. [FunctionalDependency] incidents: officer_count → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+283. [FunctionalDependency] incidents: subject_weapon → officer_count
+   Support: 0.24483487880266797
+   Confiance: 0.24483487880266797
+
+284. [FunctionalDependency] incidents: officer_count → subject_weapon
+   Support: 0.49686365137008914
+   Confiance: 0.49686365137008914
+
+285. [FunctionalDependency] incidents: subject_weapon → grand_jury_disposition
+   Support: 56.62686567164179
+   Confiance: 56.62686567164179
+
+286. [FunctionalDependency] incidents: grand_jury_disposition → subject_weapon
+   Support: 0.6262793000990425
+   Confiance: 0.6262793000990425
+
+287. [FunctionalDependency] incidents: grand_jury_disposition → subject_weapon
+   Support: 0.30389567514031035
+   Confiance: 0.30389567514031035
+
+288. [FunctionalDependency] incidents: subject_weapon → grand_jury_disposition
+   Support: 0.2780546745204652
+   Confiance: 0.2780546745204652
+
+289. [FunctionalDependency] incidents: attorney_general_forms_url → subject_weapon
+   Support: 0.010812149224166392
+   Confiance: 0.010812149224166392
+
+290. [FunctionalDependency] incidents: subject_weapon → attorney_general_forms_url
+   Support: 65.5
+   Confiance: 65.5
+
+291. [FunctionalDependency] incidents: subject_weapon → summary_url
+   Support: 55.1712962962963
+   Confiance: 55.1712962962963
+
+292. [FunctionalDependency] incidents: summary_url → subject_weapon
+   Support: 0.9835754374380984
+   Confiance: 0.9835754374380984
+
+293. [FunctionalDependency] incidents: subject_weapon → summary_text
+   Support: 55.1712962962963
+   Confiance: 55.1712962962963
+
+294. [FunctionalDependency] incidents: summary_text → subject_weapon
+   Support: 0.9835754374380984
+   Confiance: 0.9835754374380984
+
+295. [FunctionalDependency] incidents: subject_weapon → latitude
+   Support: 55.37735849056604
+   Confiance: 55.37735849056604
+
+296. [FunctionalDependency] incidents: latitude → subject_weapon
+   Support: 0.9689666556619346
+   Confiance: 0.9689666556619346
+
+297. [FunctionalDependency] incidents: subject_weapon → longitude
+   Support: 55.37735849056604
+   Confiance: 55.37735849056604
+
+298. [FunctionalDependency] incidents: longitude → subject_weapon
+   Support: 0.9689666556619346
+   Confiance: 0.9689666556619346
+
+299. [FunctionalDependency] incidents: subject_weapon → case_number
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+300. [FunctionalDependency] incidents: case_number → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+301. [FunctionalDependency] incidents: subject_weapon → date
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+302. [FunctionalDependency] incidents: date → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+303. [FunctionalDependency] incidents: subject_weapon → location
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+304. [FunctionalDependency] incidents: location → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+305. [FunctionalDependency] incidents: subject_weapon → subject_statuses
+   Support: 55.32420091324201
+   Confiance: 55.32420091324201
+
+306. [FunctionalDependency] incidents: subject_statuses → subject_weapon
+   Support: 1.0
+   Confiance: 1.0
+
+307. [FunctionalDependency] subjects: full_name → case_number
+   Support: 2.0762331838565022
+   Confiance: 2.0762331838565022
+
+308. [FunctionalDependency] subjects: case_number → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+309. [FunctionalDependency] subjects: full_name → race
+   Support: 2.0762331838565022
+   Confiance: 2.0762331838565022
+
+310. [FunctionalDependency] subjects: race → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+311. [FunctionalDependency] subjects: full_name → gender
+   Support: 2.0762331838565022
+   Confiance: 2.0762331838565022
+
+312. [FunctionalDependency] subjects: gender → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+313. [FunctionalDependency] subjects: last_name → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+314. [FunctionalDependency] subjects: full_name → last_name
+   Support: 2.0762331838565022
+   Confiance: 2.0762331838565022
+
+315. [FunctionalDependency] subjects: full_name → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+316. [FunctionalDependency] subjects: first_name → full_name
+   Support: 0.4427645788336933
+   Confiance: 0.4427645788336933
+
+317. [FunctionalDependency] incidents: longitude → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+318. [FunctionalDependency] incidents: latitude → longitude
+   Support: 0.03773584905660377
+   Confiance: 0.03773584905660377
+
+319. [FunctionalDependency] incidents: longitude → latitude
+   Support: 0.25
+   Confiance: 0.25
+
+320. [FunctionalDependency] incidents: latitude → longitude
+   Support: 0.5
+   Confiance: 0.5
+
+321. [FunctionalDependency] incidents: case_number → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+322. [FunctionalDependency] incidents: latitude → case_number
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+323. [FunctionalDependency] incidents: date → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+324. [FunctionalDependency] incidents: latitude → date
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+325. [FunctionalDependency] incidents: location → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+326. [FunctionalDependency] incidents: latitude → location
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+327. [FunctionalDependency] incidents: subject_statuses → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+328. [FunctionalDependency] incidents: latitude → subject_statuses
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+329. [FunctionalDependency] incidents: subject_weapon → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+330. [FunctionalDependency] incidents: latitude → subject_weapon
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+331. [FunctionalDependency] incidents: latitude → subjects
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+332. [FunctionalDependency] incidents: subjects → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+333. [FunctionalDependency] incidents: subject_count → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+334. [FunctionalDependency] incidents: latitude → subject_count
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+335. [FunctionalDependency] incidents: latitude → officers
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+336. [FunctionalDependency] incidents: officers → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+337. [FunctionalDependency] incidents: officer_count → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+338. [FunctionalDependency] incidents: latitude → officer_count
+   Support: 0.0365296803652968
+   Confiance: 0.0365296803652968
+
+339. [FunctionalDependency] incidents: grand_jury_disposition → latitude
+   Support: 0.5
+   Confiance: 0.5
+
+340. [FunctionalDependency] incidents: latitude → grand_jury_disposition
+   Support: 0.029850746268656716
+   Confiance: 0.029850746268656716
+
+341. [FunctionalDependency] incidents: summary_url → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+342. [FunctionalDependency] incidents: latitude → summary_url
+   Support: 0.037037037037037035
+   Confiance: 0.037037037037037035
+
+343. [FunctionalDependency] incidents: latitude → summary_text
+   Support: 0.037037037037037035
+   Confiance: 0.037037037037037035
+
+344. [FunctionalDependency] incidents: summary_text → latitude
+   Support: 1.0
+   Confiance: 1.0
+
+345. [FunctionalDependency] incidents: summary_url → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+346. [FunctionalDependency] incidents: grand_jury_disposition → summary_url
+   Support: 61.30555555555556
+   Confiance: 61.30555555555556
+
+347. [FunctionalDependency] incidents: summary_text → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+348. [FunctionalDependency] incidents: grand_jury_disposition → summary_text
+   Support: 61.30555555555556
+   Confiance: 61.30555555555556
+
+349. [FunctionalDependency] incidents: grand_jury_disposition → latitude
+   Support: 60.29245283018868
+   Confiance: 60.29245283018868
+
+350. [FunctionalDependency] incidents: latitude → grand_jury_disposition
+   Support: 0.9652620450083069
+   Confiance: 0.9652620450083069
+
+351. [FunctionalDependency] incidents: grand_jury_disposition → longitude
+   Support: 60.29245283018868
+   Confiance: 60.29245283018868
+
+352. [FunctionalDependency] incidents: longitude → grand_jury_disposition
+   Support: 0.9652620450083069
+   Confiance: 0.9652620450083069
+
+353. [FunctionalDependency] incidents: grand_jury_disposition → case_number
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+354. [FunctionalDependency] incidents: case_number → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+355. [FunctionalDependency] incidents: date → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+356. [FunctionalDependency] incidents: grand_jury_disposition → date
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+357. [FunctionalDependency] incidents: grand_jury_disposition → location
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+358. [FunctionalDependency] incidents: location → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+359. [FunctionalDependency] incidents: grand_jury_disposition → subject_statuses
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+360. [FunctionalDependency] incidents: subject_statuses → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+361. [FunctionalDependency] incidents: grand_jury_disposition → subject_weapon
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+362. [FunctionalDependency] incidents: subject_weapon → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+363. [FunctionalDependency] incidents: grand_jury_disposition → subjects
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+364. [FunctionalDependency] incidents: subjects → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+365. [FunctionalDependency] incidents: grand_jury_disposition → subject_count
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+366. [FunctionalDependency] incidents: subject_count → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+367. [FunctionalDependency] incidents: officers → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+368. [FunctionalDependency] incidents: grand_jury_disposition → officers
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+369. [FunctionalDependency] incidents: officer_count → grand_jury_disposition
+   Support: 1.0
+   Confiance: 1.0
+
+370. [FunctionalDependency] incidents: grand_jury_disposition → officer_count
+   Support: 60.465753424657535
+   Confiance: 60.465753424657535
+
+371. [FunctionalDependency] subjects: last_name → first_name
+   Support: 1.4195121951219511
+   Confiance: 1.4195121951219511
+
+372. [FunctionalDependency] subjects: first_name → last_name
+   Support: 0.5300546448087432
+   Confiance: 0.5300546448087432
+
+373. [FunctionalDependency] subjects: last_name → first_name
+   Support: 0.5380577427821522
+   Confiance: 0.5380577427821522
+
+374. [FunctionalDependency] subjects: first_name → last_name
+   Support: 0.37340619307832423
+   Confiance: 0.37340619307832423
+
+375. [FunctionalDependency] subjects: last_name → full_name
+   Support: 2.4618834080717487
+   Confiance: 2.4618834080717487
+
+376. [FunctionalDependency] subjects: full_name → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+377. [FunctionalDependency] subjects: full_name → last_name
+   Support: 0.843351548269581
+   Confiance: 0.843351548269581
+
+378. [FunctionalDependency] subjects: last_name → full_name
+   Support: 1.0
+   Confiance: 1.0
+
+379. [FunctionalDependency] subjects: case_number → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+380. [FunctionalDependency] subjects: last_name → case_number
+   Support: 2.4618834080717487
+   Confiance: 2.4618834080717487
+
+381. [FunctionalDependency] subjects: race → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+382. [FunctionalDependency] subjects: last_name → race
+   Support: 2.4618834080717487
+   Confiance: 2.4618834080717487
+
+383. [FunctionalDependency] subjects: gender → last_name
+   Support: 1.0
+   Confiance: 1.0
+
+384. [FunctionalDependency] subjects: last_name → gender
+   Support: 2.4618834080717487
+   Confiance: 2.4618834080717487
+
+385. [FunctionalDependency] officers: race → gender
+   Support: 145.56216216216217
+   Confiance: 145.56216216216217
+
+386. [FunctionalDependency] officers: gender → race
+   Support: 1.0
+   Confiance: 1.0
+
+387. [FunctionalDependency] officers: gender → race
+   Support: 0.9159270674737272
+   Confiance: 0.9159270674737272
+
+388. [FunctionalDependency] officers: race → gender
+   Support: 0.39923277383014194
+   Confiance: 0.39923277383014194
+
+389. [FunctionalDependency] officers: race → last_name
+   Support: 145.56216216216217
+   Confiance: 145.56216216216217
+
+390. [FunctionalDependency] officers: last_name → race
+   Support: 1.0
+   Confiance: 1.0
+
+391. [FunctionalDependency] officers: first_name → race
+   Support: 0.9932229195291321
+   Confiance: 0.9932229195291321
+
+392. [FunctionalDependency] officers: race → first_name
+   Support: 145.7574931880109
+   Confiance: 145.7574931880109
+
+393. [FunctionalDependency] officers: race → first_name
+   Support: 0.6543643819566491
+   Confiance: 0.6543643819566491
+
+394. [FunctionalDependency] officers: first_name → race
+   Support: 0.020739722975231162
+   Confiance: 0.020739722975231162
+
+395. [FunctionalDependency] officers: full_name → race
+   Support: 1.0
+   Confiance: 1.0
+
+396. [FunctionalDependency] officers: race → full_name
+   Support: 145.56216216216217
+   Confiance: 145.56216216216217
+
+397. [FunctionalDependency] officers: race → case_number
+   Support: 145.56216216216217
+   Confiance: 145.56216216216217
+
+398. [FunctionalDependency] officers: case_number → race
+   Support: 1.0
+   Confiance: 1.0
+
+399. [FunctionalDependency] officers: full_name → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+400. [FunctionalDependency] officers: first_name → full_name
+   Support: 4.613513513513514
+   Confiance: 4.613513513513514
+
+401. [FunctionalDependency] officers: first_name → full_name
+   Support: 0.9929577464788732
+   Confiance: 0.9929577464788732
+
+402. [FunctionalDependency] officers: full_name → first_name
+   Support: 0.2478031634446397
+   Confiance: 0.2478031634446397
+
+403. [FunctionalDependency] officers: first_name → case_number
+   Support: 4.613513513513514
+   Confiance: 4.613513513513514
+
+404. [FunctionalDependency] officers: case_number → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+405. [FunctionalDependency] officers: first_name → race
+   Support: 4.609289617486339
+   Confiance: 4.609289617486339
+
+406. [FunctionalDependency] officers: race → first_name
+   Support: 0.9882835383714118
+   Confiance: 0.9882835383714118
+
+407. [FunctionalDependency] officers: gender → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+408. [FunctionalDependency] officers: first_name → gender
+   Support: 4.613513513513514
+   Confiance: 4.613513513513514
+
+409. [FunctionalDependency] officers: last_name → first_name
+   Support: 1.0
+   Confiance: 1.0
+
+410. [FunctionalDependency] officers: first_name → last_name
+   Support: 4.613513513513514
+   Confiance: 4.613513513513514
+
+411. [FunctionalDependency] subjects: race → gender
+   Support: 84.99103139013452
+   Confiance: 84.99103139013452
+
+412. [FunctionalDependency] subjects: gender → race
+   Support: 1.0
+   Confiance: 1.0
+
+413. [FunctionalDependency] subjects: gender → race
+   Support: 0.9253943966654355
+   Confiance: 0.9253943966654355
+
+414. [FunctionalDependency] subjects: race → gender
+   Support: 0.37890211497331977
+   Confiance: 0.37890211497331977
+
+415. [FunctionalDependency] subjects: last_name → race
+   Support: 1.0
+   Confiance: 1.0
+
+416. [FunctionalDependency] subjects: race → last_name
+   Support: 84.99103139013452
+   Confiance: 84.99103139013452
+
+417. [FunctionalDependency] subjects: last_name → race
+   Support: 0.022634939059779455
+   Confiance: 0.022634939059779455
+
+418. [FunctionalDependency] subjects: race → last_name
+   Support: 0.7814207650273224
+   Confiance: 0.7814207650273224
+
+419. [FunctionalDependency] subjects: race → first_name
+   Support: 84.8
+   Confiance: 84.8
+
+420. [FunctionalDependency] subjects: first_name → race
+   Support: 0.9172162718303171
+   Confiance: 0.9172162718303171
+
+421. [FunctionalDependency] subjects: race → first_name
+   Support: 0.7480314960629921
+   Confiance: 0.7480314960629921
+
+422. [FunctionalDependency] subjects: first_name → race
+   Support: 0.015037197277475862
+   Confiance: 0.015037197277475862
+
+423. [FunctionalDependency] subjects: full_name → race
+   Support: 1.0
+   Confiance: 1.0
+
+424. [FunctionalDependency] subjects: race → full_name
+   Support: 84.99103139013452
+   Confiance: 84.99103139013452
+
+425. [FunctionalDependency] subjects: full_name → race
+   Support: 0.01862501978578589
+   Confiance: 0.01862501978578589
+
+426. [FunctionalDependency] subjects: race → full_name
+   Support: 0.7624190064794817
+   Confiance: 0.7624190064794817
+
+427. [FunctionalDependency] subjects: race → case_number
+   Support: 84.99103139013452
+   Confiance: 84.99103139013452
+
+428. [FunctionalDependency] subjects: case_number → race
+   Support: 1.0
+   Confiance: 1.0
+
+429. [FunctionalDependency] subjects: case_number → race
+   Support: 1.0717488789237668
+   Confiance: 1.0717488789237668
+
+430. [FunctionalDependency] subjects: race → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+431. [FunctionalDependency] subjects: case_number → race
+   Support: 0.012610140874795547
+   Confiance: 0.012610140874795547
+
+432. [FunctionalDependency] subjects: race → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+433. [FunctionalDependency] subjects: case_number → gender
+   Support: 1.0717488789237668
+   Confiance: 1.0717488789237668
+
+434. [FunctionalDependency] subjects: gender → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+435. [FunctionalDependency] subjects: last_name → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+436. [FunctionalDependency] subjects: case_number → last_name
+   Support: 1.0717488789237668
+   Confiance: 1.0717488789237668
+
+437. [FunctionalDependency] subjects: case_number → last_name
+   Support: 0.4098360655737705
+   Confiance: 0.4098360655737705
+
+438. [FunctionalDependency] subjects: last_name → case_number
+   Support: 0.9414225941422594
+   Confiance: 0.9414225941422594
+
+439. [FunctionalDependency] subjects: case_number → first_name
+   Support: 1.0682926829268293
+   Confiance: 1.0682926829268293
+
+440. [FunctionalDependency] subjects: first_name → case_number
+   Support: 0.9163179916317992
+   Confiance: 0.9163179916317992
+
+441. [FunctionalDependency] subjects: case_number → first_name
+   Support: 0.5380577427821522
+   Confiance: 0.5380577427821522
+
+442. [FunctionalDependency] subjects: first_name → case_number
+   Support: 0.8577405857740585
+   Confiance: 0.8577405857740585
+
+443. [FunctionalDependency] subjects: full_name → case_number
+   Support: 1.0
+   Confiance: 1.0
+
+444. [FunctionalDependency] subjects: case_number → full_name
+   Support: 1.0717488789237668
+   Confiance: 1.0717488789237668
+
+445. [FunctionalDependency] subjects: full_name → case_number
+   Support: 0.9414225941422594
+   Confiance: 0.9414225941422594
+
+446. [FunctionalDependency] subjects: case_number → full_name
+   Support: 0.48596112311015116
+   Confiance: 0.48596112311015116
+

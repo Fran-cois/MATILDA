@@ -1,0 +1,35 @@
+# FDs sauvegardées: 8
+# Date: 2025-04-28 07:17:37
+
+1. [FunctionalDependency] mesh_test_Neg: num → name
+   Support: 1.0
+   Confiance: 1.0
+
+2. [FunctionalDependency] mesh_test_Neg: name → num
+   Support: 12.0
+   Confiance: 12.0
+
+3. [FunctionalDependency] mesh_test_Neg: name → num
+   Support: 0.019415190916044007
+   Confiance: 0.019415190916044007
+
+4. [FunctionalDependency] mesh_test_Neg: num → name
+   Support: 0.08333333333333333
+   Confiance: 0.08333333333333333
+
+5. [FunctionalDependency] mesh_test_Neg: name → num
+   Support: 1.0
+   Confiance: 1.0
+
+6. [FunctionalDependency] mesh_test_Neg: num → name
+   Support: 51.50606060606061
+   Confiance: 51.50606060606061
+
+7. [FunctionalDependency] mesh: num → name
+   Support: 37.91031390134529
+   Confiance: 37.91031390134529
+
+8. [FunctionalDependency] mesh_test: num → name
+   Support: 12.072727272727272
+   Confiance: 12.072727272727272
+

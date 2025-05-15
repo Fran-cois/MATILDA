@@ -1,0 +1,7 @@
+# Règles communes sauvegardées: 2
+# Date: 2025-04-28 06:31:41
+
+1. target: name1 → is_dunur [conf=1.00, supp=231.67] <=> target: name1 → is_dunur
+
+2. target: name2 → is_dunur [conf=1.00, supp=231.67] <=> target: name2 → is_dunur
+

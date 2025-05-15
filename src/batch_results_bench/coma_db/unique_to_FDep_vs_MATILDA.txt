@@ -1,0 +1,11 @@
+# FDs sauvegardées: 2
+# Date: 2025-04-29 20:51:16
+
+1. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+
+2. [FunctionalDependency] None
+   Support: None
+   Confiance: None
+

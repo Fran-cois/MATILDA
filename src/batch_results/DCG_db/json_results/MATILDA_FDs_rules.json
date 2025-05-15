@@ -1,0 +1,110 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "sentences",
+        "determinant": [
+            "class"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 564.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "sentences",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 564.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "terms",
+        "determinant": [
+            "id_sentence"
+        ],
+        "dependent": [
+            "term"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 473.0462962962963,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "terms",
+        "determinant": [
+            "term"
+        ],
+        "dependent": [
+            "id_sentence"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 473.0462962962963,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "terms",
+        "determinant": [
+            "id_term"
+        ],
+        "dependent": [
+            "term"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 473.0462962962963,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "terms",
+        "determinant": [
+            "term"
+        ],
+        "dependent": [
+            "id_term"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 473.0462962962963,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

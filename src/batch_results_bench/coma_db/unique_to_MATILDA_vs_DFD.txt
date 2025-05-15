@@ -1,0 +1,111 @@
+# FDs sauvegardées: 27
+# Date: 2025-04-29 20:51:16
+
+1. [FunctionalDependency] LINKS: col1 → col2
+   Support: 4.423423423423423
+   Confiance: 4.423423423423423
+
+2. [FunctionalDependency] LINKS: col2 → col1
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] LINKS: col1 → col2
+   Support: 0.2955145118733509
+   Confiance: 0.2955145118733509
+
+4. [FunctionalDependency] LINKS: col2 → col1
+   Support: 0.22810590631364563
+   Confiance: 0.22810590631364563
+
+5. [FunctionalDependency] LINKS: col1 → col3
+   Support: 4.423423423423423
+   Confiance: 4.423423423423423
+
+6. [FunctionalDependency] LINKS: col1 → col3
+   Support: 0.20184899845916796
+   Confiance: 0.20184899845916796
+
+7. [FunctionalDependency] LINKS: col1 → col0
+   Support: 4.423423423423423
+   Confiance: 4.423423423423423
+
+8. [FunctionalDependency] LINKS: col0 → col1
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] LINKS: col0 → col3
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] LINKS: col1 → col3
+   Support: 1.0
+   Confiance: 1.0
+
+11. [FunctionalDependency] LINKS: col2 → col3
+   Support: 1.0
+   Confiance: 1.0
+
+12. [FunctionalDependency] LINKS: col3 → col2
+   Support: 11.693693693693694
+   Confiance: 11.693693693693694
+
+13. [FunctionalDependency] LINKS: col0 → col1
+   Support: 100.63063063063063
+   Confiance: 100.63063063063063
+
+14. [FunctionalDependency] LINKS: col1 → col0
+   Support: 1.0
+   Confiance: 1.0
+
+15. [FunctionalDependency] LINKS: col0 → col1
+   Support: 0.5926680244399185
+   Confiance: 0.5926680244399185
+
+16. [FunctionalDependency] LINKS: col1 → col0
+   Support: 0.02605192479856759
+   Confiance: 0.02605192479856759
+
+17. [FunctionalDependency] LINKS: col0 → col2
+   Support: 100.63063063063063
+   Confiance: 100.63063063063063
+
+18. [FunctionalDependency] LINKS: col0 → col2
+   Support: 0.9604221635883905
+   Confiance: 0.9604221635883905
+
+19. [FunctionalDependency] LINKS: col0 → col3
+   Support: 100.63063063063063
+   Confiance: 100.63063063063063
+
+20. [FunctionalDependency] LINKS: col0 → col3
+   Support: 0.7673343605546995
+   Confiance: 0.7673343605546995
+
+21. [FunctionalDependency] LINKS: col2 → col3
+   Support: 3.4144144144144146
+   Confiance: 3.4144144144144146
+
+22. [FunctionalDependency] LINKS: col3 → col2
+   Support: 1.0
+   Confiance: 1.0
+
+23. [FunctionalDependency] LINKS: col2 → col3
+   Support: 0.15870570107858242
+   Confiance: 0.15870570107858242
+
+24. [FunctionalDependency] LINKS: col3 → col2
+   Support: 0.5435356200527705
+   Confiance: 0.5435356200527705
+
+25. [FunctionalDependency] LINKS: col0 → col2
+   Support: 1.0
+   Confiance: 1.0
+
+26. [FunctionalDependency] LINKS: col1 → col2
+   Support: 1.0
+   Confiance: 1.0
+
+27. [FunctionalDependency] LINKS: col2 → col1
+   Support: 3.4144144144144146
+   Confiance: 3.4144144144144146
+

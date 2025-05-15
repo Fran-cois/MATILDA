@@ -1,0 +1,17 @@
+# Règles communes sauvegardées: 7
+# Date: 2025-04-27 17:32:01
+
+1. position: pi_doner → h_doner [conf=121.43, supp=1.00] <=> position: pi_doner → h_doner
+
+2. position: h_doner → pi_doner [conf=1.00, supp=121.43] <=> position: h_doner → pi_doner
+
+3. molecule: molecule_id → activity [conf=1.00, supp=0.38] <=> molecule: molecule_id → activity
+
+4. position: h_doner → pi_doner [conf=121.43, supp=1.00] <=> position: h_doner → pi_doner
+
+5. position: pi_doner → h_doner [conf=1.00, supp=121.43] <=> position: pi_doner → h_doner
+
+6. position: h_doner → pi_doner [conf=1.00, supp=1.00] <=> position: h_doner → pi_doner
+
+7. position: pi_doner → h_doner [conf=1.00, supp=1.00] <=> position: pi_doner → h_doner
+

@@ -6,6 +6,11 @@ import time
 from pathlib import Path
 from typing import Dict, List, Set, Tuple, Any
 
+# Tentative d'importation de psutil avec gestion d'erreur
+
+import psutil
+
+
 from algorithms.matilda import MATILDA
 from algorithms.tane import Tane
 from algorithms.fastfds import FastFDs
@@ -15,6 +20,20 @@ from database.alchemy_utility import AlchemyUtility
 from utils.rule_comparator import RuleComparator
 from utils.rules import Rule, FunctionalDependency, EGDRule, TGDRule
 from utils.logging_utils import configure_global_logger
+
+
+# Ajout d'une fonction pour obtenir l'utilisation mémoire, avec repli si psutil n'est pas disponible
+def get_memory_usage():
+    """
+    Renvoie l'utilisation mémoire actuelle en Mo.
+    Utilise psutil si disponible, sinon renvoie -1.
+    
+    :return: Utilisation mémoire en Mo ou -1 si psutil n'est pas disponible
+    """
+    process = psutil.Process(os.getpid())
+    mem_info = process.memory_info()
+    return mem_info.rss / (1024 * 1024)  # Conversion en Mo
+
 
 
 class AlgorithmComparer:
@@ -65,6 +84,11 @@ class AlgorithmComparer:
         self.logger.info(f"Démarrage de l'algorithme {algorithm_name}")
         start_time = time.time()
         
+        # Mesure de la mémoire avant l'exécution
+        mem_before = get_memory_usage()
+        if mem_before >= 0:
+            self.logger.debug(f"Utilisation mémoire avant {algorithm_name}: {mem_before:.2f} Mo")
+        
         rules = []
         try:
             # Extraire les paramètres d'initialisation
@@ -80,6 +104,13 @@ class AlgorithmComparer:
                     
             execution_time = time.time() - start_time
             self.execution_times[algorithm_name] = execution_time
+            
+            # Mesure de la mémoire après l'exécution
+            mem_after = get_memory_usage()
+            if mem_after >= 0:
+                self.logger.debug(f"Utilisation mémoire après {algorithm_name}: {mem_after:.2f} Mo")
+                self.logger.debug(f"Différence de mémoire pour {algorithm_name}: {mem_after - mem_before:.2f} Mo")
+            
             self.logger.info(f"{algorithm_name} terminé en {execution_time:.2f} secondes, {len(rules)} règles découvertes")
             
             # Sauvegarder les règles dans un fichier
@@ -163,6 +194,8 @@ class AlgorithmComparer:
                 algo = MATILDA(db_util, settings=matilda_settings)
                 # Découvrir les EGDs
                 for rule in algo.discover_rules(dependency_type='egd'):
+                    print(rule)
+                    exit()
                     egd_rules.append(rule)
             
             execution_time_egd = time.time() - start_time_egd
@@ -724,7 +757,10 @@ def main():
     parser.add_argument('--create-test-data', action='store_true', help='Créer des données de test si nécessaire')
     args = parser.parse_args()
     
-
+    # Vérifier si psutil est disponible et afficher un avertissement le cas échéant
+    if not has_psutil:
+        print("AVERTISSEMENT: Le module 'psutil' n'est pas installé. La surveillance de la mémoire sera désactivée.")
+        print("Pour installer psutil, exécutez: pip install psutil\n")
     
     comparer = AlgorithmComparer(args.db_path, args.db_name, args.output)
     

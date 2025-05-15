@@ -61,19 +61,17 @@ class RuleComparator:
         :return: True si les FDs sont équivalentes, False sinon
         """
         try:
+            same_table = fd1.table == fd2.table
             # Vérifier si les FDs concernent la même table
-            if hasattr(fd1, 'table_dependant') and hasattr(fd2, 'table_dependant'):
-                same_table = fd1.table_dependant == fd2.table_dependant
-            else:
-                # Cas où la structure est différente, essayer d'autres attributs
-                table1 = getattr(fd1, 'table', None)
-                table2 = getattr(fd2, 'table', None)
-                same_table = table1 == table2
-            
+    
+            if len(fd1.determinant) != len(fd2.determinant):
+                return False
+            if len(fd1.dependent) != len(fd2.dependent):
+                return False
             # Vérifier si les ensembles d'attributs sont les mêmes
             if hasattr(fd1, 'columns_dependant') and hasattr(fd2, 'columns_dependant'):
-                same_determinant = set(fd1.columns_dependant) == set(fd2.columns_dependant)
-                same_dependent = set(fd1.columns_referenced) == set(fd2.columns_referenced)
+                same_determinant = set(fd1.columns_dependant) == set(fd2.columns_dependant) and len(fd1.columns_dependant) == len(fd2.columns_dependant)    
+                same_dependent = set(fd1.columns_referenced) == set(fd2.columns_referenced) and len(fd1.columns_referenced) == len(fd2.columns_referenced)
             else:
                 # Utiliser les noms d'attributs corrects de la classe FunctionalDependency
                 determinant1 = getattr(fd1, 'determinant', ())

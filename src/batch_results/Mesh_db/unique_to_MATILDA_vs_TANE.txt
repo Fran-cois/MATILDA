@@ -1,0 +1,59 @@
+# FDs sauvegardées: 14
+# Date: 2025-04-28 07:17:37
+
+1. [FunctionalDependency] neighbour_yz: name1 → name2
+   Support: 1.0606060606060606
+   Confiance: 1.0606060606060606
+
+2. [FunctionalDependency] neighbour_yz: name2 → name1
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] neighbour_yz: name2 → name1
+   Support: 0.9542857142857143
+   Confiance: 0.9542857142857143
+
+4. [FunctionalDependency] neighbour_yz: name1 → name2
+   Support: 0.9329608938547486
+   Confiance: 0.9329608938547486
+
+5. [FunctionalDependency] neighbour_yz: name2 → name1
+   Support: 1.084848484848485
+   Confiance: 1.084848484848485
+
+6. [FunctionalDependency] neighbour_yz: name1 → name2
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] mesh_test_Neg: num → name
+   Support: 1.0
+   Confiance: 1.0
+
+8. [FunctionalDependency] mesh_test_Neg: name → num
+   Support: 12.0
+   Confiance: 12.0
+
+9. [FunctionalDependency] mesh_test_Neg: name → num
+   Support: 0.019415190916044007
+   Confiance: 0.019415190916044007
+
+10. [FunctionalDependency] mesh_test_Neg: num → name
+   Support: 0.08333333333333333
+   Confiance: 0.08333333333333333
+
+11. [FunctionalDependency] mesh_test_Neg: name → num
+   Support: 1.0
+   Confiance: 1.0
+
+12. [FunctionalDependency] mesh_test_Neg: num → name
+   Support: 51.50606060606061
+   Confiance: 51.50606060606061
+
+13. [FunctionalDependency] mesh: num → name
+   Support: 37.91031390134529
+   Confiance: 37.91031390134529
+
+14. [FunctionalDependency] mesh_test: num → name
+   Support: 12.072727272727272
+   Confiance: 12.072727272727272
+

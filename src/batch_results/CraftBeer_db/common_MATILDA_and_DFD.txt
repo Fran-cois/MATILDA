@@ -1,0 +1,19 @@
+# Règles communes sauvegardées: 8
+# Date: 2025-04-27 22:58:16
+
+1. beers: name → abv [conf=1.00, supp=78.10] <=> beers: name → abv
+
+2. beers: id → abv [conf=1.00, supp=78.10] <=> beers: id → abv
+
+3. beers: name → brewery_id [conf=1.00, supp=8.90] <=> beers: name → brewery_id
+
+4. beers: name → brewery_id [conf=0.01, supp=0.79] <=> beers: name → brewery_id
+
+5. beers: id → brewery_id [conf=1.00, supp=8.90] <=> beers: id → brewery_id
+
+6. beers: name → id [conf=0.15, supp=1.00] <=> beers: name → id
+
+7. beers: name → brewery_id [conf=0.15, supp=1.00] <=> beers: name → brewery_id
+
+8. beers: name → abv [conf=0.16, supp=0.99] <=> beers: name → abv
+

@@ -1,0 +1,319 @@
+import ast
+import os
+import logging
+from datetime import datetime
+from typing import List
+
+# Utiliser des imports relatifs pour éviter les problèmes de chemin de module
+from .rule_discovery_algorithm import RuleDiscoveryAlgorithm
+from ..utils.rules_classes.functional_dependency import FunctionalDependency
+from ..utils.run_cmd import run_cmd
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+class AIDFD(RuleDiscoveryAlgorithm):
+    """
+    Implémentation de l'algorithme AIDFD (Approximate Incremental Dependency Discovery)
+    pour la découverte de dépendances fonctionnelles approximatives.
+    Cette implémentation utilise un JAR Java externe.
+    """
+    
+    def __init__(self, database, **kwargs):
+        """
+        Initialise l'algorithme AIDFD.
+        
+        Args:
+            database: La base de données à analyser
+            **kwargs: Arguments supplémentaires, notamment 'settings'
+        """
+        super().__init__(database)
+        # Extraction des settings si présents
+        settings = kwargs.get('settings', {})
+        self.min_support = settings.get('min_support', 0.5)
+        self.min_confidence = settings.get('min_confidence', 0.9)
+        self.max_lhs_size = settings.get('max_lhs_size', 3)
+
+    def discover_rules(self, **kwargs) -> List[FunctionalDependency]:
+        """
+        Découvre les dépendances fonctionnelles en utilisant le JAR Java AIDFD,
+        avec repli sur une implémentation Python simplifiée en cas d'échec.
+        
+        Args:
+            **kwargs: Paramètres optionnels
+                use_fallback: Si True, utilise directement l'implémentation Python
+        """
+        # Mise à jour des paramètres avec ceux passés directement à la méthode
+        self.min_support = kwargs.get("min_support", self.min_support)
+        self.min_confidence = kwargs.get("min_confidence", self.min_confidence)
+        self.max_lhs_size = kwargs.get("max_lhs_size", self.max_lhs_size)
+        use_fallback = kwargs.get("use_fallback", False)
+        
+        if not use_fallback:
+            logger.info("Lancement de l'algorithme AIDFD (version Java)")
+            java_rules = self._discover_rules_java(**kwargs)
+            if java_rules:
+                return java_rules
+            logger.warning("L'exécution d'AIDFD (Java) a échoué, utilisation de l'implémentation Python simplifiée")
+        
+        # Utiliser l'implémentation Python simplifiée
+        logger.info("Lancement de l'algorithme AIDFD (version Python simplifiée)")
+        return self._discover_rules_python(**kwargs)
+        
+    def _discover_rules_java(self, **kwargs) -> List[FunctionalDependency]:
+        """
+        Implémentation Java de l'algorithme AIDFD via le JAR externe.
+        """
+        rules = []
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+
+        algorithm_name = "AIDFD"
+        # Correction du chemin de classe Java
+        classPath = "de.metanome.algorithms.aidfd.AIDFD"
+        rule_type = "fds"
+        # Utiliser uniquement les options reconnues
+        params = ""
+        
+        # get csv files from database
+        csv_files = " ".join(
+            [
+                os.path.join(self.database.base_csv_dir, f"{t}")
+                for t in os.listdir(self.database.base_csv_dir)
+            ]
+        )
+        
+        current_time = datetime.now()
+        jar_path = f"{script_dir}/bins/metanome/"
+        file_name = f'{current_time.strftime("%Y-%m-%d_%H-%M-%S")}_{algorithm_name}'
+        
+        # Vérifier si le répertoire results existe, sinon le créer
+        results_dir = os.path.join(os.getcwd(), "results")
+        os.makedirs(results_dir, exist_ok=True)
+        
+        # Ajouter tous les JAR du répertoire dans le classpath
+        all_jars = [f"{jar_path}{jar_file}" for jar_file in os.listdir(jar_path) if jar_file.endswith('.jar')]
+        classpath = ":".join(all_jars)
+        
+        # Préparer les arguments pour l'algorithme
+        algo_config = ""
+        
+        # Ajouter le paramètre input-file-key au lieu de file-key pour corriger les problèmes d'initialisation
+                # Assurer que les paramètres sont correctement formatés
+        min_support = str(self.min_support)
+        min_confidence = str(self.min_confidence)
+        max_lhs_size = str(self.max_lhs_size)
+        
+        # Ajouter tous les JAR du répertoire dans le classpath
+        all_jars = [f"{jar_path}{jar_file}" for jar_file in os.listdir(jar_path) if jar_file.endswith('.jar')]
+        classpath = ":".join(all_jars)
+        
+        # Utiliser les paramètres de configuration reconnus par l'algorithme
+        cmd_string = (
+            f"""java -Xmx4g -cp {classpath} """
+            f"""de.metanome.cli.App --algorithm {classPath} --files {csv_files} """
+            f"""--file-key INPUT_FILES --separator "," --header """
+            f"""--output file:{file_name}"""
+        )
+        
+        logger.info(f"Exécution de la commande: {cmd_string}")
+        
+        if not run_cmd(cmd_string):
+            logger.error("Échec de l'exécution de la commande AIDFD")
+            return rules
+            
+        logger.info(f"Rules discovered by {algorithm_name} algorithm saved to {file_name}")
+        result_file_path = os.path.join("results", f"{file_name}_{rule_type}")
+        
+        try:
+            with open(result_file_path, mode="r") as f:
+                raw_rules = [line for line in f if line.strip()]
+        except FileNotFoundError:
+            logger.error(f"Fichier de résultats non trouvé: {result_file_path}")
+            return rules
+
+        if os.path.exists(result_file_path):
+            os.remove(result_file_path)
+
+        for raw_rule in raw_rules:
+            try:
+                raw_rule = ast.literal_eval(raw_rule)
+            except (ValueError, SyntaxError) as e:
+                logger.warning(f"Format de règle invalide: {raw_rule} - {e}")
+                continue  # Ignorer les formats de règle invalides
+
+            try:
+                # Parse les dépendances fonctionnelles depuis le format JSON retourné par AIDFD
+                table_name = raw_rule.get("tableName", "").replace(".csv", "")
+                
+                # Extraction des colonnes déterminantes (côté gauche de la DF)
+                lhs_columns = [
+                    col["columnIdentifier"] for col in raw_rule.get("determinant", {}).get("columnIdentifiers", [])
+                ]
+                
+                # Extraction de la colonne dépendante (côté droit de la DF)
+                rhs_column = raw_rule.get("dependant", {}).get("columnIdentifiers", [])[0]["columnIdentifier"]
+                
+                # Extraire support et confiance si disponibles
+                support = raw_rule.get("support", self.min_support)
+                confidence = raw_rule.get("confidence", self.min_confidence)
+                
+                if table_name and lhs_columns and rhs_column:
+                    # Créer la dépendance fonctionnelle
+                    fd = FunctionalDependency(
+                        table=table_name,
+                        lhs=lhs_columns,
+                        rhs=rhs_column,
+                        support=support,
+                        confidence=confidence
+                    )
+                    rules.append(fd)
+                    logger.info(f"Dépendance fonctionnelle découverte: {fd} (support: {support}, confiance: {confidence})")
+            except (KeyError, IndexError, AttributeError) as e:
+                logger.warning(f"Données de règle malformées: {raw_rule} - {e}")
+                continue  # Ignorer les données de règle malformées
+        
+        logger.info(f"Découvert {len(rules)} dépendances fonctionnelles au total")
+        return rules
+        
+    def _discover_rules_python(self, **kwargs) -> List[FunctionalDependency]:
+        """
+        Implémentation Python simplifiée de l'algorithme AIDFD.
+        Cette version est utilisée comme solution de repli quand l'implémentation Java échoue.
+        """
+        rules = []
+        import pandas as pd
+        import itertools
+        from collections import defaultdict
+        
+        try:
+            # Obtenir la liste des fichiers CSV
+            csv_files = [
+                os.path.join(self.database.base_csv_dir, f)
+                for f in os.listdir(self.database.base_csv_dir)
+                if f.endswith('.csv')
+            ]
+            
+            logger.info(f"Traitement de {len(csv_files)} fichiers CSV avec l'implémentation Python de AIDFD")
+            
+            # Traiter chaque fichier séparément
+            for csv_file in csv_files:
+                try:
+                    # Lire le fichier CSV
+                    df = pd.read_csv(csv_file)
+                    
+                    # Vérifier s'il y a des données
+                    if df.empty:
+                        logger.warning(f"Fichier CSV vide, ignoré: {csv_file}")
+                        continue
+                    
+                    table_name = os.path.basename(csv_file).replace('.csv', '')
+                    logger.info(f"Traitement du fichier: {csv_file} (table: {table_name})")
+                    
+                    # Découvrir les FDs approximatives
+                    file_rules = self._discover_approx_fds(df, table_name, 
+                                                          min_support=self.min_support, 
+                                                          min_confidence=self.min_confidence,
+                                                          max_lhs_size=self.max_lhs_size)
+                    
+                    rules.extend(file_rules)
+                    
+                except Exception as e:
+                    logger.error(f"Erreur lors du traitement du fichier {csv_file}: {str(e)}")
+                    continue
+            
+            logger.info(f"Découvert {len(rules)} dépendances fonctionnelles au total avec l'implémentation Python")
+            return rules
+            
+        except Exception as e:
+            logger.error(f"Erreur lors de la découverte des dépendances fonctionnelles via Python: {str(e)}")
+            return []
+            
+    def _discover_approx_fds(self, df, table_name, min_support=0.5, min_confidence=0.9, max_lhs_size=3):
+        """
+        Découvre les dépendances fonctionnelles approximatives dans un DataFrame.
+        Cette implémentation simplifiée vérifie les ensembles d'attributs jusqu'à max_lhs_size.
+        
+        Args:
+            df: DataFrame contenant les données
+            table_name: Nom de la table
+            min_support: Support minimum requis pour une dépendance
+            min_confidence: Confiance minimum requise pour une dépendance
+            max_lhs_size: Taille maximale du côté gauche (LHS) des dépendances
+            
+        Returns:
+            Liste de dépendances fonctionnelles approximatives
+        """
+        import pandas as pd
+        import itertools
+        from collections import defaultdict
+        
+        discovered_fds = []
+        columns = list(df.columns)
+        
+        # Pour chaque taille possible du côté gauche (LHS)
+        for lhs_size in range(1, min(max_lhs_size + 1, len(columns))):
+            # Pour chaque combinaison possible de colonnes LHS
+            for lhs_columns in itertools.combinations(columns, lhs_size):
+                # Pour chaque colonne possible en RHS (non dans LHS)
+                for rhs_column in [col for col in columns if col not in lhs_columns]:
+                    # Calculer le support et la confiance de cette règle candidate
+                    support, confidence = self._calculate_fd_metrics(df, lhs_columns, rhs_column)
+                    
+                    # Si la règle satisfait les seuils, l'ajouter aux résultats
+                    if support >= min_support and confidence >= min_confidence:
+                        fd = FunctionalDependency(
+                            table=table_name,
+                            lhs=list(lhs_columns),
+                            rhs=rhs_column,
+                            support=support,
+                            confidence=confidence
+                        )
+                        discovered_fds.append(fd)
+                        logger.info(f"FD approximative: {'.'.join(lhs_columns)} -> {rhs_column} "
+                                   f"(support: {support:.2f}, confiance: {confidence:.2f})")
+        
+        return discovered_fds
+        
+    def _calculate_fd_metrics(self, df, lhs_columns, rhs_column):
+        """
+        Calcule le support et la confiance d'une dépendance fonctionnelle candidate.
+        
+        Args:
+            df: DataFrame contenant les données
+            lhs_columns: Colonnes du côté gauche (LHS)
+            rhs_column: Colonne du côté droit (RHS)
+            
+        Returns:
+            Tuple (support, confidence)
+        """
+        # Grouper par les colonnes LHS
+        grouped = df.groupby(list(lhs_columns))
+        
+        # Compter le nombre total de groupes (valeurs distinctes de LHS)
+        total_groups = len(grouped)
+        
+        # Compter le nombre de groupes où RHS a une seule valeur (règle respectée)
+        valid_groups = 0
+        total_rows = len(df)
+        covered_rows = 0
+        
+        for _, group in grouped:
+            rhs_values = group[rhs_column].unique()
+            group_size = len(group)
+            covered_rows += group_size
+            
+            if len(rhs_values) == 1:  # Si RHS a une seule valeur dans ce groupe
+                valid_groups += 1
+        
+        # Éviter la division par zéro
+        if total_groups == 0:
+            return 0, 0
+            
+        # Support = proportion de lignes couvertes par les groupes LHS
+        support = covered_rows / total_rows
+        
+        # Confiance = proportion de groupes LHS où la règle est respectée
+        confidence = valid_groups / total_groups
+        
+        return support, confidence

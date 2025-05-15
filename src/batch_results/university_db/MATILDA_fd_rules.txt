@@ -1,0 +1,235 @@
+# FDs sauvegardées: 58
+# Date: 2025-04-27 18:19:28
+
+1. [FunctionalDependency] registration: sat → grade
+   Support: 1.0
+   Confiance: 1.0
+
+2. [FunctionalDependency] registration: grade → sat
+   Support: 21.26086956521739
+   Confiance: 21.26086956521739
+
+3. [FunctionalDependency] registration: sat → grade
+   Support: 0.6441717791411042
+   Confiance: 0.6441717791411042
+
+4. [FunctionalDependency] registration: grade → sat
+   Support: 0.49257232212666147
+   Confiance: 0.49257232212666147
+
+5. [FunctionalDependency] registration: grade → course_id
+   Support: 21.26086956521739
+   Confiance: 21.26086956521739
+
+6. [FunctionalDependency] registration: course_id → grade
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] registration: grade → student_id
+   Support: 21.26086956521739
+   Confiance: 21.26086956521739
+
+8. [FunctionalDependency] registration: student_id → grade
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] RA: capability → salary
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] RA: salary → capability
+   Support: 6.4
+   Confiance: 6.4
+
+11. [FunctionalDependency] RA: salary → prof_id
+   Support: 6.4
+   Confiance: 6.4
+
+12. [FunctionalDependency] RA: prof_id → salary
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] RA: student_id → salary
+   Support: 1.0
+   Confiance: 1.0
+
+14. [FunctionalDependency] RA: salary → student_id
+   Support: 6.4
+   Confiance: 6.4
+
+15. [FunctionalDependency] RA: capability → prof_id
+   Support: 3.36
+   Confiance: 3.36
+
+16. [FunctionalDependency] RA: prof_id → capability
+   Support: 1.0
+   Confiance: 1.0
+
+17. [FunctionalDependency] RA: student_id → capability
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] RA: capability → student_id
+   Support: 3.36
+   Confiance: 3.36
+
+19. [FunctionalDependency] RA: salary → capability
+   Support: 1.0
+   Confiance: 1.0
+
+20. [FunctionalDependency] RA: capability → salary
+   Support: 3.36
+   Confiance: 3.36
+
+21. [FunctionalDependency] RA: salary → capability
+   Support: 0.5238095238095238
+   Confiance: 0.5238095238095238
+
+22. [FunctionalDependency] RA: capability → salary
+   Support: 0.275
+   Confiance: 0.275
+
+23. [FunctionalDependency] course: course_id → diff
+   Support: 1.0
+   Confiance: 1.0
+
+24. [FunctionalDependency] course: diff → course_id
+   Support: 4.0
+   Confiance: 4.0
+
+25. [FunctionalDependency] course: rating → diff
+   Support: 1.0
+   Confiance: 1.0
+
+26. [FunctionalDependency] course: diff → rating
+   Support: 4.0
+   Confiance: 4.0
+
+27. [FunctionalDependency] student: ranking → student_id
+   Support: 6.631578947368421
+   Confiance: 6.631578947368421
+
+28. [FunctionalDependency] student: student_id → ranking
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] student: ranking → intelligence
+   Support: 6.631578947368421
+   Confiance: 6.631578947368421
+
+30. [FunctionalDependency] student: intelligence → ranking
+   Support: 1.0
+   Confiance: 1.0
+
+31. [FunctionalDependency] prof: prof_id → teachingability
+   Support: 1.0
+   Confiance: 1.0
+
+32. [FunctionalDependency] prof: teachingability → prof_id
+   Support: 2.0
+   Confiance: 2.0
+
+33. [FunctionalDependency] prof: popularity → teachingability
+   Support: 1.0
+   Confiance: 1.0
+
+34. [FunctionalDependency] prof: teachingability → popularity
+   Support: 2.0
+   Confiance: 2.0
+
+35. [FunctionalDependency] registration: course_id → sat
+   Support: 1.0
+   Confiance: 1.0
+
+36. [FunctionalDependency] registration: sat → course_id
+   Support: 27.804347826086957
+   Confiance: 27.804347826086957
+
+37. [FunctionalDependency] registration: sat → student_id
+   Support: 27.804347826086957
+   Confiance: 27.804347826086957
+
+38. [FunctionalDependency] registration: student_id → sat
+   Support: 1.0
+   Confiance: 1.0
+
+39. [FunctionalDependency] registration: sat → grade
+   Support: 27.804347826086957
+   Confiance: 27.804347826086957
+
+40. [FunctionalDependency] registration: grade → sat
+   Support: 1.0
+   Confiance: 1.0
+
+41. [FunctionalDependency] student: intelligence → ranking
+   Support: 11.789473684210526
+   Confiance: 11.789473684210526
+
+42. [FunctionalDependency] student: ranking → intelligence
+   Support: 1.0
+   Confiance: 1.0
+
+43. [FunctionalDependency] student: ranking → intelligence
+   Support: 0.46875
+   Confiance: 0.46875
+
+44. [FunctionalDependency] student: intelligence → ranking
+   Support: 0.8333333333333334
+   Confiance: 0.8333333333333334
+
+45. [FunctionalDependency] student: intelligence → student_id
+   Support: 11.789473684210526
+   Confiance: 11.789473684210526
+
+46. [FunctionalDependency] student: student_id → intelligence
+   Support: 1.0
+   Confiance: 1.0
+
+47. [FunctionalDependency] course: rating → diff
+   Support: 4.8
+   Confiance: 4.8
+
+48. [FunctionalDependency] course: diff → rating
+   Support: 1.0
+   Confiance: 1.0
+
+49. [FunctionalDependency] course: diff → rating
+   Support: 0.4166666666666667
+   Confiance: 0.4166666666666667
+
+50. [FunctionalDependency] course: rating → diff
+   Support: 0.5
+   Confiance: 0.5
+
+51. [FunctionalDependency] course: rating → course_id
+   Support: 4.8
+   Confiance: 4.8
+
+52. [FunctionalDependency] course: course_id → rating
+   Support: 1.0
+   Confiance: 1.0
+
+53. [FunctionalDependency] prof: popularity → teachingability
+   Support: 2.3333333333333335
+   Confiance: 2.3333333333333335
+
+54. [FunctionalDependency] prof: teachingability → popularity
+   Support: 1.0
+   Confiance: 1.0
+
+55. [FunctionalDependency] prof: teachingability → popularity
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+56. [FunctionalDependency] prof: popularity → teachingability
+   Support: 0.6666666666666666
+   Confiance: 0.6666666666666666
+
+57. [FunctionalDependency] prof: popularity → prof_id
+   Support: 2.3333333333333335
+   Confiance: 2.3333333333333335
+
+58. [FunctionalDependency] prof: prof_id → popularity
+   Support: 1.0
+   Confiance: 1.0
+

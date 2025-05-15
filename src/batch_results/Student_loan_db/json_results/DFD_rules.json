@@ -1,0 +1,94 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "enrolled",
+        "determinant": [
+            "month",
+            "name"
+        ],
+        "dependent": [
+            "school"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "enrolled",
+        "determinant": [
+            "name",
+            "school"
+        ],
+        "dependent": [
+            "month"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "longest_absense_from_school",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "month"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "no_payment_due",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "bool"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "enlist",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "organ"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

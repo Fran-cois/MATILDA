@@ -1,0 +1,51 @@
+# Règles communes sauvegardées: 24
+# Date: 2025-04-29 20:51:16
+
+1. LINKS: col1 → col2 [conf=4.42, supp=1.00] <=> LINKS: col1 → col2
+
+2. LINKS: col2 → col1 [conf=1.00, supp=4.42] <=> LINKS: col2 → col1
+
+3. LINKS: col1 → col2 [conf=0.30, supp=0.23] <=> LINKS: col1 → col2
+
+4. LINKS: col2 → col1 [conf=0.23, supp=0.30] <=> LINKS: col2 → col1
+
+5. LINKS: col1 → col3 [conf=4.42, supp=1.00] <=> LINKS: col1 → col3
+
+6. LINKS: col1 → col3 [conf=0.20, supp=0.53] <=> LINKS: col1 → col3
+
+7. LINKS: col1 → col0 [conf=4.42, supp=1.00] <=> LINKS: col1 → col0
+
+8. LINKS: col0 → col1 [conf=1.00, supp=4.42] <=> LINKS: col0 → col1
+
+9. LINKS: col1 → col3 [conf=1.00, supp=11.69] <=> LINKS: col1 → col3
+
+10. LINKS: col2 → col3 [conf=1.00, supp=11.69] <=> LINKS: col2 → col3
+
+11. LINKS: col0 → col1 [conf=100.63, supp=1.00] <=> LINKS: col0 → col1
+
+12. LINKS: col1 → col0 [conf=1.00, supp=100.63] <=> LINKS: col1 → col0
+
+13. LINKS: col0 → col1 [conf=0.59, supp=0.03] <=> LINKS: col0 → col1
+
+14. LINKS: col1 → col0 [conf=0.03, supp=0.59] <=> LINKS: col1 → col0
+
+15. LINKS: col2 → col0 [conf=1.00, supp=100.63] <=> LINKS: col2 → col0
+
+16. LINKS: col0 → col2 [conf=100.63, supp=1.00] <=> LINKS: col0 → col2
+
+17. LINKS: col0 → col2 [conf=0.96, supp=0.03] <=> LINKS: col0 → col2
+
+18. LINKS: col2 → col0 [conf=0.03, supp=0.96] <=> LINKS: col2 → col0
+
+19. LINKS: col2 → col3 [conf=3.41, supp=1.00] <=> LINKS: col2 → col3
+
+20. LINKS: col2 → col3 [conf=0.16, supp=0.54] <=> LINKS: col2 → col3
+
+21. LINKS: col2 → col0 [conf=3.41, supp=1.00] <=> LINKS: col2 → col0
+
+22. LINKS: col0 → col2 [conf=1.00, supp=3.41] <=> LINKS: col0 → col2
+
+23. LINKS: col1 → col2 [conf=1.00, supp=3.41] <=> LINKS: col1 → col2
+
+24. LINKS: col2 → col1 [conf=3.41, supp=1.00] <=> LINKS: col2 → col1
+

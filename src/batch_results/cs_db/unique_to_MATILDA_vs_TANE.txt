@@ -1,0 +1,1791 @@
+# FDs sauvegardées: 447
+# Date: 2025-04-27 18:30:34
+
+1. [FunctionalDependency] ACCOUNTS: ORG_KEY → PT_UNIFIED_KEY
+   Support: 0.54
+   Confiance: 0.54
+
+2. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] ACCOUNTS: ORG_KEY → PT_UNIFIED_KEY
+   Support: 0.1875
+   Confiance: 0.1875
+
+4. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ORG_KEY
+   Support: 0.1111111111111111
+   Confiance: 0.1111111111111111
+
+5. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACCH_OPEN_DATE
+   Support: 0.54
+   Confiance: 0.54
+
+6. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+8. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACCH_CLOSE_DATE
+   Support: 0.54
+   Confiance: 0.54
+
+9. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACC_KEY
+   Support: 0.54
+   Confiance: 0.54
+
+10. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACCTP_KEY
+   Support: 0.54
+   Confiance: 0.54
+
+11. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+12. [FunctionalDependency] ACCOUNTS: PROD_KEY → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] ACCOUNTS: ORG_KEY → PROD_KEY
+   Support: 0.54
+   Confiance: 0.54
+
+14. [FunctionalDependency] ORGANIZATIONS: ZIP → ORG_KEY
+   Support: 5.445255474452555
+   Confiance: 5.445255474452555
+
+15. [FunctionalDependency] ORGANIZATIONS: ZIP → ORGH_UNIFIED_ID
+   Support: 5.445255474452555
+   Confiance: 5.445255474452555
+
+16. [FunctionalDependency] ORGANIZATIONS: CITY → ZIP
+   Support: 1.0
+   Confiance: 1.0
+
+17. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+19. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+20. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_CRDR_FLAG
+   Support: 5.68
+   Confiance: 5.68
+
+21. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_CRDR_FLAG
+   Support: 0.060098733633827
+   Confiance: 0.060098733633827
+
+22. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 0.9859154929577465
+   Confiance: 0.9859154929577465
+
+23. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_CASH_FLAG
+   Support: 5.68
+   Confiance: 5.68
+
+24. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+25. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 0.8450704225352113
+   Confiance: 0.8450704225352113
+
+26. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_CASH_FLAG
+   Support: 0.08869179600886919
+   Confiance: 0.08869179600886919
+
+27. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+28. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+30. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+31. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+32. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+33. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+34. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACC_OTHER_ACCOUNT_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+35. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_CZK
+   Support: 0.3767605633802817
+   Confiance: 0.3767605633802817
+
+36. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACC_OTHER_ACCOUNT_KEY
+   Support: 0.04419661296984717
+   Confiance: 0.04419661296984717
+
+37. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+38. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+39. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_CZK
+   Support: 0.4647887323943662
+   Confiance: 0.4647887323943662
+
+40. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 0.052360174533915116
+   Confiance: 0.052360174533915116
+
+41. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+42. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACC_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+43. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+44. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+45. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACTRNTP_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+46. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+47. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+48. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACTRNTP_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+49. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+50. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_AMOUNT_CZK
+   Support: 99.0
+   Confiance: 99.0
+
+51. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+52. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_AMOUNT_FX
+   Support: 99.0
+   Confiance: 99.0
+
+53. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+54. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_CRDR_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+55. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+56. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_CASH_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+57. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+58. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+59. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+60. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+61. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+62. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+63. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+64. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ACCH_OPEN_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+65. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → ACC_KEY
+   Support: 0.78
+   Confiance: 0.78
+
+66. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACCH_OPEN_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+67. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACCH_OPEN_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+68. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → PROD_KEY
+   Support: 0.78
+   Confiance: 0.78
+
+69. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → ORG_KEY
+   Support: 0.78
+   Confiance: 0.78
+
+70. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACCH_OPEN_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+71. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACCH_OPEN_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+72. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → PT_UNIFIED_KEY
+   Support: 0.78
+   Confiance: 0.78
+
+73. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+74. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_CASH_FLAG
+   Support: 93.18
+   Confiance: 93.18
+
+75. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_CRDR_FLAG
+   Support: 0.5402446877012235
+   Confiance: 0.5402446877012235
+
+76. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_CASH_FLAG
+   Support: 0.9301552106430155
+   Confiance: 0.9301552106430155
+
+77. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+78. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+79. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+80. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+81. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+82. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+83. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 93.18
+   Confiance: 93.18
+
+84. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 93.18
+   Confiance: 93.18
+
+86. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+87. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_CRDR_FLAG
+   Support: 0.5406739643700365
+   Confiance: 0.5406739643700365
+
+88. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 0.9992066640222134
+   Confiance: 0.9992066640222134
+
+89. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_KEY
+   Support: 93.18
+   Confiance: 93.18
+
+90. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+91. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACC_KEY
+   Support: 93.18
+   Confiance: 93.18
+
+92. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACTRNTP_KEY
+   Support: 93.18
+   Confiance: 93.18
+
+94. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+95. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 93.18
+   Confiance: 93.18
+
+96. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+97. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+98. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_AMOUNT_FX
+   Support: 93.18
+   Confiance: 93.18
+
+99. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+100. [FunctionalDependency] ACCOUNTS: PROD_KEY → ORG_KEY
+   Support: 29.7
+   Confiance: 29.7
+
+101. [FunctionalDependency] ACCOUNTS: ORG_KEY → PROD_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+102. [FunctionalDependency] ACCOUNTS: PROD_KEY → ORG_KEY
+   Support: 0.6296296296296297
+   Confiance: 0.6296296296296297
+
+103. [FunctionalDependency] ACCOUNTS: ORG_KEY → PROD_KEY
+   Support: 0.011447811447811448
+   Confiance: 0.011447811447811448
+
+104. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → PROD_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+105. [FunctionalDependency] ACCOUNTS: PROD_KEY → PT_UNIFIED_KEY
+   Support: 29.7
+   Confiance: 29.7
+
+106. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACCH_OPEN_DATE
+   Support: 29.7
+   Confiance: 29.7
+
+107. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → PROD_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+108. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACCH_OPEN_DATE
+   Support: 0.6153846153846154
+   Confiance: 0.6153846153846154
+
+109. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → PROD_KEY
+   Support: 0.01616161616161616
+   Confiance: 0.01616161616161616
+
+110. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACCH_CLOSE_DATE
+   Support: 29.7
+   Confiance: 29.7
+
+111. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → PROD_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+112. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → PROD_KEY
+   Support: 0.9946127946127946
+   Confiance: 0.9946127946127946
+
+113. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACCH_CLOSE_DATE
+   Support: 0.3239035087719298
+   Confiance: 0.3239035087719298
+
+114. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACC_KEY
+   Support: 29.7
+   Confiance: 29.7
+
+115. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → PROD_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+116. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → PROD_KEY
+   Support: 55.54
+   Confiance: 55.54
+
+117. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → PROD_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+118. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ORG_KEY
+   Support: 55.54
+   Confiance: 55.54
+
+119. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACCTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+120. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → PT_UNIFIED_KEY
+   Support: 55.54
+   Confiance: 55.54
+
+121. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACCTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+122. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACCH_OPEN_DATE
+   Support: 55.54
+   Confiance: 55.54
+
+123. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACCH_OPEN_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+124. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACCH_CLOSE_DATE
+   Support: 55.54
+   Confiance: 55.54
+
+125. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ACCTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+126. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACCH_CLOSE_DATE
+   Support: 0.6030701754385965
+   Confiance: 0.6030701754385965
+
+127. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ACCTP_KEY
+   Support: 0.9902772776377385
+   Confiance: 0.9902772776377385
+
+128. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACC_KEY
+   Support: 55.54
+   Confiance: 55.54
+
+129. [FunctionalDependency] ORGANIZATIONS: CITY → ORGH_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+130. [FunctionalDependency] ORGANIZATIONS: CITY → ORGH_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+131. [FunctionalDependency] ORGANIZATIONS: ZIP → ORGH_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+132. [FunctionalDependency] ORGANIZATIONS: ZIP → ORGH_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+133. [FunctionalDependency] ORGANIZATIONS: ORGH_UNIFIED_ID → ORG_KEY
+   Support: 1.167883211678832
+   Confiance: 1.167883211678832
+
+134. [FunctionalDependency] target_churn: date_horizon → target_churn
+   Support: 99.0
+   Confiance: 99.0
+
+135. [FunctionalDependency] target_churn: date_horizon → target_churn
+   Support: 1.0
+   Confiance: 1.0
+
+136. [FunctionalDependency] target_churn: date_horizon → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+137. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+138. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+139. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+140. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+141. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+142. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+143. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACTRNTP_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+144. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 99.0
+   Confiance: 99.0
+
+145. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_AMOUNT_FX
+   Support: 99.0
+   Confiance: 99.0
+
+146. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_CRDR_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+147. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_CASH_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+148. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+149. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+150. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+151. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+152. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+153. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+154. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 54.12
+   Confiance: 54.12
+
+155. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+156. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 0.4944237918215613
+   Confiance: 0.4944237918215613
+
+157. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_CASH_FLAG
+   Support: 0.442350332594235
+   Confiance: 0.442350332594235
+
+158. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+159. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 54.12
+   Confiance: 54.12
+
+160. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_CASH_FLAG
+   Support: 0.47930524759793053
+   Confiance: 0.47930524759793053
+
+161. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 0.5144783815946053
+   Confiance: 0.5144783815946053
+
+162. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_KEY
+   Support: 54.12
+   Confiance: 54.12
+
+163. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACC_KEY
+   Support: 54.12
+   Confiance: 54.12
+
+164. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+165. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+166. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACTRNTP_KEY
+   Support: 54.12
+   Confiance: 54.12
+
+167. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+168. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+169. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 54.12
+   Confiance: 54.12
+
+170. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_AMOUNT_FX
+   Support: 54.12
+   Confiance: 54.12
+
+171. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+172. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+173. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_CRDR_FLAG
+   Support: 54.12
+   Confiance: 54.12
+
+174. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+175. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PTH_CLIENT_FROM_DATE_ALT
+   Support: 1.0
+   Confiance: 1.0
+
+176. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_CLIENT_FROM_DATE_ALT
+   Support: 1.0
+   Confiance: 1.0
+
+177. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PSGEN_UNIFIED_ID
+   Support: 0.40476190476190477
+   Confiance: 0.40476190476190477
+
+178. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PT_UNIFIED_KEY
+   Support: 0.40476190476190477
+   Confiance: 0.40476190476190477
+
+179. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → ORG_KEY
+   Support: 0.40476190476190477
+   Confiance: 0.40476190476190477
+
+180. [FunctionalDependency] PARTIES: ORG_KEY → PTH_CLIENT_FROM_DATE_ALT
+   Support: 1.0
+   Confiance: 1.0
+
+181. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PTH_BIRTH_DATE
+   Support: 0.40476190476190477
+   Confiance: 0.40476190476190477
+
+182. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → PTH_CLIENT_FROM_DATE_ALT
+   Support: 1.0
+   Confiance: 1.0
+
+183. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PTH_CLIENT_FROM_DATE
+   Support: 0.40476190476190477
+   Confiance: 0.40476190476190477
+
+184. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PTH_CLIENT_FROM_DATE_ALT
+   Support: 1.0
+   Confiance: 1.0
+
+185. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PT_UNIFIED_KEY
+   Support: 34.357142857142854
+   Confiance: 34.357142857142854
+
+186. [FunctionalDependency] PARTIES: ORG_KEY → PSGEN_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+187. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → ORG_KEY
+   Support: 34.357142857142854
+   Confiance: 34.357142857142854
+
+188. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_BIRTH_DATE
+   Support: 34.357142857142854
+   Confiance: 34.357142857142854
+
+189. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_CLIENT_FROM_DATE
+   Support: 34.357142857142854
+   Confiance: 34.357142857142854
+
+190. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PSGEN_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+191. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_CLIENT_FROM_DATE_ALT
+   Support: 34.357142857142854
+   Confiance: 34.357142857142854
+
+192. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PSGEN_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+193. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PSGEN_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+194. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_CRDR_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+195. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+196. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_CASH_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+197. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+198. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACC_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+199. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+200. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+201. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+202. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+203. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+204. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACTRNTP_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+205. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_AMOUNT_CZK
+   Support: 99.0
+   Confiance: 99.0
+
+206. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_AMOUNT_FX
+   Support: 99.0
+   Confiance: 99.0
+
+207. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+208. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+209. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_CRDR_FLAG
+   Support: 5.68
+   Confiance: 5.68
+
+210. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+211. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTRN_AMOUNT_FX
+   Support: 0.9859154929577465
+   Confiance: 0.9859154929577465
+
+212. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_CRDR_FLAG
+   Support: 0.060098733633827
+   Confiance: 0.060098733633827
+
+213. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_CASH_FLAG
+   Support: 5.68
+   Confiance: 5.68
+
+214. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+215. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_CASH_FLAG
+   Support: 0.08869179600886919
+   Confiance: 0.08869179600886919
+
+216. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTRN_AMOUNT_FX
+   Support: 0.8450704225352113
+   Confiance: 0.8450704225352113
+
+217. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+218. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+219. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+220. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+221. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+222. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+223. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACC_OTHER_ACCOUNT_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+224. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+225. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACC_OTHER_ACCOUNT_KEY
+   Support: 0.04419661296984717
+   Confiance: 0.04419661296984717
+
+226. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_FX
+   Support: 0.3767605633802817
+   Confiance: 0.3767605633802817
+
+227. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+228. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+229. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 0.052360174533915116
+   Confiance: 0.052360174533915116
+
+230. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_FX
+   Support: 0.4647887323943662
+   Confiance: 0.4647887323943662
+
+231. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTRN_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+232. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+233. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACC_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+234. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+235. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACTRNTP_KEY
+   Support: 5.68
+   Confiance: 5.68
+
+236. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+237. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+238. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ACC_KEY
+   Support: 91.2
+   Confiance: 91.2
+
+239. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → ACCH_CLOSE_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+240. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ACCTP_KEY
+   Support: 91.2
+   Confiance: 91.2
+
+241. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → PROD_KEY
+   Support: 91.2
+   Confiance: 91.2
+
+242. [FunctionalDependency] ACCOUNTS: PROD_KEY → ACCH_CLOSE_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+243. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ORG_KEY
+   Support: 91.2
+   Confiance: 91.2
+
+244. [FunctionalDependency] ACCOUNTS: ORG_KEY → ACCH_CLOSE_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+245. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → PT_UNIFIED_KEY
+   Support: 91.2
+   Confiance: 91.2
+
+246. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACCH_CLOSE_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+247. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → ACCH_OPEN_DATE
+   Support: 91.2
+   Confiance: 91.2
+
+248. [FunctionalDependency] target_churn: target_churn → ACC_KEY
+   Support: 91.32
+   Confiance: 91.32
+
+249. [FunctionalDependency] target_churn: date_horizon → target_churn
+   Support: 1.0
+   Confiance: 1.0
+
+250. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+251. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+252. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+253. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_AMOUNT_CZK
+   Support: 26.38
+   Confiance: 26.38
+
+254. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACTRNTP_KEY
+   Support: 0.09097801364670205
+   Confiance: 0.09097801364670205
+
+255. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_AMOUNT_CZK
+   Support: 0.4225352112676056
+   Confiance: 0.4225352112676056
+
+256. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+257. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_AMOUNT_FX
+   Support: 26.38
+   Confiance: 26.38
+
+258. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACTRNTP_KEY
+   Support: 0.09097801364670205
+   Confiance: 0.09097801364670205
+
+259. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_AMOUNT_FX
+   Support: 0.4225352112676056
+   Confiance: 0.4225352112676056
+
+260. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+261. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+262. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+263. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+264. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+265. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+266. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+267. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+268. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+269. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+270. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+271. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+272. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+273. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 26.38
+   Confiance: 26.38
+
+274. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 0.4944237918215613
+   Confiance: 0.4944237918215613
+
+275. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACTRNTP_KEY
+   Support: 0.9075056861258529
+   Confiance: 0.9075056861258529
+
+276. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+277. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 26.38
+   Confiance: 26.38
+
+278. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACTRNTP_KEY
+   Support: 0.9643669446550417
+   Confiance: 0.9643669446550417
+
+279. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 0.5045616818722729
+   Confiance: 0.5045616818722729
+
+280. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTRN_KEY
+   Support: 26.38
+   Confiance: 26.38
+
+281. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+282. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACC_KEY
+   Support: 26.38
+   Confiance: 26.38
+
+283. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACTRNTP_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+284. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+285. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+286. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_KEY
+   Support: 48.42
+   Confiance: 48.42
+
+287. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACC_KEY
+   Support: 48.42
+   Confiance: 48.42
+
+288. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+289. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+290. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACTRNTP_KEY
+   Support: 48.42
+   Confiance: 48.42
+
+291. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+292. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+293. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+294. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_CZK
+   Support: 48.42
+   Confiance: 48.42
+
+295. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_FX
+   Support: 48.42
+   Confiance: 48.42
+
+296. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+297. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+298. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+299. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+300. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACCTRN_CASH_FLAG
+   Support: 48.42
+   Confiance: 48.42
+
+301. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+302. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+303. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+304. [FunctionalDependency] ORGANIZATIONS: CITY → ZIP
+   Support: 5.781021897810219
+   Confiance: 5.781021897810219
+
+305. [FunctionalDependency] ORGANIZATIONS: CITY → ZIP
+   Support: 1.0
+   Confiance: 1.0
+
+306. [FunctionalDependency] ORGANIZATIONS: CITY → ORG_KEY
+   Support: 5.781021897810219
+   Confiance: 5.781021897810219
+
+307. [FunctionalDependency] ORGANIZATIONS: CITY → ORGH_UNIFIED_ID
+   Support: 5.781021897810219
+   Confiance: 5.781021897810219
+
+308. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PSGEN_UNIFIED_ID
+   Support: 68.52380952380952
+   Confiance: 68.52380952380952
+
+309. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PSGEN_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+310. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PT_UNIFIED_KEY
+   Support: 68.52380952380952
+   Confiance: 68.52380952380952
+
+311. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → ORG_KEY
+   Support: 68.52380952380952
+   Confiance: 68.52380952380952
+
+312. [FunctionalDependency] PARTIES: ORG_KEY → PTTP_UNIFIED_ID
+   Support: 1.0
+   Confiance: 1.0
+
+313. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PTH_BIRTH_DATE
+   Support: 68.52380952380952
+   Confiance: 68.52380952380952
+
+314. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PTH_CLIENT_FROM_DATE
+   Support: 68.52380952380952
+   Confiance: 68.52380952380952
+
+315. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PTH_CLIENT_FROM_DATE_ALT
+   Support: 68.52380952380952
+   Confiance: 68.52380952380952
+
+316. [FunctionalDependency] ACCOUNTS: ACCH_OPEN_DATE → PT_UNIFIED_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+317. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACCH_OPEN_DATE
+   Support: 0.32
+   Confiance: 0.32
+
+318. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACCH_CLOSE_DATE
+   Support: 0.32
+   Confiance: 0.32
+
+319. [FunctionalDependency] ACCOUNTS: ACCH_CLOSE_DATE → PT_UNIFIED_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+320. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACC_KEY
+   Support: 0.32
+   Confiance: 0.32
+
+321. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ACCTP_KEY
+   Support: 0.32
+   Confiance: 0.32
+
+322. [FunctionalDependency] ACCOUNTS: ACCTP_KEY → PT_UNIFIED_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+323. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → PROD_KEY
+   Support: 0.32
+   Confiance: 0.32
+
+324. [FunctionalDependency] ACCOUNTS: PROD_KEY → PT_UNIFIED_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+325. [FunctionalDependency] ACCOUNTS: PT_UNIFIED_KEY → ORG_KEY
+   Support: 0.32
+   Confiance: 0.32
+
+326. [FunctionalDependency] ACCOUNTS: ORG_KEY → PT_UNIFIED_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+327. [FunctionalDependency] PARTIES: ORG_KEY → PTH_BIRTH_DATE
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+328. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+329. [FunctionalDependency] PARTIES: ORG_KEY → PTH_BIRTH_DATE
+   Support: 0.10714285714285714
+   Confiance: 0.10714285714285714
+
+330. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → ORG_KEY
+   Support: 0.125
+   Confiance: 0.125
+
+331. [FunctionalDependency] PARTIES: ORG_KEY → PTH_CLIENT_FROM_DATE
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+332. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+333. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+334. [FunctionalDependency] PARTIES: ORG_KEY → PTH_CLIENT_FROM_DATE_ALT
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+335. [FunctionalDependency] PARTIES: ORG_KEY → PTTP_UNIFIED_ID
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+336. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+337. [FunctionalDependency] PARTIES: ORG_KEY → PSGEN_UNIFIED_ID
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+338. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → ORG_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+339. [FunctionalDependency] PARTIES: ORG_KEY → PT_UNIFIED_KEY
+   Support: 0.5714285714285714
+   Confiance: 0.5714285714285714
+
+340. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_KEY
+   Support: 50.42
+   Confiance: 50.42
+
+341. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+342. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACC_KEY
+   Support: 50.42
+   Confiance: 50.42
+
+343. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+344. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+345. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACTRNTP_KEY
+   Support: 50.42
+   Confiance: 50.42
+
+346. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+347. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+348. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_CZK
+   Support: 50.42
+   Confiance: 50.42
+
+349. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_AMOUNT_FX
+   Support: 50.42
+   Confiance: 50.42
+
+350. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+351. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+352. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_CRDR_FLAG
+   Support: 50.42
+   Confiance: 50.42
+
+353. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+354. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+355. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACCTRN_CASH_FLAG
+   Support: 50.42
+   Confiance: 50.42
+
+356. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+357. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+358. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+359. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 50.42
+   Confiance: 50.42
+
+360. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → PTH_CLIENT_FROM_DATE
+   Support: 0.6666666666666666
+   Confiance: 0.6666666666666666
+
+361. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PTH_BIRTH_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+362. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → PTH_CLIENT_FROM_DATE_ALT
+   Support: 0.6666666666666666
+   Confiance: 0.6666666666666666
+
+363. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PTH_BIRTH_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+364. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PTH_BIRTH_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+365. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_BIRTH_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+366. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_BIRTH_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+367. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → PT_UNIFIED_KEY
+   Support: 0.6666666666666666
+   Confiance: 0.6666666666666666
+
+368. [FunctionalDependency] PARTIES: ORG_KEY → PTH_BIRTH_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+369. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → ORG_KEY
+   Support: 0.6666666666666666
+   Confiance: 0.6666666666666666
+
+370. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+371. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+372. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+373. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+374. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+375. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+376. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACTRNTP_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+377. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 99.0
+   Confiance: 99.0
+
+378. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_AMOUNT_FX
+   Support: 99.0
+   Confiance: 99.0
+
+379. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_CRDR_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+380. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACCTRN_CASH_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+381. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE_ALT → PTH_CLIENT_FROM_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+382. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PTH_CLIENT_FROM_DATE_ALT
+   Support: 0.23809523809523808
+   Confiance: 0.23809523809523808
+
+383. [FunctionalDependency] PARTIES: PTTP_UNIFIED_ID → PTH_CLIENT_FROM_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+384. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PSGEN_UNIFIED_ID
+   Support: 0.23809523809523808
+   Confiance: 0.23809523809523808
+
+385. [FunctionalDependency] PARTIES: PSGEN_UNIFIED_ID → PTH_CLIENT_FROM_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+386. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PT_UNIFIED_KEY
+   Support: 0.23809523809523808
+   Confiance: 0.23809523809523808
+
+387. [FunctionalDependency] PARTIES: ORG_KEY → PTH_CLIENT_FROM_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+388. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → ORG_KEY
+   Support: 0.23809523809523808
+   Confiance: 0.23809523809523808
+
+389. [FunctionalDependency] PARTIES: PTH_BIRTH_DATE → PTH_CLIENT_FROM_DATE
+   Support: 1.0
+   Confiance: 1.0
+
+390. [FunctionalDependency] PARTIES: PTH_CLIENT_FROM_DATE → PTH_BIRTH_DATE
+   Support: 0.23809523809523808
+   Confiance: 0.23809523809523808
+
+391. [FunctionalDependency] PRODUCTS: PROD_AGENDA_CODE → PROD_AGENDA_NAME
+   Support: 3.727272727272727
+   Confiance: 3.727272727272727
+
+392. [FunctionalDependency] PRODUCTS: PROD_AGENDA_CODE → PROD_KEY
+   Support: 3.727272727272727
+   Confiance: 3.727272727272727
+
+393. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+394. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+395. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+396. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+397. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+398. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+399. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACTRNTP_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+400. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_AMOUNT_CZK
+   Support: 99.0
+   Confiance: 99.0
+
+401. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_AMOUNT_FX
+   Support: 99.0
+   Confiance: 99.0
+
+402. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_CRDR_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+403. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACCTRN_CASH_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+404. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_KEY → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+405. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACTRNTP_KEY
+   Support: 0.64
+   Confiance: 0.64
+
+406. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+407. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACTRNTP_KEY → ACC_KEY
+   Support: 0.625
+   Confiance: 0.625
+
+408. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACTRNTP_KEY
+   Support: 0.015163002274450341
+   Confiance: 0.015163002274450341
+
+409. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+410. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+411. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_AMOUNT_CZK
+   Support: 0.64
+   Confiance: 0.64
+
+412. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_AMOUNT_CZK
+   Support: 0.02464788732394366
+   Confiance: 0.02464788732394366
+
+413. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_CZK → ACC_KEY
+   Support: 0.21875
+   Confiance: 0.21875
+
+414. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_AMOUNT_FX
+   Support: 0.64
+   Confiance: 0.64
+
+415. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+416. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_AMOUNT_FX
+   Support: 0.02464788732394366
+   Confiance: 0.02464788732394366
+
+417. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_AMOUNT_FX → ACC_KEY
+   Support: 0.21875
+   Confiance: 0.21875
+
+418. [FunctionalDependency] ACCOUNT_TRANSACTIONS: CURR_ISO_CODE → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+419. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_CRDR_FLAG
+   Support: 0.64
+   Confiance: 0.64
+
+420. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CRDR_FLAG → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+421. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+422. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_CASH_FLAG
+   Support: 0.64
+   Confiance: 0.64
+
+423. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_CASH_FLAG
+   Support: 0.010347376201034738
+   Confiance: 0.010347376201034738
+
+424. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_CASH_FLAG → ACC_KEY
+   Support: 0.875
+   Confiance: 0.875
+
+425. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_INTEREST_FLAG → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+426. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_TAX_FLAG → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+427. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_FEE_FLAG → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+428. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_OTHER_ACCOUNT_KEY → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+429. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACC_OTHER_ACCOUNT_KEY
+   Support: 0.64
+   Confiance: 0.64
+
+430. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 0.64
+   Confiance: 0.64
+
+431. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTP_OTHER_ACCOUNT_KEY → ACC_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+432. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACC_KEY → ACCTRN_KEY
+   Support: 0.64
+   Confiance: 0.64
+
+433. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_AMOUNT_CZK
+   Support: 99.0
+   Confiance: 99.0
+
+434. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_AMOUNT_CZK
+   Support: 1.0
+   Confiance: 1.0
+
+435. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_AMOUNT_FX
+   Support: 99.0
+   Confiance: 99.0
+
+436. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_AMOUNT_FX
+   Support: 1.0
+   Confiance: 1.0
+
+437. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_CRDR_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+438. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_CRDR_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+439. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_CASH_FLAG
+   Support: 99.0
+   Confiance: 99.0
+
+440. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_CASH_FLAG
+   Support: 1.0
+   Confiance: 1.0
+
+441. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACC_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+442. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACC_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+443. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+444. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTP_OTHER_ACCOUNT_KEY
+   Support: 1.0
+   Confiance: 1.0
+
+445. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACCTRN_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+446. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACC_KEY
+   Support: 99.0
+   Confiance: 99.0
+
+447. [FunctionalDependency] ACCOUNT_TRANSACTIONS: ACCTRN_ACCOUNTING_DATE → ACTRNTP_KEY
+   Support: 99.0
+   Confiance: 99.0
+

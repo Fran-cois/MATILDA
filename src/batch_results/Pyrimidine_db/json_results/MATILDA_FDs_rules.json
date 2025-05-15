@@ -1,0 +1,4358 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.29972549892425254,
+        "support": 0.8786428882122662,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8786428882122662,
+        "support": 0.29972549892425254,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9090558022784321,
+        "support": 0.34928407151865865,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.34928407151865865,
+        "support": 0.9090558022784321,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9352317141261864,
+        "support": 0.24853475777134804,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.24853475777134804,
+        "support": 0.9352317141261864,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2725721492692336,
+        "support": 0.7694240837696336,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7694240837696336,
+        "support": 0.2725721492692336,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.14658547194432361,
+        "support": 0.14115183246073298,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.14115183246073298,
+        "support": 0.14658547194432361,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.38282722513089007,
+        "support": 0.35296389264336747,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.35296389264336747,
+        "support": 0.38282722513089007,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.31211613623673923,
+        "support": 0.23413612565445027,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.23413612565445027,
+        "support": 0.31211613623673923,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 43.01801801801802,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 43.01801801801802,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5136137695674753,
+        "support": 0.9283894327477538,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9283894327477538,
+        "support": 0.5136137695674753,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2554646640740244,
+        "support": 0.39895287958115183,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.39895287958115183,
+        "support": 0.2554646640740244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9283894327477538,
+        "support": 0.5136137695674753,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5136137695674753,
+        "support": 0.9283894327477538,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5199141746010459,
+        "support": 0.8431926924749892,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8431926924749892,
+        "support": 0.5199141746010459,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5856242456752045,
+        "support": 0.8432129754778915,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8432129754778915,
+        "support": 0.5856242456752045,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4421349067989808,
+        "support": 0.9204355108877722,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9204355108877722,
+        "support": 0.4421349067989808,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 67.18018018018019,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 67.18018018018019,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.270270270270274,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.270270270270274,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8237897277725627,
+        "support": 0.5527760280752272,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5527760280752272,
+        "support": 0.8237897277725627,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8300188967875461,
+        "support": 0.6843237628904222,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6843237628904222,
+        "support": 0.8300188967875461,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2631152704040313,
+        "support": 0.6123560209424084,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6123560209424084,
+        "support": 0.2631152704040313,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8300188967875461,
+        "support": 0.6843237628904222,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6843237628904222,
+        "support": 0.8300188967875461,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8964767290126142,
+        "support": 0.37091694411949966,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.37091694411949966,
+        "support": 0.8964767290126142,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7646263757482139,
+        "support": 0.3563394222982093,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3563394222982093,
+        "support": 0.7646263757482139,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9625907314349526,
+        "support": 0.31026725456672366,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.31026725456672366,
+        "support": 0.9625907314349526,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.11711711711712,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.11711711711712,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6354936929099608,
+        "support": 0.5642015833172427,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5642015833172427,
+        "support": 0.6354936929099608,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6283166594171379,
+        "support": 0.8065326633165829,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8065326633165829,
+        "support": 0.6283166594171379,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 41.42342342342342,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 41.42342342342342,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8967057509771078,
+        "support": 0.6201969492179957,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6201969492179957,
+        "support": 0.8967057509771078,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 46.65765765765766,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 46.65765765765766,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "molecule",
+        "determinant": [
+            "activity"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.3783783783783784,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "molecule",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "activity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.3783783783783784,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7694240837696336,
+        "support": 0.2725721492692336,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2725721492692336,
+        "support": 0.7694240837696336,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8786428882122662,
+        "support": 0.29972549892425254,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.29972549892425254,
+        "support": 0.8786428882122662,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.34928407151865865,
+        "support": 0.9090558022784321,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9090558022784321,
+        "support": 0.34928407151865865,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.24853475777134804,
+        "support": 0.9352317141261864,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9352317141261864,
+        "support": 0.24853475777134804,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 121.43243243243244,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 121.43243243243244,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polarisable"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "polarisable"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "sigma"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8235294117647058,
+        "support": 0.010812898242904035,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "sigma"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.010812898242904035,
+        "support": 0.8235294117647058,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "size"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.011166945840312675,
+        "support": 0.5882352941176471,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "size"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5882352941176471,
+        "support": 0.011166945840312675,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "molecule_id"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "molecule_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "flex"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "flex"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "h_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_acceptor"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "h_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "h_doner"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_acceptor"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "pi_acceptor"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "polar"
+        ],
+        "dependent": [
+            "pi_doner"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6126126126126126,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "position",
+        "determinant": [
+            "pi_doner"
+        ],
+        "dependent": [
+            "polar"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.6126126126126126,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

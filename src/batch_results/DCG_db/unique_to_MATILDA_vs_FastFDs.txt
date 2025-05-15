@@ -1,0 +1,23 @@
+# FDs sauvegardées: 5
+# Date: 2025-04-28 06:00:46
+
+1. [FunctionalDependency] sentences: class → id
+   Support: 564.0
+   Confiance: 564.0
+
+2. [FunctionalDependency] terms: id_sentence → term
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] terms: term → id_sentence
+   Support: 473.0462962962963
+   Confiance: 473.0462962962963
+
+4. [FunctionalDependency] terms: id_term → term
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] terms: term → id_term
+   Support: 473.0462962962963
+   Confiance: 473.0462962962963
+

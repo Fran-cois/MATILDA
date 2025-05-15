@@ -1,0 +1,1910 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 17.548547717842325,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 17.548547717842325,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 17.568399168399168,
+        "support": 0.9990541946467417,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9990541946467417,
+        "support": 17.568399168399168,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.18150004729026767,
+        "support": 0.02352248978015849,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.02352248978015849,
+        "support": 0.18150004729026767,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 17.548547717842325,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 17.548547717842325,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 17.548547717842325,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 17.548547717842325,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 17.548547717842325,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 17.548547717842325,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 18.01192504258944,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 18.01192504258944,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1257.7726141078838,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1257.7726141078838,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1257.7726141078838,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1257.7726141078838,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1257.2163543441227,
+        "support": 0.9738429786964509,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9738429786964509,
+        "support": 1257.2163543441227,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1269.306049822064,
+        "support": 0.5883333905158035,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5883333905158035,
+        "support": 1269.306049822064,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1257.7726141078838,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1257.7726141078838,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1258.135550935551,
+        "support": 0.9982132677406415,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9982132677406415,
+        "support": 1258.135550935551,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "state"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 20.02867383512545,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "state"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 20.02867383512545,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "state"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 20.02867383512545,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "state"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 20.02867383512545,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "state"
+        ],
+        "dependent": [
+            "city"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 20.02867383512545,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "city"
+        ],
+        "dependent": [
+            "state"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 20.02867383512545,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "city"
+        ],
+        "dependent": [
+            "state"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.7526881720430108,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "state"
+        ],
+        "dependent": [
+            "city"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.7526881720430108,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "city"
+        ],
+        "dependent": [
+            "state"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.07193987115246958,
+        "support": 0.8220858895705522,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "state"
+        ],
+        "dependent": [
+            "city"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8220858895705522,
+        "support": 0.07193987115246958,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "city"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.7526881720430108,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "city"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.7526881720430108,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "city"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 1.7526881720430108,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "city"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.7526881720430108,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 135.40497925311203,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 135.40497925311203,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.05856364672845892,
+        "support": 0.5439958814191943,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5439958814191943,
+        "support": 0.05856364672845892,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 135.40497925311203,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 135.40497925311203,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 135.40497925311203,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 135.40497925311203,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.977874885850346,
+        "support": 135.90545144804088,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 135.90545144804088,
+        "support": 0.977874885850346,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 152.8491103202847,
+        "support": 0.6580934403020292,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6580934403020292,
+        "support": 152.8491103202847,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 135.40497925311203,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 135.40497925311203,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 76.06192170818505,
+        "support": 0.5677831025725488,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5677831025725488,
+        "support": 76.06192170818505,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.08261609760711246,
+        "support": 0.018563580528961097,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.018563580528961097,
+        "support": 0.08261609760711246,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 78.09875518672199,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 78.09875518672199,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 78.18503118503118,
+        "support": 0.9990277231720665,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9990277231720665,
+        "support": 78.18503118503118,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.059958446461513944,
+        "support": 0.10395392576692984,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.10395392576692984,
+        "support": 0.059958446461513944,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 78.09875518672199,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 78.09875518672199,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5501386689902135,
+        "support": 0.034159707999915544,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.034159707999915544,
+        "support": 0.5501386689902135,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 78.09875518672199,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 78.09875518672199,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 78.09875518672199,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 78.09875518672199,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.898637137989779,
+        "support": 0.9736253494874184,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9736253494874184,
+        "support": 8.898637137989779,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.292526690391458,
+        "support": 0.5429170549860205,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5429170549860205,
+        "support": 8.292526690391458,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.024023455972760805,
+        "support": 0.04734389561975769,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.04734389561975769,
+        "support": 0.024023455972760805,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.904564315352697,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.904564315352697,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.01369990680335508,
+        "support": 0.7903225806451613,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7903225806451613,
+        "support": 0.01369990680335508,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9961789375582479,
+        "support": 8.88898128898129,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.88898128898129,
+        "support": 0.9961789375582479,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.904564315352697,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.904564315352697,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.904564315352697,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.904564315352697,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "city"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.025089605734767026,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "city"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.025089605734767026,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "state"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.025089605734767026,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "state"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.025089605734767026,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.025089605734767026,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "breweries",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.025089605734767026,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "style"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.1546777546777547,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "style"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1546777546777547,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "ounces"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.15435684647302905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ounces"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.15435684647302905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.15435684647302905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.15435684647302905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "brewery_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.15435684647302905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "brewery_id"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.15435684647302905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "abv"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.1575809199318569,
+        "support": 0.9946236559139785,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "abv"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9946236559139785,
+        "support": 0.1575809199318569,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "name"
+        ],
+        "dependent": [
+            "ibu"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2206405693950178,
+        "support": 0.8333333333333334,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "beers",
+        "determinant": [
+            "ibu"
+        ],
+        "dependent": [
+            "name"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8333333333333334,
+        "support": 0.2206405693950178,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

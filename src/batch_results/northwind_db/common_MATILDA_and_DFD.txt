@@ -1,0 +1,235 @@
+# Règles communes sauvegardées: 116
+# Date: 2025-04-28 09:51:50
+
+1. Products: QuantityPerUnit → CategoryID [conf=1.00, supp=9.53] <=> Products: QuantityPerUnit → CategoryID
+
+2. Products: QuantityPerUnit → CategoryID [conf=0.02, supp=0.90] <=> Products: QuantityPerUnit → CategoryID
+
+3. Products: ProductID → CategoryID [conf=1.00, supp=9.53] <=> Products: ProductID → CategoryID
+
+4. Products: ProductName → CategoryID [conf=1.00, supp=9.53] <=> Products: ProductName → CategoryID
+
+5. Order Details: UnitPrice → Discount [conf=10.58, supp=1.00] <=> Order Details: UnitPrice → Discount
+
+6. Products: UnitsOnOrder → Discontinued [conf=46.36, supp=1.00] <=> Products: UnitsOnOrder → Discontinued
+
+7. Products: UnitsOnOrder → Discontinued [conf=0.58, supp=0.77] <=> Products: UnitsOnOrder → Discontinued
+
+8. Products: ProductID → UnitsOnOrder [conf=1.00, supp=46.36] <=> Products: ProductID → UnitsOnOrder
+
+9. Products: ProductName → UnitsOnOrder [conf=1.00, supp=46.36] <=> Products: ProductName → UnitsOnOrder
+
+10. Products: QuantityPerUnit → UnitsOnOrder [conf=1.00, supp=46.36] <=> Products: QuantityPerUnit → UnitsOnOrder
+
+11. Orders: ShipPostalCode → CustomerID [conf=11.92, supp=1.00] <=> Orders: ShipPostalCode → CustomerID
+
+12. Products: ProductID → Discontinued [conf=1.00, supp=61.66] <=> Products: ProductID → Discontinued
+
+13. Products: ProductName → Discontinued [conf=1.00, supp=61.66] <=> Products: ProductName → Discontinued
+
+14. Products: QuantityPerUnit → Discontinued [conf=1.00, supp=61.66] <=> Products: QuantityPerUnit → Discontinued
+
+15. Products: UnitPrice → Discontinued [conf=1.00, supp=61.66] <=> Products: UnitPrice → Discontinued
+
+16. Products: UnitsInStock → Discontinued [conf=1.00, supp=61.66] <=> Products: UnitsInStock → Discontinued
+
+17. Products: UnitsOnOrder → Discontinued [conf=1.00, supp=61.66] <=> Products: UnitsOnOrder → Discontinued
+
+18. Products: QuantityPerUnit → UnitPrice [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → UnitPrice
+
+19. Products: QuantityPerUnit → UnitPrice [conf=0.05, supp=0.10] <=> Products: QuantityPerUnit → UnitPrice
+
+20. Products: QuantityPerUnit → UnitsInStock [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → UnitsInStock
+
+21. Products: QuantityPerUnit → UnitsOnOrder [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → UnitsOnOrder
+
+22. Products: QuantityPerUnit → ReorderLevel [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → ReorderLevel
+
+23. Products: QuantityPerUnit → Discontinued [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → Discontinued
+
+24. Products: ProductID → QuantityPerUnit [conf=1.00, supp=0.26] <=> Products: ProductID → QuantityPerUnit
+
+25. Products: QuantityPerUnit → ProductID [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → ProductID
+
+26. Products: QuantityPerUnit → ProductName [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → ProductName
+
+27. Products: ProductName → QuantityPerUnit [conf=1.00, supp=0.26] <=> Products: ProductName → QuantityPerUnit
+
+28. Products: QuantityPerUnit → SupplierID [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → SupplierID
+
+29. Products: QuantityPerUnit → CategoryID [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → CategoryID
+
+30. Products: ProductID → ReorderLevel [conf=1.00, supp=12.78] <=> Products: ProductID → ReorderLevel
+
+31. Products: ProductName → ReorderLevel [conf=1.00, supp=12.78] <=> Products: ProductName → ReorderLevel
+
+32. Products: QuantityPerUnit → ReorderLevel [conf=1.00, supp=12.78] <=> Products: QuantityPerUnit → ReorderLevel
+
+33. Products: UnitsInStock → Discontinued [conf=1.09, supp=1.00] <=> Products: UnitsInStock → Discontinued
+
+34. Products: UnitsInStock → Discontinued [conf=0.01, supp=0.74] <=> Products: UnitsInStock → Discontinued
+
+35. Products: ProductID → UnitsInStock [conf=1.00, supp=1.09] <=> Products: ProductID → UnitsInStock
+
+36. Products: ProductName → UnitsInStock [conf=1.00, supp=1.09] <=> Products: ProductName → UnitsInStock
+
+37. Products: QuantityPerUnit → UnitsInStock [conf=1.00, supp=1.09] <=> Products: QuantityPerUnit → UnitsInStock
+
+38. Products: UnitPrice → Discontinued [conf=0.57, supp=1.00] <=> Products: UnitPrice → Discontinued
+
+39. Products: ProductID → UnitPrice [conf=1.00, supp=0.57] <=> Products: ProductID → UnitPrice
+
+40. Products: ProductName → UnitPrice [conf=1.00, supp=0.57] <=> Products: ProductName → UnitPrice
+
+41. Products: QuantityPerUnit → UnitPrice [conf=1.00, supp=0.57] <=> Products: QuantityPerUnit → UnitPrice
+
+42. Orders: Freight → CustomerID [conf=1.00, supp=11.91] <=> Orders: Freight → CustomerID
+
+43. Orders: ShipName → CustomerID [conf=1.00, supp=11.91] <=> Orders: ShipName → CustomerID
+
+44. Orders: ShipName → CustomerID [conf=1.00, supp=1.00] <=> Orders: ShipName → CustomerID
+
+45. Orders: ShipAddress → CustomerID [conf=1.00, supp=11.91] <=> Orders: ShipAddress → CustomerID
+
+46. Orders: ShipAddress → CustomerID [conf=1.00, supp=1.00] <=> Orders: ShipAddress → CustomerID
+
+47. Orders: ShipPostalCode → CustomerID [conf=0.97, supp=11.76] <=> Orders: ShipPostalCode → CustomerID
+
+48. Orders: ShipPostalCode → CustomerID [conf=0.97, supp=0.96] <=> Orders: ShipPostalCode → CustomerID
+
+49. Orders: OrderID → CustomerID [conf=1.00, supp=11.91] <=> Orders: OrderID → CustomerID
+
+50. Customers: Address → ContactTitle [conf=1.00, supp=10.68] <=> Customers: Address → ContactTitle
+
+51. Customers: PostalCode → ContactTitle [conf=0.99, supp=10.73] <=> Customers: PostalCode → ContactTitle
+
+52. Customers: Phone → ContactTitle [conf=1.00, supp=10.68] <=> Customers: Phone → ContactTitle
+
+53. Customers: Fax → ContactTitle [conf=0.76, supp=10.70] <=> Customers: Fax → ContactTitle
+
+54. Customers: CustomerID → ContactTitle [conf=1.00, supp=10.68] <=> Customers: CustomerID → ContactTitle
+
+55. Customers: CompanyName → ContactTitle [conf=1.00, supp=10.68] <=> Customers: CompanyName → ContactTitle
+
+56. Customers: ContactName → ContactTitle [conf=1.00, supp=10.68] <=> Customers: ContactName → ContactTitle
+
+57. Customers: PostalCode → Country [conf=0.11, supp=1.00] <=> Customers: PostalCode → Country
+
+58. Customers: PostalCode → Country [conf=0.02, supp=1.00] <=> Customers: PostalCode → Country
+
+59. Customers: PostalCode → Phone [conf=0.11, supp=1.00] <=> Customers: PostalCode → Phone
+
+60. Customers: Phone → PostalCode [conf=1.00, supp=0.11] <=> Customers: Phone → PostalCode
+
+61. Customers: PostalCode → Fax [conf=0.13, supp=0.90] <=> Customers: PostalCode → Fax
+
+62. Customers: Fax → PostalCode [conf=0.90, supp=0.13] <=> Customers: Fax → PostalCode
+
+63. Customers: CustomerID → PostalCode [conf=1.00, supp=0.11] <=> Customers: CustomerID → PostalCode
+
+64. Customers: PostalCode → CustomerID [conf=0.11, supp=1.00] <=> Customers: PostalCode → CustomerID
+
+65. Customers: CompanyName → PostalCode [conf=1.00, supp=0.11] <=> Customers: CompanyName → PostalCode
+
+66. Customers: PostalCode → CompanyName [conf=0.11, supp=1.00] <=> Customers: PostalCode → CompanyName
+
+67. Customers: PostalCode → ContactName [conf=0.11, supp=1.00] <=> Customers: PostalCode → ContactName
+
+68. Customers: ContactName → PostalCode [conf=1.00, supp=0.11] <=> Customers: ContactName → PostalCode
+
+69. Customers: PostalCode → ContactTitle [conf=0.11, supp=1.00] <=> Customers: PostalCode → ContactTitle
+
+70. Customers: Address → PostalCode [conf=1.00, supp=0.11] <=> Customers: Address → PostalCode
+
+71. Customers: PostalCode → Address [conf=0.11, supp=1.00] <=> Customers: PostalCode → Address
+
+72. Customers: PostalCode → City [conf=0.11, supp=1.00] <=> Customers: PostalCode → City
+
+73. Order Details: Quantity → Discount [conf=109.44, supp=1.00] <=> Order Details: Quantity → Discount
+
+74. Order Details: Quantity → Discount [conf=0.05, supp=1.00] <=> Order Details: Quantity → Discount
+
+75. Orders: ShipName → CustomerID [conf=11.89, supp=1.00] <=> Orders: ShipName → CustomerID
+
+76. Orders: ShipAddress → CustomerID [conf=11.91, supp=1.00] <=> Orders: ShipAddress → CustomerID
+
+77. Products: QuantityPerUnit → SupplierID [conf=1.00, supp=2.03] <=> Products: QuantityPerUnit → SupplierID
+
+78. Products: QuantityPerUnit → SupplierID [conf=0.06, supp=0.50] <=> Products: QuantityPerUnit → SupplierID
+
+79. Products: ProductID → SupplierID [conf=1.00, supp=2.03] <=> Products: ProductID → SupplierID
+
+80. Products: ProductName → SupplierID [conf=1.00, supp=2.03] <=> Products: ProductName → SupplierID
+
+81. Orders: Freight → OrderID [conf=0.07, supp=1.00] <=> Orders: Freight → OrderID
+
+82. Orders: Freight → CustomerID [conf=0.07, supp=1.00] <=> Orders: Freight → CustomerID
+
+83. Customers: Phone → Country [conf=1.00, supp=6.31] <=> Customers: Phone → Country
+
+84. Customers: Fax → Country [conf=0.73, supp=6.09] <=> Customers: Fax → Country
+
+85. Customers: CustomerID → Country [conf=1.00, supp=6.31] <=> Customers: CustomerID → Country
+
+86. Customers: CompanyName → Country [conf=1.00, supp=6.31] <=> Customers: CompanyName → Country
+
+87. Customers: ContactName → Country [conf=1.00, supp=6.31] <=> Customers: ContactName → Country
+
+88. Customers: Address → Country [conf=1.00, supp=6.31] <=> Customers: Address → Country
+
+89. Customers: City → Country [conf=1.00, supp=6.31] <=> Customers: City → Country
+
+90. Customers: Region → Country [conf=0.44, supp=8.13] <=> Customers: Region → Country
+
+91. Customers: PostalCode → Country [conf=1.00, supp=6.38] <=> Customers: PostalCode → Country
+
+92. Customers: PostalCode → Region [conf=1.00, supp=0.62] <=> Customers: PostalCode → Region
+
+93. Customers: Region → Country [conf=0.62, supp=1.00] <=> Customers: Region → Country
+
+94. Customers: Region → Country [conf=0.10, supp=1.00] <=> Customers: Region → Country
+
+95. Customers: Phone → Region [conf=1.00, supp=0.62] <=> Customers: Phone → Region
+
+96. Customers: Fax → Region [conf=0.41, supp=0.33] <=> Customers: Fax → Region
+
+97. Customers: CustomerID → Region [conf=1.00, supp=0.62] <=> Customers: CustomerID → Region
+
+98. Customers: CompanyName → Region [conf=1.00, supp=0.62] <=> Customers: CompanyName → Region
+
+99. Customers: ContactName → Region [conf=1.00, supp=0.62] <=> Customers: ContactName → Region
+
+100. Customers: Address → Region [conf=1.00, supp=0.62] <=> Customers: Address → Region
+
+101. Customers: City → Region [conf=1.00, supp=0.62] <=> Customers: City → Region
+
+102. Order Details: OrderID → Discount [conf=1.00, supp=2118.83] <=> Order Details: OrderID → Discount
+
+103. Order Details: ProductID → Discount [conf=1.00, supp=2118.83] <=> Order Details: ProductID → Discount
+
+104. Order Details: UnitPrice → Discount [conf=1.00, supp=2118.83] <=> Order Details: UnitPrice → Discount
+
+105. Order Details: Quantity → Discount [conf=1.00, supp=2118.83] <=> Order Details: Quantity → Discount
+
+106. Customers: City → Region [conf=0.65, supp=0.23] <=> Customers: City → Region
+
+107. Customers: City → Region [conf=0.36, supp=0.23] <=> Customers: City → Region
+
+108. Customers: PostalCode → City [conf=1.00, supp=0.98] <=> Customers: PostalCode → City
+
+109. Customers: City → Country [conf=0.97, supp=1.00] <=> Customers: City → Country
+
+110. Customers: City → Country [conf=0.15, supp=1.00] <=> Customers: City → Country
+
+111. Customers: Phone → City [conf=1.00, supp=0.97] <=> Customers: Phone → City
+
+112. Customers: Fax → City [conf=0.70, supp=0.90] <=> Customers: Fax → City
+
+113. Customers: CustomerID → City [conf=1.00, supp=0.97] <=> Customers: CustomerID → City
+
+114. Customers: CompanyName → City [conf=1.00, supp=0.97] <=> Customers: CompanyName → City
+
+115. Customers: ContactName → City [conf=1.00, supp=0.97] <=> Customers: ContactName → City
+
+116. Customers: Address → City [conf=1.00, supp=0.97] <=> Customers: Address → City
+

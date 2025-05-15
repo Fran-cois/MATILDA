@@ -1,0 +1,1148 @@
+2025-04-28 09:59:09,452 [INFO] - Connexion à la base de données: sqlite:///../../data/db2/Facebook.db
+2025-04-28 09:59:09,463 [INFO] - Exécution de MATILDA pour découvrir les FDs
+2025-04-28 09:59:11,597 [INFO] - Using compatibility type: only_one_table (Mode: only_one_table)
+2025-04-28 09:59:11,612 [INFO] - Starting rule discovery with dependency type: fd
+2025-04-28 09:59:11,644 [INFO] - Parameters: max_table=2, max_vars=2, min_support=0.0, min_confidence=0.0
+2025-04-28 09:59:11,660 [INFO] - === Beginning FD Discovery Phase ===
+2025-04-28 09:59:11,671 [INFO] - Starting FD discovery with parameters: {'nb_occurrence': 2, 'max_table': 2, 'max_vars': 2, 'min_support': 0.0, 'min_confidence': 0.0, 'compatibility_mode': 'only_one_table'}
+2025-04-28 09:59:11,682 [INFO] - Initializing RuleDiscoveryCore for fd rules...
+2025-04-28 09:59:11,712 [INFO] - Attributs compatibles exportés vers results/compatibility_fd_Facebook.json
+2025-04-28 09:59:18,344 [INFO] - Métriques exportées dans results
+2025-04-28 09:59:18,374 [DEBUG] - [36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36mReturning SQLAlchemy engine[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m
+2025-04-28 09:59:18,441 [DEBUG] - [36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36mReturning SQLAlchemy metadata[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m
+2025-04-28 09:59:18,507 [INFO] - Initialization completed in 6.81 seconds
+2025-04-28 09:59:18,518 [INFO] - Starting sequential FD discovery using core
+2025-04-28 09:59:18,727 [INFO] - MATILDA: 1 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:21,756 [INFO] - MATILDA: 19 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:24,779 [INFO] - MATILDA: 37 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:27,780 [INFO] - MATILDA: 55 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:30,828 [INFO] - MATILDA: 73 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:33,836 [INFO] - MATILDA: 91 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:36,879 [INFO] - MATILDA: 113 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:39,963 [INFO] - MATILDA: 137 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:43,000 [INFO] - MATILDA: 162 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:46,126 [INFO] - MATILDA: 187 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:49,331 [INFO] - MATILDA: 213 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:52,346 [INFO] - MATILDA: 240 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:55,387 [INFO] - MATILDA: 264 FDs découvertes jusqu'à présent...
+2025-04-28 09:59:58,443 [INFO] - MATILDA: 288 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:01,512 [INFO] - MATILDA: 315 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:04,628 [INFO] - MATILDA: 339 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:07,716 [INFO] - MATILDA: 366 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:10,769 [INFO] - MATILDA: 386 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:13,818 [INFO] - MATILDA: 410 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:16,869 [INFO] - MATILDA: 437 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:19,985 [INFO] - MATILDA: 461 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:23,005 [INFO] - MATILDA: 488 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:26,087 [INFO] - MATILDA: 511 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:29,098 [INFO] - MATILDA: 538 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:32,184 [INFO] - MATILDA: 558 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:40,256 [INFO] - MATILDA: 575 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:43,323 [INFO] - MATILDA: 589 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:46,516 [INFO] - MATILDA: 609 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:49,631 [INFO] - MATILDA: 626 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:52,648 [INFO] - MATILDA: 645 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:55,661 [INFO] - MATILDA: 661 FDs découvertes jusqu'à présent...
+2025-04-28 10:00:58,690 [INFO] - MATILDA: 679 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:01,783 [INFO] - MATILDA: 698 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:04,859 [INFO] - MATILDA: 724 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:07,906 [INFO] - MATILDA: 746 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:11,036 [INFO] - MATILDA: 773 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:14,109 [INFO] - MATILDA: 795 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:17,184 [INFO] - MATILDA: 822 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:20,306 [INFO] - MATILDA: 841 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:23,389 [INFO] - MATILDA: 864 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:26,505 [INFO] - MATILDA: 891 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:29,547 [INFO] - MATILDA: 913 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:32,638 [INFO] - MATILDA: 940 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:35,718 [INFO] - MATILDA: 957 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:38,810 [INFO] - MATILDA: 984 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:41,889 [INFO] - MATILDA: 1006 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:45,147 [INFO] - MATILDA: 1028 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:48,278 [INFO] - MATILDA: 1055 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:51,496 [INFO] - MATILDA: 1074 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:54,610 [INFO] - MATILDA: 1101 FDs découvertes jusqu'à présent...
+2025-04-28 10:01:57,693 [INFO] - MATILDA: 1124 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:01,092 [INFO] - MATILDA: 1149 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:07,932 [INFO] - MATILDA: 1151 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:10,966 [INFO] - MATILDA: 1170 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:14,767 [INFO] - MATILDA: 1188 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:17,843 [INFO] - MATILDA: 1207 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:21,401 [INFO] - MATILDA: 1226 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:24,426 [INFO] - MATILDA: 1245 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:27,614 [INFO] - MATILDA: 1265 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:30,723 [INFO] - MATILDA: 1278 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:33,805 [INFO] - MATILDA: 1303 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:36,848 [INFO] - MATILDA: 1325 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:40,181 [INFO] - MATILDA: 1349 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:43,262 [INFO] - MATILDA: 1376 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:46,758 [INFO] - MATILDA: 1397 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:49,856 [INFO] - MATILDA: 1424 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:52,892 [INFO] - MATILDA: 1446 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:56,011 [INFO] - MATILDA: 1473 FDs découvertes jusqu'à présent...
+2025-04-28 10:02:59,119 [INFO] - MATILDA: 1495 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:02,121 [INFO] - MATILDA: 1521 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:05,165 [INFO] - MATILDA: 1538 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:08,782 [INFO] - MATILDA: 1565 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:11,864 [INFO] - MATILDA: 1592 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:14,933 [INFO] - MATILDA: 1614 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:18,059 [INFO] - MATILDA: 1641 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:21,077 [INFO] - MATILDA: 1658 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:24,207 [INFO] - MATILDA: 1685 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:27,233 [INFO] - MATILDA: 1707 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:30,330 [INFO] - MATILDA: 1729 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:40,488 [INFO] - MATILDA: 1741 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:43,511 [INFO] - MATILDA: 1759 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:46,987 [INFO] - MATILDA: 1779 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:50,060 [INFO] - MATILDA: 1800 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:53,091 [INFO] - MATILDA: 1817 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:56,166 [INFO] - MATILDA: 1838 FDs découvertes jusqu'à présent...
+2025-04-28 10:03:59,246 [INFO] - MATILDA: 1851 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:02,322 [INFO] - MATILDA: 1872 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:05,378 [INFO] - MATILDA: 1889 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:08,405 [INFO] - MATILDA: 1910 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:11,556 [INFO] - MATILDA: 1927 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:11,663 [INFO] - Candidate rule [JIA((i=1, j=0, k=115), (i=1, j=1, k=115)), JIA((i=1, j=0, k=162), (i=1, j=1, k=162))] is pruned due to low support (0) or confidence (0.0).
+2025-04-28 10:04:14,577 [INFO] - MATILDA: 1947 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:17,634 [INFO] - MATILDA: 1968 FDs découvertes jusqu'à présent...
+2025-04-28 10:04:19,463 [WARNING] - Core FD discovery timeout after 300s. Found 2141 rules.
+2025-04-28 10:04:19,476 [INFO] - Discovery completed in 300.95 seconds
+2025-04-28 10:04:19,486 [INFO] - Processed 1085 candidate rules
+2025-04-28 10:04:19,497 [INFO] - Discovered 2141 valid rules
+2025-04-28 10:04:19,508 [INFO] - Core FD discovery found 2141 rules, yielded 2141 after filtering
+2025-04-28 10:04:19,519 [INFO] - Completed FD discovery in 307.84 seconds
+2025-04-28 10:04:19,530 [INFO] - === FD Discovery Phase Complete: Processed 2141 FDs ===
+2025-04-28 10:04:19,570 [INFO] - HTML report generated successfully at results/matilda_report.html
+2025-04-28 10:04:19,623 [INFO] - Saved discovery statistics to results/matilda_stats.json
+2025-04-28 10:04:19,633 [INFO] - Generated HTML report at results/matilda_report.html
+2025-04-28 10:04:19,644 [INFO] - Exported rules to results/matilda_rules.json
+2025-04-28 10:04:19,660 [INFO] - MATILDA FD terminé en 310.19 secondes, 1973 règles découvertes
+2025-04-28 10:04:19,695 [INFO] - Exécution séquentielle des algorithmes
+2025-04-28 10:04:19,705 [INFO] - Démarrage de l'algorithme TANE
+2025-04-28 10:04:21,884 [INFO] - TANE: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 10:04:21,895 [INFO] - Lancement de l'algorithme TANE (version Python)
+2025-04-28 10:04:21,906 [INFO] - Fichiers CSV trouvés: 2
+2025-04-28 10:04:21,917 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/feat.csv (table: feat)
+2025-04-28 10:04:21,939 [INFO] - Table feat: 547 lignes, 263 colonnes
+2025-04-28 10:04:21,974 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday1
+2025-04-28 10:04:22,008 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday2
+2025-04-28 10:04:22,043 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday3
+2025-04-28 10:04:22,077 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday4
+2025-04-28 10:04:22,111 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday5
+2025-04-28 10:04:22,145 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday6
+2025-04-28 10:04:22,179 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday7
+2025-04-28 10:04:22,214 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.birthday8
+2025-04-28 10:04:22,248 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education1
+2025-04-28 10:04:22,282 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education2
+2025-04-28 10:04:22,317 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education3
+2025-04-28 10:04:22,351 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education4
+2025-04-28 10:04:22,385 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education5
+2025-04-28 10:04:22,419 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education6
+2025-04-28 10:04:22,454 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education7
+2025-04-28 10:04:22,489 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education8
+2025-04-28 10:04:22,523 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education9
+2025-04-28 10:04:22,557 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education10
+2025-04-28 10:04:22,591 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education11
+2025-04-28 10:04:22,626 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education12
+2025-04-28 10:04:22,660 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education13
+2025-04-28 10:04:22,695 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education14
+2025-04-28 10:04:22,729 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education15
+2025-04-28 10:04:22,766 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education16
+2025-04-28 10:04:22,802 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education17
+2025-04-28 10:04:22,840 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education18
+2025-04-28 10:04:22,876 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education19
+2025-04-28 10:04:22,911 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education20
+2025-04-28 10:04:22,953 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education21
+2025-04-28 10:04:22,987 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education22
+2025-04-28 10:04:23,023 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education23
+2025-04-28 10:04:23,057 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education24
+2025-04-28 10:04:23,092 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education25
+2025-04-28 10:04:23,126 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education26
+2025-04-28 10:04:23,160 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education27
+2025-04-28 10:04:23,195 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education28
+2025-04-28 10:04:23,228 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education29
+2025-04-28 10:04:23,263 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education30
+2025-04-28 10:04:23,298 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education31
+2025-04-28 10:04:23,333 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education32
+2025-04-28 10:04:23,367 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education33
+2025-04-28 10:04:23,401 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education34
+2025-04-28 10:04:23,438 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education35
+2025-04-28 10:04:23,473 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education36
+2025-04-28 10:04:23,507 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education37
+2025-04-28 10:04:23,541 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education38
+2025-04-28 10:04:23,576 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education39
+2025-04-28 10:04:23,611 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education40
+2025-04-28 10:04:23,645 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education41
+2025-04-28 10:04:23,680 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education42
+2025-04-28 10:04:23,716 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education43
+2025-04-28 10:04:23,750 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education44
+2025-04-28 10:04:23,783 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education45
+2025-04-28 10:04:23,818 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education46
+2025-04-28 10:04:23,852 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education47
+2025-04-28 10:04:23,887 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education48
+2025-04-28 10:04:23,922 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education49
+2025-04-28 10:04:23,959 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education50
+2025-04-28 10:04:23,997 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education51
+2025-04-28 10:04:24,034 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education52
+2025-04-28 10:04:24,071 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education53
+2025-04-28 10:04:24,106 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education54
+2025-04-28 10:04:24,148 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education55
+2025-04-28 10:04:24,184 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education56
+2025-04-28 10:04:24,220 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education57
+2025-04-28 10:04:24,255 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education58
+2025-04-28 10:04:24,290 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education59
+2025-04-28 10:04:24,335 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education60
+2025-04-28 10:04:24,370 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education61
+2025-04-28 10:04:24,405 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education62
+2025-04-28 10:04:24,439 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education63
+2025-04-28 10:04:24,473 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education64
+2025-04-28 10:04:24,508 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education65
+2025-04-28 10:04:24,542 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education66
+2025-04-28 10:04:24,576 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education67
+2025-04-28 10:04:24,610 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education68
+2025-04-28 10:04:24,644 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education69
+2025-04-28 10:04:24,678 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education70
+2025-04-28 10:04:24,712 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education71
+2025-04-28 10:04:24,747 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education72
+2025-04-28 10:04:24,780 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education73
+2025-04-28 10:04:24,815 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education74
+2025-04-28 10:04:24,849 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education75
+2025-04-28 10:04:24,884 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education76
+2025-04-28 10:04:24,918 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education77
+2025-04-28 10:04:24,952 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education78
+2025-04-28 10:04:24,986 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education79
+2025-04-28 10:04:25,021 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education80
+2025-04-28 10:04:25,055 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education81
+2025-04-28 10:04:25,089 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education82
+2025-04-28 10:04:25,124 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education83
+2025-04-28 10:04:25,159 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education84
+2025-04-28 10:04:25,194 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education85
+2025-04-28 10:04:25,229 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education86
+2025-04-28 10:04:25,263 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education87
+2025-04-28 10:04:25,298 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education88
+2025-04-28 10:04:25,332 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education89
+2025-04-28 10:04:25,366 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education90
+2025-04-28 10:04:25,400 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education91
+2025-04-28 10:04:25,434 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education92
+2025-04-28 10:04:25,468 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education93
+2025-04-28 10:04:25,503 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education94
+2025-04-28 10:04:25,537 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education95
+2025-04-28 10:04:25,571 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education96
+2025-04-28 10:04:25,605 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education97
+2025-04-28 10:04:25,638 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education98
+2025-04-28 10:04:25,672 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.education99
+2025-04-28 10:04:25,707 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name1
+2025-04-28 10:04:25,741 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name2
+2025-04-28 10:04:25,775 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name3
+2025-04-28 10:04:25,810 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name4
+2025-04-28 10:04:25,845 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name5
+2025-04-28 10:04:25,879 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name6
+2025-04-28 10:04:25,914 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name7
+2025-04-28 10:04:25,948 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name8
+2025-04-28 10:04:25,982 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name9
+2025-04-28 10:04:26,017 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.first_name10
+2025-04-28 10:04:26,051 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.gender1
+2025-04-28 10:04:26,086 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.gender2
+2025-04-28 10:04:26,120 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown1
+2025-04-28 10:04:26,155 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown2
+2025-04-28 10:04:26,190 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown3
+2025-04-28 10:04:26,224 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown4
+2025-04-28 10:04:26,257 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown5
+2025-04-28 10:04:26,291 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown6
+2025-04-28 10:04:26,326 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown7
+2025-04-28 10:04:26,361 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown8
+2025-04-28 10:04:26,395 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown9
+2025-04-28 10:04:26,430 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown10
+2025-04-28 10:04:26,464 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.hometown11
+2025-04-28 10:04:26,499 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages1
+2025-04-28 10:04:26,533 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages2
+2025-04-28 10:04:26,567 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages3
+2025-04-28 10:04:26,601 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages4
+2025-04-28 10:04:26,635 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages5
+2025-04-28 10:04:26,670 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages6
+2025-04-28 10:04:26,705 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages7
+2025-04-28 10:04:26,739 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages8
+2025-04-28 10:04:26,773 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages9
+2025-04-28 10:04:26,808 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages10
+2025-04-28 10:04:26,843 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages11
+2025-04-28 10:04:26,877 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.languages12
+2025-04-28 10:04:26,911 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name1
+2025-04-28 10:04:26,946 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name2
+2025-04-28 10:04:26,980 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name3
+2025-04-28 10:04:27,016 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name4
+2025-04-28 10:04:27,052 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name5
+2025-04-28 10:04:27,086 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name6
+2025-04-28 10:04:27,120 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name7
+2025-04-28 10:04:27,154 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name8
+2025-04-28 10:04:27,188 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name9
+2025-04-28 10:04:27,224 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name10
+2025-04-28 10:04:27,259 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name11
+2025-04-28 10:04:27,294 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name12
+2025-04-28 10:04:27,329 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name13
+2025-04-28 10:04:27,363 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name14
+2025-04-28 10:04:27,398 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name15
+2025-04-28 10:04:27,432 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name16
+2025-04-28 10:04:27,467 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name17
+2025-04-28 10:04:27,501 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name18
+2025-04-28 10:04:27,534 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name19
+2025-04-28 10:04:27,568 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name20
+2025-04-28 10:04:27,602 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name21
+2025-04-28 10:04:27,636 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name22
+2025-04-28 10:04:27,671 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name23
+2025-04-28 10:04:27,705 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name24
+2025-04-28 10:04:27,739 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name25
+2025-04-28 10:04:27,773 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name26
+2025-04-28 10:04:27,807 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name27
+2025-04-28 10:04:27,842 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name28
+2025-04-28 10:04:27,877 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name29
+2025-04-28 10:04:27,911 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.last_name30
+2025-04-28 10:04:27,946 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.locale1
+2025-04-28 10:04:27,980 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.locale2
+2025-04-28 10:04:28,015 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.locale3
+2025-04-28 10:04:28,050 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.locale4
+2025-04-28 10:04:28,085 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.locale5
+2025-04-28 10:04:28,119 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location1
+2025-04-28 10:04:28,153 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location2
+2025-04-28 10:04:28,189 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location3
+2025-04-28 10:04:28,224 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location4
+2025-04-28 10:04:28,258 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location5
+2025-04-28 10:04:28,293 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location6
+2025-04-28 10:04:28,328 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location7
+2025-04-28 10:04:28,363 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location8
+2025-04-28 10:04:28,398 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location9
+2025-04-28 10:04:28,432 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location10
+2025-04-28 10:04:28,466 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location11
+2025-04-28 10:04:28,501 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location12
+2025-04-28 10:04:28,535 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location13
+2025-04-28 10:04:28,569 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location14
+2025-04-28 10:04:28,604 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location15
+2025-04-28 10:04:28,637 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.location16
+2025-04-28 10:04:28,672 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.name1
+2025-04-28 10:04:28,706 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work1
+2025-04-28 10:04:28,741 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work2
+2025-04-28 10:04:28,775 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work3
+2025-04-28 10:04:28,810 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work4
+2025-04-28 10:04:28,844 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work5
+2025-04-28 10:04:28,879 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work6
+2025-04-28 10:04:28,913 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work7
+2025-04-28 10:04:28,947 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work8
+2025-04-28 10:04:28,982 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work9
+2025-04-28 10:04:29,016 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work10
+2025-04-28 10:04:29,051 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work11
+2025-04-28 10:04:29,086 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work12
+2025-04-28 10:04:29,120 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work13
+2025-04-28 10:04:29,154 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work14
+2025-04-28 10:04:29,189 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work15
+2025-04-28 10:04:29,223 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work16
+2025-04-28 10:04:29,258 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work17
+2025-04-28 10:04:29,292 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work18
+2025-04-28 10:04:29,327 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work19
+2025-04-28 10:04:29,363 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work20
+2025-04-28 10:04:29,396 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work21
+2025-04-28 10:04:29,431 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work22
+2025-04-28 10:04:29,466 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work23
+2025-04-28 10:04:29,501 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work24
+2025-04-28 10:04:29,536 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work25
+2025-04-28 10:04:29,570 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work26
+2025-04-28 10:04:29,603 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work27
+2025-04-28 10:04:29,638 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work28
+2025-04-28 10:04:29,673 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work29
+2025-04-28 10:04:29,707 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work30
+2025-04-28 10:04:29,742 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work31
+2025-04-28 10:04:29,776 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work32
+2025-04-28 10:04:29,811 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work33
+2025-04-28 10:04:29,845 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work34
+2025-04-28 10:04:29,879 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work35
+2025-04-28 10:04:29,914 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work36
+2025-04-28 10:04:29,950 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work37
+2025-04-28 10:04:29,985 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work38
+2025-04-28 10:04:30,021 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work39
+2025-04-28 10:04:30,058 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work40
+2025-04-28 10:04:30,102 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work41
+2025-04-28 10:04:30,137 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work42
+2025-04-28 10:04:30,172 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work43
+2025-04-28 10:04:30,208 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work44
+2025-04-28 10:04:30,246 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work45
+2025-04-28 10:04:30,290 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work46
+2025-04-28 10:04:30,324 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work47
+2025-04-28 10:04:30,358 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work48
+2025-04-28 10:04:30,392 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work49
+2025-04-28 10:04:30,426 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work50
+2025-04-28 10:04:30,460 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work51
+2025-04-28 10:04:30,495 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work52
+2025-04-28 10:04:30,529 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work53
+2025-04-28 10:04:30,563 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work54
+2025-04-28 10:04:30,597 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work55
+2025-04-28 10:04:30,632 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work56
+2025-04-28 10:04:30,666 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work57
+2025-04-28 10:04:30,700 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work58
+2025-04-28 10:04:30,734 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work59
+2025-04-28 10:04:30,768 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work60
+2025-04-28 10:04:30,802 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work61
+2025-04-28 10:04:30,837 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work62
+2025-04-28 10:04:30,872 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work63
+2025-04-28 10:04:30,906 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work64
+2025-04-28 10:04:30,940 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work65
+2025-04-28 10:04:30,975 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work66
+2025-04-28 10:04:31,010 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work67
+2025-04-28 10:04:31,044 [INFO] - Dépendance fonctionnelle découverte: feat.id -> feat.work68
+2025-04-28 10:09:21,900 [ERROR] - Erreur lors de l'analyse de ../../data/db2/Facebook/csv/feat.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 10:09:21,924 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/edges.csv (table: edges)
+2025-04-28 10:09:21,938 [INFO] - Table edges: 9626 lignes, 2 colonnes
+2025-04-28 10:09:22,720 [INFO] - Découvert 0 dépendances fonctionnelles pour edges
+2025-04-28 10:09:22,732 [INFO] - TANE: Découverte terminée avec 0 règles.
+2025-04-28 10:09:22,758 [INFO] - TANE terminé en 303.04 secondes, 0 règles découvertes
+2025-04-28 10:09:22,770 [INFO] - Démarrage de l'algorithme FastFDs
+2025-04-28 10:09:25,079 [INFO] - FastFDs: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 10:09:25,092 [INFO] - Lancement de l'algorithme FastFDs
+2025-04-28 10:09:25,104 [INFO] - Fichiers CSV trouvés: 2
+2025-04-28 10:09:25,116 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/feat.csv (table: feat)
+2025-04-28 10:09:25,140 [INFO] - Table feat: 547 lignes, 263 colonnes
+2025-04-28 10:09:25,152 [INFO] - Exécution de FastFDs sur feat avec 263 colonnes
+2025-04-28 10:09:25,244 [INFO] - Recherche des déterminants pour id
+2025-04-28 10:09:25,256 [INFO] - Recherche des déterminants pour birthday1
+2025-04-28 10:14:25,094 [ERROR] - Erreur lors de l'analyse de ../../data/db2/Facebook/csv/feat.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 10:14:25,131 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/edges.csv (table: edges)
+2025-04-28 10:14:25,145 [INFO] - Table edges: 9626 lignes, 2 colonnes
+2025-04-28 10:14:25,155 [INFO] - Exécution de FastFDs sur edges avec 2 colonnes
+2025-04-28 10:14:25,183 [INFO] - Recherche des déterminants pour id1
+2025-04-28 10:14:32,699 [INFO] - Dépendance trouvée: ('id2',) -> id1
+2025-04-28 10:14:32,711 [INFO] - Recherche des déterminants pour id2
+2025-04-28 10:14:41,066 [INFO] - Dépendance trouvée: ('id1',) -> id2
+2025-04-28 10:14:41,080 [INFO] - FastFDs: 1 règles découvertes jusqu'à présent...
+2025-04-28 10:14:41,090 [INFO] - Dépendance: edges.('id2',) -> edges.('id1',)
+2025-04-28 10:14:41,100 [INFO] - Dépendance: edges.('id1',) -> edges.('id2',)
+2025-04-28 10:14:41,111 [INFO] - Découvert 2 dépendances pour edges
+2025-04-28 10:14:41,122 [INFO] - FastFDs: Découverte terminée avec 2 règles.
+2025-04-28 10:14:41,140 [INFO] - FastFDs terminé en 318.36 secondes, 2 règles découvertes
+2025-04-28 10:14:41,150 [INFO] - Démarrage de l'algorithme FDep
+2025-04-28 10:14:43,324 [INFO] - FDep: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 10:14:43,336 [INFO] - Lancement de l'algorithme FDep
+2025-04-28 10:14:43,347 [INFO] - Fichiers CSV trouvés: 2
+2025-04-28 10:14:43,358 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/feat.csv (table: feat)
+2025-04-28 10:14:43,381 [INFO] - Table feat: 547 lignes, 263 colonnes
+2025-04-28 10:14:43,393 [INFO] - Exécution de FDep sur feat avec 263 colonnes et max_lhs_size=3
+2025-04-28 10:14:43,404 [INFO] - Calcul des agree sets pour 547 tuples
+2025-04-28 10:19:43,333 [ERROR] - Erreur lors de l'analyse de ../../data/db2/Facebook/csv/feat.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 10:19:43,382 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/edges.csv (table: edges)
+2025-04-28 10:19:43,396 [INFO] - Table edges: 9626 lignes, 2 colonnes
+2025-04-28 10:19:43,406 [INFO] - Exécution de FDep sur edges avec 2 colonnes et max_lhs_size=3
+2025-04-28 10:19:43,417 [INFO] - Calcul des agree sets pour 9626 tuples
+2025-04-28 12:58:56,932 [INFO] - Découvert 0 dépendances pour edges
+2025-04-28 12:58:56,986 [INFO] - FDep: Découverte terminée avec 0 règles.
+2025-04-28 12:58:57,092 [INFO] - FDep terminé en 9855.93 secondes, 0 règles découvertes
+2025-04-28 12:58:57,105 [INFO] - Démarrage de l'algorithme DFD
+2025-04-28 12:58:59,452 [INFO] - DFD: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 12:58:59,462 [INFO] - Lancement de l'algorithme DFD (Depth-First Discovery)
+2025-04-28 12:58:59,472 [INFO] - Fichiers CSV trouvés: 2
+2025-04-28 12:58:59,482 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/feat.csv (table: feat)
+2025-04-28 12:58:59,531 [INFO] - Table feat: 547 lignes, 263 colonnes
+2025-04-28 12:58:59,637 [INFO] - Recherche de dépendances pour la cible: id
+2025-04-28 13:20:24,281 [WARNING] - Limite de temps atteinte pour la cible id. Exploration incomplète.
+2025-04-28 13:20:24,353 [INFO] - Recherche de dépendances pour la cible: birthday1
+2025-04-28 13:20:24,377 [WARNING] - Limite de temps atteinte pour la cible birthday1. Exploration incomplète.
+2025-04-28 13:20:24,397 [INFO] - Recherche de dépendances pour la cible: birthday2
+2025-04-28 13:20:24,414 [WARNING] - Limite de temps atteinte pour la cible birthday2. Exploration incomplète.
+2025-04-28 13:20:24,425 [INFO] - Recherche de dépendances pour la cible: birthday3
+2025-04-28 13:20:24,436 [WARNING] - Limite de temps atteinte pour la cible birthday3. Exploration incomplète.
+2025-04-28 13:20:24,446 [INFO] - Recherche de dépendances pour la cible: birthday4
+2025-04-28 13:20:24,456 [WARNING] - Limite de temps atteinte pour la cible birthday4. Exploration incomplète.
+2025-04-28 13:20:24,465 [INFO] - Recherche de dépendances pour la cible: birthday5
+2025-04-28 13:20:24,476 [WARNING] - Limite de temps atteinte pour la cible birthday5. Exploration incomplète.
+2025-04-28 13:20:24,486 [INFO] - Recherche de dépendances pour la cible: birthday6
+2025-04-28 13:20:24,496 [WARNING] - Limite de temps atteinte pour la cible birthday6. Exploration incomplète.
+2025-04-28 13:20:24,505 [INFO] - Recherche de dépendances pour la cible: birthday7
+2025-04-28 13:20:24,515 [WARNING] - Limite de temps atteinte pour la cible birthday7. Exploration incomplète.
+2025-04-28 13:20:24,525 [INFO] - Recherche de dépendances pour la cible: birthday8
+2025-04-28 13:20:24,535 [WARNING] - Limite de temps atteinte pour la cible birthday8. Exploration incomplète.
+2025-04-28 13:20:24,544 [INFO] - Recherche de dépendances pour la cible: education1
+2025-04-28 13:20:24,554 [WARNING] - Limite de temps atteinte pour la cible education1. Exploration incomplète.
+2025-04-28 13:20:24,563 [INFO] - Recherche de dépendances pour la cible: education2
+2025-04-28 13:20:24,573 [WARNING] - Limite de temps atteinte pour la cible education2. Exploration incomplète.
+2025-04-28 13:20:24,582 [INFO] - Recherche de dépendances pour la cible: education3
+2025-04-28 13:20:24,592 [WARNING] - Limite de temps atteinte pour la cible education3. Exploration incomplète.
+2025-04-28 13:20:24,602 [INFO] - Recherche de dépendances pour la cible: education4
+2025-04-28 13:20:24,613 [WARNING] - Limite de temps atteinte pour la cible education4. Exploration incomplète.
+2025-04-28 13:20:24,623 [INFO] - Recherche de dépendances pour la cible: education5
+2025-04-28 13:20:24,635 [WARNING] - Limite de temps atteinte pour la cible education5. Exploration incomplète.
+2025-04-28 13:20:24,646 [INFO] - Recherche de dépendances pour la cible: education6
+2025-04-28 13:20:24,658 [WARNING] - Limite de temps atteinte pour la cible education6. Exploration incomplète.
+2025-04-28 13:20:24,670 [INFO] - Recherche de dépendances pour la cible: education7
+2025-04-28 13:20:24,679 [WARNING] - Limite de temps atteinte pour la cible education7. Exploration incomplète.
+2025-04-28 13:20:24,689 [INFO] - Recherche de dépendances pour la cible: education8
+2025-04-28 13:20:24,698 [WARNING] - Limite de temps atteinte pour la cible education8. Exploration incomplète.
+2025-04-28 13:20:24,707 [INFO] - Recherche de dépendances pour la cible: education9
+2025-04-28 13:20:24,721 [WARNING] - Limite de temps atteinte pour la cible education9. Exploration incomplète.
+2025-04-28 13:20:24,730 [INFO] - Recherche de dépendances pour la cible: education10
+2025-04-28 13:20:24,740 [WARNING] - Limite de temps atteinte pour la cible education10. Exploration incomplète.
+2025-04-28 13:20:24,751 [INFO] - Recherche de dépendances pour la cible: education11
+2025-04-28 13:20:24,760 [WARNING] - Limite de temps atteinte pour la cible education11. Exploration incomplète.
+2025-04-28 13:20:24,772 [INFO] - Recherche de dépendances pour la cible: education12
+2025-04-28 13:20:24,782 [WARNING] - Limite de temps atteinte pour la cible education12. Exploration incomplète.
+2025-04-28 13:20:24,794 [INFO] - Recherche de dépendances pour la cible: education13
+2025-04-28 13:20:24,804 [WARNING] - Limite de temps atteinte pour la cible education13. Exploration incomplète.
+2025-04-28 13:20:24,813 [INFO] - Recherche de dépendances pour la cible: education14
+2025-04-28 13:20:24,825 [WARNING] - Limite de temps atteinte pour la cible education14. Exploration incomplète.
+2025-04-28 13:20:24,834 [INFO] - Recherche de dépendances pour la cible: education15
+2025-04-28 13:20:24,845 [WARNING] - Limite de temps atteinte pour la cible education15. Exploration incomplète.
+2025-04-28 13:20:24,856 [INFO] - Recherche de dépendances pour la cible: education16
+2025-04-28 13:20:24,868 [WARNING] - Limite de temps atteinte pour la cible education16. Exploration incomplète.
+2025-04-28 13:20:24,878 [INFO] - Recherche de dépendances pour la cible: education17
+2025-04-28 13:20:24,889 [WARNING] - Limite de temps atteinte pour la cible education17. Exploration incomplète.
+2025-04-28 13:20:24,899 [INFO] - Recherche de dépendances pour la cible: education18
+2025-04-28 13:20:24,909 [WARNING] - Limite de temps atteinte pour la cible education18. Exploration incomplète.
+2025-04-28 13:20:24,919 [INFO] - Recherche de dépendances pour la cible: education19
+2025-04-28 13:20:24,929 [WARNING] - Limite de temps atteinte pour la cible education19. Exploration incomplète.
+2025-04-28 13:20:24,940 [INFO] - Recherche de dépendances pour la cible: education20
+2025-04-28 13:20:24,952 [WARNING] - Limite de temps atteinte pour la cible education20. Exploration incomplète.
+2025-04-28 13:20:24,962 [INFO] - Recherche de dépendances pour la cible: education21
+2025-04-28 13:20:24,972 [WARNING] - Limite de temps atteinte pour la cible education21. Exploration incomplète.
+2025-04-28 13:20:24,983 [INFO] - Recherche de dépendances pour la cible: education22
+2025-04-28 13:20:24,995 [WARNING] - Limite de temps atteinte pour la cible education22. Exploration incomplète.
+2025-04-28 13:20:25,006 [INFO] - Recherche de dépendances pour la cible: education23
+2025-04-28 13:20:25,016 [WARNING] - Limite de temps atteinte pour la cible education23. Exploration incomplète.
+2025-04-28 13:20:25,026 [INFO] - Recherche de dépendances pour la cible: education24
+2025-04-28 13:20:25,036 [WARNING] - Limite de temps atteinte pour la cible education24. Exploration incomplète.
+2025-04-28 13:20:25,045 [INFO] - Recherche de dépendances pour la cible: education25
+2025-04-28 13:20:25,055 [WARNING] - Limite de temps atteinte pour la cible education25. Exploration incomplète.
+2025-04-28 13:20:25,065 [INFO] - Recherche de dépendances pour la cible: education26
+2025-04-28 13:20:25,076 [WARNING] - Limite de temps atteinte pour la cible education26. Exploration incomplète.
+2025-04-28 13:20:25,087 [INFO] - Recherche de dépendances pour la cible: education27
+2025-04-28 13:20:25,098 [WARNING] - Limite de temps atteinte pour la cible education27. Exploration incomplète.
+2025-04-28 13:20:25,109 [INFO] - Recherche de dépendances pour la cible: education28
+2025-04-28 13:20:25,120 [WARNING] - Limite de temps atteinte pour la cible education28. Exploration incomplète.
+2025-04-28 13:20:25,130 [INFO] - Recherche de dépendances pour la cible: education29
+2025-04-28 13:20:25,140 [WARNING] - Limite de temps atteinte pour la cible education29. Exploration incomplète.
+2025-04-28 13:20:25,150 [INFO] - Recherche de dépendances pour la cible: education30
+2025-04-28 13:20:25,161 [WARNING] - Limite de temps atteinte pour la cible education30. Exploration incomplète.
+2025-04-28 13:20:25,171 [INFO] - Recherche de dépendances pour la cible: education31
+2025-04-28 13:20:25,181 [WARNING] - Limite de temps atteinte pour la cible education31. Exploration incomplète.
+2025-04-28 13:20:25,191 [INFO] - Recherche de dépendances pour la cible: education32
+2025-04-28 13:20:25,201 [WARNING] - Limite de temps atteinte pour la cible education32. Exploration incomplète.
+2025-04-28 13:20:25,212 [INFO] - Recherche de dépendances pour la cible: education33
+2025-04-28 13:20:25,224 [WARNING] - Limite de temps atteinte pour la cible education33. Exploration incomplète.
+2025-04-28 13:20:25,235 [INFO] - Recherche de dépendances pour la cible: education34
+2025-04-28 13:20:25,244 [WARNING] - Limite de temps atteinte pour la cible education34. Exploration incomplète.
+2025-04-28 13:20:25,255 [INFO] - Recherche de dépendances pour la cible: education35
+2025-04-28 13:20:25,266 [WARNING] - Limite de temps atteinte pour la cible education35. Exploration incomplète.
+2025-04-28 13:20:25,276 [INFO] - Recherche de dépendances pour la cible: education36
+2025-04-28 13:20:25,287 [WARNING] - Limite de temps atteinte pour la cible education36. Exploration incomplète.
+2025-04-28 13:20:25,297 [INFO] - Recherche de dépendances pour la cible: education37
+2025-04-28 13:20:25,306 [WARNING] - Limite de temps atteinte pour la cible education37. Exploration incomplète.
+2025-04-28 13:20:25,316 [INFO] - Recherche de dépendances pour la cible: education38
+2025-04-28 13:20:25,325 [WARNING] - Limite de temps atteinte pour la cible education38. Exploration incomplète.
+2025-04-28 13:20:25,335 [INFO] - Recherche de dépendances pour la cible: education39
+2025-04-28 13:20:25,344 [WARNING] - Limite de temps atteinte pour la cible education39. Exploration incomplète.
+2025-04-28 13:20:25,355 [INFO] - Recherche de dépendances pour la cible: education40
+2025-04-28 13:20:25,365 [WARNING] - Limite de temps atteinte pour la cible education40. Exploration incomplète.
+2025-04-28 13:20:25,375 [INFO] - Recherche de dépendances pour la cible: education41
+2025-04-28 13:20:25,385 [WARNING] - Limite de temps atteinte pour la cible education41. Exploration incomplète.
+2025-04-28 13:20:25,395 [INFO] - Recherche de dépendances pour la cible: education42
+2025-04-28 13:20:25,406 [WARNING] - Limite de temps atteinte pour la cible education42. Exploration incomplète.
+2025-04-28 13:20:25,417 [INFO] - Recherche de dépendances pour la cible: education43
+2025-04-28 13:20:25,428 [WARNING] - Limite de temps atteinte pour la cible education43. Exploration incomplète.
+2025-04-28 13:20:25,439 [INFO] - Recherche de dépendances pour la cible: education44
+2025-04-28 13:20:25,451 [WARNING] - Limite de temps atteinte pour la cible education44. Exploration incomplète.
+2025-04-28 13:20:25,462 [INFO] - Recherche de dépendances pour la cible: education45
+2025-04-28 13:20:25,473 [WARNING] - Limite de temps atteinte pour la cible education45. Exploration incomplète.
+2025-04-28 13:20:25,484 [INFO] - Recherche de dépendances pour la cible: education46
+2025-04-28 13:20:25,494 [WARNING] - Limite de temps atteinte pour la cible education46. Exploration incomplète.
+2025-04-28 13:20:25,503 [INFO] - Recherche de dépendances pour la cible: education47
+2025-04-28 13:20:25,513 [WARNING] - Limite de temps atteinte pour la cible education47. Exploration incomplète.
+2025-04-28 13:20:25,524 [INFO] - Recherche de dépendances pour la cible: education48
+2025-04-28 13:20:25,536 [WARNING] - Limite de temps atteinte pour la cible education48. Exploration incomplète.
+2025-04-28 13:20:25,546 [INFO] - Recherche de dépendances pour la cible: education49
+2025-04-28 13:20:25,558 [WARNING] - Limite de temps atteinte pour la cible education49. Exploration incomplète.
+2025-04-28 13:20:25,569 [INFO] - Recherche de dépendances pour la cible: education50
+2025-04-28 13:20:25,585 [WARNING] - Limite de temps atteinte pour la cible education50. Exploration incomplète.
+2025-04-28 13:20:25,599 [INFO] - Recherche de dépendances pour la cible: education51
+2025-04-28 13:20:25,621 [WARNING] - Limite de temps atteinte pour la cible education51. Exploration incomplète.
+2025-04-28 13:20:25,631 [INFO] - Recherche de dépendances pour la cible: education52
+2025-04-28 13:20:25,644 [WARNING] - Limite de temps atteinte pour la cible education52. Exploration incomplète.
+2025-04-28 13:20:25,727 [INFO] - Recherche de dépendances pour la cible: education53
+2025-04-28 13:20:25,739 [WARNING] - Limite de temps atteinte pour la cible education53. Exploration incomplète.
+2025-04-28 13:20:25,750 [INFO] - Recherche de dépendances pour la cible: education54
+2025-04-28 13:20:25,763 [WARNING] - Limite de temps atteinte pour la cible education54. Exploration incomplète.
+2025-04-28 13:20:25,785 [INFO] - Recherche de dépendances pour la cible: education55
+2025-04-28 13:20:25,802 [WARNING] - Limite de temps atteinte pour la cible education55. Exploration incomplète.
+2025-04-28 13:20:25,820 [INFO] - Recherche de dépendances pour la cible: education56
+2025-04-28 13:20:25,838 [WARNING] - Limite de temps atteinte pour la cible education56. Exploration incomplète.
+2025-04-28 13:20:25,850 [INFO] - Recherche de dépendances pour la cible: education57
+2025-04-28 13:20:25,860 [WARNING] - Limite de temps atteinte pour la cible education57. Exploration incomplète.
+2025-04-28 13:20:25,873 [INFO] - Recherche de dépendances pour la cible: education58
+2025-04-28 13:20:25,883 [WARNING] - Limite de temps atteinte pour la cible education58. Exploration incomplète.
+2025-04-28 13:20:25,895 [INFO] - Recherche de dépendances pour la cible: education59
+2025-04-28 13:20:25,910 [WARNING] - Limite de temps atteinte pour la cible education59. Exploration incomplète.
+2025-04-28 13:20:25,921 [INFO] - Recherche de dépendances pour la cible: education60
+2025-04-28 13:20:25,935 [WARNING] - Limite de temps atteinte pour la cible education60. Exploration incomplète.
+2025-04-28 13:20:25,950 [INFO] - Recherche de dépendances pour la cible: education61
+2025-04-28 13:20:25,960 [WARNING] - Limite de temps atteinte pour la cible education61. Exploration incomplète.
+2025-04-28 13:20:25,971 [INFO] - Recherche de dépendances pour la cible: education62
+2025-04-28 13:20:25,981 [WARNING] - Limite de temps atteinte pour la cible education62. Exploration incomplète.
+2025-04-28 13:20:25,991 [INFO] - Recherche de dépendances pour la cible: education63
+2025-04-28 13:20:26,002 [WARNING] - Limite de temps atteinte pour la cible education63. Exploration incomplète.
+2025-04-28 13:20:26,011 [INFO] - Recherche de dépendances pour la cible: education64
+2025-04-28 13:20:26,021 [WARNING] - Limite de temps atteinte pour la cible education64. Exploration incomplète.
+2025-04-28 13:20:26,032 [INFO] - Recherche de dépendances pour la cible: education65
+2025-04-28 13:20:26,041 [WARNING] - Limite de temps atteinte pour la cible education65. Exploration incomplète.
+2025-04-28 13:20:26,051 [INFO] - Recherche de dépendances pour la cible: education66
+2025-04-28 13:20:26,061 [WARNING] - Limite de temps atteinte pour la cible education66. Exploration incomplète.
+2025-04-28 13:20:26,070 [INFO] - Recherche de dépendances pour la cible: education67
+2025-04-28 13:20:26,080 [WARNING] - Limite de temps atteinte pour la cible education67. Exploration incomplète.
+2025-04-28 13:20:26,098 [INFO] - Recherche de dépendances pour la cible: education68
+2025-04-28 13:20:26,116 [WARNING] - Limite de temps atteinte pour la cible education68. Exploration incomplète.
+2025-04-28 13:20:26,139 [INFO] - Recherche de dépendances pour la cible: education69
+2025-04-28 13:20:26,155 [WARNING] - Limite de temps atteinte pour la cible education69. Exploration incomplète.
+2025-04-28 13:20:26,171 [INFO] - Recherche de dépendances pour la cible: education70
+2025-04-28 13:20:26,183 [WARNING] - Limite de temps atteinte pour la cible education70. Exploration incomplète.
+2025-04-28 13:20:26,193 [INFO] - Recherche de dépendances pour la cible: education71
+2025-04-28 13:20:26,203 [WARNING] - Limite de temps atteinte pour la cible education71. Exploration incomplète.
+2025-04-28 13:20:26,213 [INFO] - Recherche de dépendances pour la cible: education72
+2025-04-28 13:20:26,223 [WARNING] - Limite de temps atteinte pour la cible education72. Exploration incomplète.
+2025-04-28 13:20:26,232 [INFO] - Recherche de dépendances pour la cible: education73
+2025-04-28 13:20:26,242 [WARNING] - Limite de temps atteinte pour la cible education73. Exploration incomplète.
+2025-04-28 13:20:26,252 [INFO] - Recherche de dépendances pour la cible: education74
+2025-04-28 13:20:26,262 [WARNING] - Limite de temps atteinte pour la cible education74. Exploration incomplète.
+2025-04-28 13:20:26,271 [INFO] - Recherche de dépendances pour la cible: education75
+2025-04-28 13:20:26,280 [WARNING] - Limite de temps atteinte pour la cible education75. Exploration incomplète.
+2025-04-28 13:20:26,290 [INFO] - Recherche de dépendances pour la cible: education76
+2025-04-28 13:20:26,300 [WARNING] - Limite de temps atteinte pour la cible education76. Exploration incomplète.
+2025-04-28 13:20:26,310 [INFO] - Recherche de dépendances pour la cible: education77
+2025-04-28 13:20:26,319 [WARNING] - Limite de temps atteinte pour la cible education77. Exploration incomplète.
+2025-04-28 13:20:26,351 [INFO] - Recherche de dépendances pour la cible: education78
+2025-04-28 13:20:26,365 [WARNING] - Limite de temps atteinte pour la cible education78. Exploration incomplète.
+2025-04-28 13:20:26,376 [INFO] - Recherche de dépendances pour la cible: education79
+2025-04-28 13:20:26,395 [WARNING] - Limite de temps atteinte pour la cible education79. Exploration incomplète.
+2025-04-28 13:20:26,405 [INFO] - Recherche de dépendances pour la cible: education80
+2025-04-28 13:20:26,415 [WARNING] - Limite de temps atteinte pour la cible education80. Exploration incomplète.
+2025-04-28 13:20:26,425 [INFO] - Recherche de dépendances pour la cible: education81
+2025-04-28 13:20:26,434 [WARNING] - Limite de temps atteinte pour la cible education81. Exploration incomplète.
+2025-04-28 13:20:26,444 [INFO] - Recherche de dépendances pour la cible: education82
+2025-04-28 13:20:26,453 [WARNING] - Limite de temps atteinte pour la cible education82. Exploration incomplète.
+2025-04-28 13:20:26,474 [INFO] - Recherche de dépendances pour la cible: education83
+2025-04-28 13:20:26,485 [WARNING] - Limite de temps atteinte pour la cible education83. Exploration incomplète.
+2025-04-28 13:20:26,495 [INFO] - Recherche de dépendances pour la cible: education84
+2025-04-28 13:20:26,505 [WARNING] - Limite de temps atteinte pour la cible education84. Exploration incomplète.
+2025-04-28 13:20:26,515 [INFO] - Recherche de dépendances pour la cible: education85
+2025-04-28 13:20:26,524 [WARNING] - Limite de temps atteinte pour la cible education85. Exploration incomplète.
+2025-04-28 13:20:26,534 [INFO] - Recherche de dépendances pour la cible: education86
+2025-04-28 13:20:26,544 [WARNING] - Limite de temps atteinte pour la cible education86. Exploration incomplète.
+2025-04-28 13:20:26,554 [INFO] - Recherche de dépendances pour la cible: education87
+2025-04-28 13:20:26,563 [WARNING] - Limite de temps atteinte pour la cible education87. Exploration incomplète.
+2025-04-28 13:20:26,576 [INFO] - Recherche de dépendances pour la cible: education88
+2025-04-28 13:20:26,586 [WARNING] - Limite de temps atteinte pour la cible education88. Exploration incomplète.
+2025-04-28 13:20:26,595 [INFO] - Recherche de dépendances pour la cible: education89
+2025-04-28 13:20:26,605 [WARNING] - Limite de temps atteinte pour la cible education89. Exploration incomplète.
+2025-04-28 13:20:26,615 [INFO] - Recherche de dépendances pour la cible: education90
+2025-04-28 13:20:26,625 [WARNING] - Limite de temps atteinte pour la cible education90. Exploration incomplète.
+2025-04-28 13:20:26,634 [INFO] - Recherche de dépendances pour la cible: education91
+2025-04-28 13:20:26,644 [WARNING] - Limite de temps atteinte pour la cible education91. Exploration incomplète.
+2025-04-28 13:20:26,658 [INFO] - Recherche de dépendances pour la cible: education92
+2025-04-28 13:20:26,672 [WARNING] - Limite de temps atteinte pour la cible education92. Exploration incomplète.
+2025-04-28 13:20:26,681 [INFO] - Recherche de dépendances pour la cible: education93
+2025-04-28 13:20:26,690 [WARNING] - Limite de temps atteinte pour la cible education93. Exploration incomplète.
+2025-04-28 13:20:26,701 [INFO] - Recherche de dépendances pour la cible: education94
+2025-04-28 13:20:26,712 [WARNING] - Limite de temps atteinte pour la cible education94. Exploration incomplète.
+2025-04-28 13:20:26,723 [INFO] - Recherche de dépendances pour la cible: education95
+2025-04-28 13:20:26,734 [WARNING] - Limite de temps atteinte pour la cible education95. Exploration incomplète.
+2025-04-28 13:20:26,746 [INFO] - Recherche de dépendances pour la cible: education96
+2025-04-28 13:20:26,758 [WARNING] - Limite de temps atteinte pour la cible education96. Exploration incomplète.
+2025-04-28 13:20:26,768 [INFO] - Recherche de dépendances pour la cible: education97
+2025-04-28 13:20:26,778 [WARNING] - Limite de temps atteinte pour la cible education97. Exploration incomplète.
+2025-04-28 13:20:26,789 [INFO] - Recherche de dépendances pour la cible: education98
+2025-04-28 13:20:26,801 [WARNING] - Limite de temps atteinte pour la cible education98. Exploration incomplète.
+2025-04-28 13:20:26,813 [INFO] - Recherche de dépendances pour la cible: education99
+2025-04-28 13:20:26,823 [WARNING] - Limite de temps atteinte pour la cible education99. Exploration incomplète.
+2025-04-28 13:20:26,835 [INFO] - Recherche de dépendances pour la cible: first_name1
+2025-04-28 13:20:26,847 [WARNING] - Limite de temps atteinte pour la cible first_name1. Exploration incomplète.
+2025-04-28 13:20:26,856 [INFO] - Recherche de dépendances pour la cible: first_name2
+2025-04-28 13:20:26,867 [WARNING] - Limite de temps atteinte pour la cible first_name2. Exploration incomplète.
+2025-04-28 13:20:26,878 [INFO] - Recherche de dépendances pour la cible: first_name3
+2025-04-28 13:20:26,889 [WARNING] - Limite de temps atteinte pour la cible first_name3. Exploration incomplète.
+2025-04-28 13:20:26,899 [INFO] - Recherche de dépendances pour la cible: first_name4
+2025-04-28 13:20:26,909 [WARNING] - Limite de temps atteinte pour la cible first_name4. Exploration incomplète.
+2025-04-28 13:20:26,919 [INFO] - Recherche de dépendances pour la cible: first_name5
+2025-04-28 13:20:26,930 [WARNING] - Limite de temps atteinte pour la cible first_name5. Exploration incomplète.
+2025-04-28 13:20:26,940 [INFO] - Recherche de dépendances pour la cible: first_name6
+2025-04-28 13:20:26,950 [WARNING] - Limite de temps atteinte pour la cible first_name6. Exploration incomplète.
+2025-04-28 13:20:26,961 [INFO] - Recherche de dépendances pour la cible: first_name7
+2025-04-28 13:20:26,972 [WARNING] - Limite de temps atteinte pour la cible first_name7. Exploration incomplète.
+2025-04-28 13:20:26,984 [INFO] - Recherche de dépendances pour la cible: first_name8
+2025-04-28 13:20:26,996 [WARNING] - Limite de temps atteinte pour la cible first_name8. Exploration incomplète.
+2025-04-28 13:20:27,008 [INFO] - Recherche de dépendances pour la cible: first_name9
+2025-04-28 13:20:27,020 [WARNING] - Limite de temps atteinte pour la cible first_name9. Exploration incomplète.
+2025-04-28 13:20:27,031 [INFO] - Recherche de dépendances pour la cible: first_name10
+2025-04-28 13:20:27,041 [WARNING] - Limite de temps atteinte pour la cible first_name10. Exploration incomplète.
+2025-04-28 13:20:27,051 [INFO] - Recherche de dépendances pour la cible: gender1
+2025-04-28 13:20:27,061 [WARNING] - Limite de temps atteinte pour la cible gender1. Exploration incomplète.
+2025-04-28 13:20:27,070 [INFO] - Recherche de dépendances pour la cible: gender2
+2025-04-28 13:20:27,080 [WARNING] - Limite de temps atteinte pour la cible gender2. Exploration incomplète.
+2025-04-28 13:20:27,090 [INFO] - Recherche de dépendances pour la cible: hometown1
+2025-04-28 13:20:27,100 [WARNING] - Limite de temps atteinte pour la cible hometown1. Exploration incomplète.
+2025-04-28 13:20:27,110 [INFO] - Recherche de dépendances pour la cible: hometown2
+2025-04-28 13:20:27,122 [WARNING] - Limite de temps atteinte pour la cible hometown2. Exploration incomplète.
+2025-04-28 13:20:27,133 [INFO] - Recherche de dépendances pour la cible: hometown3
+2025-04-28 13:20:27,147 [WARNING] - Limite de temps atteinte pour la cible hometown3. Exploration incomplète.
+2025-04-28 13:20:27,158 [INFO] - Recherche de dépendances pour la cible: hometown4
+2025-04-28 13:20:27,170 [WARNING] - Limite de temps atteinte pour la cible hometown4. Exploration incomplète.
+2025-04-28 13:20:27,181 [INFO] - Recherche de dépendances pour la cible: hometown5
+2025-04-28 13:20:27,195 [WARNING] - Limite de temps atteinte pour la cible hometown5. Exploration incomplète.
+2025-04-28 13:20:27,209 [INFO] - Recherche de dépendances pour la cible: hometown6
+2025-04-28 13:20:27,221 [WARNING] - Limite de temps atteinte pour la cible hometown6. Exploration incomplète.
+2025-04-28 13:20:27,231 [INFO] - Recherche de dépendances pour la cible: hometown7
+2025-04-28 13:20:27,241 [WARNING] - Limite de temps atteinte pour la cible hometown7. Exploration incomplète.
+2025-04-28 13:20:27,254 [INFO] - Recherche de dépendances pour la cible: hometown8
+2025-04-28 13:20:27,264 [WARNING] - Limite de temps atteinte pour la cible hometown8. Exploration incomplète.
+2025-04-28 13:20:27,277 [INFO] - Recherche de dépendances pour la cible: hometown9
+2025-04-28 13:20:27,287 [WARNING] - Limite de temps atteinte pour la cible hometown9. Exploration incomplète.
+2025-04-28 13:20:27,297 [INFO] - Recherche de dépendances pour la cible: hometown10
+2025-04-28 13:20:27,307 [WARNING] - Limite de temps atteinte pour la cible hometown10. Exploration incomplète.
+2025-04-28 13:20:27,318 [INFO] - Recherche de dépendances pour la cible: hometown11
+2025-04-28 13:20:27,328 [WARNING] - Limite de temps atteinte pour la cible hometown11. Exploration incomplète.
+2025-04-28 13:20:27,344 [INFO] - Recherche de dépendances pour la cible: languages1
+2025-04-28 13:20:27,356 [WARNING] - Limite de temps atteinte pour la cible languages1. Exploration incomplète.
+2025-04-28 13:20:27,367 [INFO] - Recherche de dépendances pour la cible: languages2
+2025-04-28 13:20:27,377 [WARNING] - Limite de temps atteinte pour la cible languages2. Exploration incomplète.
+2025-04-28 13:20:27,386 [INFO] - Recherche de dépendances pour la cible: languages3
+2025-04-28 13:20:27,396 [WARNING] - Limite de temps atteinte pour la cible languages3. Exploration incomplète.
+2025-04-28 13:20:27,408 [INFO] - Recherche de dépendances pour la cible: languages4
+2025-04-28 13:20:27,419 [WARNING] - Limite de temps atteinte pour la cible languages4. Exploration incomplète.
+2025-04-28 13:20:27,431 [INFO] - Recherche de dépendances pour la cible: languages5
+2025-04-28 13:20:27,442 [WARNING] - Limite de temps atteinte pour la cible languages5. Exploration incomplète.
+2025-04-28 13:20:27,453 [INFO] - Recherche de dépendances pour la cible: languages6
+2025-04-28 13:20:27,465 [WARNING] - Limite de temps atteinte pour la cible languages6. Exploration incomplète.
+2025-04-28 13:20:27,476 [INFO] - Recherche de dépendances pour la cible: languages7
+2025-04-28 13:20:27,487 [WARNING] - Limite de temps atteinte pour la cible languages7. Exploration incomplète.
+2025-04-28 13:20:27,498 [INFO] - Recherche de dépendances pour la cible: languages8
+2025-04-28 13:20:27,510 [WARNING] - Limite de temps atteinte pour la cible languages8. Exploration incomplète.
+2025-04-28 13:20:27,521 [INFO] - Recherche de dépendances pour la cible: languages9
+2025-04-28 13:20:27,532 [WARNING] - Limite de temps atteinte pour la cible languages9. Exploration incomplète.
+2025-04-28 13:20:27,543 [INFO] - Recherche de dépendances pour la cible: languages10
+2025-04-28 13:20:27,555 [WARNING] - Limite de temps atteinte pour la cible languages10. Exploration incomplète.
+2025-04-28 13:20:27,566 [INFO] - Recherche de dépendances pour la cible: languages11
+2025-04-28 13:20:27,578 [WARNING] - Limite de temps atteinte pour la cible languages11. Exploration incomplète.
+2025-04-28 13:20:27,589 [INFO] - Recherche de dépendances pour la cible: languages12
+2025-04-28 13:20:27,601 [WARNING] - Limite de temps atteinte pour la cible languages12. Exploration incomplète.
+2025-04-28 13:20:27,613 [INFO] - Recherche de dépendances pour la cible: last_name1
+2025-04-28 13:20:27,625 [WARNING] - Limite de temps atteinte pour la cible last_name1. Exploration incomplète.
+2025-04-28 13:20:27,636 [INFO] - Recherche de dépendances pour la cible: last_name2
+2025-04-28 13:20:27,648 [WARNING] - Limite de temps atteinte pour la cible last_name2. Exploration incomplète.
+2025-04-28 13:20:27,658 [INFO] - Recherche de dépendances pour la cible: last_name3
+2025-04-28 13:20:27,668 [WARNING] - Limite de temps atteinte pour la cible last_name3. Exploration incomplète.
+2025-04-28 13:20:27,678 [INFO] - Recherche de dépendances pour la cible: last_name4
+2025-04-28 13:20:27,688 [WARNING] - Limite de temps atteinte pour la cible last_name4. Exploration incomplète.
+2025-04-28 13:20:27,699 [INFO] - Recherche de dépendances pour la cible: last_name5
+2025-04-28 13:20:27,708 [WARNING] - Limite de temps atteinte pour la cible last_name5. Exploration incomplète.
+2025-04-28 13:20:27,719 [INFO] - Recherche de dépendances pour la cible: last_name6
+2025-04-28 13:20:27,730 [WARNING] - Limite de temps atteinte pour la cible last_name6. Exploration incomplète.
+2025-04-28 13:20:27,741 [INFO] - Recherche de dépendances pour la cible: last_name7
+2025-04-28 13:20:27,752 [WARNING] - Limite de temps atteinte pour la cible last_name7. Exploration incomplète.
+2025-04-28 13:20:27,764 [INFO] - Recherche de dépendances pour la cible: last_name8
+2025-04-28 13:20:27,776 [WARNING] - Limite de temps atteinte pour la cible last_name8. Exploration incomplète.
+2025-04-28 13:20:27,790 [INFO] - Recherche de dépendances pour la cible: last_name9
+2025-04-28 13:20:27,802 [WARNING] - Limite de temps atteinte pour la cible last_name9. Exploration incomplète.
+2025-04-28 13:20:27,813 [INFO] - Recherche de dépendances pour la cible: last_name10
+2025-04-28 13:20:27,824 [WARNING] - Limite de temps atteinte pour la cible last_name10. Exploration incomplète.
+2025-04-28 13:20:27,836 [INFO] - Recherche de dépendances pour la cible: last_name11
+2025-04-28 13:20:27,847 [WARNING] - Limite de temps atteinte pour la cible last_name11. Exploration incomplète.
+2025-04-28 13:20:27,857 [INFO] - Recherche de dépendances pour la cible: last_name12
+2025-04-28 13:20:27,869 [WARNING] - Limite de temps atteinte pour la cible last_name12. Exploration incomplète.
+2025-04-28 13:20:27,880 [INFO] - Recherche de dépendances pour la cible: last_name13
+2025-04-28 13:20:27,891 [WARNING] - Limite de temps atteinte pour la cible last_name13. Exploration incomplète.
+2025-04-28 13:20:27,902 [INFO] - Recherche de dépendances pour la cible: last_name14
+2025-04-28 13:20:27,914 [WARNING] - Limite de temps atteinte pour la cible last_name14. Exploration incomplète.
+2025-04-28 13:20:27,925 [INFO] - Recherche de dépendances pour la cible: last_name15
+2025-04-28 13:20:27,936 [WARNING] - Limite de temps atteinte pour la cible last_name15. Exploration incomplète.
+2025-04-28 13:20:27,947 [INFO] - Recherche de dépendances pour la cible: last_name16
+2025-04-28 13:20:27,959 [WARNING] - Limite de temps atteinte pour la cible last_name16. Exploration incomplète.
+2025-04-28 13:20:27,975 [INFO] - Recherche de dépendances pour la cible: last_name17
+2025-04-28 13:20:27,986 [WARNING] - Limite de temps atteinte pour la cible last_name17. Exploration incomplète.
+2025-04-28 13:20:27,998 [INFO] - Recherche de dépendances pour la cible: last_name18
+2025-04-28 13:20:28,009 [WARNING] - Limite de temps atteinte pour la cible last_name18. Exploration incomplète.
+2025-04-28 13:20:28,018 [INFO] - Recherche de dépendances pour la cible: last_name19
+2025-04-28 13:20:28,028 [WARNING] - Limite de temps atteinte pour la cible last_name19. Exploration incomplète.
+2025-04-28 13:20:28,038 [INFO] - Recherche de dépendances pour la cible: last_name20
+2025-04-28 13:20:28,049 [WARNING] - Limite de temps atteinte pour la cible last_name20. Exploration incomplète.
+2025-04-28 13:20:28,060 [INFO] - Recherche de dépendances pour la cible: last_name21
+2025-04-28 13:20:28,071 [WARNING] - Limite de temps atteinte pour la cible last_name21. Exploration incomplète.
+2025-04-28 13:20:28,081 [INFO] - Recherche de dépendances pour la cible: last_name22
+2025-04-28 13:20:28,093 [WARNING] - Limite de temps atteinte pour la cible last_name22. Exploration incomplète.
+2025-04-28 13:20:28,104 [INFO] - Recherche de dépendances pour la cible: last_name23
+2025-04-28 13:20:28,116 [WARNING] - Limite de temps atteinte pour la cible last_name23. Exploration incomplète.
+2025-04-28 13:20:28,128 [INFO] - Recherche de dépendances pour la cible: last_name24
+2025-04-28 13:20:28,140 [WARNING] - Limite de temps atteinte pour la cible last_name24. Exploration incomplète.
+2025-04-28 13:20:28,151 [INFO] - Recherche de dépendances pour la cible: last_name25
+2025-04-28 13:20:28,164 [WARNING] - Limite de temps atteinte pour la cible last_name25. Exploration incomplète.
+2025-04-28 13:20:28,176 [INFO] - Recherche de dépendances pour la cible: last_name26
+2025-04-28 13:20:28,188 [WARNING] - Limite de temps atteinte pour la cible last_name26. Exploration incomplète.
+2025-04-28 13:20:28,199 [INFO] - Recherche de dépendances pour la cible: last_name27
+2025-04-28 13:20:28,209 [WARNING] - Limite de temps atteinte pour la cible last_name27. Exploration incomplète.
+2025-04-28 13:20:28,220 [INFO] - Recherche de dépendances pour la cible: last_name28
+2025-04-28 13:20:28,231 [WARNING] - Limite de temps atteinte pour la cible last_name28. Exploration incomplète.
+2025-04-28 13:20:28,243 [INFO] - Recherche de dépendances pour la cible: last_name29
+2025-04-28 13:20:28,255 [WARNING] - Limite de temps atteinte pour la cible last_name29. Exploration incomplète.
+2025-04-28 13:20:28,266 [INFO] - Recherche de dépendances pour la cible: last_name30
+2025-04-28 13:20:28,276 [WARNING] - Limite de temps atteinte pour la cible last_name30. Exploration incomplète.
+2025-04-28 13:20:28,293 [INFO] - Recherche de dépendances pour la cible: locale1
+2025-04-28 13:20:28,303 [WARNING] - Limite de temps atteinte pour la cible locale1. Exploration incomplète.
+2025-04-28 13:20:28,313 [INFO] - Recherche de dépendances pour la cible: locale2
+2025-04-28 13:20:28,332 [WARNING] - Limite de temps atteinte pour la cible locale2. Exploration incomplète.
+2025-04-28 13:20:28,353 [INFO] - Recherche de dépendances pour la cible: locale3
+2025-04-28 13:20:28,363 [WARNING] - Limite de temps atteinte pour la cible locale3. Exploration incomplète.
+2025-04-28 13:20:28,372 [INFO] - Recherche de dépendances pour la cible: locale4
+2025-04-28 13:20:28,382 [WARNING] - Limite de temps atteinte pour la cible locale4. Exploration incomplète.
+2025-04-28 13:20:28,393 [INFO] - Recherche de dépendances pour la cible: locale5
+2025-04-28 13:20:28,402 [WARNING] - Limite de temps atteinte pour la cible locale5. Exploration incomplète.
+2025-04-28 13:20:28,412 [INFO] - Recherche de dépendances pour la cible: location1
+2025-04-28 13:20:28,421 [WARNING] - Limite de temps atteinte pour la cible location1. Exploration incomplète.
+2025-04-28 13:20:28,430 [INFO] - Recherche de dépendances pour la cible: location2
+2025-04-28 13:20:28,441 [WARNING] - Limite de temps atteinte pour la cible location2. Exploration incomplète.
+2025-04-28 13:20:28,452 [INFO] - Recherche de dépendances pour la cible: location3
+2025-04-28 13:20:28,463 [WARNING] - Limite de temps atteinte pour la cible location3. Exploration incomplète.
+2025-04-28 13:20:28,475 [INFO] - Recherche de dépendances pour la cible: location4
+2025-04-28 13:20:28,486 [WARNING] - Limite de temps atteinte pour la cible location4. Exploration incomplète.
+2025-04-28 13:20:28,498 [INFO] - Recherche de dépendances pour la cible: location5
+2025-04-28 13:20:28,509 [WARNING] - Limite de temps atteinte pour la cible location5. Exploration incomplète.
+2025-04-28 13:20:28,520 [INFO] - Recherche de dépendances pour la cible: location6
+2025-04-28 13:20:28,531 [WARNING] - Limite de temps atteinte pour la cible location6. Exploration incomplète.
+2025-04-28 13:20:28,543 [INFO] - Recherche de dépendances pour la cible: location7
+2025-04-28 13:20:28,554 [WARNING] - Limite de temps atteinte pour la cible location7. Exploration incomplète.
+2025-04-28 13:20:28,565 [INFO] - Recherche de dépendances pour la cible: location8
+2025-04-28 13:20:28,577 [WARNING] - Limite de temps atteinte pour la cible location8. Exploration incomplète.
+2025-04-28 13:20:28,588 [INFO] - Recherche de dépendances pour la cible: location9
+2025-04-28 13:20:28,599 [WARNING] - Limite de temps atteinte pour la cible location9. Exploration incomplète.
+2025-04-28 13:20:28,609 [INFO] - Recherche de dépendances pour la cible: location10
+2025-04-28 13:20:28,619 [WARNING] - Limite de temps atteinte pour la cible location10. Exploration incomplète.
+2025-04-28 13:20:28,629 [INFO] - Recherche de dépendances pour la cible: location11
+2025-04-28 13:20:28,639 [WARNING] - Limite de temps atteinte pour la cible location11. Exploration incomplète.
+2025-04-28 13:20:28,649 [INFO] - Recherche de dépendances pour la cible: location12
+2025-04-28 13:20:28,659 [WARNING] - Limite de temps atteinte pour la cible location12. Exploration incomplète.
+2025-04-28 13:20:28,670 [INFO] - Recherche de dépendances pour la cible: location13
+2025-04-28 13:20:28,681 [WARNING] - Limite de temps atteinte pour la cible location13. Exploration incomplète.
+2025-04-28 13:20:28,694 [INFO] - Recherche de dépendances pour la cible: location14
+2025-04-28 13:20:28,705 [WARNING] - Limite de temps atteinte pour la cible location14. Exploration incomplète.
+2025-04-28 13:20:28,715 [INFO] - Recherche de dépendances pour la cible: location15
+2025-04-28 13:20:28,726 [WARNING] - Limite de temps atteinte pour la cible location15. Exploration incomplète.
+2025-04-28 13:20:28,738 [INFO] - Recherche de dépendances pour la cible: location16
+2025-04-28 13:20:28,747 [WARNING] - Limite de temps atteinte pour la cible location16. Exploration incomplète.
+2025-04-28 13:20:28,758 [INFO] - Recherche de dépendances pour la cible: name1
+2025-04-28 13:20:28,769 [WARNING] - Limite de temps atteinte pour la cible name1. Exploration incomplète.
+2025-04-28 13:20:28,779 [INFO] - Recherche de dépendances pour la cible: work1
+2025-04-28 13:20:28,791 [WARNING] - Limite de temps atteinte pour la cible work1. Exploration incomplète.
+2025-04-28 13:20:28,802 [INFO] - Recherche de dépendances pour la cible: work2
+2025-04-28 13:20:28,813 [WARNING] - Limite de temps atteinte pour la cible work2. Exploration incomplète.
+2025-04-28 13:20:28,825 [INFO] - Recherche de dépendances pour la cible: work3
+2025-04-28 13:20:28,836 [WARNING] - Limite de temps atteinte pour la cible work3. Exploration incomplète.
+2025-04-28 13:20:28,847 [INFO] - Recherche de dépendances pour la cible: work4
+2025-04-28 13:20:28,858 [WARNING] - Limite de temps atteinte pour la cible work4. Exploration incomplète.
+2025-04-28 13:20:28,869 [INFO] - Recherche de dépendances pour la cible: work5
+2025-04-28 13:20:28,880 [WARNING] - Limite de temps atteinte pour la cible work5. Exploration incomplète.
+2025-04-28 13:20:28,891 [INFO] - Recherche de dépendances pour la cible: work6
+2025-04-28 13:20:28,903 [WARNING] - Limite de temps atteinte pour la cible work6. Exploration incomplète.
+2025-04-28 13:20:28,914 [INFO] - Recherche de dépendances pour la cible: work7
+2025-04-28 13:20:28,925 [WARNING] - Limite de temps atteinte pour la cible work7. Exploration incomplète.
+2025-04-28 13:20:28,938 [INFO] - Recherche de dépendances pour la cible: work8
+2025-04-28 13:20:28,950 [WARNING] - Limite de temps atteinte pour la cible work8. Exploration incomplète.
+2025-04-28 13:20:28,962 [INFO] - Recherche de dépendances pour la cible: work9
+2025-04-28 13:20:28,973 [WARNING] - Limite de temps atteinte pour la cible work9. Exploration incomplète.
+2025-04-28 13:20:28,984 [INFO] - Recherche de dépendances pour la cible: work10
+2025-04-28 13:20:28,996 [WARNING] - Limite de temps atteinte pour la cible work10. Exploration incomplète.
+2025-04-28 13:20:29,008 [INFO] - Recherche de dépendances pour la cible: work11
+2025-04-28 13:20:29,019 [WARNING] - Limite de temps atteinte pour la cible work11. Exploration incomplète.
+2025-04-28 13:20:29,028 [INFO] - Recherche de dépendances pour la cible: work12
+2025-04-28 13:20:29,039 [WARNING] - Limite de temps atteinte pour la cible work12. Exploration incomplète.
+2025-04-28 13:20:29,051 [INFO] - Recherche de dépendances pour la cible: work13
+2025-04-28 13:20:29,062 [WARNING] - Limite de temps atteinte pour la cible work13. Exploration incomplète.
+2025-04-28 13:20:29,073 [INFO] - Recherche de dépendances pour la cible: work14
+2025-04-28 13:20:29,084 [WARNING] - Limite de temps atteinte pour la cible work14. Exploration incomplète.
+2025-04-28 13:20:29,095 [INFO] - Recherche de dépendances pour la cible: work15
+2025-04-28 13:20:29,106 [WARNING] - Limite de temps atteinte pour la cible work15. Exploration incomplète.
+2025-04-28 13:20:29,117 [INFO] - Recherche de dépendances pour la cible: work16
+2025-04-28 13:20:29,128 [WARNING] - Limite de temps atteinte pour la cible work16. Exploration incomplète.
+2025-04-28 13:20:29,138 [INFO] - Recherche de dépendances pour la cible: work17
+2025-04-28 13:20:29,148 [WARNING] - Limite de temps atteinte pour la cible work17. Exploration incomplète.
+2025-04-28 13:20:29,158 [INFO] - Recherche de dépendances pour la cible: work18
+2025-04-28 13:20:29,169 [WARNING] - Limite de temps atteinte pour la cible work18. Exploration incomplète.
+2025-04-28 13:20:29,181 [INFO] - Recherche de dépendances pour la cible: work19
+2025-04-28 13:20:29,193 [WARNING] - Limite de temps atteinte pour la cible work19. Exploration incomplète.
+2025-04-28 13:20:29,204 [INFO] - Recherche de dépendances pour la cible: work20
+2025-04-28 13:20:29,214 [WARNING] - Limite de temps atteinte pour la cible work20. Exploration incomplète.
+2025-04-28 13:20:29,226 [INFO] - Recherche de dépendances pour la cible: work21
+2025-04-28 13:20:29,238 [WARNING] - Limite de temps atteinte pour la cible work21. Exploration incomplète.
+2025-04-28 13:20:29,250 [INFO] - Recherche de dépendances pour la cible: work22
+2025-04-28 13:20:29,267 [WARNING] - Limite de temps atteinte pour la cible work22. Exploration incomplète.
+2025-04-28 13:20:29,282 [INFO] - Recherche de dépendances pour la cible: work23
+2025-04-28 13:20:29,294 [WARNING] - Limite de temps atteinte pour la cible work23. Exploration incomplète.
+2025-04-28 13:20:29,306 [INFO] - Recherche de dépendances pour la cible: work24
+2025-04-28 13:20:29,317 [WARNING] - Limite de temps atteinte pour la cible work24. Exploration incomplète.
+2025-04-28 13:20:29,327 [INFO] - Recherche de dépendances pour la cible: work25
+2025-04-28 13:20:29,337 [WARNING] - Limite de temps atteinte pour la cible work25. Exploration incomplète.
+2025-04-28 13:20:29,347 [INFO] - Recherche de dépendances pour la cible: work26
+2025-04-28 13:20:29,357 [WARNING] - Limite de temps atteinte pour la cible work26. Exploration incomplète.
+2025-04-28 13:20:29,366 [INFO] - Recherche de dépendances pour la cible: work27
+2025-04-28 13:20:29,376 [WARNING] - Limite de temps atteinte pour la cible work27. Exploration incomplète.
+2025-04-28 13:20:29,389 [INFO] - Recherche de dépendances pour la cible: work28
+2025-04-28 13:20:29,399 [WARNING] - Limite de temps atteinte pour la cible work28. Exploration incomplète.
+2025-04-28 13:20:29,410 [INFO] - Recherche de dépendances pour la cible: work29
+2025-04-28 13:20:29,421 [WARNING] - Limite de temps atteinte pour la cible work29. Exploration incomplète.
+2025-04-28 13:20:29,432 [INFO] - Recherche de dépendances pour la cible: work30
+2025-04-28 13:20:29,443 [WARNING] - Limite de temps atteinte pour la cible work30. Exploration incomplète.
+2025-04-28 13:20:29,455 [INFO] - Recherche de dépendances pour la cible: work31
+2025-04-28 13:20:29,466 [WARNING] - Limite de temps atteinte pour la cible work31. Exploration incomplète.
+2025-04-28 13:20:29,477 [INFO] - Recherche de dépendances pour la cible: work32
+2025-04-28 13:20:29,488 [WARNING] - Limite de temps atteinte pour la cible work32. Exploration incomplète.
+2025-04-28 13:20:29,500 [INFO] - Recherche de dépendances pour la cible: work33
+2025-04-28 13:20:29,511 [WARNING] - Limite de temps atteinte pour la cible work33. Exploration incomplète.
+2025-04-28 13:20:29,522 [INFO] - Recherche de dépendances pour la cible: work34
+2025-04-28 13:20:29,533 [WARNING] - Limite de temps atteinte pour la cible work34. Exploration incomplète.
+2025-04-28 13:20:29,545 [INFO] - Recherche de dépendances pour la cible: work35
+2025-04-28 13:20:29,556 [WARNING] - Limite de temps atteinte pour la cible work35. Exploration incomplète.
+2025-04-28 13:20:29,567 [INFO] - Recherche de dépendances pour la cible: work36
+2025-04-28 13:20:29,578 [WARNING] - Limite de temps atteinte pour la cible work36. Exploration incomplète.
+2025-04-28 13:20:29,591 [INFO] - Recherche de dépendances pour la cible: work37
+2025-04-28 13:20:29,609 [WARNING] - Limite de temps atteinte pour la cible work37. Exploration incomplète.
+2025-04-28 13:20:29,619 [INFO] - Recherche de dépendances pour la cible: work38
+2025-04-28 13:20:29,630 [WARNING] - Limite de temps atteinte pour la cible work38. Exploration incomplète.
+2025-04-28 13:20:29,641 [INFO] - Recherche de dépendances pour la cible: work39
+2025-04-28 13:20:29,653 [WARNING] - Limite de temps atteinte pour la cible work39. Exploration incomplète.
+2025-04-28 13:20:29,664 [INFO] - Recherche de dépendances pour la cible: work40
+2025-04-28 13:20:29,675 [WARNING] - Limite de temps atteinte pour la cible work40. Exploration incomplète.
+2025-04-28 13:20:29,687 [INFO] - Recherche de dépendances pour la cible: work41
+2025-04-28 13:20:29,697 [WARNING] - Limite de temps atteinte pour la cible work41. Exploration incomplète.
+2025-04-28 13:20:29,707 [INFO] - Recherche de dépendances pour la cible: work42
+2025-04-28 13:20:29,716 [WARNING] - Limite de temps atteinte pour la cible work42. Exploration incomplète.
+2025-04-28 13:20:29,725 [INFO] - Recherche de dépendances pour la cible: work43
+2025-04-28 13:20:29,735 [WARNING] - Limite de temps atteinte pour la cible work43. Exploration incomplète.
+2025-04-28 13:20:29,744 [INFO] - Recherche de dépendances pour la cible: work44
+2025-04-28 13:20:29,755 [WARNING] - Limite de temps atteinte pour la cible work44. Exploration incomplète.
+2025-04-28 13:20:29,766 [INFO] - Recherche de dépendances pour la cible: work45
+2025-04-28 13:20:29,777 [WARNING] - Limite de temps atteinte pour la cible work45. Exploration incomplète.
+2025-04-28 13:20:29,789 [INFO] - Recherche de dépendances pour la cible: work46
+2025-04-28 13:20:29,800 [WARNING] - Limite de temps atteinte pour la cible work46. Exploration incomplète.
+2025-04-28 13:20:29,812 [INFO] - Recherche de dépendances pour la cible: work47
+2025-04-28 13:20:29,822 [WARNING] - Limite de temps atteinte pour la cible work47. Exploration incomplète.
+2025-04-28 13:20:29,833 [INFO] - Recherche de dépendances pour la cible: work48
+2025-04-28 13:20:29,845 [WARNING] - Limite de temps atteinte pour la cible work48. Exploration incomplète.
+2025-04-28 13:20:29,856 [INFO] - Recherche de dépendances pour la cible: work49
+2025-04-28 13:20:29,868 [WARNING] - Limite de temps atteinte pour la cible work49. Exploration incomplète.
+2025-04-28 13:20:29,879 [INFO] - Recherche de dépendances pour la cible: work50
+2025-04-28 13:20:29,890 [WARNING] - Limite de temps atteinte pour la cible work50. Exploration incomplète.
+2025-04-28 13:20:29,901 [INFO] - Recherche de dépendances pour la cible: work51
+2025-04-28 13:20:29,913 [WARNING] - Limite de temps atteinte pour la cible work51. Exploration incomplète.
+2025-04-28 13:20:29,924 [INFO] - Recherche de dépendances pour la cible: work52
+2025-04-28 13:20:29,935 [WARNING] - Limite de temps atteinte pour la cible work52. Exploration incomplète.
+2025-04-28 13:20:29,946 [INFO] - Recherche de dépendances pour la cible: work53
+2025-04-28 13:20:29,957 [WARNING] - Limite de temps atteinte pour la cible work53. Exploration incomplète.
+2025-04-28 13:20:29,968 [INFO] - Recherche de dépendances pour la cible: work54
+2025-04-28 13:20:29,980 [WARNING] - Limite de temps atteinte pour la cible work54. Exploration incomplète.
+2025-04-28 13:20:29,991 [INFO] - Recherche de dépendances pour la cible: work55
+2025-04-28 13:20:30,002 [WARNING] - Limite de temps atteinte pour la cible work55. Exploration incomplète.
+2025-04-28 13:20:30,012 [INFO] - Recherche de dépendances pour la cible: work56
+2025-04-28 13:20:30,022 [WARNING] - Limite de temps atteinte pour la cible work56. Exploration incomplète.
+2025-04-28 13:20:30,031 [INFO] - Recherche de dépendances pour la cible: work57
+2025-04-28 13:20:30,041 [WARNING] - Limite de temps atteinte pour la cible work57. Exploration incomplète.
+2025-04-28 13:20:30,051 [INFO] - Recherche de dépendances pour la cible: work58
+2025-04-28 13:20:30,061 [WARNING] - Limite de temps atteinte pour la cible work58. Exploration incomplète.
+2025-04-28 13:20:30,071 [INFO] - Recherche de dépendances pour la cible: work59
+2025-04-28 13:20:30,081 [WARNING] - Limite de temps atteinte pour la cible work59. Exploration incomplète.
+2025-04-28 13:20:30,091 [INFO] - Recherche de dépendances pour la cible: work60
+2025-04-28 13:20:30,101 [WARNING] - Limite de temps atteinte pour la cible work60. Exploration incomplète.
+2025-04-28 13:20:30,111 [INFO] - Recherche de dépendances pour la cible: work61
+2025-04-28 13:20:30,122 [WARNING] - Limite de temps atteinte pour la cible work61. Exploration incomplète.
+2025-04-28 13:20:30,132 [INFO] - Recherche de dépendances pour la cible: work62
+2025-04-28 13:20:30,143 [WARNING] - Limite de temps atteinte pour la cible work62. Exploration incomplète.
+2025-04-28 13:20:30,153 [INFO] - Recherche de dépendances pour la cible: work63
+2025-04-28 13:20:30,163 [WARNING] - Limite de temps atteinte pour la cible work63. Exploration incomplète.
+2025-04-28 13:20:30,172 [INFO] - Recherche de dépendances pour la cible: work64
+2025-04-28 13:20:30,182 [WARNING] - Limite de temps atteinte pour la cible work64. Exploration incomplète.
+2025-04-28 13:20:30,192 [INFO] - Recherche de dépendances pour la cible: work65
+2025-04-28 13:20:30,202 [WARNING] - Limite de temps atteinte pour la cible work65. Exploration incomplète.
+2025-04-28 13:20:30,212 [INFO] - Recherche de dépendances pour la cible: work66
+2025-04-28 13:20:30,224 [WARNING] - Limite de temps atteinte pour la cible work66. Exploration incomplète.
+2025-04-28 13:20:30,234 [INFO] - Recherche de dépendances pour la cible: work67
+2025-04-28 13:20:30,244 [WARNING] - Limite de temps atteinte pour la cible work67. Exploration incomplète.
+2025-04-28 13:20:30,254 [INFO] - Recherche de dépendances pour la cible: work68
+2025-04-28 13:20:30,264 [WARNING] - Limite de temps atteinte pour la cible work68. Exploration incomplète.
+2025-04-28 13:20:30,274 [INFO] - Analyse du fichier: ../../data/db2/Facebook/csv/edges.csv (table: edges)
+2025-04-28 13:20:30,289 [INFO] - Table edges: 9626 lignes, 2 colonnes
+2025-04-28 13:20:30,334 [INFO] - Recherche de dépendances pour la cible: id1
+2025-04-28 13:20:30,344 [WARNING] - Limite de temps atteinte pour la cible id1. Exploration incomplète.
+2025-04-28 13:20:30,354 [INFO] - Recherche de dépendances pour la cible: id2
+2025-04-28 13:20:30,363 [WARNING] - Limite de temps atteinte pour la cible id2. Exploration incomplète.
+2025-04-28 13:20:30,375 [INFO] - DFD: Découverte terminée avec 0 règles.
+2025-04-28 13:20:30,395 [INFO] - DFD terminé en 1293.28 secondes, 0 règles découvertes
+2025-04-28 13:20:30,527 [INFO] - Analyse des résultats...
+2025-04-28 13:20:30,544 [INFO] - TANE a découvert 0 règles
+2025-04-28 13:20:30,554 [INFO] - FastFDs a découvert 2 règles
+2025-04-28 13:20:30,565 [INFO] - FDep a découvert 0 règles
+2025-04-28 13:20:30,575 [INFO] - DFD a découvert 0 règles
+2025-04-28 13:20:30,587 [WARNING] - TANE n'a trouvé aucune règle
+2025-04-28 13:20:30,597 [INFO] - Comparaison de 1973 FDs MATILDA avec 2 règles FastFDs
+2025-04-28 13:20:30,770 [WARNING] - FDep n'a trouvé aucune règle
+2025-04-28 13:20:30,779 [WARNING] - DFD n'a trouvé aucune règle
+2025-04-28 13:20:30,789 [WARNING] - Comparaison TANE vs FastFDs ignorée car au moins un ensemble de règles est vide
+2025-04-28 13:20:30,799 [WARNING] - Comparaison TANE vs FDep ignorée car au moins un ensemble de règles est vide
+2025-04-28 13:20:30,810 [WARNING] - Comparaison TANE vs DFD ignorée car au moins un ensemble de règles est vide
+2025-04-28 13:20:30,821 [WARNING] - Comparaison FastFDs vs FDep ignorée car au moins un ensemble de règles est vide
+2025-04-28 13:20:30,831 [WARNING] - Comparaison FastFDs vs DFD ignorée car au moins un ensemble de règles est vide
+2025-04-28 13:20:30,841 [WARNING] - Comparaison FDep vs DFD ignorée car au moins un ensemble de règles est vide
+2025-04-28 13:20:30,853 [INFO] - Rapport HTML généré: batch_results/Facebook_db/fd_comparison_report.html
+2025-04-28 13:20:30,862 [INFO] - Comparaison terminée pour Facebook.db en 12081.06 secondes
+2025-04-28 13:20:30,871 [INFO] - [32/84] Analyse de mutagenesis.db
+2025-04-28 13:20:30,881 [INFO] - Démarrage de la comparaison pour mutagenesis.db
+2025-04-28 13:20:30,892 [INFO] - Connexion à la base de données: sqlite:///../../data/db2/mutagenesis.db
+2025-04-28 13:20:30,901 [INFO] - Exécution de MATILDA pour découvrir les FDs
+2025-04-28 13:20:31,476 [INFO] - Using compatibility type: only_one_table (Mode: only_one_table)
+2025-04-28 13:20:31,486 [INFO] - Starting rule discovery with dependency type: fd
+2025-04-28 13:20:31,497 [INFO] - Parameters: max_table=2, max_vars=2, min_support=0.0, min_confidence=0.0
+2025-04-28 13:20:31,508 [INFO] - === Beginning FD Discovery Phase ===
+2025-04-28 13:20:31,519 [INFO] - Starting FD discovery with parameters: {'nb_occurrence': 2, 'max_table': 2, 'max_vars': 2, 'min_support': 0.0, 'min_confidence': 0.0, 'compatibility_mode': 'only_one_table'}
+2025-04-28 13:20:31,530 [INFO] - Initializing RuleDiscoveryCore for fd rules...
+2025-04-28 13:20:31,547 [INFO] - Attributs compatibles exportés vers results/compatibility_fd_mutagenesis.json
+2025-04-28 13:20:31,570 [INFO] - Métriques exportées dans results
+2025-04-28 13:20:31,580 [DEBUG] - [36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36mReturning SQLAlchemy engine[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m
+2025-04-28 13:20:31,642 [DEBUG] - [36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36m[36mReturning SQLAlchemy metadata[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m
+2025-04-28 13:20:31,703 [INFO] - Initialization completed in 0.16 seconds
+2025-04-28 13:20:31,714 [INFO] - Starting sequential FD discovery using core
+2025-04-28 13:20:34,650 [INFO] - MATILDA: 4 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:37,929 [INFO] - MATILDA: 8 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:41,281 [INFO] - MATILDA: 11 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:41,414 [INFO] - Candidate rule [JIA((i=2, j=0, k=4), (i=2, j=1, k=4)), JIA((i=2, j=0, k=5), (i=2, j=1, k=5))] is pruned due to low support (0.5454545454545454) or confidence (0.0006183654539833041).
+2025-04-28 13:20:41,434 [INFO] - Candidate rule [JIA((i=2, j=0, k=4), (i=2, j=1, k=4)), JIA((i=2, j=0, k=5), (i=2, j=1, k=5))] is pruned due to low support (0.0006183654539833041) or confidence (0.5454545454545454).
+2025-04-28 13:20:45,315 [INFO] - MATILDA: 31 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:50,655 [INFO] - MATILDA: 33 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:53,044 [INFO] - Candidate rule [JIA((i=2, j=0, k=2), (i=2, j=1, k=2)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.0005401188261417512) or confidence (0.8181818181818182).
+2025-04-28 13:20:53,065 [INFO] - Candidate rule [JIA((i=2, j=0, k=2), (i=2, j=1, k=2)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.8181818181818182) or confidence (0.0005401188261417512).
+2025-04-28 13:20:55,381 [INFO] - MATILDA: 49 FDs découvertes jusqu'à présent...
+2025-04-28 13:20:58,660 [INFO] - MATILDA: 51 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:01,993 [INFO] - MATILDA: 53 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:05,117 [INFO] - MATILDA: 56 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:09,813 [INFO] - MATILDA: 59 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:17,142 [INFO] - MATILDA: 61 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:18,101 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=2), (i=0, j=1, k=2))] is pruned due to low support (0.35725284878349245) or confidence (0.005374309042228634).
+2025-04-28 13:21:19,004 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=2), (i=0, j=1, k=2))] is pruned due to low support (0.005374309042228634) or confidence (0.35725284878349245).
+2025-04-28 13:21:19,629 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=3), (i=0, j=1, k=3))] is pruned due to low support (0.22457653218355406) or confidence (0.005409816606326785).
+2025-04-28 13:21:20,153 [INFO] - Candidate rule [JIA((i=0, j=0, k=1), (i=0, j=1, k=1)), JIA((i=0, j=0, k=3), (i=0, j=1, k=3))] is pruned due to low support (0.005409816606326785) or confidence (0.22457653218355406).
+2025-04-28 13:21:20,217 [INFO] - MATILDA: 65 FDs découvertes jusqu'à présent...
+2025-04-28 13:21:21,419 [INFO] - Candidate rule [JIA((i=2, j=0, k=1), (i=2, j=1, k=1)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.0006800408024481469) or confidence (0.5454545454545454).
+2025-04-28 13:21:21,439 [INFO] - Candidate rule [JIA((i=2, j=0, k=1), (i=2, j=1, k=1)), JIA((i=2, j=0, k=4), (i=2, j=1, k=4))] is pruned due to low support (0.5454545454545454) or confidence (0.0006800408024481469).
+2025-04-28 13:21:21,586 [INFO] - Discovery completed in 49.86 seconds
+2025-04-28 13:21:21,597 [INFO] - Processed 112 candidate rules
+2025-04-28 13:21:21,609 [INFO] - Discovered 138 valid rules
+2025-04-28 13:21:21,620 [INFO] - Core FD discovery found 138 rules, yielded 138 after filtering
+2025-04-28 13:21:21,631 [INFO] - Completed FD discovery in 50.10 seconds
+2025-04-28 13:21:21,642 [INFO] - === FD Discovery Phase Complete: Processed 138 FDs ===
+2025-04-28 13:21:21,655 [INFO] - HTML report generated successfully at results/matilda_report.html
+2025-04-28 13:21:21,668 [INFO] - Saved discovery statistics to results/matilda_stats.json
+2025-04-28 13:21:21,679 [INFO] - Generated HTML report at results/matilda_report.html
+2025-04-28 13:21:21,690 [INFO] - Exported rules to results/matilda_rules.json
+2025-04-28 13:21:21,703 [INFO] - MATILDA FD terminé en 50.79 secondes, 106 règles découvertes
+2025-04-28 13:21:21,717 [INFO] - Exécution séquentielle des algorithmes
+2025-04-28 13:21:21,726 [INFO] - Démarrage de l'algorithme TANE
+2025-04-28 13:21:22,319 [INFO] - TANE: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 13:21:22,331 [INFO] - Lancement de l'algorithme TANE (version Python)
+2025-04-28 13:21:22,342 [INFO] - Fichiers CSV trouvés: 3
+2025-04-28 13:21:22,354 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/bond.csv (table: bond)
+2025-04-28 13:21:22,370 [INFO] - Table bond: 5243 lignes, 3 colonnes
+2025-04-28 13:21:23,939 [INFO] - Découvert 0 dépendances fonctionnelles pour bond
+2025-04-28 13:21:23,951 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/molecule.csv (table: molecule)
+2025-04-28 13:21:23,965 [INFO] - Table molecule: 188 lignes, 6 colonnes
+2025-04-28 13:21:23,986 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.ind1
+2025-04-28 13:21:24,006 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.inda
+2025-04-28 13:21:24,028 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.logp
+2025-04-28 13:21:24,050 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.lumo
+2025-04-28 13:21:24,071 [INFO] - Dépendance fonctionnelle découverte: molecule.molecule_id -> molecule.mutagenic
+2025-04-28 13:21:24,206 [INFO] - Dépendance fonctionnelle découverte: molecule.logp -> molecule.inda
+2025-04-28 13:21:24,328 [INFO] - Découvert 6 dépendances fonctionnelles pour molecule
+2025-04-28 13:21:24,340 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/atom.csv (table: atom)
+2025-04-28 13:21:24,357 [INFO] - Table atom: 4893 lignes, 5 colonnes
+2025-04-28 13:21:24,617 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.molecule_id
+2025-04-28 13:21:24,878 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.element
+2025-04-28 13:21:25,145 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.type
+2025-04-28 13:21:25,406 [INFO] - Dépendance fonctionnelle découverte: atom.atom_id -> atom.charge
+2025-04-28 13:21:28,125 [INFO] - Dépendance fonctionnelle découverte: atom.type -> atom.element
+2025-04-28 13:21:29,367 [INFO] - Découvert 5 dépendances fonctionnelles pour atom
+2025-04-28 13:21:29,379 [INFO] - TANE: Découverte terminée avec 11 règles.
+2025-04-28 13:21:29,395 [INFO] - TANE terminé en 7.66 secondes, 11 règles découvertes
+2025-04-28 13:21:29,407 [INFO] - Démarrage de l'algorithme FastFDs
+2025-04-28 13:21:29,988 [INFO] - FastFDs: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 13:21:30,000 [INFO] - Lancement de l'algorithme FastFDs
+2025-04-28 13:21:30,012 [INFO] - Fichiers CSV trouvés: 3
+2025-04-28 13:21:30,023 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/bond.csv (table: bond)
+2025-04-28 13:21:30,039 [INFO] - Table bond: 5243 lignes, 3 colonnes
+2025-04-28 13:21:30,051 [INFO] - Exécution de FastFDs sur bond avec 3 colonnes
+2025-04-28 13:21:30,080 [INFO] - Recherche des déterminants pour atom1_id
+2025-04-28 13:21:30,635 [INFO] - Dépendance trouvée: ('atom2_id',) -> atom1_id
+2025-04-28 13:21:30,647 [INFO] - Recherche des déterminants pour atom2_id
+2025-04-28 13:21:30,762 [INFO] - Dépendance trouvée: ('atom1_id',) -> atom2_id
+2025-04-28 13:21:30,774 [INFO] - Recherche des déterminants pour type
+2025-04-28 13:30:17,068 [ERROR] - Erreur lors de l'analyse de ../../data/db2/mutagenesis/csv/bond.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 13:30:17,432 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/molecule.csv (table: molecule)
+2025-04-28 13:30:17,449 [INFO] - Table molecule: 188 lignes, 6 colonnes
+2025-04-28 13:30:17,461 [INFO] - Exécution de FastFDs sur molecule avec 6 colonnes
+2025-04-28 13:30:17,474 [INFO] - Recherche des déterminants pour molecule_id
+2025-04-28 13:30:17,486 [INFO] - Recherche des déterminants pour ind1
+2025-04-28 13:30:22,642 [INFO] - Dépendance trouvée: ('molecule_id',) -> ind1
+2025-04-28 13:30:22,654 [INFO] - Recherche des déterminants pour inda
+2025-04-28 13:30:32,264 [INFO] - Dépendance trouvée: ('molecule_id',) -> inda
+2025-04-28 13:30:32,276 [INFO] - Recherche des déterminants pour logp
+2025-04-28 13:30:32,409 [INFO] - Dépendance trouvée: ('lumo',) -> logp
+2025-04-28 13:30:32,422 [INFO] - Recherche des déterminants pour lumo
+2025-04-28 13:30:32,441 [INFO] - Dépendance trouvée: ('logp',) -> lumo
+2025-04-28 13:30:32,452 [INFO] - Recherche des déterminants pour mutagenic
+2025-04-28 13:30:38,086 [INFO] - Dépendance trouvée: ('molecule_id',) -> mutagenic
+2025-04-28 13:30:38,099 [INFO] - FastFDs: 1 règles découvertes jusqu'à présent...
+2025-04-28 13:30:38,111 [INFO] - Dépendance: molecule.('molecule_id',) -> molecule.('ind1',)
+2025-04-28 13:30:38,122 [INFO] - Dépendance: molecule.('molecule_id',) -> molecule.('inda',)
+2025-04-28 13:30:38,134 [INFO] - Dépendance: molecule.('lumo',) -> molecule.('logp',)
+2025-04-28 13:30:38,146 [INFO] - Dépendance: molecule.('logp',) -> molecule.('lumo',)
+2025-04-28 13:30:38,158 [INFO] - Dépendance: molecule.('molecule_id',) -> molecule.('mutagenic',)
+2025-04-28 13:30:38,170 [INFO] - Découvert 5 dépendances pour molecule
+2025-04-28 13:30:38,181 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/atom.csv (table: atom)
+2025-04-28 13:30:38,200 [INFO] - Table atom: 4893 lignes, 5 colonnes
+2025-04-28 13:30:38,211 [INFO] - Exécution de FastFDs sur atom avec 5 colonnes
+2025-04-28 13:30:38,245 [INFO] - Recherche des déterminants pour atom_id
+2025-04-28 13:30:38,257 [INFO] - Recherche des déterminants pour molecule_id
+2025-04-28 13:31:08,234 [INFO] - Dépendance trouvée: ('atom_id',) -> molecule_id
+2025-04-28 13:31:08,247 [INFO] - Recherche des déterminants pour element
+2025-04-28 14:04:29,815 [INFO] - Dépendance trouvée: ('atom_id',) -> element
+2025-04-28 14:04:29,839 [INFO] - Recherche des déterminants pour type
+2025-04-28 14:33:08,710 [INFO] - Dépendance trouvée: ('atom_id',) -> type
+2025-04-28 14:33:08,734 [INFO] - Recherche des déterminants pour charge
+2025-04-28 14:33:56,571 [INFO] - Dépendance trouvée: ('atom_id',) -> charge
+2025-04-28 14:33:56,604 [INFO] - FastFDs: 6 règles découvertes jusqu'à présent...
+2025-04-28 14:33:56,614 [INFO] - Dépendance: atom.('atom_id',) -> atom.('molecule_id',)
+2025-04-28 14:33:56,625 [INFO] - Dépendance: atom.('atom_id',) -> atom.('element',)
+2025-04-28 14:33:56,635 [INFO] - Dépendance: atom.('atom_id',) -> atom.('type',)
+2025-04-28 14:33:56,646 [INFO] - Dépendance: atom.('atom_id',) -> atom.('charge',)
+2025-04-28 14:33:56,658 [INFO] - Découvert 4 dépendances pour atom
+2025-04-28 14:33:56,670 [INFO] - FastFDs: Découverte terminée avec 9 règles.
+2025-04-28 14:33:56,690 [INFO] - FastFDs terminé en 4347.27 secondes, 9 règles découvertes
+2025-04-28 14:33:56,701 [INFO] - Démarrage de l'algorithme FDep
+2025-04-28 14:33:57,300 [INFO] - FDep: Algorithme initialisé avec: {'max_lhs_size': 3, 'min_confidence': 0.9, 'timeout': 300}
+2025-04-28 14:33:57,313 [INFO] - Lancement de l'algorithme FDep
+2025-04-28 14:33:57,325 [INFO] - Fichiers CSV trouvés: 3
+2025-04-28 14:33:57,337 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/bond.csv (table: bond)
+2025-04-28 14:33:57,360 [INFO] - Table bond: 5243 lignes, 3 colonnes
+2025-04-28 14:33:57,370 [INFO] - Exécution de FDep sur bond avec 3 colonnes et max_lhs_size=3
+2025-04-28 14:33:57,381 [INFO] - Calcul des agree sets pour 5243 tuples
+2025-04-28 14:38:57,312 [ERROR] - Erreur lors de l'analyse de ../../data/db2/mutagenesis/csv/bond.csv: L'opération a dépassé le délai de 300 secondes
+2025-04-28 14:38:57,796 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/molecule.csv (table: molecule)
+2025-04-28 14:38:57,818 [INFO] - Table molecule: 188 lignes, 6 colonnes
+2025-04-28 14:38:57,831 [INFO] - Exécution de FDep sur molecule avec 6 colonnes et max_lhs_size=3
+2025-04-28 14:38:57,845 [INFO] - Calcul des agree sets pour 188 tuples
+2025-04-28 14:39:10,541 [INFO] - Dépendance trouvée: ('lumo', 'logp') -> molecule_id
+2025-04-28 14:39:10,869 [INFO] - Dépendance trouvée: ('molecule_id',) -> ind1
+2025-04-28 14:39:10,880 [INFO] - Dépendance trouvée: ('lumo', 'logp') -> ind1
+2025-04-28 14:39:10,924 [INFO] - Dépendance trouvée: ('molecule_id',) -> inda
+2025-04-28 14:39:10,936 [INFO] - Dépendance trouvée: ('logp',) -> inda
+2025-04-28 14:39:11,403 [INFO] - Dépendance trouvée: ('molecule_id',) -> logp
+2025-04-28 14:39:11,816 [INFO] - Dépendance trouvée: ('molecule_id',) -> lumo
+2025-04-28 14:39:12,153 [INFO] - Dépendance trouvée: ('molecule_id',) -> mutagenic
+2025-04-28 14:39:12,166 [INFO] - Dépendance trouvée: ('lumo', 'logp') -> mutagenic
+2025-04-28 14:39:12,184 [INFO] - FDep: 1 règles découvertes jusqu'à présent...
+2025-04-28 14:39:12,195 [INFO] - Découvert 9 dépendances pour molecule
+2025-04-28 14:39:12,207 [INFO] - Analyse du fichier: ../../data/db2/mutagenesis/csv/atom.csv (table: atom)
+2025-04-28 14:39:12,223 [INFO] - Table atom: 4893 lignes, 5 colonnes
+2025-04-28 14:39:12,234 [INFO] - Exécution de FDep sur atom avec 5 colonnes et max_lhs_size=3
+2025-04-28 14:39:12,246 [INFO] - Calcul des agree sets pour 4893 tuples

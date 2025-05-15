@@ -1,0 +1,311 @@
+# Règles communes sauvegardées: 154
+# Date: 2025-04-28 09:51:42
+
+1. Products: ProductID → CategoryID [conf=1.00, supp=9.53] <=> Products: ProductID → CategoryID
+
+2. Products: ProductName → CategoryID [conf=1.00, supp=9.53] <=> Products: ProductName → CategoryID
+
+3. Order Details: UnitPrice → Discount [conf=10.58, supp=1.00] <=> Order Details: UnitPrice → Discount
+
+4. Suppliers: PostalCode → Region [conf=1.00, supp=0.07] <=> Suppliers: PostalCode → Region
+
+5. Suppliers: Phone → Region [conf=1.00, supp=0.07] <=> Suppliers: Phone → Region
+
+6. Suppliers: SupplierID → Region [conf=1.00, supp=0.07] <=> Suppliers: SupplierID → Region
+
+7. Suppliers: CompanyName → Region [conf=1.00, supp=0.07] <=> Suppliers: CompanyName → Region
+
+8. Suppliers: ContactName → Region [conf=1.00, supp=0.07] <=> Suppliers: ContactName → Region
+
+9. Suppliers: Address → Region [conf=1.00, supp=0.07] <=> Suppliers: Address → Region
+
+10. Suppliers: City → Region [conf=1.00, supp=0.07] <=> Suppliers: City → Region
+
+11. Orders: OrderID → ShipRegion [conf=1.00, supp=9.19] <=> Orders: OrderID → ShipRegion
+
+12. Orders: CustomerID → ShipRegion [conf=1.00, supp=9.19] <=> Orders: CustomerID → ShipRegion
+
+13. Orders: ShipName → ShipRegion [conf=1.00, supp=9.19] <=> Orders: ShipName → ShipRegion
+
+14. Orders: ShipAddress → ShipRegion [conf=1.00, supp=9.19] <=> Orders: ShipAddress → ShipRegion
+
+15. Orders: ShipCity → ShipRegion [conf=1.00, supp=9.19] <=> Orders: ShipCity → ShipRegion
+
+16. Products: ProductID → UnitsOnOrder [conf=1.00, supp=46.36] <=> Products: ProductID → UnitsOnOrder
+
+17. Products: ProductName → UnitsOnOrder [conf=1.00, supp=46.36] <=> Products: ProductName → UnitsOnOrder
+
+18. Orders: OrderID → OrderDate [conf=1.00, supp=1.13] <=> Orders: OrderID → OrderDate
+
+19. Suppliers: Phone → Country [conf=1.00, supp=1.17] <=> Suppliers: Phone → Country
+
+20. Suppliers: SupplierID → Country [conf=1.00, supp=1.17] <=> Suppliers: SupplierID → Country
+
+21. Suppliers: CompanyName → Country [conf=1.00, supp=1.17] <=> Suppliers: CompanyName → Country
+
+22. Suppliers: ContactName → Country [conf=1.00, supp=1.17] <=> Suppliers: ContactName → Country
+
+23. Suppliers: Address → Country [conf=1.00, supp=1.17] <=> Suppliers: Address → Country
+
+24. Suppliers: City → Country [conf=1.00, supp=1.17] <=> Suppliers: City → Country
+
+25. Suppliers: PostalCode → Country [conf=1.00, supp=1.17] <=> Suppliers: PostalCode → Country
+
+26. Orders: OrderID → ShipPostalCode [conf=1.00, supp=11.92] <=> Orders: OrderID → ShipPostalCode
+
+27. Orders: CustomerID → ShipPostalCode [conf=1.00, supp=11.92] <=> Orders: CustomerID → ShipPostalCode
+
+28. Orders: ShipName → ShipPostalCode [conf=1.00, supp=11.92] <=> Orders: ShipName → ShipPostalCode
+
+29. Orders: ShipAddress → ShipPostalCode [conf=1.00, supp=11.92] <=> Orders: ShipAddress → ShipPostalCode
+
+30. Products: ProductID → Discontinued [conf=1.00, supp=61.66] <=> Products: ProductID → Discontinued
+
+31. Products: ProductName → Discontinued [conf=1.00, supp=61.66] <=> Products: ProductName → Discontinued
+
+32. Products: QuantityPerUnit → Discontinued [conf=1.00, supp=61.66] <=> Products: QuantityPerUnit → Discontinued
+
+33. Orders: OrderID → ShippedDate [conf=1.00, supp=1.78] <=> Orders: OrderID → ShippedDate
+
+34. Products: QuantityPerUnit → Discontinued [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → Discontinued
+
+35. Products: ProductID → QuantityPerUnit [conf=1.00, supp=0.26] <=> Products: ProductID → QuantityPerUnit
+
+36. Products: ProductName → QuantityPerUnit [conf=1.00, supp=0.26] <=> Products: ProductName → QuantityPerUnit
+
+37. Products: ProductID → ReorderLevel [conf=1.00, supp=12.78] <=> Products: ProductID → ReorderLevel
+
+38. Products: ProductName → ReorderLevel [conf=1.00, supp=12.78] <=> Products: ProductName → ReorderLevel
+
+39. Products: ProductID → UnitsInStock [conf=1.00, supp=1.09] <=> Products: ProductID → UnitsInStock
+
+40. Products: ProductName → UnitsInStock [conf=1.00, supp=1.09] <=> Products: ProductName → UnitsInStock
+
+41. Products: ProductID → UnitPrice [conf=1.00, supp=0.57] <=> Products: ProductID → UnitPrice
+
+42. Products: ProductName → UnitPrice [conf=1.00, supp=0.57] <=> Products: ProductName → UnitPrice
+
+43. Orders: ShipName → CustomerID [conf=1.00, supp=11.91] <=> Orders: ShipName → CustomerID
+
+44. Orders: ShipName → CustomerID [conf=1.00, supp=1.00] <=> Orders: ShipName → CustomerID
+
+45. Orders: CustomerID → ShipAddress [conf=11.91, supp=1.00] <=> Orders: CustomerID → ShipAddress
+
+46. Orders: ShipAddress → CustomerID [conf=1.00, supp=11.91] <=> Orders: ShipAddress → CustomerID
+
+47. Orders: ShipAddress → CustomerID [conf=1.00, supp=1.00] <=> Orders: ShipAddress → CustomerID
+
+48. Orders: CustomerID → ShipAddress [conf=1.00, supp=1.00] <=> Orders: CustomerID → ShipAddress
+
+49. Orders: CustomerID → ShipCity [conf=11.91, supp=1.00] <=> Orders: CustomerID → ShipCity
+
+50. Orders: CustomerID → ShipCity [conf=0.75, supp=1.00] <=> Orders: CustomerID → ShipCity
+
+51. Orders: CustomerID → ShipRegion [conf=12.74, supp=0.42] <=> Orders: CustomerID → ShipRegion
+
+52. Orders: CustomerID → ShipRegion [conf=0.54, supp=0.42] <=> Orders: CustomerID → ShipRegion
+
+53. Orders: CustomerID → ShipPostalCode [conf=11.76, supp=0.97] <=> Orders: CustomerID → ShipPostalCode
+
+54. Orders: CustomerID → ShipPostalCode [conf=0.96, supp=0.97] <=> Orders: CustomerID → ShipPostalCode
+
+55. Orders: CustomerID → ShipCountry [conf=11.91, supp=1.00] <=> Orders: CustomerID → ShipCountry
+
+56. Orders: CustomerID → ShipCountry [conf=0.18, supp=1.00] <=> Orders: CustomerID → ShipCountry
+
+57. Orders: OrderID → CustomerID [conf=1.00, supp=11.91] <=> Orders: OrderID → CustomerID
+
+58. Suppliers: Address → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: Address → ContactTitle
+
+59. Suppliers: City → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: City → ContactTitle
+
+60. Suppliers: PostalCode → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: PostalCode → ContactTitle
+
+61. Suppliers: Phone → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: Phone → ContactTitle
+
+62. Suppliers: SupplierID → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: SupplierID → ContactTitle
+
+63. Suppliers: CompanyName → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: CompanyName → ContactTitle
+
+64. Suppliers: ContactName → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: ContactName → ContactTitle
+
+65. Orders: OrderID → ShipVia [conf=1.00, supp=280.09] <=> Orders: OrderID → ShipVia
+
+66. Customers: Address → ContactTitle [conf=1.00, supp=10.68] <=> Customers: Address → ContactTitle
+
+67. Customers: Phone → ContactTitle [conf=1.00, supp=10.68] <=> Customers: Phone → ContactTitle
+
+68. Customers: CustomerID → ContactTitle [conf=1.00, supp=10.68] <=> Customers: CustomerID → ContactTitle
+
+69. Customers: CompanyName → ContactTitle [conf=1.00, supp=10.68] <=> Customers: CompanyName → ContactTitle
+
+70. Customers: ContactName → ContactTitle [conf=1.00, supp=10.68] <=> Customers: ContactName → ContactTitle
+
+71. Customers: PostalCode → Country [conf=0.11, supp=1.00] <=> Customers: PostalCode → Country
+
+72. Customers: PostalCode → Country [conf=0.02, supp=1.00] <=> Customers: PostalCode → Country
+
+73. Customers: Phone → PostalCode [conf=1.00, supp=0.11] <=> Customers: Phone → PostalCode
+
+74. Customers: CustomerID → PostalCode [conf=1.00, supp=0.11] <=> Customers: CustomerID → PostalCode
+
+75. Customers: CompanyName → PostalCode [conf=1.00, supp=0.11] <=> Customers: CompanyName → PostalCode
+
+76. Customers: ContactName → PostalCode [conf=1.00, supp=0.11] <=> Customers: ContactName → PostalCode
+
+77. Customers: Address → PostalCode [conf=1.00, supp=0.11] <=> Customers: Address → PostalCode
+
+78. Customers: PostalCode → City [conf=0.11, supp=1.00] <=> Customers: PostalCode → City
+
+79. Order Details: Quantity → Discount [conf=109.44, supp=1.00] <=> Order Details: Quantity → Discount
+
+80. Order Details: Quantity → Discount [conf=0.05, supp=1.00] <=> Order Details: Quantity → Discount
+
+81. Orders: OrderID → EmployeeID [conf=1.00, supp=106.12] <=> Orders: OrderID → EmployeeID
+
+82. Orders: ShipName → ShipAddress [conf=11.89, supp=1.00] <=> Orders: ShipName → ShipAddress
+
+83. Orders: ShipName → ShipAddress [conf=1.00, supp=1.00] <=> Orders: ShipName → ShipAddress
+
+84. Orders: ShipName → ShipCity [conf=11.89, supp=1.00] <=> Orders: ShipName → ShipCity
+
+85. Orders: ShipName → ShipCity [conf=0.75, supp=1.00] <=> Orders: ShipName → ShipCity
+
+86. Orders: ShipName → ShipRegion [conf=12.74, supp=0.42] <=> Orders: ShipName → ShipRegion
+
+87. Orders: ShipName → ShipRegion [conf=0.54, supp=0.42] <=> Orders: ShipName → ShipRegion
+
+88. Orders: ShipName → ShipPostalCode [conf=11.75, supp=0.97] <=> Orders: ShipName → ShipPostalCode
+
+89. Orders: ShipName → ShipPostalCode [conf=0.96, supp=0.97] <=> Orders: ShipName → ShipPostalCode
+
+90. Orders: ShipName → ShipCountry [conf=11.89, supp=1.00] <=> Orders: ShipName → ShipCountry
+
+91. Orders: ShipName → ShipCountry [conf=0.18, supp=1.00] <=> Orders: ShipName → ShipCountry
+
+92. Orders: OrderID → ShipName [conf=1.00, supp=11.89] <=> Orders: OrderID → ShipName
+
+93. Orders: ShipName → CustomerID [conf=11.89, supp=1.00] <=> Orders: ShipName → CustomerID
+
+94. Orders: ShipAddress → ShipCity [conf=11.91, supp=1.00] <=> Orders: ShipAddress → ShipCity
+
+95. Orders: ShipAddress → ShipCity [conf=0.75, supp=1.00] <=> Orders: ShipAddress → ShipCity
+
+96. Orders: ShipAddress → ShipRegion [conf=12.74, supp=0.42] <=> Orders: ShipAddress → ShipRegion
+
+97. Orders: ShipAddress → ShipRegion [conf=0.54, supp=0.42] <=> Orders: ShipAddress → ShipRegion
+
+98. Orders: ShipAddress → ShipPostalCode [conf=11.76, supp=0.97] <=> Orders: ShipAddress → ShipPostalCode
+
+99. Orders: ShipAddress → ShipPostalCode [conf=0.96, supp=0.97] <=> Orders: ShipAddress → ShipPostalCode
+
+100. Orders: ShipAddress → ShipCountry [conf=11.91, supp=1.00] <=> Orders: ShipAddress → ShipCountry
+
+101. Orders: ShipAddress → ShipCountry [conf=0.18, supp=1.00] <=> Orders: ShipAddress → ShipCountry
+
+102. Orders: OrderID → ShipAddress [conf=1.00, supp=11.91] <=> Orders: OrderID → ShipAddress
+
+103. Orders: CustomerID → ShipAddress [conf=1.00, supp=11.91] <=> Orders: CustomerID → ShipAddress
+
+104. Orders: ShipAddress → CustomerID [conf=11.91, supp=1.00] <=> Orders: ShipAddress → CustomerID
+
+105. Orders: ShipName → ShipAddress [conf=1.00, supp=11.91] <=> Orders: ShipName → ShipAddress
+
+106. Products: ProductID → SupplierID [conf=1.00, supp=2.03] <=> Products: ProductID → SupplierID
+
+107. Products: ProductName → SupplierID [conf=1.00, supp=2.03] <=> Products: ProductName → SupplierID
+
+108. Orders: ShipCity → ShipRegion [conf=17.39, supp=0.43] <=> Orders: ShipCity → ShipRegion
+
+109. Orders: ShipCity → ShipRegion [conf=0.74, supp=0.43] <=> Orders: ShipCity → ShipRegion
+
+110. Orders: ShipCity → ShipCountry [conf=15.78, supp=1.00] <=> Orders: ShipCity → ShipCountry
+
+111. Orders: ShipCity → ShipCountry [conf=0.24, supp=1.00] <=> Orders: ShipCity → ShipCountry
+
+112. Orders: OrderID → ShipCity [conf=1.00, supp=15.78] <=> Orders: OrderID → ShipCity
+
+113. Orders: CustomerID → ShipCity [conf=1.00, supp=15.78] <=> Orders: CustomerID → ShipCity
+
+114. Orders: ShipName → ShipCity [conf=1.00, supp=15.78] <=> Orders: ShipName → ShipCity
+
+115. Orders: ShipAddress → ShipCity [conf=1.00, supp=15.78] <=> Orders: ShipAddress → ShipCity
+
+116. Orders: OrderID → Freight [conf=1.00, supp=0.07] <=> Orders: OrderID → Freight
+
+117. Customers: Phone → Country [conf=1.00, supp=6.31] <=> Customers: Phone → Country
+
+118. Customers: CustomerID → Country [conf=1.00, supp=6.31] <=> Customers: CustomerID → Country
+
+119. Customers: CompanyName → Country [conf=1.00, supp=6.31] <=> Customers: CompanyName → Country
+
+120. Customers: ContactName → Country [conf=1.00, supp=6.31] <=> Customers: ContactName → Country
+
+121. Customers: Address → Country [conf=1.00, supp=6.31] <=> Customers: Address → Country
+
+122. Customers: City → Country [conf=1.00, supp=6.31] <=> Customers: City → Country
+
+123. Customers: PostalCode → Country [conf=1.00, supp=6.38] <=> Customers: PostalCode → Country
+
+124. Customers: PostalCode → Region [conf=1.00, supp=0.62] <=> Customers: PostalCode → Region
+
+125. Customers: Phone → Region [conf=1.00, supp=0.62] <=> Customers: Phone → Region
+
+126. Customers: CustomerID → Region [conf=1.00, supp=0.62] <=> Customers: CustomerID → Region
+
+127. Customers: CompanyName → Region [conf=1.00, supp=0.62] <=> Customers: CompanyName → Region
+
+128. Customers: ContactName → Region [conf=1.00, supp=0.62] <=> Customers: ContactName → Region
+
+129. Customers: Address → Region [conf=1.00, supp=0.62] <=> Customers: Address → Region
+
+130. Customers: City → Region [conf=1.00, supp=0.62] <=> Customers: City → Region
+
+131. Order Details: OrderID → Discount [conf=1.00, supp=2118.83] <=> Order Details: OrderID → Discount
+
+132. Order Details: ProductID → Discount [conf=1.00, supp=2118.83] <=> Order Details: ProductID → Discount
+
+133. Order Details: UnitPrice → Discount [conf=1.00, supp=2118.83] <=> Order Details: UnitPrice → Discount
+
+134. Order Details: Quantity → Discount [conf=1.00, supp=2118.83] <=> Order Details: Quantity → Discount
+
+135. Territories: TerritoryDescription → RegionID [conf=0.04, supp=1.00] <=> Territories: TerritoryDescription → RegionID
+
+136. Territories: TerritoryID → TerritoryDescription [conf=1.00, supp=0.04] <=> Territories: TerritoryID → TerritoryDescription
+
+137. Customers: City → Region [conf=0.65, supp=0.23] <=> Customers: City → Region
+
+138. Customers: City → Region [conf=0.36, supp=0.23] <=> Customers: City → Region
+
+139. Customers: PostalCode → City [conf=1.00, supp=0.98] <=> Customers: PostalCode → City
+
+140. Customers: City → Country [conf=0.97, supp=1.00] <=> Customers: City → Country
+
+141. Customers: City → Country [conf=0.15, supp=1.00] <=> Customers: City → Country
+
+142. Customers: Phone → City [conf=1.00, supp=0.97] <=> Customers: Phone → City
+
+143. Customers: CustomerID → City [conf=1.00, supp=0.97] <=> Customers: CustomerID → City
+
+144. Customers: CompanyName → City [conf=1.00, supp=0.97] <=> Customers: CompanyName → City
+
+145. Customers: ContactName → City [conf=1.00, supp=0.97] <=> Customers: ContactName → City
+
+146. Customers: Address → City [conf=1.00, supp=0.97] <=> Customers: Address → City
+
+147. Orders: OrderID → ShipCountry [conf=1.00, supp=66.67] <=> Orders: OrderID → ShipCountry
+
+148. Orders: CustomerID → ShipCountry [conf=1.00, supp=66.67] <=> Orders: CustomerID → ShipCountry
+
+149. Orders: ShipName → ShipCountry [conf=1.00, supp=66.67] <=> Orders: ShipName → ShipCountry
+
+150. Orders: ShipAddress → ShipCountry [conf=1.00, supp=66.67] <=> Orders: ShipAddress → ShipCountry
+
+151. Orders: ShipCity → ShipCountry [conf=1.00, supp=66.67] <=> Orders: ShipCity → ShipCountry
+
+152. Orders: OrderID → RequiredDate [conf=1.00, supp=1.36] <=> Orders: OrderID → RequiredDate
+
+153. Territories: TerritoryID → RegionID [conf=1.00, supp=13.55] <=> Territories: TerritoryID → RegionID
+
+154. Territories: TerritoryDescription → RegionID [conf=1.00, supp=13.55] <=> Territories: TerritoryDescription → RegionID
+

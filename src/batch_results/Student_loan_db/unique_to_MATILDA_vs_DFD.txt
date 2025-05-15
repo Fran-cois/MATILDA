@@ -1,0 +1,39 @@
+# FDs sauvegardées: 9
+# Date: 2025-04-28 09:59:09
+
+1. [FunctionalDependency] enrolled: month → name
+   Support: 76.12395309882747
+   Confiance: 76.12395309882747
+
+2. [FunctionalDependency] enrolled: name → month
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] enrolled: month → school
+   Support: 76.12395309882747
+   Confiance: 76.12395309882747
+
+4. [FunctionalDependency] enrolled: school → month
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] no_payment_due: bool → name
+   Support: 539.898
+   Confiance: 539.898
+
+6. [FunctionalDependency] longest_absense_from_school: month → name
+   Support: 99.756
+   Confiance: 99.756
+
+7. [FunctionalDependency] enlist: organ → name
+   Support: 62.78431372549019
+   Confiance: 62.78431372549019
+
+8. [FunctionalDependency] enlist: organ → name
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] enlist: organ → name
+   Support: 0.8863636363636364
+   Confiance: 0.8863636363636364
+

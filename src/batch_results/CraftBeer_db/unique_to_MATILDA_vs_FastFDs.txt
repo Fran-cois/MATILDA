@@ -1,0 +1,415 @@
+# FDs sauvegardées: 103
+# Date: 2025-04-27 22:58:16
+
+1. [FunctionalDependency] beers: ibu → name
+   Support: 17.548547717842325
+   Confiance: 17.548547717842325
+
+2. [FunctionalDependency] beers: name → ibu
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] beers: ibu → style
+   Support: 17.568399168399168
+   Confiance: 17.568399168399168
+
+4. [FunctionalDependency] beers: style → ibu
+   Support: 0.9990541946467417
+   Confiance: 0.9990541946467417
+
+5. [FunctionalDependency] beers: style → ibu
+   Support: 0.18150004729026767
+   Confiance: 0.18150004729026767
+
+6. [FunctionalDependency] beers: ibu → style
+   Support: 0.02352248978015849
+   Confiance: 0.02352248978015849
+
+7. [FunctionalDependency] beers: ounces → ibu
+   Support: 1.0
+   Confiance: 1.0
+
+8. [FunctionalDependency] beers: ibu → ounces
+   Support: 17.548547717842325
+   Confiance: 17.548547717842325
+
+9. [FunctionalDependency] beers: id → ibu
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] beers: ibu → id
+   Support: 17.548547717842325
+   Confiance: 17.548547717842325
+
+11. [FunctionalDependency] beers: ibu → brewery_id
+   Support: 17.548547717842325
+   Confiance: 17.548547717842325
+
+12. [FunctionalDependency] beers: brewery_id → ibu
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] beers: abv → ibu
+   Support: 1.0
+   Confiance: 1.0
+
+14. [FunctionalDependency] beers: ibu → abv
+   Support: 18.01192504258944
+   Confiance: 18.01192504258944
+
+15. [FunctionalDependency] beers: id → ounces
+   Support: 1.0
+   Confiance: 1.0
+
+16. [FunctionalDependency] beers: ounces → id
+   Support: 1257.7726141078838
+   Confiance: 1257.7726141078838
+
+17. [FunctionalDependency] beers: brewery_id → ounces
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] beers: ounces → brewery_id
+   Support: 1257.7726141078838
+   Confiance: 1257.7726141078838
+
+19. [FunctionalDependency] beers: ounces → abv
+   Support: 1257.2163543441227
+   Confiance: 1257.2163543441227
+
+20. [FunctionalDependency] beers: abv → ounces
+   Support: 0.9738429786964509
+   Confiance: 0.9738429786964509
+
+21. [FunctionalDependency] beers: ounces → ibu
+   Support: 1269.306049822064
+   Confiance: 1269.306049822064
+
+22. [FunctionalDependency] beers: ibu → ounces
+   Support: 0.5883333905158035
+   Confiance: 0.5883333905158035
+
+23. [FunctionalDependency] beers: ounces → name
+   Support: 1257.7726141078838
+   Confiance: 1257.7726141078838
+
+24. [FunctionalDependency] beers: name → ounces
+   Support: 1.0
+   Confiance: 1.0
+
+25. [FunctionalDependency] beers: ounces → style
+   Support: 1258.135550935551
+   Confiance: 1258.135550935551
+
+26. [FunctionalDependency] beers: style → ounces
+   Support: 0.9982132677406415
+   Confiance: 0.9982132677406415
+
+27. [FunctionalDependency] breweries: state → id
+   Support: 20.02867383512545
+   Confiance: 20.02867383512545
+
+28. [FunctionalDependency] breweries: name → state
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] breweries: state → name
+   Support: 20.02867383512545
+   Confiance: 20.02867383512545
+
+30. [FunctionalDependency] breweries: state → city
+   Support: 20.02867383512545
+   Confiance: 20.02867383512545
+
+31. [FunctionalDependency] breweries: city → state
+   Support: 1.0
+   Confiance: 1.0
+
+32. [FunctionalDependency] breweries: city → state
+   Support: 1.7526881720430108
+   Confiance: 1.7526881720430108
+
+33. [FunctionalDependency] breweries: state → city
+   Support: 1.0
+   Confiance: 1.0
+
+34. [FunctionalDependency] breweries: city → state
+   Support: 0.07193987115246958
+   Confiance: 0.07193987115246958
+
+35. [FunctionalDependency] breweries: state → city
+   Support: 0.8220858895705522
+   Confiance: 0.8220858895705522
+
+36. [FunctionalDependency] breweries: city → id
+   Support: 1.7526881720430108
+   Confiance: 1.7526881720430108
+
+37. [FunctionalDependency] breweries: name → city
+   Support: 1.0
+   Confiance: 1.0
+
+38. [FunctionalDependency] breweries: city → name
+   Support: 1.7526881720430108
+   Confiance: 1.7526881720430108
+
+39. [FunctionalDependency] beers: ounces → style
+   Support: 1.0
+   Confiance: 1.0
+
+40. [FunctionalDependency] beers: style → ounces
+   Support: 135.40497925311203
+   Confiance: 135.40497925311203
+
+41. [FunctionalDependency] beers: style → ounces
+   Support: 0.05856364672845892
+   Confiance: 0.05856364672845892
+
+42. [FunctionalDependency] beers: ounces → style
+   Support: 0.5439958814191943
+   Confiance: 0.5439958814191943
+
+43. [FunctionalDependency] beers: id → style
+   Support: 1.0
+   Confiance: 1.0
+
+44. [FunctionalDependency] beers: style → id
+   Support: 135.40497925311203
+   Confiance: 135.40497925311203
+
+45. [FunctionalDependency] beers: style → brewery_id
+   Support: 135.40497925311203
+   Confiance: 135.40497925311203
+
+46. [FunctionalDependency] beers: brewery_id → style
+   Support: 1.0
+   Confiance: 1.0
+
+47. [FunctionalDependency] beers: abv → style
+   Support: 0.977874885850346
+   Confiance: 0.977874885850346
+
+48. [FunctionalDependency] beers: style → abv
+   Support: 135.90545144804088
+   Confiance: 135.90545144804088
+
+49. [FunctionalDependency] beers: style → ibu
+   Support: 152.8491103202847
+   Confiance: 152.8491103202847
+
+50. [FunctionalDependency] beers: ibu → style
+   Support: 0.6580934403020292
+   Confiance: 0.6580934403020292
+
+51. [FunctionalDependency] beers: name → style
+   Support: 1.0
+   Confiance: 1.0
+
+52. [FunctionalDependency] beers: style → name
+   Support: 135.40497925311203
+   Confiance: 135.40497925311203
+
+53. [FunctionalDependency] beers: abv → ibu
+   Support: 76.06192170818505
+   Confiance: 76.06192170818505
+
+54. [FunctionalDependency] beers: ibu → abv
+   Support: 0.5677831025725488
+   Confiance: 0.5677831025725488
+
+55. [FunctionalDependency] beers: abv → ibu
+   Support: 0.08261609760711246
+   Confiance: 0.08261609760711246
+
+56. [FunctionalDependency] beers: ibu → abv
+   Support: 0.018563580528961097
+   Confiance: 0.018563580528961097
+
+57. [FunctionalDependency] beers: name → abv
+   Support: 1.0
+   Confiance: 1.0
+
+58. [FunctionalDependency] beers: abv → name
+   Support: 78.09875518672199
+   Confiance: 78.09875518672199
+
+59. [FunctionalDependency] beers: abv → style
+   Support: 78.18503118503118
+   Confiance: 78.18503118503118
+
+60. [FunctionalDependency] beers: style → abv
+   Support: 0.9990277231720665
+   Confiance: 0.9990277231720665
+
+61. [FunctionalDependency] beers: abv → style
+   Support: 0.059958446461513944
+   Confiance: 0.059958446461513944
+
+62. [FunctionalDependency] beers: style → abv
+   Support: 0.10395392576692984
+   Confiance: 0.10395392576692984
+
+63. [FunctionalDependency] beers: abv → ounces
+   Support: 78.09875518672199
+   Confiance: 78.09875518672199
+
+64. [FunctionalDependency] beers: ounces → abv
+   Support: 1.0
+   Confiance: 1.0
+
+65. [FunctionalDependency] beers: ounces → abv
+   Support: 0.5501386689902135
+   Confiance: 0.5501386689902135
+
+66. [FunctionalDependency] beers: abv → ounces
+   Support: 0.034159707999915544
+   Confiance: 0.034159707999915544
+
+67. [FunctionalDependency] beers: abv → id
+   Support: 78.09875518672199
+   Confiance: 78.09875518672199
+
+68. [FunctionalDependency] beers: id → abv
+   Support: 1.0
+   Confiance: 1.0
+
+69. [FunctionalDependency] beers: brewery_id → abv
+   Support: 1.0
+   Confiance: 1.0
+
+70. [FunctionalDependency] beers: abv → brewery_id
+   Support: 78.09875518672199
+   Confiance: 78.09875518672199
+
+71. [FunctionalDependency] beers: brewery_id → abv
+   Support: 8.898637137989779
+   Confiance: 8.898637137989779
+
+72. [FunctionalDependency] beers: abv → brewery_id
+   Support: 0.9736253494874184
+   Confiance: 0.9736253494874184
+
+73. [FunctionalDependency] beers: brewery_id → ibu
+   Support: 8.292526690391458
+   Confiance: 8.292526690391458
+
+74. [FunctionalDependency] beers: ibu → brewery_id
+   Support: 0.5429170549860205
+   Confiance: 0.5429170549860205
+
+75. [FunctionalDependency] beers: brewery_id → ibu
+   Support: 0.024023455972760805
+   Confiance: 0.024023455972760805
+
+76. [FunctionalDependency] beers: ibu → brewery_id
+   Support: 0.04734389561975769
+   Confiance: 0.04734389561975769
+
+77. [FunctionalDependency] beers: brewery_id → name
+   Support: 8.904564315352697
+   Confiance: 8.904564315352697
+
+78. [FunctionalDependency] beers: name → brewery_id
+   Support: 1.0
+   Confiance: 1.0
+
+79. [FunctionalDependency] beers: name → brewery_id
+   Support: 0.01369990680335508
+   Confiance: 0.01369990680335508
+
+80. [FunctionalDependency] beers: brewery_id → name
+   Support: 0.7903225806451613
+   Confiance: 0.7903225806451613
+
+81. [FunctionalDependency] beers: style → brewery_id
+   Support: 0.9961789375582479
+   Confiance: 0.9961789375582479
+
+82. [FunctionalDependency] beers: brewery_id → style
+   Support: 8.88898128898129
+   Confiance: 8.88898128898129
+
+83. [FunctionalDependency] beers: brewery_id → ounces
+   Support: 8.904564315352697
+   Confiance: 8.904564315352697
+
+84. [FunctionalDependency] beers: ounces → brewery_id
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] beers: brewery_id → id
+   Support: 8.904564315352697
+   Confiance: 8.904564315352697
+
+86. [FunctionalDependency] beers: id → brewery_id
+   Support: 1.0
+   Confiance: 1.0
+
+87. [FunctionalDependency] breweries: name → city
+   Support: 0.025089605734767026
+   Confiance: 0.025089605734767026
+
+88. [FunctionalDependency] breweries: city → name
+   Support: 1.0
+   Confiance: 1.0
+
+89. [FunctionalDependency] breweries: name → state
+   Support: 0.025089605734767026
+   Confiance: 0.025089605734767026
+
+90. [FunctionalDependency] breweries: state → name
+   Support: 1.0
+   Confiance: 1.0
+
+91. [FunctionalDependency] breweries: name → id
+   Support: 0.025089605734767026
+   Confiance: 0.025089605734767026
+
+92. [FunctionalDependency] beers: style → name
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] beers: name → style
+   Support: 0.1546777546777547
+   Confiance: 0.1546777546777547
+
+94. [FunctionalDependency] beers: name → ounces
+   Support: 0.15435684647302905
+   Confiance: 0.15435684647302905
+
+95. [FunctionalDependency] beers: ounces → name
+   Support: 1.0
+   Confiance: 1.0
+
+96. [FunctionalDependency] beers: name → id
+   Support: 0.15435684647302905
+   Confiance: 0.15435684647302905
+
+97. [FunctionalDependency] beers: id → name
+   Support: 1.0
+   Confiance: 1.0
+
+98. [FunctionalDependency] beers: name → brewery_id
+   Support: 0.15435684647302905
+   Confiance: 0.15435684647302905
+
+99. [FunctionalDependency] beers: brewery_id → name
+   Support: 1.0
+   Confiance: 1.0
+
+100. [FunctionalDependency] beers: name → abv
+   Support: 0.1575809199318569
+   Confiance: 0.1575809199318569
+
+101. [FunctionalDependency] beers: abv → name
+   Support: 0.9946236559139785
+   Confiance: 0.9946236559139785
+
+102. [FunctionalDependency] beers: name → ibu
+   Support: 0.2206405693950178
+   Confiance: 0.2206405693950178
+
+103. [FunctionalDependency] beers: ibu → name
+   Support: 0.8333333333333334
+   Confiance: 0.8333333333333334
+

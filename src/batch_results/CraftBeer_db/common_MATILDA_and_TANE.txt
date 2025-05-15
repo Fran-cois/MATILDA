@@ -1,0 +1,21 @@
+# Règles communes sauvegardées: 9
+# Date: 2025-04-27 22:58:16
+
+1. beers: id → ibu [conf=1.00, supp=17.55] <=> beers: id → ibu
+
+2. beers: id → ounces [conf=1.00, supp=1257.77] <=> beers: id → ounces
+
+3. breweries: id → state [conf=1.00, supp=20.03] <=> breweries: id → state
+
+4. breweries: id → city [conf=1.00, supp=1.75] <=> breweries: id → city
+
+5. beers: id → style [conf=1.00, supp=135.40] <=> beers: id → style
+
+6. beers: id → abv [conf=1.00, supp=78.10] <=> beers: id → abv
+
+7. beers: id → brewery_id [conf=1.00, supp=8.90] <=> beers: id → brewery_id
+
+8. breweries: id → name [conf=1.00, supp=0.03] <=> breweries: id → name
+
+9. beers: id → name [conf=1.00, supp=0.15] <=> beers: id → name
+

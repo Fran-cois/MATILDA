@@ -1,0 +1,17 @@
+# Règles communes sauvegardées: 7
+# Date: 2025-04-27 18:02:36
+
+1. krk: id → white_rook_file [conf=1.00, supp=125.81] <=> krk: id → white_rook_file
+
+2. krk: id → black_king_rank [conf=1.00, supp=124.90] <=> krk: id → black_king_rank
+
+3. krk: id → black_king_file [conf=1.00, supp=125.02] <=> krk: id → black_king_file
+
+4. krk: id → class [conf=1.00, supp=548.93] <=> krk: id → class
+
+5. krk: id → white_king_rank [conf=1.00, supp=124.82] <=> krk: id → white_king_rank
+
+6. krk: id → white_king_file [conf=1.00, supp=125.54] <=> krk: id → white_king_file
+
+7. krk: id → white_rook_rank [conf=1.00, supp=124.65] <=> krk: id → white_rook_rank
+

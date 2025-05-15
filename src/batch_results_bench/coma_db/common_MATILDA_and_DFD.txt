@@ -1,0 +1,21 @@
+# Règles communes sauvegardées: 9
+# Date: 2025-04-29 20:51:16
+
+1. LINKS: col3 → col1 [conf=1.00, supp=4.42] <=> LINKS: col3 → col1
+
+2. LINKS: col3 → col1 [conf=0.53, supp=0.20] <=> LINKS: col3 → col1
+
+3. LINKS: col3 → col0 [conf=11.69, supp=1.00] <=> LINKS: col3 → col0
+
+4. LINKS: col3 → col1 [conf=11.69, supp=1.00] <=> LINKS: col3 → col1
+
+5. LINKS: col2 → col0 [conf=1.00, supp=100.63] <=> LINKS: col2 → col0
+
+6. LINKS: col2 → col0 [conf=0.03, supp=0.96] <=> LINKS: col2 → col0
+
+7. LINKS: col3 → col0 [conf=1.00, supp=100.63] <=> LINKS: col3 → col0
+
+8. LINKS: col3 → col0 [conf=0.09, supp=0.77] <=> LINKS: col3 → col0
+
+9. LINKS: col2 → col0 [conf=3.41, supp=1.00] <=> LINKS: col2 → col0
+

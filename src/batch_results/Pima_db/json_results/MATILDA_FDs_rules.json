@@ -1,0 +1,326 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "tricepts",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 77.42447916666667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "tricepts",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 77.42447916666667,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "serum",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 182.9296875,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "serum",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 182.9296875,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "numPreg",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 80.10677083333333,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "numPreg",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 80.10677083333333,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "plasma",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 7.328125,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "plasma",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 7.328125,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "age",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 30.544270833333332,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "age",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 30.544270833333332,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "pedigree",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.96875,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "pedigree",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 0.96875,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "bmi",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.8880208333333335,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "bmi",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.8880208333333335,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "pima",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 418.0416666666667,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "pima",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 418.0416666666667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "diastolic",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.729166666666664,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "diastolic",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.729166666666664,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

@@ -1,0 +1,1645 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "PRODUCTS",
+        "determinant": [
+            "PROD_AGENDA_NAME"
+        ],
+        "dependent": [
+            "PROD_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PRODUCTS",
+        "determinant": [
+            "PROD_KEY"
+        ],
+        "dependent": [
+            "PROD_AGENDA_CODE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PRODUCTS",
+        "determinant": [
+            "PROD_AGENDA_NAME"
+        ],
+        "dependent": [
+            "PROD_AGENDA_CODE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PRODUCTS",
+        "determinant": [
+            "PROD_KEY"
+        ],
+        "dependent": [
+            "PROD_AGENDA_NAME"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE",
+            "ORG_KEY"
+        ],
+        "dependent": [
+            "ACC_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE",
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "ACC_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "PROD_KEY"
+        ],
+        "dependent": [
+            "ACCTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE"
+        ],
+        "dependent": [
+            "ACCTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "PROD_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCTP_KEY",
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PROD_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE",
+            "ORG_KEY"
+        ],
+        "dependent": [
+            "PROD_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE",
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PROD_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCTP_KEY",
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "PT_UNIFIED_KEY",
+            "PROD_KEY"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE",
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE",
+            "ORG_KEY"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCH_OPEN_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCH_CLOSE_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNTS",
+        "determinant": [
+            "ACCH_OPEN_DATE"
+        ],
+        "dependent": [
+            "ACCH_CLOSE_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TYPES",
+        "determinant": [
+            "ACCTP_DESC"
+        ],
+        "dependent": [
+            "ACCTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TYPES",
+        "determinant": [
+            "ACCTP_KEY"
+        ],
+        "dependent": [
+            "ACCTP_DESC"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "target_churn",
+        "determinant": [
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "target_churn"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ORGANIZATIONS",
+        "determinant": [
+            "ORG_KEY"
+        ],
+        "dependent": [
+            "ORGH_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ORGANIZATIONS",
+        "determinant": [
+            "ORG_KEY"
+        ],
+        "dependent": [
+            "CITY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ORGANIZATIONS",
+        "determinant": [
+            "ORGH_UNIFIED_ID"
+        ],
+        "dependent": [
+            "CITY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ORGANIZATIONS",
+        "determinant": [
+            "ZIP"
+        ],
+        "dependent": [
+            "CITY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ORGANIZATIONS",
+        "determinant": [
+            "ORG_KEY"
+        ],
+        "dependent": [
+            "ZIP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ORGANIZATIONS",
+        "determinant": [
+            "ORGH_UNIFIED_ID"
+        ],
+        "dependent": [
+            "ZIP"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACT_TYPES",
+        "determinant": [
+            "ACTRNTP_DESC"
+        ],
+        "dependent": [
+            "ACTRNTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACT_TYPES",
+        "determinant": [
+            "ACTRNTP_KEY"
+        ],
+        "dependent": [
+            "ACTRNTP_DESC"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACC_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACTRNTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_KEY",
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "dependent": [
+            "ACTRNTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_FX",
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACTRNTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_OTHER_ACCOUNT_KEY",
+            "ACCTRN_CASH_FLAG"
+        ],
+        "dependent": [
+            "ACTRNTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTP_OTHER_ACCOUNT_KEY",
+            "ACC_KEY",
+            "ACCTRN_CASH_FLAG"
+        ],
+        "dependent": [
+            "ACTRNTP_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_FX"
+        ],
+        "dependent": [
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_AMOUNT_FX"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "dependent": [
+            "ACCTRN_AMOUNT_FX"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACTRNTP_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_OTHER_ACCOUNT_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_KEY",
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_FX",
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTP_OTHER_ACCOUNT_KEY",
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTP_OTHER_ACCOUNT_KEY",
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_FX",
+            "ACCTP_OTHER_ACCOUNT_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CRDR_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CASH_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACTRNTP_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CASH_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_KEY",
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "dependent": [
+            "ACCTRN_CASH_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_FX",
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCTRN_CASH_FLAG"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACC_OTHER_ACCOUNT_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_KEY"
+        ],
+        "dependent": [
+            "ACCTP_OTHER_ACCOUNT_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_OTHER_ACCOUNT_KEY"
+        ],
+        "dependent": [
+            "ACCTP_OTHER_ACCOUNT_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACC_KEY",
+            "ACCTRN_AMOUNT_CZK"
+        ],
+        "dependent": [
+            "ACCTP_OTHER_ACCOUNT_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "ACCOUNT_TRANSACTIONS",
+        "determinant": [
+            "ACCTRN_AMOUNT_FX",
+            "ACC_KEY"
+        ],
+        "dependent": [
+            "ACCTP_OTHER_ACCOUNT_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_CLIENT_FROM_DATE_ALT",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PT_UNIFIED_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_CLIENT_FROM_DATE_ALT",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "ORG_KEY"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PTH_BIRTH_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PTH_BIRTH_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PTH_BIRTH_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_CLIENT_FROM_DATE_ALT",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PTH_BIRTH_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PTTP_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE"
+        ],
+        "dependent": [
+            "PTTP_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PTTP_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PTTP_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PSGEN_UNIFIED_ID"
+        ],
+        "dependent": [
+            "PTTP_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PT_UNIFIED_KEY"
+        ],
+        "dependent": [
+            "PSGEN_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_BIRTH_DATE"
+        ],
+        "dependent": [
+            "PSGEN_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PSGEN_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "ORG_KEY",
+            "PTH_CLIENT_FROM_DATE_ALT"
+        ],
+        "dependent": [
+            "PSGEN_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "PARTIES",
+        "determinant": [
+            "PTH_CLIENT_FROM_DATE_ALT",
+            "PTH_CLIENT_FROM_DATE"
+        ],
+        "dependent": [
+            "PSGEN_UNIFIED_ID"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

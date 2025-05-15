@@ -9,11 +9,11 @@ import os
 import json
 from pathlib import Path
 
-from algorithms.base_algorithm import BaseAlgorithm
-from algorithms.MATILDA.rule_discovery_core import RuleDiscoveryCore
+from .base_algorithm import BaseAlgorithm
+from .MATILDA.rule_discovery_core import RuleDiscoveryCore
 from utils.rules import Rule, TGDRuleFactory, TGDRule, EGDRule,FunctionalDependency
-from algorithms.MATILDA.rule_types import tgd_discovery, egd_discovery
-from algorithms.MATILDA.compatibility_checker import CompatibilityChecker
+from .MATILDA.rule_types import tgd_discovery, egd_discovery
+from .MATILDA.compatibility_checker import CompatibilityChecker
 
 
 class MATILDA(BaseAlgorithm):

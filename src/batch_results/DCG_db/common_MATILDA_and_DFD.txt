@@ -1,0 +1,5 @@
+# Règles communes sauvegardées: 1
+# Date: 2025-04-28 06:00:46
+
+1. sentences: id → class [conf=1.00, supp=564.00] <=> sentences: id → class
+

@@ -1,0 +1,1046 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "sat"
+        ],
+        "dependent": [
+            "grade"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 21.26086956521739,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "grade"
+        ],
+        "dependent": [
+            "sat"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 21.26086956521739,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "sat"
+        ],
+        "dependent": [
+            "grade"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6441717791411042,
+        "support": 0.49257232212666147,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "grade"
+        ],
+        "dependent": [
+            "sat"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.49257232212666147,
+        "support": 0.6441717791411042,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "grade"
+        ],
+        "dependent": [
+            "course_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 21.26086956521739,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "course_id"
+        ],
+        "dependent": [
+            "grade"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 21.26086956521739,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "grade"
+        ],
+        "dependent": [
+            "student_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 21.26086956521739,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "student_id"
+        ],
+        "dependent": [
+            "grade"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 21.26086956521739,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "capability"
+        ],
+        "dependent": [
+            "salary"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 6.4,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "salary"
+        ],
+        "dependent": [
+            "capability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 6.4,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "salary"
+        ],
+        "dependent": [
+            "prof_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 6.4,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "prof_id"
+        ],
+        "dependent": [
+            "salary"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 6.4,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "student_id"
+        ],
+        "dependent": [
+            "salary"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 6.4,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "salary"
+        ],
+        "dependent": [
+            "student_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 6.4,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "capability"
+        ],
+        "dependent": [
+            "prof_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.36,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "prof_id"
+        ],
+        "dependent": [
+            "capability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.36,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "student_id"
+        ],
+        "dependent": [
+            "capability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.36,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "capability"
+        ],
+        "dependent": [
+            "student_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.36,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "salary"
+        ],
+        "dependent": [
+            "capability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.36,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "capability"
+        ],
+        "dependent": [
+            "salary"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.36,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "salary"
+        ],
+        "dependent": [
+            "capability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5238095238095238,
+        "support": 0.275,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "RA",
+        "determinant": [
+            "capability"
+        ],
+        "dependent": [
+            "salary"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.275,
+        "support": 0.5238095238095238,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "course_id"
+        ],
+        "dependent": [
+            "diff"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "diff"
+        ],
+        "dependent": [
+            "course_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "rating"
+        ],
+        "dependent": [
+            "diff"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "diff"
+        ],
+        "dependent": [
+            "rating"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "ranking"
+        ],
+        "dependent": [
+            "student_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 6.631578947368421,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "student_id"
+        ],
+        "dependent": [
+            "ranking"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 6.631578947368421,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "ranking"
+        ],
+        "dependent": [
+            "intelligence"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 6.631578947368421,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "intelligence"
+        ],
+        "dependent": [
+            "ranking"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 6.631578947368421,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "prof_id"
+        ],
+        "dependent": [
+            "teachingability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "teachingability"
+        ],
+        "dependent": [
+            "prof_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "popularity"
+        ],
+        "dependent": [
+            "teachingability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "teachingability"
+        ],
+        "dependent": [
+            "popularity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "course_id"
+        ],
+        "dependent": [
+            "sat"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 27.804347826086957,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "sat"
+        ],
+        "dependent": [
+            "course_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 27.804347826086957,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "sat"
+        ],
+        "dependent": [
+            "student_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 27.804347826086957,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "student_id"
+        ],
+        "dependent": [
+            "sat"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 27.804347826086957,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "sat"
+        ],
+        "dependent": [
+            "grade"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 27.804347826086957,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "registration",
+        "determinant": [
+            "grade"
+        ],
+        "dependent": [
+            "sat"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 27.804347826086957,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "intelligence"
+        ],
+        "dependent": [
+            "ranking"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.789473684210526,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "ranking"
+        ],
+        "dependent": [
+            "intelligence"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.789473684210526,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "ranking"
+        ],
+        "dependent": [
+            "intelligence"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.46875,
+        "support": 0.8333333333333334,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "intelligence"
+        ],
+        "dependent": [
+            "ranking"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8333333333333334,
+        "support": 0.46875,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "intelligence"
+        ],
+        "dependent": [
+            "student_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.789473684210526,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "student",
+        "determinant": [
+            "student_id"
+        ],
+        "dependent": [
+            "intelligence"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.789473684210526,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "rating"
+        ],
+        "dependent": [
+            "diff"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.8,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "diff"
+        ],
+        "dependent": [
+            "rating"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.8,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "diff"
+        ],
+        "dependent": [
+            "rating"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4166666666666667,
+        "support": 0.5,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "rating"
+        ],
+        "dependent": [
+            "diff"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5,
+        "support": 0.4166666666666667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "rating"
+        ],
+        "dependent": [
+            "course_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.8,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "course",
+        "determinant": [
+            "course_id"
+        ],
+        "dependent": [
+            "rating"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.8,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "popularity"
+        ],
+        "dependent": [
+            "teachingability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3333333333333335,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "teachingability"
+        ],
+        "dependent": [
+            "popularity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3333333333333335,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "teachingability"
+        ],
+        "dependent": [
+            "popularity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5714285714285714,
+        "support": 0.6666666666666666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "popularity"
+        ],
+        "dependent": [
+            "teachingability"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6666666666666666,
+        "support": 0.5714285714285714,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "popularity"
+        ],
+        "dependent": [
+            "prof_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.3333333333333335,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "prof",
+        "determinant": [
+            "prof_id"
+        ],
+        "dependent": [
+            "popularity"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.3333333333333335,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

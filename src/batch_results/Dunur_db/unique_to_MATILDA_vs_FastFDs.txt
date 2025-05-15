@@ -1,0 +1,11 @@
+# FDs sauvegardées: 2
+# Date: 2025-04-28 06:31:41
+
+1. [FunctionalDependency] target: is_dunur → name1
+   Support: 231.66666666666666
+   Confiance: 231.66666666666666
+
+2. [FunctionalDependency] target: is_dunur → name2
+   Support: 231.66666666666666
+   Confiance: 231.66666666666666
+

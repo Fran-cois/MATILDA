@@ -1,0 +1,427 @@
+# FDs sauvegardées: 106
+# Date: 2025-04-28 13:21:21
+
+1. [FunctionalDependency] atom: type → charge
+   Support: 1101.9170243204578
+   Confiance: 1101.9170243204578
+
+2. [FunctionalDependency] atom: charge → type
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] atom: type → charge
+   Support: 0.9311610656978504
+   Confiance: 0.9311610656978504
+
+4. [FunctionalDependency] atom: charge → type
+   Support: 0.036508101371001245
+   Confiance: 0.036508101371001245
+
+5. [FunctionalDependency] atom: atom_id → type
+   Support: 1.0
+   Confiance: 1.0
+
+6. [FunctionalDependency] atom: type → atom_id
+   Support: 1101.9170243204578
+   Confiance: 1101.9170243204578
+
+7. [FunctionalDependency] atom: type → molecule_id
+   Support: 1101.9170243204578
+   Confiance: 1101.9170243204578
+
+8. [FunctionalDependency] atom: molecule_id → type
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] atom: element → type
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] atom: type → element
+   Support: 1101.9170243204578
+   Confiance: 1101.9170243204578
+
+11. [FunctionalDependency] molecule: mutagenic → molecule_id
+   Support: 103.22340425531915
+   Confiance: 103.22340425531915
+
+12. [FunctionalDependency] molecule: molecule_id → mutagenic
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] molecule: mutagenic → ind1
+   Support: 103.22340425531915
+   Confiance: 103.22340425531915
+
+14. [FunctionalDependency] molecule: ind1 → mutagenic
+   Support: 1.0
+   Confiance: 1.0
+
+15. [FunctionalDependency] molecule: mutagenic → inda
+   Support: 103.22340425531915
+   Confiance: 103.22340425531915
+
+16. [FunctionalDependency] molecule: inda → mutagenic
+   Support: 1.0
+   Confiance: 1.0
+
+17. [FunctionalDependency] molecule: logp → mutagenic
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] molecule: mutagenic → logp
+   Support: 103.22340425531915
+   Confiance: 103.22340425531915
+
+19. [FunctionalDependency] molecule: mutagenic → lumo
+   Support: 103.22340425531915
+   Confiance: 103.22340425531915
+
+20. [FunctionalDependency] molecule: lumo → mutagenic
+   Support: 1.0
+   Confiance: 1.0
+
+21. [FunctionalDependency] molecule: lumo → mutagenic
+   Support: 0.11702127659574468
+   Confiance: 0.11702127659574468
+
+22. [FunctionalDependency] molecule: mutagenic → lumo
+   Support: 1.0
+   Confiance: 1.0
+
+23. [FunctionalDependency] molecule: lumo → molecule_id
+   Support: 0.11702127659574468
+   Confiance: 0.11702127659574468
+
+24. [FunctionalDependency] molecule: molecule_id → lumo
+   Support: 1.0
+   Confiance: 1.0
+
+25. [FunctionalDependency] molecule: ind1 → lumo
+   Support: 1.0
+   Confiance: 1.0
+
+26. [FunctionalDependency] molecule: lumo → ind1
+   Support: 0.11702127659574468
+   Confiance: 0.11702127659574468
+
+27. [FunctionalDependency] molecule: inda → lumo
+   Support: 1.0
+   Confiance: 1.0
+
+28. [FunctionalDependency] molecule: lumo → inda
+   Support: 0.11702127659574468
+   Confiance: 0.11702127659574468
+
+29. [FunctionalDependency] molecule: lumo → logp
+   Support: 0.11702127659574468
+   Confiance: 0.11702127659574468
+
+30. [FunctionalDependency] molecule: logp → lumo
+   Support: 1.0
+   Confiance: 1.0
+
+31. [FunctionalDependency] bond: atom1_id → type
+   Support: 1.0
+   Confiance: 1.0
+
+32. [FunctionalDependency] bond: type → atom1_id
+   Support: 2148.8251001335116
+   Confiance: 2148.8251001335116
+
+33. [FunctionalDependency] bond: atom2_id → type
+   Support: 1.0
+   Confiance: 1.0
+
+34. [FunctionalDependency] bond: type → atom2_id
+   Support: 2148.8251001335116
+   Confiance: 2148.8251001335116
+
+35. [FunctionalDependency] molecule: logp → inda
+   Support: 1.0
+   Confiance: 1.0
+
+36. [FunctionalDependency] molecule: inda → logp
+   Support: 177.2659574468085
+   Confiance: 177.2659574468085
+
+37. [FunctionalDependency] molecule: logp → inda
+   Support: 0.012662785812878833
+   Confiance: 0.012662785812878833
+
+38. [FunctionalDependency] molecule: inda → logp
+   Support: 1.0
+   Confiance: 1.0
+
+39. [FunctionalDependency] molecule: inda → lumo
+   Support: 177.2659574468085
+   Confiance: 177.2659574468085
+
+40. [FunctionalDependency] molecule: lumo → inda
+   Support: 1.0
+   Confiance: 1.0
+
+41. [FunctionalDependency] molecule: mutagenic → inda
+   Support: 1.0
+   Confiance: 1.0
+
+42. [FunctionalDependency] molecule: inda → mutagenic
+   Support: 177.2659574468085
+   Confiance: 177.2659574468085
+
+43. [FunctionalDependency] molecule: inda → mutagenic
+   Support: 0.9381634546016696
+   Confiance: 0.9381634546016696
+
+44. [FunctionalDependency] molecule: mutagenic → inda
+   Support: 0.546300186040929
+   Confiance: 0.546300186040929
+
+45. [FunctionalDependency] molecule: molecule_id → inda
+   Support: 1.0
+   Confiance: 1.0
+
+46. [FunctionalDependency] molecule: inda → molecule_id
+   Support: 177.2659574468085
+   Confiance: 177.2659574468085
+
+47. [FunctionalDependency] molecule: ind1 → inda
+   Support: 1.0
+   Confiance: 1.0
+
+48. [FunctionalDependency] molecule: inda → ind1
+   Support: 177.2659574468085
+   Confiance: 177.2659574468085
+
+49. [FunctionalDependency] atom: element → type
+   Support: 1764.4937666053545
+   Confiance: 1764.4937666053545
+
+50. [FunctionalDependency] atom: type → element
+   Support: 1.0
+   Confiance: 1.0
+
+51. [FunctionalDependency] atom: element → type
+   Support: 1.0
+   Confiance: 1.0
+
+52. [FunctionalDependency] atom: type → element
+   Support: 0.6244947107069672
+   Confiance: 0.6244947107069672
+
+53. [FunctionalDependency] atom: charge → element
+   Support: 1.0
+   Confiance: 1.0
+
+54. [FunctionalDependency] atom: element → charge
+   Support: 1764.4937666053545
+   Confiance: 1764.4937666053545
+
+55. [FunctionalDependency] atom: charge → element
+   Support: 0.024302069525953512
+   Confiance: 0.024302069525953512
+
+56. [FunctionalDependency] atom: element → charge
+   Support: 0.9925446563729943
+   Confiance: 0.9925446563729943
+
+57. [FunctionalDependency] atom: element → atom_id
+   Support: 1764.4937666053545
+   Confiance: 1764.4937666053545
+
+58. [FunctionalDependency] atom: atom_id → element
+   Support: 1.0
+   Confiance: 1.0
+
+59. [FunctionalDependency] atom: molecule_id → element
+   Support: 1.0
+   Confiance: 1.0
+
+60. [FunctionalDependency] atom: element → molecule_id
+   Support: 1764.4937666053545
+   Confiance: 1764.4937666053545
+
+61. [FunctionalDependency] atom: molecule_id → element
+   Support: 26.544042509707747
+   Confiance: 26.544042509707747
+
+62. [FunctionalDependency] atom: element → molecule_id
+   Support: 1.0
+   Confiance: 1.0
+
+63. [FunctionalDependency] atom: molecule_id → type
+   Support: 26.544042509707747
+   Confiance: 26.544042509707747
+
+64. [FunctionalDependency] atom: type → molecule_id
+   Support: 1.0
+   Confiance: 1.0
+
+65. [FunctionalDependency] atom: molecule_id → charge
+   Support: 26.544042509707747
+   Confiance: 26.544042509707747
+
+66. [FunctionalDependency] atom: charge → molecule_id
+   Support: 1.0
+   Confiance: 1.0
+
+67. [FunctionalDependency] atom: charge → molecule_id
+   Support: 0.1699722821065599
+   Confiance: 0.1699722821065599
+
+68. [FunctionalDependency] atom: molecule_id → charge
+   Support: 0.10443157735392068
+   Confiance: 0.10443157735392068
+
+69. [FunctionalDependency] atom: molecule_id → atom_id
+   Support: 26.544042509707747
+   Confiance: 26.544042509707747
+
+70. [FunctionalDependency] atom: atom_id → molecule_id
+   Support: 1.0
+   Confiance: 1.0
+
+71. [FunctionalDependency] molecule: logp → lumo
+   Support: 2.24468085106383
+   Confiance: 2.24468085106383
+
+72. [FunctionalDependency] molecule: lumo → logp
+   Support: 1.0
+   Confiance: 1.0
+
+73. [FunctionalDependency] molecule: logp → mutagenic
+   Support: 2.24468085106383
+   Confiance: 2.24468085106383
+
+74. [FunctionalDependency] molecule: mutagenic → logp
+   Support: 1.0
+   Confiance: 1.0
+
+75. [FunctionalDependency] molecule: mutagenic → logp
+   Support: 0.8530805687203792
+   Confiance: 0.8530805687203792
+
+76. [FunctionalDependency] molecule: logp → mutagenic
+   Support: 0.018550963619499122
+   Confiance: 0.018550963619499122
+
+77. [FunctionalDependency] molecule: molecule_id → logp
+   Support: 1.0
+   Confiance: 1.0
+
+78. [FunctionalDependency] molecule: logp → molecule_id
+   Support: 2.24468085106383
+   Confiance: 2.24468085106383
+
+79. [FunctionalDependency] molecule: ind1 → logp
+   Support: 1.0
+   Confiance: 1.0
+
+80. [FunctionalDependency] molecule: logp → ind1
+   Support: 2.24468085106383
+   Confiance: 2.24468085106383
+
+81. [FunctionalDependency] molecule: inda → logp
+   Support: 1.0
+   Confiance: 1.0
+
+82. [FunctionalDependency] molecule: logp → inda
+   Support: 2.24468085106383
+   Confiance: 2.24468085106383
+
+83. [FunctionalDependency] atom: charge → atom_id
+   Support: 43.202942979767016
+   Confiance: 43.202942979767016
+
+84. [FunctionalDependency] atom: atom_id → charge
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] atom: charge → molecule_id
+   Support: 43.202942979767016
+   Confiance: 43.202942979767016
+
+86. [FunctionalDependency] atom: molecule_id → charge
+   Support: 1.0
+   Confiance: 1.0
+
+87. [FunctionalDependency] atom: charge → element
+   Support: 43.202942979767016
+   Confiance: 43.202942979767016
+
+88. [FunctionalDependency] atom: element → charge
+   Support: 1.0
+   Confiance: 1.0
+
+89. [FunctionalDependency] atom: charge → type
+   Support: 43.202942979767016
+   Confiance: 43.202942979767016
+
+90. [FunctionalDependency] atom: type → charge
+   Support: 1.0
+   Confiance: 1.0
+
+91. [FunctionalDependency] molecule: ind1 → inda
+   Support: 93.86170212765957
+   Confiance: 93.86170212765957
+
+92. [FunctionalDependency] molecule: inda → ind1
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] molecule: inda → ind1
+   Support: 0.9444633344667347
+   Confiance: 0.9444633344667347
+
+94. [FunctionalDependency] molecule: ind1 → inda
+   Support: 0.500090019804357
+   Confiance: 0.500090019804357
+
+95. [FunctionalDependency] molecule: logp → ind1
+   Support: 1.0
+   Confiance: 1.0
+
+96. [FunctionalDependency] molecule: ind1 → logp
+   Support: 93.86170212765957
+   Confiance: 93.86170212765957
+
+97. [FunctionalDependency] molecule: logp → ind1
+   Support: 0.022668026748271564
+   Confiance: 0.022668026748271564
+
+98. [FunctionalDependency] molecule: ind1 → logp
+   Support: 0.9478672985781991
+   Confiance: 0.9478672985781991
+
+99. [FunctionalDependency] molecule: ind1 → lumo
+   Support: 93.86170212765957
+   Confiance: 93.86170212765957
+
+100. [FunctionalDependency] molecule: lumo → ind1
+   Support: 1.0
+   Confiance: 1.0
+
+101. [FunctionalDependency] molecule: mutagenic → ind1
+   Support: 1.0
+   Confiance: 1.0
+
+102. [FunctionalDependency] molecule: ind1 → mutagenic
+   Support: 93.86170212765957
+   Confiance: 93.86170212765957
+
+103. [FunctionalDependency] molecule: mutagenic → ind1
+   Support: 0.7812535418791794
+   Confiance: 0.7812535418791794
+
+104. [FunctionalDependency] molecule: ind1 → mutagenic
+   Support: 0.7103988457178192
+   Confiance: 0.7103988457178192
+
+105. [FunctionalDependency] molecule: ind1 → molecule_id
+   Support: 93.86170212765957
+   Confiance: 93.86170212765957
+
+106. [FunctionalDependency] molecule: molecule_id → ind1
+   Support: 1.0
+   Confiance: 1.0
+

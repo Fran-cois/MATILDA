@@ -1,354 +1,420 @@
 # algorithms/dfd.py
 
+import ast
 import os
 import logging
 import pandas as pd
-import time
+import itertools
 from collections import defaultdict
-from typing import Dict, List, Set, Tuple, Generator, FrozenSet
-import random
+from datetime import datetime
 
 from algorithms.base_algorithm import BaseAlgorithm
 from utils.rules import FunctionalDependency, Rule
+from utils.run_cmd import run_cmd
 
 
 class DFD(BaseAlgorithm):
     """
-    Implémentation de l'algorithme DFD (Depth-First Discovery) pour la découverte de dépendances fonctionnelles.
-    
-    DFD utilise une stratégie de parcours en profondeur d'abord pour découvrir des dépendances
-    fonctionnelles minimales de manière efficace. Cette approche permet souvent de trouver rapidement
-    des dépendances sans avoir à explorer exhaustivement l'espace de recherche.
+    Implémentation de l'interface pour l'algorithme DFD (Depth-First Discovery) pour la découverte de dépendances fonctionnelles.
+    Cette implémentation utilise un JAR Java externe avec une solution de repli Python en cas d'échec.
     """
+    
+    def __init__(self, database):
+        """
+        Initialise l'algorithme DFD avec une base de données.
+        """
+        super().__init__(database)
+        self.min_confidence = 0.8  # Confiance minimale pour les règles
+        self.min_support = 0.1     # Support minimal pour les règles
+        self.max_lhs_size = 3      # Taille maximale du côté gauche des règles
 
-    def discover_rules(self, **kwargs) -> Generator[Rule, None, None]:
+    def verify_csv_file(self, file_path):
         """
-        Découvre les dépendances fonctionnelles à l'aide de l'algorithme DFD.
+        Vérifie si le fichier CSV est valide et contient des données.
         """
-        logging.info("Lancement de l'algorithme DFD (Depth-First Discovery)")
+        try:
+            # Vérifier si le fichier existe
+            if not os.path.exists(file_path):
+                logging.error(f"Le fichier n'existe pas: {file_path}")
+                return False
+                
+            # Vérifier si le fichier n'est pas vide
+            if os.path.getsize(file_path) == 0:
+                logging.error(f"Le fichier est vide: {file_path}")
+                return False
+                
+            # Essayer de lire le fichier avec pandas
+            df = pd.read_csv(file_path)
+            
+            # Vérifier s'il y a des colonnes
+            if len(df.columns) == 0:
+                logging.error(f"Le fichier n'a pas de colonnes: {file_path}")
+                return False
+                
+            # Vérifier s'il y a des données
+            if len(df) == 0:
+                logging.error(f"Le fichier n'a pas de données: {file_path}")
+                return False
+                
+            # Vérifier si toutes les colonnes ont des noms valides
+            if df.columns.isnull().any():
+                logging.error(f"Le fichier contient des noms de colonnes invalides: {file_path}")
+                return False
+                
+            logging.info(f"Fichier CSV valide: {file_path}")
+            logging.info(f"Nombre de colonnes: {len(df.columns)}")
+            logging.info(f"Nombre de lignes: {len(df)}")
+            logging.info(f"Colonnes: {list(df.columns)}")
+            
+            return True
+            
+        except Exception as e:
+            logging.error(f"Erreur lors de la vérification du fichier CSV {file_path}: {str(e)}")
+            return False
+
+    def discover_rules(self, **kwargs):
+        """
+        Découvre les dépendances fonctionnelles.
+        Essaie d'abord d'utiliser l'implémentation Java de l'algorithme DFD via le JAR externe.
+        En cas d'échec, utilise une implémentation Python simplifiée.
+        """
+        rules = {}
+        use_fallback = kwargs.get('use_fallback', False)
         
-        # Paramètres de l'algorithme
-        max_lhs_size = kwargs.get('max_lhs_size', 3)  # Taille maximale du déterminant
-        time_limit = kwargs.get('time_limit', 600)    # Limite de temps en secondes (10 minutes par défaut)
-        sample_size = kwargs.get('sample_size', None) # Taille de l'échantillon (None = utiliser toutes les données)
-        min_conf = kwargs.get('min_confidence', 0.9)  # Confiance minimale pour les dépendances approximatives
+        if not use_fallback:
+            logging.info("Lancement de l'algorithme DFD (version Java)")
+            try_java = self._discover_rules_java(**kwargs)
+            if try_java:
+                return try_java
+            logging.warning("L'exécution de DFD (Java) a échoué, utilisation de l'implémentation Python simplifiée")
         
-        start_time = time.time()
+        # Utiliser l'implémentation Python simplifiée
+        logging.info("Lancement de l'algorithme DFD (version Python simplifiée)")
+        return self._discover_rules_python(**kwargs)
+    
+    def _discover_rules_java(self, **kwargs):
+        """
+        Implémentation de la découverte de dépendances fonctionnelles via DFD (JAR Java).
+        """
+        rules = {}
+        
+        # Récupération des paramètres (pour l'information, ne pas les utiliser dans la commande)
+        max_lhs_size = kwargs.get('max_lhs_size', 3)  
+        min_conf = kwargs.get('min_confidence', 0.9)  
+        time_limit = kwargs.get('time_limit', 600)    
         
         try:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            algorithm_name = "DFD"
+            classPath = "de.metanome.algorithms.dfd.dfdMetanome.DFDMetanome"  # Correction du nom de classe
+            rule_type = "fds"
+            # Utiliser uniquement les options reconnues
+            params = " --file-key INPUT_FILES"
+
+            # Obtenir la liste des fichiers CSV
             csv_files = [
                 os.path.join(self.database.base_csv_dir, f)
                 for f in os.listdir(self.database.base_csv_dir)
                 if f.endswith('.csv')
             ]
             
-            logging.info(f"Fichiers CSV trouvés: {len(csv_files)}")
+            logging.info(f"Traitement de {len(csv_files)} fichiers CSV individuellement")
             
-            # Pour chaque fichier CSV, découvrir les dépendances fonctionnelles
+            # Traiter chaque fichier séparément pour éviter les problèmes
             for csv_file in csv_files:
                 table_name = os.path.basename(csv_file).replace('.csv', '')
-                logging.info(f"Analyse du fichier: {csv_file} (table: {table_name})")
+                logging.info(f"Traitement du fichier: {csv_file} (table: {table_name})")
                 
-                # Lire le fichier CSV avec pandas
+                current_time = datetime.now()
+                jar_path = f"{script_dir}/bins/metanome/"
+                file_name = f'{current_time.strftime("%Y-%m-%d_%H-%M-%S")}_{algorithm_name}_{table_name}'
+                
+                # Ajouter tous les JAR du répertoire dans le classpath
+                all_jars = [f"{jar_path}{jar_file}" for jar_file in os.listdir(jar_path) if jar_file.endswith('.jar')]
+                classpath = ":".join(all_jars)
+                
+                cmd_string = (
+                    f"""java -Xmx4g -cp {jar_path}metanome-cli-1.2-SNAPSHOT.jar:{jar_path}*.jar """
+                    f"""de.metanome.cli.App --algorithm {classPath} --files {csv_file} """
+                    f"""--file-key INPUT_FILES --separator "," --header """
+                    f"""--output file:{file_name}"""
+                )
+                
+                # Précharger le fichier CSV pour éviter le NullPointerException
                 try:
-                    # Chargement des données avec échantillonnage optionnel
-                    if sample_size and sample_size > 0:
-                        df_full = pd.read_csv(csv_file)
-                        if len(df_full) > sample_size:
-                            df = df_full.sample(n=sample_size, random_state=42)
-                            logging.info(f"Échantillonnage de {sample_size} lignes sur {len(df_full)}")
-                        else:
-                            df = df_full
-                    else:
-                        df = pd.read_csv(csv_file)
+                    # Vérifier le contenu du fichier CSV
+                    import pandas as pd
+                    df = pd.read_csv(csv_file)
+                    logging.info(f"Fichier CSV préchargé avec succès. Colonnes: {list(df.columns)}")
                     
-                    if len(df.columns) <= 1:
-                        logging.warning(f"Table {table_name} a moins de 2 colonnes. Ignorée.")
+                    if len(df) == 0:
+                        logging.error(f"Le fichier CSV {csv_file} est vide")
                         continue
+                except Exception as e:
+                    logging.error(f"Erreur lors du préchargement du fichier CSV {csv_file}: {str(e)}")
+                    continue
+                    
+                cmd_string = (
+                    f"""java -Xmx4g -cp {jar_path}metanome-cli-1.2-SNAPSHOT.jar:{jar_path}*.jar """
+                    f"""de.metanome.cli.App --algorithm de.metanome.algorithms.dfd.dfdMetanome.DFDMetanome --files {csv_file} """
+                    f"""--file-key INPUT_FILES --separator "," --header """
+                    f"""--output file:{file_name}"""
+                )
+                
+                logging.info(f"Exécution de la commande: {cmd_string}")
+                
+                if not run_cmd(cmd_string):
+                    logging.error(f"Échec de l'exécution de DFD pour {table_name}")
+                    logging.info(f"Utilisation de l'implémentation Python comme solution de secours pour {table_name}")
+                    
+                    # DFD est un algorithme d'approximation qui utilise des techniques d'échantillonnage
+                    # Implémentons une version simplifiée basée sur l'approche de DFD
+                    try:
+                        import pandas as pd
+                        from itertools import combinations
+                        import random
                         
-                    logging.info(f"Table {table_name}: {len(df)} lignes, {len(df.columns)} colonnes")
+                        # Utiliser le df déjà chargé plus haut
+                        columns = list(df.columns)
+                        num_rows = len(df)
+                        
+                        # Réduire la taille du dataset si nécessaire (échantillonnage comme DFD)
+                        sample_size = min(num_rows, 1000)  # Limiter la taille pour les grands datasets
+                        if num_rows > sample_size:
+                            df_sample = df.sample(sample_size, random_state=42)
+                        else:
+                            df_sample = df
+                        
+                        # Dictionnaire pour stocker les FDs découvertes pour cette table
+                        table_fds = {}
+                        
+                        # La stratégie DFD est de chercher des FDs approximatives
+                        # en minimisant le nombre de violations
+                        for rhs_col in columns:
+                            # Pour chaque colonne potentiellement déterminée
+                            
+                            # Tester d'abord les dépendances avec une seule colonne (niveau 1)
+                            for lhs_col in columns:
+                                if lhs_col == rhs_col:
+                                    continue
+                                
+                                # Vérifier dans l'échantillon si lhs -> rhs est une FD
+                                # Compter les violations (tuples avec même lhs mais rhs différent)
+                                groups = df_sample.groupby(lhs_col)
+                                violations = 0
+                                total_groups = 0
+                                
+                                for _, group in groups:
+                                    total_groups += 1
+                                    if len(group[rhs_col].unique()) > 1:
+                                        violations += 1
+                                
+                                # Calculer un score d'erreur (ratio de violations)
+                                if total_groups > 0:
+                                    error_rate = violations / total_groups
+                                    confidence = 1.0 - error_rate
+                                    
+                                    # Ajouter si la confiance est suffisante
+                                    if confidence >= self.min_confidence:
+                                        rule_key = f"{lhs_col} -> {rhs_col}"
+                                        table_fds[rule_key] = {
+                                            "rule": rule_key,
+                                            "table": table_name,
+                                            "confidence": confidence,
+                                            "support": total_groups / num_rows
+                                        }
+                            
+                            # Essayer des combinaisons de colonnes (niveau 2)
+                            # DFD utilise une approche plus sophistiquée, mais ceci est une simplification
+                            for lhs_cols in combinations([c for c in columns if c != rhs_col], 2):
+                                # Vérifier les violations pour cette combinaison
+                                groups = df_sample.groupby(list(lhs_cols))
+                                violations = 0
+                                total_groups = 0
+                                
+                                for _, group in groups:
+                                    total_groups += 1
+                                    if len(group[rhs_col].unique()) > 1:
+                                        violations += 1
+                                
+                                if total_groups > 0:
+                                    error_rate = violations / total_groups
+                                    confidence = 1.0 - error_rate
+                                    
+                                    if confidence >= self.min_confidence:
+                                        rule_key = f"{','.join(lhs_cols)} -> {rhs_col}"
+                                        table_fds[rule_key] = {
+                                            "rule": rule_key,
+                                            "table": table_name,
+                                            "confidence": confidence,
+                                            "support": total_groups / num_rows
+                                        }
+                        
+                        # Ajouter les FDs de cette table au résultat global
+                        rules.update(table_fds)
+                        logging.info(f"Implémentation Python DFD a découvert {len(table_fds)} dépendances fonctionnelles pour {table_name}")
+                    except Exception as e:
+                        logging.error(f"Erreur lors de l'implémentation Python de DFD pour {table_name}: {str(e)}")
                     
-                    # Calculer les partitions d'attributs pour une recherche efficace
-                    partitions = self._compute_partitions(df)
-                    
-                    # Découvrir les dépendances fonctionnelles avec DFD
-                    for target_col in df.columns:
-                        discovered_fds = self._depth_first_discovery(
-                            df, 
-                            partitions,
-                            target_col,
-                            max_lhs_size, 
-                            start_time,
-                            time_limit,
-                            min_conf
+                    continue  # Passer au fichier suivant
+                
+                # Traiter les résultats pour ce fichier
+                result_file_path = os.path.join("results", f"{file_name}_{rule_type}")
+                
+                try:
+                    with open(result_file_path, mode="r") as f:
+                        raw_rules = [line for line in f if line.strip()]
+                except FileNotFoundError:
+                    logging.error(f"Fichier de résultats non trouvé: {result_file_path}")
+                    continue
+
+                if os.path.exists(result_file_path):
+                    os.remove(result_file_path)
+
+                # Traiter les règles de ce fichier
+                for raw_rule in raw_rules:
+                    try:
+                        raw_rule = ast.literal_eval(raw_rule)
+                    except (ValueError, SyntaxError) as e:
+                        logging.warning(f"Format de règle invalide: {raw_rule} - {e}")
+                        continue  # Ignorer les formats de règle invalides
+
+                    try:
+                        # Parse les dépendances fonctionnelles depuis le format JSON retourné par DFD
+                        determinant_columns = tuple(
+                            col["columnIdentifier"] for col in raw_rule.get("determinant", {}).get("columnIdentifiers", [])
                         )
                         
-                        # Yield chaque dépendance fonctionnelle découverte
-                        for determinant, confidence in discovered_fds:
-                            det_tuple = tuple(sorted(determinant))
-                            
-                            # Créer une dépendance fonctionnelle
-                            try:
-                                fd = None
-                                try:
-                                    # Version avec table_dependant, etc.
-                                    fd = FunctionalDependency(
-                                        table_dependant=table_name,
-                                        columns_dependant=det_tuple,
-                                        table_referenced=table_name,
-                                        columns_referenced=(target_col,),
-                                        table=table_name
-                                    )
-                                except TypeError:
-                                    # Version simplifiée
-                                    fd = FunctionalDependency(table_name, det_tuple, (target_col,))
-                                
-                                if fd:
-                                    # Au lieu d'essayer de modifier l'objet directement,
-                                    # stockons la confiance dans le dictionnaire que nous retournons
-                                    # avec la règle comme clé
-                                    yield fd
-                                    # Logging de la confiance à des fins d'information
-                                    logging.info(f"Dépendance avec confiance {confidence:.3f}: {table_name}.{det_tuple} -> {table_name}.{target_col}")
-                            except Exception as e:
-                                logging.error(f"Erreur lors de la création de la dépendance: {str(e)}")
-                
-                except Exception as e:
-                    logging.error(f"Erreur lors de l'analyse de {csv_file}: {str(e)}")
-                    continue
+                        dependant_columns = tuple(
+                            col["columnIdentifier"] for col in raw_rule.get("dependant", {}).get("columnIdentifiers", [])
+                        )
+                        
+                        # Récupération de la confiance si disponible
+                        confidence = raw_rule.get("confidence", 1.0)
+                        
+                        if determinant_columns and dependant_columns:
+                            fd = FunctionalDependency(
+                                table_dependant=table_name,
+                                columns_dependant=determinant_columns,
+                                table_referenced=table_name,
+                                columns_referenced=dependant_columns,
+                                table=table_name
+                            )
+                            rules[fd] = (1.0, confidence)  # Support à 1.0, confiance selon la règle
+                            logging.info(f"Dépendance fonctionnelle découverte: {fd} (confiance: {confidence})")
+                    except (KeyError, IndexError, AttributeError) as e:
+                        logging.warning(f"Données de règle malformées: {raw_rule} - {e}")
+                        continue  # Ignorer les données de règle malformées
+            
+            logging.info(f"Découvert {len(rules)} dépendances fonctionnelles au total")
+            return rules if rules else None
                 
         except Exception as e:
-            logging.error(f"Erreur lors de la découverte des dépendances: {str(e)}")
+            logging.error(f"Erreur lors de la découverte des dépendances fonctionnelles via Java: {str(e)}")
+            return None
     
-    def _compute_partitions(self, df: pd.DataFrame) -> Dict[str, Dict]:
+    def _discover_rules_python(self, **kwargs):
         """
-        Calcule les partitions d'attributs pour tous les attributs.
-        Une partition groupe les indices des lignes par valeur d'attribut.
-        
-        :param df: DataFrame pandas contenant les données
-        :return: Dictionnaire des partitions par attribut
+        Implémentation Python simplifiée pour découvrir les dépendances fonctionnelles.
+        Utilise une approche simple par paires de colonnes.
         """
-        partitions = {}
+        import pandas as pd
+        import itertools
+        from collections import defaultdict
         
-        for col in df.columns:
-            partition = defaultdict(list)
-            for idx, value in enumerate(df[col]):
-                key = value if not pd.isna(value) else "__NULL__"
-                partition[key].append(idx)
-            partitions[col] = dict(partition)
+        rules = {}
+        
+        try:
+            # Récupération des paramètres
+            max_lhs_size = kwargs.get('max_lhs_size', 1)  # Par défaut, limiter à des dépendances simples
             
-        return partitions
-    
-    def _depth_first_discovery(
-        self, 
-        df: pd.DataFrame,
-        partitions: Dict[str, Dict], 
-        target: str,
-        max_lhs_size: int,
-        start_time: float,
-        time_limit: float,
-        min_conf: float
-    ) -> List[Tuple[FrozenSet[str], float]]:
-        """
-        Algorithme de découverte en profondeur d'abord des dépendances fonctionnelles.
-        
-        :param df: DataFrame pandas contenant les données
-        :param partitions: Partitions pré-calculées des attributs
-        :param target: Colonne cible (partie droite de la dépendance)
-        :param max_lhs_size: Taille maximale des déterminants
-        :param start_time: Heure de début de l'algorithme
-        :param time_limit: Limite de temps en secondes
-        :param min_conf: Confiance minimale pour les dépendances approximatives
-        :return: Liste des déterminants minimaux avec leur confiance
-        """
-        logging.info(f"Recherche de dépendances pour la cible: {target}")
-        
-        results = []
-        visited = set()  # Ensembles d'attributs déjà visités
-        minimal_deps = set()  # Déterminants minimaux trouvés
-        candidates = []  # Pile pour DFS
-        
-        # Exclure la colonne cible des attributs candidats
-        attributes = [col for col in df.columns if col != target]
-        
-        # Calculer la partition cible une seule fois
-        target_partition = partitions[target]
-        
-        # Initialisation de la pile avec des ensembles d'attributs vides
-        candidates.append(frozenset())
-        
-        while candidates and (time.time() - start_time) < time_limit:
-            # Prendre le prochain candidat
-            current = candidates.pop()
+            # Obtenir la liste des fichiers CSV
+            csv_files = [
+                os.path.join(self.database.base_csv_dir, f)
+                for f in os.listdir(self.database.base_csv_dir)
+                if f.endswith('.csv')
+            ]
             
-            # Si déjà visité, ignorer
-            if current in visited:
-                continue
+            logging.info(f"Traitement de {len(csv_files)} fichiers CSV avec l'implémentation Python")
+            
+            # Traiter chaque fichier séparément
+            for csv_file in csv_files:
+                if not self.verify_csv_file(csv_file):
+                    logging.warning(f"Fichier CSV invalide, ignoré: {csv_file}")
+                    continue
                 
-            visited.add(current)
-            
-            # Vérifier si c'est déjà un sur-ensemble d'une dépendance minimale connue
-            if any(min_dep.issubset(current) for min_dep in minimal_deps):
-                continue
-            
-            # Vérifier si current est un déterminant pour target
-            if len(current) > 0:  # Ignorer l'ensemble vide
-                conf = self._calculate_dependency_confidence(df, current, target, partitions)
+                table_name = os.path.basename(csv_file).replace('.csv', '')
+                logging.info(f"Traitement du fichier: {csv_file} (table: {table_name})")
                 
-                if conf >= min_conf:
-                    # Vérifier si c'est un déterminant minimal
-                    is_minimal = True
-                    for attr in current:
-                        subset = frozenset(x for x in current if x != attr)
-                        if subset in visited and any(min_dep.issubset(subset) for min_dep in minimal_deps):
-                            is_minimal = False
-                            break
+                try:
+                    # Lire le fichier CSV avec pandas
+                    df = pd.read_csv(csv_file)
                     
-                    if is_minimal:
-                        minimal_deps.add(current)
-                        results.append((current, conf))
-                        #logging.info(f"Dépendance trouvée: {sorted(current)} -> {target} (conf: {conf:.3f})")
-                        continue  # Pas besoin d'explorer les sur-ensembles
-            
-            # Si on n'a pas atteint la taille maximale, ajouter des candidats fils
-            if len(current) < max_lhs_size:
-                # Choisir les attributs à ajouter (ceux qui ne sont pas déjà dans l'ensemble)
-                available_attrs = [attr for attr in attributes if attr not in current]
+                    # Découvrir les dépendances fonctionnelles pour ce fichier
+                    file_fds = self._discover_fds_simple(df, table_name, max_lhs_size)
+                    
+                    # Ajouter les dépendances découvertes au résultat global
+                    for fd in file_fds:
+                        rules[fd] = (1, 1)  # Support et confiance à 1 pour les dépendances exactes
                 
-                # Utiliser une heuristique pour ordonner les attributs
-                # Par exemple, on peut choisir de prioriser les attributs qui ont le plus de valeurs uniques
-                available_attrs = self._order_attributes_heuristic(df, available_attrs, current, target)
-                
-                # Ajouter les nouveaux candidats à la pile
-                for attr in available_attrs:
-                    new_candidate = frozenset(current.union([attr]))
-                    if new_candidate not in visited:
-                        candidates.append(new_candidate)
-        
-        # Si on a atteint la limite de temps
-        if (time.time() - start_time) >= time_limit:
-            logging.warning(f"Limite de temps atteinte pour la cible {target}. Exploration incomplète.")
+                except Exception as e:
+                    logging.error(f"Erreur lors du traitement du fichier {csv_file}: {str(e)}")
+                    continue
             
-        return results
-    
-    def _calculate_dependency_confidence(
-        self, 
-        df: pd.DataFrame, 
-        determinant: FrozenSet[str], 
-        target: str,
-        partitions: Dict[str, Dict]
-    ) -> float:
+            logging.info(f"Découvert {len(rules)} dépendances fonctionnelles au total avec l'implémentation Python")
+            return rules
+                
+        except Exception as e:
+            logging.error(f"Erreur lors de la découverte des dépendances fonctionnelles via Python: {str(e)}")
+            return {}
+            
+    def _discover_fds_simple(self, df, table_name, max_lhs_size=1):
         """
-        Calcule la confiance d'une dépendance fonctionnelle X → Y.
-        La confiance est le rapport entre le nombre de valeurs distinctes de X
-        et le nombre de combinaisons distinctes de valeurs (X, Y).
-        
-        :param df: DataFrame pandas contenant les données
-        :param determinant: Ensemble des attributs déterminants (X)
-        :param target: Attribut cible (Y)
-        :param partitions: Partitions d'attributs pré-calculées
-        :return: Confiance de la dépendance (entre 0 et 1)
+        Méthode simplifiée pour découvrir les dépendances fonctionnelles.
+        Cette implémentation vérifie les dépendances avec au plus max_lhs_size colonnes dans le déterminant.
         """
-        # Si le déterminant est vide, c'est une constante
-        if not determinant:
-            # Vérifier si la cible est une constante
-            return 1.0 if len(partitions[target]) == 1 else 0.0
+        import itertools
+        from collections import defaultdict
         
-        # Utiliser les partitions pour vérifier la dépendance rapidement
-        det_list = list(determinant)
+        discovered_fds = []
+        columns = list(df.columns)
         
-        # Méthode optimisée pour les grands ensembles de données
-        # Calculer la partition jointure des déterminants
-        if len(det_list) == 1:
-            # Cas spécial: un seul attribut déterminant
-            X_partition = partitions[det_list[0]]
-        else:
-            # Combiner les partitions
-            # Créer un dictionnaire qui mappe chaque tuple de valeurs de déterminants
-            # à l'ensemble des indices de lignes qui ont ces valeurs
-            X_partition = defaultdict(list)
-            
-            # Prendre une stratégie d'intersection pour calculer la partition
-            # On commence avec la partition de l'attribut qui a le moins de classes d'équivalence
-            smallest_partition_attr = min(det_list, key=lambda x: len(partitions[x]))
-            base_partition = partitions[smallest_partition_attr]
-            
-            # Pour chaque classe d'équivalence dans la partition de base
-            for val, indices in base_partition.items():
-                # Grouper davantage par les autres attributs
-                value_map = defaultdict(list)
-                
-                for idx in indices:
-                    # Créer un tuple des valeurs de tous les attributs déterminants pour cette ligne
-                    key = tuple(df.iloc[idx][attr] for attr in det_list)
-                    value_map[key].append(idx)
-                
-                # Ajouter chaque groupe à la partition X
-                for k, v in value_map.items():
-                    X_partition[k] = v
+        # Pour chaque taille possible du déterminant jusqu'à max_lhs_size
+        for lhs_size in range(1, min(max_lhs_size + 1, len(columns))):
+            # Pour chaque combinaison possible de colonnes comme déterminant
+            for lhs_cols in itertools.combinations(columns, lhs_size):
+                # Pour chaque colonne possible comme dépendante
+                for rhs_col in columns:
+                    # Ignorer si la colonne dépendante est dans le déterminant
+                    if rhs_col in lhs_cols:
+                        continue
+                    
+                    # Créer un dictionnaire pour regrouper les valeurs de rhs_col par valeurs de lhs_cols
+                    dependency_dict = defaultdict(set)
+                    
+                    # Remplir le dictionnaire avec les valeurs
+                    for _, row in df.iterrows():
+                        # Créer une clé composite pour les valeurs du déterminant
+                        lhs_key = tuple(str(row[col]) for col in lhs_cols)
+                        rhs_val = str(row[rhs_col])
+                        dependency_dict[lhs_key].add(rhs_val)
+                    
+                    # Si pour chaque valeur distincte de lhs_cols, il y a exactement une valeur de rhs_col,
+                    # alors lhs_cols -> rhs_col est une dépendance fonctionnelle
+                    is_fd = all(len(values) == 1 for values in dependency_dict.values())
+                    
+                    if is_fd:
+                        try:
+                            fd = FunctionalDependency(
+                                table_dependant=table_name,
+                                columns_dependant=lhs_cols,
+                                table_referenced=table_name,
+                                columns_referenced=(rhs_col,),
+                                table=table_name
+                            )
+                            discovered_fds.append(fd)
+                            logging.info(f"Dépendance fonctionnelle découverte: {table_name}.{','.join(lhs_cols)} -> {table_name}.{rhs_col}")
+                        except Exception as e:
+                            logging.error(f"Erreur lors de la création de la dépendance fonctionnelle: {e}")
         
-        # Calculer la confiance
-        total_X_classes = len(X_partition)
-        if total_X_classes == 0:
-            return 0.0
-            
-        violations = 0
-        
-        # Pour chaque classe d'équivalence dans X_partition
-        for indices in X_partition.values():
-            if len(indices) > 1:
-                # Vérifier si tous les tuples dans cette classe ont la même valeur pour target
-                target_values = set(df.iloc[idx][target] for idx in indices)
-                if len(target_values) > 1:
-                    violations += 1
-        
-        # La confiance est le pourcentage de classes d'équivalence qui n'ont pas de violations
-        conf = 1.0 - (violations / total_X_classes)
-        return conf
-    
-    def _order_attributes_heuristic(
-        self, 
-        df: pd.DataFrame, 
-        available_attrs: List[str], 
-        current_set: FrozenSet[str],
-        target: str
-    ) -> List[str]:
-        """
-        Ordonne les attributs selon une heuristique pour optimiser la recherche en profondeur.
-        Cette implémentation utilise le nombre de valeurs distinctes comme heuristique.
-        
-        :param df: DataFrame pandas contenant les données
-        :param available_attrs: Liste des attributs disponibles à ajouter
-        :param current_set: Ensemble courant d'attributs
-        :param target: Attribut cible
-        :return: Liste ordonnée d'attributs
-        """
-        # Par défaut, on peut ordonner selon le nombre de valeurs distinctes (décroissant)
-        # L'intuition est que les attributs avec plus de valeurs distinctes ont plus de chances
-        # de déterminer la valeur cible
-        attribute_scores = []
-        
-        for attr in available_attrs:
-            # Nombre de valeurs distinctes de l'attribut
-            distinct_count = df[attr].nunique()
-            # Corrélation avec la cible (si possible)
-            try:
-                correlation = abs(df[attr].corr(df[target]))
-                if pd.isna(correlation):
-                    correlation = 0
-            except:
-                correlation = 0
-                
-            # Score combiné: plus de valeurs distinctes et plus de corrélation = meilleur score
-            score = distinct_count * (1 + correlation)
-            attribute_scores.append((attr, score))
-        
-        # Trier par score décroissant
-        ordered_attrs = [attr for attr, _ in sorted(attribute_scores, key=lambda x: -x[1])]
-        
-        # Ajouter un peu de hasard pour éviter les minima locaux
-        if len(ordered_attrs) > 1 and random.random() < 0.2:
-            i, j = random.sample(range(len(ordered_attrs)), 2)
-            ordered_attrs[i], ordered_attrs[j] = ordered_attrs[j], ordered_attrs[i]
-            
-        return ordered_attrs
+        return discovered_fds

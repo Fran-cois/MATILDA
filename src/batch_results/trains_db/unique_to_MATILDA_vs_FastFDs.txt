@@ -1,0 +1,895 @@
+# FDs sauvegardées: 223
+# Date: 2025-04-27 17:27:26
+
+1. [FunctionalDependency] cars: shape → len
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+2. [FunctionalDependency] cars: len → shape
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] cars: shape → len
+   Support: 0.5043562439496612
+   Confiance: 0.5043562439496612
+
+4. [FunctionalDependency] cars: len → shape
+   Support: 0.5189243027888446
+   Confiance: 0.5189243027888446
+
+5. [FunctionalDependency] cars: shape → sides
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+6. [FunctionalDependency] cars: sides → shape
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] cars: sides → shape
+   Support: 0.8406374501992032
+   Confiance: 0.8406374501992032
+
+8. [FunctionalDependency] cars: shape → sides
+   Support: 0.49155503785672683
+   Confiance: 0.49155503785672683
+
+9. [FunctionalDependency] cars: roof → shape
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] cars: shape → roof
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+11. [FunctionalDependency] cars: shape → roof
+   Support: 0.4718004338394794
+   Confiance: 0.4718004338394794
+
+12. [FunctionalDependency] cars: roof → shape
+   Support: 0.43326693227091634
+   Confiance: 0.43326693227091634
+
+13. [FunctionalDependency] cars: shape → wheels
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+14. [FunctionalDependency] cars: wheels → shape
+   Support: 1.0
+   Confiance: 1.0
+
+15. [FunctionalDependency] cars: shape → wheels
+   Support: 0.46661981728742097
+   Confiance: 0.46661981728742097
+
+16. [FunctionalDependency] cars: wheels → shape
+   Support: 0.6613545816733067
+   Confiance: 0.6613545816733067
+
+17. [FunctionalDependency] cars: load_shape → shape
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] cars: shape → load_shape
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+19. [FunctionalDependency] cars: shape → load_shape
+   Support: 0.5338345864661654
+   Confiance: 0.5338345864661654
+
+20. [FunctionalDependency] cars: load_shape → shape
+   Support: 0.28286852589641437
+   Confiance: 0.28286852589641437
+
+21. [FunctionalDependency] cars: shape → load_num
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+22. [FunctionalDependency] cars: load_num → shape
+   Support: 1.0
+   Confiance: 1.0
+
+23. [FunctionalDependency] cars: shape → load_num
+   Support: 0.441527446300716
+   Confiance: 0.441527446300716
+
+24. [FunctionalDependency] cars: load_num → shape
+   Support: 0.5527888446215139
+   Confiance: 0.5527888446215139
+
+25. [FunctionalDependency] cars: shape → id
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+26. [FunctionalDependency] cars: shape → train_id
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+27. [FunctionalDependency] cars: train_id → shape
+   Support: 1.0
+   Confiance: 1.0
+
+28. [FunctionalDependency] cars: position → shape
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] cars: shape → position
+   Support: 31.873015873015873
+   Confiance: 31.873015873015873
+
+30. [FunctionalDependency] cars: roof → wheels
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+31. [FunctionalDependency] cars: wheels → roof
+   Support: 1.0
+   Confiance: 1.0
+
+32. [FunctionalDependency] cars: roof → wheels
+   Support: 0.5572733661278988
+   Confiance: 0.5572733661278988
+
+33. [FunctionalDependency] cars: wheels → roof
+   Support: 0.8600867678958786
+   Confiance: 0.8600867678958786
+
+34. [FunctionalDependency] cars: roof → load_shape
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+35. [FunctionalDependency] cars: load_shape → roof
+   Support: 1.0
+   Confiance: 1.0
+
+36. [FunctionalDependency] cars: load_shape → roof
+   Support: 0.2765726681127983
+   Confiance: 0.2765726681127983
+
+37. [FunctionalDependency] cars: roof → load_shape
+   Support: 0.4793233082706767
+   Confiance: 0.4793233082706767
+
+38. [FunctionalDependency] cars: load_num → roof
+   Support: 1.0
+   Confiance: 1.0
+
+39. [FunctionalDependency] cars: roof → load_num
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+40. [FunctionalDependency] cars: load_num → roof
+   Support: 0.702819956616052
+   Confiance: 0.702819956616052
+
+41. [FunctionalDependency] cars: roof → load_num
+   Support: 0.5155131264916468
+   Confiance: 0.5155131264916468
+
+42. [FunctionalDependency] cars: roof → id
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+43. [FunctionalDependency] cars: train_id → roof
+   Support: 1.0
+   Confiance: 1.0
+
+44. [FunctionalDependency] cars: roof → train_id
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+45. [FunctionalDependency] cars: roof → position
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+46. [FunctionalDependency] cars: position → roof
+   Support: 1.0
+   Confiance: 1.0
+
+47. [FunctionalDependency] cars: roof → shape
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+48. [FunctionalDependency] cars: shape → roof
+   Support: 1.0
+   Confiance: 1.0
+
+49. [FunctionalDependency] cars: roof → len
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+50. [FunctionalDependency] cars: len → roof
+   Support: 1.0
+   Confiance: 1.0
+
+51. [FunctionalDependency] cars: roof → sides
+   Support: 29.26984126984127
+   Confiance: 29.26984126984127
+
+52. [FunctionalDependency] cars: sides → roof
+   Support: 1.0
+   Confiance: 1.0
+
+53. [FunctionalDependency] cars: roof → sides
+   Support: 1.0
+   Confiance: 1.0
+
+54. [FunctionalDependency] cars: sides → roof
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+55. [FunctionalDependency] cars: sides → roof
+   Support: 0.8394793926247288
+   Confiance: 0.8394793926247288
+
+56. [FunctionalDependency] cars: roof → sides
+   Support: 0.4507862550960978
+   Confiance: 0.4507862550960978
+
+57. [FunctionalDependency] cars: sides → wheels
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+58. [FunctionalDependency] cars: wheels → sides
+   Support: 1.0
+   Confiance: 1.0
+
+59. [FunctionalDependency] cars: wheels → sides
+   Support: 0.714618520675597
+   Confiance: 0.714618520675597
+
+60. [FunctionalDependency] cars: sides → wheels
+   Support: 0.8622628250175686
+   Confiance: 0.8622628250175686
+
+61. [FunctionalDependency] cars: load_shape → sides
+   Support: 1.0
+   Confiance: 1.0
+
+62. [FunctionalDependency] cars: sides → load_shape
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+63. [FunctionalDependency] cars: sides → load_shape
+   Support: 0.8834586466165414
+   Confiance: 0.8834586466165414
+
+64. [FunctionalDependency] cars: load_shape → sides
+   Support: 0.27373325567850904
+   Confiance: 0.27373325567850904
+
+65. [FunctionalDependency] cars: load_num → sides
+   Support: 1.0
+   Confiance: 1.0
+
+66. [FunctionalDependency] cars: sides → load_num
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+67. [FunctionalDependency] cars: sides → load_num
+   Support: 0.8536197295147175
+   Confiance: 0.8536197295147175
+
+68. [FunctionalDependency] cars: load_num → sides
+   Support: 0.6249271986022131
+   Confiance: 0.6249271986022131
+
+69. [FunctionalDependency] cars: sides → id
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+70. [FunctionalDependency] cars: sides → train_id
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+71. [FunctionalDependency] cars: train_id → sides
+   Support: 1.0
+   Confiance: 1.0
+
+72. [FunctionalDependency] cars: position → sides
+   Support: 1.0
+   Confiance: 1.0
+
+73. [FunctionalDependency] cars: sides → position
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+74. [FunctionalDependency] cars: sides → shape
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+75. [FunctionalDependency] cars: shape → sides
+   Support: 1.0
+   Confiance: 1.0
+
+76. [FunctionalDependency] cars: len → sides
+   Support: 1.0
+   Confiance: 1.0
+
+77. [FunctionalDependency] cars: sides → len
+   Support: 54.507936507936506
+   Confiance: 54.507936507936506
+
+78. [FunctionalDependency] cars: load_num → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+79. [FunctionalDependency] cars: load_shape → load_num
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+80. [FunctionalDependency] cars: load_num → load_shape
+   Support: 0.6296992481203008
+   Confiance: 0.6296992481203008
+
+81. [FunctionalDependency] cars: load_shape → load_num
+   Support: 0.26650755767700873
+   Confiance: 0.26650755767700873
+
+82. [FunctionalDependency] cars: load_shape → id
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+83. [FunctionalDependency] cars: train_id → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+84. [FunctionalDependency] cars: load_shape → train_id
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+85. [FunctionalDependency] cars: position → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+86. [FunctionalDependency] cars: load_shape → position
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+87. [FunctionalDependency] cars: load_shape → shape
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+88. [FunctionalDependency] cars: shape → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+89. [FunctionalDependency] cars: load_shape → len
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+90. [FunctionalDependency] cars: len → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+91. [FunctionalDependency] cars: load_shape → sides
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+92. [FunctionalDependency] cars: sides → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+93. [FunctionalDependency] cars: load_shape → roof
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+94. [FunctionalDependency] cars: roof → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+95. [FunctionalDependency] cars: load_shape → wheels
+   Support: 16.88888888888889
+   Confiance: 16.88888888888889
+
+96. [FunctionalDependency] cars: wheels → load_shape
+   Support: 1.0
+   Confiance: 1.0
+
+97. [FunctionalDependency] cars: load_num → id
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+98. [FunctionalDependency] cars: train_id → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+99. [FunctionalDependency] cars: load_num → train_id
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+100. [FunctionalDependency] cars: load_num → position
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+101. [FunctionalDependency] cars: position → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+102. [FunctionalDependency] cars: load_num → shape
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+103. [FunctionalDependency] cars: shape → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+104. [FunctionalDependency] cars: load_num → len
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+105. [FunctionalDependency] cars: len → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+106. [FunctionalDependency] cars: load_num → sides
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+107. [FunctionalDependency] cars: sides → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+108. [FunctionalDependency] cars: load_num → roof
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+109. [FunctionalDependency] cars: roof → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+110. [FunctionalDependency] cars: wheels → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+111. [FunctionalDependency] cars: load_num → wheels
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+112. [FunctionalDependency] cars: load_shape → load_num
+   Support: 1.0
+   Confiance: 1.0
+
+113. [FunctionalDependency] cars: load_num → load_shape
+   Support: 39.904761904761905
+   Confiance: 39.904761904761905
+
+114. [FunctionalDependency] cars: load_shape → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+115. [FunctionalDependency] cars: wheels → load_shape
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+116. [FunctionalDependency] cars: load_shape → wheels
+   Support: 0.28952916373858045
+   Confiance: 0.28952916373858045
+
+117. [FunctionalDependency] cars: wheels → load_shape
+   Support: 0.7744360902255639
+   Confiance: 0.7744360902255639
+
+118. [FunctionalDependency] cars: wheels → load_num
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+119. [FunctionalDependency] cars: load_num → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+120. [FunctionalDependency] cars: wheels → load_num
+   Support: 0.7231503579952268
+   Confiance: 0.7231503579952268
+
+121. [FunctionalDependency] cars: load_num → wheels
+   Support: 0.6387912860154603
+   Confiance: 0.6387912860154603
+
+122. [FunctionalDependency] cars: wheels → id
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+123. [FunctionalDependency] cars: wheels → train_id
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+124. [FunctionalDependency] cars: train_id → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+125. [FunctionalDependency] cars: wheels → position
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+126. [FunctionalDependency] cars: position → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+127. [FunctionalDependency] cars: shape → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+128. [FunctionalDependency] cars: wheels → shape
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+129. [FunctionalDependency] cars: wheels → len
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+130. [FunctionalDependency] cars: len → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+131. [FunctionalDependency] cars: sides → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+132. [FunctionalDependency] cars: wheels → sides
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+133. [FunctionalDependency] cars: roof → wheels
+   Support: 1.0
+   Confiance: 1.0
+
+134. [FunctionalDependency] cars: wheels → roof
+   Support: 45.17460317460318
+   Confiance: 45.17460317460318
+
+135. [FunctionalDependency] cars: position → shape
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+136. [FunctionalDependency] cars: shape → position
+   Support: 1.0
+   Confiance: 1.0
+
+137. [FunctionalDependency] cars: position → shape
+   Support: 0.26095617529880477
+   Confiance: 0.26095617529880477
+
+138. [FunctionalDependency] cars: shape → position
+   Support: 0.5167652859960552
+   Confiance: 0.5167652859960552
+
+139. [FunctionalDependency] cars: len → position
+   Support: 1.0
+   Confiance: 1.0
+
+140. [FunctionalDependency] cars: position → len
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+141. [FunctionalDependency] cars: len → position
+   Support: 0.5108481262327417
+   Confiance: 0.5108481262327417
+
+142. [FunctionalDependency] cars: position → len
+   Support: 0.25072604065827686
+   Confiance: 0.25072604065827686
+
+143. [FunctionalDependency] cars: position → sides
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+144. [FunctionalDependency] cars: sides → position
+   Support: 1.0
+   Confiance: 1.0
+
+145. [FunctionalDependency] cars: position → sides
+   Support: 0.2719860221316249
+   Confiance: 0.2719860221316249
+
+146. [FunctionalDependency] cars: sides → position
+   Support: 0.9211045364891519
+   Confiance: 0.9211045364891519
+
+147. [FunctionalDependency] cars: position → roof
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+148. [FunctionalDependency] cars: roof → position
+   Support: 1.0
+   Confiance: 1.0
+
+149. [FunctionalDependency] cars: roof → position
+   Support: 0.4536489151873767
+   Confiance: 0.4536489151873767
+
+150. [FunctionalDependency] cars: position → roof
+   Support: 0.24945770065075923
+   Confiance: 0.24945770065075923
+
+151. [FunctionalDependency] cars: wheels → position
+   Support: 1.0
+   Confiance: 1.0
+
+152. [FunctionalDependency] cars: position → wheels
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+153. [FunctionalDependency] cars: position → wheels
+   Support: 0.2494729444834856
+   Confiance: 0.2494729444834856
+
+154. [FunctionalDependency] cars: wheels → position
+   Support: 0.7001972386587771
+   Confiance: 0.7001972386587771
+
+155. [FunctionalDependency] cars: load_shape → position
+   Support: 1.0
+   Confiance: 1.0
+
+156. [FunctionalDependency] cars: position → load_shape
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+157. [FunctionalDependency] cars: load_shape → position
+   Support: 0.2702169625246548
+   Confiance: 0.2702169625246548
+
+158. [FunctionalDependency] cars: position → load_shape
+   Support: 0.2575187969924812
+   Confiance: 0.2575187969924812
+
+159. [FunctionalDependency] cars: load_num → position
+   Support: 1.0
+   Confiance: 1.0
+
+160. [FunctionalDependency] cars: position → load_num
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+161. [FunctionalDependency] cars: load_num → position
+   Support: 0.6449704142011834
+   Confiance: 0.6449704142011834
+
+162. [FunctionalDependency] cars: position → load_num
+   Support: 0.26014319809069214
+   Confiance: 0.26014319809069214
+
+163. [FunctionalDependency] cars: position → id
+   Support: 16.095238095238095
+   Confiance: 16.095238095238095
+
+164. [FunctionalDependency] cars: train_id → position
+   Support: 1.0
+   Confiance: 1.0
+
+165. [FunctionalDependency] cars: train_id → position
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+166. [FunctionalDependency] cars: train_id → shape
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+167. [FunctionalDependency] cars: shape → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+168. [FunctionalDependency] cars: train_id → shape
+   Support: 0.036852589641434265
+   Confiance: 0.036852589641434265
+
+169. [FunctionalDependency] cars: shape → train_id
+   Support: 0.49333333333333335
+   Confiance: 0.49333333333333335
+
+170. [FunctionalDependency] cars: train_id → len
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+171. [FunctionalDependency] cars: len → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+172. [FunctionalDependency] cars: len → train_id
+   Support: 0.48
+   Confiance: 0.48
+
+173. [FunctionalDependency] cars: train_id → len
+   Support: 0.03484995159728945
+   Confiance: 0.03484995159728945
+
+174. [FunctionalDependency] cars: sides → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+175. [FunctionalDependency] cars: train_id → sides
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+176. [FunctionalDependency] cars: train_id → sides
+   Support: 0.0378567268491555
+   Confiance: 0.0378567268491555
+
+177. [FunctionalDependency] cars: sides → train_id
+   Support: 0.8666666666666667
+   Confiance: 0.8666666666666667
+
+178. [FunctionalDependency] cars: train_id → roof
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+179. [FunctionalDependency] cars: roof → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+180. [FunctionalDependency] cars: train_id → roof
+   Support: 0.03796095444685466
+   Confiance: 0.03796095444685466
+
+181. [FunctionalDependency] cars: roof → train_id
+   Support: 0.4666666666666667
+   Confiance: 0.4666666666666667
+
+182. [FunctionalDependency] cars: train_id → wheels
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+183. [FunctionalDependency] cars: wheels → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+184. [FunctionalDependency] cars: wheels → train_id
+   Support: 0.7066666666666667
+   Confiance: 0.7066666666666667
+
+185. [FunctionalDependency] cars: train_id → wheels
+   Support: 0.03724525650035137
+   Confiance: 0.03724525650035137
+
+186. [FunctionalDependency] cars: train_id → load_shape
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+187. [FunctionalDependency] cars: load_shape → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+188. [FunctionalDependency] cars: train_id → load_shape
+   Support: 0.03195488721804511
+   Confiance: 0.03195488721804511
+
+189. [FunctionalDependency] cars: load_shape → train_id
+   Support: 0.22666666666666666
+   Confiance: 0.22666666666666666
+
+190. [FunctionalDependency] cars: load_num → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+191. [FunctionalDependency] cars: train_id → load_num
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+192. [FunctionalDependency] cars: load_num → train_id
+   Support: 0.6666666666666666
+   Confiance: 0.6666666666666666
+
+193. [FunctionalDependency] cars: train_id → load_num
+   Support: 0.03977724741447892
+   Confiance: 0.03977724741447892
+
+194. [FunctionalDependency] cars: train_id → id
+   Support: 2.380952380952381
+   Confiance: 2.380952380952381
+
+195. [FunctionalDependency] cars: id → train_id
+   Support: 1.0
+   Confiance: 1.0
+
+196. [FunctionalDependency] trains: direction → id
+   Support: 9.0
+   Confiance: 9.0
+
+197. [FunctionalDependency] cars: sides → len
+   Support: 1.0
+   Confiance: 1.0
+
+198. [FunctionalDependency] cars: len → sides
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+199. [FunctionalDependency] cars: len → sides
+   Support: 0.5177635410599883
+   Confiance: 0.5177635410599883
+
+200. [FunctionalDependency] cars: sides → len
+   Support: 0.8606001936108422
+   Confiance: 0.8606001936108422
+
+201. [FunctionalDependency] cars: len → roof
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+202. [FunctionalDependency] cars: roof → len
+   Support: 1.0
+   Confiance: 1.0
+
+203. [FunctionalDependency] cars: roof → len
+   Support: 0.5701839303000968
+   Confiance: 0.5701839303000968
+
+204. [FunctionalDependency] cars: len → roof
+   Support: 0.6388286334056399
+   Confiance: 0.6388286334056399
+
+205. [FunctionalDependency] cars: len → wheels
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+206. [FunctionalDependency] cars: wheels → len
+   Support: 1.0
+   Confiance: 1.0
+
+207. [FunctionalDependency] cars: wheels → len
+   Support: 0.8741529525653436
+   Confiance: 0.8741529525653436
+
+208. [FunctionalDependency] cars: len → wheels
+   Support: 0.634574841883345
+   Confiance: 0.634574841883345
+
+209. [FunctionalDependency] cars: len → load_shape
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+210. [FunctionalDependency] cars: load_shape → len
+   Support: 1.0
+   Confiance: 1.0
+
+211. [FunctionalDependency] cars: len → load_shape
+   Support: 0.6428571428571429
+   Confiance: 0.6428571428571429
+
+212. [FunctionalDependency] cars: load_shape → len
+   Support: 0.33107454017424975
+   Confiance: 0.33107454017424975
+
+213. [FunctionalDependency] cars: len → load_num
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+214. [FunctionalDependency] cars: load_num → len
+   Support: 1.0
+   Confiance: 1.0
+
+215. [FunctionalDependency] cars: load_num → len
+   Support: 0.8005808325266215
+   Confiance: 0.8005808325266215
+
+216. [FunctionalDependency] cars: len → load_num
+   Support: 0.6579156722354813
+   Confiance: 0.6579156722354813
+
+217. [FunctionalDependency] cars: len → id
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+218. [FunctionalDependency] cars: len → train_id
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+219. [FunctionalDependency] cars: train_id → len
+   Support: 1.0
+   Confiance: 1.0
+
+220. [FunctionalDependency] cars: len → position
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+221. [FunctionalDependency] cars: position → len
+   Support: 1.0
+   Confiance: 1.0
+
+222. [FunctionalDependency] cars: len → shape
+   Support: 32.79365079365079
+   Confiance: 32.79365079365079
+
+223. [FunctionalDependency] cars: shape → len
+   Support: 1.0
+   Confiance: 1.0
+

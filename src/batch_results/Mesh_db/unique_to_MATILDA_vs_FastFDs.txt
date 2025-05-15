@@ -1,0 +1,11 @@
+# FDs sauvegardées: 2
+# Date: 2025-04-28 07:17:37
+
+1. [FunctionalDependency] mesh: num → name
+   Support: 37.91031390134529
+   Confiance: 37.91031390134529
+
+2. [FunctionalDependency] mesh_test: num → name
+   Support: 12.072727272727272
+   Confiance: 12.072727272727272
+

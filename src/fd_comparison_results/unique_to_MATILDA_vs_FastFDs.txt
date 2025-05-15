@@ -1,0 +1,31 @@
+# FDs sauvegardées: 7
+# Date: 2025-04-27 17:14:08
+
+1. [FunctionalDependency] sgpt: arg2 → arg1
+   Support: 8.689855072463768
+   Confiance: 8.689855072463768
+
+2. [FunctionalDependency] sgot: arg2 → arg1
+   Support: 14.428985507246377
+   Confiance: 14.428985507246377
+
+3. [FunctionalDependency] mcv: arg2 → arg1
+   Support: 23.327536231884057
+   Confiance: 23.327536231884057
+
+4. [FunctionalDependency] alkphos: arg2 → arg1
+   Support: 5.6521739130434785
+   Confiance: 5.6521739130434785
+
+5. [FunctionalDependency] drinks: arg2 → arg1
+   Support: 53.18840579710145
+   Confiance: 53.18840579710145
+
+6. [FunctionalDependency] bupa: arg2 → arg1
+   Support: 175.8840579710145
+   Confiance: 175.8840579710145
+
+7. [FunctionalDependency] gammagt: arg2 → arg1
+   Support: 6.115942028985507
+   Confiance: 6.115942028985507
+

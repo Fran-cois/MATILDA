@@ -1,0 +1,25 @@
+# Règles communes sauvegardées: 11
+# Date: 2025-04-27 17:27:26
+
+1. cars: id → shape [conf=1.00, supp=31.87] <=> cars: id → shape
+
+2. cars: id → roof [conf=1.00, supp=29.27] <=> cars: id → roof
+
+3. cars: id → sides [conf=1.00, supp=54.51] <=> cars: id → sides
+
+4. cars: id → load_shape [conf=1.00, supp=16.89] <=> cars: id → load_shape
+
+5. cars: id → load_num [conf=1.00, supp=39.90] <=> cars: id → load_num
+
+6. cars: id → wheels [conf=1.00, supp=45.17] <=> cars: id → wheels
+
+7. cars: id → position [conf=1.00, supp=16.10] <=> cars: id → position
+
+8. cars: position → train_id [conf=16.10, supp=1.00] <=> cars: position → train_id
+
+9. cars: position → train_id [conf=1.00, supp=2.38] <=> cars: position → train_id
+
+10. trains: id → direction [conf=1.00, supp=9.00] <=> trains: id → direction
+
+11. cars: id → len [conf=1.00, supp=32.79] <=> cars: id → len
+

@@ -1,0 +1,39 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "sentences",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "class"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "terms",
+        "determinant": [
+            "id_sentence",
+            "id_term"
+        ],
+        "dependent": [
+            "term"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

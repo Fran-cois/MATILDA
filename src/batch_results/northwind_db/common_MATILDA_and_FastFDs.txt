@@ -1,0 +1,69 @@
+# Règles communes sauvegardées: 33
+# Date: 2025-04-28 09:51:43
+
+1. Products: ProductID → CategoryID [conf=1.00, supp=9.53] <=> Products: ProductID → CategoryID
+
+2. Suppliers: ContactName → Region [conf=1.00, supp=0.07] <=> Suppliers: ContactName → Region
+
+3. Orders: OrderID → ShipRegion [conf=1.00, supp=9.19] <=> Orders: OrderID → ShipRegion
+
+4. Products: ProductID → UnitsOnOrder [conf=1.00, supp=46.36] <=> Products: ProductID → UnitsOnOrder
+
+5. Orders: OrderID → OrderDate [conf=1.00, supp=1.13] <=> Orders: OrderID → OrderDate
+
+6. Suppliers: ContactName → Country [conf=1.00, supp=1.17] <=> Suppliers: ContactName → Country
+
+7. Orders: OrderID → ShipPostalCode [conf=1.00, supp=11.92] <=> Orders: OrderID → ShipPostalCode
+
+8. Products: ProductID → Discontinued [conf=1.00, supp=61.66] <=> Products: ProductID → Discontinued
+
+9. Orders: ShippedDate → Freight [conf=1.78, supp=1.00] <=> Orders: ShippedDate → Freight
+
+10. Orders: OrderID → ShippedDate [conf=1.00, supp=1.78] <=> Orders: OrderID → ShippedDate
+
+11. Products: QuantityPerUnit → UnitsInStock [conf=0.26, supp=1.00] <=> Products: QuantityPerUnit → UnitsInStock
+
+12. Products: ProductID → QuantityPerUnit [conf=1.00, supp=0.26] <=> Products: ProductID → QuantityPerUnit
+
+13. Products: ProductID → ReorderLevel [conf=1.00, supp=12.78] <=> Products: ProductID → ReorderLevel
+
+14. Products: QuantityPerUnit → UnitsInStock [conf=1.00, supp=1.09] <=> Products: QuantityPerUnit → UnitsInStock
+
+15. Products: ProductID → UnitPrice [conf=1.00, supp=0.57] <=> Products: ProductID → UnitPrice
+
+16. Orders: OrderID → CustomerID [conf=1.00, supp=11.91] <=> Orders: OrderID → CustomerID
+
+17. Suppliers: ContactName → ContactTitle [conf=1.00, supp=2.28] <=> Suppliers: ContactName → ContactTitle
+
+18. Orders: OrderID → ShipVia [conf=1.00, supp=280.09] <=> Orders: OrderID → ShipVia
+
+19. Customers: ContactName → ContactTitle [conf=1.00, supp=10.68] <=> Customers: ContactName → ContactTitle
+
+20. Customers: ContactName → PostalCode [conf=1.00, supp=0.11] <=> Customers: ContactName → PostalCode
+
+21. Orders: OrderID → EmployeeID [conf=1.00, supp=106.12] <=> Orders: OrderID → EmployeeID
+
+22. Orders: OrderID → ShipName [conf=1.00, supp=11.89] <=> Orders: OrderID → ShipName
+
+23. Orders: OrderID → ShipAddress [conf=1.00, supp=11.91] <=> Orders: OrderID → ShipAddress
+
+24. Products: ProductID → SupplierID [conf=1.00, supp=2.03] <=> Products: ProductID → SupplierID
+
+25. Orders: OrderID → ShipCity [conf=1.00, supp=15.78] <=> Orders: OrderID → ShipCity
+
+26. Orders: ShippedDate → Freight [conf=0.98, supp=0.08] <=> Orders: ShippedDate → Freight
+
+27. Customers: ContactName → Country [conf=1.00, supp=6.31] <=> Customers: ContactName → Country
+
+28. Customers: ContactName → Region [conf=1.00, supp=0.62] <=> Customers: ContactName → Region
+
+29. Territories: TerritoryID → TerritoryDescription [conf=1.00, supp=0.04] <=> Territories: TerritoryID → TerritoryDescription
+
+30. Customers: ContactName → City [conf=1.00, supp=0.97] <=> Customers: ContactName → City
+
+31. Orders: OrderID → ShipCountry [conf=1.00, supp=66.67] <=> Orders: OrderID → ShipCountry
+
+32. Orders: OrderID → RequiredDate [conf=1.00, supp=1.36] <=> Orders: OrderID → RequiredDate
+
+33. Territories: TerritoryID → RegionID [conf=1.00, supp=13.55] <=> Territories: TerritoryID → RegionID
+

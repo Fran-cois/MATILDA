@@ -1,0 +1,14 @@
+{
+  "tgd_discovery_time": 0,
+  "egd_discovery_time": 0,
+  "fd_discovery_time": 0.2217268943786621,
+  "tgds_discovered": 0,
+  "egds_discovered": 0,
+  "fds_discovered": 14,
+  "tgd_avg_support": 0,
+  "tgd_avg_confidence": 0,
+  "egd_avg_support": 0,
+  "egd_avg_confidence": 0,
+  "fd_avg_support": 21.02049689440994,
+  "fd_avg_confidence": 21.02049689440994
+}

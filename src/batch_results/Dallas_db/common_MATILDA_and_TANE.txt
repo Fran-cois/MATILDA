@@ -1,0 +1,109 @@
+# Règles communes sauvegardées: 53
+# Date: 2025-04-28 07:00:52
+
+1. incidents: case_number → subject_statuses [conf=1.00, supp=69.18] <=> incidents: case_number → subject_statuses
+
+2. incidents: location → subject_statuses [conf=1.00, supp=69.18] <=> incidents: location → subject_statuses
+
+3. officers: full_name → race [conf=1.15, supp=0.99] <=> officers: full_name → race
+
+4. officers: full_name → gender [conf=1.15, supp=1.00] <=> officers: full_name → gender
+
+5. officers: full_name → last_name [conf=1.15, supp=1.00] <=> officers: full_name → last_name
+
+6. officers: full_name → first_name [conf=1.15, supp=0.99] <=> officers: full_name → first_name
+
+7. officers: full_name → gender [conf=1.00, supp=333.95] <=> officers: full_name → gender
+
+8. incidents: subjects → subject_count [conf=0.45, supp=1.00] <=> incidents: subjects → subject_count
+
+9. incidents: case_number → subjects [conf=1.00, supp=0.45] <=> incidents: case_number → subjects
+
+10. incidents: location → subjects [conf=1.00, supp=0.45] <=> incidents: location → subjects
+
+11. incidents: location → date [conf=1.00, supp=0.05] <=> incidents: location → date
+
+12. incidents: case_number → date [conf=1.00, supp=0.05] <=> incidents: case_number → date
+
+13. subjects: full_name → first_name [conf=1.00, supp=1.71] <=> subjects: full_name → first_name
+
+14. subjects: full_name → first_name [conf=0.54, supp=0.44] <=> subjects: full_name → first_name
+
+15. incidents: longitude → officer_count [conf=0.97, supp=112.56] <=> incidents: longitude → officer_count
+
+16. incidents: case_number → officer_count [conf=1.00, supp=112.27] <=> incidents: case_number → officer_count
+
+17. incidents: location → officer_count [conf=1.00, supp=112.27] <=> incidents: location → officer_count
+
+18. incidents: officers → officer_count [conf=1.00, supp=112.27] <=> incidents: officers → officer_count
+
+19. incidents: officers → officer_count [conf=0.07, supp=1.00] <=> incidents: officers → officer_count
+
+20. incidents: case_number → officers [conf=1.00, supp=0.07] <=> incidents: case_number → officers
+
+21. incidents: location → officers [conf=1.00, supp=0.07] <=> incidents: location → officers
+
+22. incidents: summary_url → subject_count [conf=0.99, supp=200.41] <=> incidents: summary_url → subject_count
+
+23. incidents: summary_text → subject_count [conf=0.99, supp=200.41] <=> incidents: summary_text → subject_count
+
+24. incidents: longitude → subject_count [conf=0.97, supp=201.24] <=> incidents: longitude → subject_count
+
+25. incidents: case_number → subject_count [conf=1.00, supp=200.53] <=> incidents: case_number → subject_count
+
+26. incidents: location → subject_count [conf=1.00, supp=200.53] <=> incidents: location → subject_count
+
+27. incidents: subjects → subject_count [conf=1.00, supp=200.53] <=> incidents: subjects → subject_count
+
+28. officers: full_name → last_name [conf=1.00, supp=1.40] <=> officers: full_name → last_name
+
+29. officers: full_name → last_name [conf=0.82, supp=1.00] <=> officers: full_name → last_name
+
+30. incidents: case_number → longitude [conf=1.00, supp=0.02] <=> incidents: case_number → longitude
+
+31. incidents: location → longitude [conf=1.00, supp=0.02] <=> incidents: location → longitude
+
+32. incidents: longitude → subject_weapon [conf=0.02, supp=1.00] <=> incidents: longitude → subject_weapon
+
+33. incidents: longitude → subject_count [conf=0.02, supp=1.00] <=> incidents: longitude → subject_count
+
+34. incidents: longitude → officer_count [conf=0.02, supp=1.00] <=> incidents: longitude → officer_count
+
+35. incidents: longitude → subject_weapon [conf=0.97, supp=55.38] <=> incidents: longitude → subject_weapon
+
+36. incidents: case_number → subject_weapon [conf=1.00, supp=55.32] <=> incidents: case_number → subject_weapon
+
+37. incidents: location → subject_weapon [conf=1.00, supp=55.32] <=> incidents: location → subject_weapon
+
+38. subjects: full_name → last_name [conf=2.08, supp=1.00] <=> subjects: full_name → last_name
+
+39. subjects: full_name → first_name [conf=1.00, supp=0.44] <=> subjects: full_name → first_name
+
+40. incidents: case_number → latitude [conf=1.00, supp=0.04] <=> incidents: case_number → latitude
+
+41. incidents: location → latitude [conf=1.00, supp=0.04] <=> incidents: location → latitude
+
+42. incidents: summary_url → grand_jury_disposition [conf=1.00, supp=61.31] <=> incidents: summary_url → grand_jury_disposition
+
+43. incidents: summary_text → grand_jury_disposition [conf=1.00, supp=61.31] <=> incidents: summary_text → grand_jury_disposition
+
+44. incidents: case_number → grand_jury_disposition [conf=1.00, supp=60.47] <=> incidents: case_number → grand_jury_disposition
+
+45. incidents: location → grand_jury_disposition [conf=1.00, supp=60.47] <=> incidents: location → grand_jury_disposition
+
+46. subjects: full_name → last_name [conf=1.00, supp=2.46] <=> subjects: full_name → last_name
+
+47. subjects: full_name → last_name [conf=0.84, supp=1.00] <=> subjects: full_name → last_name
+
+48. officers: full_name → race [conf=1.00, supp=145.56] <=> officers: full_name → race
+
+49. officers: full_name → first_name [conf=1.00, supp=4.61] <=> officers: full_name → first_name
+
+50. officers: full_name → first_name [conf=0.25, supp=0.99] <=> officers: full_name → first_name
+
+51. subjects: case_number → race [conf=1.00, supp=84.99] <=> subjects: case_number → race
+
+52. subjects: case_number → race [conf=1.07, supp=1.00] <=> subjects: case_number → race
+
+53. subjects: case_number → race [conf=0.01, supp=1.00] <=> subjects: case_number → race
+

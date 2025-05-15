@@ -1,0 +1,74 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "target",
+        "determinant": [
+            "is_dunur"
+        ],
+        "dependent": [
+            "name1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 231.66666666666666,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "target",
+        "determinant": [
+            "name1"
+        ],
+        "dependent": [
+            "is_dunur"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 231.66666666666666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "target",
+        "determinant": [
+            "name2"
+        ],
+        "dependent": [
+            "is_dunur"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 231.66666666666666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "target",
+        "determinant": [
+            "is_dunur"
+        ],
+        "dependent": [
+            "name2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 231.66666666666666,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

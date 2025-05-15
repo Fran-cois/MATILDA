@@ -1,0 +1,171 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1",
+            "col3"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1",
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0",
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2",
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0",
+            "col1",
+            "col2"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1",
+            "col2"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": null,
+        "support": null,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": null,
+        "original_egd": null
+    }
+]

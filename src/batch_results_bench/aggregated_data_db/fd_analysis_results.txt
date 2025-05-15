@@ -1,0 +1,48 @@
+# Rapport d'Analyse des Algorithmes de Découverte de Dépendances Fonctionnelles
+# Date: 2025-04-29 20:50:53
+# Base de données: aggregated_data.db
+
+## Résumé des performances
+
+Meilleur algorithme en termes de vitesse: MATILDA_FDs
+Meilleur algorithme en termes d'efficacité: FastFDs
+Algorithme découvrant le plus de règles: MATILDA_FDs
+
+## Statistiques globales
+
+### Nombre de FDs découvertes par algorithme
+| Algorithme | Nombre de FDs |
+|------------|---------------|
+| MATILDA_FDs | 0 |
+| TANE | 0 |
+| FastFDs | 0 |
+| FDep | 0 |
+| DFD | 0 |
+
+### Temps d'exécution par algorithme
+| Algorithme | Temps (s) | FDs/s | Temps/FD (ms) |
+|------------|-----------|-------|---------------|
+| FastFDs | 0.04 | 0.00 | 41.65 |
+| DFD | 0.04 | 0.00 | 42.32 |
+| FDep | 0.04 | 0.00 | 43.35 |
+| TANE | 0.05 | 0.00 | 46.64 |
+| MATILDA_FDs | 0.14 | 0.00 | 141.67 |
+
+## Comparaisons détaillées entre algorithmes
+
+## Analyse et recommandations
+
+### Recommandations
+
+1. Pour les applications nécessitant une exécution rapide, privilégiez l'algorithme MATILDA_FDs.
+2. Pour les bases de données volumineuses où l'efficacité est cruciale, FastFDs est recommandé.
+3. Pour une découverte plus exhaustive des dépendances, MATILDA_FDs offre le meilleur résultat.
+
+### Notes supplémentaires
+
+- Les résultats peuvent varier selon la structure et la taille de la base de données.
+- Un grand nombre de règles n'est pas nécessairement synonyme de qualité ; vérifiez la pertinence des dépendances découvertes.
+- Pour les bases de données de production, envisagez d'exécuter plusieurs algorithmes et de combiner leurs résultats.
+
+---
+Rapport généré automatiquement par le Comparateur d'Algorithmes FD.

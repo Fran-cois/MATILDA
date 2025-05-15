@@ -1,0 +1,4214 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5043562439496612,
+        "support": 0.5189243027888446,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5189243027888446,
+        "support": 0.5043562439496612,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8406374501992032,
+        "support": 0.49155503785672683,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.49155503785672683,
+        "support": 0.8406374501992032,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4718004338394794,
+        "support": 0.43326693227091634,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.43326693227091634,
+        "support": 0.4718004338394794,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.46661981728742097,
+        "support": 0.6613545816733067,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6613545816733067,
+        "support": 0.46661981728742097,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5338345864661654,
+        "support": 0.28286852589641437,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.28286852589641437,
+        "support": 0.5338345864661654,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.441527446300716,
+        "support": 0.5527888446215139,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5527888446215139,
+        "support": 0.441527446300716,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 31.873015873015873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 31.873015873015873,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5572733661278988,
+        "support": 0.8600867678958786,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8600867678958786,
+        "support": 0.5572733661278988,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2765726681127983,
+        "support": 0.4793233082706767,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4793233082706767,
+        "support": 0.2765726681127983,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.702819956616052,
+        "support": 0.5155131264916468,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5155131264916468,
+        "support": 0.702819956616052,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 29.26984126984127,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 29.26984126984127,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8394793926247288,
+        "support": 0.4507862550960978,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4507862550960978,
+        "support": 0.8394793926247288,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.714618520675597,
+        "support": 0.8622628250175686,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8622628250175686,
+        "support": 0.714618520675597,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8834586466165414,
+        "support": 0.27373325567850904,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.27373325567850904,
+        "support": 0.8834586466165414,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8536197295147175,
+        "support": 0.6249271986022131,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6249271986022131,
+        "support": 0.8536197295147175,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 54.507936507936506,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 54.507936507936506,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6296992481203008,
+        "support": 0.26650755767700873,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.26650755767700873,
+        "support": 0.6296992481203008,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.88888888888889,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.88888888888889,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 39.904761904761905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 39.904761904761905,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.28952916373858045,
+        "support": 0.7744360902255639,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7744360902255639,
+        "support": 0.28952916373858045,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7231503579952268,
+        "support": 0.6387912860154603,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6387912860154603,
+        "support": 0.7231503579952268,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 45.17460317460318,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 45.17460317460318,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.26095617529880477,
+        "support": 0.5167652859960552,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5167652859960552,
+        "support": 0.26095617529880477,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5108481262327417,
+        "support": 0.25072604065827686,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.25072604065827686,
+        "support": 0.5108481262327417,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2719860221316249,
+        "support": 0.9211045364891519,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9211045364891519,
+        "support": 0.2719860221316249,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4536489151873767,
+        "support": 0.24945770065075923,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.24945770065075923,
+        "support": 0.4536489151873767,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2494729444834856,
+        "support": 0.7001972386587771,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7001972386587771,
+        "support": 0.2494729444834856,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2702169625246548,
+        "support": 0.2575187969924812,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2575187969924812,
+        "support": 0.2702169625246548,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6449704142011834,
+        "support": 0.26014319809069214,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.26014319809069214,
+        "support": 0.6449704142011834,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 16.095238095238095,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 16.095238095238095,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.036852589641434265,
+        "support": 0.49333333333333335,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.49333333333333335,
+        "support": 0.036852589641434265,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.48,
+        "support": 0.03484995159728945,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03484995159728945,
+        "support": 0.48,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.0378567268491555,
+        "support": 0.8666666666666667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8666666666666667,
+        "support": 0.0378567268491555,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03796095444685466,
+        "support": 0.4666666666666667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.4666666666666667,
+        "support": 0.03796095444685466,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7066666666666667,
+        "support": 0.03724525650035137,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03724525650035137,
+        "support": 0.7066666666666667,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03195488721804511,
+        "support": 0.22666666666666666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.22666666666666666,
+        "support": 0.03195488721804511,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6666666666666666,
+        "support": 0.03977724741447892,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03977724741447892,
+        "support": 0.6666666666666666,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 2.380952380952381,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 2.380952380952381,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "trains",
+        "determinant": [
+            "direction"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 9.0,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "trains",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "direction"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 9.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "sides"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5177635410599883,
+        "support": 0.8606001936108422,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "sides"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8606001936108422,
+        "support": 0.5177635410599883,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "roof"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5701839303000968,
+        "support": 0.6388286334056399,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "roof"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6388286334056399,
+        "support": 0.5701839303000968,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "wheels"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8741529525653436,
+        "support": 0.634574841883345,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "wheels"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.634574841883345,
+        "support": 0.8741529525653436,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "load_shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6428571428571429,
+        "support": 0.33107454017424975,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_shape"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.33107454017424975,
+        "support": 0.6428571428571429,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "load_num"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.8005808325266215,
+        "support": 0.6579156722354813,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "load_num"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.6579156722354813,
+        "support": 0.8005808325266215,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "id"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "train_id"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "train_id"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "position"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "position"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "len"
+        ],
+        "dependent": [
+            "shape"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 32.79365079365079,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "cars",
+        "determinant": [
+            "shape"
+        ],
+        "dependent": [
+            "len"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 32.79365079365079,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

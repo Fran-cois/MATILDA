@@ -1,0 +1,101 @@
+# Règles communes sauvegardées: 49
+# Date: 2025-04-28 05:40:59
+
+1. opening: w2 → code [conf=432.10, supp=1.00] <=> opening: w2 → code
+
+2. opening: w1 → code [conf=1.00, supp=1756.00] <=> opening: w1 → code
+
+3. opening: w1 → code [conf=0.41, supp=1.00] <=> opening: w1 → code
+
+4. opening: b1 → code [conf=1.00, supp=1756.00] <=> opening: b1 → code
+
+5. opening: b1 → code [conf=0.17, supp=1.00] <=> opening: b1 → code
+
+6. opening: w2 → code [conf=1.00, supp=1756.00] <=> opening: w2 → code
+
+7. opening: w2 → code [conf=0.25, supp=1.00] <=> opening: w2 → code
+
+8. opening: b2 → code [conf=1.00, supp=1756.00] <=> opening: b2 → code
+
+9. opening: b2 → code [conf=0.11, supp=1.00] <=> opening: b2 → code
+
+10. opening: w3 → code [conf=1.00, supp=1756.00] <=> opening: w3 → code
+
+11. opening: w3 → code [conf=0.14, supp=1.00] <=> opening: w3 → code
+
+12. opening: b3 → code [conf=1.00, supp=1756.00] <=> opening: b3 → code
+
+13. opening: b3 → code [conf=0.09, supp=1.00] <=> opening: b3 → code
+
+14. opening: w4 → code [conf=1.00, supp=1756.00] <=> opening: w4 → code
+
+15. opening: w4 → code [conf=0.11, supp=1.00] <=> opening: w4 → code
+
+16. opening: b4 → code [conf=1.00, supp=1756.00] <=> opening: b4 → code
+
+17. opening: b4 → code [conf=0.16, supp=1.00] <=> opening: b4 → code
+
+18. opening: variation → code [conf=1.00, supp=1756.00] <=> opening: variation → code
+
+19. opening: variation → code [conf=0.02, supp=1.00] <=> opening: variation → code
+
+20. opening: opening_id → code [conf=1.00, supp=1756.00] <=> opening: opening_id → code
+
+21. opening: name → code [conf=1.00, supp=1756.00] <=> opening: name → code
+
+22. opening: b3 → code [conf=160.61, supp=1.00] <=> opening: b3 → code
+
+23. opening: variation → opening_id [conf=28.07, supp=1.00] <=> opening: variation → opening_id
+
+24. opening: variation → name [conf=28.07, supp=1.00] <=> opening: variation → name
+
+25. opening: variation → code [conf=28.07, supp=1.00] <=> opening: variation → code
+
+26. opening: variation → w1 [conf=28.07, supp=1.00] <=> opening: variation → w1
+
+27. opening: variation → b1 [conf=28.07, supp=1.00] <=> opening: variation → b1
+
+28. opening: w4 → code [conf=196.36, supp=1.00] <=> opening: w4 → code
+
+29. opening: w3 → code [conf=241.22, supp=1.00] <=> opening: w3 → code
+
+30. opening: b2 → code [conf=193.58, supp=1.00] <=> opening: b2 → code
+
+31. opening: variation → w1 [conf=1.00, supp=711.98] <=> opening: variation → w1
+
+32. opening: variation → w1 [conf=0.02, supp=0.39] <=> opening: variation → w1
+
+33. opening: opening_id → w1 [conf=1.00, supp=711.98] <=> opening: opening_id → w1
+
+34. opening: name → w1 [conf=1.00, supp=711.98] <=> opening: name → w1
+
+35. opening: w1 → code [conf=711.98, supp=1.00] <=> opening: w1 → code
+
+36. opening: b4 → code [conf=284.42, supp=1.00] <=> opening: b4 → code
+
+37. opening: name → code [conf=66.66, supp=1.00] <=> opening: name → code
+
+38. opening: name → code [conf=0.04, supp=1.00] <=> opening: name → code
+
+39. opening: name → w1 [conf=66.66, supp=1.00] <=> opening: name → w1
+
+40. opening: name → w1 [conf=0.09, supp=1.00] <=> opening: name → w1
+
+41. opening: name → b1 [conf=66.66, supp=1.00] <=> opening: name → b1
+
+42. opening: name → b1 [conf=0.21, supp=0.97] <=> opening: name → b1
+
+43. opening: variation → name [conf=1.00, supp=66.66] <=> opening: variation → name
+
+44. opening: opening_id → name [conf=1.00, supp=66.66] <=> opening: opening_id → name
+
+45. opening: variation → b1 [conf=1.00, supp=306.29] <=> opening: variation → b1
+
+46. opening: variation → b1 [conf=0.01, supp=0.14] <=> opening: variation → b1
+
+47. opening: opening_id → b1 [conf=1.00, supp=306.29] <=> opening: opening_id → b1
+
+48. opening: name → b1 [conf=1.00, supp=306.29] <=> opening: name → b1
+
+49. opening: b1 → code [conf=306.29, supp=1.00] <=> opening: b1 → code
+

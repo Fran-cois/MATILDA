@@ -1,0 +1,17 @@
+# Règles communes sauvegardées: 7
+# Date: 2025-04-27 17:13:03
+
+1. sgpt: arg1 → arg2 [conf=1.00, supp=8.69] <=> sgpt: arg1 → arg2
+
+2. sgot: arg1 → arg2 [conf=1.00, supp=14.43] <=> sgot: arg1 → arg2
+
+3. mcv: arg1 → arg2 [conf=1.00, supp=23.33] <=> mcv: arg1 → arg2
+
+4. alkphos: arg1 → arg2 [conf=1.00, supp=5.65] <=> alkphos: arg1 → arg2
+
+5. drinks: arg1 → arg2 [conf=1.00, supp=53.19] <=> drinks: arg1 → arg2
+
+6. bupa: arg1 → arg2 [conf=1.00, supp=175.88] <=> bupa: arg1 → arg2
+
+7. gammagt: arg1 → arg2 [conf=1.00, supp=6.12] <=> gammagt: arg1 → arg2
+

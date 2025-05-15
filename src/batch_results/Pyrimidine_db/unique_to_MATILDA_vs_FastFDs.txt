@@ -1,0 +1,895 @@
+# FDs sauvegardées: 223
+# Date: 2025-04-27 17:32:01
+
+1. [FunctionalDependency] position: polar → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+2. [FunctionalDependency] position: pi_doner → polar
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+3. [FunctionalDependency] position: pi_doner → polarisable
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+4. [FunctionalDependency] position: polarisable → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] position: polarisable → pi_doner
+   Support: 0.29972549892425254
+   Confiance: 0.29972549892425254
+
+6. [FunctionalDependency] position: pi_doner → polarisable
+   Support: 0.8786428882122662
+   Confiance: 0.8786428882122662
+
+7. [FunctionalDependency] position: pi_doner → sigma
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+8. [FunctionalDependency] position: sigma → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] position: pi_doner → sigma
+   Support: 0.9090558022784321
+   Confiance: 0.9090558022784321
+
+10. [FunctionalDependency] position: sigma → pi_doner
+   Support: 0.34928407151865865
+   Confiance: 0.34928407151865865
+
+11. [FunctionalDependency] position: pi_doner → size
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+12. [FunctionalDependency] position: size → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] position: pi_doner → size
+   Support: 0.9352317141261864
+   Confiance: 0.9352317141261864
+
+14. [FunctionalDependency] position: size → pi_doner
+   Support: 0.24853475777134804
+   Confiance: 0.24853475777134804
+
+15. [FunctionalDependency] position: pi_doner → molecule_id
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+16. [FunctionalDependency] position: pi_doner → position
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+17. [FunctionalDependency] position: pi_doner → flex
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+18. [FunctionalDependency] position: flex → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+19. [FunctionalDependency] position: pi_doner → h_acceptor
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+20. [FunctionalDependency] position: h_acceptor → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+21. [FunctionalDependency] position: pi_doner → h_doner
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+22. [FunctionalDependency] position: h_doner → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+23. [FunctionalDependency] position: pi_acceptor → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+24. [FunctionalDependency] position: pi_doner → pi_acceptor
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+25. [FunctionalDependency] position: pi_acceptor → pi_doner
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+26. [FunctionalDependency] position: pi_doner → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+27. [FunctionalDependency] position: pi_acceptor → pi_doner
+   Support: 0.2725721492692336
+   Confiance: 0.2725721492692336
+
+28. [FunctionalDependency] position: pi_doner → pi_acceptor
+   Support: 0.7694240837696336
+   Confiance: 0.7694240837696336
+
+29. [FunctionalDependency] position: pi_acceptor → polar
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+30. [FunctionalDependency] position: polar → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+31. [FunctionalDependency] position: polarisable → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+32. [FunctionalDependency] position: pi_acceptor → polarisable
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+33. [FunctionalDependency] position: pi_acceptor → polarisable
+   Support: 0.14658547194432361
+   Confiance: 0.14658547194432361
+
+34. [FunctionalDependency] position: polarisable → pi_acceptor
+   Support: 0.14115183246073298
+   Confiance: 0.14115183246073298
+
+35. [FunctionalDependency] position: pi_acceptor → sigma
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+36. [FunctionalDependency] position: sigma → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+37. [FunctionalDependency] position: sigma → pi_acceptor
+   Support: 0.38282722513089007
+   Confiance: 0.38282722513089007
+
+38. [FunctionalDependency] position: pi_acceptor → sigma
+   Support: 0.35296389264336747
+   Confiance: 0.35296389264336747
+
+39. [FunctionalDependency] position: pi_acceptor → size
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+40. [FunctionalDependency] position: size → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+41. [FunctionalDependency] position: pi_acceptor → size
+   Support: 0.31211613623673923
+   Confiance: 0.31211613623673923
+
+42. [FunctionalDependency] position: size → pi_acceptor
+   Support: 0.23413612565445027
+   Confiance: 0.23413612565445027
+
+43. [FunctionalDependency] position: pi_acceptor → molecule_id
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+44. [FunctionalDependency] position: pi_acceptor → position
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+45. [FunctionalDependency] position: flex → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+46. [FunctionalDependency] position: pi_acceptor → flex
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+47. [FunctionalDependency] position: pi_acceptor → h_acceptor
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+48. [FunctionalDependency] position: h_acceptor → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+49. [FunctionalDependency] position: h_doner → pi_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+50. [FunctionalDependency] position: pi_acceptor → h_doner
+   Support: 43.01801801801802
+   Confiance: 43.01801801801802
+
+51. [FunctionalDependency] position: h_acceptor → h_doner
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+52. [FunctionalDependency] position: h_doner → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+53. [FunctionalDependency] position: h_acceptor → h_doner
+   Support: 0.5136137695674753
+   Confiance: 0.5136137695674753
+
+54. [FunctionalDependency] position: h_doner → h_acceptor
+   Support: 0.9283894327477538
+   Confiance: 0.9283894327477538
+
+55. [FunctionalDependency] position: pi_acceptor → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+56. [FunctionalDependency] position: h_acceptor → pi_acceptor
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+57. [FunctionalDependency] position: pi_acceptor → h_acceptor
+   Support: 0.2554646640740244
+   Confiance: 0.2554646640740244
+
+58. [FunctionalDependency] position: h_acceptor → pi_acceptor
+   Support: 0.39895287958115183
+   Confiance: 0.39895287958115183
+
+59. [FunctionalDependency] position: pi_doner → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+60. [FunctionalDependency] position: h_acceptor → pi_doner
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+61. [FunctionalDependency] position: pi_doner → h_acceptor
+   Support: 0.9283894327477538
+   Confiance: 0.9283894327477538
+
+62. [FunctionalDependency] position: h_acceptor → pi_doner
+   Support: 0.5136137695674753
+   Confiance: 0.5136137695674753
+
+63. [FunctionalDependency] position: polar → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+64. [FunctionalDependency] position: h_acceptor → polar
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+65. [FunctionalDependency] position: polarisable → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+66. [FunctionalDependency] position: h_acceptor → polarisable
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+67. [FunctionalDependency] position: polarisable → h_acceptor
+   Support: 0.5199141746010459
+   Confiance: 0.5199141746010459
+
+68. [FunctionalDependency] position: h_acceptor → polarisable
+   Support: 0.8431926924749892
+   Confiance: 0.8431926924749892
+
+69. [FunctionalDependency] position: sigma → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+70. [FunctionalDependency] position: h_acceptor → sigma
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+71. [FunctionalDependency] position: sigma → h_acceptor
+   Support: 0.5856242456752045
+   Confiance: 0.5856242456752045
+
+72. [FunctionalDependency] position: h_acceptor → sigma
+   Support: 0.8432129754778915
+   Confiance: 0.8432129754778915
+
+73. [FunctionalDependency] position: size → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+74. [FunctionalDependency] position: h_acceptor → size
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+75. [FunctionalDependency] position: size → h_acceptor
+   Support: 0.4421349067989808
+   Confiance: 0.4421349067989808
+
+76. [FunctionalDependency] position: h_acceptor → size
+   Support: 0.9204355108877722
+   Confiance: 0.9204355108877722
+
+77. [FunctionalDependency] position: h_acceptor → molecule_id
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+78. [FunctionalDependency] position: h_acceptor → position
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+79. [FunctionalDependency] position: h_acceptor → flex
+   Support: 67.18018018018019
+   Confiance: 67.18018018018019
+
+80. [FunctionalDependency] position: flex → h_acceptor
+   Support: 1.0
+   Confiance: 1.0
+
+81. [FunctionalDependency] position: size → molecule_id
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+82. [FunctionalDependency] position: size → position
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+83. [FunctionalDependency] position: size → flex
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+84. [FunctionalDependency] position: flex → size
+   Support: 1.0
+   Confiance: 1.0
+
+85. [FunctionalDependency] position: size → h_acceptor
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+86. [FunctionalDependency] position: h_acceptor → size
+   Support: 1.0
+   Confiance: 1.0
+
+87. [FunctionalDependency] position: h_doner → size
+   Support: 1.0
+   Confiance: 1.0
+
+88. [FunctionalDependency] position: size → h_doner
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+89. [FunctionalDependency] position: pi_acceptor → size
+   Support: 1.0
+   Confiance: 1.0
+
+90. [FunctionalDependency] position: size → pi_acceptor
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+91. [FunctionalDependency] position: pi_doner → size
+   Support: 1.0
+   Confiance: 1.0
+
+92. [FunctionalDependency] position: size → pi_doner
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+93. [FunctionalDependency] position: size → polar
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+94. [FunctionalDependency] position: polar → size
+   Support: 1.0
+   Confiance: 1.0
+
+95. [FunctionalDependency] position: size → polarisable
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+96. [FunctionalDependency] position: polarisable → size
+   Support: 1.0
+   Confiance: 1.0
+
+97. [FunctionalDependency] position: sigma → size
+   Support: 1.0
+   Confiance: 1.0
+
+98. [FunctionalDependency] position: size → sigma
+   Support: 32.270270270270274
+   Confiance: 32.270270270270274
+
+99. [FunctionalDependency] position: flex → h_acceptor
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+100. [FunctionalDependency] position: h_acceptor → flex
+   Support: 1.0
+   Confiance: 1.0
+
+101. [FunctionalDependency] position: flex → h_acceptor
+   Support: 0.8237897277725627
+   Confiance: 0.8237897277725627
+
+102. [FunctionalDependency] position: h_acceptor → flex
+   Support: 0.5527760280752272
+   Confiance: 0.5527760280752272
+
+103. [FunctionalDependency] position: flex → h_doner
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+104. [FunctionalDependency] position: h_doner → flex
+   Support: 1.0
+   Confiance: 1.0
+
+105. [FunctionalDependency] position: h_doner → flex
+   Support: 0.8300188967875461
+   Confiance: 0.8300188967875461
+
+106. [FunctionalDependency] position: flex → h_doner
+   Support: 0.6843237628904222
+   Confiance: 0.6843237628904222
+
+107. [FunctionalDependency] position: flex → pi_acceptor
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+108. [FunctionalDependency] position: pi_acceptor → flex
+   Support: 1.0
+   Confiance: 1.0
+
+109. [FunctionalDependency] position: pi_acceptor → flex
+   Support: 0.2631152704040313
+   Confiance: 0.2631152704040313
+
+110. [FunctionalDependency] position: flex → pi_acceptor
+   Support: 0.6123560209424084
+   Confiance: 0.6123560209424084
+
+111. [FunctionalDependency] position: pi_doner → flex
+   Support: 1.0
+   Confiance: 1.0
+
+112. [FunctionalDependency] position: flex → pi_doner
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+113. [FunctionalDependency] position: pi_doner → flex
+   Support: 0.8300188967875461
+   Confiance: 0.8300188967875461
+
+114. [FunctionalDependency] position: flex → pi_doner
+   Support: 0.6843237628904222
+   Confiance: 0.6843237628904222
+
+115. [FunctionalDependency] position: polar → flex
+   Support: 1.0
+   Confiance: 1.0
+
+116. [FunctionalDependency] position: flex → polar
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+117. [FunctionalDependency] position: flex → polarisable
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+118. [FunctionalDependency] position: polarisable → flex
+   Support: 1.0
+   Confiance: 1.0
+
+119. [FunctionalDependency] position: flex → polarisable
+   Support: 0.8964767290126142
+   Confiance: 0.8964767290126142
+
+120. [FunctionalDependency] position: polarisable → flex
+   Support: 0.37091694411949966
+   Confiance: 0.37091694411949966
+
+121. [FunctionalDependency] position: flex → sigma
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+122. [FunctionalDependency] position: sigma → flex
+   Support: 1.0
+   Confiance: 1.0
+
+123. [FunctionalDependency] position: flex → sigma
+   Support: 0.7646263757482139
+   Confiance: 0.7646263757482139
+
+124. [FunctionalDependency] position: sigma → flex
+   Support: 0.3563394222982093
+   Confiance: 0.3563394222982093
+
+125. [FunctionalDependency] position: size → flex
+   Support: 1.0
+   Confiance: 1.0
+
+126. [FunctionalDependency] position: flex → size
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+127. [FunctionalDependency] position: flex → size
+   Support: 0.9625907314349526
+   Confiance: 0.9625907314349526
+
+128. [FunctionalDependency] position: size → flex
+   Support: 0.31026725456672366
+   Confiance: 0.31026725456672366
+
+129. [FunctionalDependency] position: flex → molecule_id
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+130. [FunctionalDependency] position: flex → position
+   Support: 100.11711711711712
+   Confiance: 100.11711711711712
+
+131. [FunctionalDependency] position: sigma → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+132. [FunctionalDependency] position: polarisable → sigma
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+133. [FunctionalDependency] position: sigma → polarisable
+   Support: 0.6354936929099608
+   Confiance: 0.6354936929099608
+
+134. [FunctionalDependency] position: polarisable → sigma
+   Support: 0.5642015833172427
+   Confiance: 0.5642015833172427
+
+135. [FunctionalDependency] position: size → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+136. [FunctionalDependency] position: polarisable → size
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+137. [FunctionalDependency] position: size → polarisable
+   Support: 0.6283166594171379
+   Confiance: 0.6283166594171379
+
+138. [FunctionalDependency] position: polarisable → size
+   Support: 0.8065326633165829
+   Confiance: 0.8065326633165829
+
+139. [FunctionalDependency] position: polarisable → molecule_id
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+140. [FunctionalDependency] position: polarisable → position
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+141. [FunctionalDependency] position: polarisable → flex
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+142. [FunctionalDependency] position: flex → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+143. [FunctionalDependency] position: polarisable → h_acceptor
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+144. [FunctionalDependency] position: h_acceptor → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+145. [FunctionalDependency] position: polarisable → h_doner
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+146. [FunctionalDependency] position: h_doner → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+147. [FunctionalDependency] position: polarisable → pi_acceptor
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+148. [FunctionalDependency] position: pi_acceptor → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+149. [FunctionalDependency] position: pi_doner → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+150. [FunctionalDependency] position: polarisable → pi_doner
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+151. [FunctionalDependency] position: polar → polarisable
+   Support: 1.0
+   Confiance: 1.0
+
+152. [FunctionalDependency] position: polarisable → polar
+   Support: 41.42342342342342
+   Confiance: 41.42342342342342
+
+153. [FunctionalDependency] position: size → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+154. [FunctionalDependency] position: sigma → size
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+155. [FunctionalDependency] position: sigma → size
+   Support: 0.8967057509771078
+   Confiance: 0.8967057509771078
+
+156. [FunctionalDependency] position: size → sigma
+   Support: 0.6201969492179957
+   Confiance: 0.6201969492179957
+
+157. [FunctionalDependency] position: sigma → molecule_id
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+158. [FunctionalDependency] position: sigma → position
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+159. [FunctionalDependency] position: flex → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+160. [FunctionalDependency] position: sigma → flex
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+161. [FunctionalDependency] position: h_acceptor → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+162. [FunctionalDependency] position: sigma → h_acceptor
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+163. [FunctionalDependency] position: h_doner → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+164. [FunctionalDependency] position: sigma → h_doner
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+165. [FunctionalDependency] position: pi_acceptor → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+166. [FunctionalDependency] position: sigma → pi_acceptor
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+167. [FunctionalDependency] position: sigma → pi_doner
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+168. [FunctionalDependency] position: pi_doner → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+169. [FunctionalDependency] position: sigma → polar
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+170. [FunctionalDependency] position: polar → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+171. [FunctionalDependency] position: sigma → polarisable
+   Support: 46.65765765765766
+   Confiance: 46.65765765765766
+
+172. [FunctionalDependency] position: polarisable → sigma
+   Support: 1.0
+   Confiance: 1.0
+
+173. [FunctionalDependency] molecule: activity → molecule_id
+   Support: 0.3783783783783784
+   Confiance: 0.3783783783783784
+
+174. [FunctionalDependency] position: pi_acceptor → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+175. [FunctionalDependency] position: h_doner → pi_acceptor
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+176. [FunctionalDependency] position: h_doner → pi_acceptor
+   Support: 0.7694240837696336
+   Confiance: 0.7694240837696336
+
+177. [FunctionalDependency] position: pi_acceptor → h_doner
+   Support: 0.2725721492692336
+   Confiance: 0.2725721492692336
+
+178. [FunctionalDependency] position: h_doner → pi_doner
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+179. [FunctionalDependency] position: pi_doner → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+180. [FunctionalDependency] position: h_doner → pi_doner
+   Support: 1.0
+   Confiance: 1.0
+
+181. [FunctionalDependency] position: pi_doner → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+182. [FunctionalDependency] position: polar → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+183. [FunctionalDependency] position: h_doner → polar
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+184. [FunctionalDependency] position: polarisable → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+185. [FunctionalDependency] position: h_doner → polarisable
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+186. [FunctionalDependency] position: h_doner → polarisable
+   Support: 0.8786428882122662
+   Confiance: 0.8786428882122662
+
+187. [FunctionalDependency] position: polarisable → h_doner
+   Support: 0.29972549892425254
+   Confiance: 0.29972549892425254
+
+188. [FunctionalDependency] position: h_doner → sigma
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+189. [FunctionalDependency] position: sigma → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+190. [FunctionalDependency] position: sigma → h_doner
+   Support: 0.34928407151865865
+   Confiance: 0.34928407151865865
+
+191. [FunctionalDependency] position: h_doner → sigma
+   Support: 0.9090558022784321
+   Confiance: 0.9090558022784321
+
+192. [FunctionalDependency] position: h_doner → size
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+193. [FunctionalDependency] position: size → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+194. [FunctionalDependency] position: size → h_doner
+   Support: 0.24853475777134804
+   Confiance: 0.24853475777134804
+
+195. [FunctionalDependency] position: h_doner → size
+   Support: 0.9352317141261864
+   Confiance: 0.9352317141261864
+
+196. [FunctionalDependency] position: h_doner → molecule_id
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+197. [FunctionalDependency] position: h_doner → position
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+198. [FunctionalDependency] position: flex → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+199. [FunctionalDependency] position: h_doner → flex
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+200. [FunctionalDependency] position: h_acceptor → h_doner
+   Support: 1.0
+   Confiance: 1.0
+
+201. [FunctionalDependency] position: h_doner → h_acceptor
+   Support: 121.43243243243244
+   Confiance: 121.43243243243244
+
+202. [FunctionalDependency] position: polarisable → polar
+   Support: 1.0
+   Confiance: 1.0
+
+203. [FunctionalDependency] position: polar → polarisable
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+204. [FunctionalDependency] position: sigma → polar
+   Support: 1.0
+   Confiance: 1.0
+
+205. [FunctionalDependency] position: polar → sigma
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+206. [FunctionalDependency] position: sigma → polar
+   Support: 0.8235294117647058
+   Confiance: 0.8235294117647058
+
+207. [FunctionalDependency] position: polar → sigma
+   Support: 0.010812898242904035
+   Confiance: 0.010812898242904035
+
+208. [FunctionalDependency] position: size → polar
+   Support: 1.0
+   Confiance: 1.0
+
+209. [FunctionalDependency] position: polar → size
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+210. [FunctionalDependency] position: polar → size
+   Support: 0.011166945840312675
+   Confiance: 0.011166945840312675
+
+211. [FunctionalDependency] position: size → polar
+   Support: 0.5882352941176471
+   Confiance: 0.5882352941176471
+
+212. [FunctionalDependency] position: polar → molecule_id
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+213. [FunctionalDependency] position: polar → position
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+214. [FunctionalDependency] position: flex → polar
+   Support: 1.0
+   Confiance: 1.0
+
+215. [FunctionalDependency] position: polar → flex
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+216. [FunctionalDependency] position: polar → h_acceptor
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+217. [FunctionalDependency] position: h_acceptor → polar
+   Support: 1.0
+   Confiance: 1.0
+
+218. [FunctionalDependency] position: polar → h_doner
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+219. [FunctionalDependency] position: h_doner → polar
+   Support: 1.0
+   Confiance: 1.0
+
+220. [FunctionalDependency] position: pi_acceptor → polar
+   Support: 1.0
+   Confiance: 1.0
+
+221. [FunctionalDependency] position: polar → pi_acceptor
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+222. [FunctionalDependency] position: polar → pi_doner
+   Support: 0.6126126126126126
+   Confiance: 0.6126126126126126
+
+223. [FunctionalDependency] position: pi_doner → polar
+   Support: 1.0
+   Confiance: 1.0
+

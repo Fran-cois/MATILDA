@@ -1,0 +1,650 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.423423423423423,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.423423423423423,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.2955145118733509,
+        "support": 0.22810590631364563,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.22810590631364563,
+        "support": 0.2955145118733509,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.423423423423423,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.423423423423423,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.20184899845916796,
+        "support": 0.5336048879837068,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5336048879837068,
+        "support": 0.20184899845916796,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 4.423423423423423,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 4.423423423423423,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.693693693693694,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.693693693693694,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.693693693693694,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.693693693693694,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 11.693693693693694,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 11.693693693693694,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.63063063063063,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.63063063063063,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5926680244399185,
+        "support": 0.02605192479856759,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.02605192479856759,
+        "support": 0.5926680244399185,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.63063063063063,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.63063063063063,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.9604221635883905,
+        "support": 0.03258728737690242,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.03258728737690242,
+        "support": 0.9604221635883905,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 100.63063063063063,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 100.63063063063063,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.0891674127126231,
+        "support": 0.7673343605546995,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.7673343605546995,
+        "support": 0.0891674127126231,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.4144144144144146,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.4144144144144146,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col3"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.15870570107858242,
+        "support": 0.5435356200527705,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col3"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 0.5435356200527705,
+        "support": 0.15870570107858242,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col0"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.4144144144144146,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col0"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.4144144144144146,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col1"
+        ],
+        "dependent": [
+            "col2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 3.4144144144144146,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "LINKS",
+        "determinant": [
+            "col2"
+        ],
+        "dependent": [
+            "col1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 3.4144144144144146,
+        "support": 1.0,
+        "coverage": null,
+        "n_violations": null,
+        "converted_from_egd": true,
+        "original_egd": null
+    }
+]

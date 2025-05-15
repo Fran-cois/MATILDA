@@ -1,0 +1,11 @@
+# FDs sauvegardées: 2
+# Date: 2025-04-28 06:31:16
+
+1. [FunctionalDependency] target: is_elti → name1
+   Support: 1012.4125809435708
+   Confiance: 1012.4125809435708
+
+2. [FunctionalDependency] target: is_elti → name2
+   Support: 1012.4125809435708
+   Confiance: 1012.4125809435708
+

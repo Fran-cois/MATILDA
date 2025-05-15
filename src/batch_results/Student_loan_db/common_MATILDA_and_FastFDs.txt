@@ -1,0 +1,23 @@
+# Règles communes sauvegardées: 10
+# Date: 2025-04-28 09:59:09
+
+1. enrolled: name → month [conf=1.00, supp=76.12] <=> enrolled: name → month
+
+2. enrolled: school → month [conf=1.00, supp=76.12] <=> enrolled: school → month
+
+3. no_payment_due: name → bool [conf=1.00, supp=539.90] <=> no_payment_due: name → bool
+
+4. longest_absense_from_school: name → month [conf=1.00, supp=99.76] <=> longest_absense_from_school: name → month
+
+5. enlist: organ → name [conf=62.78, supp=1.00] <=> enlist: organ → name
+
+6. enlist: name → organ [conf=1.00, supp=62.78] <=> enlist: name → organ
+
+7. enlist: name → organ [conf=1.15, supp=1.00] <=> enlist: name → organ
+
+8. enlist: organ → name [conf=1.00, supp=1.15] <=> enlist: organ → name
+
+9. enlist: name → organ [conf=0.02, supp=0.89] <=> enlist: name → organ
+
+10. enlist: organ → name [conf=0.89, supp=0.02] <=> enlist: organ → name
+

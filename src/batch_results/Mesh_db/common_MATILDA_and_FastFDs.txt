@@ -1,0 +1,31 @@
+# Règles communes sauvegardées: 14
+# Date: 2025-04-28 07:17:37
+
+1. neighbour_yz: name1 → name2 [conf=1.06, supp=1.00] <=> neighbour_yz: name1 → name2
+
+2. neighbour_yz: name2 → name1 [conf=1.00, supp=1.06] <=> neighbour_yz: name2 → name1
+
+3. neighbour_yz: name2 → name1 [conf=0.95, supp=0.93] <=> neighbour_yz: name2 → name1
+
+4. neighbour_yz: name1 → name2 [conf=0.93, supp=0.95] <=> neighbour_yz: name1 → name2
+
+5. neighbour_yz: name2 → name1 [conf=1.08, supp=1.00] <=> neighbour_yz: name2 → name1
+
+6. neighbour_yz: name1 → name2 [conf=1.00, supp=1.08] <=> neighbour_yz: name1 → name2
+
+7. mesh_test_Neg: num → name [conf=1.00, supp=12.00] <=> mesh_test_Neg: num → name
+
+8. mesh_test_Neg: name → num [conf=12.00, supp=1.00] <=> mesh_test_Neg: name → num
+
+9. mesh_test_Neg: name → num [conf=0.02, supp=0.08] <=> mesh_test_Neg: name → num
+
+10. mesh_test_Neg: num → name [conf=0.08, supp=0.02] <=> mesh_test_Neg: num → name
+
+11. mesh_test_Neg: name → num [conf=1.00, supp=51.51] <=> mesh_test_Neg: name → num
+
+12. mesh_test_Neg: num → name [conf=51.51, supp=1.00] <=> mesh_test_Neg: num → name
+
+13. mesh: name → num [conf=1.00, supp=37.91] <=> mesh: name → num
+
+14. mesh_test: name → num [conf=1.00, supp=12.07] <=> mesh_test: name → num
+

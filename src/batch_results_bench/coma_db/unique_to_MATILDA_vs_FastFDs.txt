@@ -1,0 +1,51 @@
+# FDs sauvegardées: 12
+# Date: 2025-04-29 20:51:16
+
+1. [FunctionalDependency] LINKS: col3 → col1
+   Support: 1.0
+   Confiance: 1.0
+
+2. [FunctionalDependency] LINKS: col3 → col1
+   Support: 0.5336048879837068
+   Confiance: 0.5336048879837068
+
+3. [FunctionalDependency] LINKS: col0 → col3
+   Support: 1.0
+   Confiance: 1.0
+
+4. [FunctionalDependency] LINKS: col3 → col0
+   Support: 11.693693693693694
+   Confiance: 11.693693693693694
+
+5. [FunctionalDependency] LINKS: col3 → col1
+   Support: 11.693693693693694
+   Confiance: 11.693693693693694
+
+6. [FunctionalDependency] LINKS: col3 → col2
+   Support: 11.693693693693694
+   Confiance: 11.693693693693694
+
+7. [FunctionalDependency] LINKS: col3 → col0
+   Support: 1.0
+   Confiance: 1.0
+
+8. [FunctionalDependency] LINKS: col0 → col3
+   Support: 100.63063063063063
+   Confiance: 100.63063063063063
+
+9. [FunctionalDependency] LINKS: col3 → col0
+   Support: 0.0891674127126231
+   Confiance: 0.0891674127126231
+
+10. [FunctionalDependency] LINKS: col0 → col3
+   Support: 0.7673343605546995
+   Confiance: 0.7673343605546995
+
+11. [FunctionalDependency] LINKS: col3 → col2
+   Support: 1.0
+   Confiance: 1.0
+
+12. [FunctionalDependency] LINKS: col3 → col2
+   Support: 0.5435356200527705
+   Confiance: 0.5435356200527705
+

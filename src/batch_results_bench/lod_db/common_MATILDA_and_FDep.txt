@@ -1,0 +1,141 @@
+# Règles communes sauvegardées: 69
+# Date: 2025-04-30 13:46:52
+
+1. PERSON_EN_SHREDDED: col0 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col0 → col6
+
+2. PERSON_EN_SHREDDED: col1 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col1 → col6
+
+3. PERSON_EN_SHREDDED: col3 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col3 → col6
+
+4. PERSON_EN_SHREDDED: col4 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col4 → col6
+
+5. PERSON_EN_SHREDDED: col5 → col6 [conf=1.00, supp=4.56] <=> PERSON_EN_SHREDDED: col5 → col6
+
+6. PERSON_EN: col2 → col1 [conf=1.65, supp=1.00] <=> PERSON_EN: col2 → col1
+
+7. PERSON_EN_SHREDDED: col5 → col6 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col6
+
+8. PERSON_EN_SHREDDED: col5 → col6 [conf=0.46, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col6
+
+9. PERSON_EN_SHREDDED: col5 → col0 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col0
+
+10. PERSON_EN_SHREDDED: col5 → col1 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col1
+
+11. PERSON_EN_SHREDDED: col5 → col2 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col2
+
+12. PERSON_EN_SHREDDED: col5 → col3 [conf=2.11, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col3
+
+13. PERSON_EN_SHREDDED: col4 → col6 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col6
+
+14. PERSON_EN_SHREDDED: col4 → col6 [conf=0.44, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col6
+
+15. PERSON_EN_SHREDDED: col4 → col0 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col0
+
+16. PERSON_EN_SHREDDED: col4 → col1 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col1
+
+17. PERSON_EN_SHREDDED: col4 → col2 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col2
+
+18. PERSON_EN_SHREDDED: col4 → col3 [conf=1.98, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col3
+
+19. PERSON_EN_SHREDDED: col4 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col3
+
+20. PERSON_EN_SHREDDED: col4 → col3 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col3
+
+21. PERSON_EN_SHREDDED: col5 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col3
+
+22. PERSON_EN_SHREDDED: col5 → col3 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col3
+
+23. PERSON_EN_SHREDDED: col3 → col6 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col6
+
+24. PERSON_EN_SHREDDED: col3 → col6 [conf=0.97, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col6
+
+25. PERSON_EN_SHREDDED: col3 → col0 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col0
+
+26. PERSON_EN_SHREDDED: col0 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col0 → col3
+
+27. PERSON_EN_SHREDDED: col3 → col1 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col1
+
+28. PERSON_EN_SHREDDED: col1 → col3 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col1 → col3
+
+29. PERSON_EN_SHREDDED: col3 → col2 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col2
+
+30. PERSON_EN: col2 → col1 [conf=1.00, supp=6.08] <=> PERSON_EN: col2 → col1
+
+31. PERSON_EN: col2 → col1 [conf=0.27, supp=1.00] <=> PERSON_EN: col2 → col1
+
+32. PERSON_EN_SHREDDED: col3 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col3 → col2
+
+33. PERSON_EN_SHREDDED: col3 → col2 [conf=0.83, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col2
+
+34. PERSON_EN_SHREDDED: col4 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col4 → col2
+
+35. PERSON_EN_SHREDDED: col4 → col2 [conf=0.37, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col2
+
+36. PERSON_EN_SHREDDED: col5 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col5 → col2
+
+37. PERSON_EN_SHREDDED: col5 → col2 [conf=0.40, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col2
+
+38. PERSON_EN_SHREDDED: col0 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col0 → col2
+
+39. PERSON_EN_SHREDDED: col1 → col2 [conf=1.00, supp=5.31] <=> PERSON_EN_SHREDDED: col1 → col2
+
+40. PERSON_EN_SHREDDED: col1 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col1 → col0
+
+41. PERSON_EN_SHREDDED: col0 → col1 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col1
+
+42. PERSON_EN_SHREDDED: col0 → col1 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col1
+
+43. PERSON_EN_SHREDDED: col1 → col0 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col0
+
+44. PERSON_EN_SHREDDED: col0 → col2 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col2
+
+45. PERSON_EN_SHREDDED: col0 → col2 [conf=0.83, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col2
+
+46. PERSON_EN_SHREDDED: col0 → col3 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col3
+
+47. PERSON_EN_SHREDDED: col3 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col3 → col0
+
+48. PERSON_EN_SHREDDED: col0 → col3 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col3
+
+49. PERSON_EN_SHREDDED: col3 → col0 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col0
+
+50. PERSON_EN_SHREDDED: col4 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col0
+
+51. PERSON_EN_SHREDDED: col4 → col0 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col0
+
+52. PERSON_EN_SHREDDED: col5 → col0 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col0
+
+53. PERSON_EN_SHREDDED: col5 → col0 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col0
+
+54. PERSON_EN_SHREDDED: col0 → col6 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col6
+
+55. PERSON_EN_SHREDDED: col0 → col6 [conf=0.97, supp=1.00] <=> PERSON_EN_SHREDDED: col0 → col6
+
+56. PERSON_EN_SHREDDED: col1 → col2 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col2
+
+57. PERSON_EN_SHREDDED: col1 → col2 [conf=0.83, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col2
+
+58. PERSON_EN_SHREDDED: col3 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col3 → col1
+
+59. PERSON_EN_SHREDDED: col1 → col3 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col3
+
+60. PERSON_EN_SHREDDED: col3 → col1 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col3 → col1
+
+61. PERSON_EN_SHREDDED: col1 → col3 [conf=1.00, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col3
+
+62. PERSON_EN_SHREDDED: col4 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col4 → col1
+
+63. PERSON_EN_SHREDDED: col4 → col1 [conf=0.45, supp=1.00] <=> PERSON_EN_SHREDDED: col4 → col1
+
+64. PERSON_EN_SHREDDED: col5 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col5 → col1
+
+65. PERSON_EN_SHREDDED: col5 → col1 [conf=0.48, supp=1.00] <=> PERSON_EN_SHREDDED: col5 → col1
+
+66. PERSON_EN_SHREDDED: col1 → col6 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col6
+
+67. PERSON_EN_SHREDDED: col1 → col6 [conf=0.97, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col6
+
+68. PERSON_EN_SHREDDED: col1 → col0 [conf=4.41, supp=1.00] <=> PERSON_EN_SHREDDED: col1 → col0
+
+69. PERSON_EN_SHREDDED: col0 → col1 [conf=1.00, supp=4.41] <=> PERSON_EN_SHREDDED: col0 → col1
+

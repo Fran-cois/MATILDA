@@ -45,13 +45,48 @@ class QueryUtility:
     Handles complex queries, including threshold checks and join row counts.
     """
 
-    def __init__(self, engine, metadata: MetaData, logger_query_time, logger_query_results):
+    def __init__(self, engine, metadata: MetaData, logger_query_time, logger_query_results, enable_logging=True):
         self.engine = engine
         self.metadata = metadata
         self.logger_query_time = logger_query_time
         self.logger_query_results = logger_query_results
+        self.enable_logging = enable_logging
 
         self._setup_logging_handlers()  # Setup logging handlers
+        
+    def set_logging_enabled(self, enabled: bool):
+        """
+        Active ou désactive la journalisation.
+        
+        :param enabled: True pour activer la journalisation, False pour la désactiver
+        """
+        self.enable_logging = enabled
+        
+    def _log_debug(self, message: str):
+        """Wrapper pour logger.debug qui vérifie si la journalisation est activée"""
+        if self.enable_logging:
+            self.logger_query_time.debug(message)
+            
+    def _log_info(self, message: str):
+        """Wrapper pour logger.info qui vérifie si la journalisation est activée"""
+        if self.enable_logging:
+            self.logger_query_time.info(message)
+            
+    def _log_warning(self, message: str):
+        """Wrapper pour logger.warning qui vérifie si la journalisation est activée"""
+        if self.enable_logging:
+            self.logger_query_time.warning(message)
+            
+    def _log_error(self, message: str):
+        """Wrapper pour logger.error qui vérifie si la journalisation est activée"""
+        if self.enable_logging:
+            self.logger_query_time.error(message)
+            
+    def _log_results(self, message: str):
+        """Wrapper pour logger_query_results.info qui vérifie si la journalisation est activée"""
+        if self.enable_logging:
+            self.logger_query_results.info(message)
+            
     def _setup_logging_handlers(self):
         formatter = ColorFormatter('%(asctime)s - %(levelname)s - %(message)s')
 
@@ -66,6 +101,7 @@ class QueryUtility:
         handler_results.setFormatter(formatter)
         self.logger_query_results.addHandler(handler_results)
         self.logger_query_results.setLevel(logging.DEBUG)
+
     def check_threshold(
         self,
         join_conditions: List[Tuple[str, int, str, str, int, str]],
@@ -84,7 +120,7 @@ class QueryUtility:
 
         if query is None :
             return 0
-
+        # self.logger_query_results.info(f"Threshold Query: {str(query)}")
         start = time.time()
         try:
             with self.engine.connect() as conn:
@@ -115,7 +151,6 @@ class QueryUtility:
         query, primary_key_conditions, join_base = self._construct_count_query(
             join_conditions, disjoint_semantics, distinct, count_over
         )
-
         if query is None:
             return 0
 
@@ -124,7 +159,8 @@ class QueryUtility:
             with self.engine.connect() as conn:
                 result_sqlite = conn.execute(query).scalar()
         except Exception as e:
-            self.logger_query_time.error(f"Error executing query: {e}")
+            print(f"Error executing query: {e}")
+            # self.logger_query_time.error(f"Error executing query: {e}")
             return 0
         end = time.time()
 
@@ -135,8 +171,8 @@ class QueryUtility:
         # self.logger_query_results.info(
         #     f"Query: {str(query)}; Result: {result_sqlite}"
         # )
-
-        return result_sqlite if result_sqlite is not None else 0
+        # assert result_sqlite 
+        return result_sqlite #if result_sqlite is not None else 0
 
     # Below methods are similar to the original code but reorganized for clarity.
 
@@ -179,27 +215,38 @@ class QueryUtility:
         distinct,
         count_over
     ):
+        # Débogage: vérifier les conditions de jointure entrantes
+        # self.logger_query_time.debug(f"Input join conditions: {join_conditions}")
+        
         condition_groups = self._organize_join_conditions(join_conditions)
         try:
             join_bases, aliases, used_aliases, table_occurrences = (
                 self._process_join_conditions(condition_groups, disjoint_semantics)
             )
+            
+            # Débogage: vérifier les résultats de _process_join_conditions
+            # self.logger_query_time.debug(f"Join bases: {join_bases}")
+            # self.logger_query_time.debug(f"Used aliases: {used_aliases}")
+            
         except Exception as e:
-            self.logger_query_time.error(f"Error processing join conditions: {e}")
+            # self.logger_query_time.error(f"Error processing join conditions: {e}")
+            import traceback
+            # self.logger_query_time.error(f"Traceback: {traceback.format_exc()}")
             return None, None, None
 
-        if not join_bases:
-            return None, None, None
+        if join_bases:
+            join_base, where_constraints = self._construct_join(join_bases, aliases, used_aliases)
+            if disjoint_semantics:
+                primary_key_conditions = self._construct_primary_key_conditions(table_occurrences, aliases, used_aliases)
+                primary_key_conditions += where_constraints
+            else:
+                primary_key_conditions = where_constraints
 
-        join_base, where_constraints = self._construct_join(join_bases, aliases, used_aliases)
-        if disjoint_semantics:
-            primary_key_conditions = self._construct_primary_key_conditions(table_occurrences, aliases, used_aliases)
-            primary_key_conditions += where_constraints
+            query = self._construct_select_query(join_base, distinct, primary_key_conditions, count_over, aliases)
+            return query, primary_key_conditions, join_base
         else:
-            primary_key_conditions = where_constraints
-
-        query = self._construct_select_query(join_base, distinct, primary_key_conditions, count_over, aliases)
-        return query, primary_key_conditions, join_base
+            self.logger_query_time.error("No valid join conditions found. Check table and column names.")
+            return None, None, None
 
     def _organize_join_conditions(self, join_conditions: List[Tuple[str, int, str, str, int, str]]):
         condition_groups = {}
@@ -221,35 +268,70 @@ class QueryUtility:
         join_bases = []
         table_occurrences = {}
 
+        # Débogage: vérifier si condition_groups est vide
+        if not condition_groups:
+            self.logger_query_time.warning("No join conditions provided")
+            return join_bases, aliases, used_aliases, table_occurrences
+        
+        # Débogage: afficher les groupes de conditions
+        # self.logger_query_time.debug(f"Processing condition groups: {condition_groups}")
+
         for key, group in condition_groups.items():
             sorted_key = sorted(list(key))
             if len(sorted_key) == 2:
                 table_name1, occurrence1 = sorted_key[0]
                 table_name2, occurrence2 = sorted_key[1]
 
+                # Vérifier l'existence des tables
                 if table_name1 not in self.metadata.tables:
-                    #self.logger_query_time.debug(f"Table '{table_name1}' does not exist; skipping join condition.")
+                    self.logger_query_time.warning(f"Table '{table_name1}' does not exist; skipping join condition.")
                     continue
                 if table_name2 not in self.metadata.tables:
-                    #self.logger_query_time.debug(f"Table '{table_name2}' does not exist; skipping join condition.")
+                    self.logger_query_time.warning(f"Table '{table_name2}' does not exist; skipping join condition.")
                     continue
 
                 if disjoint_semantics:
                     table_occurrences.setdefault(table_name1, set()).add(occurrence1)
                     table_occurrences.setdefault(table_name2, set()).add(occurrence2)
 
-                alias1 = self._get_or_create_alias(aliases, table_name1, occurrence1)
-                alias2 = self._get_or_create_alias(aliases, table_name2, occurrence2)
+                # Création des alias
+                try:
+                    alias1 = self._get_or_create_alias(aliases, table_name1, occurrence1)
+                    alias2 = self._get_or_create_alias(aliases, table_name2, occurrence2)
+                except Exception as e:
+                    self.logger_query_time.error(f"Error creating aliases: {e}")
+                    continue
 
                 partial_join_conditions = []
-                for (tn1, o1, attr1, tn2, o2, attr2) in group:
-                    columns_alias1 = [str(el).split(".")[1] for el in alias1.columns._all_columns]
-                    columns_alias2 = [str(el).split(".")[1] for el in alias2.columns._all_columns]
+                
+                # Débogage: vérifier les attributs disponibles
+                columns_alias1 = [str(el).split(".")[1] for el in alias1.columns._all_columns]
+                columns_alias2 = [str(el).split(".")[1] for el in alias2.columns._all_columns]
+                # self.logger_query_time.debug(f"Available columns in {table_name1}_{occurrence1}: {columns_alias1}")
+                # self.logger_query_time.debug(f"Available columns in {table_name2}_{occurrence2}: {columns_alias2}")
 
-                    if attr1 in columns_alias1 and attr2 in columns_alias2:
+                for (tn1, o1, attr1, tn2, o2, attr2) in group:
+                    # Vérifier si les attributs existent dans les colonnes de chaque alias
+                    attr1_exists = attr1 in columns_alias1
+                    attr2_exists = attr2 in columns_alias2
+                    attr1_in_alias2 = attr1 in columns_alias2
+                    attr2_in_alias1 = attr2 in columns_alias1
+                    
+                    # Débogage des attributs
+                    if not (attr1_exists and attr2_exists) and not (attr1_in_alias2 and attr2_in_alias1):
+                        self.logger_query_time.warning(
+                            f"Attributes not found in tables. "
+                            f"{attr1} in {table_name1}_{occurrence1}: {attr1_exists}, "
+                            f"{attr2} in {table_name2}_{occurrence2}: {attr2_exists}, "
+                            f"{attr1} in {table_name2}_{occurrence2}: {attr1_in_alias2}, "
+                            f"{attr2} in {table_name1}_{occurrence1}: {attr2_in_alias1}"
+                        )
+                        
+                    # Ajouter la condition de jointure si les attributs existent
+                    if attr1_exists and attr2_exists:
                         partial_join_conditions.append(alias1.columns[attr1] == alias2.columns[attr2])
-                    elif attr2 in columns_alias1 and attr1 in columns_alias2:
-                        partial_join_conditions.append(alias1.columns[attr2] == alias2.columns[attr1])
+                    elif attr1_in_alias2 and attr2_in_alias1:
+                        partial_join_conditions.append(alias2.columns[attr1] == alias1.columns[attr2])
 
                 if partial_join_conditions:
                     join_condition = and_(*partial_join_conditions)
@@ -258,23 +340,52 @@ class QueryUtility:
                     )
                     used_aliases.add(f"{table_name1}_{occurrence1}")
                     used_aliases.add(f"{table_name2}_{occurrence2}")
+                else:
+                    self.logger_query_time.warning(
+                        f"No valid join conditions found for tables {table_name1}_{occurrence1} "
+                        f"and {table_name2}_{occurrence2}"
+                    )
 
             elif len(sorted_key) == 1:
+                # ... Traitement des cas où la clé ne contient qu'une seule table ...
                 (table_name1, occurrence1) = sorted_key[0]
                 if table_name1 not in self.metadata.tables:
-                    self.logger_query_time.error(f"Table '{table_name1}' does not exist; skipping condition.")
+                    # self.logger_query_time.warning(f"Table '{table_name1}' does not exist; skipping condition.")
                     continue
-                alias1 = self._get_or_create_alias(aliases, table_name1, occurrence1)
+                    
+                try:
+                    alias1 = self._get_or_create_alias(aliases, table_name1, occurrence1)
+                except Exception as e:
+                    # self.logger_query_time.error(f"Error creating alias for {table_name1}_{occurrence1}: {e}")
+                    continue
+                    
                 partial_join_conditions = []
+                columns_alias1 = [str(el).split(".")[1] for el in alias1.columns._all_columns]
+                
+                # self.logger_query_time.debug(f"Available columns in {table_name1}_{occurrence1}: {columns_alias1}")
+                
                 for (tn1, o1, attr1, tn2, o2, attr2) in group:
-                    columns_alias1 = [str(el).split(".")[1] for el in alias1.columns._all_columns]
+                    # Vérifier que les attributs existent
                     if attr1 in columns_alias1 and attr2 in columns_alias1:
                         partial_join_conditions.append(alias1.columns[attr1] == alias1.columns[attr2])
+                    else:
+                        self.logger_query_time.warning(
+                            f"Attribute not found. {attr1} or {attr2} not in {columns_alias1}"
+                        )
+                        
                 if partial_join_conditions:
                     join_condition = and_(*partial_join_conditions)
                     join_bases.append((f"{table_name1}_{occurrence1}", None, join_condition))
                     used_aliases.add(f"{table_name1}_{occurrence1}")
+                else:
+                    self.logger_query_time.warning(
+                        f"No valid join conditions found for table {table_name1}_{occurrence1}"
+                    )
 
+        # # Débogage: vérifier si join_bases est vide après traitement
+        # if not join_bases:
+        #     self.logger_query_time.warning("No valid join bases found after processing all conditions")
+            
         return join_bases, aliases, used_aliases, table_occurrences
 
     def _get_or_create_alias(self, aliases: Dict[str, Any], table_name: str, occurrence: int):

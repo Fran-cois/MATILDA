@@ -1,0 +1,131 @@
+# FDs sauvegardées: 32
+# Date: 2025-04-27 21:38:43
+
+1. [FunctionalDependency] utube_attributes: value2 → direction
+   Support: 63.76599634369287
+   Confiance: 63.76599634369287
+
+2. [FunctionalDependency] utube_attributes: direction → value2
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] utube_attributes: value2 → direction
+   Support: 0.03890692695087504
+   Confiance: 0.03890692695087504
+
+4. [FunctionalDependency] utube_attributes: direction → value2
+   Support: 0.3328985091743119
+   Confiance: 0.3328985091743119
+
+5. [FunctionalDependency] utube_attributes: id_states → value2
+   Support: 1.0
+   Confiance: 1.0
+
+6. [FunctionalDependency] utube_attributes: value2 → id_states
+   Support: 63.76599634369287
+   Confiance: 63.76599634369287
+
+7. [FunctionalDependency] utube_attributes: value2 → name
+   Support: 63.76599634369287
+   Confiance: 63.76599634369287
+
+8. [FunctionalDependency] utube_attributes: name → value2
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] utube_attributes: value1 → value2
+   Support: 1.0
+   Confiance: 1.0
+
+10. [FunctionalDependency] utube_attributes: value2 → value1
+   Support: 63.76599634369287
+   Confiance: 63.76599634369287
+
+11. [FunctionalDependency] utube_attributes: value1 → value2
+   Support: 304.3263274336283
+   Confiance: 304.3263274336283
+
+12. [FunctionalDependency] utube_attributes: value2 → value1
+   Support: 0.42591721033059515
+   Confiance: 0.42591721033059515
+
+13. [FunctionalDependency] utube_attributes: value1 → value2
+   Support: 0.24747706422018348
+   Confiance: 0.24747706422018348
+
+14. [FunctionalDependency] utube_attributes: value2 → value1
+   Support: 0.053455039741394525
+   Confiance: 0.053455039741394525
+
+15. [FunctionalDependency] utube_attributes: direction → value1
+   Support: 1.0
+   Confiance: 1.0
+
+16. [FunctionalDependency] utube_attributes: value1 → direction
+   Support: 295.2129798903108
+   Confiance: 295.2129798903108
+
+17. [FunctionalDependency] utube_attributes: direction → value1
+   Support: 0.3340258791254726
+   Confiance: 0.3340258791254726
+
+18. [FunctionalDependency] utube_attributes: value1 → direction
+   Support: 0.1807346796540713
+   Confiance: 0.1807346796540713
+
+19. [FunctionalDependency] utube_attributes: value1 → id_states
+   Support: 295.2129798903108
+   Confiance: 295.2129798903108
+
+20. [FunctionalDependency] utube_attributes: id_states → value1
+   Support: 1.0
+   Confiance: 1.0
+
+21. [FunctionalDependency] utube_attributes: name → value1
+   Support: 1.0
+   Confiance: 1.0
+
+22. [FunctionalDependency] utube_attributes: value1 → name
+   Support: 295.2129798903108
+   Confiance: 295.2129798903108
+
+23. [FunctionalDependency] utube_states: class → id
+   Support: 538.0585009140768
+   Confiance: 538.0585009140768
+
+24. [FunctionalDependency] utube_states: id → class
+   Support: 1.0
+   Confiance: 1.0
+
+25. [FunctionalDependency] utube_attributes: direction → id_states
+   Support: 545.5996343692871
+   Confiance: 545.5996343692871
+
+26. [FunctionalDependency] utube_attributes: id_states → direction
+   Support: 1.0
+   Confiance: 1.0
+
+27. [FunctionalDependency] utube_attributes: direction → name
+   Support: 545.5996343692871
+   Confiance: 545.5996343692871
+
+28. [FunctionalDependency] utube_attributes: name → direction
+   Support: 1.0
+   Confiance: 1.0
+
+29. [FunctionalDependency] utube_attributes: direction → value1
+   Support: 545.5996343692871
+   Confiance: 545.5996343692871
+
+30. [FunctionalDependency] utube_attributes: value1 → direction
+   Support: 1.0
+   Confiance: 1.0
+
+31. [FunctionalDependency] utube_attributes: direction → value2
+   Support: 545.9280973451328
+   Confiance: 545.9280973451328
+
+32. [FunctionalDependency] utube_attributes: value2 → direction
+   Support: 0.4134114387001873
+   Confiance: 0.4134114387001873
+

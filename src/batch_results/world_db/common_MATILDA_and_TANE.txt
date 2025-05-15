@@ -1,0 +1,117 @@
+# Règles communes sauvegardées: 57
+# Date: 2025-04-28 06:49:43
+
+1. Country: GNPOld → Population [conf=0.03, supp=0.01] <=> Country: GNPOld → Population
+
+2. Country: LocalName → Population [conf=1.00, supp=0.26] <=> Country: LocalName → Population
+
+3. Country: Capital → Population [conf=0.32, supp=0.09] <=> Country: Capital → Population
+
+4. Country: Code2 → Population [conf=1.00, supp=0.26] <=> Country: Code2 → Population
+
+5. Country: Code → Population [conf=1.00, supp=0.26] <=> Country: Code → Population
+
+6. Country: Name → Population [conf=1.00, supp=0.26] <=> Country: Name → Population
+
+7. City: ID → District [conf=1.00, supp=12.51] <=> City: ID → District
+
+8. Country: GNPOld → IndepYear [conf=0.92, supp=4.53] <=> Country: GNPOld → IndepYear
+
+9. Country: LocalName → IndepYear [conf=1.00, supp=3.67] <=> Country: LocalName → IndepYear
+
+10. Country: Capital → IndepYear [conf=1.00, supp=3.78] <=> Country: Capital → IndepYear
+
+11. Country: Code2 → IndepYear [conf=1.00, supp=3.67] <=> Country: Code2 → IndepYear
+
+12. Country: Code → IndepYear [conf=1.00, supp=3.67] <=> Country: Code → IndepYear
+
+13. Country: Name → IndepYear [conf=1.00, supp=3.67] <=> Country: Name → IndepYear
+
+14. Country: SurfaceArea → Region [conf=1.00, supp=11.98] <=> Country: SurfaceArea → Region
+
+15. Country: GNPOld → Region [conf=0.76, supp=12.17] <=> Country: GNPOld → Region
+
+16. Country: LocalName → Region [conf=1.00, supp=11.98] <=> Country: LocalName → Region
+
+17. Country: Capital → Region [conf=0.99, supp=12.18] <=> Country: Capital → Region
+
+18. Country: Code2 → Region [conf=1.00, supp=11.98] <=> Country: Code2 → Region
+
+19. Country: Code → Region [conf=1.00, supp=11.98] <=> Country: Code → Region
+
+20. Country: Name → Region [conf=1.00, supp=11.98] <=> Country: Name → Region
+
+21. Country: Region → Continent [conf=11.98, supp=1.00] <=> Country: Region → Continent
+
+22. Country: Region → Continent [conf=1.00, supp=42.74] <=> Country: Region → Continent
+
+23. Country: Region → Continent [conf=0.28, supp=1.00] <=> Country: Region → Continent
+
+24. Country: SurfaceArea → Continent [conf=1.00, supp=42.74] <=> Country: SurfaceArea → Continent
+
+25. Country: GNPOld → Continent [conf=0.79, supp=45.20] <=> Country: GNPOld → Continent
+
+26. Country: LocalName → Continent [conf=1.00, supp=42.74] <=> Country: LocalName → Continent
+
+27. Country: Capital → Continent [conf=0.99, supp=43.59] <=> Country: Capital → Continent
+
+28. Country: Code2 → Continent [conf=1.00, supp=42.74] <=> Country: Code2 → Continent
+
+29. Country: Code → Continent [conf=1.00, supp=42.74] <=> Country: Code → Continent
+
+30. Country: Name → Continent [conf=1.00, supp=42.74] <=> Country: Name → Continent
+
+31. Country: Capital → GovernmentForm [conf=1.00, supp=68.92] <=> Country: Capital → GovernmentForm
+
+32. Country: Code2 → GovernmentForm [conf=1.00, supp=67.02] <=> Country: Code2 → GovernmentForm
+
+33. Country: Code → GovernmentForm [conf=1.00, supp=67.02] <=> Country: Code → GovernmentForm
+
+34. Country: Name → GovernmentForm [conf=1.00, supp=67.02] <=> Country: Name → GovernmentForm
+
+35. Country: GNPOld → GovernmentForm [conf=0.89, supp=80.51] <=> Country: GNPOld → GovernmentForm
+
+36. Country: LocalName → GovernmentForm [conf=1.00, supp=67.02] <=> Country: LocalName → GovernmentForm
+
+37. Country: LocalName → GNP [conf=1.00, supp=2.33] <=> Country: LocalName → GNP
+
+38. Country: Capital → GNP [conf=0.71, supp=1.70] <=> Country: Capital → GNP
+
+39. Country: Code2 → GNP [conf=1.00, supp=2.33] <=> Country: Code2 → GNP
+
+40. Country: Code → GNP [conf=1.00, supp=2.33] <=> Country: Code → GNP
+
+41. Country: Name → GNP [conf=1.00, supp=2.33] <=> Country: Name → GNP
+
+42. Country: Capital → HeadOfState [conf=0.91, supp=5.38] <=> Country: Capital → HeadOfState
+
+43. Country: Code2 → HeadOfState [conf=1.00, supp=5.72] <=> Country: Code2 → HeadOfState
+
+44. Country: Code → HeadOfState [conf=1.00, supp=5.72] <=> Country: Code → HeadOfState
+
+45. Country: Name → HeadOfState [conf=1.00, supp=5.72] <=> Country: Name → HeadOfState
+
+46. Country: SurfaceArea → HeadOfState [conf=1.00, supp=5.72] <=> Country: SurfaceArea → HeadOfState
+
+47. Country: GNPOld → HeadOfState [conf=0.40, supp=3.08] <=> Country: GNPOld → HeadOfState
+
+48. Country: LocalName → HeadOfState [conf=1.00, supp=5.72] <=> Country: LocalName → HeadOfState
+
+49. City: ID → CountryCode [conf=1.00, supp=149.43] <=> City: ID → CountryCode
+
+50. City: ID → Name [conf=1.00, supp=0.04] <=> City: ID → Name
+
+51. City: ID → Population [conf=1.00, supp=0.14] <=> City: ID → Population
+
+52. Country: GNPOld → LifeExpectancy [conf=0.78, supp=0.72] <=> Country: GNPOld → LifeExpectancy
+
+53. Country: LocalName → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: LocalName → LifeExpectancy
+
+54. Country: Capital → LifeExpectancy [conf=1.00, supp=0.71] <=> Country: Capital → LifeExpectancy
+
+55. Country: Code2 → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: Code2 → LifeExpectancy
+
+56. Country: Code → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: Code → LifeExpectancy
+
+57. Country: Name → LifeExpectancy [conf=1.00, supp=0.69] <=> Country: Name → LifeExpectancy
+

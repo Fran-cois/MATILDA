@@ -1,0 +1,207 @@
+# FDs sauvegardées: 51
+# Date: 2025-04-27 18:19:27
+
+1. [FunctionalDependency] person: yearsInProgram → p_id
+   Support: 77.53237410071942
+   Confiance: 77.53237410071942
+
+2. [FunctionalDependency] person: professor → yearsInProgram
+   Support: 1.0
+   Confiance: 1.0
+
+3. [FunctionalDependency] person: student → yearsInProgram
+   Support: 1.0
+   Confiance: 1.0
+
+4. [FunctionalDependency] person: hasPosition → yearsInProgram
+   Support: 1.0
+   Confiance: 1.0
+
+5. [FunctionalDependency] person: yearsInProgram → inPhase
+   Support: 77.53237410071942
+   Confiance: 77.53237410071942
+
+6. [FunctionalDependency] person: inPhase → yearsInProgram
+   Support: 1.0
+   Confiance: 1.0
+
+7. [FunctionalDependency] person: inPhase → yearsInProgram
+   Support: 91.17985611510791
+   Confiance: 91.17985611510791
+
+8. [FunctionalDependency] person: yearsInProgram → inPhase
+   Support: 1.0
+   Confiance: 1.0
+
+9. [FunctionalDependency] person: inPhase → yearsInProgram
+   Support: 0.9552751229470168
+   Confiance: 0.9552751229470168
+
+10. [FunctionalDependency] person: yearsInProgram → inPhase
+   Support: 0.8122928830676976
+   Confiance: 0.8122928830676976
+
+11. [FunctionalDependency] person: inPhase → p_id
+   Support: 91.17985611510791
+   Confiance: 91.17985611510791
+
+12. [FunctionalDependency] person: professor → inPhase
+   Support: 1.0
+   Confiance: 1.0
+
+13. [FunctionalDependency] person: inPhase → professor
+   Support: 91.17985611510791
+   Confiance: 91.17985611510791
+
+14. [FunctionalDependency] person: student → inPhase
+   Support: 1.0
+   Confiance: 1.0
+
+15. [FunctionalDependency] person: inPhase → student
+   Support: 91.17985611510791
+   Confiance: 91.17985611510791
+
+16. [FunctionalDependency] person: inPhase → hasPosition
+   Support: 91.17985611510791
+   Confiance: 91.17985611510791
+
+17. [FunctionalDependency] person: hasPosition → inPhase
+   Support: 1.0
+   Confiance: 1.0
+
+18. [FunctionalDependency] person: hasPosition → student
+   Support: 1.0
+   Confiance: 1.0
+
+19. [FunctionalDependency] person: student → hasPosition
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+20. [FunctionalDependency] person: hasPosition → student
+   Support: 0.9583847716140337
+   Confiance: 0.9583847716140337
+
+21. [FunctionalDependency] person: student → hasPosition
+   Support: 0.9176389842141386
+   Confiance: 0.9176389842141386
+
+22. [FunctionalDependency] person: student → inPhase
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+23. [FunctionalDependency] person: inPhase → student
+   Support: 1.0
+   Confiance: 1.0
+
+24. [FunctionalDependency] person: student → inPhase
+   Support: 0.6282152438062174
+   Confiance: 0.6282152438062174
+
+25. [FunctionalDependency] person: inPhase → student
+   Support: 0.31707219943451076
+   Confiance: 0.31707219943451076
+
+26. [FunctionalDependency] person: student → yearsInProgram
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+27. [FunctionalDependency] person: student → yearsInProgram
+   Support: 0.5627725712164795
+   Confiance: 0.5627725712164795
+
+28. [FunctionalDependency] person: student → p_id
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+29. [FunctionalDependency] person: hasPosition → inPhase
+   Support: 188.67625899280574
+   Confiance: 188.67625899280574
+
+30. [FunctionalDependency] person: inPhase → hasPosition
+   Support: 1.0
+   Confiance: 1.0
+
+31. [FunctionalDependency] person: hasPosition → inPhase
+   Support: 0.6057282625848193
+   Confiance: 0.6057282625848193
+
+32. [FunctionalDependency] person: inPhase → hasPosition
+   Support: 0.2927247769389156
+   Confiance: 0.2927247769389156
+
+33. [FunctionalDependency] person: hasPosition → yearsInProgram
+   Support: 188.67625899280574
+   Confiance: 188.67625899280574
+
+34. [FunctionalDependency] person: hasPosition → yearsInProgram
+   Support: 0.5363273638303795
+   Confiance: 0.5363273638303795
+
+35. [FunctionalDependency] person: hasPosition → p_id
+   Support: 188.67625899280574
+   Confiance: 188.67625899280574
+
+36. [FunctionalDependency] person: professor → hasPosition
+   Support: 1.0
+   Confiance: 1.0
+
+37. [FunctionalDependency] person: hasPosition → professor
+   Support: 188.67625899280574
+   Confiance: 188.67625899280574
+
+38. [FunctionalDependency] person: student → hasPosition
+   Support: 1.0
+   Confiance: 1.0
+
+39. [FunctionalDependency] person: hasPosition → student
+   Support: 188.67625899280574
+   Confiance: 188.67625899280574
+
+40. [FunctionalDependency] course: courseLevel → course_id
+   Support: 63.78787878787879
+   Confiance: 63.78787878787879
+
+41. [FunctionalDependency] person: hasPosition → professor
+   Support: 1.0
+   Confiance: 1.0
+
+42. [FunctionalDependency] person: professor → hasPosition
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+43. [FunctionalDependency] person: hasPosition → professor
+   Support: 0.9583847716140337
+   Confiance: 0.9583847716140337
+
+44. [FunctionalDependency] person: professor → hasPosition
+   Support: 0.9176389842141386
+   Confiance: 0.9176389842141386
+
+45. [FunctionalDependency] person: professor → inPhase
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+46. [FunctionalDependency] person: inPhase → professor
+   Support: 1.0
+   Confiance: 1.0
+
+47. [FunctionalDependency] person: professor → inPhase
+   Support: 0.6282152438062174
+   Confiance: 0.6282152438062174
+
+48. [FunctionalDependency] person: inPhase → professor
+   Support: 0.31707219943451076
+   Confiance: 0.31707219943451076
+
+49. [FunctionalDependency] person: professor → yearsInProgram
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+
+50. [FunctionalDependency] person: professor → yearsInProgram
+   Support: 0.5627725712164795
+   Confiance: 0.5627725712164795
+
+51. [FunctionalDependency] person: professor → p_id
+   Support: 180.6546762589928
+   Confiance: 180.6546762589928
+

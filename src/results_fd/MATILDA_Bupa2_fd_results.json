@@ -1,0 +1,338 @@
+[
+    {
+        "type": "FunctionalDependency",
+        "table": "sgpt",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 8.689855072463768,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "sgpt: arg1 \u2192 arg2"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "sgpt",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 8.689855072463768,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 8.689855072463768,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "sgpt: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "sgot",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 14.428985507246377,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 14.428985507246377,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "sgot: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "sgot",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 14.428985507246377,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "sgot: arg1 \u2192 arg2"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mcv",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 23.327536231884057,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 23.327536231884057,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "mcv: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "mcv",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 23.327536231884057,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "mcv: arg1 \u2192 arg2"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "alkphos",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 5.6521739130434785,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 5.6521739130434785,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "alkphos: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "alkphos",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 5.6521739130434785,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "alkphos: arg1 \u2192 arg2"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "drinks",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 53.18840579710145,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 53.18840579710145,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "drinks: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "drinks",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 53.18840579710145,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "drinks: arg1 \u2192 arg2"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "bupa",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 175.8840579710145,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 175.8840579710145,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "bupa: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "bupa",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 175.8840579710145,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "bupa: arg1 \u2192 arg2"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "gammagt",
+        "determinant": [
+            "arg2"
+        ],
+        "dependent": [
+            "arg1"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 6.115942028985507,
+        "support": 1.0,
+        "coverage": null,
+        "accuracy": 6.115942028985507,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "gammagt: arg2 \u2192 arg1"
+    },
+    {
+        "type": "FunctionalDependency",
+        "table": "gammagt",
+        "determinant": [
+            "arg1"
+        ],
+        "dependent": [
+            "arg2"
+        ],
+        "correct": null,
+        "compatible": null,
+        "confidence": 1.0,
+        "support": 6.115942028985507,
+        "coverage": null,
+        "accuracy": 1.0,
+        "n_violations": null,
+        "violation_examples": null,
+        "converted_from_egd": true,
+        "original_egd": null,
+        "algorithm_settings": null,
+        "compatibility_settings": null,
+        "aliases": null,
+        "display": "gammagt: arg1 \u2192 arg2"
+    }
+]
