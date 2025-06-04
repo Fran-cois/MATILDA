@@ -1,0 +1,1187 @@
+source_file,database,rule_id,type,display
+MATILDA_NCAA_results.json,NCAA,NCAA_1,TGDRule,∀ x0: target_0(team_id1=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_2,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ target_0(team_id1=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_3,TGDRule,∀ x0: teams_1(team_id=x0) ⇒ target_0(team_id1=x0) ∧ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_4,TGDRule,∀ x0: target_0(team_id1=x0) ∧ teams_1(team_id=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_5,TGDRule,∀ x0: target_0(team_id1=x0) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_6,TGDRule,∀ x0: target_0(team_id1=x0) ∧ teams_0(team_id=x0) ⇒ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_7,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ target_0(team_id1=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_8,TGDRule,∀ x0: teams_0(team_id=x0) ∧ teams_1(team_id=x0) ⇒ target_0(team_id1=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_9,TGDRule,"∀ x0: teams_1(team_id=x0) ⇒ ∃ z0: target_0(team_id1=z0, team_id2=x0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_10,TGDRule,"∀ x0, y0: target_0(team_id1=x0, team_id2=y0) ∧ teams_1(team_id=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_11,TGDRule,"∀ x0, x1: target_0(team_id1=x0, team_id2=x1) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_12,TGDRule,"∀ x0, y0: target_0(team_id1=y0, team_id2=x0) ∧ teams_0(team_id=y0) ⇒ teams_1(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_13,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: target_0(team_id1=x0, team_id2=z0) ∧ teams_1(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_14,TGDRule,"∀ x0, x1: teams_0(team_id=x0) ∧ teams_1(team_id=x1) ⇒ target_0(team_id1=x0, team_id2=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_15,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_compact_results_0(wteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_16,TGDRule,∀ x0: regular_season_compact_results_0(wteam=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_17,TGDRule,∀ x0: teams_0(team_id=x0) ∧ teams_1(team_id=x0) ⇒ regular_season_compact_results_0(wteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_18,TGDRule,∀ x0: regular_season_compact_results_0(wteam=x0) ∧ teams_0(team_id=x0) ⇒ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_19,TGDRule,∀ x0: regular_season_compact_results_0(wteam=x0) ∧ teams_1(team_id=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_20,TGDRule,∀ x0: regular_season_compact_results_0(wteam=x0) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_21,TGDRule,∀ x0: teams_1(team_id=x0) ⇒ regular_season_compact_results_0(wteam=x0) ∧ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_22,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_compact_results_0(wteam=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_23,TGDRule,"∀ x0, x1: teams_0(team_id=x0) ∧ teams_1(team_id=x1) ⇒ regular_season_compact_results_0(wteam=x0, lteam=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_24,TGDRule,"∀ x0, y0: regular_season_compact_results_0(wteam=y0, lteam=x0) ∧ teams_0(team_id=y0) ⇒ teams_1(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_25,TGDRule,"∀ x0, y0: regular_season_compact_results_0(wteam=x0, lteam=y0) ∧ teams_1(team_id=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_26,TGDRule,"∀ x0, x1: regular_season_compact_results_0(wteam=x0, lteam=x1) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_27,TGDRule,"∀ x0: teams_1(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(wteam=z0, lteam=x0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_28,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(wteam=x0, lteam=z0) ∧ teams_1(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_29,TGDRule,∀ x0: regular_season_detailed_results_0(wteam=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_30,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_detailed_results_0(wteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_31,TGDRule,∀ x0: regular_season_detailed_results_0(wteam=x0) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_32,TGDRule,∀ x0: regular_season_detailed_results_0(wteam=x0) ∧ teams_1(team_id=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_33,TGDRule,∀ x0: teams_0(team_id=x0) ∧ teams_1(team_id=x0) ⇒ regular_season_detailed_results_0(wteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_34,TGDRule,∀ x0: teams_1(team_id=x0) ⇒ regular_season_detailed_results_0(wteam=x0) ∧ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_35,TGDRule,∀ x0: regular_season_detailed_results_0(wteam=x0) ∧ teams_0(team_id=x0) ⇒ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_36,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_detailed_results_0(wteam=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_37,TGDRule,"∀ x0, x1: regular_season_detailed_results_0(wteam=x0, lteam=x1) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_38,TGDRule,"∀ x0, y0: regular_season_detailed_results_0(wteam=x0, lteam=y0) ∧ teams_1(team_id=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_39,TGDRule,"∀ x0, x1: teams_0(team_id=x0) ∧ teams_1(team_id=x1) ⇒ regular_season_detailed_results_0(wteam=x0, lteam=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_40,TGDRule,"∀ x0: teams_1(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(wteam=z0, lteam=x0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_41,TGDRule,"∀ x0, y0: regular_season_detailed_results_0(wteam=y0, lteam=x0) ∧ teams_0(team_id=y0) ⇒ teams_1(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_42,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(wteam=x0, lteam=z0) ∧ teams_1(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_43,TGDRule,∀ x0: target_0(team_id2=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_44,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ target_0(team_id2=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_45,TGDRule,∀ x0: teams_1(team_id=x0) ⇒ target_0(team_id2=x0) ∧ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_46,TGDRule,∀ x0: target_0(team_id2=x0) ∧ teams_1(team_id=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_47,TGDRule,∀ x0: target_0(team_id2=x0) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_48,TGDRule,∀ x0: target_0(team_id2=x0) ∧ teams_0(team_id=x0) ⇒ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_49,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ target_0(team_id2=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_50,TGDRule,∀ x0: teams_0(team_id=x0) ∧ teams_1(team_id=x0) ⇒ target_0(team_id2=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_51,TGDRule,∀ x0: seasons_0(season=x0) ⇒ regular_season_compact_results_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_52,TGDRule,∀ x0: regular_season_compact_results_0(season=x0) ⇒ seasons_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_53,TGDRule,∀ x0: regular_season_compact_results_0(season=x0) ⇒ seasons_0(season=x0) ∧ seasons_1(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_54,TGDRule,∀ x0: seasons_0(season=x0) ∧ seasons_1(season=x0) ⇒ regular_season_compact_results_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_55,TGDRule,∀ x0: seasons_0(season=x0) ⇒ regular_season_compact_results_0(season=x0) ∧ seasons_1(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_56,TGDRule,∀ x0: regular_season_compact_results_0(season=x0) ∧ seasons_1(season=x0) ⇒ seasons_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_57,TGDRule,∀ x0: seasons_1(season=x0) ⇒ regular_season_compact_results_0(season=x0) ∧ seasons_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_58,TGDRule,∀ x0: regular_season_compact_results_0(season=x0) ∧ seasons_0(season=x0) ⇒ seasons_1(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_59,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=z0, wteam=x0) ∧ seasons_0(season=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_60,TGDRule,"∀ x0, y0: regular_season_compact_results_0(season=x0, wteam=y0) ∧ teams_0(team_id=y0) ⇒ seasons_0(season=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_61,TGDRule,"∀ x0, x1: regular_season_compact_results_0(season=x0, wteam=x1) ⇒ seasons_0(season=x0) ∧ teams_0(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_62,TGDRule,"∀ x0, y0: regular_season_compact_results_0(season=y0, wteam=x0) ∧ seasons_0(season=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_63,TGDRule,"∀ x0, x1: seasons_0(season=x0) ∧ teams_0(team_id=x1) ⇒ regular_season_compact_results_0(season=x0, wteam=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_64,TGDRule,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=x0, wteam=z0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_65,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=z0, lteam=x0) ∧ seasons_0(season=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_66,TGDRule,"∀ x0, y0: regular_season_compact_results_0(season=x0, lteam=y0) ∧ teams_0(team_id=y0) ⇒ seasons_0(season=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_67,TGDRule,"∀ x0, x1: regular_season_compact_results_0(season=x0, lteam=x1) ⇒ seasons_0(season=x0) ∧ teams_0(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_68,TGDRule,"∀ x0, y0: regular_season_compact_results_0(season=y0, lteam=x0) ∧ seasons_0(season=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_69,TGDRule,"∀ x0, x1: seasons_0(season=x0) ∧ teams_0(team_id=x1) ⇒ regular_season_compact_results_0(season=x0, lteam=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_70,TGDRule,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=x0, lteam=z0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_71,TGDRule,∀ x0: regular_season_detailed_results_0(lteam=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_72,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_detailed_results_0(lteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_73,TGDRule,∀ x0: regular_season_detailed_results_0(lteam=x0) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_74,TGDRule,∀ x0: regular_season_detailed_results_0(lteam=x0) ∧ teams_1(team_id=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_75,TGDRule,∀ x0: teams_0(team_id=x0) ∧ teams_1(team_id=x0) ⇒ regular_season_detailed_results_0(lteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_76,TGDRule,∀ x0: teams_1(team_id=x0) ⇒ regular_season_detailed_results_0(lteam=x0) ∧ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_77,TGDRule,∀ x0: regular_season_detailed_results_0(lteam=x0) ∧ teams_0(team_id=x0) ⇒ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_78,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_detailed_results_0(lteam=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_79,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_compact_results_0(lteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_80,TGDRule,∀ x0: regular_season_compact_results_0(lteam=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_81,TGDRule,∀ x0: teams_0(team_id=x0) ∧ teams_1(team_id=x0) ⇒ regular_season_compact_results_0(lteam=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_82,TGDRule,∀ x0: regular_season_compact_results_0(lteam=x0) ∧ teams_0(team_id=x0) ⇒ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_83,TGDRule,∀ x0: regular_season_compact_results_0(lteam=x0) ∧ teams_1(team_id=x0) ⇒ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_84,TGDRule,∀ x0: regular_season_compact_results_0(lteam=x0) ⇒ teams_0(team_id=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_85,TGDRule,∀ x0: teams_1(team_id=x0) ⇒ regular_season_compact_results_0(lteam=x0) ∧ teams_0(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_86,TGDRule,∀ x0: teams_0(team_id=x0) ⇒ regular_season_compact_results_0(lteam=x0) ∧ teams_1(team_id=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_87,TGDRule,∀ x0: regular_season_detailed_results_0(season=x0) ⇒ seasons_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_88,TGDRule,∀ x0: seasons_0(season=x0) ⇒ regular_season_detailed_results_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_89,TGDRule,∀ x0: regular_season_detailed_results_0(season=x0) ∧ seasons_1(season=x0) ⇒ seasons_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_90,TGDRule,∀ x0: seasons_1(season=x0) ⇒ regular_season_detailed_results_0(season=x0) ∧ seasons_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_91,TGDRule,∀ x0: regular_season_detailed_results_0(season=x0) ⇒ seasons_0(season=x0) ∧ seasons_1(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_92,TGDRule,∀ x0: seasons_0(season=x0) ∧ seasons_1(season=x0) ⇒ regular_season_detailed_results_0(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_93,TGDRule,∀ x0: regular_season_detailed_results_0(season=x0) ∧ seasons_0(season=x0) ⇒ seasons_1(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_94,TGDRule,∀ x0: seasons_0(season=x0) ⇒ regular_season_detailed_results_0(season=x0) ∧ seasons_1(season=x0)
+MATILDA_NCAA_results.json,NCAA,NCAA_95,TGDRule,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=x0, wteam=z0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_96,TGDRule,"∀ x0, x1: regular_season_detailed_results_0(season=x0, wteam=x1) ⇒ seasons_0(season=x0) ∧ teams_0(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_97,TGDRule,"∀ x0, y0: regular_season_detailed_results_0(season=y0, wteam=x0) ∧ seasons_0(season=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_98,TGDRule,"∀ x0, x1: seasons_0(season=x0) ∧ teams_0(team_id=x1) ⇒ regular_season_detailed_results_0(season=x0, wteam=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_99,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=z0, wteam=x0) ∧ seasons_0(season=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_100,TGDRule,"∀ x0, y0: regular_season_detailed_results_0(season=x0, wteam=y0) ∧ teams_0(team_id=y0) ⇒ seasons_0(season=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_101,TGDRule,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=x0, lteam=z0) ∧ teams_0(team_id=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_102,TGDRule,"∀ x0, x1: regular_season_detailed_results_0(season=x0, lteam=x1) ⇒ seasons_0(season=x0) ∧ teams_0(team_id=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_103,TGDRule,"∀ x0, y0: regular_season_detailed_results_0(season=y0, lteam=x0) ∧ seasons_0(season=y0) ⇒ teams_0(team_id=x0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_104,TGDRule,"∀ x0, x1: seasons_0(season=x0) ∧ teams_0(team_id=x1) ⇒ regular_season_detailed_results_0(season=x0, lteam=x1)"
+MATILDA_NCAA_results.json,NCAA,NCAA_105,TGDRule,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=z0, lteam=x0) ∧ seasons_0(season=z0)"
+MATILDA_NCAA_results.json,NCAA,NCAA_106,TGDRule,"∀ x0, y0: regular_season_detailed_results_0(season=x0, lteam=y0) ∧ teams_0(team_id=y0) ⇒ seasons_0(season=x0)"
+MATILDA_nations_results.json,nations,nations_1,TGDRule,∀ x0: stat_0(country_id=x0) ⇒ country_0(country_id=x0)
+MATILDA_nations_results.json,nations,nations_2,TGDRule,∀ x0: country_0(country_id=x0) ⇒ stat_0(country_id=x0)
+MATILDA_nations_results.json,nations,nations_3,TGDRule,∀ x0: country_0(country_id=x0) ⇒ stat_0(country_id=x0) ∧ stat_1(country_id=x0)
+MATILDA_nations_results.json,nations,nations_4,TGDRule,∀ x0: stat_0(country_id=x0) ∧ stat_1(country_id=x0) ⇒ country_0(country_id=x0)
+MATILDA_nations_results.json,nations,nations_5,TGDRule,∀ x0: stat_0(country_id=x0) ⇒ country_0(country_id=x0) ∧ stat_1(country_id=x0)
+MATILDA_nations_results.json,nations,nations_6,TGDRule,∀ x0: country_0(country_id=x0) ∧ stat_1(country_id=x0) ⇒ stat_0(country_id=x0)
+MATILDA_nations_results.json,nations,nations_7,TGDRule,∀ x0: stat_1(country_id=x0) ⇒ country_0(country_id=x0) ∧ stat_0(country_id=x0)
+MATILDA_nations_results.json,nations,nations_8,TGDRule,∀ x0: country_0(country_id=x0) ∧ stat_0(country_id=x0) ⇒ stat_1(country_id=x0)
+MATILDA_SAT_results.json,SAT,SAT_1,TGDRule,∀ x0: succ_0(tm2=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_2,TGDRule,∀ x0: time_0(tm=x0) ⇒ succ_0(tm2=x0)
+MATILDA_SAT_results.json,SAT,SAT_3,TGDRule,∀ x0: time_0(tm=x0) ⇒ succ_0(tm2=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_4,TGDRule,∀ x0: succ_0(tm2=x0) ∧ time_1(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_5,TGDRule,∀ x0: time_1(tm=x0) ⇒ succ_0(tm2=x0) ∧ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_6,TGDRule,∀ x0: succ_0(tm2=x0) ⇒ time_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_7,TGDRule,∀ x0: time_0(tm=x0) ∧ time_1(tm=x0) ⇒ succ_0(tm2=x0)
+MATILDA_SAT_results.json,SAT,SAT_8,TGDRule,∀ x0: succ_0(tm2=x0) ∧ time_0(tm=x0) ⇒ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_9,TGDRule,∀ x0: fault_0(tf=x0) ⇒ trfl_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_10,TGDRule,∀ x0: trfl_0(tf=x0) ⇒ fault_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_11,TGDRule,∀ x0: trfl_0(tf=x0) ⇒ fault_0(tf=x0) ∧ trfl_1(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_12,TGDRule,∀ x0: fault_0(tf=x0) ∧ trfl_0(tf=x0) ⇒ trfl_1(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_13,TGDRule,∀ x0: trfl_1(tf=x0) ⇒ fault_0(tf=x0) ∧ trfl_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_14,TGDRule,∀ x0: fault_0(tf=x0) ∧ trfl_1(tf=x0) ⇒ trfl_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_15,TGDRule,∀ x0: fault_0(tf=x0) ⇒ trfl_0(tf=x0) ∧ trfl_1(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_16,TGDRule,∀ x0: trfl_0(tf=x0) ∧ trfl_1(tf=x0) ⇒ fault_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_17,TGDRule,∀ x0: fault_0(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_18,TGDRule,∀ x0: time_0(tm=x0) ⇒ fault_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_19,TGDRule,∀ x0: fault_0(tm=x0) ⇒ time_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_20,TGDRule,∀ x0: time_0(tm=x0) ∧ time_1(tm=x0) ⇒ fault_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_21,TGDRule,∀ x0: fault_0(tm=x0) ∧ time_0(tm=x0) ⇒ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_22,TGDRule,∀ x0: fault_0(tm=x0) ∧ time_1(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_23,TGDRule,∀ x0: time_0(tm=x0) ⇒ fault_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_24,TGDRule,∀ x0: time_1(tm=x0) ⇒ fault_0(tm=x0) ∧ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_25,TGDRule,"∀ x0: time_0(tm=x0) ⇒ ∃ z0: fault_0(tm=x0, tf=z0) ∧ trfl_0(tf=z0)"
+MATILDA_SAT_results.json,SAT,SAT_26,TGDRule,"∀ x0, x1: fault_0(tm=x0, tf=x1) ⇒ time_0(tm=x0) ∧ trfl_0(tf=x1)"
+MATILDA_SAT_results.json,SAT,SAT_27,TGDRule,"∀ x0: trfl_0(tf=x0) ⇒ ∃ z0: fault_0(tm=z0, tf=x0) ∧ time_0(tm=z0)"
+MATILDA_SAT_results.json,SAT,SAT_28,TGDRule,"∀ x0, y0: fault_0(tm=x0, tf=y0) ∧ trfl_0(tf=y0) ⇒ time_0(tm=x0)"
+MATILDA_SAT_results.json,SAT,SAT_29,TGDRule,"∀ x0, x1: time_0(tm=x0) ∧ trfl_0(tf=x1) ⇒ fault_0(tm=x0, tf=x1)"
+MATILDA_SAT_results.json,SAT,SAT_30,TGDRule,"∀ x0, y0: fault_0(tm=y0, tf=x0) ∧ time_0(tm=y0) ⇒ trfl_0(tf=x0)"
+MATILDA_SAT_results.json,SAT,SAT_31,TGDRule,∀ x0: fault_test_0(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_32,TGDRule,∀ x0: time_0(tm=x0) ⇒ fault_test_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_33,TGDRule,∀ x0: time_0(tm=x0) ⇒ fault_test_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_34,TGDRule,∀ x0: time_1(tm=x0) ⇒ fault_test_0(tm=x0) ∧ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_35,TGDRule,∀ x0: fault_test_0(tm=x0) ⇒ time_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_36,TGDRule,∀ x0: fault_test_0(tm=x0) ∧ time_1(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_37,TGDRule,∀ x0: time_0(tm=x0) ∧ time_1(tm=x0) ⇒ fault_test_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_38,TGDRule,∀ x0: fault_test_0(tm=x0) ∧ time_0(tm=x0) ⇒ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_39,TGDRule,"∀ x0: time_0(tm=x0) ⇒ ∃ z0: fault_test_0(tm=x0, tf=z0) ∧ trfl_0(tf=z0)"
+MATILDA_SAT_results.json,SAT,SAT_40,TGDRule,"∀ x0, y0: fault_test_0(tm=y0, tf=x0) ∧ time_0(tm=y0) ⇒ trfl_0(tf=x0)"
+MATILDA_SAT_results.json,SAT,SAT_41,TGDRule,"∀ x0, x1: fault_test_0(tm=x0, tf=x1) ⇒ time_0(tm=x0) ∧ trfl_0(tf=x1)"
+MATILDA_SAT_results.json,SAT,SAT_42,TGDRule,"∀ x0: trfl_0(tf=x0) ⇒ ∃ z0: fault_test_0(tm=z0, tf=x0) ∧ time_0(tm=z0)"
+MATILDA_SAT_results.json,SAT,SAT_43,TGDRule,"∀ x0, x1: time_0(tm=x0) ∧ trfl_0(tf=x1) ⇒ fault_test_0(tm=x0, tf=x1)"
+MATILDA_SAT_results.json,SAT,SAT_44,TGDRule,"∀ x0, y0: fault_test_0(tm=x0, tf=y0) ∧ trfl_0(tf=y0) ⇒ time_0(tm=x0)"
+MATILDA_SAT_results.json,SAT,SAT_45,TGDRule,∀ x0: gmt_mission_phase_0(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_46,TGDRule,∀ x0: time_0(tm=x0) ⇒ gmt_mission_phase_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_47,TGDRule,∀ x0: gmt_mission_phase_0(tm=x0) ∧ time_1(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_48,TGDRule,∀ x0: time_1(tm=x0) ⇒ gmt_mission_phase_0(tm=x0) ∧ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_49,TGDRule,∀ x0: time_0(tm=x0) ∧ time_1(tm=x0) ⇒ gmt_mission_phase_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_50,TGDRule,∀ x0: gmt_mission_phase_0(tm=x0) ⇒ time_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_51,TGDRule,∀ x0: time_0(tm=x0) ⇒ gmt_mission_phase_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_52,TGDRule,∀ x0: gmt_mission_phase_0(tm=x0) ∧ time_0(tm=x0) ⇒ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_53,TGDRule,∀ x0: trfl_0(tf=x0) ⇒ fault_test_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_54,TGDRule,∀ x0: fault_test_0(tf=x0) ⇒ trfl_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_55,TGDRule,∀ x0: fault_test_0(tf=x0) ⇒ trfl_0(tf=x0) ∧ trfl_1(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_56,TGDRule,∀ x0: fault_test_0(tf=x0) ∧ trfl_1(tf=x0) ⇒ trfl_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_57,TGDRule,∀ x0: trfl_0(tf=x0) ⇒ fault_test_0(tf=x0) ∧ trfl_1(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_58,TGDRule,∀ x0: trfl_1(tf=x0) ⇒ fault_test_0(tf=x0) ∧ trfl_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_59,TGDRule,∀ x0: trfl_0(tf=x0) ∧ trfl_1(tf=x0) ⇒ fault_test_0(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_60,TGDRule,∀ x0: fault_test_0(tf=x0) ∧ trfl_0(tf=x0) ⇒ trfl_1(tf=x0)
+MATILDA_SAT_results.json,SAT,SAT_61,TGDRule,∀ x0: succ_0(tm1=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_62,TGDRule,∀ x0: time_0(tm=x0) ⇒ succ_0(tm1=x0)
+MATILDA_SAT_results.json,SAT,SAT_63,TGDRule,∀ x0: time_0(tm=x0) ⇒ succ_0(tm1=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_64,TGDRule,∀ x0: succ_0(tm1=x0) ∧ time_1(tm=x0) ⇒ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_65,TGDRule,∀ x0: time_1(tm=x0) ⇒ succ_0(tm1=x0) ∧ time_0(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_66,TGDRule,∀ x0: succ_0(tm1=x0) ⇒ time_0(tm=x0) ∧ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_67,TGDRule,∀ x0: time_0(tm=x0) ∧ time_1(tm=x0) ⇒ succ_0(tm1=x0)
+MATILDA_SAT_results.json,SAT,SAT_68,TGDRule,∀ x0: succ_0(tm1=x0) ∧ time_0(tm=x0) ⇒ time_1(tm=x0)
+MATILDA_SAT_results.json,SAT,SAT_69,TGDRule,"∀ x0: time_0(tm=x0) ⇒ ∃ z0: succ_0(tm1=x0, tm2=z0) ∧ time_1(tm=z0)"
+MATILDA_SAT_results.json,SAT,SAT_70,TGDRule,"∀ x0, y0: succ_0(tm1=x0, tm2=y0) ∧ time_1(tm=y0) ⇒ time_0(tm=x0)"
+MATILDA_SAT_results.json,SAT,SAT_71,TGDRule,"∀ x0: time_1(tm=x0) ⇒ ∃ z0: succ_0(tm1=z0, tm2=x0) ∧ time_0(tm=z0)"
+MATILDA_SAT_results.json,SAT,SAT_72,TGDRule,"∀ x0, x1: succ_0(tm1=x0, tm2=x1) ⇒ time_0(tm=x0) ∧ time_1(tm=x1)"
+MATILDA_SAT_results.json,SAT,SAT_73,TGDRule,"∀ x0, x1: time_0(tm=x0) ∧ time_1(tm=x1) ⇒ succ_0(tm1=x0, tm2=x1)"
+MATILDA_SAT_results.json,SAT,SAT_74,TGDRule,"∀ x0, y0: succ_0(tm1=y0, tm2=x0) ∧ time_0(tm=y0) ⇒ time_1(tm=x0)"
+MATILDA_Elti_results.json,Elti,Elti_1,TGDRule,∀ x0: daughter_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_2,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_3,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ daughter_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_4,TGDRule,∀ x0: person_1(name=x0) ⇒ daughter_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_5,TGDRule,∀ x0: daughter_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_6,TGDRule,∀ x0: daughter_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_7,TGDRule,∀ x0: daughter_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_8,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_9,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ daughter_0(name1=x0, name2=x1)"
+MATILDA_Elti_results.json,Elti,Elti_10,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: daughter_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_11,TGDRule,"∀ x0, y0: daughter_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_12,TGDRule,"∀ x0, y0: daughter_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_13,TGDRule,"∀ x0, x1: daughter_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Elti_results.json,Elti,Elti_14,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: daughter_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_15,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_16,TGDRule,∀ x0: husband_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_17,TGDRule,∀ x0: person_1(name=x0) ⇒ husband_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_18,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_19,TGDRule,∀ x0: husband_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_20,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ husband_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_21,TGDRule,∀ x0: husband_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_22,TGDRule,∀ x0: husband_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_23,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: husband_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_24,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: husband_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_25,TGDRule,"∀ x0, x1: husband_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Elti_results.json,Elti,Elti_26,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ husband_0(name1=x0, name2=x1)"
+MATILDA_Elti_results.json,Elti,Elti_27,TGDRule,"∀ x0, y0: husband_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_28,TGDRule,"∀ x0, y0: husband_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_29,TGDRule,∀ x0: mother_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_30,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_31,TGDRule,∀ x0: mother_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_32,TGDRule,∀ x0: mother_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_33,TGDRule,∀ x0: mother_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_34,TGDRule,∀ x0: person_1(name=x0) ⇒ mother_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_35,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_36,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ mother_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_37,TGDRule,"∀ x0, y0: mother_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_38,TGDRule,"∀ x0, x1: mother_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Elti_results.json,Elti,Elti_39,TGDRule,"∀ x0, y0: mother_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_40,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: mother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_41,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: mother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_42,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ mother_0(name1=x0, name2=x1)"
+MATILDA_Elti_results.json,Elti,Elti_43,TGDRule,∀ x0: brother_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_44,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_45,TGDRule,∀ x0: brother_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_46,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_47,TGDRule,∀ x0: brother_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_48,TGDRule,∀ x0: person_1(name=x0) ⇒ brother_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_49,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ brother_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_50,TGDRule,∀ x0: brother_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_51,TGDRule,"∀ x0, y0: brother_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_52,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: brother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_53,TGDRule,"∀ x0, x1: brother_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Elti_results.json,Elti,Elti_54,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: brother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_55,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ brother_0(name1=x0, name2=x1)"
+MATILDA_Elti_results.json,Elti,Elti_56,TGDRule,"∀ x0, y0: brother_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_57,TGDRule,∀ x0: brother_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_58,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_59,TGDRule,∀ x0: brother_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_60,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_61,TGDRule,∀ x0: brother_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_62,TGDRule,∀ x0: person_1(name=x0) ⇒ brother_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_63,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ brother_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_64,TGDRule,∀ x0: brother_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_65,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_66,TGDRule,∀ x0: husband_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_67,TGDRule,∀ x0: person_1(name=x0) ⇒ husband_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_68,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_69,TGDRule,∀ x0: husband_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_70,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ husband_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_71,TGDRule,∀ x0: husband_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_72,TGDRule,∀ x0: husband_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_73,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_74,TGDRule,∀ x0: father_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_75,TGDRule,∀ x0: person_1(name=x0) ⇒ father_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_76,TGDRule,∀ x0: father_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_77,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ father_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_78,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_79,TGDRule,∀ x0: father_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_80,TGDRule,∀ x0: father_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_81,TGDRule,∀ x0: person_0(name=x0) ⇒ elti_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_82,TGDRule,∀ x0: elti_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_83,TGDRule,∀ x0: elti_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_84,TGDRule,∀ x0: elti_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_85,TGDRule,∀ x0: elti_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_86,TGDRule,∀ x0: person_1(name=x0) ⇒ elti_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_87,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ elti_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_88,TGDRule,∀ x0: person_0(name=x0) ⇒ elti_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_89,TGDRule,∀ x0: person_0(name=x0) ⇒ elti_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_90,TGDRule,∀ x0: elti_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_91,TGDRule,∀ x0: elti_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_92,TGDRule,∀ x0: elti_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_93,TGDRule,∀ x0: elti_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_94,TGDRule,∀ x0: person_1(name=x0) ⇒ elti_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_95,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ elti_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_96,TGDRule,∀ x0: person_0(name=x0) ⇒ elti_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_97,TGDRule,"∀ x0, x1: elti_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Elti_results.json,Elti,Elti_98,TGDRule,"∀ x0, y0: elti_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_99,TGDRule,"∀ x0, y0: elti_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_100,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: elti_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_101,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ elti_0(name1=x0, name2=x1)"
+MATILDA_Elti_results.json,Elti,Elti_102,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: elti_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_103,TGDRule,∀ x0: daughter_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_104,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_105,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ daughter_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_106,TGDRule,∀ x0: person_1(name=x0) ⇒ daughter_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_107,TGDRule,∀ x0: daughter_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_108,TGDRule,∀ x0: daughter_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_109,TGDRule,∀ x0: daughter_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_110,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_111,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_112,TGDRule,∀ x0: father_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_113,TGDRule,∀ x0: person_1(name=x0) ⇒ father_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_114,TGDRule,∀ x0: father_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_115,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ father_0(name1=x0)
+MATILDA_Elti_results.json,Elti,Elti_116,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_117,TGDRule,∀ x0: father_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_118,TGDRule,∀ x0: father_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_119,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: father_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_120,TGDRule,"∀ x0, y0: father_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_121,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ father_0(name1=x0, name2=x1)"
+MATILDA_Elti_results.json,Elti,Elti_122,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: father_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Elti_results.json,Elti,Elti_123,TGDRule,"∀ x0, x1: father_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Elti_results.json,Elti,Elti_124,TGDRule,"∀ x0, y0: father_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Elti_results.json,Elti,Elti_125,TGDRule,∀ x0: mother_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_126,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name2=x0)
+MATILDA_Elti_results.json,Elti,Elti_127,TGDRule,∀ x0: mother_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_128,TGDRule,∀ x0: mother_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_129,TGDRule,∀ x0: mother_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_130,TGDRule,∀ x0: person_1(name=x0) ⇒ mother_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_131,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Elti_results.json,Elti,Elti_132,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ mother_0(name2=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_1,TGDRule,∀ x0: person_0(p_id=x0) ⇒ advisedBy_0(p_id_dummy=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_2,TGDRule,∀ x0: advisedBy_0(p_id_dummy=x0) ⇒ person_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_3,TGDRule,∀ x0: advisedBy_0(p_id_dummy=x0) ⇒ person_0(p_id=x0) ∧ person_1(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_4,TGDRule,∀ x0: person_0(p_id=x0) ∧ person_1(p_id=x0) ⇒ advisedBy_0(p_id_dummy=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_5,TGDRule,∀ x0: person_0(p_id=x0) ⇒ advisedBy_0(p_id_dummy=x0) ∧ person_1(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_6,TGDRule,∀ x0: advisedBy_0(p_id_dummy=x0) ∧ person_1(p_id=x0) ⇒ person_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_7,TGDRule,∀ x0: person_1(p_id=x0) ⇒ advisedBy_0(p_id_dummy=x0) ∧ person_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_8,TGDRule,∀ x0: advisedBy_0(p_id_dummy=x0) ∧ person_0(p_id=x0) ⇒ person_1(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_9,TGDRule,∀ x0: person_0(p_id=x0) ⇒ advisedBy_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_10,TGDRule,∀ x0: advisedBy_0(p_id=x0) ⇒ person_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_11,TGDRule,∀ x0: advisedBy_0(p_id=x0) ⇒ person_0(p_id=x0) ∧ person_1(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_12,TGDRule,∀ x0: person_0(p_id=x0) ∧ person_1(p_id=x0) ⇒ advisedBy_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_13,TGDRule,∀ x0: person_0(p_id=x0) ⇒ advisedBy_0(p_id=x0) ∧ person_1(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_14,TGDRule,∀ x0: advisedBy_0(p_id=x0) ∧ person_1(p_id=x0) ⇒ person_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_15,TGDRule,∀ x0: person_1(p_id=x0) ⇒ advisedBy_0(p_id=x0) ∧ person_0(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_16,TGDRule,∀ x0: advisedBy_0(p_id=x0) ∧ person_0(p_id=x0) ⇒ person_1(p_id=x0)
+MATILDA_UW_std_results.json,UW_std,UW_std_17,TGDRule,"∀ x0, x1: advisedBy_0(p_id=x0, p_id_dummy=x1) ⇒ person_0(p_id=x0) ∧ person_1(p_id=x1)"
+MATILDA_UW_std_results.json,UW_std,UW_std_18,TGDRule,"∀ x0, x1: person_0(p_id=x0) ∧ person_1(p_id=x1) ⇒ advisedBy_0(p_id=x0, p_id_dummy=x1)"
+MATILDA_UW_std_results.json,UW_std,UW_std_19,TGDRule,"∀ x0: person_0(p_id=x0) ⇒ ∃ z0: advisedBy_0(p_id=x0, p_id_dummy=z0) ∧ person_1(p_id=z0)"
+MATILDA_UW_std_results.json,UW_std,UW_std_20,TGDRule,"∀ x0, y0: advisedBy_0(p_id=x0, p_id_dummy=y0) ∧ person_1(p_id=y0) ⇒ person_0(p_id=x0)"
+MATILDA_UW_std_results.json,UW_std,UW_std_21,TGDRule,"∀ x0: person_1(p_id=x0) ⇒ ∃ z0: advisedBy_0(p_id=z0, p_id_dummy=x0) ∧ person_0(p_id=z0)"
+MATILDA_UW_std_results.json,UW_std,UW_std_22,TGDRule,"∀ x0, y0: advisedBy_0(p_id=y0, p_id_dummy=x0) ∧ person_0(p_id=y0) ⇒ person_1(p_id=x0)"
+MATILDA_CS_results.json,CS,CS_1,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_2,TGDRule,∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_3,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_1(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_4,TGDRule,∀ x0: ACCOUNT_TRANSACT_TYPES_1(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_5,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_1(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_6,TGDRule,∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_1(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_7,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACT_TYPES_1(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_8,TGDRule,∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_1(ACTRNTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_9,TGDRule,"∀ x0, y0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=y0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=y0) ⇒ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_10,TGDRule,"∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=z0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_11,TGDRule,"∀ x0, y0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=y0, ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=y0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_12,TGDRule,"∀ x0, x1: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x1) ⇒ ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_13,TGDRule,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=z0, ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_14,TGDRule,"∀ x0, x1: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=x1) ⇒ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_15,TGDRule,∀ x0: ACCOUNTS_0(PROD_KEY=x0) ⇒ PRODUCTS_0(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_16,TGDRule,∀ x0: PRODUCTS_0(PROD_KEY=x0) ⇒ ACCOUNTS_0(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_17,TGDRule,∀ x0: ACCOUNTS_0(PROD_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=x0) ⇒ PRODUCTS_1(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_18,TGDRule,∀ x0: PRODUCTS_0(PROD_KEY=x0) ⇒ ACCOUNTS_0(PROD_KEY=x0) ∧ PRODUCTS_1(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_19,TGDRule,∀ x0: ACCOUNTS_0(PROD_KEY=x0) ⇒ PRODUCTS_0(PROD_KEY=x0) ∧ PRODUCTS_1(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_20,TGDRule,∀ x0: PRODUCTS_1(PROD_KEY=x0) ⇒ ACCOUNTS_0(PROD_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_21,TGDRule,∀ x0: PRODUCTS_0(PROD_KEY=x0) ∧ PRODUCTS_1(PROD_KEY=x0) ⇒ ACCOUNTS_0(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_22,TGDRule,∀ x0: ACCOUNTS_0(PROD_KEY=x0) ∧ PRODUCTS_1(PROD_KEY=x0) ⇒ PRODUCTS_0(PROD_KEY=x0)
+MATILDA_CS_results.json,CS,CS_23,TGDRule,"∀ x0: PRODUCTS_0(PROD_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(PROD_KEY=x0, ORG_KEY=z0) ∧ ORGANIZATIONS_0(ORG_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_24,TGDRule,"∀ x0, x1: ACCOUNTS_0(PROD_KEY=x0, ORG_KEY=x1) ⇒ PRODUCTS_0(PROD_KEY=x0) ∧ ORGANIZATIONS_0(ORG_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_25,TGDRule,"∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(PROD_KEY=z0, ORG_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_26,TGDRule,"∀ x0, x1: PRODUCTS_0(PROD_KEY=x0) ∧ ORGANIZATIONS_0(ORG_KEY=x1) ⇒ ACCOUNTS_0(PROD_KEY=x0, ORG_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_27,TGDRule,"∀ x0, y0: ACCOUNTS_0(PROD_KEY=x0, ORG_KEY=y0) ∧ ORGANIZATIONS_0(ORG_KEY=y0) ⇒ PRODUCTS_0(PROD_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_28,TGDRule,"∀ x0, y0: ACCOUNTS_0(PROD_KEY=y0, ORG_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=y0) ⇒ ORGANIZATIONS_0(ORG_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_29,TGDRule,∀ x0: ACCOUNTS_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_30,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNTS_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_31,TGDRule,∀ x0: ACCOUNTS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_32,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNTS_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_33,TGDRule,∀ x0: ACCOUNTS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_34,TGDRule,∀ x0: ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNTS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_35,TGDRule,∀ x0: ACCOUNTS_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_36,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNTS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_37,TGDRule,"∀ x0, x1: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=x1) ⇒ ACCOUNTS_0(ACCTP_KEY=x0, PROD_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_38,TGDRule,"∀ x0, x1: ACCOUNTS_0(ACCTP_KEY=x0, PROD_KEY=x1) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_39,TGDRule,"∀ x0, y0: ACCOUNTS_0(ACCTP_KEY=y0, PROD_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=y0) ⇒ PRODUCTS_0(PROD_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_40,TGDRule,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=x0, PROD_KEY=z0) ∧ PRODUCTS_0(PROD_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_41,TGDRule,"∀ x0, y0: ACCOUNTS_0(ACCTP_KEY=x0, PROD_KEY=y0) ∧ PRODUCTS_0(PROD_KEY=y0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_42,TGDRule,"∀ x0: PRODUCTS_0(PROD_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=z0, PROD_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_43,TGDRule,"∀ x0, x1: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ORGANIZATIONS_0(ORG_KEY=x1) ⇒ ACCOUNTS_0(ACCTP_KEY=x0, ORG_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_44,TGDRule,"∀ x0, y0: ACCOUNTS_0(ACCTP_KEY=x0, ORG_KEY=y0) ∧ ORGANIZATIONS_0(ORG_KEY=y0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_45,TGDRule,"∀ x0, x1: ACCOUNTS_0(ACCTP_KEY=x0, ORG_KEY=x1) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ORGANIZATIONS_0(ORG_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_46,TGDRule,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=x0, ORG_KEY=z0) ∧ ORGANIZATIONS_0(ORG_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_47,TGDRule,"∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=z0, ORG_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_48,TGDRule,"∀ x0, y0: ACCOUNTS_0(ACCTP_KEY=y0, ORG_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=y0) ⇒ ORGANIZATIONS_0(ORG_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_49,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_50,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_51,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_52,TGDRule,∀ x0: ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_53,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_54,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_55,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_56,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_57,TGDRule,"∀ x0, y0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=y0, ACTRNTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=y0) ⇒ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_58,TGDRule,"∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=z0, ACTRNTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_59,TGDRule,"∀ x0, y0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACTRNTP_KEY=y0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=y0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_60,TGDRule,"∀ x0, x1: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x1) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACTRNTP_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_61,TGDRule,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACTRNTP_KEY=z0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_62,TGDRule,"∀ x0, x1: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACTRNTP_KEY=x1) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_63,TGDRule,"∀ x0, x1: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=x1) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_64,TGDRule,"∀ x0: ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=z0, ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_65,TGDRule,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=z0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=z0)"
+MATILDA_CS_results.json,CS,CS_66,TGDRule,"∀ x0, y0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=y0, ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=y0) ⇒ ACCOUNT_TYPES_1(ACCTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_67,TGDRule,"∀ x0, x1: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x1) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=x1)"
+MATILDA_CS_results.json,CS,CS_68,TGDRule,"∀ x0, y0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=y0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=y0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)"
+MATILDA_CS_results.json,CS,CS_69,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_70,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0)
+MATILDA_CS_results.json,CS,CS_71,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_72,TGDRule,∀ x0: ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_73,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_74,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_1(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_75,TGDRule,∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0)
+MATILDA_CS_results.json,CS,CS_76,TGDRule,∀ x0: ACCOUNT_TRANSACTIONS_0(ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ACCOUNT_TYPES_0(ACCTP_KEY=x0)
+MATILDA_CS_results.json,CS,CS_77,TGDRule,∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ACCOUNTS_0(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_78,TGDRule,∀ x0: ACCOUNTS_0(ORG_KEY=x0) ⇒ ORGANIZATIONS_0(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_79,TGDRule,∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ∧ ORGANIZATIONS_1(ORG_KEY=x0) ⇒ ACCOUNTS_0(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_80,TGDRule,∀ x0: ACCOUNTS_0(ORG_KEY=x0) ∧ ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ORGANIZATIONS_1(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_81,TGDRule,∀ x0: ACCOUNTS_0(ORG_KEY=x0) ∧ ORGANIZATIONS_1(ORG_KEY=x0) ⇒ ORGANIZATIONS_0(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_82,TGDRule,∀ x0: ACCOUNTS_0(ORG_KEY=x0) ⇒ ORGANIZATIONS_0(ORG_KEY=x0) ∧ ORGANIZATIONS_1(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_83,TGDRule,∀ x0: ORGANIZATIONS_1(ORG_KEY=x0) ⇒ ACCOUNTS_0(ORG_KEY=x0) ∧ ORGANIZATIONS_0(ORG_KEY=x0)
+MATILDA_CS_results.json,CS,CS_84,TGDRule,∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ACCOUNTS_0(ORG_KEY=x0) ∧ ORGANIZATIONS_1(ORG_KEY=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_1,TGDRule,∀ x0: bupa_0(arg2=x0) ⇒ bupa_type_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_2,TGDRule,∀ x0: bupa_type_0(arg1=x0) ⇒ bupa_0(arg2=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_3,TGDRule,∀ x0: bupa_0(arg2=x0) ⇒ bupa_type_0(arg1=x0) ∧ bupa_type_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_4,TGDRule,∀ x0: bupa_type_1(arg1=x0) ⇒ bupa_0(arg2=x0) ∧ bupa_type_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_5,TGDRule,∀ x0: bupa_type_0(arg1=x0) ⇒ bupa_0(arg2=x0) ∧ bupa_type_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_6,TGDRule,∀ x0: bupa_0(arg2=x0) ∧ bupa_type_0(arg1=x0) ⇒ bupa_type_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_7,TGDRule,∀ x0: bupa_type_0(arg1=x0) ∧ bupa_type_1(arg1=x0) ⇒ bupa_0(arg2=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_8,TGDRule,∀ x0: bupa_0(arg2=x0) ∧ bupa_type_1(arg1=x0) ⇒ bupa_type_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_9,TGDRule,∀ x0: bupa_name_0(arg1=x0) ⇒ alkphos_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_10,TGDRule,∀ x0: alkphos_0(arg1=x0) ⇒ bupa_name_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_11,TGDRule,∀ x0: alkphos_0(arg1=x0) ⇒ bupa_name_0(arg1=x0) ∧ bupa_name_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_12,TGDRule,∀ x0: bupa_name_0(arg1=x0) ∧ bupa_name_1(arg1=x0) ⇒ alkphos_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_13,TGDRule,∀ x0: bupa_name_0(arg1=x0) ⇒ alkphos_0(arg1=x0) ∧ bupa_name_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_14,TGDRule,∀ x0: alkphos_0(arg1=x0) ∧ bupa_name_1(arg1=x0) ⇒ bupa_name_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_15,TGDRule,∀ x0: bupa_name_1(arg1=x0) ⇒ alkphos_0(arg1=x0) ∧ bupa_name_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_16,TGDRule,∀ x0: alkphos_0(arg1=x0) ∧ bupa_name_0(arg1=x0) ⇒ bupa_name_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_17,TGDRule,∀ x0: bupa_0(arg1=x0) ⇒ bupa_name_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_18,TGDRule,∀ x0: bupa_name_0(arg1=x0) ⇒ bupa_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_19,TGDRule,∀ x0: bupa_0(arg1=x0) ∧ bupa_name_1(arg1=x0) ⇒ bupa_name_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_20,TGDRule,∀ x0: bupa_name_1(arg1=x0) ⇒ bupa_0(arg1=x0) ∧ bupa_name_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_21,TGDRule,∀ x0: bupa_0(arg1=x0) ⇒ bupa_name_0(arg1=x0) ∧ bupa_name_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_22,TGDRule,∀ x0: bupa_name_0(arg1=x0) ∧ bupa_name_1(arg1=x0) ⇒ bupa_0(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_23,TGDRule,∀ x0: bupa_0(arg1=x0) ∧ bupa_name_0(arg1=x0) ⇒ bupa_name_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_24,TGDRule,∀ x0: bupa_name_0(arg1=x0) ⇒ bupa_0(arg1=x0) ∧ bupa_name_1(arg1=x0)
+MATILDA_Bupa_results.json,Bupa,Bupa_25,TGDRule,"∀ x0, y0: bupa_0(arg1=x0, arg2=y0) ∧ bupa_type_0(arg1=y0) ⇒ bupa_name_0(arg1=x0)"
+MATILDA_Bupa_results.json,Bupa,Bupa_26,TGDRule,"∀ x0: bupa_name_0(arg1=x0) ⇒ ∃ z0: bupa_0(arg1=x0, arg2=z0) ∧ bupa_type_0(arg1=z0)"
+MATILDA_Bupa_results.json,Bupa,Bupa_27,TGDRule,"∀ x0, y0: bupa_0(arg1=y0, arg2=x0) ∧ bupa_name_0(arg1=y0) ⇒ bupa_type_0(arg1=x0)"
+MATILDA_Bupa_results.json,Bupa,Bupa_28,TGDRule,"∀ x0, x1: bupa_name_0(arg1=x0) ∧ bupa_type_0(arg1=x1) ⇒ bupa_0(arg1=x0, arg2=x1)"
+MATILDA_Bupa_results.json,Bupa,Bupa_29,TGDRule,"∀ x0: bupa_type_0(arg1=x0) ⇒ ∃ z0: bupa_0(arg1=z0, arg2=x0) ∧ bupa_name_0(arg1=z0)"
+MATILDA_Bupa_results.json,Bupa,Bupa_30,TGDRule,"∀ x0, x1: bupa_0(arg1=x0, arg2=x1) ⇒ bupa_name_0(arg1=x0) ∧ bupa_type_0(arg1=x1)"
+MATILDA_CORA_results.json,CORA,CORA_1,TGDRule,∀ x0: paper_0(paper_id=x0) ⇒ cites_0(citing_paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_2,TGDRule,∀ x0: cites_0(citing_paper_id=x0) ⇒ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_3,TGDRule,∀ x0: cites_0(citing_paper_id=x0) ⇒ paper_0(paper_id=x0) ∧ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_4,TGDRule,∀ x0: paper_0(paper_id=x0) ∧ paper_1(paper_id=x0) ⇒ cites_0(citing_paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_5,TGDRule,∀ x0: paper_0(paper_id=x0) ⇒ cites_0(citing_paper_id=x0) ∧ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_6,TGDRule,∀ x0: cites_0(citing_paper_id=x0) ∧ paper_1(paper_id=x0) ⇒ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_7,TGDRule,∀ x0: paper_1(paper_id=x0) ⇒ cites_0(citing_paper_id=x0) ∧ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_8,TGDRule,∀ x0: cites_0(citing_paper_id=x0) ∧ paper_0(paper_id=x0) ⇒ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_9,TGDRule,∀ x0: paper_0(paper_id=x0) ⇒ cites_0(cited_paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_10,TGDRule,∀ x0: cites_0(cited_paper_id=x0) ⇒ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_11,TGDRule,∀ x0: cites_0(cited_paper_id=x0) ⇒ paper_0(paper_id=x0) ∧ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_12,TGDRule,∀ x0: paper_0(paper_id=x0) ∧ paper_1(paper_id=x0) ⇒ cites_0(cited_paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_13,TGDRule,∀ x0: paper_0(paper_id=x0) ⇒ cites_0(cited_paper_id=x0) ∧ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_14,TGDRule,∀ x0: cites_0(cited_paper_id=x0) ∧ paper_1(paper_id=x0) ⇒ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_15,TGDRule,∀ x0: paper_1(paper_id=x0) ⇒ cites_0(cited_paper_id=x0) ∧ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_16,TGDRule,∀ x0: cites_0(cited_paper_id=x0) ∧ paper_0(paper_id=x0) ⇒ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_17,TGDRule,"∀ x0, x1: cites_0(cited_paper_id=x0, citing_paper_id=x1) ⇒ paper_0(paper_id=x0) ∧ paper_1(paper_id=x1)"
+MATILDA_CORA_results.json,CORA,CORA_18,TGDRule,"∀ x0, x1: paper_0(paper_id=x0) ∧ paper_1(paper_id=x1) ⇒ cites_0(cited_paper_id=x0, citing_paper_id=x1)"
+MATILDA_CORA_results.json,CORA,CORA_19,TGDRule,"∀ x0: paper_0(paper_id=x0) ⇒ ∃ z0: cites_0(cited_paper_id=x0, citing_paper_id=z0) ∧ paper_1(paper_id=z0)"
+MATILDA_CORA_results.json,CORA,CORA_20,TGDRule,"∀ x0, y0: cites_0(cited_paper_id=x0, citing_paper_id=y0) ∧ paper_1(paper_id=y0) ⇒ paper_0(paper_id=x0)"
+MATILDA_CORA_results.json,CORA,CORA_21,TGDRule,"∀ x0: paper_1(paper_id=x0) ⇒ ∃ z0: cites_0(cited_paper_id=z0, citing_paper_id=x0) ∧ paper_0(paper_id=z0)"
+MATILDA_CORA_results.json,CORA,CORA_22,TGDRule,"∀ x0, y0: cites_0(cited_paper_id=y0, citing_paper_id=x0) ∧ paper_0(paper_id=y0) ⇒ paper_1(paper_id=x0)"
+MATILDA_CORA_results.json,CORA,CORA_23,TGDRule,∀ x0: content_0(paper_id=x0) ⇒ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_24,TGDRule,∀ x0: paper_0(paper_id=x0) ⇒ content_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_25,TGDRule,∀ x0: content_0(paper_id=x0) ∧ paper_1(paper_id=x0) ⇒ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_26,TGDRule,∀ x0: paper_1(paper_id=x0) ⇒ content_0(paper_id=x0) ∧ paper_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_27,TGDRule,∀ x0: content_0(paper_id=x0) ⇒ paper_0(paper_id=x0) ∧ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_28,TGDRule,∀ x0: paper_0(paper_id=x0) ∧ paper_1(paper_id=x0) ⇒ content_0(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_29,TGDRule,∀ x0: content_0(paper_id=x0) ∧ paper_0(paper_id=x0) ⇒ paper_1(paper_id=x0)
+MATILDA_CORA_results.json,CORA,CORA_30,TGDRule,∀ x0: paper_0(paper_id=x0) ⇒ content_0(paper_id=x0) ∧ paper_1(paper_id=x0)
+MATILDA_Pima_results.json,Pima,Pima_1,TGDRule,∀ x0: age_0(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_2,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ age_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_3,TGDRule,∀ x0: age_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_4,TGDRule,∀ x0: pima_1(arg1=x0) ⇒ age_0(arg1=x0) ∧ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_5,TGDRule,∀ x0: age_0(arg1=x0) ∧ pima_0(arg1=x0) ⇒ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_6,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ age_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_7,TGDRule,∀ x0: age_0(arg1=x0) ⇒ pima_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_8,TGDRule,∀ x0: pima_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ age_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_9,TGDRule,∀ x0: bmi_0(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_10,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ bmi_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_11,TGDRule,∀ x0: bmi_0(arg1=x0) ⇒ pima_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_12,TGDRule,∀ x0: pima_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ bmi_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_13,TGDRule,∀ x0: bmi_0(arg1=x0) ∧ pima_0(arg1=x0) ⇒ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_14,TGDRule,∀ x0: bmi_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_15,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ bmi_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_16,TGDRule,∀ x0: pima_1(arg1=x0) ⇒ bmi_0(arg1=x0) ∧ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_17,TGDRule,∀ x0: diastolic_0(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_18,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ diastolic_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_19,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ diastolic_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_20,TGDRule,∀ x0: pima_1(arg1=x0) ⇒ diastolic_0(arg1=x0) ∧ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_21,TGDRule,∀ x0: diastolic_0(arg1=x0) ⇒ pima_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_22,TGDRule,∀ x0: diastolic_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_23,TGDRule,∀ x0: pima_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ diastolic_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_24,TGDRule,∀ x0: diastolic_0(arg1=x0) ∧ pima_0(arg1=x0) ⇒ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_25,TGDRule,∀ x0: numPreg_0(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_26,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ numPreg_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_27,TGDRule,∀ x0: numPreg_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_28,TGDRule,∀ x0: pima_1(arg1=x0) ⇒ numPreg_0(arg1=x0) ∧ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_29,TGDRule,∀ x0: pima_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ numPreg_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_30,TGDRule,∀ x0: numPreg_0(arg1=x0) ⇒ pima_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_31,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ numPreg_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_32,TGDRule,∀ x0: numPreg_0(arg1=x0) ∧ pima_0(arg1=x0) ⇒ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_33,TGDRule,∀ x0: pedigree_0(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_34,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ pedigree_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_35,TGDRule,∀ x0: pima_0(arg1=x0) ⇒ pedigree_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_36,TGDRule,∀ x0: pedigree_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_37,TGDRule,∀ x0: pima_1(arg1=x0) ⇒ pedigree_0(arg1=x0) ∧ pima_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_38,TGDRule,∀ x0: pedigree_0(arg1=x0) ⇒ pima_0(arg1=x0) ∧ pima_1(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_39,TGDRule,∀ x0: pima_0(arg1=x0) ∧ pima_1(arg1=x0) ⇒ pedigree_0(arg1=x0)
+MATILDA_Pima_results.json,Pima,Pima_40,TGDRule,∀ x0: pedigree_0(arg1=x0) ∧ pima_0(arg1=x0) ⇒ pima_1(arg1=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_1,TGDRule,∀ x0: molecule_0(molecule_id=x0) ⇒ atom_0(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_2,TGDRule,∀ x0: atom_0(molecule_id=x0) ⇒ molecule_0(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_3,TGDRule,∀ x0: molecule_0(molecule_id=x0) ∧ molecule_1(molecule_id=x0) ⇒ atom_0(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_4,TGDRule,∀ x0: atom_0(molecule_id=x0) ∧ molecule_0(molecule_id=x0) ⇒ molecule_1(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_5,TGDRule,∀ x0: atom_0(molecule_id=x0) ∧ molecule_1(molecule_id=x0) ⇒ molecule_0(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_6,TGDRule,∀ x0: atom_0(molecule_id=x0) ⇒ molecule_0(molecule_id=x0) ∧ molecule_1(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_7,TGDRule,∀ x0: molecule_1(molecule_id=x0) ⇒ atom_0(molecule_id=x0) ∧ molecule_0(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_8,TGDRule,∀ x0: molecule_0(molecule_id=x0) ⇒ atom_0(molecule_id=x0) ∧ molecule_1(molecule_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_9,TGDRule,∀ x0: group_0(group_id=x0) ⇒ gmember_0(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_10,TGDRule,∀ x0: gmember_0(group_id=x0) ⇒ group_0(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_11,TGDRule,∀ x0: gmember_0(group_id=x0) ⇒ group_0(group_id=x0) ∧ group_1(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_12,TGDRule,∀ x0: gmember_0(group_id=x0) ∧ group_0(group_id=x0) ⇒ group_1(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_13,TGDRule,∀ x0: gmember_0(group_id=x0) ∧ group_1(group_id=x0) ⇒ group_0(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_14,TGDRule,∀ x0: group_0(group_id=x0) ⇒ gmember_0(group_id=x0) ∧ group_1(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_15,TGDRule,∀ x0: group_1(group_id=x0) ⇒ gmember_0(group_id=x0) ∧ group_0(group_id=x0)
+MATILDA_Biodegradability_results.json,Biodegradability,Biodegradability_16,TGDRule,∀ x0: group_0(group_id=x0) ∧ group_1(group_id=x0) ⇒ gmember_0(group_id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_1,TGDRule,∀ x0: beers_0(brewery_id=x0) ⇒ breweries_0(id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_2,TGDRule,∀ x0: breweries_0(id=x0) ⇒ beers_0(brewery_id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_3,TGDRule,∀ x0: beers_0(brewery_id=x0) ∧ breweries_1(id=x0) ⇒ breweries_0(id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_4,TGDRule,∀ x0: breweries_0(id=x0) ∧ breweries_1(id=x0) ⇒ beers_0(brewery_id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_5,TGDRule,∀ x0: beers_0(brewery_id=x0) ∧ breweries_0(id=x0) ⇒ breweries_1(id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_6,TGDRule,∀ x0: beers_0(brewery_id=x0) ⇒ breweries_0(id=x0) ∧ breweries_1(id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_7,TGDRule,∀ x0: breweries_0(id=x0) ⇒ beers_0(brewery_id=x0) ∧ breweries_1(id=x0)
+MATILDA_CraftBeer_results.json,CraftBeer,CraftBeer_8,TGDRule,∀ x0: breweries_1(id=x0) ⇒ beers_0(brewery_id=x0) ∧ breweries_0(id=x0)
+MATILDA_NBA_results.json,NBA,NBA_1,TGDRule,∀ x0: Player_0(PlayerId=x0) ⇒ Actions_0(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_2,TGDRule,∀ x0: Actions_0(PlayerId=x0) ⇒ Player_0(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_3,TGDRule,∀ x0: Actions_0(PlayerId=x0) ⇒ Player_0(PlayerId=x0) ∧ Player_1(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_4,TGDRule,∀ x0: Player_0(PlayerId=x0) ∧ Player_1(PlayerId=x0) ⇒ Actions_0(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_5,TGDRule,∀ x0: Player_0(PlayerId=x0) ⇒ Actions_0(PlayerId=x0) ∧ Player_1(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_6,TGDRule,∀ x0: Actions_0(PlayerId=x0) ∧ Player_1(PlayerId=x0) ⇒ Player_0(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_7,TGDRule,∀ x0: Player_1(PlayerId=x0) ⇒ Actions_0(PlayerId=x0) ∧ Player_0(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_8,TGDRule,∀ x0: Actions_0(PlayerId=x0) ∧ Player_0(PlayerId=x0) ⇒ Player_1(PlayerId=x0)
+MATILDA_NBA_results.json,NBA,NBA_9,TGDRule,∀ x0: Game_0(Team1Id=x0) ⇒ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_10,TGDRule,∀ x0: Team_0(TeamId=x0) ⇒ Game_0(Team1Id=x0)
+MATILDA_NBA_results.json,NBA,NBA_11,TGDRule,∀ x0: Game_0(Team1Id=x0) ⇒ Team_0(TeamId=x0) ∧ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_12,TGDRule,∀ x0: Team_1(TeamId=x0) ⇒ Game_0(Team1Id=x0) ∧ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_13,TGDRule,∀ x0: Team_0(TeamId=x0) ⇒ Game_0(Team1Id=x0) ∧ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_14,TGDRule,∀ x0: Game_0(Team1Id=x0) ∧ Team_0(TeamId=x0) ⇒ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_15,TGDRule,∀ x0: Team_0(TeamId=x0) ∧ Team_1(TeamId=x0) ⇒ Game_0(Team1Id=x0)
+MATILDA_NBA_results.json,NBA,NBA_16,TGDRule,∀ x0: Game_0(Team1Id=x0) ∧ Team_1(TeamId=x0) ⇒ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_17,TGDRule,"∀ x0, x1: Game_0(Team1Id=x0, Team2Id=x1) ⇒ Team_0(TeamId=x0) ∧ Team_1(TeamId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_18,TGDRule,"∀ x0: Team_1(TeamId=x0) ⇒ ∃ z0: Game_0(Team1Id=z0, Team2Id=x0) ∧ Team_0(TeamId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_19,TGDRule,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Game_0(Team1Id=x0, Team2Id=z0) ∧ Team_1(TeamId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_20,TGDRule,"∀ x0, y0: Game_0(Team1Id=y0, Team2Id=x0) ∧ Team_0(TeamId=y0) ⇒ Team_1(TeamId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_21,TGDRule,"∀ x0, x1: Team_0(TeamId=x0) ∧ Team_1(TeamId=x1) ⇒ Game_0(Team1Id=x0, Team2Id=x1)"
+MATILDA_NBA_results.json,NBA,NBA_22,TGDRule,"∀ x0, y0: Game_0(Team1Id=x0, Team2Id=y0) ∧ Team_1(TeamId=y0) ⇒ Team_0(TeamId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_23,TGDRule,∀ x0: Actions_0(TeamId=x0) ⇒ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_24,TGDRule,∀ x0: Team_0(TeamId=x0) ⇒ Actions_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_25,TGDRule,∀ x0: Actions_0(TeamId=x0) ∧ Team_1(TeamId=x0) ⇒ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_26,TGDRule,∀ x0: Team_0(TeamId=x0) ∧ Team_1(TeamId=x0) ⇒ Actions_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_27,TGDRule,∀ x0: Actions_0(TeamId=x0) ∧ Team_0(TeamId=x0) ⇒ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_28,TGDRule,∀ x0: Team_1(TeamId=x0) ⇒ Actions_0(TeamId=x0) ∧ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_29,TGDRule,∀ x0: Actions_0(TeamId=x0) ⇒ Team_0(TeamId=x0) ∧ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_30,TGDRule,∀ x0: Team_0(TeamId=x0) ⇒ Actions_0(TeamId=x0) ∧ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_31,TGDRule,"∀ x0, x1: Team_0(TeamId=x0) ∧ Player_0(PlayerId=x1) ⇒ Actions_0(TeamId=x0, PlayerId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_32,TGDRule,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(TeamId=x0, PlayerId=z0) ∧ Player_0(PlayerId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_33,TGDRule,"∀ x0, x1: Actions_0(TeamId=x0, PlayerId=x1) ⇒ Team_0(TeamId=x0) ∧ Player_0(PlayerId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_34,TGDRule,"∀ x0, y0: Actions_0(TeamId=x0, PlayerId=y0) ∧ Player_0(PlayerId=y0) ⇒ Team_0(TeamId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_35,TGDRule,"∀ x0, y0: Actions_0(TeamId=y0, PlayerId=x0) ∧ Team_0(TeamId=y0) ⇒ Player_0(PlayerId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_36,TGDRule,"∀ x0: Player_0(PlayerId=x0) ⇒ ∃ z0: Actions_0(TeamId=z0, PlayerId=x0) ∧ Team_0(TeamId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_37,TGDRule,∀ x0: Game_0(Team2Id=x0) ⇒ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_38,TGDRule,∀ x0: Team_0(TeamId=x0) ⇒ Game_0(Team2Id=x0)
+MATILDA_NBA_results.json,NBA,NBA_39,TGDRule,∀ x0: Game_0(Team2Id=x0) ⇒ Team_0(TeamId=x0) ∧ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_40,TGDRule,∀ x0: Team_1(TeamId=x0) ⇒ Game_0(Team2Id=x0) ∧ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_41,TGDRule,∀ x0: Team_0(TeamId=x0) ⇒ Game_0(Team2Id=x0) ∧ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_42,TGDRule,∀ x0: Game_0(Team2Id=x0) ∧ Team_0(TeamId=x0) ⇒ Team_1(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_43,TGDRule,∀ x0: Team_0(TeamId=x0) ∧ Team_1(TeamId=x0) ⇒ Game_0(Team2Id=x0)
+MATILDA_NBA_results.json,NBA,NBA_44,TGDRule,∀ x0: Game_0(Team2Id=x0) ∧ Team_1(TeamId=x0) ⇒ Team_0(TeamId=x0)
+MATILDA_NBA_results.json,NBA,NBA_45,TGDRule,∀ x0: Actions_0(GameId=x0) ⇒ Game_0(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_46,TGDRule,∀ x0: Game_0(GameId=x0) ⇒ Actions_0(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_47,TGDRule,∀ x0: Actions_0(GameId=x0) ∧ Game_1(GameId=x0) ⇒ Game_0(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_48,TGDRule,∀ x0: Game_0(GameId=x0) ∧ Game_1(GameId=x0) ⇒ Actions_0(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_49,TGDRule,∀ x0: Actions_0(GameId=x0) ∧ Game_0(GameId=x0) ⇒ Game_1(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_50,TGDRule,∀ x0: Actions_0(GameId=x0) ⇒ Game_0(GameId=x0) ∧ Game_1(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_51,TGDRule,∀ x0: Game_0(GameId=x0) ⇒ Actions_0(GameId=x0) ∧ Game_1(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_52,TGDRule,∀ x0: Game_1(GameId=x0) ⇒ Actions_0(GameId=x0) ∧ Game_0(GameId=x0)
+MATILDA_NBA_results.json,NBA,NBA_53,TGDRule,"∀ x0, x1: Game_0(GameId=x0) ∧ Team_0(TeamId=x1) ⇒ Actions_0(GameId=x0, TeamId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_54,TGDRule,"∀ x0: Game_0(GameId=x0) ⇒ ∃ z0: Actions_0(GameId=x0, TeamId=z0) ∧ Team_0(TeamId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_55,TGDRule,"∀ x0, y0: Actions_0(GameId=y0, TeamId=x0) ∧ Game_0(GameId=y0) ⇒ Team_0(TeamId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_56,TGDRule,"∀ x0, y0: Actions_0(GameId=x0, TeamId=y0) ∧ Team_0(TeamId=y0) ⇒ Game_0(GameId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_57,TGDRule,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(GameId=z0, TeamId=x0) ∧ Game_0(GameId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_58,TGDRule,"∀ x0, x1: Actions_0(GameId=x0, TeamId=x1) ⇒ Game_0(GameId=x0) ∧ Team_0(TeamId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_59,TGDRule,"∀ x0: Player_0(PlayerId=x0) ⇒ ∃ z0: Actions_0(GameId=z0, PlayerId=x0) ∧ Game_0(GameId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_60,TGDRule,"∀ x0, y0: Actions_0(GameId=y0, PlayerId=x0) ∧ Game_0(GameId=y0) ⇒ Player_0(PlayerId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_61,TGDRule,"∀ x0, y0: Actions_0(GameId=x0, PlayerId=y0) ∧ Player_0(PlayerId=y0) ⇒ Game_0(GameId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_62,TGDRule,"∀ x0: Game_0(GameId=x0) ⇒ ∃ z0: Actions_0(GameId=x0, PlayerId=z0) ∧ Player_0(PlayerId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_63,TGDRule,"∀ x0, x1: Game_0(GameId=x0) ∧ Player_0(PlayerId=x1) ⇒ Actions_0(GameId=x0, PlayerId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_64,TGDRule,"∀ x0, x1: Actions_0(GameId=x0, PlayerId=x1) ⇒ Game_0(GameId=x0) ∧ Player_0(PlayerId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_65,TGDRule,"∀ x0, y0: Game_0(GameId=x0, Team1Id=y0) ∧ Team_0(TeamId=y0) ⇒ Actions_0(GameId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_66,TGDRule,"∀ x0, x1: Game_0(GameId=x0, Team1Id=x1) ⇒ Actions_0(GameId=x0) ∧ Team_0(TeamId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_67,TGDRule,"∀ x0, y0: Actions_0(GameId=y0) ∧ Game_0(GameId=y0, Team1Id=x0) ⇒ Team_0(TeamId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_68,TGDRule,"∀ x0, x1: Actions_0(GameId=x0) ∧ Team_0(TeamId=x1) ⇒ Game_0(GameId=x0, Team1Id=x1)"
+MATILDA_NBA_results.json,NBA,NBA_69,TGDRule,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(GameId=z0) ∧ Game_0(GameId=z0, Team1Id=x0)"
+MATILDA_NBA_results.json,NBA,NBA_70,TGDRule,"∀ x0: Actions_0(GameId=x0) ⇒ ∃ z0: Game_0(GameId=x0, Team1Id=z0) ∧ Team_0(TeamId=z0)"
+MATILDA_NBA_results.json,NBA,NBA_71,TGDRule,"∀ x0, y0: Game_0(GameId=x0, Team2Id=y0) ∧ Team_0(TeamId=y0) ⇒ Actions_0(GameId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_72,TGDRule,"∀ x0, x1: Game_0(GameId=x0, Team2Id=x1) ⇒ Actions_0(GameId=x0) ∧ Team_0(TeamId=x1)"
+MATILDA_NBA_results.json,NBA,NBA_73,TGDRule,"∀ x0, y0: Actions_0(GameId=y0) ∧ Game_0(GameId=y0, Team2Id=x0) ⇒ Team_0(TeamId=x0)"
+MATILDA_NBA_results.json,NBA,NBA_74,TGDRule,"∀ x0, x1: Actions_0(GameId=x0) ∧ Team_0(TeamId=x1) ⇒ Game_0(GameId=x0, Team2Id=x1)"
+MATILDA_NBA_results.json,NBA,NBA_75,TGDRule,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(GameId=z0) ∧ Game_0(GameId=z0, Team2Id=x0)"
+MATILDA_NBA_results.json,NBA,NBA_76,TGDRule,"∀ x0: Actions_0(GameId=x0) ⇒ ∃ z0: Game_0(GameId=x0, Team2Id=z0) ∧ Team_0(TeamId=z0)"
+MATILDA_University_results.json,University,University_1,TGDRule,∀ x0: prof_0(prof_id=x0) ⇒ RA_0(prof_id=x0)
+MATILDA_University_results.json,University,University_2,TGDRule,∀ x0: RA_0(prof_id=x0) ⇒ prof_0(prof_id=x0)
+MATILDA_University_results.json,University,University_3,TGDRule,∀ x0: RA_0(prof_id=x0) ⇒ prof_0(prof_id=x0) ∧ prof_1(prof_id=x0)
+MATILDA_University_results.json,University,University_4,TGDRule,∀ x0: prof_0(prof_id=x0) ∧ prof_1(prof_id=x0) ⇒ RA_0(prof_id=x0)
+MATILDA_University_results.json,University,University_5,TGDRule,∀ x0: prof_0(prof_id=x0) ⇒ RA_0(prof_id=x0) ∧ prof_1(prof_id=x0)
+MATILDA_University_results.json,University,University_6,TGDRule,∀ x0: RA_0(prof_id=x0) ∧ prof_1(prof_id=x0) ⇒ prof_0(prof_id=x0)
+MATILDA_University_results.json,University,University_7,TGDRule,∀ x0: prof_1(prof_id=x0) ⇒ RA_0(prof_id=x0) ∧ prof_0(prof_id=x0)
+MATILDA_University_results.json,University,University_8,TGDRule,∀ x0: RA_0(prof_id=x0) ∧ prof_0(prof_id=x0) ⇒ prof_1(prof_id=x0)
+MATILDA_University_results.json,University,University_9,TGDRule,"∀ x0: student_0(student_id=x0) ⇒ ∃ z0: RA_0(prof_id=z0, student_id=x0) ∧ prof_0(prof_id=z0)"
+MATILDA_University_results.json,University,University_10,TGDRule,"∀ x0, y0: RA_0(prof_id=x0, student_id=y0) ∧ student_0(student_id=y0) ⇒ prof_0(prof_id=x0)"
+MATILDA_University_results.json,University,University_11,TGDRule,"∀ x0, x1: RA_0(prof_id=x0, student_id=x1) ⇒ prof_0(prof_id=x0) ∧ student_0(student_id=x1)"
+MATILDA_University_results.json,University,University_12,TGDRule,"∀ x0, y0: RA_0(prof_id=y0, student_id=x0) ∧ prof_0(prof_id=y0) ⇒ student_0(student_id=x0)"
+MATILDA_University_results.json,University,University_13,TGDRule,"∀ x0, x1: prof_0(prof_id=x0) ∧ student_0(student_id=x1) ⇒ RA_0(prof_id=x0, student_id=x1)"
+MATILDA_University_results.json,University,University_14,TGDRule,"∀ x0: prof_0(prof_id=x0) ⇒ ∃ z0: RA_0(prof_id=x0, student_id=z0) ∧ student_0(student_id=z0)"
+MATILDA_University_results.json,University,University_15,TGDRule,∀ x0: student_0(student_id=x0) ⇒ RA_0(student_id=x0)
+MATILDA_University_results.json,University,University_16,TGDRule,∀ x0: RA_0(student_id=x0) ⇒ student_0(student_id=x0)
+MATILDA_University_results.json,University,University_17,TGDRule,∀ x0: student_0(student_id=x0) ∧ student_1(student_id=x0) ⇒ RA_0(student_id=x0)
+MATILDA_University_results.json,University,University_18,TGDRule,∀ x0: RA_0(student_id=x0) ∧ student_0(student_id=x0) ⇒ student_1(student_id=x0)
+MATILDA_University_results.json,University,University_19,TGDRule,∀ x0: RA_0(student_id=x0) ∧ student_1(student_id=x0) ⇒ student_0(student_id=x0)
+MATILDA_University_results.json,University,University_20,TGDRule,∀ x0: RA_0(student_id=x0) ⇒ student_0(student_id=x0) ∧ student_1(student_id=x0)
+MATILDA_University_results.json,University,University_21,TGDRule,∀ x0: student_1(student_id=x0) ⇒ RA_0(student_id=x0) ∧ student_0(student_id=x0)
+MATILDA_University_results.json,University,University_22,TGDRule,∀ x0: student_0(student_id=x0) ⇒ RA_0(student_id=x0) ∧ student_1(student_id=x0)
+MATILDA_University_results.json,University,University_23,TGDRule,∀ x0: registration_0(student_id=x0) ⇒ student_0(student_id=x0)
+MATILDA_University_results.json,University,University_24,TGDRule,∀ x0: student_0(student_id=x0) ⇒ registration_0(student_id=x0)
+MATILDA_University_results.json,University,University_25,TGDRule,∀ x0: student_1(student_id=x0) ⇒ registration_0(student_id=x0) ∧ student_0(student_id=x0)
+MATILDA_University_results.json,University,University_26,TGDRule,∀ x0: registration_0(student_id=x0) ∧ student_1(student_id=x0) ⇒ student_0(student_id=x0)
+MATILDA_University_results.json,University,University_27,TGDRule,∀ x0: registration_0(student_id=x0) ⇒ student_0(student_id=x0) ∧ student_1(student_id=x0)
+MATILDA_University_results.json,University,University_28,TGDRule,∀ x0: registration_0(student_id=x0) ∧ student_0(student_id=x0) ⇒ student_1(student_id=x0)
+MATILDA_University_results.json,University,University_29,TGDRule,∀ x0: student_0(student_id=x0) ⇒ registration_0(student_id=x0) ∧ student_1(student_id=x0)
+MATILDA_University_results.json,University,University_30,TGDRule,∀ x0: student_0(student_id=x0) ∧ student_1(student_id=x0) ⇒ registration_0(student_id=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_1,TGDRule,∀ x0: conformation_0(molecule_name=x0) ⇒ molecule_0(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_2,TGDRule,∀ x0: molecule_0(molecule_name=x0) ⇒ conformation_0(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_3,TGDRule,∀ x0: conformation_0(molecule_name=x0) ∧ molecule_1(molecule_name=x0) ⇒ molecule_0(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_4,TGDRule,∀ x0: molecule_0(molecule_name=x0) ∧ molecule_1(molecule_name=x0) ⇒ conformation_0(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_5,TGDRule,∀ x0: conformation_0(molecule_name=x0) ∧ molecule_0(molecule_name=x0) ⇒ molecule_1(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_6,TGDRule,∀ x0: conformation_0(molecule_name=x0) ⇒ molecule_0(molecule_name=x0) ∧ molecule_1(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_7,TGDRule,∀ x0: molecule_0(molecule_name=x0) ⇒ conformation_0(molecule_name=x0) ∧ molecule_1(molecule_name=x0)
+MATILDA_MuskSmall_results.json,MuskSmall,MuskSmall_8,TGDRule,∀ x0: molecule_1(molecule_name=x0) ⇒ conformation_0(molecule_name=x0) ∧ molecule_0(molecule_name=x0)
+MATILDA_Chess_results.json,Chess,Chess_1,TGDRule,∀ x0: game_0(opening_id=x0) ⇒ opening_0(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_2,TGDRule,∀ x0: opening_0(opening_id=x0) ⇒ game_0(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_3,TGDRule,∀ x0: game_0(opening_id=x0) ∧ opening_1(opening_id=x0) ⇒ opening_0(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_4,TGDRule,∀ x0: opening_0(opening_id=x0) ∧ opening_1(opening_id=x0) ⇒ game_0(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_5,TGDRule,∀ x0: game_0(opening_id=x0) ∧ opening_0(opening_id=x0) ⇒ opening_1(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_6,TGDRule,∀ x0: game_0(opening_id=x0) ⇒ opening_0(opening_id=x0) ∧ opening_1(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_7,TGDRule,∀ x0: opening_0(opening_id=x0) ⇒ game_0(opening_id=x0) ∧ opening_1(opening_id=x0)
+MATILDA_Chess_results.json,Chess,Chess_8,TGDRule,∀ x0: opening_1(opening_id=x0) ⇒ game_0(opening_id=x0) ∧ opening_0(opening_id=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_1,TGDRule,∀ x0: husband2_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_2,TGDRule,∀ x0: person_0(name=x0) ⇒ husband2_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_3,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ husband2_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_4,TGDRule,∀ x0: husband2_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_5,TGDRule,∀ x0: husband2_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_6,TGDRule,∀ x0: person_1(name=x0) ⇒ husband2_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_7,TGDRule,∀ x0: husband2_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_8,TGDRule,∀ x0: person_0(name=x0) ⇒ husband2_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_9,TGDRule,∀ x0: person_0(name=x0) ⇒ dunur_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_10,TGDRule,∀ x0: dunur_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_11,TGDRule,∀ x0: dunur_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_12,TGDRule,∀ x0: dunur_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_13,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ dunur_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_14,TGDRule,∀ x0: person_1(name=x0) ⇒ dunur_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_15,TGDRule,∀ x0: dunur_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_16,TGDRule,∀ x0: person_0(name=x0) ⇒ dunur_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_17,TGDRule,∀ x0: niece_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_18,TGDRule,∀ x0: person_0(name=x0) ⇒ niece_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_19,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ niece_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_20,TGDRule,∀ x0: niece_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_21,TGDRule,∀ x0: niece_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_22,TGDRule,∀ x0: person_1(name=x0) ⇒ niece_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_23,TGDRule,∀ x0: person_0(name=x0) ⇒ niece_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_24,TGDRule,∀ x0: niece_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_25,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ niece_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_26,TGDRule,"∀ x0, y0: niece_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_27,TGDRule,"∀ x0, x1: niece_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_28,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: niece_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_29,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: niece_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_30,TGDRule,"∀ x0, y0: niece_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_31,TGDRule,∀ x0: daughter_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_32,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_33,TGDRule,∀ x0: daughter_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_34,TGDRule,∀ x0: person_1(name=x0) ⇒ daughter_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_35,TGDRule,∀ x0: daughter_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_36,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ daughter_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_37,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_38,TGDRule,∀ x0: daughter_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_39,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_40,TGDRule,∀ x0: mother_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_41,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ mother_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_42,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_43,TGDRule,∀ x0: person_1(name=x0) ⇒ mother_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_44,TGDRule,∀ x0: mother_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_45,TGDRule,∀ x0: mother_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_46,TGDRule,∀ x0: mother_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_47,TGDRule,∀ x0: daughter_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_48,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_49,TGDRule,∀ x0: daughter_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_50,TGDRule,∀ x0: person_1(name=x0) ⇒ daughter_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_51,TGDRule,∀ x0: daughter_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_52,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ daughter_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_53,TGDRule,∀ x0: person_0(name=x0) ⇒ daughter_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_54,TGDRule,∀ x0: daughter_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_55,TGDRule,"∀ x0, y0: daughter_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_56,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: daughter_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_57,TGDRule,"∀ x0, x1: daughter_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_58,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ daughter_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_59,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: daughter_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_60,TGDRule,"∀ x0, y0: daughter_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_61,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_62,TGDRule,∀ x0: mother_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_63,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ mother_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_64,TGDRule,∀ x0: person_0(name=x0) ⇒ mother_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_65,TGDRule,∀ x0: person_1(name=x0) ⇒ mother_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_66,TGDRule,∀ x0: mother_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_67,TGDRule,∀ x0: mother_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_68,TGDRule,∀ x0: mother_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_69,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ mother_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_70,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: mother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_71,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: mother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_72,TGDRule,"∀ x0, y0: mother_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_73,TGDRule,"∀ x0, x1: mother_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_74,TGDRule,"∀ x0, y0: mother_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_75,TGDRule,∀ x0: nephew_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_76,TGDRule,∀ x0: person_0(name=x0) ⇒ nephew_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_77,TGDRule,∀ x0: person_1(name=x0) ⇒ nephew_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_78,TGDRule,∀ x0: person_0(name=x0) ⇒ nephew_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_79,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ nephew_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_80,TGDRule,∀ x0: nephew_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_81,TGDRule,∀ x0: nephew_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_82,TGDRule,∀ x0: nephew_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_83,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: nephew_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_84,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: nephew_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_85,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ nephew_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_86,TGDRule,"∀ x0, x1: nephew_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_87,TGDRule,"∀ x0, y0: nephew_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_88,TGDRule,"∀ x0, y0: nephew_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_89,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_90,TGDRule,∀ x0: husband_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_91,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ husband_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_92,TGDRule,∀ x0: husband_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_93,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_94,TGDRule,∀ x0: husband_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_95,TGDRule,∀ x0: husband_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_96,TGDRule,∀ x0: person_1(name=x0) ⇒ husband_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_97,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_98,TGDRule,∀ x0: brother_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_99,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_100,TGDRule,∀ x0: brother_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_101,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ brother_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_102,TGDRule,∀ x0: brother_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_103,TGDRule,∀ x0: person_1(name=x0) ⇒ brother_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_104,TGDRule,∀ x0: brother_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_105,TGDRule,∀ x0: person_0(name=x0) ⇒ dunur_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_106,TGDRule,∀ x0: dunur_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_107,TGDRule,∀ x0: dunur_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_108,TGDRule,∀ x0: dunur_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_109,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ dunur_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_110,TGDRule,∀ x0: person_1(name=x0) ⇒ dunur_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_111,TGDRule,∀ x0: dunur_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_112,TGDRule,∀ x0: person_0(name=x0) ⇒ dunur_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_113,TGDRule,"∀ x0, x1: dunur_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_114,TGDRule,"∀ x0, y0: dunur_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_115,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ dunur_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_116,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: dunur_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_117,TGDRule,"∀ x0, y0: dunur_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_118,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: dunur_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_119,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_120,TGDRule,∀ x0: husband_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_121,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ husband_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_122,TGDRule,∀ x0: husband_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_123,TGDRule,∀ x0: person_0(name=x0) ⇒ husband_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_124,TGDRule,∀ x0: husband_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_125,TGDRule,∀ x0: husband_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_126,TGDRule,∀ x0: person_1(name=x0) ⇒ husband_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_127,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ husband_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_128,TGDRule,"∀ x0, x1: husband_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_129,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: husband_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_130,TGDRule,"∀ x0, y0: husband_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_131,TGDRule,"∀ x0, y0: husband_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_132,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: husband_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_133,TGDRule,∀ x0: aunt_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_134,TGDRule,∀ x0: person_0(name=x0) ⇒ aunt_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_135,TGDRule,∀ x0: aunt_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_136,TGDRule,∀ x0: person_0(name=x0) ⇒ aunt_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_137,TGDRule,∀ x0: aunt_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_138,TGDRule,∀ x0: aunt_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_139,TGDRule,∀ x0: person_1(name=x0) ⇒ aunt_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_140,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ aunt_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_141,TGDRule,"∀ x0, y0: aunt_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_142,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: aunt_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_143,TGDRule,"∀ x0, y0: aunt_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_144,TGDRule,"∀ x0, x1: aunt_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_145,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: aunt_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_146,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ aunt_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_147,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_148,TGDRule,∀ x0: brother_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_149,TGDRule,∀ x0: person_0(name=x0) ⇒ brother_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_150,TGDRule,∀ x0: brother_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_151,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ brother_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_152,TGDRule,∀ x0: brother_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_153,TGDRule,∀ x0: person_1(name=x0) ⇒ brother_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_154,TGDRule,∀ x0: brother_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_155,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: brother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_156,TGDRule,"∀ x0, y0: brother_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_157,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ brother_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_158,TGDRule,"∀ x0, x1: brother_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_159,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: brother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_160,TGDRule,"∀ x0, y0: brother_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_161,TGDRule,∀ x0: husband2_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_162,TGDRule,∀ x0: person_0(name=x0) ⇒ husband2_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_163,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ husband2_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_164,TGDRule,∀ x0: husband2_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_165,TGDRule,∀ x0: husband2_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_166,TGDRule,∀ x0: person_1(name=x0) ⇒ husband2_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_167,TGDRule,∀ x0: husband2_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_168,TGDRule,∀ x0: person_0(name=x0) ⇒ husband2_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_169,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ husband2_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_170,TGDRule,"∀ x0, y0: husband2_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_171,TGDRule,"∀ x0, x1: husband2_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_172,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: husband2_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_173,TGDRule,"∀ x0, y0: husband2_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_174,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: husband2_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_175,TGDRule,∀ x0: nephew_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_176,TGDRule,∀ x0: person_0(name=x0) ⇒ nephew_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_177,TGDRule,∀ x0: person_1(name=x0) ⇒ nephew_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_178,TGDRule,∀ x0: person_0(name=x0) ⇒ nephew_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_179,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ nephew_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_180,TGDRule,∀ x0: nephew_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_181,TGDRule,∀ x0: nephew_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_182,TGDRule,∀ x0: nephew_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_183,TGDRule,∀ x0: aunt_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_184,TGDRule,∀ x0: person_0(name=x0) ⇒ aunt_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_185,TGDRule,∀ x0: aunt_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_186,TGDRule,∀ x0: person_0(name=x0) ⇒ aunt_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_187,TGDRule,∀ x0: aunt_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_188,TGDRule,∀ x0: aunt_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_189,TGDRule,∀ x0: person_1(name=x0) ⇒ aunt_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_190,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ aunt_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_191,TGDRule,∀ x0: father_0(name1=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_192,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_193,TGDRule,∀ x0: father_0(name1=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_194,TGDRule,∀ x0: father_0(name1=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_195,TGDRule,∀ x0: person_1(name=x0) ⇒ father_0(name1=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_196,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name1=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_197,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ father_0(name1=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_198,TGDRule,∀ x0: father_0(name1=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_199,TGDRule,"∀ x0, x1: father_0(name1=x0, name2=x1) ⇒ person_0(name=x0) ∧ person_1(name=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_200,TGDRule,"∀ x0, y0: father_0(name1=x0, name2=y0) ∧ person_1(name=y0) ⇒ person_0(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_201,TGDRule,"∀ x0: person_1(name=x0) ⇒ ∃ z0: father_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_202,TGDRule,"∀ x0: person_0(name=x0) ⇒ ∃ z0: father_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_203,TGDRule,"∀ x0, x1: person_0(name=x0) ∧ person_1(name=x1) ⇒ father_0(name1=x0, name2=x1)"
+MATILDA_Dunur_results.json,Dunur,Dunur_204,TGDRule,"∀ x0, y0: father_0(name1=y0, name2=x0) ∧ person_0(name=y0) ⇒ person_1(name=x0)"
+MATILDA_Dunur_results.json,Dunur,Dunur_205,TGDRule,∀ x0: father_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_206,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_207,TGDRule,∀ x0: father_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_208,TGDRule,∀ x0: father_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_209,TGDRule,∀ x0: person_1(name=x0) ⇒ father_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_210,TGDRule,∀ x0: person_0(name=x0) ⇒ father_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_211,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ father_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_212,TGDRule,∀ x0: father_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_213,TGDRule,∀ x0: niece_0(name2=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_214,TGDRule,∀ x0: person_0(name=x0) ⇒ niece_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_215,TGDRule,∀ x0: person_0(name=x0) ∧ person_1(name=x0) ⇒ niece_0(name2=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_216,TGDRule,∀ x0: niece_0(name2=x0) ∧ person_1(name=x0) ⇒ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_217,TGDRule,∀ x0: niece_0(name2=x0) ⇒ person_0(name=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_218,TGDRule,∀ x0: person_1(name=x0) ⇒ niece_0(name2=x0) ∧ person_0(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_219,TGDRule,∀ x0: person_0(name=x0) ⇒ niece_0(name2=x0) ∧ person_1(name=x0)
+MATILDA_Dunur_results.json,Dunur,Dunur_220,TGDRule,∀ x0: niece_0(name2=x0) ∧ person_0(name=x0) ⇒ person_1(name=x0)
+MATILDA_SAP_results.json,SAP,SAP_1,TGDRule,∀ x0: Customers_0(GEOID=x0) ⇒ Demog_0(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_2,TGDRule,∀ x0: Demog_0(GEOID=x0) ⇒ Customers_0(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_3,TGDRule,∀ x0: Customers_0(GEOID=x0) ∧ Demog_1(GEOID=x0) ⇒ Demog_0(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_4,TGDRule,∀ x0: Demog_0(GEOID=x0) ∧ Demog_1(GEOID=x0) ⇒ Customers_0(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_5,TGDRule,∀ x0: Customers_0(GEOID=x0) ∧ Demog_0(GEOID=x0) ⇒ Demog_1(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_6,TGDRule,∀ x0: Customers_0(GEOID=x0) ⇒ Demog_0(GEOID=x0) ∧ Demog_1(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_7,TGDRule,∀ x0: Demog_0(GEOID=x0) ⇒ Customers_0(GEOID=x0) ∧ Demog_1(GEOID=x0)
+MATILDA_SAP_results.json,SAP,SAP_8,TGDRule,∀ x0: Demog_1(GEOID=x0) ⇒ Customers_0(GEOID=x0) ∧ Demog_0(GEOID=x0)
+MATILDA_PTE_results.json,PTE,PTE_1,TGDRule,∀ x0: active_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_2,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ active_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_3,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ active_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_4,TGDRule,∀ x0: active_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_5,TGDRule,∀ x0: active_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_6,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ active_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_7,TGDRule,∀ x0: active_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_8,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ active_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_9,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ postestactive_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_10,TGDRule,∀ x0: postestactive_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_11,TGDRule,∀ x0: postestactive_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_12,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ postestactive_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_13,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ postestactive_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_14,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ postestactive_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_15,TGDRule,∀ x0: postestactive_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_16,TGDRule,∀ x0: postestactive_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_17,TGDRule,∀ x0: pte_bond_count_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_18,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_bond_count_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_19,TGDRule,∀ x0: pte_bond_count_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_20,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_bond_count_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_21,TGDRule,∀ x0: pte_bond_count_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_22,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_bond_count_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_23,TGDRule,∀ x0: pte_bond_count_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_24,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_bond_count_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_25,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_alcohol_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_26,TGDRule,∀ x0: pte_alcohol_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_27,TGDRule,∀ x0: pte_alcohol_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_28,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_alcohol_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_29,TGDRule,∀ x0: pte_alcohol_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_30,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_alcohol_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_31,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_alcohol_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_32,TGDRule,∀ x0: pte_alcohol_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_33,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_alkyl_halide_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_34,TGDRule,∀ x0: pte_alkyl_halide_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_35,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_alkyl_halide_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_36,TGDRule,∀ x0: pte_alkyl_halide_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_37,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_alkyl_halide_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_38,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_alkyl_halide_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_39,TGDRule,∀ x0: pte_alkyl_halide_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_40,TGDRule,∀ x0: pte_alkyl_halide_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_41,TGDRule,∀ x0: pte_number_0(Binary=x0) ⇒ pte_active_0(is_active=x0)
+MATILDA_PTE_results.json,PTE,PTE_42,TGDRule,∀ x0: pte_active_0(is_active=x0) ⇒ pte_number_0(Binary=x0)
+MATILDA_PTE_results.json,PTE,PTE_43,TGDRule,∀ x0: pte_active_0(is_active=x0) ∧ pte_number_1(Binary=x0) ⇒ pte_number_0(Binary=x0)
+MATILDA_PTE_results.json,PTE,PTE_44,TGDRule,∀ x0: pte_number_1(Binary=x0) ⇒ pte_active_0(is_active=x0) ∧ pte_number_0(Binary=x0)
+MATILDA_PTE_results.json,PTE,PTE_45,TGDRule,∀ x0: pte_number_0(Binary=x0) ⇒ pte_active_0(is_active=x0) ∧ pte_number_1(Binary=x0)
+MATILDA_PTE_results.json,PTE,PTE_46,TGDRule,∀ x0: pte_active_0(is_active=x0) ∧ pte_number_0(Binary=x0) ⇒ pte_number_1(Binary=x0)
+MATILDA_PTE_results.json,PTE,PTE_47,TGDRule,∀ x0: pte_active_0(is_active=x0) ⇒ pte_number_0(Binary=x0) ∧ pte_number_1(Binary=x0)
+MATILDA_PTE_results.json,PTE,PTE_48,TGDRule,∀ x0: pte_number_0(Binary=x0) ∧ pte_number_1(Binary=x0) ⇒ pte_active_0(is_active=x0)
+MATILDA_PTE_results.json,PTE,PTE_49,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_bond_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_50,TGDRule,∀ x0: pte_bond_0(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_51,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_bond_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_52,TGDRule,∀ x0: pte_bond_0(drug_id=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_53,TGDRule,∀ x0: pte_bond_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_54,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_bond_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_55,TGDRule,∀ x0: pte_bond_0(drug_id=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_56,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_bond_0(drug_id=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_57,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_count_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_58,TGDRule,∀ x0: pte_atm_count_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_59,TGDRule,∀ x0: pte_atm_count_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_60,TGDRule,∀ x0: pte_atm_count_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_61,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_count_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_62,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_atm_count_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_63,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_atm_count_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_64,TGDRule,∀ x0: pte_atm_count_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_65,TGDRule,∀ x0: pte_ames_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_66,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_ames_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_67,TGDRule,∀ x0: pte_ames_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_68,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_ames_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_69,TGDRule,∀ x0: pte_ames_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_70,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_ames_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_71,TGDRule,∀ x0: pte_ames_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_72,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_ames_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_73,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_amine_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_74,TGDRule,∀ x0: pte_amine_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_75,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_amine_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_76,TGDRule,∀ x0: pte_amine_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_77,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_amine_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_78,TGDRule,∀ x0: pte_amine_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_79,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_amine_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_80,TGDRule,∀ x0: pte_amine_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_81,TGDRule,∀ x0: pte_atm_max_charge_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_82,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_max_charge_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_83,TGDRule,∀ x0: pte_atm_max_charge_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_84,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_max_charge_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_85,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_atm_max_charge_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_86,TGDRule,∀ x0: pte_atm_max_charge_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_87,TGDRule,∀ x0: pte_atm_max_charge_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_88,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_atm_max_charge_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_89,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ postestactive_Neg_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_90,TGDRule,∀ x0: postestactive_Neg_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_91,TGDRule,∀ x0: postestactive_Neg_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_92,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ postestactive_Neg_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_93,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ postestactive_Neg_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_94,TGDRule,∀ x0: postestactive_Neg_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_95,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ postestactive_Neg_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_96,TGDRule,∀ x0: postestactive_Neg_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_97,TGDRule,∀ x0: pte_active_0(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_98,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_active_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_99,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_active_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_100,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_active_0(drug_id=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_101,TGDRule,∀ x0: pte_active_0(drug_id=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_102,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_active_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_103,TGDRule,∀ x0: pte_active_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_104,TGDRule,∀ x0: pte_active_0(drug_id=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_105,TGDRule,"∀ x0, x1: pte_active_0(drug_id=x0, is_active=x1) ⇒ pte_drug_0(drug_id=x0) ∧ pte_number_0(Binary=x1)"
+MATILDA_PTE_results.json,PTE,PTE_106,TGDRule,"∀ x0, x1: pte_drug_0(drug_id=x0) ∧ pte_number_0(Binary=x1) ⇒ pte_active_0(drug_id=x0, is_active=x1)"
+MATILDA_PTE_results.json,PTE,PTE_107,TGDRule,"∀ x0, y0: pte_active_0(drug_id=x0, is_active=y0) ∧ pte_number_0(Binary=y0) ⇒ pte_drug_0(drug_id=x0)"
+MATILDA_PTE_results.json,PTE,PTE_108,TGDRule,"∀ x0: pte_drug_0(drug_id=x0) ⇒ ∃ z0: pte_active_0(drug_id=x0, is_active=z0) ∧ pte_number_0(Binary=z0)"
+MATILDA_PTE_results.json,PTE,PTE_109,TGDRule,"∀ x0, y0: pte_active_0(drug_id=y0, is_active=x0) ∧ pte_drug_0(drug_id=y0) ⇒ pte_number_0(Binary=x0)"
+MATILDA_PTE_results.json,PTE,PTE_110,TGDRule,"∀ x0: pte_number_0(Binary=x0) ⇒ ∃ z0: pte_active_0(drug_id=z0, is_active=x0) ∧ pte_drug_0(drug_id=z0)"
+MATILDA_PTE_results.json,PTE,PTE_111,TGDRule,∀ x0: pte_atm_min_charge_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_112,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_min_charge_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_113,TGDRule,∀ x0: pte_atm_min_charge_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_114,TGDRule,∀ x0: pte_atm_min_charge_0(Arg0=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_115,TGDRule,∀ x0: pte_atm_min_charge_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_116,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_atm_min_charge_0(Arg0=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_117,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_min_charge_0(Arg0=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_118,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_atm_min_charge_0(Arg0=x0)
+MATILDA_PTE_results.json,PTE,PTE_119,TGDRule,∀ x0: pte_atm_0(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_120,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_121,TGDRule,∀ x0: pte_atm_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_drug_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_122,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0) ⇒ pte_atm_0(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_123,TGDRule,∀ x0: pte_atm_0(drug_id=x0) ⇒ pte_drug_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_124,TGDRule,∀ x0: pte_drug_0(drug_id=x0) ⇒ pte_atm_0(drug_id=x0) ∧ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_125,TGDRule,∀ x0: pte_atm_0(drug_id=x0) ∧ pte_drug_0(drug_id=x0) ⇒ pte_drug_1(drug_id=x0)
+MATILDA_PTE_results.json,PTE,PTE_126,TGDRule,∀ x0: pte_drug_1(drug_id=x0) ⇒ pte_atm_0(drug_id=x0) ∧ pte_drug_0(drug_id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_1,TGDRule,∀ x0: chapters_0(work_id=x0) ⇒ works_0(id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_2,TGDRule,∀ x0: works_0(id=x0) ⇒ chapters_0(work_id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_3,TGDRule,∀ x0: chapters_0(work_id=x0) ∧ works_1(id=x0) ⇒ works_0(id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_4,TGDRule,∀ x0: works_0(id=x0) ∧ works_1(id=x0) ⇒ chapters_0(work_id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_5,TGDRule,∀ x0: chapters_0(work_id=x0) ∧ works_0(id=x0) ⇒ works_1(id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_6,TGDRule,∀ x0: works_1(id=x0) ⇒ chapters_0(work_id=x0) ∧ works_0(id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_7,TGDRule,∀ x0: chapters_0(work_id=x0) ⇒ works_0(id=x0) ∧ works_1(id=x0)
+MATILDA_Shakespeare_results.json,Shakespeare,Shakespeare_8,TGDRule,∀ x0: works_0(id=x0) ⇒ chapters_0(work_id=x0) ∧ works_1(id=x0)
+MATILDA_medical_results.json,medical,medical_1,TGDRule,∀ x0: Patient_0(ID=x0) ⇒ Examination_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_2,TGDRule,∀ x0: Examination_0(ID=x0) ⇒ Patient_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_3,TGDRule,∀ x0: Examination_0(ID=x0) ⇒ Patient_0(ID=x0) ∧ Patient_1(ID=x0)
+MATILDA_medical_results.json,medical,medical_4,TGDRule,∀ x0: Patient_0(ID=x0) ∧ Patient_1(ID=x0) ⇒ Examination_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_5,TGDRule,∀ x0: Patient_0(ID=x0) ⇒ Examination_0(ID=x0) ∧ Patient_1(ID=x0)
+MATILDA_medical_results.json,medical,medical_6,TGDRule,∀ x0: Examination_0(ID=x0) ∧ Patient_1(ID=x0) ⇒ Patient_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_7,TGDRule,∀ x0: Patient_1(ID=x0) ⇒ Examination_0(ID=x0) ∧ Patient_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_8,TGDRule,∀ x0: Examination_0(ID=x0) ∧ Patient_0(ID=x0) ⇒ Patient_1(ID=x0)
+MATILDA_medical_results.json,medical,medical_9,TGDRule,∀ x0: Laboratory_0(ID=x0) ⇒ Patient_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_10,TGDRule,∀ x0: Patient_0(ID=x0) ⇒ Laboratory_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_11,TGDRule,∀ x0: Laboratory_0(ID=x0) ∧ Patient_1(ID=x0) ⇒ Patient_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_12,TGDRule,∀ x0: Patient_1(ID=x0) ⇒ Laboratory_0(ID=x0) ∧ Patient_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_13,TGDRule,∀ x0: Laboratory_0(ID=x0) ⇒ Patient_0(ID=x0) ∧ Patient_1(ID=x0)
+MATILDA_medical_results.json,medical,medical_14,TGDRule,∀ x0: Patient_0(ID=x0) ∧ Patient_1(ID=x0) ⇒ Laboratory_0(ID=x0)
+MATILDA_medical_results.json,medical,medical_15,TGDRule,∀ x0: Laboratory_0(ID=x0) ∧ Patient_0(ID=x0) ⇒ Patient_1(ID=x0)
+MATILDA_medical_results.json,medical,medical_16,TGDRule,∀ x0: Patient_0(ID=x0) ⇒ Laboratory_0(ID=x0) ∧ Patient_1(ID=x0)
+all_existential_rules_export.json,Bupa,Bupa_25,existential,"∀ x0: bupa_name_0(arg1=x0) ⇒ ∃ z0: bupa_0(arg1=x0, arg2=z0) ∧ bupa_type_0(arg1=z0)"
+all_existential_rules_export.json,Bupa,Bupa_28,existential,"∀ x0: bupa_type_0(arg1=x0) ⇒ ∃ z0: bupa_0(arg1=z0, arg2=x0) ∧ bupa_name_0(arg1=z0)"
+all_existential_rules_export.json,CORA,CORA_18,existential,"∀ x0: paper_0(paper_id=x0) ⇒ ∃ z0: cites_0(cited_paper_id=x0, citing_paper_id=z0) ∧ paper_1(paper_id=z0)"
+all_existential_rules_export.json,CORA,CORA_20,existential,"∀ x0: paper_1(paper_id=x0) ⇒ ∃ z0: cites_0(cited_paper_id=z0, citing_paper_id=x0) ∧ paper_0(paper_id=z0)"
+all_existential_rules_export.json,CS,CS_9,existential,"∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=z0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_12,existential,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACTRNTP_KEY=z0, ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_22,existential,"∀ x0: PRODUCTS_0(PROD_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(PROD_KEY=x0, ORG_KEY=z0) ∧ ORGANIZATIONS_0(ORG_KEY=z0)"
+all_existential_rules_export.json,CS,CS_24,existential,"∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(PROD_KEY=z0, ORG_KEY=x0) ∧ PRODUCTS_0(PROD_KEY=z0)"
+all_existential_rules_export.json,CS,CS_39,existential,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=x0, PROD_KEY=z0) ∧ PRODUCTS_0(PROD_KEY=z0)"
+all_existential_rules_export.json,CS,CS_41,existential,"∀ x0: PRODUCTS_0(PROD_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=z0, PROD_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_45,existential,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=x0, ORG_KEY=z0) ∧ ORGANIZATIONS_0(ORG_KEY=z0)"
+all_existential_rules_export.json,CS,CS_46,existential,"∀ x0: ORGANIZATIONS_0(ORG_KEY=x0) ⇒ ∃ z0: ACCOUNTS_0(ACCTP_KEY=z0, ORG_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_57,existential,"∀ x0: ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=z0, ACTRNTP_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_60,existential,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACTRNTP_KEY=z0) ∧ ACCOUNT_TRANSACT_TYPES_0(ACTRNTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_63,existential,"∀ x0: ACCOUNT_TYPES_1(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=z0, ACCTP_OTHER_ACCOUNT_KEY=x0) ∧ ACCOUNT_TYPES_0(ACCTP_KEY=z0)"
+all_existential_rules_export.json,CS,CS_64,existential,"∀ x0: ACCOUNT_TYPES_0(ACCTP_KEY=x0) ⇒ ∃ z0: ACCOUNT_TRANSACTIONS_0(ACCTP_KEY=x0, ACCTP_OTHER_ACCOUNT_KEY=z0) ∧ ACCOUNT_TYPES_1(ACCTP_KEY=z0)"
+all_existential_rules_export.json,Dunur,Dunur_27,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: niece_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_28,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: niece_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_55,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: daughter_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_58,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: daughter_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_69,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: mother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_70,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: mother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_82,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: nephew_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_83,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: nephew_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_115,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: dunur_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_117,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: dunur_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_128,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: husband_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_131,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: husband_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_141,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: aunt_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_144,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: aunt_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_154,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: brother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_158,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: brother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_171,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: husband2_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_173,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: husband2_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_200,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: father_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Dunur,Dunur_201,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: father_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Elti,Elti_9,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: daughter_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Elti,Elti_13,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: daughter_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Elti,Elti_22,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: husband_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Elti,Elti_23,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: husband_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Elti,Elti_39,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: mother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Elti,Elti_40,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: mother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Elti,Elti_51,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: brother_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Elti,Elti_53,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: brother_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Elti,Elti_99,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: elti_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Elti,Elti_101,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: elti_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,Elti,Elti_118,existential,"∀ x0: person_1(name=x0) ⇒ ∃ z0: father_0(name1=z0, name2=x0) ∧ person_0(name=z0)"
+all_existential_rules_export.json,Elti,Elti_121,existential,"∀ x0: person_0(name=x0) ⇒ ∃ z0: father_0(name1=x0, name2=z0) ∧ person_1(name=z0)"
+all_existential_rules_export.json,NBA,NBA_17,existential,"∀ x0: Team_1(TeamId=x0) ⇒ ∃ z0: Game_0(Team1Id=z0, Team2Id=x0) ∧ Team_0(TeamId=z0)"
+all_existential_rules_export.json,NBA,NBA_18,existential,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Game_0(Team1Id=x0, Team2Id=z0) ∧ Team_1(TeamId=z0)"
+all_existential_rules_export.json,NBA,NBA_31,existential,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(TeamId=x0, PlayerId=z0) ∧ Player_0(PlayerId=z0)"
+all_existential_rules_export.json,NBA,NBA_35,existential,"∀ x0: Player_0(PlayerId=x0) ⇒ ∃ z0: Actions_0(TeamId=z0, PlayerId=x0) ∧ Team_0(TeamId=z0)"
+all_existential_rules_export.json,NBA,NBA_53,existential,"∀ x0: Game_0(GameId=x0) ⇒ ∃ z0: Actions_0(GameId=x0, TeamId=z0) ∧ Team_0(TeamId=z0)"
+all_existential_rules_export.json,NBA,NBA_56,existential,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(GameId=z0, TeamId=x0) ∧ Game_0(GameId=z0)"
+all_existential_rules_export.json,NBA,NBA_58,existential,"∀ x0: Player_0(PlayerId=x0) ⇒ ∃ z0: Actions_0(GameId=z0, PlayerId=x0) ∧ Game_0(GameId=z0)"
+all_existential_rules_export.json,NBA,NBA_61,existential,"∀ x0: Game_0(GameId=x0) ⇒ ∃ z0: Actions_0(GameId=x0, PlayerId=z0) ∧ Player_0(PlayerId=z0)"
+all_existential_rules_export.json,NBA,NBA_68,existential,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(GameId=z0) ∧ Game_0(GameId=z0, Team1Id=x0)"
+all_existential_rules_export.json,NBA,NBA_69,existential,"∀ x0: Actions_0(GameId=x0) ⇒ ∃ z0: Game_0(GameId=x0, Team1Id=z0) ∧ Team_0(TeamId=z0)"
+all_existential_rules_export.json,NBA,NBA_74,existential,"∀ x0: Team_0(TeamId=x0) ⇒ ∃ z0: Actions_0(GameId=z0) ∧ Game_0(GameId=z0, Team2Id=x0)"
+all_existential_rules_export.json,NBA,NBA_75,existential,"∀ x0: Actions_0(GameId=x0) ⇒ ∃ z0: Game_0(GameId=x0, Team2Id=z0) ∧ Team_0(TeamId=z0)"
+all_existential_rules_export.json,NCAA,NCAA_8,existential,"∀ x0: teams_1(team_id=x0) ⇒ ∃ z0: target_0(team_id1=z0, team_id2=x0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_12,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: target_0(team_id1=x0, team_id2=z0) ∧ teams_1(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_26,existential,"∀ x0: teams_1(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(wteam=z0, lteam=x0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_27,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(wteam=x0, lteam=z0) ∧ teams_1(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_39,existential,"∀ x0: teams_1(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(wteam=z0, lteam=x0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_41,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(wteam=x0, lteam=z0) ∧ teams_1(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_58,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=z0, wteam=x0) ∧ seasons_0(season=z0)"
+all_existential_rules_export.json,NCAA,NCAA_63,existential,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=x0, wteam=z0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_64,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=z0, lteam=x0) ∧ seasons_0(season=z0)"
+all_existential_rules_export.json,NCAA,NCAA_69,existential,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_compact_results_0(season=x0, lteam=z0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_94,existential,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=x0, wteam=z0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_98,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=z0, wteam=x0) ∧ seasons_0(season=z0)"
+all_existential_rules_export.json,NCAA,NCAA_100,existential,"∀ x0: seasons_0(season=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=x0, lteam=z0) ∧ teams_0(team_id=z0)"
+all_existential_rules_export.json,NCAA,NCAA_104,existential,"∀ x0: teams_0(team_id=x0) ⇒ ∃ z0: regular_season_detailed_results_0(season=z0, lteam=x0) ∧ seasons_0(season=z0)"
+all_existential_rules_export.json,PTE,PTE_107,existential,"∀ x0: pte_drug_0(drug_id=x0) ⇒ ∃ z0: pte_active_0(drug_id=x0, is_active=z0) ∧ pte_number_0(Binary=z0)"
+all_existential_rules_export.json,PTE,PTE_109,existential,"∀ x0: pte_number_0(Binary=x0) ⇒ ∃ z0: pte_active_0(drug_id=z0, is_active=x0) ∧ pte_drug_0(drug_id=z0)"
+all_existential_rules_export.json,SAT,SAT_24,existential,"∀ x0: time_0(tm=x0) ⇒ ∃ z0: fault_0(tm=x0, tf=z0) ∧ trfl_0(tf=z0)"
+all_existential_rules_export.json,SAT,SAT_26,existential,"∀ x0: trfl_0(tf=x0) ⇒ ∃ z0: fault_0(tm=z0, tf=x0) ∧ time_0(tm=z0)"
+all_existential_rules_export.json,SAT,SAT_38,existential,"∀ x0: time_0(tm=x0) ⇒ ∃ z0: fault_test_0(tm=x0, tf=z0) ∧ trfl_0(tf=z0)"
+all_existential_rules_export.json,SAT,SAT_41,existential,"∀ x0: trfl_0(tf=x0) ⇒ ∃ z0: fault_test_0(tm=z0, tf=x0) ∧ time_0(tm=z0)"
+all_existential_rules_export.json,SAT,SAT_68,existential,"∀ x0: time_0(tm=x0) ⇒ ∃ z0: succ_0(tm1=x0, tm2=z0) ∧ time_1(tm=z0)"
+all_existential_rules_export.json,SAT,SAT_70,existential,"∀ x0: time_1(tm=x0) ⇒ ∃ z0: succ_0(tm1=z0, tm2=x0) ∧ time_0(tm=z0)"
+all_existential_rules_export.json,UW_std,UW_std_18,existential,"∀ x0: person_0(p_id=x0) ⇒ ∃ z0: advisedBy_0(p_id=x0, p_id_dummy=z0) ∧ person_1(p_id=z0)"
+all_existential_rules_export.json,UW_std,UW_std_20,existential,"∀ x0: person_1(p_id=x0) ⇒ ∃ z0: advisedBy_0(p_id=z0, p_id_dummy=x0) ∧ person_0(p_id=z0)"
+all_existential_rules_export.json,University,University_8,existential,"∀ x0: student_0(student_id=x0) ⇒ ∃ z0: RA_0(prof_id=z0, student_id=x0) ∧ prof_0(prof_id=z0)"
+all_existential_rules_export.json,University,University_13,existential,"∀ x0: prof_0(prof_id=x0) ⇒ ∃ z0: RA_0(prof_id=x0, student_id=z0) ∧ student_0(student_id=z0)"
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,Elti,,existential,
+compiled_existential_rules.json,UW_std,,existential,
+compiled_existential_rules.json,UW_std,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,CS,,existential,
+compiled_existential_rules.json,Bupa,,existential,
+compiled_existential_rules.json,Bupa,,existential,
+compiled_existential_rules.json,University,,existential,
+compiled_existential_rules.json,University,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
+compiled_existential_rules.json,Dunur,,existential,
