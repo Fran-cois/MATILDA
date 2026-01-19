@@ -1,0 +1,31 @@
+{
+  "database": {
+    "path": "data/large_scale/dataset_1M.db",
+    "size_mb": 37.32,
+    "num_tables": 5,
+    "total_tuples": 1000000,
+    "tables": [
+      "Table1",
+      "Table2",
+      "Table3",
+      "Table4",
+      "Table5"
+    ]
+  },
+  "matilda": {
+    "success": true,
+    "runtime_seconds": 14.46,
+    "num_rules": 0,
+    "rules_per_second": 0.0,
+    "memory_peak_mb": 953.92,
+    "cpu_avg_percent": 100.0,
+    "config": {
+      "algorithm": "astar",
+      "heuristic": "hybrid",
+      "max_table": 3,
+      "max_vars": 6,
+      "timeout": 120
+    },
+    "monitoring_file": "results/scalability/test_1M_v2/monitoring_astar.json"
+  }
+}

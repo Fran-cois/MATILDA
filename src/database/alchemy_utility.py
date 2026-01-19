@@ -220,6 +220,32 @@ class AlchemyUtility:
         return self.query_utility._get_attribute_domain(table_name, attribute_name)
     def get_attribute_is_key(self, table_name: str, attribute_name: str) -> bool:
         return self.query_utility._get_attribute_is_key(table_name, attribute_name)
+    def get_attribute_values(self, table_name: str, attribute_name: str) -> List:
+        """
+        Get all values for a specific attribute in a table.
+        
+        :param table_name: The name of the table.
+        :param attribute_name: The name of the attribute/column.
+        :return: List of values for the attribute.
+        """
+        from sqlalchemy import select
+        
+        table = self.query_utility.metadata.tables.get(table_name)
+        if table is None:
+            return []
+        
+        column = table.columns.get(attribute_name)
+        if column is None:
+            return []
+        
+        query = select(column)
+        try:
+            with self.db_manager.engine.connect() as conn:
+                result = conn.execute(query)
+                return [row[0] for row in result.fetchall()]
+        except Exception as e:
+            self.logger_query_time.error(f"Error fetching values for {table_name}.{attribute_name}: {e}")
+            return []
     def are_foreign_keys(self, table: str, column: str, other_table: str, other_column: str) -> bool:
         """
         Check if the specified column in a table is a foreign key referencing another table and column.
@@ -238,9 +264,10 @@ class AlchemyUtility:
                 if referenced_table == other_table and referenced_column == other_column:
                     return True
                 else:
-                    self.logger_query_time.error(f"Incorrect foreign key for table '{table}': '{column}' references '{referenced_table}.{referenced_column}' instead of '{other_table}.{other_column}'.")
+                    # Only log at DEBUG level - this is expected behavior when checking all column combinations
+                    self.logger_query_time.debug(f"FK mismatch for table '{table}': '{column}' references '{referenced_table}.{referenced_column}' instead of '{other_table}.{other_column}'.")
                     return False
-        self.logger_query_time.error(f"Foreign key '{column}' does not exist in table '{table}'.")
+        # Column is not a foreign key - this is normal, return False without logging error
         return False
     def close(self):
         """Close database connection."""

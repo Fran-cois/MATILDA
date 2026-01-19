@@ -1,0 +1,138 @@
+✓ Database found: data/large_scale/50K_with_tgds.db (3.52 MB)
+✓ Tables: 4
+✓ Total tuples: 50,000
+
+======================================================================
+🚀 RUNNING MATILDA
+======================================================================
+Algorithm:  astar
+Heuristic:  hybrid
+Max N:      3
+Max Vars:   6
+Timeout:    120
+======================================================================
+
+✓ Monitoring current process: 87012
+
+======================================================================
+📊 RESOURCE MONITORING STARTED
+======================================================================
+Interval: 2.0s
+Output: results/stress_test/monitoring_astar.json
+======================================================================
+
+[   0.1s] CPU:  75.0% | MEM:     51.2 MB | SYS:  76.9% | Threads:  2
+Using ASTAR for graph traversal
+Finding compatible attributes:   0%|          | 0/26 [00:00<?, ?it/s]2026-01-19 11:46:00,138 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.customer_id'.
+2026-01-19 11:46:00,138 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.customer_id'.
+2026-01-19 11:46:00,139 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.product_id'.
+2026-01-19 11:46:00,139 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.product_id'.
+2026-01-19 11:46:00,139 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.customer_name'.
+2026-01-19 11:46:00,139 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.customer_name'.
+2026-01-19 11:46:00,139 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.customer_city'.
+2026-01-19 11:46:00,139 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.customer_city'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.product_name'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.product_name'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.price'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.price'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.quantity'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.quantity'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.order_date'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.order_date'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.status'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Orders.status'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.id'.
+2026-01-19 11:46:00,140 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.id'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.product_name'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.product_name'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.category'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.category'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.base_price'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Products.base_price'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.id'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.id'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.order_id'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.order_id'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,141 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,142 - DEBUG - FK mismatch for table 'Orders': 'customer_id' references 'Customers.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.product_id'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.product_id'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.customer_name'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.customer_name'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.customer_city'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.customer_city'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.product_name'.
+2026-01-19 11:46:00,143 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.product_name'.
+2026-01-19 11:46:00,144 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.price'.
+2026-01-19 11:46:00,144 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.price'.
+2026-01-19 11:46:00,144 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.quantity'.
+2026-01-19 11:46:00,144 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.quantity'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.order_date'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.order_date'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.status'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Orders.status'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Products.product_name'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Products.product_name'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Products.category'.
+2026-01-19 11:46:00,145 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Products.category'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Products.base_price'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Products.base_price'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.id'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.id'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.order_id'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.order_id'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,146 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Orders': 'product_id' references 'Products.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.order_id'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.order_id'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,147 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'order_id' references 'Orders.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.customer_id'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.tracking_number'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.ship_date'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,148 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.delivery_city'.
+2026-01-19 11:46:00,149 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.status'.
+2026-01-19 11:46:00,149 - DEBUG - FK mismatch for table 'Shipments': 'customer_id' references 'Customers.id' instead of 'Shipments.status'.
+                                                                     
+======================================================================
+✅ MATILDA COMPLETED
+======================================================================
+Runtime:         1.03s
+Rules found:     0
+Rules/second:    0.00
+Memory peak:     51.17 MB
+CPU peak:        75.00%
+======================================================================
+[   2.2s] CPU:   0.1% | MEM:    123.3 MB | SYS:  76.9% | Threads:  3
+[   4.3s] CPU:   0.1% | MEM:    123.3 MB | SYS:  75.9% | Threads:  3
+✓ Results saved: results/stress_test/stress_test_results.json
+
+✅ Stress test complete!

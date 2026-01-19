@@ -1,0 +1,69 @@
+# Full Benchmark Configuration
+# Configuration pour exécuter tous les algorithmes avec statistiques
+
+# Nombre de runs par algorithme/dataset
+runs: 5
+
+# Algorithmes à benchmarker (commentez pour exclure)
+algorithms:
+  - MATILDA
+  - SPIDER
+  - ANYBURL
+  - POPPER
+
+# Datasets à utiliser (commentez pour exclure)
+datasets:
+  - Bupa
+  - BupaImperfect
+  - ComparisonDataset
+  - ImperfectTest
+
+# Répertoire de sortie
+output_dir: data/output
+
+# Timeout par run (en secondes)
+timeout: 3600
+
+# Type de table LaTeX (simple ou detailed)
+table_type: detailed
+
+# Options d'affichage
+verbose: true
+
+# ============================================================
+# CONFIGURATIONS PRÉDÉFINIES
+# ============================================================
+
+# Configuration rapide (3 runs, 2 algorithmes)
+# Décommentez et utilisez : --config benchmark_config.yaml --profile quick
+quick:
+  runs: 3
+  algorithms:
+    - MATILDA
+    - SPIDER
+  datasets:
+    - Bupa
+  timeout: 1800
+
+# Configuration publication (10 runs, tous algorithmes)
+publication:
+  runs: 10
+  algorithms:
+    - MATILDA
+    - SPIDER
+    - ANYBURL
+    - POPPER
+  datasets:
+    - Bupa
+    - BupaImperfect
+    - ComparisonDataset
+  timeout: 3600
+
+# Configuration test (1 run, 1 algorithme)
+test:
+  runs: 1
+  algorithms:
+    - MATILDA
+  datasets:
+    - Bupa
+  timeout: 600

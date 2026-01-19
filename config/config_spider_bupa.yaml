@@ -1,0 +1,21 @@
+algorithm:
+  name: SPIDER
+
+database:
+  name: Bupa.db
+  path: ../data/db/
+
+logging:
+  log_dir: ../logs
+
+mlflow:
+  use: false
+
+results:
+  output_dir: ../data/output
+  compute_statistics: true
+  generate_statistical_report: false
+
+monitor:
+  memory_threshold: 16106127360
+  timeout: 3600

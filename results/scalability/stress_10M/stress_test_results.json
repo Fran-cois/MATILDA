@@ -1,0 +1,27 @@
+{
+  "database": {
+    "path": "/Users/famat/PycharmProjects/MATILDA_ALL/NMATILDA/MATILDA/data/large_scale/dataset_10M.db",
+    "size_mb": 374.85,
+    "num_tables": 5,
+    "total_tuples": 10000000,
+    "tables": [
+      "Table1",
+      "Table2",
+      "Table3",
+      "Table4",
+      "Table5"
+    ]
+  },
+  "matilda": {
+    "success": false,
+    "runtime_seconds": 0.0,
+    "error": "No module named 'src.matilda'",
+    "config": {
+      "algorithm": "astar",
+      "heuristic": "hybrid",
+      "max_table": 3,
+      "max_vars": 6,
+      "timeout": 3600
+    }
+  }
+}

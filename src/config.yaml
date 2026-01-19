@@ -1,23 +1,21 @@
-monitor:
-  memory_threshold: 16106127360  # 15GB in bytes
-  timeout: 3600  # 1 hour
-
-database:
-  path: "../../data/db/"  # Path to database files
-  name: "Bupa.db"
-
-logging:
-  log_dir: "logs"  # Directory for logs
-
-results:
-  output_dir: "results"  # Directory for saving results
-
 algorithm:
-  name: "MATILDA"  # Default algorithm
-
+  matilda:
+    traversal_algorithm: dfs
+  name: AMIE3
+database:
+  name: BupaImperfect.db
+  path: /Users/famat/PycharmProjects/MATILDA_ALL/NMATILDA/MATILDA/data/db/
+logging:
+  log_dir: logs
 mlflow:
-  use: false  # Set to true to log experiments to mlflow
-  tracking_uri: "http://localhost:5000"  # Example URI, update as needed
-  experiment_name: "Rule Discovery Experiment"
-
-
+  experiment_name: Rule Discovery Experiment
+  tracking_uri: http://localhost:5000
+  use: false
+monitor:
+  memory_threshold: 16106127360
+  timeout: 3600
+results:
+  compute_statistics: true
+  generate_statistical_report: true
+  output_dir: /Users/famat/PycharmProjects/MATILDA_ALL/NMATILDA/MATILDA/data/output
+  statistical_report_name: statistical_analysis_report.json

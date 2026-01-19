@@ -24,7 +24,7 @@ class Attribute:
             self,
             other_attribute: "Attribute",
             threshold_jaccard=0.05,
-            threshold_overlap=10,
+            threshold_overlap=3,  # Lowered from 10 for better sensitivity on small datasets
             domain_overlap: bool = True,
             value_overlap: bool = True,
             user_defined_rules: dict[tuple[tuple[str, str, str, str], bool]] = None,
@@ -42,32 +42,21 @@ class Attribute:
         :param database_constraints:  Use Database constraints like foreign keys
         :return: Boolean indicating compatibility
         """
-        # return True
-
-        # return True if they are fk keys else return false
-        # fk_found = False
-        return db_inspector.are_foreign_keys(self.table, self.name, other_attribute.table, other_attribute.name)# or self.table == other_attribute.table
-        # for fk in foreign_keys:
-        # return True
-        # if threshold_overlap <0 :
-        #     return True
-        #if self.table == other_attribute.table: return True
-
         if not isinstance(other_attribute, Attribute):
             return NotImplemented
+        
+        # Check if attributes are foreign keys (bonus compatibility)
+        if db_inspector.are_foreign_keys(self.table, self.name, other_attribute.table, other_attribute.name):
+            return True
+        
+        # Check value overlap using threshold
         cdt1 = self.has_common_elements_above_threshold(db_inspector, self.table, self.name,
                                                         other_attribute.table,
                                                         other_attribute.name, threshold_overlap)
-        if cdt1: return True
-        # return True
-        # Database constraints (e.g., foreign key relationships)
-        # fk_found = False
-
-        # remove primary keys that are not foreign keys
-        # if self.is_key and other_attribute.is_key and not fk_found:
-        #     return False
-
-        # # Domain overlap (assuming domain information is available)
+        if cdt1:
+            return True
+        
+        # Domain overlap (assuming domain information is available)
         if (
                 domain_overlap
                 and self.domain
@@ -75,9 +64,9 @@ class Attribute:
                 and self.domain != other_attribute.domain
         ):
             return False
-        # Value overlap (requires database query, not implemented here)
+        
+        # Value overlap (requires database query)
         if value_overlap:
-
             basic_numerical_data_types = [
                 "INT",
                 "INTEGER",
@@ -91,20 +80,14 @@ class Attribute:
                     self.domain in basic_numerical_data_types
                     or other_attribute.domain in basic_numerical_data_types
             ):
-
                 return False
-            # if self.is_key or other_attribute.is_key:
-            #     return False
-            # return True # DEBUG
+                
             cdt1 = self.has_common_elements_above_threshold(db_inspector, self.table, self.name,
                                                             other_attribute.table,
                                                             other_attribute.name, threshold_overlap)
-            if cdt1 : return True
-            # if cdt1 is False: return False
-            # cdt2 = self.has_common_elements_above_threshold_percentage(db_inspector, self.table, self.name,
-            #                                                            other_attribute.table, other_attribute.name,
-            #                                                            threshold_jaccard)
-            # if cdt2: return True
+            if cdt1:
+                return True
+                
         return False
     # def get_compatible_dict_if_support(self,db_inspector:AlchemyUtility):
     #     # Dictionary to store the dataframes

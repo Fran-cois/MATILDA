@@ -1,0 +1,61 @@
+[
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='bupa___sep___arg1', variable2='Y')",
+      "Predicate(variable1='Y', relation='drinks___sep___arg2', variable2='Z')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='sgot___sep___arg1', variable2='W')"
+    ],
+    "display": "sgot(X,W) :- bupa(X,Y), drinks(Y,Z)",
+    "accuracy": 0.8523,
+    "confidence": 0.9012
+  },
+  {
+    "type": "HornRule",
+    "body": [
+      "Predicate(variable1='X', relation='bupa___sep___arg1', variable2='Y')"
+    ],
+    "head": "Predicate(variable1='X', relation='drinks___sep___arg1', variable2='Y')",
+    "display": "drinks(X,Y) :- bupa(X,Y)",
+    "accuracy": 0.7845,
+    "confidence": 0.8234
+  },
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='sgot___sep___arg1', variable2='Y')",
+      "Predicate(variable1='X', relation='alkphos___sep___arg1', variable2='Z')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='gammagt___sep___arg1', variable2='W')"
+    ],
+    "display": "gammagt(X,W) :- sgot(X,Y), alkphos(X,Z)",
+    "accuracy": 0.6723,
+    "confidence": 0.7456
+  },
+  {
+    "type": "HornRule",
+    "body": [
+      "Predicate(variable1='X', relation='mcv___sep___arg1', variable2='Y')",
+      "Predicate(variable1='X', relation='drinks___sep___arg1', variable2='Z')"
+    ],
+    "head": "Predicate(variable1='X', relation='bupa___sep___arg1', variable2='W')",
+    "display": "bupa(X,W) :- mcv(X,Y), drinks(X,Z)",
+    "accuracy": 0.9123,
+    "confidence": 0.9456
+  },
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='sgpt___sep___arg1', variable2='Y')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='sgot___sep___arg1', variable2='Y')"
+    ],
+    "display": "sgot(X,Y) :- sgpt(X,Y)",
+    "accuracy": 0.8912,
+    "confidence": 0.9234
+  }
+]

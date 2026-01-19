@@ -1,0 +1,35 @@
+{
+  "database": {
+    "path": "data/db/BupaImperfect.db",
+    "size_mb": 0.4,
+    "num_tables": 9,
+    "total_tuples": 2757,
+    "tables": [
+      "alkphos",
+      "bupa",
+      "bupa_name",
+      "bupa_type",
+      "drinks",
+      "gammagt",
+      "mcv",
+      "sgot",
+      "sgpt"
+    ]
+  },
+  "matilda": {
+    "success": true,
+    "runtime_seconds": 39.63,
+    "num_rules": 2327,
+    "rules_per_second": 58.72,
+    "memory_peak_mb": 107.7,
+    "cpu_avg_percent": 97.2,
+    "config": {
+      "algorithm": "dfs",
+      "heuristic": null,
+      "max_table": 3,
+      "max_vars": 6,
+      "timeout": 30
+    },
+    "monitoring_file": "results/stress_test/monitoring_dfs.json"
+  }
+}

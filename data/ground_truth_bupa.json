@@ -1,0 +1,20 @@
+[
+  {
+    "type": "InclusionDependency",
+    "left": ["table1", "col1"],
+    "right": ["table2", "col2"],
+    "description": "table1.col1 -> table2.col2"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["table3", "col3"],
+    "right": ["table1", "col4"],
+    "description": "table3.col3 -> table1.col4"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["table3", "col5"],
+    "right": ["table2", "col6"],
+    "description": "table3.col5 -> table2.col6"
+  }
+]

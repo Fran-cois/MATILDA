@@ -1,0 +1,65 @@
+[
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='bupa', variable2='Y')",
+      "Predicate(variable1='Y', relation='drinks', variable2='Z')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='sgot', variable2='W')"
+    ],
+    "display": "sgot(X,W) :- bupa(X,Y), drinks(Y,Z)",
+    "accuracy": -1.0,
+    "confidence": 0.8234
+  },
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='sgot', variable2='Y')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='alkphos', variable2='Y')"
+    ],
+    "display": "alkphos(X,Y) :- sgot(X,Y)",
+    "accuracy": -1.0,
+    "confidence": 0.7123
+  },
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='bupa', variable2='Y')",
+      "Predicate(variable1='X', relation='drinks', variable2='Z')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='sgpt', variable2='W')"
+    ],
+    "display": "sgpt(X,W) :- bupa(X,Y), drinks(X,Z)",
+    "accuracy": -1.0,
+    "confidence": 0.6789
+  },
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='mcv', variable2='Y')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='gammagt', variable2='Y')"
+    ],
+    "display": "gammagt(X,Y) :- mcv(X,Y)",
+    "accuracy": -1.0,
+    "confidence": 0.9012
+  },
+  {
+    "type": "TGDRule",
+    "body": [
+      "Predicate(variable1='X', relation='drinks', variable2='Y')",
+      "Predicate(variable1='X', relation='mcv', variable2='Z')"
+    ],
+    "head": [
+      "Predicate(variable1='X', relation='bupa', variable2='W')"
+    ],
+    "display": "bupa(X,W) :- drinks(X,Y), mcv(X,Z)",
+    "accuracy": -1.0,
+    "confidence": 0.7456
+  }
+]

@@ -4,6 +4,9 @@ from algorithms.base_algorithm import BaseAlgorithm
 from algorithms.MATILDA.tgd_discovery import (
     init,
     dfs,
+    bfs,
+    astar,
+    traverse_graph,
     path_pruning,
     split_candidate_rule,
     split_pruning,
@@ -35,12 +38,23 @@ class MATILDA(BaseAlgorithm):
             - nb_occurrence (int): Minimum number of occurrences for a rule to be considered.
             - max_table (int): Maximum number of tables involved in a rule.
             - max_vars (int): Maximum number of variables in a rule.
+            - traversal_algorithm (str): Algorithm to use for graph traversal ('dfs', 'bfs', 'astar').
         :return: A generator yielding discovered TGDRules.
         """
         nb_occurrence = kwargs.get("nb_occurrence", self.settings.get("nb_occurrence", 3))
         max_table = kwargs.get("max_table", self.settings.get("max_table", 3))
         max_vars = kwargs.get("max_vars", self.settings.get("max_vars", 6))
         results_path = kwargs.get("results_dir", self.settings.get("results_dir", None))
+        
+        # Get traversal algorithm from settings or kwargs
+        traversal_algorithm = kwargs.get(
+            "traversal_algorithm", 
+            self.settings.get("traversal_algorithm", "dfs")
+        ).lower()
+        
+        # Log the selected traversal algorithm
+        print(f"Using {traversal_algorithm.upper()} for graph traversal")
+        
         # create a results folder if it does not exist
         if results_path:
             import os
@@ -55,7 +69,8 @@ class MATILDA(BaseAlgorithm):
         if not jia_list:
             return
 
-        for candidate_rule in dfs(
+        # Use the generic traverse_graph function with the selected algorithm
+        for candidate_rule in traverse_graph(
             cg,
             None,
             path_pruning,
@@ -63,6 +78,7 @@ class MATILDA(BaseAlgorithm):
             mapper,
             max_table=max_table,
             max_vars=max_vars,
+            algorithm=traversal_algorithm,
         ):
             if not candidate_rule:
                 continue

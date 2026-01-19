@@ -1,0 +1,280 @@
+✓ Database found: data/large_scale/test_fixed.db (1.34 MB)
+✓ Tables: 3
+✓ Total tuples: 49,998
+
+======================================================================
+🚀 RUNNING MATILDA
+======================================================================
+Algorithm:  astar
+Heuristic:  hybrid
+Max N:      3
+Max Vars:   6
+Timeout:    60
+======================================================================
+
+✓ Monitoring current process: 81094
+
+======================================================================
+📊 RESOURCE MONITORING STARTED
+======================================================================
+Interval: 2.0s
+Output: results/scalability/test_fixed/monitoring_astar.json
+======================================================================
+
+[   0.1s] CPU:  69.5% | MEM:     51.9 MB | SYS:  77.5% | Threads:  2
+Using ASTAR for graph traversal
+Finding compatible attributes:   0%|          | 0/15 [00:00<?, ?it/s]2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,385 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,386 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'id' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,387 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col1' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,388 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,389 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col2' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,390 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col3' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,391 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,392 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'col4' does not exist in table 'Table1'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,393 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'id' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,394 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col1' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,395 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col2' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Foreign key 'col3' does not exist in table 'Table2'.
+2026-01-19 11:41:11,396 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table2.table1_id'.
+2026-01-19 11:41:11,396 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table2.table1_id'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.id'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.id'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col1'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col1'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col2'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col2'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:41:11,397 - ERROR - Incorrect foreign key for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,397 - ERROR - Foreign key 'id' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col1' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col2' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col2' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col2' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col2' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col2' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Foreign key 'col2' does not exist in table 'Table3'.
+2026-01-19 11:41:11,398 - ERROR - Incorrect foreign key for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:41:11,398 - ERROR - Incorrect foreign key for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:41:11,398 - ERROR - Incorrect foreign key for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:41:11,398 - ERROR - Incorrect foreign key for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:41:11,399 - ERROR - Incorrect foreign key for table 'Table3': 'table2_id' references 'Table2.id' instead of 'Table3.table2_id'.
+2026-01-19 11:41:11,399 - ERROR - Incorrect foreign key for table 'Table3': 'table2_id' references 'Table2.id' instead of 'Table3.table2_id'.
+                                                                     
+======================================================================
+✅ MATILDA COMPLETED
+======================================================================
+Runtime:         0.85s
+Rules found:     0
+Rules/second:    0.00
+Memory peak:     51.94 MB
+CPU peak:        69.50%
+======================================================================
+[   2.2s] CPU:   0.0% | MEM:    101.7 MB | SYS:  77.5% | Threads:  3
+[   4.3s] CPU:   0.1% | MEM:    101.6 MB | SYS:  77.2% | Threads:  3
+✓ Results saved: results/scalability/test_fixed/stress_test_results.json
+
+✅ Stress test complete!

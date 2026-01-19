@@ -1,0 +1,47 @@
+[
+  {
+    "display": "IND(table1.col1 -> table2.col2)",
+    "table_dependant": "table1",
+    "columns_dependant": [
+      "col1"
+    ],
+    "table_referenced": "table2",
+    "columns_referenced": [
+      "col2"
+    ],
+    "confidence": 0.95,
+    "support": 0.45,
+    "correct": true,
+    "compatible": true
+  },
+  {
+    "display": "IND(table3.col3 -> table1.col4)",
+    "table_dependant": "table3",
+    "columns_dependant": [
+      "col3"
+    ],
+    "table_referenced": "table1",
+    "columns_referenced": [
+      "col4"
+    ],
+    "confidence": 0.85,
+    "support": 0.3,
+    "correct": true,
+    "compatible": true
+  },
+  {
+    "display": "IND(table2.col5 -> table3.col6)",
+    "table_dependant": "table2",
+    "columns_dependant": [
+      "col5"
+    ],
+    "table_referenced": "table3",
+    "columns_referenced": [
+      "col6"
+    ],
+    "confidence": 0.92,
+    "support": 0.55,
+    "correct": true,
+    "compatible": true
+  }
+]

@@ -26,19 +26,45 @@ class Amie3(RuleDiscoveryAlgorithm):
         database_path = self.database.database_path_tsv
         current_time = datetime.now()
 
-        jar_path = f"{script_dir}/bins/amie3/"
-        output_file = os.path.join(
-            results_path,
-            f"{current_time.strftime('%Y-%m-%d_%H-%M-%S')}_{algorithm_name}.tsv",
+        # Get absolute paths for Docker volume mounting
+        jar_path_abs = os.path.abspath(f"{script_dir}/bins/amie3/")
+        database_path_abs = os.path.abspath(database_path)
+        database_dir = os.path.dirname(database_path_abs)
+        database_basename = os.path.basename(database_path_abs)
+        results_path_abs = os.path.abspath(results_path)
+        
+        # Create results directory if it doesn't exist
+        os.makedirs(results_path_abs, exist_ok=True)
+        
+        output_filename = f"{current_time.strftime('%Y-%m-%d_%H-%M-%S')}_{algorithm_name}.tsv"
+        output_file = os.path.join(results_path_abs, output_filename)
+        
+        # AMIE3 with CWA (Closed World Assumption) - default behavior using Docker with Java 11
+        # CWA is the default mode (to use OWA, add -oute flag)
+        # Using amazoncorretto:11 as it's a stable and maintained Java 11 image
+        docker_cmd = (
+            f"docker run --rm "
+            f"-v {jar_path_abs}:/amie "
+            f"-v {database_dir}:/data "
+            f"-v {results_path_abs}:/output "
+            f"amazoncorretto:11 "
+            f"sh -c 'java -Xmx15G -jar /amie/amie-milestone-intKB.jar "
+            f"-mins 0 -minc 0 -minpca 0 -minhc 0 -minis 0 "
+            f"/data/{database_basename} > /output/{output_filename}'"
         )
-
-        cmd = (
-            f"java -Xmx15G -jar {jar_path}amie-milestone-intKB.jar "
-            f"-mins 0 -minc 0 -minpca 0 -minhc 0 -minis 0 {database_path} > {output_file}"
-        )
-
-        if not run_cmd(cmd, timeout=300):
-            return []
+        
+        logger.info(f"Running AMIE3 with Docker: {docker_cmd}")
+        
+        if not run_cmd(docker_cmd, timeout=300):
+            logger.warning("Docker execution failed, trying direct Java...")
+            # Fallback to direct Java execution
+            jar_path = f"{script_dir}/bins/amie3/"
+            cmd = (
+                f"java -Xmx15G -jar {jar_path}amie-milestone-intKB.jar "
+                f"-mins 0 -minc 0 -minpca 0 -minhc 0 -minis 0 {database_path} > {output_file}"
+            )
+            if not run_cmd(cmd, timeout=300):
+                return []
 
         with open(output_file, "r") as file:
             raw_rules = file.read()

@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.8\textwidth,
+    height=0.5\textwidth,
+    xlabel={Dataset Size (Million Tuples)},
+    ylabel={Runtime (seconds)},
+    title={Scalability: Runtime vs Dataset Size},
+    grid=major,
+    legend pos=north west,
+    ymajorgrids=true,
+    xmajorgrids=true,
+    mark size=3pt,
+]
+
+% MATILDA data
+\addplot[
+    color=blue,
+    mark=*,
+    line width=1.5pt,
+] coordinates {
+    (1.0,0.00)
+    (5.0,0.00)
+    (10.0,0.00)
+};
+\addlegendentry{MATILDA (A* + Hybrid)}
+
+% Linear reference
+\addplot[
+    color=gray,
+    dashed,
+    line width=1pt,
+] coordinates {
+    (1.0,0.00)
+    (5.0,0.00)
+    (10.0,0.00)
+};
+\addlegendentry{Linear reference}
+
+\end{axis}
+\end{tikzpicture}

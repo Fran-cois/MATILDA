@@ -1,0 +1,76 @@
+\begin{tikzpicture}
+
+% Runtime (top-left)
+\begin{axis}[
+    name=runtime,
+    width=0.45\textwidth,
+    height=0.35\textwidth,
+    xlabel={Size (M tuples)},
+    ylabel={Runtime (s)},
+    title={Runtime},
+    grid=major,
+    mark size=2pt,
+]
+\addplot[color=blue, mark=*, line width=1pt] coordinates {
+    (1.0,0.00)
+    (5.0,0.00)
+    (10.0,0.00)
+};
+\end{axis}
+
+% Rules (top-right)
+\begin{axis}[
+    name=rules,
+    at={($(runtime.east)+(1cm,0)$)},
+    anchor=west,
+    width=0.45\textwidth,
+    height=0.35\textwidth,
+    xlabel={Size (M tuples)},
+    ylabel={Rules},
+    title={Rules Discovered},
+    grid=major,
+    mark size=2pt,
+]
+\addplot[color=orange, mark=triangle*, line width=1pt] coordinates {
+    (1.0,0)
+    (5.0,0)
+    (10.0,0)
+};
+\end{axis}
+
+% Throughput (bottom-left)
+\begin{axis}[
+    name=throughput,
+    at={($(runtime.south)-(0,1cm)$)},
+    anchor=north,
+    width=0.45\textwidth,
+    height=0.35\textwidth,
+    xlabel={Size (M tuples)},
+    ylabel={Rules/s},
+    title={Throughput},
+    grid=major,
+    mark size=2pt,
+]
+\addplot[color=green!70!black, mark=diamond*, line width=1pt] coordinates {
+    (1.0,0.00)
+    (5.0,0.00)
+    (10.0,0.00)
+};
+\end{axis}
+
+% Memory or Scaling factor (bottom-right)
+\begin{axis}[
+    name=memory,
+    at={($(throughput.east)+(1cm,0)$)},
+    anchor=west,
+    width=0.45\textwidth,
+    height=0.35\textwidth,
+    xlabel={Size (M tuples)},
+    ylabel={Memory (MB)},
+    title={Peak Memory},
+    grid=major,
+    mark size=2pt,
+]
+\end{axis}
+
+\end{tikzpicture}

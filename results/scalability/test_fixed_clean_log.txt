@@ -1,0 +1,58 @@
+✓ Database found: data/large_scale/test_fixed.db (4.21 MB)
+✓ Tables: 3
+✓ Total tuples: 49,998
+
+======================================================================
+🚀 RUNNING MATILDA
+======================================================================
+Algorithm:  astar
+Heuristic:  hybrid
+Max N:      3
+Max Vars:   6
+Timeout:    60
+======================================================================
+
+✓ Monitoring current process: 85350
+
+======================================================================
+📊 RESOURCE MONITORING STARTED
+======================================================================
+Interval: 2.0s
+Output: results/stress_test/monitoring_astar.json
+======================================================================
+
+[   0.1s] CPU:  71.2% | MEM:     51.4 MB | SYS:  77.0% | Threads:  2
+Using ASTAR for graph traversal
+Finding compatible attributes:   0%|          | 0/15 [00:00<?, ?it/s]2026-01-19 11:44:55,280 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table2.table1_id'.
+2026-01-19 11:44:55,280 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table2.table1_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col1'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col1'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col2'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.col2'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table2': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table1_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:44:55,281 - DEBUG - FK mismatch for table 'Table3': 'table1_id' references 'Table1.id' instead of 'Table3.table2_id'.
+2026-01-19 11:44:55,282 - DEBUG - FK mismatch for table 'Table3': 'table2_id' references 'Table2.id' instead of 'Table3.table2_id'.
+2026-01-19 11:44:55,282 - DEBUG - FK mismatch for table 'Table3': 'table2_id' references 'Table2.id' instead of 'Table3.table2_id'.
+                                                                     
+======================================================================
+✅ MATILDA COMPLETED
+======================================================================
+Runtime:         0.71s
+Rules found:     0
+Rules/second:    0.00
+Memory peak:     51.38 MB
+CPU peak:        71.20%
+======================================================================
+[   2.2s] CPU:   0.0% | MEM:     94.8 MB | SYS:  76.5% | Threads:  3
+[   4.3s] CPU:   0.1% | MEM:     94.8 MB | SYS:  76.2% | Threads:  3
+✓ Results saved: results/stress_test/stress_test_results.json
+
+✅ Stress test complete!

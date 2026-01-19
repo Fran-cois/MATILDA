@@ -5,6 +5,7 @@ import datetime
 import signal
 import sys
 import logging  # Added missing import
+import json
 from contextlib import contextmanager
 from pathlib import Path
 from typing import List, Optional
@@ -17,6 +18,7 @@ except ImportError:
 
 from algorithms.base_algorithm import BaseAlgorithm
 from algorithms.amie3 import Amie3
+from algorithms.anyburl import AnyBURL
 from algorithms.ilp import ILP
 from algorithms.spider import Spider
 from algorithms.matilda import MATILDA
@@ -26,6 +28,11 @@ from utils.logging_utils import configure_global_logger
 from utils.monitor import ResourceMonitor
 from utils.config_loader import load_config
 from utils.rules import RuleIO
+from utils.statistical_analysis import (
+    analyze_rules_performance,
+    generate_statistical_report,
+    format_statistics_markdown,
+)
 
 
 @contextmanager
@@ -82,6 +89,7 @@ class DatabaseProcessor:
         results_dir: Path,
         logger: logging.Logger,
         use_mlflow: bool = False,
+        config: dict = None,
     ):
         self.algorithm_name = algorithm_name
         self.database_name = database_name
@@ -89,6 +97,7 @@ class DatabaseProcessor:
         self.results_dir = results_dir
         self.logger = logger
         self.use_mlflow = use_mlflow
+        self.config = config or {}
 
     def discover_rules(self) -> int:
         """Runs the rule discovery algorithm synchronously."""
@@ -96,6 +105,7 @@ class DatabaseProcessor:
             "POPPER": ILP,
             "ILP": ILP,
             "AMIE3": Amie3,
+            "ANYBURL": AnyBURL,
             "SPIDER": Spider,
             "MATILDA": MATILDA,
         }
@@ -110,7 +120,15 @@ class DatabaseProcessor:
                 rules = []
 
                 self.logger.debug("Starting rule discovery...")
-                for rule in algo.discover_rules(results_dir=str(self.results_dir)):
+                
+                # Prepare kwargs for MATILDA with traversal algorithm setting
+                discover_kwargs = {"results_dir": str(self.results_dir)}
+                if self.algorithm_name.upper() == "MATILDA":
+                    traversal_algorithm = self.config.get("algorithm", {}).get("matilda", {}).get("traversal_algorithm", "dfs")
+                    discover_kwargs["traversal_algorithm"] = traversal_algorithm
+                    self.logger.info(f"MATILDA using traversal algorithm: {traversal_algorithm}")
+                
+                for rule in algo.discover_rules(**discover_kwargs):
                     self.logger.info(f"Discovered rule: {rule}")
                     rules.append(rule)
 
@@ -119,6 +137,29 @@ class DatabaseProcessor:
 
                 self.logger.debug(f"Saving rules to {result_path}")
                 number_of_rules = RuleIO.save_rules_to_json(rules, result_path)
+                
+                # Compute statistics if enabled
+                if self.config.get("results", {}).get("compute_statistics", False) and number_of_rules > 0:
+                    try:
+                        self.logger.info("Computing performance statistics...")
+                        stats = analyze_rules_performance(result_path)
+                        
+                        # Save statistics to separate file
+                        stats_file = self.results_dir / f"{self.algorithm_name}_{self.database_name.stem}_statistics.json"
+                        stats_dict = {metric: stat.to_dict() for metric, stat in stats.items()}
+                        with open(stats_file, 'w') as f:
+                            json.dump(stats_dict, f, indent=2)
+                        
+                        self.logger.info(f"Statistics saved to {stats_file}")
+                        
+                        # Log summary statistics
+                        for metric, stat in stats.items():
+                            self.logger.info(
+                                f"  {metric}: mean={stat.mean:.4f}, std={stat.std:.4f}, "
+                                f"median={stat.median:.4f}, range=[{stat.min:.4f}, {stat.max:.4f}]"
+                            )
+                    except Exception as e:
+                        self.logger.warning(f"Could not compute statistics: {e}")
 
                 self.logger.info(f"Discovered {number_of_rules} rules.")
                 if self.algorithm_name.upper() == "SPIDER":
@@ -262,6 +303,7 @@ def main() -> None:
         results_dir=results_dir,
         logger=logger,
         use_mlflow=use_mlflow,
+        config=config,
     )
 
     logger.info("Starting rule discovery process.")
@@ -274,6 +316,25 @@ def main() -> None:
             number_of_rules = processor.discover_rules()
 
             processor.clean_up()
+            
+            # Generate statistical report if enabled
+            if config.get("results", {}).get("generate_statistical_report", False):
+                try:
+                    logger.info("Generating comprehensive statistical report...")
+                    report_name = config.get("results", {}).get("statistical_report_name", "statistical_analysis_report.json")
+                    report_path = results_dir / report_name
+                    
+                    report = generate_statistical_report(
+                        results_dir,
+                        report_path
+                    )
+                    
+                    logger.info(f"Statistical report generated: {report_path}")
+                    logger.info(f"  - Algorithms: {report['summary']['total_algorithms']}")
+                    logger.info(f"  - Datasets: {report['summary']['total_datasets']}")
+                    logger.info(f"  - Comparisons: {report['summary']['total_comparisons']}")
+                except Exception as e:
+                    logger.warning(f"Could not generate statistical report: {e}")
 
             logger.info("Process completed successfully.")
 

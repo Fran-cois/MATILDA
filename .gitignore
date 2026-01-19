@@ -1,10 +1,66 @@
-venv/
-database/databases/
-data/db/
-src/logs
-src/results
-src/debug/
-venv*
+# Python
 __pycache__/
-**/__pycache__/*
-idea/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Data
+*.db
+dataset_1M/
+dataset_5M/
+dataset_10M/
+**/tsv/*.tsv
+*.sqlite
+*.db-journal
+data/output/*.json
+data/output/*.md
+data/output/*.txt
+data/large_scale/*.db
+results/scalability/*.json
+results/scalability/*.png
+mlruns/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+temp/
+*.tmp
