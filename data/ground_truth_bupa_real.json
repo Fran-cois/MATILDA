@@ -1,0 +1,50 @@
+[
+  {
+    "type": "InclusionDependency",
+    "left": ["alkphos", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "alkphos.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["bupa", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "bupa.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["drinks", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "drinks.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["gammagt", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "gammagt.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["mcv", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "mcv.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["sgot", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "sgot.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["sgpt", "arg1"],
+    "right": ["bupa_name", "arg1"],
+    "description": "sgpt.arg1 ⊆ bupa_name.arg1 (Patient ID reference)"
+  },
+  {
+    "type": "InclusionDependency",
+    "left": ["bupa", "arg2"],
+    "right": ["bupa_type", "arg1"],
+    "description": "bupa.arg2 ⊆ bupa_type.arg1 (Type reference: 1=disorder, 2=no disorder)"
+  }
+]
