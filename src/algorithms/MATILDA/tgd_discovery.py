@@ -19,10 +19,20 @@ from algorithms.MATILDA.constraint_graph import (
     JoinableIndexedAttributes,
 )
 from algorithms.MATILDA.candidate_rule_chains import CandidateRuleChains
+from algorithms.MATILDA.graph_traversal import (
+    dfs as dfs_traversal,
+    bfs as bfs_traversal,
+    astar as astar_traversal,
+    get_traversal_algorithm,
+)
 from database.alchemy_utility import AlchemyUtility
 import time
+import os
 
 # from runs_utils.postprocessing.analytics.generate_overall_table import logger
+
+# Ensure logs directory exists
+os.makedirs('logs', exist_ok=True)
 
 logging.basicConfig(
     filename='logs/tgd_computation.log',
@@ -81,15 +91,16 @@ def init(
                     compatible_attributes.add((attr1, attr2))
 
         # Export compatible attributes as JSON
-        compatible_dict_to_export = {}
-        for attr1, attr2 in compatible_attributes:
-            key1 = f"{attr1.table}___sep___{attr1.name}"
-            key2 = f"{attr2.table}___sep___{attr2.name}"
-            compatible_dict_to_export.setdefault(key1, []).append(key2)
-            compatible_dict_to_export.setdefault(key2, []).append(key1)
+        if results_path:
+            compatible_dict_to_export = {}
+            for attr1, attr2 in compatible_attributes:
+                key1 = f"{attr1.table}___sep___{attr1.name}"
+                key2 = f"{attr2.table}___sep___{attr2.name}"
+                compatible_dict_to_export.setdefault(key1, []).append(key2)
+                compatible_dict_to_export.setdefault(key2, []).append(key1)
 
-        with open(f"{results_path}/compatibility_{base_name}.json", "w") as f:
-            json.dump(compatible_dict_to_export, f, indent=4)
+            with open(f"{results_path}/compatibility_{base_name}.json", "w") as f:
+                json.dump(compatible_dict_to_export, f, indent=4)
 
 
         time_compute_compatible = time.time() - time_taken_init
@@ -161,18 +172,19 @@ def init(
         time_building_cg = time.time() - time_taken_init
 
         # Export constraint graph metrics
-        with open(f"{results_path}/cg_metrics_{base_name}.json", "w") as f:
-            json.dump(str(cg), f)
-        with open(f"{results_path}/init_time_metrics_{base_name}.json", "w") as f:
-            json.dump(
-                {
-                    "time_compute_compatible": time_compute_compatible,
-                    "time_to_compute_indexed": time_to_compute_indexed,
-                    "time_building_cg": time_building_cg,
-                },
-                f,
-                indent=4,
-            )
+        if results_path:
+            with open(f"{results_path}/cg_metrics_{base_name}.json", "w") as f:
+                json.dump(str(cg), f)
+            with open(f"{results_path}/init_time_metrics_{base_name}.json", "w") as f:
+                json.dump(
+                    {
+                        "time_compute_compatible": time_compute_compatible,
+                        "time_to_compute_indexed": time_to_compute_indexed,
+                        "time_building_cg": time_building_cg,
+                    },
+                    f,
+                    indent=4,
+                )
 
         return cg, mapper, jia_list
 
@@ -192,79 +204,164 @@ def dfs(
     mapper: AttributeMapper,
     visited: set[JoinableIndexedAttributes] = None,
     candidate_rule: CandidateRule = None,
-        max_table: int = 3,
-        max_vars: int = 4,
-
+    max_table: int = 3,
+    max_vars: int = 4,
 ) -> Iterator[CandidateRule]:
     """
-    Perform a Depth-First Search (DFS) traversal with a path-based heuristic,
-    yielding the candidate rule leading up to a heuristic-determined stop.
+    Perform a Depth-First Search (DFS) traversal with a path-based heuristic.
+    
+    This is a compatibility wrapper that delegates to the graph_traversal module.
+    For new code, consider using graph_traversal.dfs directly or traverse_graph().
 
     :param graph: An instance of the ConstraintGraph class.
     :param start_node: The node from which the DFS starts.
-    :param heuristic: A function that takes the current path and decides whether to continue.
+    :param pruning_prediction: A function that determines whether to continue exploring.
+    :param db_inspector: Database inspector for evaluating rules.
+    :param mapper: Attribute mapper for indexed attributes.
     :param visited: A set to keep track of visited nodes to avoid cycles.
     :param candidate_rule: A list to track the current path of nodes being visited.
-    :yield: The path up to but not including the node that causes the heuristic to return False.
+    :param max_table: Maximum number of tables allowed in a rule.
+    :param max_vars: Maximum number of variables allowed in a rule.
+    :yield: Candidate rules found during traversal.
     """
-    if visited is None:
-        visited: set[JoinableIndexedAttributes] = set()
-    if candidate_rule is None:
-        candidate_rule = []
-    if start_node is None:
+    yield from dfs_traversal(
+        graph=graph,
+        start_node=start_node,
+        pruning_prediction=pruning_prediction,
+        db_inspector=db_inspector,
+        mapper=mapper,
+        visited=visited,
+        candidate_rule=candidate_rule,
+        max_table=max_table,
+        max_vars=max_vars,
+        next_node_test_func=next_node_test,
+    )
 
-        for next_node in tqdm(graph.nodes, desc="Initial Nodes"):
-            """
-            note: mandatory because some jia are built with not the right order in table occurrences
-            they are needed to have all the runs, but at init we prune them.
-            """
-            if next_node_test(candidate_rule, next_node, visited, max_table, max_vars):
-                yield from dfs(
-                    graph,
-                    next_node,
-                    pruning_prediction,
-                    db_inspector,
-                    mapper,
-                    visited=set(),
-                    candidate_rule=copy.deepcopy(candidate_rule),
-                    max_table=max_table,
-                    max_vars=max_vars
-                )
-        return
-    visited.add(start_node)
-    candidate_rule.append(start_node)
-    # Apply the heuristic to the current path; if False,
-    # yield the path without the last node and return
-    if not pruning_prediction(candidate_rule, mapper, db_inspector):
-        return
-    yield candidate_rule
 
-    # for next_node in tqdm(graph.neighbors(start_node), desc=f"Expanding {start_node}", leave=False):
-    neighbours = graph.neighbors(start_node)
-    splits = split_candidate_rule(candidate_rule)
-    split = splits.pop()
-    debug = instantiate_tgd(candidate_rule, split, mapper)
-    big_neighbours = []
-    for node in candidate_rule:
-        big_neighbours += [e for e in graph.neighbors(node) if e not in visited]
-    # big_neighbours = [e for e in graph.neighbors(node) for node in candidate_rule
-    for next_node in big_neighbours: # graph.neighbors(start_node):
-        if next_node_test(candidate_rule, next_node, visited, max_table, max_vars):
-            yield from dfs(
-                graph,
-                next_node,
-                pruning_prediction,
-                db_inspector,
-                mapper,
-                visited=visited,
-                candidate_rule=candidate_rule,
-                max_table=max_table,
-                max_vars=max_vars
-            )
-            visited.remove(next_node)
-            candidate_rule.pop()
-    # visited.pop()
-    # candidate_rule.pop()
+def bfs(
+    graph: ConstraintGraph,
+    start_node: JoinableIndexedAttributes,
+    pruning_prediction: Callable[
+        [CandidateRule, AttributeMapper, AlchemyUtility],
+        bool,
+    ],
+    db_inspector: AlchemyUtility,
+    mapper: AttributeMapper,
+    max_table: int = 3,
+    max_vars: int = 4,
+) -> Iterator[CandidateRule]:
+    """
+    Perform a Breadth-First Search (BFS) traversal.
+    
+    BFS explores all neighbors at the current depth before moving deeper,
+    finding shorter rules first.
+
+    :param graph: An instance of the ConstraintGraph class.
+    :param start_node: The node from which the BFS starts.
+    :param pruning_prediction: A function that determines whether to continue exploring.
+    :param db_inspector: Database inspector for evaluating rules.
+    :param mapper: Attribute mapper for indexed attributes.
+    :param max_table: Maximum number of tables allowed in a rule.
+    :param max_vars: Maximum number of variables allowed in a rule.
+    :yield: Candidate rules found during traversal.
+    """
+    yield from bfs_traversal(
+        graph=graph,
+        start_node=start_node,
+        pruning_prediction=pruning_prediction,
+        db_inspector=db_inspector,
+        mapper=mapper,
+        max_table=max_table,
+        max_vars=max_vars,
+        next_node_test_func=next_node_test,
+    )
+
+
+def astar(
+    graph: ConstraintGraph,
+    start_node: JoinableIndexedAttributes,
+    pruning_prediction: Callable[
+        [CandidateRule, AttributeMapper, AlchemyUtility],
+        bool,
+    ],
+    db_inspector: AlchemyUtility,
+    mapper: AttributeMapper,
+    max_table: int = 3,
+    max_vars: int = 4,
+    heuristic_func: Callable[[CandidateRule, AttributeMapper, AlchemyUtility], float] = None,
+) -> Iterator[CandidateRule]:
+    """
+    Perform an A-star search traversal.
+    
+    A-star uses a heuristic to prioritize more promising candidate rules,
+    potentially finding high-quality rules faster.
+
+    :param graph: An instance of the ConstraintGraph class.
+    :param start_node: The node from which the A-star starts.
+    :param pruning_prediction: A function that determines whether to continue exploring.
+    :param db_inspector: Database inspector for evaluating rules.
+    :param mapper: Attribute mapper for indexed attributes.
+    :param max_table: Maximum number of tables allowed in a rule.
+    :param max_vars: Maximum number of variables allowed in a rule.
+    :param heuristic_func: Optional heuristic function for A-star.
+    :yield: Candidate rules found during traversal.
+    """
+    yield from astar_traversal(
+        graph=graph,
+        start_node=start_node,
+        pruning_prediction=pruning_prediction,
+        db_inspector=db_inspector,
+        mapper=mapper,
+        max_table=max_table,
+        max_vars=max_vars,
+        next_node_test_func=next_node_test,
+        heuristic_func=heuristic_func,
+    )
+
+
+def traverse_graph(
+    graph: ConstraintGraph,
+    start_node: JoinableIndexedAttributes,
+    pruning_prediction: Callable[
+        [CandidateRule, AttributeMapper, AlchemyUtility],
+        bool,
+    ],
+    db_inspector: AlchemyUtility,
+    mapper: AttributeMapper,
+    max_table: int = 3,
+    max_vars: int = 4,
+    algorithm: str = 'dfs',
+    heuristic_func: Callable[[CandidateRule, AttributeMapper, AlchemyUtility], float] = None,
+) -> Iterator[CandidateRule]:
+    """
+    Generic graph traversal function that uses the specified algorithm.
+    
+    :param graph: An instance of the ConstraintGraph class.
+    :param start_node: The node from which to start traversal.
+    :param pruning_prediction: A function that determines whether to continue exploring.
+    :param db_inspector: Database inspector for evaluating rules.
+    :param mapper: Attribute mapper for indexed attributes.
+    :param max_table: Maximum number of tables allowed in a rule.
+    :param max_vars: Maximum number of variables allowed in a rule.
+    :param algorithm: Algorithm to use ('dfs', 'bfs', or 'astar').
+    :param heuristic_func: Optional heuristic function for A-star.
+    :yield: Candidate rules found during traversal.
+    """
+    if algorithm.lower() in ['astar', 'a-star', 'a_star']:
+        yield from astar(
+            graph, start_node, pruning_prediction, db_inspector, mapper,
+            max_table, max_vars, heuristic_func
+        )
+    elif algorithm.lower() == 'bfs':
+        yield from bfs(
+            graph, start_node, pruning_prediction, db_inspector, mapper,
+            max_table, max_vars
+        )
+    else:  # default to dfs
+        yield from dfs(
+            graph, start_node, pruning_prediction, db_inspector, mapper,
+            None, None, max_table, max_vars
+        )
 def prediction(
     path: CandidateRule,
     mapper: AttributeMapper,
@@ -344,9 +441,10 @@ def path_pruning(
         return False
     if len(path) == 0:
         return False
-    return prediction(path,mapper,db_inspector, threshold=0)
-    #prediction_count = prediction(path, mapper, db_inspector)
-    #return prediction_count > 0
+    # Don't prune during exploration - let split_pruning handle final validation
+    return True
+    # Original strict version that may prune too aggressively:
+    # return prediction(path, mapper, db_inspector, threshold=0)
 
 
 def split_pruning(
@@ -761,6 +859,10 @@ def calculate_support(
     if total_tuples_satisfying_body == 0 :
         return 0
     support = total_tuples / total_tuples_satisfying_body
+    
+    # Debug logging
+    logging.info(f"SUPPORT CALCULATION: total_tuples={total_tuples}, total_tuples_satisfying_body={total_tuples_satisfying_body}, support={support}")
+    
     return support
 
 
@@ -839,8 +941,12 @@ def calculate_confidence(
     )
     if total_tuples_satisfying_head == 0:
         return 0
-    support = total_tuples / total_tuples_satisfying_head
-    return support
+    confidence = total_tuples / total_tuples_satisfying_head
+    
+    # Debug logging
+    logging.info(f"CONFIDENCE CALCULATION: total_tuples={total_tuples}, total_tuples_satisfying_head={total_tuples_satisfying_head}, confidence={confidence}")
+    
+    return confidence
 
 def next_node_test(
     candidate_rule: CandidateRule,
