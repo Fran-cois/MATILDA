@@ -28,7 +28,7 @@ def setup_loggers():
 
     # Logger for query execution time and SQL statements
     logger_query_time = logging.getLogger('query_time')
-    logger_query_time.setLevel(logging.DEBUG)
+    logger_query_time.setLevel(logging.ERROR)  # Changed from DEBUG to ERROR to reduce overhead
     file_handler_query_time = RotatingFileHandler('logs/query_time.log', maxBytes=5 * 1024 * 1024, backupCount=5)
     formatter_query_time = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_handler_query_time.setFormatter(formatter_query_time)
@@ -36,7 +36,7 @@ def setup_loggers():
 
     # Logger for query results
     logger_query_results = logging.getLogger('query_results')
-    logger_query_results.setLevel(logging.INFO)
+    logger_query_results.setLevel(logging.ERROR)  # Changed from INFO to ERROR to reduce overhead
     file_handler_query_results = RotatingFileHandler('logs/query_results.log', maxBytes=5 * 1024 * 1024, backupCount=5)
     formatter_query_results = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_handler_query_results.setFormatter(formatter_query_results)
