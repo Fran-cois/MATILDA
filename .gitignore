@@ -69,3 +69,4 @@ temp/
 .venv/
 htmlcov/
 .coverage
+resume_last_session.sh

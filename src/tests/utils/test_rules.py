@@ -1,19 +1,20 @@
-import pytest
 import json
 from dataclasses import asdict
-from typing import List
 from unittest.mock import MagicMock
+
+import pytest
+
 from utils.rules import (
-    InclusionDependency,
     DCCondition,
     DenialConstraint,
-    Predicate,
+    FunctionalDependency,
     HornRule,
-    TGDRule,
+    InclusionDependency,
+    Predicate,
     PredicateUtils,
     RuleIO,
+    TGDRule,
     TGDRuleFactory,
-    Rule
 )
 
 
@@ -26,28 +27,19 @@ def sample_inclusion_dependency():
         columns_referenced=("ID",),
         display="Orders.CustomerID -> Customers.ID",
         correct=True,
-        compatible=True
+        compatible=True,
     )
-
 
 
 @pytest.fixture
 def sample_dc_condition():
-    return DCCondition(
-        column_1="Age",
-        operator=">",
-        value="30",
-        negation=False
-    )
+    return DCCondition(column_1="Age", operator=">", value="30", negation=False)
 
 
 @pytest.fixture
 def sample_denial_constraint(sample_dc_condition):
     return DenialConstraint(
-        table="Employees",
-        conditions=(sample_dc_condition,),
-        correct=False,
-        compatible=True
+        table="Employees", conditions=(sample_dc_condition,), correct=False, compatible=True
     )
 
 
@@ -63,7 +55,7 @@ def sample_horn_rule(sample_predicate):
         head=sample_predicate,
         display="Sample Horn Rule",
         correct=True,
-        compatible=True
+        compatible=True,
     )
 
 
@@ -73,16 +65,14 @@ def sample_tgd_rule():
     return TGDRule(
         body=(
             Predicate(variable1="x", relation="relates_to", variable2="y"),
-            Predicate(variable1="y", relation="relates_to", variable2="z")
+            Predicate(variable1="y", relation="relates_to", variable2="z"),
         ),
-        head=(
-            Predicate(variable1="z", relation="relates_to", variable2="w"),
-        ),
+        head=(Predicate(variable1="z", relation="relates_to", variable2="w"),),
         display="Sample TGD Rule",
         accuracy=0.95,
         confidence=0.85,
         correct=True,
-        compatible=True
+        compatible=True,
     )
 
 
@@ -95,7 +85,6 @@ def test_inclusion_dependency_creation(sample_inclusion_dependency):
     assert dep.display == "Orders.CustomerID -> Customers.ID"
     assert dep.correct is True
     assert dep.compatible is True
-
 
 
 def test_dc_condition_creation(sample_dc_condition):
@@ -112,12 +101,7 @@ def test_denial_constraint_creation(sample_denial_constraint):
     dc = sample_denial_constraint
     assert dc.table == "Employees"
     assert len(dc.conditions) == 1
-    assert dc.conditions[0] == DCCondition(
-        column_1="Age",
-        operator=">",
-        value="30",
-        negation=False
-    )
+    assert dc.conditions[0] == DCCondition(column_1="Age", operator=">", value="30", negation=False)
     assert dc.correct is False
     assert dc.compatible is True
 
@@ -143,11 +127,9 @@ def test_tgd_rule_creation(sample_tgd_rule):
     rule = sample_tgd_rule
     assert rule.body == (
         Predicate(variable1="x", relation="relates_to", variable2="y"),
-        Predicate(variable1="y", relation="relates_to", variable2="z")
+        Predicate(variable1="y", relation="relates_to", variable2="z"),
     )
-    assert rule.head == (
-        Predicate(variable1="z", relation="relates_to", variable2="w"),
-    )
+    assert rule.head == (Predicate(variable1="z", relation="relates_to", variable2="w"),)
     assert rule.display == "Sample TGD Rule"
     assert rule.accuracy == 0.95
     assert rule.confidence == 0.85
@@ -158,25 +140,26 @@ def test_tgd_rule_creation(sample_tgd_rule):
 def test_inclusion_dependency_export_to_json(sample_inclusion_dependency, tmp_path):
     filepath = tmp_path / "inclusion_dependency.json"
     sample_inclusion_dependency.export_to_json(filepath)
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         data = json.load(f)
     expected = asdict(sample_inclusion_dependency)
     # Convert tuples to lists for JSON comparison
-    expected['columns_dependant'] = list(expected['columns_dependant'])
-    expected['columns_referenced'] = list(expected['columns_referenced'])
+    expected["columns_dependant"] = list(expected["columns_dependant"])
+    expected["columns_referenced"] = list(expected["columns_referenced"])
     assert data == expected
+
 
 def test_horn_rule_export_to_json(sample_horn_rule, tmp_path):
     filepath = tmp_path / "horn_rule.json"
     sample_horn_rule.export_to_json(filepath)
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         data = json.load(f)
     expected = {
         "body": [str(sample_horn_rule.body[0])],
         "head": str(sample_horn_rule.head),
         "display": "Sample Horn Rule",
         "correct": True,
-        "compatible": True
+        "compatible": True,
     }
     assert data == expected
 
@@ -184,7 +167,7 @@ def test_horn_rule_export_to_json(sample_horn_rule, tmp_path):
 def test_tgd_rule_export_to_json(sample_tgd_rule, tmp_path):
     filepath = tmp_path / "tgd_rule.json"
     sample_tgd_rule.export_to_json(filepath)
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         data = json.load(f)
     expected = {
         "body": [str(pred) for pred in sample_tgd_rule.body],
@@ -193,7 +176,7 @@ def test_tgd_rule_export_to_json(sample_tgd_rule, tmp_path):
         "accuracy": 0.95,
         "confidence": 0.85,
         "correct": True,
-        "compatible": True
+        "compatible": True,
     }
     assert data == expected
 
@@ -202,32 +185,24 @@ def test_predicate_utils_sort_and_rename_variables():
     predicates = [
         Predicate("b", "rel1", "a"),
         Predicate("c", "rel2", "b"),
-        Predicate("a", "rel1", "c")
+        Predicate("a", "rel1", "c"),
     ]
     sorted_predicates = PredicateUtils.sort_and_rename_variables(predicates.copy())
     # Corrected expected list based on sort_and_rename_variables implementation
     expected = [
         Predicate("x_0", "rel1", "x_1"),
         Predicate("x_1", "rel1", "x_2"),
-        Predicate("x_2", "rel2", "x_0")
+        Predicate("x_2", "rel2", "x_0"),
     ]
     assert sorted_predicates == expected
 
 
 def test_predicate_utils_compare_lists():
-    list1 = [
-        Predicate("x", "rel1", "y"),
-        Predicate("y", "rel2", "z")
-    ]
-    list2 = [
-        Predicate("a", "rel1", "b"),
-        Predicate("b", "rel2", "c")
-    ]
+    list1 = [Predicate("x", "rel1", "y"), Predicate("y", "rel2", "z")]
+    list2 = [Predicate("a", "rel1", "b"), Predicate("b", "rel2", "c")]
     assert PredicateUtils.compare_lists(list1, list2) is True
 
-    list3 = [
-        Predicate("x", "rel1", "y")
-    ]
+    list3 = [Predicate("x", "rel1", "y")]
     assert PredicateUtils.compare_lists(list1, list3) is False
 
 
@@ -261,8 +236,6 @@ def test_rule_io_rule_to_dict_inclusion_dependency(sample_inclusion_dependency):
     assert rule_dict == expected
 
 
-
-
 def test_rule_io_rule_to_dict_horn_rule(sample_horn_rule):
     rule_dict = RuleIO.rule_to_dict(sample_horn_rule)
     expected = {
@@ -271,7 +244,7 @@ def test_rule_io_rule_to_dict_horn_rule(sample_horn_rule):
         "head": str(sample_horn_rule.head),
         "display": "Sample Horn Rule",
         "correct": True,
-        "compatible": True
+        "compatible": True,
     }
     assert rule_dict == expected
 
@@ -286,7 +259,7 @@ def test_rule_io_rule_to_dict_tgd_rule(sample_tgd_rule):
         "accuracy": 0.95,
         "confidence": 0.85,
         "correct": True,
-        "compatible": True
+        "compatible": True,
     }
     assert rule_dict == expected
 
@@ -295,8 +268,6 @@ def test_rule_io_rule_from_dict_inclusion_dependency(sample_inclusion_dependency
     rule_dict = {"type": "InclusionDependency", **asdict(sample_inclusion_dependency)}
     rule = RuleIO.rule_from_dict(rule_dict)
     assert rule == sample_inclusion_dependency
-
-
 
 
 def test_rule_io_rule_from_dict_horn_rule(sample_horn_rule):
@@ -311,13 +282,11 @@ def test_rule_io_rule_from_dict_tgd_rule(sample_tgd_rule):
     assert rule == sample_tgd_rule
 
 
-
-
 def test_rule_io_save_yielded_rule_to_json(tmp_path, sample_horn_rule):
     filepath = tmp_path / "yielded_rules.json"
     RuleIO.save_yielded_rule_to_json(sample_horn_rule, filepath)
 
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         data = json.load(f)
 
     expected = [RuleIO.rule_to_dict(sample_horn_rule)]
@@ -325,7 +294,7 @@ def test_rule_io_save_yielded_rule_to_json(tmp_path, sample_horn_rule):
 
     # Append another rule
     RuleIO.save_yielded_rule_to_json(sample_horn_rule, filepath)
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         data = json.load(f)
     expected.append(RuleIO.rule_to_dict(sample_horn_rule))
     assert data == expected
@@ -335,7 +304,7 @@ def test_rule_io_save_yieled_rules_to_json(tmp_path, sample_tgd_rule):
     filepath = tmp_path / "yielded_tgd_rules.json"
     RuleIO.save_yieled_rules_to_json(sample_tgd_rule, filepath)
 
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         data = json.load(f)
 
     expected = [RuleIO.rule_to_dict(sample_tgd_rule)]
@@ -348,13 +317,8 @@ def test_tgd_rule_factory_str_to_tgd():
     confidence = 0.8
     tgd_rule = TGDRuleFactory.str_to_tgd(tgd_str, support, confidence)
 
-    expected_body = (
-        Predicate("x", "rel1", "y"),
-        Predicate("y", "rel2", "z")
-    )
-    expected_head = (
-        Predicate("z", "rel3", "w"),
-    )
+    expected_body = (Predicate("x", "rel1", "y"), Predicate("y", "rel2", "z"))
+    expected_head = (Predicate("z", "rel3", "w"),)
     assert tgd_rule.body == expected_body
     assert tgd_rule.head == expected_head
     assert tgd_rule.display == tgd_str
@@ -376,15 +340,12 @@ def test_tgd_rule_factory_create_from_ilp_display():
     expected_body = (
         Predicate("id", "rel2___sep___column_0", "y"),
         Predicate("id", "rel2___sep___column_1", "z"),
-
         Predicate("id", "rel3___sep___column_0", "z"),
         # Predicate("id", "rel3___sep___column_1", "w")
-
     )
     expected_head = (
         # Predicate("id", "rel1___sep___column_0", "x"),
         Predicate("id", "rel1___sep___column_1", "y"),
-
     )
     assert tgd_rule.body == expected_body
     assert tgd_rule.head == expected_head
@@ -399,7 +360,7 @@ def test_horn_rule_equality(sample_horn_rule):
         head=sample_horn_rule.head,
         display=sample_horn_rule.display,
         correct=sample_horn_rule.correct,
-        compatible=sample_horn_rule.compatible
+        compatible=sample_horn_rule.compatible,
     )
     assert sample_horn_rule == another_rule
 
@@ -412,7 +373,7 @@ def test_tgd_rule_equality(sample_tgd_rule):
         accuracy=sample_tgd_rule.accuracy,
         confidence=sample_tgd_rule.confidence,
         correct=sample_tgd_rule.correct,
-        compatible=sample_tgd_rule.compatible
+        compatible=sample_tgd_rule.compatible,
     )
     assert sample_tgd_rule == another_rule
 
@@ -428,7 +389,7 @@ def test_tgd_rule_comparisons(sample_tgd_rule):
         head=(Predicate("c", "rel2", "d"),),
         display="Short TGD",
         accuracy=0.7,
-        confidence=0.6
+        confidence=0.6,
     )
     assert shorter_rule < sample_tgd_rule  # 2 < 3
     assert shorter_rule <= sample_tgd_rule  # 2 <= 3
@@ -438,7 +399,7 @@ def test_tgd_rule_comparisons(sample_tgd_rule):
 
 def test_rule_io_load_rules_invalid_json(tmp_path):
     filepath = tmp_path / "invalid_rules.json"
-    with open(filepath, 'w') as f:
+    with open(filepath, "w") as f:
         f.write("Invalid JSON Content")
     with pytest.raises(json.JSONDecodeError):
         RuleIO.load_rules_from_json(filepath)
@@ -456,7 +417,368 @@ def test_rule_io_rule_from_dict_denial_constraint_not_implemented():
         "table": "Employees",
         "conditions": ["Age > 30"],
         "correct": False,
-        "compatible": True
+        "compatible": True,
     }
     with pytest.raises(NotImplementedError):
         RuleIO.rule_from_dict(rule_dict)
+
+
+# ---------------------------------------------------------------------------
+# FunctionalDependency.export_to_json (lines 34-36)
+# ---------------------------------------------------------------------------
+
+
+def test_functional_dependency_export_to_json(tmp_path):
+    fd = FunctionalDependency(
+        table="Employees",
+        determinant=("DeptID",),
+        dependent="DeptName",
+        correct=True,
+        compatible=False,
+    )
+    filepath = tmp_path / "fd.json"
+    fd.export_to_json(filepath)
+    with open(filepath, "r") as f:
+        data = json.load(f)
+    assert data["table"] == "Employees"
+    assert data["determinant"] == ["DeptID"]
+    assert data["dependent"] == "DeptName"
+    assert data["correct"] is True
+    assert data["compatible"] is False
+
+
+# ---------------------------------------------------------------------------
+# DenialConstraint.export_to_json (lines 58-69)
+# ---------------------------------------------------------------------------
+
+
+def test_denial_constraint_export_to_json(tmp_path):
+    cond = DCCondition(column_1="Age", operator=">", value="30", negation=False)
+    dc = DenialConstraint(table="Employees", conditions=(cond,), correct=False, compatible=True)
+    filepath = tmp_path / "dc.json"
+    dc.export_to_json(filepath)
+    with open(filepath, "r") as f:
+        data = json.load(f)
+    assert data["table"] == "Employees"
+    assert data["correct"] is False
+    assert data["compatible"] is True
+    assert isinstance(data["conditions"], list)
+    assert data["conditions"][0]["column_1"] == "Age"
+
+
+# ---------------------------------------------------------------------------
+# HornRule.__eq__ returns NotImplemented for non-HornRule / non-TGDRule (line 106)
+# ---------------------------------------------------------------------------
+
+
+def test_horn_rule_eq_not_implemented():
+    pred = Predicate("x", "rel", "y")
+    rule = HornRule(body=(pred,), head=pred, display="r")
+    result = rule.__eq__(42)
+    assert result is NotImplemented
+
+
+# ---------------------------------------------------------------------------
+# TGDRule.__eq__ with HornRule argument (lines 142-144)
+# ---------------------------------------------------------------------------
+
+
+def test_tgd_rule_eq_with_horn_rule_equal():
+    pred = Predicate("x", "rel", "y")
+    horn = HornRule(body=(pred,), head=pred, display="r")
+    # A TGDRule whose body+head equals horn's body+(head,)
+    tgd = TGDRule(
+        body=(pred,),
+        head=(pred,),
+        display="r2",
+        accuracy=0.9,
+        confidence=0.8,
+    )
+    # Both have the same two predicates so compare_lists should return True
+    assert tgd == horn
+
+
+def test_tgd_rule_eq_with_horn_rule_not_equal():
+    pred1 = Predicate("x", "rel1", "y")
+    pred2 = Predicate("a", "rel2", "b")
+    horn = HornRule(body=(pred1,), head=pred1, display="r")
+    tgd = TGDRule(
+        body=(pred2,),
+        head=(pred2,),
+        display="r2",
+        accuracy=0.5,
+        confidence=0.5,
+    )
+    assert tgd != horn
+
+
+# ---------------------------------------------------------------------------
+# TGDRule.__eq__ returns NotImplemented for unknown type (lines 145-146)
+# ---------------------------------------------------------------------------
+
+
+def test_tgd_rule_eq_not_implemented():
+    pred = Predicate("x", "rel", "y")
+    tgd = TGDRule(body=(pred,), head=(pred,), display="r", accuracy=0.9, confidence=0.8)
+    result = tgd.__eq__("not_a_rule")
+    assert result is NotImplemented
+
+
+# ---------------------------------------------------------------------------
+# TGDRule.__le__ returns NotImplemented (line 150)
+# ---------------------------------------------------------------------------
+
+
+def test_tgd_rule_le_not_implemented():
+    pred = Predicate("x", "rel", "y")
+    tgd = TGDRule(body=(pred,), head=(pred,), display="r", accuracy=0.9, confidence=0.8)
+    result = tgd.__le__("not_a_rule")
+    assert result is NotImplemented
+
+
+# ---------------------------------------------------------------------------
+# TGDRule.__lt__ returns NotImplemented (line 157)
+# ---------------------------------------------------------------------------
+
+
+def test_tgd_rule_lt_not_implemented():
+    pred = Predicate("x", "rel", "y")
+    tgd = TGDRule(body=(pred,), head=(pred,), display="r", accuracy=0.9, confidence=0.8)
+    result = tgd.__lt__("not_a_rule")
+    assert result is NotImplemented
+
+
+# ---------------------------------------------------------------------------
+# sort_and_rename_variables exception handler (lines 171-172)
+# sort fails because objects have no .relation attribute
+# ---------------------------------------------------------------------------
+
+
+def test_sort_and_rename_variables_sort_exception():
+    # Plain integers have no .relation attribute, so the sort key raises AttributeError
+    bad_list = [3, 1, 2]
+    result = PredicateUtils.sort_and_rename_variables(bad_list)
+    # Should return the original list unchanged
+    assert result == [3, 1, 2]
+
+
+# ---------------------------------------------------------------------------
+# sort_and_rename_variables index wrap when skip > 0 (line 180)
+# With skip=1 and a 2-element list: i=1 → index_lst=2 >= 2 → wraps to 0
+# ---------------------------------------------------------------------------
+
+
+def test_sort_and_rename_variables_index_wrap():
+    pred1 = Predicate("a", "rel1", "b")
+    pred2 = Predicate("c", "rel2", "d")
+    lst = [pred1, pred2]
+    result = PredicateUtils.sort_and_rename_variables(lst, skip=1)
+    # The key assertion is that it doesn't raise an IndexError and returns
+    # a list of the same length with renamed variables.
+    assert len(result) == 2
+    for p in result:
+        assert isinstance(p, Predicate)
+
+
+# ---------------------------------------------------------------------------
+# str_to_predicate format #2: "rel(argname=value)" (lines 262-263)
+# ---------------------------------------------------------------------------
+
+
+def test_str_to_predicate_format2_named_arg():
+    # regex: ^([A-Za-z0-9_]+)\(([^=]+)=([^)]*)\)$
+    # groups: relation="myrel", variable1="arg", variable2="val"
+    s = "myrel(arg=val)"
+    pred = PredicateUtils.str_to_predicate(s)
+    assert pred == Predicate(variable1="arg", relation="myrel", variable2="val")
+
+
+# ---------------------------------------------------------------------------
+# rule_to_dict with FunctionalDependency (line 280)
+# ---------------------------------------------------------------------------
+
+
+def test_rule_to_dict_functional_dependency():
+    fd = FunctionalDependency(
+        table="Orders",
+        determinant=("OrderID",),
+        dependent="Amount",
+        correct=None,
+        compatible=None,
+    )
+    d = RuleIO.rule_to_dict(fd)
+    assert d["type"] == "FunctionalDependency"
+    assert d["table"] == "Orders"
+    assert d["dependent"] == "Amount"
+
+
+# ---------------------------------------------------------------------------
+# rule_to_dict with DenialConstraint (lines 281-288)
+# ---------------------------------------------------------------------------
+
+
+def test_rule_to_dict_denial_constraint():
+    cond = DCCondition(column_1="Salary", operator="<", value="50000", negation=False)
+    dc = DenialConstraint(table="Staff", conditions=(cond,), correct=True, compatible=True)
+    d = RuleIO.rule_to_dict(dc)
+    assert d["type"] == "DenialConstraint"
+    assert d["table"] == "Staff"
+    assert d["correct"] is True
+    assert d["compatible"] is True
+    assert d["conditions"] == ["Salary < 50000"]
+
+
+# ---------------------------------------------------------------------------
+# rule_to_dict raises ValueError for unknown type (line 310)
+# ---------------------------------------------------------------------------
+
+
+def test_rule_to_dict_unknown_type_raises():
+    unknown = MagicMock(spec=[])  # spec=[] means no attributes, isinstance() fails for all
+    with pytest.raises(ValueError, match="Unknown rule type"):
+        RuleIO.rule_to_dict(unknown)
+
+
+# ---------------------------------------------------------------------------
+# rule_from_dict with FunctionalDependency (lines 327-331)
+# ---------------------------------------------------------------------------
+
+
+def test_rule_from_dict_functional_dependency():
+    d = {
+        "type": "FunctionalDependency",
+        "table": "Employees",
+        "determinant": ("EmpID",),
+        "dependent": "EmpName",
+        "correct": True,
+        "compatible": None,
+    }
+    rule = RuleIO.rule_from_dict(d)
+    assert isinstance(rule, FunctionalDependency)
+    assert rule.table == "Employees"
+    assert rule.dependent == "EmpName"
+    assert rule.correct is True
+
+
+# ---------------------------------------------------------------------------
+# rule_from_dict HornRule missing body/head raises ValueError (line 337)
+# ---------------------------------------------------------------------------
+
+
+def test_rule_from_dict_horn_rule_missing_fields():
+    d = {"type": "HornRule", "display": "r"}
+    with pytest.raises(ValueError, match="Missing 'body' or 'head'"):
+        RuleIO.rule_from_dict(d)
+
+
+# ---------------------------------------------------------------------------
+# rule_from_dict TGDRule missing body/head raises ValueError (line 349)
+# ---------------------------------------------------------------------------
+
+
+def test_rule_from_dict_tgd_rule_missing_fields():
+    d = {"type": "TGDRule", "display": "r", "accuracy": 0.9, "confidence": 0.8}
+    with pytest.raises(ValueError, match="Missing 'body' or 'head'"):
+        RuleIO.rule_from_dict(d)
+
+
+# ---------------------------------------------------------------------------
+# save_yieled_rules_to_json on existing file (line 371: json.load succeeds)
+# ---------------------------------------------------------------------------
+
+
+def test_save_yieled_rules_to_json_appends_to_existing(tmp_path, sample_tgd_rule):
+    filepath = tmp_path / "rules.json"
+    # First call: file doesn't exist yet, except branch used
+    RuleIO.save_yieled_rules_to_json(sample_tgd_rule, filepath)
+    with open(filepath, "r") as f:
+        data = json.load(f)
+    assert len(data) == 1
+
+    # Second call: file exists with valid JSON → json.load succeeds (line 371)
+    RuleIO.save_yieled_rules_to_json(sample_tgd_rule, filepath)
+    with open(filepath, "r") as f:
+        data = json.load(f)
+    assert len(data) == 2
+    assert data[0] == RuleIO.rule_to_dict(sample_tgd_rule)
+    assert data[1] == RuleIO.rule_to_dict(sample_tgd_rule)
+
+
+# ---------------------------------------------------------------------------
+# save_rules_to_json (lines 381-387)
+# ---------------------------------------------------------------------------
+
+
+def test_save_rules_to_json(tmp_path, sample_tgd_rule, sample_horn_rule):
+    filepath = tmp_path / "all_rules.json"
+    rules = [sample_tgd_rule, sample_horn_rule]
+    count = RuleIO.save_rules_to_json(rules, filepath)
+    assert count == 2
+    with open(filepath, "r") as f:
+        data = json.load(f)
+    assert len(data) == 2
+    assert data[0]["type"] == "TGDRule"
+    assert data[1]["type"] == "HornRule"
+
+
+def test_save_rules_to_json_reraises_on_error():
+    # Pass a bad filepath to trigger an OSError which should be re-raised
+    bad_path = "/nonexistent_dir/rules.json"
+    pred = Predicate("x", "rel", "y")
+    tgd = TGDRule(body=(pred,), head=(pred,), display="r", accuracy=0.9, confidence=0.8)
+    with pytest.raises(Exception):
+        RuleIO.save_rules_to_json([tgd], bad_path)
+
+
+# ---------------------------------------------------------------------------
+# create_from_ilp_display - no body relations found (line 456)
+# ---------------------------------------------------------------------------
+
+
+def test_create_from_ilp_display_no_body_relations():
+    # The body part after ':-' has no 'word(...)' patterns
+    display = "rel1(x, y) :- just_text_no_parens."
+    # Should complete without error but emit a warning; body will be empty
+    tgd = TGDRuleFactory.create_from_ilp_display(display, accuracy=0.7)
+    assert isinstance(tgd, TGDRule)
+    assert tgd.body == ()
+
+
+# ---------------------------------------------------------------------------
+# create_from_ilp_display - after filtering head/body become empty (lines 466-468)
+# ---------------------------------------------------------------------------
+
+
+def test_create_from_ilp_display_after_filtering_both_empty():
+    # head: rel1(x, y)  body: rel2(z, w)
+    # All variables (x, y, z, w) appear exactly once across head+body predicates
+    # (variable1 is always "id" with count=4, but variable2 for x/y/z/w each=1)
+    # _filter_predicates keeps only predicates where BOTH variable1 AND variable2
+    # appear >= 2 times. variable2 counts: x=1, y=1, z=1, w=1 → all filtered out.
+    display = "rel1(x, y) :- rel2(z, w)."
+    tgd = TGDRuleFactory.create_from_ilp_display(display, accuracy=0.5)
+    assert isinstance(tgd, TGDRule)
+    assert tgd.head == ()
+    assert tgd.body == ()
+
+
+# ---------------------------------------------------------------------------
+# _get_head_body raises ValueError when no ':-' in display (line 480)
+# ---------------------------------------------------------------------------
+
+
+def test_get_head_body_raises_without_turnstile():
+    factory = TGDRuleFactory()
+    with pytest.raises(ValueError, match="Invalid rule display"):
+        factory._get_head_body("no_colon_here")
+
+
+# ---------------------------------------------------------------------------
+# _create_predicates_from_relation raises ValueError for invalid string (line 492)
+# ---------------------------------------------------------------------------
+
+
+def test_create_predicates_from_relation_raises_on_invalid():
+    factory = TGDRuleFactory()
+    with pytest.raises(ValueError, match="Invalid relation string"):
+        factory._create_predicates_from_relation("!!!invalid!!!")
