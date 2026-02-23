@@ -1,8 +1,10 @@
 # test_spider.py
 
-import pytest
-from unittest.mock import patch, MagicMock, mock_open
 from datetime import datetime
+from unittest.mock import MagicMock, mock_open, patch
+
+import pytest
+
 from algorithms.spider import Spider
 from utils.rules import InclusionDependency
 
@@ -35,7 +37,9 @@ def mock_path_join():
     """
     Fixture to mock os.path.join to behave as a simple string join with "/".
     """
-    with patch("algorithms.spider.os.path.join", side_effect=lambda *args: "/".join(args)) as mock_join:
+    with patch(
+        "algorithms.spider.os.path.join", side_effect=lambda *args: "/".join(args)
+    ) as mock_join:
         yield mock_join
 
 
@@ -57,7 +61,9 @@ def mock_run_cmd():
         yield mock_cmd
 
 
-def test_discover_rules_command_failure(spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime):
+def test_discover_rules_command_failure(
+    spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime
+):
     """
     Test that discover_rules returns an empty dictionary when the command fails.
     """
@@ -77,7 +83,7 @@ def test_discover_rules_command_failure(spider_instance, mock_run_cmd, mock_list
         "algorithms/bins/metanome/jars/SPIDER-1.2-SNAPSHOT.jar de.metanome.cli.App "
         "--algorithm de.metanome.algorithms.spider.SPIDERFile "
         "--files /path/to/csv/table1.csv /path/to/csv/table2.csv "
-        "--table-key INPUT_FILES --separator \",\" --output file:2023-01-01_12-00-00_SPIDER "
+        '--table-key INPUT_FILES --separator "," --output file:2023-01-01_12-00-00_SPIDER '
         "--header"
     )
 
@@ -88,7 +94,9 @@ def test_discover_rules_command_failure(spider_instance, mock_run_cmd, mock_list
         mock_open_file.assert_not_called()
 
 
-def test_discover_rules_success(spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime):
+def test_discover_rules_success(
+    spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime
+):
     """
     Test that discover_rules successfully parses rules when the command succeeds.
     """
@@ -102,9 +110,11 @@ def test_discover_rules_success(spider_instance, mock_run_cmd, mock_listdir, moc
         '"referenced": {"columnIdentifiers": [{"tableIdentifier": "table2.csv", "columnIdentifier": "col2"}]}}\n'
     )
 
-    with patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file, \
-            patch("algorithms.spider.os.path.exists") as mock_exists, \
-            patch("algorithms.spider.os.remove") as mock_remove:
+    with (
+        patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file,
+        patch("algorithms.spider.os.path.exists") as mock_exists,
+        patch("algorithms.spider.os.remove") as mock_remove,
+    ):
         # Mock os.path.exists to return True, indicating the result file exists
         mock_exists.return_value = True
 
@@ -116,7 +126,7 @@ def test_discover_rules_success(spider_instance, mock_run_cmd, mock_listdir, moc
             table_dependant="table1",
             columns_dependant=("col1",),
             table_referenced="table2",
-            columns_referenced=("col2",)
+            columns_referenced=("col2",),
         )
 
         # Assertions
@@ -130,7 +140,7 @@ def test_discover_rules_success(spider_instance, mock_run_cmd, mock_listdir, moc
             "algorithms/bins/metanome/jars/SPIDER-1.2-SNAPSHOT.jar de.metanome.cli.App "
             "--algorithm de.metanome.algorithms.spider.SPIDERFile "
             "--files /path/to/csv/table1.csv /path/to/csv/table2.csv "
-            "--table-key INPUT_FILES --separator \",\" --output file:2023-01-01_12-00-00_SPIDER "
+            '--table-key INPUT_FILES --separator "," --output file:2023-01-01_12-00-00_SPIDER '
             "--header"
         )
 
@@ -142,7 +152,9 @@ def test_discover_rules_success(spider_instance, mock_run_cmd, mock_listdir, moc
         mock_remove.assert_called_once_with("results/2023-01-01_12-00-00_SPIDER_inds")
 
 
-def test_discover_rules_no_csv_files(spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime):
+def test_discover_rules_no_csv_files(
+    spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime
+):
     """
     Test that discover_rules handles the case when there are no CSV files.
     """
@@ -153,9 +165,11 @@ def test_discover_rules_no_csv_files(spider_instance, mock_run_cmd, mock_listdir
     # Mock the contents of the result file (could be empty or have specific structure)
     mock_file_content = ""  # Assuming no rules are found
 
-    with patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file, \
-            patch("algorithms.spider.os.path.exists") as mock_exists, \
-            patch("algorithms.spider.os.remove") as mock_remove:
+    with (
+        patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file,
+        patch("algorithms.spider.os.path.exists") as mock_exists,
+        patch("algorithms.spider.os.remove") as mock_remove,
+    ):
         # Mock os.path.exists to return False, indicating no file to remove
         mock_exists.return_value = False
 
@@ -170,7 +184,7 @@ def test_discover_rules_no_csv_files(spider_instance, mock_run_cmd, mock_listdir
             "java -cp algorithms/bins/metanome/jars/metanome-cli-1.2-SNAPSHOT.jar:"
             "algorithms/bins/metanome/jars/SPIDER-1.2-SNAPSHOT.jar de.metanome.cli.App "
             "--algorithm de.metanome.algorithms.spider.SPIDERFile "
-            "--files  --table-key INPUT_FILES --separator \",\" "
+            '--files  --table-key INPUT_FILES --separator "," '
             "--output file:2023-01-01_12-00-00_SPIDER --header"
         )
 
@@ -182,8 +196,9 @@ def test_discover_rules_no_csv_files(spider_instance, mock_run_cmd, mock_listdir
         mock_remove.assert_not_called()
 
 
-def test_discover_rules_invalid_rule_format(spider_instance, mock_run_cmd, mock_listdir, mock_path_join,
-                                            fixed_datetime):
+def test_discover_rules_invalid_rule_format(
+    spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime
+):
     """
     Test that discover_rules handles invalid rule formats gracefully.
     """
@@ -194,10 +209,12 @@ def test_discover_rules_invalid_rule_format(spider_instance, mock_run_cmd, mock_
     # Mock the contents of the result file with invalid JSON
     mock_file_content = "invalid_json\n"
 
-    with patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file, \
-            patch("algorithms.spider.os.path.exists") as mock_exists, \
-            patch("algorithms.spider.os.remove") as mock_remove, \
-            patch("ast.literal_eval", side_effect=ValueError("Invalid format")):
+    with (
+        patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file,
+        patch("algorithms.spider.os.path.exists") as mock_exists,
+        patch("algorithms.spider.os.remove") as mock_remove,
+        patch("ast.literal_eval", side_effect=ValueError("Invalid format")),
+    ):
         # Mock os.path.exists to return True
         mock_exists.return_value = True
 
@@ -213,7 +230,7 @@ def test_discover_rules_invalid_rule_format(spider_instance, mock_run_cmd, mock_
             "algorithms/bins/metanome/jars/SPIDER-1.2-SNAPSHOT.jar de.metanome.cli.App "
             "--algorithm de.metanome.algorithms.spider.SPIDERFile "
             "--files /path/to/csv/table1.csv "
-            "--table-key INPUT_FILES --separator \",\" "
+            '--table-key INPUT_FILES --separator "," '
             "--output file:2023-01-01_12-00-00_SPIDER --header"
         )
 
@@ -225,7 +242,9 @@ def test_discover_rules_invalid_rule_format(spider_instance, mock_run_cmd, mock_
         mock_remove.assert_called_once_with("results/2023-01-01_12-00-00_SPIDER_inds")
 
 
-def test_discover_rules_multiple_rules(spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime):
+def test_discover_rules_multiple_rules(
+    spider_instance, mock_run_cmd, mock_listdir, mock_path_join, fixed_datetime
+):
     """
     Test that discover_rules correctly parses multiple rules from the result file.
     """
@@ -241,9 +260,11 @@ def test_discover_rules_multiple_rules(spider_instance, mock_run_cmd, mock_listd
         '"referenced": {"columnIdentifiers": [{"tableIdentifier": "table1.csv", "columnIdentifier": "col1"}]}}\n'
     )
 
-    with patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file, \
-            patch("algorithms.spider.os.path.exists") as mock_exists, \
-            patch("algorithms.spider.os.remove") as mock_remove:
+    with (
+        patch("builtins.open", mock_open(read_data=mock_file_content)) as mock_file,
+        patch("algorithms.spider.os.path.exists") as mock_exists,
+        patch("algorithms.spider.os.remove") as mock_remove,
+    ):
         # Mock os.path.exists to return True
         mock_exists.return_value = True
 
@@ -255,13 +276,13 @@ def test_discover_rules_multiple_rules(spider_instance, mock_run_cmd, mock_listd
             table_dependant="table1",
             columns_dependant=("col1",),
             table_referenced="table2",
-            columns_referenced=("col2",)
+            columns_referenced=("col2",),
         )
         expected_rule2 = InclusionDependency(
             table_dependant="table3",
             columns_dependant=("col3",),
             table_referenced="table1",
-            columns_referenced=("col1",)
+            columns_referenced=("col1",),
         )
 
         # Assertions
@@ -277,7 +298,7 @@ def test_discover_rules_multiple_rules(spider_instance, mock_run_cmd, mock_listd
             "algorithms/bins/metanome/jars/SPIDER-1.2-SNAPSHOT.jar de.metanome.cli.App "
             "--algorithm de.metanome.algorithms.spider.SPIDERFile "
             "--files /path/to/csv/table1.csv /path/to/csv/table2.csv /path/to/csv/table3.csv "
-            "--table-key INPUT_FILES --separator \",\" --output file:2023-01-01_12-00-00_SPIDER "
+            '--table-key INPUT_FILES --separator "," --output file:2023-01-01_12-00-00_SPIDER '
             "--header"
         )
 
@@ -287,3 +308,38 @@ def test_discover_rules_multiple_rules(spider_instance, mock_run_cmd, mock_listd
         mock_file.assert_called_with("results/2023-01-01_12-00-00_SPIDER_inds", mode="r")
         mock_exists.assert_called_once_with("results/2023-01-01_12-00-00_SPIDER_inds")
         mock_remove.assert_called_once_with("results/2023-01-01_12-00-00_SPIDER_inds")
+
+
+# ---------------------------------------------------------------------------
+# Tests targeting previously uncovered lines in spider.py
+# ---------------------------------------------------------------------------
+
+
+def test_discover_rules_result_file_not_found(spider_instance):
+    """Lines 69-71: open() raises FileNotFoundError → return empty rules."""
+    with (
+        patch("algorithms.spider.os.listdir", return_value=["t.csv"]),
+        patch("algorithms.spider.os.makedirs"),
+        patch("algorithms.spider.os.path.abspath", side_effect=lambda p: p),
+        patch("algorithms.spider.run_cmd", return_value=True),
+        patch("builtins.open", side_effect=FileNotFoundError("no such file")),
+    ):
+        rules = spider_instance.discover_rules()
+
+    assert rules == {}
+
+
+def test_discover_rules_malformed_rule_data(spider_instance):
+    """Lines 100-103: valid Python literal but missing expected keys → KeyError → continue."""
+    malformed_line = "{'unknown_key': 'value'}\n"
+    with (
+        patch("algorithms.spider.os.listdir", return_value=["t.csv"]),
+        patch("algorithms.spider.os.makedirs"),
+        patch("algorithms.spider.os.path.abspath", side_effect=lambda p: p),
+        patch("algorithms.spider.run_cmd", return_value=True),
+        patch("builtins.open", mock_open(read_data=malformed_line)),
+        patch("algorithms.spider.os.path.exists", return_value=False),
+    ):
+        rules = spider_instance.discover_rules()
+
+    assert rules == {}
