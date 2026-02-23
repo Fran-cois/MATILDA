@@ -1,8 +1,9 @@
-import os
 import csv
-import pytest
+import os
 from unittest.mock import MagicMock, patch
-from sqlalchemy import MetaData, Table, Column, Integer, String, select
+
+import pytest
+from sqlalchemy import Column, Integer, MetaData, String, Table
 
 from database.data_exporter import DataExporter
 
@@ -19,11 +20,12 @@ def mock_logger():
 def mock_metadata():
     """Creates a mock metadata object with a single table."""
     metadata = MetaData()
-    # Example table
-    test_table = Table(
-        'test_table', metadata,
-        Column('id', Integer, primary_key=True),
-        Column('name', String),
+    # Registering the table into metadata is the side-effect we need
+    Table(
+        "test_table",
+        metadata,
+        Column("id", Integer, primary_key=True),
+        Column("name", String),
     )
     return metadata
 
@@ -49,7 +51,7 @@ def data_exporter(tmp_path, mock_metadata, mock_engine, mock_logger):
         engine=mock_engine,
         metadata=mock_metadata,
         logger_query_time=logger_query_time,
-        logger_query_results=logger_query_results
+        logger_query_results=logger_query_results,
     )
 
 
@@ -67,7 +69,7 @@ def test_export_tables_to_csv_success(data_exporter, mock_engine):
 
     assert os.path.exists(csv_path), "CSV file was not created."
 
-    with open(csv_path, 'r', newline='') as f:
+    with open(csv_path, "r", newline="") as f:
         reader = csv.reader(f)
         lines = list(reader)
 
@@ -91,10 +93,7 @@ def test_export_tables_to_csv_error_on_query(data_exporter, mock_engine, mock_lo
 
 
 def test_export_triples_to_tsv(data_exporter):
-    triples = [
-        ("subject1", "predicate1", "object1"),
-        ("subject2", "predicate2", "object2")
-    ]
+    triples = [("subject1", "predicate1", "object1"), ("subject2", "predicate2", "object2")]
     data_exporter.export_triples_to_tsv(triples)
 
     tsv_dir = os.path.join(data_exporter.database_path, data_exporter.base_name, "tsv")
@@ -103,7 +102,7 @@ def test_export_triples_to_tsv(data_exporter):
     assert os.path.exists(tsv_path), "TSV file not created."
 
     with open(tsv_path, "r") as f:
-        lines = f.read().strip().split('\n')
+        lines = f.read().strip().split("\n")
 
     assert len(lines) == 2
     assert lines[0] == "subject1\tpredicate1\tobject1"
@@ -122,10 +121,7 @@ def test_export_triples_to_tsv_error(data_exporter, mock_logger):
 
 
 def test_export_triples_to_ttl(data_exporter):
-    triples = [
-        ("Subject 1", "hasName", '"Alice"'),
-        ("Subject 2", "hasFriend", "Bob")
-    ]
+    triples = [("Subject 1", "hasName", '"Alice"'), ("Subject 2", "hasFriend", "Bob")]
     data_exporter.export_triples_to_ttl(triples)
 
     ttl_dir = os.path.join(data_exporter.database_path, data_exporter.base_name, "ttl")
@@ -140,7 +136,7 @@ def test_export_triples_to_ttl(data_exporter):
     assert "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> ." in ttl_content
 
     # Check first triple line
-    assert "ex:Subject_1 ex:hasName \"Alice\" ." in ttl_content
+    assert 'ex:Subject_1 ex:hasName "Alice" .' in ttl_content
     # Check second triple line
     assert "ex:Subject_2 ex:hasFriend ex:Bob ." in ttl_content
 
@@ -154,6 +150,37 @@ def test_export_triples_to_ttl_error(data_exporter, mock_logger):
     logger_query_time.error.assert_any_call(
         f"Error writing TTL file '{os.path.join(data_exporter.database_path, data_exporter.base_name, 'ttl', f'{data_exporter.base_name}.ttl')}': File write error"
     )
+
+
+def test_export_tables_to_csv_table_none(tmp_path, mock_engine, mock_logger):
+    """Line 46: metadata.tables.get() returns None → continue."""
+    mock_meta = MagicMock()
+    mock_meta.tables.keys.return_value = ["phantom_table"]
+    mock_meta.tables.get.return_value = None
+    logger_query_time, logger_query_results = mock_logger
+    exporter = DataExporter(
+        db_path=str(tmp_path),
+        base_name="test_db",
+        engine=mock_engine,
+        metadata=mock_meta,
+        logger_query_time=logger_query_time,
+        logger_query_results=logger_query_results,
+    )
+    exporter.export_tables_to_csv()  # must not raise; phantom table is skipped
+
+
+def test_export_tables_to_csv_error_on_write(data_exporter, mock_engine, mock_logger):
+    """Lines 65-66: exception when writing CSV file is logged."""
+    rows = [(1, "Alice")]
+    mock_connection = mock_engine.connect.return_value.__enter__.return_value
+    mock_connection.execute.return_value.fetchall.return_value = rows
+
+    with patch("builtins.open", side_effect=OSError("disk full")):
+        data_exporter.export_tables_to_csv()
+
+    logger_query_time, _ = mock_logger
+    logger_query_time.error.assert_called_once()
+    assert "disk full" in logger_query_time.error.call_args[0][0]
 
 
 def test_sanitize_identifier():
