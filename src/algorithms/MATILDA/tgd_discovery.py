@@ -1,16 +1,18 @@
 import copy
+import json
+import logging
+import os
+import random
+import re
+import time
+from collections import Counter, defaultdict
 from collections.abc import Callable, Iterator
 from itertools import chain, combinations
 from statistics import mean
-import logging
-from collections import Counter, defaultdict
 
-from textwrap import indent
-from utils.rules import Rule
-import json
-import re
-from utils.rules import Predicate, TGDRule
 from tqdm import tqdm
+
+from algorithms.MATILDA.candidate_rule_chains import CandidateRuleChains
 from algorithms.MATILDA.constraint_graph import (
     Attribute,
     AttributeMapper,
@@ -18,27 +20,28 @@ from algorithms.MATILDA.constraint_graph import (
     IndexedAttribute,
     JoinableIndexedAttributes,
 )
-from algorithms.MATILDA.candidate_rule_chains import CandidateRuleChains
+from algorithms.MATILDA.graph_traversal import (
+    astar as astar_traversal,
+)
+from algorithms.MATILDA.graph_traversal import (
+    bfs as bfs_traversal,
+)
 from algorithms.MATILDA.graph_traversal import (
     dfs as dfs_traversal,
-    bfs as bfs_traversal,
-    astar as astar_traversal,
-    get_traversal_algorithm,
 )
 from database.alchemy_utility import AlchemyUtility
-import time
-import os
+from utils.rules import Predicate, TGDRule
 
 # from runs_utils.postprocessing.analytics.generate_overall_table import logger
 
 # Ensure logs directory exists
-os.makedirs('logs', exist_ok=True)
+os.makedirs("logs", exist_ok=True)
 
 logging.basicConfig(
-    filename='logs/tgd_computation.log',
+    filename="logs/tgd_computation.log",
     level=logging.INFO,
-    format='%(asctime)s - %(message)s',
-    filemode='w'
+    format="%(asctime)s - %(message)s",
+    filemode="w",
 )
 
 APPLY_DISJOINT = False
@@ -46,10 +49,6 @@ SPLIT_PRUNING_MEAN_THRESHOLD = 0
 TableOccurrence = tuple[int, int]
 CandidateRule = list[JoinableIndexedAttributes]
 
-import json
-import logging
-import time
-from tqdm import tqdm
 
 def init(
     db_inspector: AlchemyUtility,
@@ -101,7 +100,6 @@ def init(
 
             with open(f"{results_path}/compatibility_{base_name}.json", "w") as f:
                 json.dump(compatible_dict_to_export, f, indent=4)
-
 
         time_compute_compatible = time.time() - time_taken_init
 
@@ -160,12 +158,9 @@ def init(
 
         # Create a constraint graph
         cg = ConstraintGraph()
-        for i, jia in enumerate(
-            tqdm(jia_list, desc="Creating constraint graph", leave=False)
-        ):
+        for i, jia in enumerate(tqdm(jia_list, desc="Creating constraint graph", leave=False)):
             cg.add_node(jia)
             for jia2 in jia_list[i + 1 :]:
-
                 if jia != jia2 and jia.is_connected(jia2):
                     cg.add_node(jia2)
                     cg.add_edge(jia, jia2)
@@ -209,7 +204,7 @@ def dfs(
 ) -> Iterator[CandidateRule]:
     """
     Perform a Depth-First Search (DFS) traversal with a path-based heuristic.
-    
+
     This is a compatibility wrapper that delegates to the graph_traversal module.
     For new code, consider using graph_traversal.dfs directly or traverse_graph().
 
@@ -252,7 +247,7 @@ def bfs(
 ) -> Iterator[CandidateRule]:
     """
     Perform a Breadth-First Search (BFS) traversal.
-    
+
     BFS explores all neighbors at the current depth before moving deeper,
     finding shorter rules first.
 
@@ -292,7 +287,7 @@ def astar(
 ) -> Iterator[CandidateRule]:
     """
     Perform an A-star search traversal.
-    
+
     A-star uses a heuristic to prioritize more promising candidate rules,
     potentially finding high-quality rules faster.
 
@@ -330,12 +325,12 @@ def traverse_graph(
     mapper: AttributeMapper,
     max_table: int = 3,
     max_vars: int = 4,
-    algorithm: str = 'dfs',
+    algorithm: str = "dfs",
     heuristic_func: Callable[[CandidateRule, AttributeMapper, AlchemyUtility], float] = None,
 ) -> Iterator[CandidateRule]:
     """
     Generic graph traversal function that uses the specified algorithm.
-    
+
     :param graph: An instance of the ConstraintGraph class.
     :param start_node: The node from which to start traversal.
     :param pruning_prediction: A function that determines whether to continue exploring.
@@ -347,21 +342,35 @@ def traverse_graph(
     :param heuristic_func: Optional heuristic function for A-star.
     :yield: Candidate rules found during traversal.
     """
-    if algorithm.lower() in ['astar', 'a-star', 'a_star']:
+    if algorithm.lower() in ["astar", "a-star", "a_star"]:
         yield from astar(
-            graph, start_node, pruning_prediction, db_inspector, mapper,
-            max_table, max_vars, heuristic_func
+            graph,
+            start_node,
+            pruning_prediction,
+            db_inspector,
+            mapper,
+            max_table,
+            max_vars,
+            heuristic_func,
         )
-    elif algorithm.lower() == 'bfs':
+    elif algorithm.lower() == "bfs":
         yield from bfs(
-            graph, start_node, pruning_prediction, db_inspector, mapper,
-            max_table, max_vars
+            graph, start_node, pruning_prediction, db_inspector, mapper, max_table, max_vars
         )
     else:  # default to dfs
         yield from dfs(
-            graph, start_node, pruning_prediction, db_inspector, mapper,
-            None, None, max_table, max_vars
+            graph,
+            start_node,
+            pruning_prediction,
+            db_inspector,
+            mapper,
+            None,
+            None,
+            max_table,
+            max_vars,
         )
+
+
 def prediction(
     path: CandidateRule,
     mapper: AttributeMapper,
@@ -399,15 +408,17 @@ def prediction(
                 attr2.name,
             )
         )
-    #logging.info("join_conditions",join_conditions)
+    # logging.info("join_conditions",join_conditions)
     if threshold is not None:
-        return bool(db_inspector.check_threshold(
-            join_conditions,
-            count_over=x_chains,
-            flag="x_prediction",
-            disjoint_semantics=APPLY_DISJOINT,
-            threshold=threshold,
-        ))
+        return bool(
+            db_inspector.check_threshold(
+                join_conditions,
+                count_over=x_chains,
+                flag="x_prediction",
+                disjoint_semantics=APPLY_DISJOINT,
+                threshold=threshold,
+            )
+        )
     if x_chains is not None:
         return db_inspector.get_join_row_count(
             join_conditions,
@@ -448,11 +459,11 @@ def path_pruning(
 
 
 def split_pruning(
-        candidate_rule: CandidateRule,
-        body: set[TableOccurrence],
-        head: set[TableOccurrence],
-        db_inspector: AlchemyUtility,
-        mapper: AttributeMapper,
+    candidate_rule: CandidateRule,
+    body: set[TableOccurrence],
+    head: set[TableOccurrence],
+    db_inspector: AlchemyUtility,
+    mapper: AttributeMapper,
 ) -> bool:
     """
     This function checks if a given candidate rule should be pruned based on its support and confidence.
@@ -478,17 +489,15 @@ def split_pruning(
         if len(table_indexed[i]) > 1:
             if pairs_count[(i, table_indexed[i][0])] == 1:
                 return False, 0, 0
-            #return False, 0, 0
-
+            # return False, 0, 0
 
     # for each table indexed , if the number of element is greater than 1, we prune if there is two tables with the same
 
-
     # Filter out rules where the same table is repeated with the same variables
-    #body_tables={attr.i for attr in body}
+    # body_tables={attr.i for attr in body}
 
-    #body_tables=
-    #if len(body_tables) < len(body) or len(head_tables) < len(head):
+    # body_tables=
+    # if len(body_tables) < len(body) or len(head_tables) < len(head):
     #    return False, 0, 0
     total_tuple_test = prediction(candidate_rule, mapper, db_inspector, body, head, threshold=0)
     if total_tuple_test is False:
@@ -497,7 +506,9 @@ def split_pruning(
     total_tuples = prediction(candidate_rule, mapper, db_inspector, body, head)
 
     support = calculate_support(candidate_rule, body, head, db_inspector, mapper, total_tuples)
-    confidence = calculate_confidence(candidate_rule, body, head, db_inspector, mapper, total_tuples)
+    confidence = calculate_confidence(
+        candidate_rule, body, head, db_inspector, mapper, total_tuples
+    )
 
     if confidence == 0 and support == 0:
         return False, 0, 0
@@ -538,8 +549,8 @@ def attr(
     """
     cr_chains = CandidateRuleChains(candidate_rule).cr_chains
     cr_chains_table_occurrence = []
-    for chain in cr_chains:
-        for attribute in chain:
+    for attr_chain in cr_chains:
+        for attribute in attr_chain:
             if attribute.i == table_occurrence[0] and attribute.j == table_occurrence[1]:
                 cr_chains_table_occurrence.append(attribute)
         # if any(
@@ -549,11 +560,10 @@ def attr(
         #     cr_chains_table_occurrence.append(chain)
     return cr_chains_table_occurrence
 
+
 def split_candidate_rule(
     candidate_rule: CandidateRule,
-) -> set[
-    tuple[set[(int, int)], set[(int, int)]]
-]:  # where (int, int) is a table occurrence
+) -> set[tuple[set[(int, int)], set[(int, int)]]]:  # where (int, int) is a table occurrence
     """
     Split a path into a set of table occurrence pairs.
 
@@ -580,8 +590,8 @@ def split_candidate_rule(
             ):
                 condition_met = False
                 break
-            else:
-                condition_met = True
+        else:
+            condition_met = True
         if condition_met:
             valid_splits.add((frozenset(body), frozenset(head)))
     return valid_splits
@@ -645,14 +655,10 @@ def construct_tgd_string(
     # Considering the body and head to distinguish between variables in psi
     # and phi
     body_vars = set(
-        variable_assignment[attr]
-        for attr in variable_assignment
-        if (attr.i, attr.j) in body
+        variable_assignment[attr] for attr in variable_assignment if (attr.i, attr.j) in body
     )
     head_vars = set(
-        variable_assignment[attr]
-        for attr in variable_assignment
-        if (attr.i, attr.j) in head
+        variable_assignment[attr] for attr in variable_assignment if (attr.i, attr.j) in head
     )
     # Variables in psi but not in phi are universally quantified (for all)
     universal_vars = body_vars - (head_vars - body_vars)
@@ -754,13 +760,8 @@ def construct_predicates(
             ) not in attr_by_table_occurrence:
                 attr_by_table_occurrence[(indexed_attr.i, indexed_attr.j)] = []
             attr_str = f"{attr_name}={variable}"
-            if (
-                attr_str
-                not in attr_by_table_occurrence[(indexed_attr.i, indexed_attr.j)]
-            ):
-                attr_by_table_occurrence[(indexed_attr.i, indexed_attr.j)].append(
-                    attr_str
-                )
+            if attr_str not in attr_by_table_occurrence[(indexed_attr.i, indexed_attr.j)]:
+                attr_by_table_occurrence[(indexed_attr.i, indexed_attr.j)].append(attr_str)
     for (
         table_occurrence,
         attr_list,
@@ -803,8 +804,7 @@ def calculate_support(
         body, head, mapper, select_body=True
     )
 
-
-    #if total_tuples == 0:
+    # if total_tuples == 0:
     #    return 0
 
     support_condition: list[tuple[str, int, str, str, int, str]] = []
@@ -828,14 +828,14 @@ def calculate_support(
     # add other constraints for each respective chain in the cr_chains
     for jia in candidate_rule:
         for attr11 in jia:
-            for chain in cr_chains:
-                if attr11 in chain:
-                    for attr22 in chain:
+            for attr_chain in cr_chains:
+                if attr11 in attr_chain:
+                    for attr22 in attr_chain:
                         if (
-                                attr11 != attr22
-                                and attr22 not in jia
-                                and (attr11.i, attr11.j) in body
-                                and (attr22.i, attr22.j) in body
+                            attr11 != attr22
+                            and attr22 not in jia
+                            and (attr11.i, attr11.j) in body
+                            and (attr22.i, attr22.j) in body
                         ):
                             support_condition.append(
                                 (
@@ -849,20 +849,26 @@ def calculate_support(
                             )
     support_condition = list(set(support_condition))
     is_body_tuples_emtpy = db_inspector.check_threshold(
-        support_condition, count_over=x_chains, flag="support", disjoint_semantics=APPLY_DISJOINT, threshold=0
+        support_condition,
+        count_over=x_chains,
+        flag="support",
+        disjoint_semantics=APPLY_DISJOINT,
+        threshold=0,
     )
-    if not  bool(is_body_tuples_emtpy):
+    if not bool(is_body_tuples_emtpy):
         return 0
     total_tuples_satisfying_body = db_inspector.get_join_row_count(
         support_condition, count_over=x_chains, flag="support", disjoint_semantics=APPLY_DISJOINT
     )
-    if total_tuples_satisfying_body == 0 :
+    if total_tuples_satisfying_body == 0:
         return 0
     support = total_tuples / total_tuples_satisfying_body
-    
+
     # Debug logging
-    logging.info(f"SUPPORT CALCULATION: total_tuples={total_tuples}, total_tuples_satisfying_body={total_tuples_satisfying_body}, support={support}")
-    
+    logging.info(
+        f"SUPPORT CALCULATION: total_tuples={total_tuples}, total_tuples_satisfying_body={total_tuples_satisfying_body}, support={support}"
+    )
+
     return support
 
 
@@ -873,7 +879,6 @@ def calculate_confidence(
     db_inspector: AlchemyUtility,
     mapper: AttributeMapper,
     total_tuples: int = None,
-
 ) -> float:
     """
     Calculate the confidence of a candidate rule.
@@ -890,7 +895,7 @@ def calculate_confidence(
     )
     cr_chains = CandidateRuleChains(candidate_rule).cr_chains
 
-    #confidence_conditions: list[tuple[str, int, str, str, int, str]] = []
+    # confidence_conditions: list[tuple[str, int, str, str, int, str]] = []
     # add constraints in head
     head_conditions = []
     for jia in candidate_rule:
@@ -911,14 +916,14 @@ def calculate_confidence(
             )
     for jia in candidate_rule:
         for attr11 in jia:
-            for chain in cr_chains:
-                if attr11 in chain:
-                    for attr22 in chain:
+            for attr_chain in cr_chains:
+                if attr11 in attr_chain:
+                    for attr22 in attr_chain:
                         if (
-                                attr11 != attr22
-                                and attr22 not in jia
-                                and (attr11.i, attr11.j) in head
-                                and (attr22.i, attr22.j) in head
+                            attr11 != attr22
+                            and attr22 not in jia
+                            and (attr11.i, attr11.j) in head
+                            and (attr22.i, attr22.j) in head
                         ):
                             head_conditions.append(
                                 (
@@ -931,9 +936,13 @@ def calculate_confidence(
                                 )
                             )
     is_body_tuples_emtpy = db_inspector.check_threshold(
-        head_conditions, count_over=x_chains, flag="head", disjoint_semantics=APPLY_DISJOINT, threshold=0
+        head_conditions,
+        count_over=x_chains,
+        flag="head",
+        disjoint_semantics=APPLY_DISJOINT,
+        threshold=0,
     )
-    if not  bool(is_body_tuples_emtpy):
+    if not bool(is_body_tuples_emtpy):
         return 0
 
     total_tuples_satisfying_head = db_inspector.get_join_row_count(
@@ -942,11 +951,14 @@ def calculate_confidence(
     if total_tuples_satisfying_head == 0:
         return 0
     confidence = total_tuples / total_tuples_satisfying_head
-    
+
     # Debug logging
-    logging.info(f"CONFIDENCE CALCULATION: total_tuples={total_tuples}, total_tuples_satisfying_head={total_tuples_satisfying_head}, confidence={confidence}")
-    
+    logging.info(
+        f"CONFIDENCE CALCULATION: total_tuples={total_tuples}, total_tuples_satisfying_head={total_tuples_satisfying_head}, confidence={confidence}"
+    )
+
     return confidence
+
 
 def next_node_test(
     candidate_rule: CandidateRule,
@@ -1008,6 +1020,7 @@ def check_table_occurrences(
             return False
     return True
 
+
 def check_minimal_candidate_rule(
     candidate_rule: set[TableOccurrence], next_node: JoinableIndexedAttributes
 ) -> bool:
@@ -1031,8 +1044,8 @@ def check_minimal_candidate_rule(
     test_candidate_rule.append(next_node)
     cr_chains = CandidateRuleChains(test_candidate_rule).cr_chains
     min_candidate_rule = []
-    for chain in cr_chains:
-        for jia in build_minimal_chain(chain):
+    for attr_chain in cr_chains:
+        for jia in build_minimal_chain(attr_chain):
             min_candidate_rule.append(jia)
     if min_candidate_rule != test_candidate_rule:
         return False
@@ -1060,9 +1073,10 @@ def check_max_vars(
 ):
     return len(candidate_rule) + 1 <= max_vars
 
-def build_minimal_chain(chain: set[JoinableIndexedAttributes]):
+
+def build_minimal_chain(chain: list[JoinableIndexedAttributes]):
     """
-    :param chain: set of jia
+    :param chain: list of jia
     :return: the minimal associated chain
     """
     # 1. find minimal index attribute
@@ -1088,14 +1102,8 @@ def duplicate_test(tgds):
     if duplicate_rules > 0:
         raise ValueError(f"Duplicate rules found: {duplicate_rules}")
     return duplicate_rules
-from utils.rules import Rule
-import json
 
-import re
-from utils.rules import Predicate, TGDRule
 
-import re
-import random
 def str_to_predicate(relation_str):
     relation_pattern = r"\s*(\w+)\((.*?)\)\s*"
     relation_match = re.match(relation_pattern, relation_str)
@@ -1106,23 +1114,20 @@ def str_to_predicate(relation_str):
         random_int = str(random.randint(0, 10000))
         for assignment in assignments:
             var, idx = assignment.split("=")
-            relation_id = relation.split("_")[-1].lower()
             relation_sep = "___sep___"
             relation_name = "".join(relation.split("_")[:-1]).lower()
             relation_clean = f"{relation_name}{relation_sep}{var}".lower()
             relation_table = "_".join(relation.split("_")[:-1]).lower()
             variable = f"t{relation_table}{random_int}"
 
-            predicates.append(
-                Predicate(
-                    variable1=variable, relation=relation_clean, variable2=idx
-                )
-            )
+            predicates.append(Predicate(variable1=variable, relation=relation_clean, variable2=idx))
         return predicates
     else:
         print(f"No match for relation string: {relation_str}")
         return []
-def str_to_tgd(tgd_str,support, confidence):
+
+
+def str_to_tgd(tgd_str, support, confidence):
     # Regular expression pattern to match the TGD format
     pattern = r"∀ (.*): (.*?) ⇒ (∃.*:)?(.*?)$"
     match = re.match(pattern, tgd_str)
@@ -1143,7 +1148,9 @@ def str_to_tgd(tgd_str,support, confidence):
         # body = tuple(map(str_to_predicate, body_str.split(" ^ ")))
         # head = tuple(map(str_to_predicate, head_str.split(" ^ ")))
         # Create and return the TGDRule
-        return TGDRule(body=body, head=head,display=tgd_str,accuracy=support, confidence=confidence)
+        return TGDRule(
+            body=body, head=head, display=tgd_str, accuracy=support, confidence=confidence
+        )
 
     else:
         raise ValueError(f"Invalid TGD string format: {tgd_str}")

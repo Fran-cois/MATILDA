@@ -1,8 +1,9 @@
-import psutil
 import asyncio
-import time
 import logging
-from datetime import datetime
+import time
+
+import psutil
+
 
 class ResourceMonitor:
     """Monitors memory usage and timeout constraints."""
@@ -13,20 +14,25 @@ class ResourceMonitor:
         self.start_time = time.time()
         self.process = psutil.Process()
         self.logger = logging.getLogger()
+        self._stop = False
+
+    def stop(self):
+        """Signal the monitor loop to stop."""
+        self._stop = True
 
     async def monitor(self):
         """Continuously monitors memory and execution time."""
-        while True:
+        while not self._stop:
             elapsed_time = time.time() - self.start_time
             memory_usage = self.process.memory_info().rss
             for child in self.process.children(recursive=True):
                 memory_usage += child.memory_info().rss
 
-            memory_usage_gb = memory_usage / (1024 ** 3)
+            memory_usage_gb = memory_usage / (1024**3)
 
             self.logger.info(f"Total Memory Usage: {memory_usage_gb:.2f} GB")
 
-            if memory_usage_gb > (self.memory_threshold / (1024 ** 3)):
+            if memory_usage_gb > (self.memory_threshold / (1024**3)):
                 self.logger.error(f"Memory usage exceeded: {memory_usage_gb:.2f} GB")
                 raise MemoryError("Memory usage exceeded threshold.")
 

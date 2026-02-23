@@ -1,15 +1,16 @@
+import networkx as nx
+import numpy as np
+
 from database.alchemy_utility import AlchemyUtility
-# import networkx as nx
-# import numpy as np
 
 
 class Attribute:
     def __init__(
-            self,
-            table: str,
-            name: str,
-            is_key: bool = False,
-            domain: str = None,
+        self,
+        table: str,
+        name: str,
+        is_key: bool = False,
+        domain: str = None,
     ):
         """
         Initialize an Attribute with table and attribute name.
@@ -21,16 +22,15 @@ class Attribute:
         self.is_key = is_key
 
     def is_compatible(
-            self,
-            other_attribute: "Attribute",
-            threshold_jaccard=0.05,
-            threshold_overlap=3,  # Lowered from 10 for better sensitivity on small datasets
-            domain_overlap: bool = True,
-            value_overlap: bool = True,
-            user_defined_rules: dict[tuple[tuple[str, str, str, str], bool]] = None,
-            database_constraints: bool = True,
-            db_inspector: AlchemyUtility = None,
-
+        self,
+        other_attribute: "Attribute",
+        threshold_jaccard=0.05,
+        threshold_overlap=3,  # Lowered from 10 for better sensitivity on small datasets
+        domain_overlap: bool = True,
+        value_overlap: bool = True,
+        user_defined_rules: dict[tuple[tuple[str, str, str, str], bool]] = None,
+        database_constraints: bool = True,
+        db_inspector: AlchemyUtility = None,
     ):
         """
         Determine if two attributes are compatible. Use to generate a list of JoinableIndexedAttributes.
@@ -44,27 +44,34 @@ class Attribute:
         """
         if not isinstance(other_attribute, Attribute):
             return NotImplemented
-        
+
         # Check if attributes are foreign keys (bonus compatibility)
-        if db_inspector.are_foreign_keys(self.table, self.name, other_attribute.table, other_attribute.name):
+        if db_inspector.are_foreign_keys(
+            self.table, self.name, other_attribute.table, other_attribute.name
+        ):
             return True
-        
+
         # Check value overlap using threshold
-        cdt1 = self.has_common_elements_above_threshold(db_inspector, self.table, self.name,
-                                                        other_attribute.table,
-                                                        other_attribute.name, threshold_overlap)
+        cdt1 = self.has_common_elements_above_threshold(
+            db_inspector,
+            self.table,
+            self.name,
+            other_attribute.table,
+            other_attribute.name,
+            threshold_overlap,
+        )
         if cdt1:
             return True
-        
+
         # Domain overlap (assuming domain information is available)
         if (
-                domain_overlap
-                and self.domain
-                and other_attribute.domain
-                and self.domain != other_attribute.domain
+            domain_overlap
+            and self.domain
+            and other_attribute.domain
+            and self.domain != other_attribute.domain
         ):
             return False
-        
+
         # Value overlap (requires database query)
         if value_overlap:
             basic_numerical_data_types = [
@@ -77,18 +84,24 @@ class Attribute:
                 "FLOAT",
             ]
             if (
-                    self.domain in basic_numerical_data_types
-                    or other_attribute.domain in basic_numerical_data_types
+                self.domain in basic_numerical_data_types
+                or other_attribute.domain in basic_numerical_data_types
             ):
                 return False
-                
-            cdt1 = self.has_common_elements_above_threshold(db_inspector, self.table, self.name,
-                                                            other_attribute.table,
-                                                            other_attribute.name, threshold_overlap)
+
+            cdt1 = self.has_common_elements_above_threshold(
+                db_inspector,
+                self.table,
+                self.name,
+                other_attribute.table,
+                other_attribute.name,
+                threshold_overlap,
+            )
             if cdt1:
                 return True
-                
+
         return False
+
     # def get_compatible_dict_if_support(self,db_inspector:AlchemyUtility):
     #     # Dictionary to store the dataframes
     #     import os
@@ -145,9 +158,15 @@ class Attribute:
     #     # Check if the number of common elements is above the threshold
     #     return len(common_values)/len(union_values) > threshold
 
-    def has_common_elements_above_threshold_percentage(self, db_inspector: AlchemyUtility, table1: str, col1: str,
-                                                       table2: str,
-                                                       col2: str, threshold: int) -> bool:
+    def has_common_elements_above_threshold_percentage(
+        self,
+        db_inspector: AlchemyUtility,
+        table1: str,
+        col1: str,
+        table2: str,
+        col2: str,
+        threshold: int,
+    ) -> bool:
         # Fetch data directly from the database using db_inspector
         df1_values = db_inspector.get_attribute_values(table1, col1)
         df2_values = db_inspector.get_attribute_values(table2, col2)
@@ -160,12 +179,20 @@ class Attribute:
         # Find common elements and union of the sets
         common_values = set1.intersection(set2)
         union_values = set1.union(set2)
-        if union_values == 0: return False # union_values = 1  # Avoid division by zero
+        if not union_values:
+            return False
         # Check if the ratio of common elements to the union is above the threshold
         return len(common_values) / len(union_values) > threshold
 
-    def has_common_elements_above_threshold(self, db_inspector: AlchemyUtility, table1: str, col1: str, table2: str,
-                                            col2: str, threshold: int) -> bool:
+    def has_common_elements_above_threshold(
+        self,
+        db_inspector: AlchemyUtility,
+        table1: str,
+        col1: str,
+        table2: str,
+        col2: str,
+        threshold: int,
+    ) -> bool:
         # Fetch data directly from the database using db_inspector
         df1_values = db_inspector.get_attribute_values(table1, col1)
         df2_values = db_inspector.get_attribute_values(table2, col2)
@@ -287,9 +314,9 @@ class IndexedAttribute:
 
 class AttributeMapper:
     def __init__(
-            self,
-            table_name_to_index: dict[str, int],
-            attribute_name_to_index: dict[str, dict[str, int]],
+        self,
+        table_name_to_index: dict[str, int],
+        attribute_name_to_index: dict[str, dict[str, int]],
     ):
         """
         Initialize the mapper with dictionaries mapping table names to indices and attribute names to indices.
@@ -297,30 +324,22 @@ class AttributeMapper:
         self.table_name_to_index = table_name_to_index
         self.attribute_name_to_index = attribute_name_to_index
         # create reverse mappings
-        self.index_to_table_name: dict[int, str] = {
-            v: k for k, v in table_name_to_index.items()
-        }
+        self.index_to_table_name: dict[int, str] = {v: k for k, v in table_name_to_index.items()}
         self.index_to_attribute_name: dict[tuple[int, int], str] = {
             (table_name_to_index[table], v): k
             for table, attributes in attribute_name_to_index.items()
             for k, v in attributes.items()
         }
 
-    def indexed_attribute_to_attribute(
-            self, indexed_attribute: IndexedAttribute
-    ) -> Attribute:
+    def indexed_attribute_to_attribute(self, indexed_attribute: IndexedAttribute) -> Attribute:
         """
         Convert an IndexedAttribute to an Attribute.
         """
-        attribute = self.index_to_attribute_name[
-            (indexed_attribute.i, indexed_attribute.k)
-        ]
+        attribute = self.index_to_attribute_name[(indexed_attribute.i, indexed_attribute.k)]
         table = self.index_to_table_name[indexed_attribute.i]
         return Attribute(table, attribute)
 
-    def attribute_to_indexed(
-            self, attribute: Attribute, table_occurrence: int
-    ) -> IndexedAttribute:
+    def attribute_to_indexed(self, attribute: Attribute, table_occurrence: int) -> IndexedAttribute:
         """
         Convert an Attribute to an IndexedAttribute.
         """
@@ -333,9 +352,9 @@ class AttributeMapper:
 
 class JoinableIndexedAttributes:
     def __init__(
-            self,
-            attr1: IndexedAttribute,
-            attr2: IndexedAttribute,
+        self,
+        attr1: IndexedAttribute,
+        attr2: IndexedAttribute,
     ):
         self.pair = (attr1, attr2) if attr1 < attr2 else (attr2, attr1)
 
@@ -365,9 +384,6 @@ class JoinableIndexedAttributes:
     def __repr__(self) -> str:
         return f"JIA{self.pair}"
 
-    def __hash__(self) -> int:
-        return hash(self.pair)
-
     def is_connected(self, other: "JoinableIndexedAttributes") -> bool:
         if not isinstance(other, JoinableIndexedAttributes):
             return NotImplemented
@@ -375,10 +391,10 @@ class JoinableIndexedAttributes:
         attr1_other, attr2_other = other.pair
 
         return (
-                attr1.is_connected(attr1_other)
-                or attr1.is_connected(attr2_other)
-                or attr2.is_connected(attr1_other)
-                or attr2.is_connected(attr2_other)
+            attr1.is_connected(attr1_other)
+            or attr1.is_connected(attr2_other)
+            or attr2.is_connected(attr1_other)
+            or attr2.is_connected(attr2_other)
         )
 
     def __iter__(self):
@@ -402,14 +418,12 @@ class ConstraintGraph:
         ] = {}  # Dictionary mapping a node to its connected nodes
 
     @classmethod
-    def from_jia_list(
-            cls, jia_list: list[JoinableIndexedAttributes]
-    ) -> "ConstraintGraph":
+    def from_jia_list(cls, jia_list: list[JoinableIndexedAttributes]) -> "ConstraintGraph":
         instance = cls()
         for jia in jia_list:
             instance.add_node(jia)
             for i, jia in enumerate(jia_list):
-                for jia2 in jia_list[i + 1:]:
+                for jia2 in jia_list[i + 1 :]:
                     if jia != jia2 and jia.is_connected(jia2):
                         instance.add_node(jia2)
                         instance.add_edge(jia, jia2)
@@ -425,9 +439,9 @@ class ConstraintGraph:
         self.nodes.add(compatible_pair)
 
     def add_edge(
-            self,
-            source: JoinableIndexedAttributes,
-            target: JoinableIndexedAttributes,
+        self,
+        source: JoinableIndexedAttributes,
+        target: JoinableIndexedAttributes,
     ):
         """
         Add a directed edge from source to target if both nodes are in the graph
@@ -446,9 +460,9 @@ class ConstraintGraph:
             self.edges[source].add(target)
 
     def is_connected(
-            self,
-            source: JoinableIndexedAttributes,
-            target: JoinableIndexedAttributes,
+        self,
+        source: JoinableIndexedAttributes,
+        target: JoinableIndexedAttributes,
     ) -> bool:
         """
         Determine if two nodes are directly connected in the graph.
@@ -466,13 +480,10 @@ class ConstraintGraph:
         String representation of the ConstraintGraph.
         """
         edges_repr = [
-            f"{source} -> {target}"
-            for source, targets in self.edges.items()
-            for target in targets
+            f"{source} -> {target}" for source, targets in self.edges.items() for target in targets
         ]
-        return (
-                f"ConstraintGraph(Nodes: {len(self.nodes)}, Edges: {len(edges_repr)})\n"
-                + "\n".join(edges_repr)
+        return f"ConstraintGraph(Nodes: {len(self.nodes)}, Edges: {len(edges_repr)})\n" + "\n".join(
+            edges_repr
         )
 
     def neighbors(self, node):
@@ -510,58 +521,59 @@ class ConstraintGraph:
 
         # Diameter and Average Path Length
         if nx.is_connected(graph):
-            metrics['diameter'] = nx.diameter(graph)
-            metrics['average_path_length'] = nx.average_shortest_path_length(graph)
+            metrics["diameter"] = nx.diameter(graph)
+            metrics["average_path_length"] = nx.average_shortest_path_length(graph)
         else:
-            metrics['diameter'] = float('inf')  # Undefined for disconnected graphs
-            metrics['average_path_length'] = float('inf')  # Undefined for disconnected graphs
+            metrics["diameter"] = float("inf")  # Undefined for disconnected graphs
+            metrics["average_path_length"] = float("inf")  # Undefined for disconnected graphs
 
         # Clustering Coefficient
-        metrics['global_clustering_coefficient'] = nx.transitivity(graph)
-        metrics['average_clustering_coefficient'] = nx.average_clustering(graph)
+        metrics["global_clustering_coefficient"] = nx.transitivity(graph)
+        metrics["average_clustering_coefficient"] = nx.average_clustering(graph)
 
         # Connected Components
         components = list(nx.connected_components(graph))
-        metrics['number_of_connected_components'] = len(components)
-        metrics['size_of_largest_connected_component'] = len(max(components, key=len))
+        metrics["number_of_connected_components"] = len(components)
+        metrics["size_of_largest_connected_component"] = len(max(components, key=len))
 
         # Betweenness Centrality
         betweenness = nx.betweenness_centrality(graph)
-        metrics['average_betweenness_centrality'] = np.mean(list(betweenness.values()))
+        metrics["average_betweenness_centrality"] = np.mean(list(betweenness.values()))
 
         # Degree Distribution
         degrees = [degree for node, degree in graph.degree()]
-        metrics['degree_distribution'] = degrees
+        metrics["degree_distribution"] = degrees
 
         # Eigenvector Centrality
         eigenvector_centrality = nx.eigenvector_centrality(graph)
-        metrics['average_eigenvector_centrality'] = np.mean(list(eigenvector_centrality.values()))
+        metrics["average_eigenvector_centrality"] = np.mean(list(eigenvector_centrality.values()))
 
         # Assortativity
-        metrics['assortativity'] = nx.degree_assortativity_coefficient(graph)
+        metrics["assortativity"] = nx.degree_assortativity_coefficient(graph)
 
         # Graph Density
-        metrics['density'] = nx.density(graph)
+        metrics["density"] = nx.density(graph)
 
         # Spectral Properties
         laplacian = nx.laplacian_matrix(graph).todense()
         eigenvalues = np.linalg.eigvals(laplacian)
         eigenvalues.sort()
-        metrics['algebraic_connectivity'] = eigenvalues[1] if len(eigenvalues) > 1 else 0
+        metrics["algebraic_connectivity"] = eigenvalues[1] if len(eigenvalues) > 1 else 0
         adjacency_matrix = nx.adjacency_matrix(graph).todense()
         adjacency_eigenvalues = np.linalg.eigvals(adjacency_matrix)
         adjacency_eigenvalues.sort()
         # metrics['spectral_gap'] = adjacency_eigenvalues[-1] - adjacency_eigenvalues[-2] if len(
         # adjacency_eigenvalues) > 1 else 0
-        metrics['number_of_nodes'] = graph.number_of_nodes()
-        metrics['number_of_edges'] = graph.number_of_edges()
+        metrics["number_of_nodes"] = graph.number_of_nodes()
+        metrics["number_of_edges"] = graph.number_of_edges()
 
         # Modularity (requires community detection)
         try:
             from community import community_louvain
+
             partition = community_louvain.best_partition(graph)
-            metrics['modularity'] = community_louvain.modularity(partition, graph)
+            metrics["modularity"] = community_louvain.modularity(partition, graph)
         except ImportError:
-            metrics['modularity'] = 'community-louvain not installed'
+            metrics["modularity"] = "community-louvain not installed"
 
         return metrics

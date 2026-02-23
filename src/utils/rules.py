@@ -1,9 +1,9 @@
 import json
-from dataclasses import asdict, dataclass
-from typing import Dict, List, NamedTuple, Tuple, Union, Optional
-import re
 import logging
+import re
 from collections import Counter
+from dataclasses import asdict, dataclass
+from typing import Dict, List, NamedTuple, Optional, Tuple, Union
 
 
 @dataclass(frozen=True)
@@ -19,7 +19,7 @@ class InclusionDependency:
     confidence: Optional[float] = None
 
     def export_to_json(self, filepath: str):
-        with open(filepath, 'a+') as f:
+        with open(filepath, "a+") as f:
             json.dump(asdict(self), f, indent=4)
 
 
@@ -62,7 +62,7 @@ class DenialConstraint:
                     "table": self.table,
                     "conditions": [asdict(cond) for cond in self.conditions],
                     "correct": self.correct,
-                    "compatible": self.compatible
+                    "compatible": self.compatible,
                 },
                 f,
                 indent=4,
@@ -84,14 +84,18 @@ class HornRule:
     compatible: Optional[bool] = None
 
     def export_to_json(self, filepath: str):
-        with open(filepath, 'a+') as f:
-            json.dump({
-                "body": [str(pred) for pred in self.body],
-                "head": str(self.head),
-                "display": self.display,
-                "correct": self.correct,
-                "compatible": self.compatible
-            }, f, indent=4)
+        with open(filepath, "a+") as f:
+            json.dump(
+                {
+                    "body": [str(pred) for pred in self.body],
+                    "head": str(self.head),
+                    "display": self.display,
+                    "correct": self.correct,
+                    "compatible": self.compatible,
+                },
+                f,
+                indent=4,
+            )
 
     def __eq__(self, other):
         list1 = list(self.body + (self.head,))
@@ -115,16 +119,20 @@ class TGDRule:
     compatible: Optional[bool] = None
 
     def export_to_json(self, filepath: str):
-        with open(filepath, 'w') as f:
-            json.dump({
-                "body": [str(pred) for pred in self.body],
-                "head": [str(pred) for pred in self.head],
-                "display": self.display,
-                "accuracy": self.accuracy,
-                "confidence": self.confidence,
-                "correct": self.correct,
-                "compatible": self.compatible
-            }, f, indent=4)
+        with open(filepath, "w") as f:
+            json.dump(
+                {
+                    "body": [str(pred) for pred in self.body],
+                    "head": [str(pred) for pred in self.head],
+                    "display": self.display,
+                    "accuracy": self.accuracy,
+                    "confidence": self.confidence,
+                    "correct": self.correct,
+                    "compatible": self.compatible,
+                },
+                f,
+                indent=4,
+            )
 
     def __eq__(self, other):
         list1 = list(self.body + self.head)
@@ -152,9 +160,7 @@ class TGDRule:
         return self_length < other_length
 
 
-Rule = Union[
-    InclusionDependency, FunctionalDependency, DenialConstraint, HornRule, TGDRule
-]
+Rule = Union[InclusionDependency, FunctionalDependency, DenialConstraint, HornRule, TGDRule]
 
 
 class PredicateUtils:
@@ -162,7 +168,7 @@ class PredicateUtils:
     def sort_and_rename_variables(lst: List[Predicate], skip: int = 0) -> List[Predicate]:
         try:
             lst.sort(key=lambda x: x.relation)
-        except Exception as e:
+        except Exception:
             return lst
 
         variable_mapping = {}
@@ -241,14 +247,11 @@ class PredicateUtils:
         return False
 
     @staticmethod
-    @staticmethod
     def str_to_predicate(s: str) -> Predicate:
         s = s.strip()
 
         # 1. Try the old format: Predicate(variable1='x', relation='relates_to', variable2='y')
-        match = re.match(
-            r"Predicate\(variable1='(.*?)', relation='(.*?)', variable2='(.*?)'\)", s
-        )
+        match = re.match(r"Predicate\(variable1='(.*?)', relation='(.*?)', variable2='(.*?)'\)", s)
         if match:
             variable1, relation, variable2 = match.groups()
             return Predicate(variable1, relation, variable2)
@@ -267,6 +270,7 @@ class PredicateUtils:
 
         raise ValueError(f"Invalid Predicate string: {s}")
 
+
 class RuleIO:
     @staticmethod
     def rule_to_dict(rule: Rule) -> Dict:
@@ -280,7 +284,7 @@ class RuleIO:
                 "table": rule.table,
                 "conditions": [str(cond) for cond in rule.conditions],
                 "correct": rule.correct,
-                "compatible": rule.compatible
+                "compatible": rule.compatible,
             }
         elif isinstance(rule, HornRule):
             return {
@@ -289,7 +293,7 @@ class RuleIO:
                 "head": str(rule.head),
                 "display": rule.display,
                 "correct": rule.correct,
-                "compatible": rule.compatible
+                "compatible": rule.compatible,
             }
         elif isinstance(rule, TGDRule):
             return {
@@ -300,7 +304,7 @@ class RuleIO:
                 "accuracy": rule.accuracy,
                 "confidence": rule.confidence,
                 "correct": rule.correct,
-                "compatible": rule.compatible
+                "compatible": rule.compatible,
             }
         else:
             raise ValueError("Unknown rule type")
@@ -318,7 +322,7 @@ class RuleIO:
                     columns_referenced=tuple(d["columns_referenced"]),
                     display=d.get("display"),  # Added this line
                     correct=d.get("correct"),
-                    compatible=d.get("compatible")
+                    compatible=d.get("compatible"),
                 )
             elif rule_type == "FunctionalDependency":
                 # Create a copy of the dictionary and remove the 'type' key
@@ -338,7 +342,7 @@ class RuleIO:
                     head=head,
                     display=d.get("display"),
                     correct=d.get("correct"),
-                    compatible=d.get("compatible")
+                    compatible=d.get("compatible"),
                 )
             elif rule_type == "TGDRule":
                 if "body" not in d or "head" not in d:
@@ -352,7 +356,7 @@ class RuleIO:
                     accuracy=d.get("accuracy", 0.0),
                     confidence=d.get("confidence", 0.0),
                     correct=d.get("correct"),
-                    compatible=d.get("compatible")
+                    compatible=d.get("compatible"),
                 )
             else:
                 raise ValueError(f"Unknown rule type: {rule_type}")
@@ -432,11 +436,7 @@ class TGDRuleFactory:
 
             # Create and return the TGDRule object
             return TGDRule(
-                body=body,
-                head=head,
-                display=tgd_str,
-                accuracy=support,
-                confidence=confidence
+                body=body, head=head, display=tgd_str, accuracy=support, confidence=confidence
             )
         else:
             raise ValueError(f"Invalid TGD string format: {tgd_str}")
@@ -472,7 +472,7 @@ class TGDRuleFactory:
             head=tuple(head_predicates),
             display=display,
             accuracy=accuracy,
-            confidence=-1
+            confidence=-1,
         )
 
     def _get_head_body(self, disp: str) -> Tuple[str, str]:
@@ -481,7 +481,7 @@ class TGDRuleFactory:
         head_str, body_str = disp.split(":-")
         head_str = head_str.strip()
         body_str = body_str.strip()
-        if body_str.endswith('.'):
+        if body_str.endswith("."):
             body_str = body_str[:-1].strip()
         return head_str, body_str
 
@@ -500,12 +500,14 @@ class TGDRuleFactory:
                 Predicate(
                     variable1="id",
                     relation=relation + sep_relation_variable + column,
-                    variable2=variable
+                    variable2=variable,
                 )
             )
         return predicates
 
-    def _filter_predicates(self, preds: List[Predicate], other_preds: List[Predicate]) -> List[Predicate]:
+    def _filter_predicates(
+        self, preds: List[Predicate], other_preds: List[Predicate]
+    ) -> List[Predicate]:
         variable_counts = Counter()
 
         for predicate in preds:
@@ -516,7 +518,9 @@ class TGDRuleFactory:
             variable_counts[predicate.variable2] += 1
 
         filtered = [
-            predicate for predicate in preds
-            if variable_counts[predicate.variable1] >= 2 and variable_counts[predicate.variable2] >= 2
+            predicate
+            for predicate in preds
+            if variable_counts[predicate.variable1] >= 2
+            and variable_counts[predicate.variable2] >= 2
         ]
         return filtered
