@@ -1,39 +1,28 @@
-import csv
-import hashlib
 import logging
 import os
-import time
-from typing import Any, Dict, List, Tuple
 import sys
+from typing import Any, Dict, List, Tuple
+
 sys.path.append("../../")
 sys.path.append("../")
 
+import colorama
 import psutil
-from sqlalchemy import (
-    MetaData,
-    alias,
-    and_,
-    create_engine,
-    func,
-    select,
-    text
-)
+from colorama import Fore, Style
+from sqlalchemy import select, text
 from sqlalchemy.engine.url import make_url
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
-from tqdm import tqdm
 
-from src.utils.log_setup import setup_loggers
-from src.database.database_connection_manager import DatabaseConnectionManager
-from src.database.index_manager import IndexManager
-from src.database.data_exporter import DataExporter
-from src.database.triple_converter import TripleConverter
-from src.database.query_utility import QueryUtility
-import colorama   # Added colorama
+from database.data_exporter import DataExporter
+from database.database_connection_manager import DatabaseConnectionManager
+from database.index_manager import IndexManager
+from database.query_utility import QueryUtility
+from database.triple_converter import TripleConverter
+from utils.log_setup import setup_loggers
+
 colorama.init(autoreset=True)
 
-import logging
-from colorama import Fore, Style
 
 class ColorFormatter(logging.Formatter):
     COLOR_MAP = {
@@ -48,7 +37,6 @@ class ColorFormatter(logging.Formatter):
         color = self.COLOR_MAP.get(record.levelno, Fore.WHITE)
         record.msg = f"{color}{record.msg}{Style.RESET_ALL}"
         return super().format(record)
-
 
 
 class AlchemyUtility:
@@ -73,7 +61,7 @@ class AlchemyUtility:
         setup_loggers()
         self.logger_query_time = logging.getLogger("query_time")
         self.logger_query_results = logging.getLogger("query_results")
-        
+
         self._setup_logging_handlers()  # Configure log handlers
 
         self.db_url = db_url
@@ -81,7 +69,7 @@ class AlchemyUtility:
 
         # Parse db_url to get base_name
         url = make_url(db_url)
-        if (url.drivername == "sqlite"):
+        if url.drivername == "sqlite":
             self.base_name = os.path.splitext(os.path.basename(url.database))[0]
         else:
             self.base_name = str(url).split("//")[-1].split(":")[0]
@@ -94,24 +82,24 @@ class AlchemyUtility:
             engine=self.db_manager.engine,
             metadata=self.db_manager.metadata,
             logger_query_time=self.logger_query_time,
-            logger_query_results=self.logger_query_results
+            logger_query_results=self.logger_query_results,
         )
         self.triple_converter = TripleConverter(
             engine=self.db_manager.engine,
             metadata=self.db_manager.metadata,
-            logger=self.logger_query_time
+            logger=self.logger_query_time,
         )
         self.query_utility = QueryUtility(
             engine=self.db_manager.engine,
             metadata=self.db_manager.metadata,
             logger_query_time=self.logger_query_time,
-            logger_query_results=self.logger_query_results
+            logger_query_results=self.logger_query_results,
         )
 
         # Export CSV
         if create_csv:
             self.data_exporter.export_tables_to_csv()
-            self.base_csv_dir = os.path.join(self.database_path, self.base_name,"csv")
+            self.base_csv_dir = os.path.join(self.database_path, self.base_name, "csv")
         # Create indexes if SQLite
         if url.drivername == "sqlite":
             self._setup_sqlite(create_index)
@@ -120,12 +108,13 @@ class AlchemyUtility:
         if create_tsv:
             triples = self.triple_converter.convert_to_triples()
             self.data_exporter.export_triples_to_tsv(triples)
-            self.database_path_tsv = os.path.join(self.database_path,self.base_name, "tsv")
+            self.database_path_tsv = os.path.join(self.database_path, self.base_name, "tsv")
         # Load data if needed
         if get_data:
             self.tables_data = self._extract_table_data()
+
     def _setup_logging_handlers(self):
-        formatter = ColorFormatter('%(asctime)s - %(levelname)s - %(message)s')
+        formatter = ColorFormatter("%(asctime)s - %(levelname)s - %(message)s")
 
         # Formatter for logger_query_time
         handler_time = logging.StreamHandler()
@@ -138,6 +127,7 @@ class AlchemyUtility:
         handler_results.setFormatter(formatter)
         self.logger_query_results.addHandler(handler_results)
         self.logger_query_results.setLevel(logging.DEBUG)
+
     def _setup_sqlite(self, create_index: bool):
         """Configure SQLite PRAGMAs and optionally create indexes."""
         self.db_manager.conn.execute(text("PRAGMA temp_store = MEMORY;"))
@@ -189,9 +179,11 @@ class AlchemyUtility:
         except Exception as e:
             self.logger_query_time.error(f"Error executing select query on '{table_name}': {e}")
             return []
+
     def create_composed_indexes(self, cols_list: List[Tuple[str, str, str, str]]):
         """Create composed indexes for tuples of columns."""
         self.index_manager.create_composed_indexes(cols_list)
+
     def check_threshold(
         self,
         join_conditions: List[Tuple[str, int, str, str, int, str]],
@@ -199,54 +191,68 @@ class AlchemyUtility:
         distinct: bool = False,
         count_over: List[List[Tuple[str, int, str]]] = None,
         threshold: int = 1,
-        flag: str="",
+        flag: str = "",
     ) -> int:
         return self.query_utility.check_threshold(
-            join_conditions, disjoint_semantics, distinct, count_over, threshold,flag
+            join_conditions, disjoint_semantics, distinct, count_over, threshold, flag
         )
-    def get_join_row_count(self,
+
+    def get_join_row_count(
+        self,
         join_conditions: List[Tuple[str, int, str, str, int, str]],
         disjoint_semantics: bool = False,
         distinct: bool = False,
         count_over: List[List[Tuple[str, int, str]]] = None,
-       flag: str=""
+        flag: str = "",
     ) -> int:
-        return self.query_utility.get_join_row_count(join_conditions,disjoint_semantics,distinct,count_over)
+        return self.query_utility.get_join_row_count(
+            join_conditions, disjoint_semantics, distinct, count_over
+        )
+
     def get_table_names(self) -> List[str]:
         return self.query_utility._get_table_names()
+
     def get_attribute_names(self, table_name: str) -> List[str]:
         return self.query_utility._get_attribute_names(table_name)
+
     def get_attribute_domain(self, table_name: str, attribute_name: str) -> str:
         return self.query_utility._get_attribute_domain(table_name, attribute_name)
+
     def get_attribute_is_key(self, table_name: str, attribute_name: str) -> bool:
         return self.query_utility._get_attribute_is_key(table_name, attribute_name)
+
     def get_attribute_values(self, table_name: str, attribute_name: str) -> List:
         """
         Get all values for a specific attribute in a table.
-        
+
         :param table_name: The name of the table.
         :param attribute_name: The name of the attribute/column.
         :return: List of values for the attribute.
         """
         from sqlalchemy import select
-        
+
         table = self.query_utility.metadata.tables.get(table_name)
         if table is None:
             return []
-        
+
         column = table.columns.get(attribute_name)
         if column is None:
             return []
-        
+
         query = select(column)
         try:
             with self.db_manager.engine.connect() as conn:
                 result = conn.execute(query)
                 return [row[0] for row in result.fetchall()]
         except Exception as e:
-            self.logger_query_time.error(f"Error fetching values for {table_name}.{attribute_name}: {e}")
+            self.logger_query_time.error(
+                f"Error fetching values for {table_name}.{attribute_name}: {e}"
+            )
             return []
-    def are_foreign_keys(self, table: str, column: str, other_table: str, other_column: str) -> bool:
+
+    def are_foreign_keys(
+        self, table: str, column: str, other_table: str, other_column: str
+    ) -> bool:
         """
         Check if the specified column in a table is a foreign key referencing another table and column.
 
@@ -265,10 +271,13 @@ class AlchemyUtility:
                     return True
                 else:
                     # Only log at DEBUG level - this is expected behavior when checking all column combinations
-                    self.logger_query_time.debug(f"FK mismatch for table '{table}': '{column}' references '{referenced_table}.{referenced_column}' instead of '{other_table}.{other_column}'.")
+                    self.logger_query_time.debug(
+                        f"FK mismatch for table '{table}': '{column}' references '{referenced_table}.{referenced_column}' instead of '{other_table}.{other_column}'."
+                    )
                     return False
         # Column is not a foreign key - this is normal, return False without logging error
         return False
+
     def close(self):
         """Close database connection."""
         self.db_manager.close()
@@ -281,7 +290,9 @@ class AlchemyUtility:
 
     async def __aenter__(self):
         self.async_engine = create_async_engine(self.db_url)
-        self.async_session = sessionmaker(bind=self.async_engine, class_=AsyncSession, expire_on_commit=False)()
+        self.async_session = sessionmaker(
+            bind=self.async_engine, class_=AsyncSession, expire_on_commit=False
+        )()
         return self
 
     async def __aexit__(self, exc_type, exc_value, traceback):

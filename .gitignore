@@ -67,3 +67,5 @@ temp/
 
 # uv
 .venv/
+htmlcov/
+.coverage
