@@ -3,19 +3,16 @@
 Test rapide pour vérifier que le fix des None values fonctionne
 """
 
-import json
-from pathlib import Path
-
 # Simuler les données problématiques
 print("🧪 Test du fix des valeurs None dans les métriques de temps")
 print("=" * 60)
 
 # Cas 1: Toutes les valeurs sont None
 print("\n1️⃣  Test avec toutes valeurs None:")
-time_data = {'compatibility_graph': None, 'index': None, 'cg_construction': None}
-time_compat = time_data.get('compatibility_graph', 0) or 0
-time_index = time_data.get('index', 0) or 0
-time_cg = time_data.get('cg_construction', 0) or 0
+time_data = {"compatibility_graph": None, "index": None, "cg_construction": None}
+time_compat = time_data.get("compatibility_graph", 0) or 0
+time_index = time_data.get("index", 0) or 0
+time_cg = time_data.get("cg_construction", 0) or 0
 time_total = time_compat + time_index + time_cg
 print(f"   time_compat: {time_compat}, time_index: {time_index}, time_cg: {time_cg}")
 print(f"   time_total: {time_total}")
@@ -24,10 +21,10 @@ print("   ✅ Passed")
 
 # Cas 2: Certaines valeurs sont None
 print("\n2️⃣  Test avec certaines valeurs None:")
-time_data = {'compatibility_graph': 1.5, 'index': None, 'cg_construction': 2.3}
-time_compat = time_data.get('compatibility_graph', 0) or 0
-time_index = time_data.get('index', 0) or 0
-time_cg = time_data.get('cg_construction', 0) or 0
+time_data = {"compatibility_graph": 1.5, "index": None, "cg_construction": 2.3}
+time_compat = time_data.get("compatibility_graph", 0) or 0
+time_index = time_data.get("index", 0) or 0
+time_cg = time_data.get("cg_construction", 0) or 0
 time_total = time_compat + time_index + time_cg
 print(f"   time_compat: {time_compat}, time_index: {time_index}, time_cg: {time_cg}")
 print(f"   time_total: {time_total}")
@@ -36,10 +33,10 @@ print("   ✅ Passed")
 
 # Cas 3: Toutes les valeurs sont présentes
 print("\n3️⃣  Test avec toutes valeurs présentes:")
-time_data = {'compatibility_graph': 1.0, 'index': 2.0, 'cg_construction': 3.0}
-time_compat = time_data.get('compatibility_graph', 0) or 0
-time_index = time_data.get('index', 0) or 0
-time_cg = time_data.get('cg_construction', 0) or 0
+time_data = {"compatibility_graph": 1.0, "index": 2.0, "cg_construction": 3.0}
+time_compat = time_data.get("compatibility_graph", 0) or 0
+time_index = time_data.get("index", 0) or 0
+time_cg = time_data.get("cg_construction", 0) or 0
 time_total = time_compat + time_index + time_cg
 print(f"   time_compat: {time_compat}, time_index: {time_index}, time_cg: {time_cg}")
 print(f"   time_total: {time_total}")
@@ -48,10 +45,10 @@ print("   ✅ Passed")
 
 # Cas 4: Clés manquantes dans le dict
 print("\n4️⃣  Test avec clés manquantes:")
-time_data = {'compatibility_graph': 1.0}
-time_compat = time_data.get('compatibility_graph', 0) or 0
-time_index = time_data.get('index', 0) or 0
-time_cg = time_data.get('cg_construction', 0) or 0
+time_data = {"compatibility_graph": 1.0}
+time_compat = time_data.get("compatibility_graph", 0) or 0
+time_index = time_data.get("index", 0) or 0
+time_cg = time_data.get("cg_construction", 0) or 0
 time_total = time_compat + time_index + time_cg
 print(f"   time_compat: {time_compat}, time_index: {time_index}, time_cg: {time_cg}")
 print(f"   time_total: {time_total}")
@@ -60,10 +57,10 @@ print("   ✅ Passed")
 
 # Cas 5: Valeur 0 (ne doit pas être convertie en 0 par 'or')
 print("\n5️⃣  Test avec valeur 0 (edge case):")
-time_data = {'compatibility_graph': 0, 'index': 5, 'cg_construction': 0}
-time_compat = time_data.get('compatibility_graph', 0) or 0
-time_index = time_data.get('index', 0) or 0
-time_cg = time_data.get('cg_construction', 0) or 0
+time_data = {"compatibility_graph": 0, "index": 5, "cg_construction": 0}
+time_compat = time_data.get("compatibility_graph", 0) or 0
+time_index = time_data.get("index", 0) or 0
+time_cg = time_data.get("cg_construction", 0) or 0
 time_total = time_compat + time_index + time_cg
 print(f"   time_compat: {time_compat}, time_index: {time_index}, time_cg: {time_cg}")
 print(f"   time_total: {time_total}")

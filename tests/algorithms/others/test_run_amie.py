@@ -1,6 +1,6 @@
+import logging
 import os
 import re
-import logging
 from datetime import datetime
 
 from algorithms.rule_discovery_algorithm import RuleDiscoveryAlgorithm
@@ -10,6 +10,7 @@ from utils.run_cmd import run_cmd
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
 
 class Amie3(RuleDiscoveryAlgorithm):
     def discover_rules(self, **kwargs) -> list:
@@ -110,7 +111,7 @@ class Amie3(RuleDiscoveryAlgorithm):
                 head=head_predicates,
                 display=line,
                 accuracy=-1,  # Placeholder, update as needed
-                confidence=confidence
+                confidence=confidence,
             )
             rules.append(horn_rule)
 

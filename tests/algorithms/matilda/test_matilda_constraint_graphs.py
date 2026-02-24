@@ -1,20 +1,19 @@
 # test_constraint_graph.py
 
-import pytest
 from unittest.mock import MagicMock, patch
+
+import pytest
+
 from algorithms.MATILDA.constraint_graph import (
     Attribute,
-    IndexedAttribute,
     AttributeMapper,
-    JoinableIndexedAttributes,
     ConstraintGraph,
+    IndexedAttribute,
+    JoinableIndexedAttributes,
 )
-import networkx as nx
-import numpy as np
-import pandas as pd
-
 
 # Fixtures for reusable components
+
 
 @pytest.fixture
 def mock_db_inspector():
@@ -55,8 +54,8 @@ def mapper(table_name_to_index, attribute_name_to_index):
 
 # Tests for Attribute
 
-class TestAttribute:
 
+class TestAttribute:
     def test_initialization(self, sample_attributes):
         """Test the initialization of Attribute instances."""
         attribute1, attribute2, attribute3 = sample_attributes
@@ -72,19 +71,21 @@ class TestAttribute:
         attribute3.table = "users"
         assert attribute1.is_compatible(attribute3, db_inspector=mock_db_inspector)
 
-    def test_is_compatible_different_tables_with_common_elements(self, sample_attributes, mock_db_inspector):
+    def test_is_compatible_different_tables_with_common_elements(
+        self, sample_attributes, mock_db_inspector
+    ):
         """Attributes from different tables with common elements above threshold are compatible."""
         attribute1, attribute2, attribute3 = sample_attributes
         # Setup the mock to return common elements above threshold
         mock_db_inspector.get_attribute_values.side_effect = [
-            ['1', '2', '3'],  # users.id
-            ['1', '4', '5']   # products.id
+            ["1", "2", "3"],  # users.id
+            ["1", "4", "5"],  # products.id
         ]
         # Mock has_common_elements_above_threshold to return True
-        with patch.object(
-            Attribute, 'has_common_elements_above_threshold', return_value=True
-        ):
-            assert attribute1.is_compatible(attribute3, db_inspector=mock_db_inspector, threshold_overlap=1)
+        with patch.object(Attribute, "has_common_elements_above_threshold", return_value=True):
+            assert attribute1.is_compatible(
+                attribute3, db_inspector=mock_db_inspector, threshold_overlap=1
+            )
 
     # def test_is_not_compatible_due_to_domain_mismatch(self, sample_attributes, mock_db_inspector):
     #     """Attributes with different domains should not be compatible."""
@@ -98,15 +99,25 @@ class TestAttribute:
         mock_db_inspector.get_table_names.return_value = ["users", "orders"]
         mock_db_inspector.get_attribute_names.side_effect = [
             ["id", "name", "email"],
-            ["id", "user_id", "product_id", "amount"]
+            ["id", "user_id", "product_id", "amount"],
         ]
         mock_db_inspector.get_attribute_domain.side_effect = [
-            "INT", "VARCHAR", "VARCHAR",
-            "INT", "INT", "INT", "DECIMAL"
+            "INT",
+            "VARCHAR",
+            "VARCHAR",
+            "INT",
+            "INT",
+            "INT",
+            "DECIMAL",
         ]
         mock_db_inspector.get_attribute_is_key.side_effect = [
-            True, False, False,
-            True, False, False, False
+            True,
+            False,
+            False,
+            True,
+            False,
+            False,
+            False,
         ]
 
         attributes = Attribute.generate_attributes(mock_db_inspector)
@@ -117,8 +128,8 @@ class TestAttribute:
 
 # Tests for IndexedAttribute
 
-class TestIndexedAttribute:
 
+class TestIndexedAttribute:
     def test_initialization(self):
         """Test the initialization of IndexedAttribute."""
         indexed_attr = IndexedAttribute(i=0, j=1, k=2)
@@ -173,8 +184,8 @@ class TestIndexedAttribute:
 
 # Tests for AttributeMapper
 
-class TestAttributeMapper:
 
+class TestAttributeMapper:
     def test_attribute_to_indexed(self, mapper):
         """Test converting Attribute to IndexedAttribute."""
         attribute = Attribute(table="users", name="email")
@@ -200,8 +211,8 @@ class TestAttributeMapper:
 
 # Tests for JoinableIndexedAttributes
 
-class TestJoinableIndexedAttributes:
 
+class TestJoinableIndexedAttributes:
     def setup_method(self):
         """Setup sample IndexedAttributes and JoinableIndexedAttributes."""
         self.attr1 = IndexedAttribute(i=0, j=1, k=2)
@@ -233,14 +244,16 @@ class TestJoinableIndexedAttributes:
         """Test the is_connected method."""
         jia4 = JoinableIndexedAttributes(self.attr1, self.attr3)
         assert self.jia1.is_connected(jia4) is True
-        jia5 = JoinableIndexedAttributes(IndexedAttribute(i=3, j=3, k=3), IndexedAttribute(i=3, j=3, k=4))
+        jia5 = JoinableIndexedAttributes(
+            IndexedAttribute(i=3, j=3, k=3), IndexedAttribute(i=3, j=3, k=4)
+        )
         assert self.jia1.is_connected(jia5) is False
 
 
 # Tests for ConstraintGraph
 
-class TestConstraintGraph:
 
+class TestConstraintGraph:
     def setup_method(self):
         """Setup sample IndexedAttributes and JoinableIndexedAttributes."""
         self.attr1 = IndexedAttribute(i=0, j=1, k=2)
@@ -283,7 +296,7 @@ class TestConstraintGraph:
         jia_list = [self.jia1, self.jia2, self.jia3]
         # Mock is_connected method
         with patch.object(
-            JoinableIndexedAttributes, 'is_connected', side_effect=lambda x: x == self.jia3
+            JoinableIndexedAttributes, "is_connected", side_effect=lambda x: x == self.jia3
         ):
             graph = ConstraintGraph.from_jia_list(jia_list)
             assert len(graph.nodes) == 3
@@ -314,17 +327,15 @@ class TestConstraintGraph:
 
 # Additional Tests for Attribute's Compatibility Logic
 
-class TestAttributeCompatibility:
 
+class TestAttributeCompatibility:
     def test_is_compatible_with_foreign_key(self, sample_attributes, mock_db_inspector):
         """Test compatibility when attributes are foreign keys."""
         attribute1, attribute2, _ = sample_attributes
         mock_db_inspector.are_foreign_keys.return_value = True
 
         # Assuming is_compatible uses are_foreign_keys to determine compatibility
-        with patch.object(
-            Attribute, 'has_common_elements_above_threshold', return_value=False
-        ):
+        with patch.object(Attribute, "has_common_elements_above_threshold", return_value=False):
             assert attribute1.is_compatible(attribute2, db_inspector=mock_db_inspector)
 
     # def test_is_not_compatible_due_to_value_overlap(self, sample_attributes, mock_db_inspector):
@@ -341,4 +352,3 @@ class TestAttributeCompatibility:
 # Run the tests with pytest
 # To execute the tests, run the following command in your terminal:
 # pytest test_constraint_graph.py
-

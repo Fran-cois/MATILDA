@@ -1,31 +1,28 @@
 import unittest
-from unittest.mock import patch, MagicMock, mock_open
-import os
-import io
-from typing import Optional
+from unittest.mock import MagicMock, mock_open, patch
 
 from database.download_databases import (
-    run_cmd,
+    HOSTNAME,
+    PASSWORD,
+    PORT,
+    USERNAME,
+    DatabaseConverter,
+    DatabaseDownloader,
+    Workflow,
     check_mysqldump_version,
     dump_database,
-    DatabaseDownloader,
-    DatabaseConverter,
-    Workflow,
-    BASE_URL,
-    USERNAME,
-    PASSWORD,
-    HOSTNAME,
-    PORT
+    run_cmd,
 )
 
 
 class TestRunCmd(unittest.TestCase):
-    @patch('subprocess.run')
+    @patch("subprocess.run")
     def test_run_cmd_success(self, mock_run):
         # Mock a successful command run
         mock_run.return_value = MagicMock(returncode=0, stdout=b"success", stderr=b"")
         self.assertTrue(run_cmd("echo 'hello'"))
         mock_run.assert_called_once()
+
     #
     # @patch('subprocess.run')
     # def test_run_cmd_failure(self, mock_run):
@@ -35,55 +32,55 @@ class TestRunCmd(unittest.TestCase):
 
 
 class TestCheckMysqldumpVersion(unittest.TestCase):
-    @patch('subprocess.run')
+    @patch("subprocess.run")
     def test_check_mysqldump_version_valid(self, mock_run):
         mock_run.return_value = MagicMock(stdout=b"mysqldump  Ver 8.0.25 for Linux on x86_64")
         version = check_mysqldump_version()
         self.assertEqual(version, "8.0.25")
 
-    @patch('subprocess.run')
+    @patch("subprocess.run")
     def test_check_mysqldump_version_invalid(self, mock_run):
         mock_run.return_value = MagicMock(stdout=b"mysqldump version unknown")
         version = check_mysqldump_version()
         self.assertIsNone(version)
 
-    @patch('subprocess.run', side_effect=Exception("Error"))
+    @patch("subprocess.run", side_effect=Exception("Error"))
     def test_check_mysqldump_version_exception(self, mock_run):
         version = check_mysqldump_version()
         self.assertIsNone(version)
 
 
 class TestDumpDatabase(unittest.TestCase):
-    @patch('database.download_databases.check_mysqldump_version', return_value="8.0.20")
-    @patch('database.download_databases.run_cmd', return_value=True)
+    @patch("database.download_databases.check_mysqldump_version", return_value="8.0.20")
+    @patch("database.download_databases.run_cmd", return_value=True)
     def test_dump_database_success(self, mock_run_cmd, mock_version):
         result = dump_database(HOSTNAME, PORT, USERNAME, PASSWORD, "test_db", "test.sql")
         self.assertTrue(result)
 
-    @patch('database.download_databases.check_mysqldump_version', return_value=None)
+    @patch("database.download_databases.check_mysqldump_version", return_value=None)
     def test_dump_database_no_version(self, mock_version):
         result = dump_database(HOSTNAME, PORT, USERNAME, PASSWORD, "test_db", "test.sql")
         self.assertFalse(result)
 
-    @patch('database.download_databases.check_mysqldump_version', return_value="8.5.0")
+    @patch("database.download_databases.check_mysqldump_version", return_value="8.5.0")
     def test_dump_database_incompatible_version(self, mock_version):
         result = dump_database(HOSTNAME, PORT, USERNAME, PASSWORD, "test_db", "test.sql")
         self.assertFalse(result)
 
 
 class TestDatabaseDownloader(unittest.TestCase):
-    @patch('os.path.exists', return_value=False)
-    @patch('os.makedirs')
+    @patch("os.path.exists", return_value=False)
+    @patch("os.makedirs")
     def test_init_download_path_creation(self, mock_makedirs, mock_exists):
         downloader = DatabaseDownloader("tests/data/")
         mock_makedirs.assert_called_once()
 
-    @patch('os.path.exists', return_value=True)
+    @patch("os.path.exists", return_value=True)
     def test_init_download_path_exists(self, mock_exists):
         downloader = DatabaseDownloader("tests/data/")
         # No exception raised, test passes
 
-    @patch('requests.get')
+    @patch("requests.get")
     def test_fetch_available_databases(self, mock_get):
         # Mock the search page
         mock_response_search = MagicMock()
@@ -153,7 +150,7 @@ CREATE TABLE `test` (
             '  "name" VARCHAR(255),',
             '  "created_at" TEXT,',
             '  PRIMARY KEY ("id")',
-            ');'
+            ");",
         ]
         output = DatabaseConverter.convert_mysql_to_sqlite(mysql_input)
         # Check that the output contains the expected lines
@@ -163,17 +160,27 @@ CREATE TABLE `test` (
     def test_process_line_skips(self):
         # Lines starting with SET or /*! should return None
         self.assertIsNone(DatabaseConverter._process_line("SET NAMES utf8;"))
-        self.assertIsNone(DatabaseConverter._process_line("/*!40101 SET character_set_client = utf8 */;"))
+        self.assertIsNone(
+            DatabaseConverter._process_line("/*!40101 SET character_set_client = utf8 */;")
+        )
 
 
 class TestWorkflow(unittest.TestCase):
-    @patch('database.download_databases.DatabaseDownloader.fetch_available_databases', return_value=["db1"])
-    @patch('os.path.exists', side_effect=[False, False, False])  # simulate no db, no sql
-    @patch('database.download_databases.DatabaseDownloader.download_database', return_value="tests/data//db1.sql")
-    @patch('builtins.open', new_callable=mock_open, read_data='CREATE TABLE "test" (id INTEGER);')
-    @patch('os.remove')
-    @patch('sqlite3.connect')
-    def test_workflow_run(self, mock_connect, mock_remove, mock_file, mock_download_db, mock_exists, mock_fetch):
+    @patch(
+        "database.download_databases.DatabaseDownloader.fetch_available_databases",
+        return_value=["db1"],
+    )
+    @patch("os.path.exists", side_effect=[False, False, False])  # simulate no db, no sql
+    @patch(
+        "database.download_databases.DatabaseDownloader.download_database",
+        return_value="tests/data//db1.sql",
+    )
+    @patch("builtins.open", new_callable=mock_open, read_data='CREATE TABLE "test" (id INTEGER);')
+    @patch("os.remove")
+    @patch("sqlite3.connect")
+    def test_workflow_run(
+        self, mock_connect, mock_remove, mock_file, mock_download_db, mock_exists, mock_fetch
+    ):
         return
         workflow = Workflow("tests/data/")
         workflow.run()
@@ -182,5 +189,5 @@ class TestWorkflow(unittest.TestCase):
         mock_connect.assert_called_once()  # ensure database was attempted to be created
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

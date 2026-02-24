@@ -1,5 +1,6 @@
+from unittest.mock import MagicMock, patch
+
 import pytest
-from unittest.mock import patch, MagicMock
 from sqlalchemy import MetaData
 
 from database.database_connection_manager import DatabaseConnectionManager
@@ -18,7 +19,9 @@ def mock_engine():
 def mock_create_engine(mock_engine):
     """Patch create_engine to return a mock engine."""
     engine, mock_connection = mock_engine
-    with patch("database.database_connection_manager.create_engine", return_value=engine) as patched:
+    with patch(
+        "database.database_connection_manager.create_engine", return_value=engine
+    ) as patched:
         yield patched, engine, mock_connection
 
 
@@ -26,7 +29,7 @@ def mock_create_engine(mock_engine):
 def mock_metadata():
     """Patch MetaData.reflect to ensure it is called."""
     metadata = MetaData()
-    with patch.object(metadata, 'reflect') as mock_reflect:
+    with patch.object(metadata, "reflect") as mock_reflect:
         yield metadata, mock_reflect
 
 

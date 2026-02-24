@@ -9,8 +9,8 @@ uv run pytest \
   --cov-report=html:"$REPORT_DIR" \
   --cov-report=term-missing \
   --cov-config=pyproject.toml \
-  --ignore=src/tests/algorithms/others/test_anyburl_parsing.py \
-  --ignore=src/tests/test_metrics_validation.py \
+  --ignore=tests/algorithms/others/test_anyburl_parsing.py \
+  --ignore=tests/test_metrics_validation.py \
   -q \
   "$@"
 
