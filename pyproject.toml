@@ -52,6 +52,17 @@ quote-style = "double"
 testpaths = ["tests"]
 pythonpath = ["src"]
 asyncio_mode = "auto"
+addopts = "--ignore=src/popper"
+
+[tool.coverage.run]
+omit = [
+    "src/popper/*",
+]
+
+[tool.coverage.report]
+omit = [
+    "src/popper/*",
+]
 
 [tool.pyright]
 include = ["src"]
